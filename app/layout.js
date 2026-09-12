@@ -36,7 +36,7 @@ function Header() {
       <div className="headerActions">
         <SearchIcon />
         <span>로그인</span>
-        <button>거래처 신청</button>
+        <a className="partnerApply" href="http://pf.kakao.com/_axdbrX" target="_blank" rel="noopener noreferrer">거래처 신청</a>
       </div>
     </header>
   );

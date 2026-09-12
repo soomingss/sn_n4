@@ -20,9 +20,9 @@ export default function Company(){
         <h2>신농허브의 핵심가치</h2>
         <div className="coreGrid">
           <ValueCard icon="leaf" title="엄선된 원료">좋은 산지의 신선한 원료만을 선별합니다.</ValueCard>
-          <ValueCard icon="gap" title="GAP 인증">안전하고 신뢰할 수 있는 한약재 유통을 지향합니다.</ValueCard>
+          <ValueCard icon="gap" title="GAP 인증">안전하고 신뢰할 수 있는<br/>한약재 유통을 지향합니다</ValueCard>
           <ValueCard icon="shield" title="철저한 품질관리">입고부터 출고까지 체계적으로 관리합니다.</ValueCard>
-          <ValueCard icon="truck" title="안정적인 공급">한의원과 의료기관을 위한 신뢰할 수 있는 공급 시스템.</ValueCard>
+          <ValueCard icon="truck" title="안정적인 공급">한의원과 의료기관을 위한<br/>신뢰할 수 있는 공급 시스템</ValueCard>
           <ValueCard icon="handshake" title="함께하는 성장">신뢰를 바탕으로 지속 가능한 파트너십.</ValueCard>
         </div>
       </div>
@@ -37,7 +37,6 @@ export function CompanyHero({title,crumb}){
       <h1>{title}</h1>
       <span>HOME　›　회사소개{crumb !== "회사소개" ? "　›　" + crumb : ""}</span>
     </div>
-    <div className="heroWords">NATURAL<br/>HERITAGE<br/>FOR A HEALTHY TOMORROW</div>
   </section>
 }
 

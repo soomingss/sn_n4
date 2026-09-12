@@ -8,9 +8,8 @@ export default function Home(){
         <h1>좋은 원료가<br/><span className="heroSecondLine">좋은 내일을 만듭니다.</span></h1>
         <p className="desc">신농허브는 자연이 주는 소중한 원료를<br/>정직하게 선별하여, 한의학의 건강한 미래를 함께 만들어갑니다.</p>
         <div className="buttons"><button className="primary">제품 둘러보기 →</button><button>B2B 문의하기</button></div>
-        <div className="pager">01　 <span>02　03</span></div>
       </div>
-      <div className="mainImage"><div className="natureWords">NATURE<br/>HEALTH<br/>TRUST</div></div>
+      <div className="mainImage"></div>
     </section>
 
     <section className="fiveValues">

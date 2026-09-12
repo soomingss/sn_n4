@@ -19,3 +19,12 @@
 /company              회사소개
 /company/history      연혁
 /company/location     오시는 길
+
+
+[v7 변경사항]
+- 메인 01/02/03 슬라이드 표시 삭제
+- 메인 NATURE / HEALTH / TRUST 중복 오버레이 삭제
+- 회사소개/연혁/오시는 길 상단 NATURAL HERITAGE / FOR A HEALTHY TOMORROW 중복 오버레이 삭제
+- 회사소개 핵심가치 GAP 인증 / 안정적인 공급 문구 줄바꿈 조정
+- 고객센터 및 거래처 신청 모두 신농허브 카카오톡 채널(http://pf.kakao.com/_axdbrX)로 직접 연결
+- 카카오톡 채널 연결은 API나 Vercel 환경변수 없이 코드에 링크가 직접 설정되어 있음
