@@ -1,5 +1,6 @@
 import "./globals.css";
 import Link from "next/link";
+import MobileNav from "./MobileNav";
 
 export const metadata = {
   title: "신농허브 | SHINNONG HERB",
@@ -38,6 +39,8 @@ function Header() {
         <span>로그인</span>
         <a className="partnerApply" href="http://pf.kakao.com/_axdbrX" target="_blank" rel="noopener noreferrer">거래처 신청</a>
       </div>
+
+      <MobileNav />
     </header>
   );
 }

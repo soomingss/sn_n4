@@ -120,3 +120,24 @@ footer{min-height:95px;border-top:1px solid #ddd;padding:20px 6%;display:grid;gr
   .coreGrid{grid-template-columns:1fr}
   .historyRow{grid-template-columns:70px 1fr}
 }
+
+/* Mobile navigation */
+.mobileNavWrap{display:none}
+@media(max-width:950px){
+  .header{position:relative;justify-content:space-between}
+  .mobileNavWrap{display:block;margin-left:auto}
+  .hamburger{width:42px;height:42px;border:0;background:transparent;padding:8px;display:flex;flex-direction:column;justify-content:center;gap:5px}
+  .hamburger span{display:block;width:25px;height:2px;background:#214d40;transition:transform .2s ease,opacity .2s ease}
+  .hamburger.isOpen span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+  .hamburger.isOpen span:nth-child(2){opacity:0}
+  .hamburger.isOpen span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+  .mobileMenu{position:absolute;left:0;right:0;top:70px;background:#fff;border-top:1px solid #e7ebe8;border-bottom:1px solid #dfe5e1;box-shadow:0 10px 24px rgba(24,55,47,.08);z-index:50}
+  .mobileMenuInner{padding:8px 20px 18px}
+  .mobileMenuRow{width:100%;min-height:52px;display:flex;align-items:center;border:0;border-bottom:1px solid #edf0ee;background:#fff;color:#18372f;font-size:15px;text-align:left;padding:0 4px}
+  .mobileCompanyToggle{justify-content:space-between;cursor:pointer}
+  .mobileChevron{font-size:22px;line-height:1;transition:transform .2s ease}
+  .mobileChevron.isOpen{transform:rotate(180deg)}
+  .mobileSubmenu{background:#f6f8f6;border-bottom:1px solid #e4e9e5;padding:5px 0}
+  .mobileSubmenu a{display:block;padding:13px 18px;font-size:14px;color:#536760}
+  .mobilePartnerApply{margin-top:12px;justify-content:center;background:#315f4e;color:#fff;border-bottom:0;border-radius:2px}
+}
