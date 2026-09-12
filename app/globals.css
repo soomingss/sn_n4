@@ -1,0 +1,127 @@
+
+:root{--green:#214d40;--green2:#3b775b;--sage:#eff5ef;--cream:#f4f0e6;--text:#18372f;--muted:#65766f;--line:#dfe5e1}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;color:var(--text);font-family:Arial,"Noto Sans KR","Malgun Gothic",sans-serif;background:#fff}
+a{text-decoration:none;color:inherit}
+button{font:inherit;cursor:pointer}
+.header{height:80px;display:flex;align-items:center;padding:0 6%;border-bottom:1px solid #eee;background:#fff;z-index:20}
+.logoWrap{width:220px;height:64px;display:flex;align-items:center;overflow:hidden}
+.logoImg{width:178px;height:62px;object-fit:cover;object-position:center top;display:block}
+.mainNav{display:flex;justify-content:center;gap:42px;flex:1;font-size:14px}
+.mainNav span{cursor:default}
+.headerActions{width:230px;display:flex;align-items:center;justify-content:flex-end;gap:17px;font-size:13px}
+.headerActions button,.buttons button{border:1px solid #2d5c4c;padding:12px 23px;background:#fff;color:#183d33}
+.headerActions button,.buttons .primary{background:#315f4e;color:#fff}
+.smallIcon{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8}
+
+.mainHero{height:505px;display:grid;grid-template-columns:42.5% 57.5%;background:var(--cream);overflow:hidden}
+.mainCopy{padding:64px 7% 28px 22%}
+.eyebrow{font-size:11px;letter-spacing:4px;line-height:1.8;color:#66776f;margin:0}
+.mainCopy h1{font-family:Georgia,"Batang",serif;font-size:47px;line-height:1.4;font-weight:400;margin:28px 0 18px;letter-spacing:-1px}
+.heroSecondLine{white-space:nowrap}
+.desc{font-size:15px;line-height:1.9;color:#405850}
+.buttons{display:flex;gap:12px;margin-top:25px}
+.pager{margin-top:48px;font-size:12px}
+.pager span{color:#aeb5b1}
+.mainImage{position:relative;background:linear-gradient(90deg,var(--cream) 0%,rgba(244,240,230,.25) 10%,transparent 25%),url("/main-hero.jpg") center/cover no-repeat}
+.natureWords{position:absolute;right:8%;top:27%;color:white;font-family:Georgia,serif;letter-spacing:3px;line-height:1.6;border-left:1px solid rgba(255,255,255,.7);padding-left:18px;font-size:13px}
+.fiveValues{min-height:136px;display:grid;grid-template-columns:repeat(5,1fr);padding:26px 5.5%;border-bottom:1px solid var(--line)}
+.valueCard{display:flex;align-items:center;gap:16px;padding:0 22px;border-right:1px solid var(--line)}
+.valueCard:last-child{border-right:0}
+.iconSvg{width:46px;height:46px;flex:0 0 46px;fill:none;stroke:#20533f;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.valueCard b{display:block;font-size:15px}
+.valueCard p{font-size:12px;line-height:1.55;color:var(--muted);margin:7px 0 0}
+.mainBottom{height:185px;display:grid;grid-template-columns:39% 61%;background:#f1f4ed;align-items:center}
+.leafPhoto{height:100%;background:url("/leaf-strip.jpg") center/cover no-repeat}
+.bottomCopy{text-align:center;font-family:Georgia,"Batang",serif;font-size:25px;line-height:1.5}
+.bottomCopy small{display:block;font:10px Arial;letter-spacing:5px;margin-top:18px}
+
+.companyHero{height:295px;display:flex;justify-content:space-between;align-items:flex-start;padding:67px 9.5%;background:linear-gradient(90deg,#f5f0e4 0%,rgba(245,240,228,.86) 36%,rgba(245,240,228,0) 66%),url("/company-hero.jpg") right center/62% 100% no-repeat}
+.companyHeroCopy p{font-size:11px;letter-spacing:2px;margin:0}
+.companyHeroCopy h1{font-size:46px;margin:15px 0 14px;letter-spacing:-1px}
+.companyHeroCopy span{font-size:12px}
+.heroWords{align-self:center;color:white;font-size:11px;letter-spacing:2px;line-height:1.8}
+.subnav{height:58px;display:flex;justify-content:center;border-bottom:1px solid #ddd}
+.subnav a{width:180px;text-align:center;padding:20px 10px;border-right:1px solid #eee;font-size:14px}
+.subnav a:first-child{border-left:1px solid #eee}
+.subnav .active{background:var(--green2);color:#fff}
+.contentWidth{max-width:1180px;margin:0 auto}
+.intro{padding:63px 20px 68px}
+.greenLine{width:44px;height:4px;background:#3b7b5d;margin-bottom:32px}
+.intro h1{font-size:50px;line-height:1.42;margin:0 0 30px;letter-spacing:-2px}
+.intro p{font-size:17px;line-height:1.9;color:#425950;margin:0 0 18px;max-width:1100px}
+.coreValues{background:#f1f6ef;padding:53px 0 62px}
+.coreValues h2{font-size:32px;margin:12px 0 30px}
+.coreGrid{display:grid;grid-template-columns:repeat(5,1fr)}
+.coreGrid .valueCard{display:flex;flex-direction:column;justify-content:flex-start;text-align:center;padding:0 10px;min-width:0;min-height:138px}
+.coreGrid .iconSvg{margin:0 auto 16px;flex:0 0 46px}
+.coreGrid .valueCard p{font-size:12px;line-height:1.7;letter-spacing:-.45px;margin-left:auto;margin-right:auto}
+.coreGrid .valueCard:nth-child(1) p,.coreGrid .valueCard:nth-child(5) p{white-space:nowrap}
+
+.historyWrap{max-width:1180px;margin:0 auto;padding:62px 20px 70px;display:grid;grid-template-columns:31% 69%;gap:45px}
+.historySide h1{font-size:38px;line-height:1.4;margin:12px 0 24px}
+.historySide>p:last-child{max-width:240px;color:#61716b;line-height:1.8;font-size:14px}
+.timeline{border-left:2px solid #6d9b6c;padding-left:30px}
+.historyRow{display:grid;grid-template-columns:90px 1fr;padding:12px 0 17px;border-bottom:1px solid #ddd}
+.historyRow>b{font-size:21px;color:#4f8650}
+.historyRow p{margin:0;color:#485b54;font-size:14px;line-height:1.7}
+
+.location{padding:55px 20px 72px}
+.location>h1{font-size:45px;line-height:1.35;margin:14px 0}
+.locationDesc{color:#5b6e67;line-height:1.7}
+.kakaoMapWrap{position:relative;max-width:1000px;height:360px;margin:30px auto 34px;border:1px solid #d8e0db;border-radius:10px;overflow:hidden;background:#f7f9f7}
+.kakaoMapCanvas{width:100%;height:100%}
+.mapStatus{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:#f7f9f7;color:#596a64;font-size:13px;z-index:2}
+.mapStatusGuide{flex-direction:column;gap:8px;text-align:center;padding:24px}
+.mapStatusGuide b{font-size:16px;color:var(--green)}
+.mapStatusGuide span{line-height:1.7}
+.mapStatusGuide code{font-family:monospace;background:#fff;border:1px solid #dfe5e1;border-radius:4px;padding:2px 6px}
+.mapActions{position:absolute;right:14px;bottom:14px;z-index:4;display:flex;gap:8px}
+.mapActions a{background:#fff;border:1px solid #d7dfda;border-radius:6px;padding:10px 14px;font-size:12px;color:#214d40;box-shadow:0 2px 10px rgba(0,0,0,.08)}
+.mapActions a:last-child{background:#315f4e;color:#fff;border-color:#315f4e}
+.contactCards,.transportCards{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid #e2e7e3;border-radius:12px;overflow:hidden;background:#f3f7f2}
+.infoCard{display:flex;gap:16px;align-items:center;padding:24px 28px;border-right:1px solid #dfe5e1}
+.infoCard:last-child{border-right:0}
+.infoCard .iconSvg{width:40px;height:40px;flex-basis:40px}
+.infoCard b,.infoCard span{display:block}
+.infoCard span{font-size:13px;color:#5a6d65;line-height:1.7;margin-top:7px}
+.transportTitle{font-size:22px;margin:38px 0 20px}
+.transportCards{background:white;border:0}
+.transportCards .infoCard{padding:24px 28px}
+
+footer{min-height:95px;border-top:1px solid #ddd;padding:20px 6%;display:grid;grid-template-columns:180px 1fr auto;gap:25px;align-items:center;color:#68766f;font-size:11px;line-height:1.8}
+.footerLogoImg{width:155px;height:54px;object-fit:cover;object-position:center top}
+.policy{white-space:nowrap}
+
+@media(max-width:950px){
+  .mainNav,.headerActions{display:none}
+  .header{height:70px;padding:0 20px}
+  .logoWrap{width:175px}
+  .mainHero{height:auto;grid-template-columns:1fr}
+  .mainCopy{padding:45px 8%}
+  .mainImage{height:340px}
+  .fiveValues{grid-template-columns:1fr 1fr;padding:10px 5%}
+  .valueCard{padding:20px;border-bottom:1px solid var(--line)}
+  .mainBottom{grid-template-columns:1fr;height:150px}
+  .leafPhoto{display:none}
+  .companyHero{height:250px;padding:55px 7%;background-size:cover}
+  .heroWords{display:none}
+  .subnav{overflow-x:auto;justify-content:flex-start}
+  .subnav a{min-width:120px}
+  .intro p br{display:none}
+  .coreGrid{grid-template-columns:1fr 1fr}
+  .coreGrid .valueCard{padding:20px}
+  .historyWrap{grid-template-columns:1fr}
+  .contactCards,.transportCards{grid-template-columns:1fr}
+  .infoCard{border-right:0;border-bottom:1px solid var(--line)}
+  footer{grid-template-columns:1fr}
+}
+@media(max-width:620px){
+  .mainCopy h1{font-size:38px}
+  .fiveValues{grid-template-columns:1fr}
+  .companyHeroCopy h1{font-size:38px}
+  .intro h1,.location>h1{font-size:38px}
+  .coreGrid{grid-template-columns:1fr}
+  .historyRow{grid-template-columns:70px 1fr}
+}
