@@ -141,3 +141,38 @@ footer{min-height:95px;border-top:1px solid #ddd;padding:20px 6%;display:grid;gr
   .mobileSubmenu a{display:block;padding:13px 18px;font-size:14px;color:#536760}
   .mobilePartnerApply{margin-top:12px;justify-content:center;background:#315f4e;color:#fff;border-bottom:0;border-radius:2px}
 }
+
+/* Inquiry page */
+.inquiryHero{background:#f3f6f1;border-bottom:1px solid #e2e8e3}
+.inquiryHeroInner{padding:54px 20px 50px}
+.inquiryHero h1{font-size:42px;letter-spacing:-1.5px;margin:12px 0 12px}
+.inquiryHero p:last-child{margin:0;color:#5e7068;font-size:14px}
+.inquirySection{padding:58px 20px 78px;max-width:980px}
+.inquiryIntro{margin-bottom:32px}
+.inquiryIntro .greenLine{margin-bottom:24px}
+.inquiryIntro h2{font-size:30px;margin:0 0 12px;letter-spacing:-1px}
+.inquiryIntro p{margin:0;color:#66766f;font-size:14px}
+.inquiryIntro p span,.inquiryForm label b{color:#3b775b}
+.inquiryForm{border-top:2px solid #315f4e;padding-top:26px}
+.formGrid{display:grid;grid-template-columns:1fr 1fr;gap:22px 24px}
+.inquiryForm label{display:block}
+.inquiryForm label>span{display:block;font-size:13px;font-weight:600;margin-bottom:9px}
+.inquiryForm input,.inquiryForm select,.inquiryForm textarea{width:100%;border:1px solid #d8e0db;background:#fff;color:#18372f;border-radius:4px;padding:13px 14px;font:inherit;font-size:14px;outline:none;transition:border-color .15s ease,box-shadow .15s ease}
+.inquiryForm input:focus,.inquiryForm select:focus,.inquiryForm textarea:focus{border-color:#5b8a70;box-shadow:0 0 0 3px rgba(59,119,91,.08)}
+.inquiryForm textarea{resize:vertical;line-height:1.7;min-height:180px}
+.formFull{grid-column:1/-1}
+.formNotice{margin:22px 0 0;padding:13px 15px;border-radius:4px;font-size:13px;line-height:1.6}
+.formNotice.success{background:#eef6ef;color:#285d43;border:1px solid #d6e8d9}
+.formNotice.error{background:#fff4f3;color:#8a3a32;border:1px solid #f0d8d5}
+.inquirySubmit{display:block;min-width:170px;margin:28px auto 0;border:1px solid #315f4e;background:#315f4e;color:#fff;padding:14px 28px;border-radius:2px}
+.inquirySubmit:disabled{opacity:.65;cursor:wait}
+.hpField{position:absolute!important;left:-99999px!important;width:1px!important;height:1px!important;opacity:0!important;pointer-events:none!important}
+@media(max-width:620px){
+  .inquiryHeroInner{padding:42px 20px 38px}
+  .inquiryHero h1{font-size:34px}
+  .inquirySection{padding:42px 20px 60px}
+  .inquiryIntro h2{font-size:26px}
+  .formGrid{grid-template-columns:1fr;gap:18px}
+  .formFull{grid-column:auto}
+  .inquirySubmit{width:100%}
+}

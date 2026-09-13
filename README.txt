@@ -1,30 +1,18 @@
-신농허브 Next.js v4
+신농허브 홈페이지 v10
 
-수정사항
-1. 메인 하단 SCROLL DOWN 요소 삭제
-2. 회사소개 본문 3개 문단의 강제 줄바꿈 제거
-3. 메인 타이틀 '좋은 내일을 만듭니다.'가 한 줄로 유지되도록 조정
-4. 회사소개 핵심가치 5개 항목의 크기/정렬 통일 + 엄선된 원료/함께하는 성장 설명 한 줄 처리
-5. 오시는 길의 CSS 약도를 실제 카카오맵 연동 컴포넌트로 교체
+- 기존 v9 디자인/구조 유지
+- 모바일 햄버거 메뉴의 회사소개 하위메뉴 유지
+- 모바일 메뉴에 거래처 문의 하위메뉴 추가
+  · 홈페이지 문의하기 -> /inquiry
+  · 카카오톡 문의하기 -> http://pf.kakao.com/_axdbrX
+- 홈페이지 문의 페이지 추가
+- 문의 제출 시 Next.js 서버 API를 통해 Supabase inquiries 테이블에 저장
 
-카카오맵 설정
-- Kakao Developers에서 JavaScript 키를 발급합니다.
-- 사용할 Vercel 도메인과 최종 도메인을 JavaScript SDK 도메인에 등록합니다.
-- Vercel > Project Settings > Environment Variables에 아래 값을 추가합니다.
-  NEXT_PUBLIC_KAKAO_MAP_APP_KEY=발급받은_JavaScript_키
-- 재배포하면 오시는 길 페이지에 실제 카카오맵이 표시됩니다.
+Vercel 환경변수 (서버 전용)
+1) SUPABASE_URL
+2) SUPABASE_SERVICE_ROLE_KEY
 
-라우트
-/                     메인
-/company              회사소개
-/company/history      연혁
-/company/location     오시는 길
-
-
-[v7 변경사항]
-- 메인 01/02/03 슬라이드 표시 삭제
-- 메인 NATURE / HEALTH / TRUST 중복 오버레이 삭제
-- 회사소개/연혁/오시는 길 상단 NATURAL HERITAGE / FOR A HEALTHY TOMORROW 중복 오버레이 삭제
-- 회사소개 핵심가치 GAP 인증 / 안정적인 공급 문구 줄바꿈 조정
-- 고객센터 및 거래처 신청 모두 신농허브 카카오톡 채널(http://pf.kakao.com/_axdbrX)로 직접 연결
-- 카카오톡 채널 연결은 API나 Vercel 환경변수 없이 코드에 링크가 직접 설정되어 있음
+주의:
+- SUPABASE_SERVICE_ROLE_KEY는 브라우저에 노출되면 안 됩니다.
+- NEXT_PUBLIC_ 접두사를 붙이지 마세요.
+- 카카오맵의 기존 NEXT_PUBLIC_KAKAO_MAP_APP_KEY 설정은 그대로 유지합니다.
