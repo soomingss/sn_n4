@@ -20,10 +20,8 @@ export default function Location(){
         <Info icon="fax" title="팩스번호">032 - 525 - 2435</Info>
       </div>
 
-      <h2 className="transportTitle">대중교통 이용 안내</h2>
-      <div className="transportCards">
-        <Info icon="train" title="지하철 이용 시">1호선 부개역 하차 후<br/>도보 약 10분</Info>
-        <Info icon="bus" title="버스 이용 시">부개역, 부개주공아파트 정류장 하차 후<br/>도보 약 5분</Info>
+      <h2 className="transportTitle">주차 안내</h2>
+      <div className="transportCards parkingCards">
         <Info icon="car" title="자차 이용 시">대동아파트 상가동 내 주차 공간을<br/>이용하실 수 있습니다.</Info>
       </div>
     </section>

@@ -93,6 +93,7 @@ button{font:inherit;cursor:pointer}
 .infoCard span{font-size:13px;color:#5a6d65;line-height:1.7;margin-top:7px}
 .transportTitle{font-size:22px;margin:38px 0 20px}
 .transportCards{background:white;border:0}
+.parkingCards{grid-template-columns:1fr}
 .transportCards .infoCard{padding:24px 28px}
 
 footer{min-height:95px;border-top:1px solid #ddd;padding:20px 6%;display:grid;grid-template-columns:180px 1fr auto;gap:25px;align-items:center;color:#68766f;font-size:11px;line-height:1.8}
@@ -110,7 +111,7 @@ footer{min-height:95px;border-top:1px solid #ddd;padding:20px 6%;display:grid;gr
   .valueCard{padding:20px;border-bottom:1px solid var(--line)}
   .mainBottom{grid-template-columns:1fr;height:150px}
   .leafPhoto{display:none}
-  .companyHero{height:250px;padding:55px 7%;background-size:cover}
+  .companyHero{height:250px;padding:55px 7%;background-size:cover;background-position:left center}
   .subnav{overflow-x:auto;justify-content:flex-start}
   .subnav a{min-width:120px}
   .intro p br{display:none}
