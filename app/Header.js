@@ -8,6 +8,7 @@ import MobileNav from "./MobileNav";
 export default function Header() {
   const [session, setSession] = useState(null);
   const [loaded, setLoaded] = useState(false);
+  const [accountOpen, setAccountOpen] = useState(false);
   const router = useRouter();
   const pathname = usePathname();
 
@@ -36,6 +37,7 @@ export default function Header() {
   const logout = async () => {
     await fetch("/api/auth/logout", { method: "POST" });
     setSession(null);
+    setAccountOpen(false);
     window.dispatchEvent(new Event("shinnong-auth-changed"));
     router.push("/");
     router.refresh();
@@ -60,10 +62,35 @@ export default function Header() {
 
       <div className="headerActions">
         {loaded && session ? (
-          <>
-            <span className="signedUser" title={`${username}님`}>{username}님</span>
-            <button type="button" className="headerLogout" onClick={logout}>로그아웃</button>
-          </>
+          <div className="accountDropdown">
+            <button
+              type="button"
+              className="accountDropdownToggle"
+              aria-haspopup="true"
+              aria-expanded={accountOpen}
+              onClick={() => setAccountOpen((value) => !value)}
+            >
+              <span className="signedUser" title={`${username}님`}>{username}님</span>
+              <span className={`accountChevron ${accountOpen ? "isOpen" : ""}`}>⌄</span>
+            </button>
+            {accountOpen && (
+              <div className="accountDropdownMenu">
+                <div className="accountIdentity">
+                  <b>{username}님</b>
+                  <span>{session?.profile?.company_name || "신농허브 거래처"}</span>
+                </div>
+                <div className="accountStatusRow">
+                  <span>계정 상태</span>
+                  <b>{isAdmin ? "관리자 계정" : session?.profile?.status === "approved" ? "승인 완료" : session?.profile?.status === "rejected" ? "승인 거절" : "승인 대기"}</b>
+                </div>
+                <div className="accountMenuLinks">
+                  <span>내 정보</span>
+                  <span>주문내역</span>
+                </div>
+                <button type="button" className="accountLogout" onClick={logout}>로그아웃</button>
+              </div>
+            )}
+          </div>
         ) : (
           <Link href="/login">로그인</Link>
         )}

@@ -54,10 +54,19 @@ export default function MobileNav({ session, loaded, onLogout }) {
 
             <a className="mobileMenuRow" href="http://pf.kakao.com/_axdbrX" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>고객센터</a>
             {loaded && session ? (
-              <>
-                <div className="mobileMenuRow mobileSignedUser">{username}님</div>
-                <button type="button" className="mobileMenuRow" onClick={logout}>로그아웃</button>
-              </>
+              <div className="mobileAccountArea">
+                <div className="mobileAccountIdentity">
+                  <b>{username}님</b>
+                  <span>{session?.profile?.company_name || "신농허브 거래처"} · {isAdmin ? "관리자 계정" : session?.profile?.status === "approved" ? "승인 완료" : session?.profile?.status === "rejected" ? "승인 거절" : "승인 대기"}</span>
+                </div>
+                <div className="mobileAccountLinks">
+                  <span>내 정보</span>
+                  <span>주문내역</span>
+                </div>
+                <div className="mobileLogoutRow">
+                  <button type="button" onClick={logout}>로그아웃</button>
+                </div>
+              </div>
             ) : (
               <Link className="mobileMenuRow" href="/login" onClick={closeMenu}>로그인</Link>
             )}

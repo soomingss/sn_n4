@@ -236,3 +236,19 @@ footer{min-height:95px;border-top:1px solid #ddd;padding:20px 6%;display:grid;gr
 .signupForm .loginSubmit{margin-top:24px}
 .signupSuccess{font-size:13px;color:#315f4e;background:#f0f7f2;border:1px solid #d5e7da;padding:12px 14px;margin-top:20px}
 @media(max-width:620px){.signupSection{padding:45px 20px 60px}.signupBox>h1{font-size:29px}.signupGrid{grid-template-columns:1fr}.signupFull{grid-column:auto}}
+
+/* Account dropdown */
+.accountDropdown{position:relative}
+.accountDropdownToggle{display:flex!important;align-items:center;gap:5px!important;border:0!important;background:transparent!important;color:#18372f!important;padding:10px 0!important;cursor:pointer}
+.accountChevron{font-size:16px;color:#7a8982;line-height:1;transition:transform .18s ease}.accountChevron.isOpen{transform:rotate(180deg)}
+.accountDropdownMenu{position:absolute;right:0;top:44px;width:280px;background:#fff;border:1px solid #dde5df;box-shadow:0 12px 30px rgba(24,55,47,.12);z-index:80;padding:20px;border-radius:5px}
+.accountIdentity{padding-bottom:15px;border-bottom:1px solid #e5eae7}.accountIdentity b,.accountIdentity span{display:block}.accountIdentity b{font-size:15px;color:#18372f}.accountIdentity span{font-size:12px;color:#6f7b76;margin-top:5px}
+.accountStatusRow{display:flex;align-items:center;justify-content:space-between;padding:15px 0;border-bottom:1px solid #e5eae7;font-size:12px}.accountStatusRow span{color:#78867f}.accountStatusRow b{color:#315f4e}
+.accountMenuLinks{padding:10px 0;border-bottom:1px solid #e5eae7}.accountMenuLinks span{display:block;padding:9px 2px;color:#18372f;font-size:13px}
+.headerActions .accountLogout{display:block;width:auto;margin:14px 0 0 auto;padding:7px 0!important;border:0!important;background:transparent!important;color:#315f4e!important;font-size:12px;font-weight:700;cursor:pointer}
+@media(max-width:950px){
+  .mobileAccountArea{margin-top:12px;padding:17px 4px 0;border-top:1px solid #dfe5e1}
+  .mobileAccountIdentity b,.mobileAccountIdentity span{display:block}.mobileAccountIdentity b{font-size:14px;color:#18372f}.mobileAccountIdentity span{margin-top:5px;font-size:12px;color:#718078}
+  .mobileAccountLinks{display:flex;gap:22px;padding:18px 0 14px}.mobileAccountLinks span{font-size:13px;color:#18372f}
+  .mobileLogoutRow{display:flex;justify-content:flex-end;border-top:1px solid #edf0ee;padding-top:13px}.mobileLogoutRow button{border:0;background:transparent;color:#315f4e;font-size:12px;font-weight:700;padding:5px 0;cursor:pointer}
+}
