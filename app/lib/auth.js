@@ -14,7 +14,8 @@ export async function supabaseAdminFetch(path, options = {}) {
   const { url, key } = config();
   const headers = new Headers(options.headers || {});
   headers.set("apikey", key);
-  headers.set("Authorization", `Bearer ${key}`);
+  if (key.startsWith("eyJ")) headers.set("Authorization", `Bearer ${key}`);
+  else headers.delete("Authorization");
   if (options.body && !headers.has("Content-Type")) headers.set("Content-Type", "application/json");
   return fetch(`${url}${path}`, { ...options, headers, cache: "no-store" });
 }

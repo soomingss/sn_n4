@@ -20,6 +20,7 @@ export default function MobileNav({ session, loaded, onLogout }) {
   };
 
   const isAdmin = session?.profile?.role === "admin";
+  const username = session?.profile?.username || "회원";
 
   return (
     <div className="mobileNavWrap">
@@ -53,7 +54,10 @@ export default function MobileNav({ session, loaded, onLogout }) {
 
             <a className="mobileMenuRow" href="http://pf.kakao.com/_axdbrX" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>고객센터</a>
             {loaded && session ? (
-              <button type="button" className="mobileMenuRow" onClick={logout}>로그아웃</button>
+              <>
+                <div className="mobileMenuRow mobileSignedUser">{username}님</div>
+                <button type="button" className="mobileMenuRow" onClick={logout}>로그아웃</button>
+              </>
             ) : (
               <Link className="mobileMenuRow" href="/login" onClick={closeMenu}>로그인</Link>
             )}

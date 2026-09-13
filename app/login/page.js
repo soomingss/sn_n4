@@ -19,6 +19,7 @@ export default function LoginPage() {
       if (!res.ok) throw new Error(data?.message || "로그인에 실패했습니다.");
       const next = typeof window !== "undefined" ? new URLSearchParams(window.location.search).get("next") : null;
       const safeNext = next && next.startsWith("/") && !next.startsWith("//") ? next : "/";
+      window.dispatchEvent(new Event("shinnong-auth-changed"));
       router.push(safeNext);
       router.refresh();
     } catch (error) {
@@ -40,7 +41,7 @@ export default function LoginPage() {
           {state.message && <div className="loginError">{state.message}</div>}
           <button className="loginSubmit" type="submit" disabled={state.loading}>{state.loading ? "로그인 중..." : "로그인"}</button>
         </form>
-        <div className="loginApply"><span>아직 거래처 회원이 아니신가요?</span><Link href="/inquiry">거래처 신청하기</Link></div>
+        <div className="loginApply"><span>아직 거래처 회원이 아니신가요?</span><Link href="/signup">거래처 신청하기</Link></div>
       </div>
     </section>
   </main>;

@@ -222,3 +222,17 @@ footer{min-height:95px;border-top:1px solid #ddd;padding:20px 6%;display:grid;gr
 .kakaoMapWrap{max-width:none;width:100%}
 @media(max-width:950px){.adminCards{grid-template-columns:1fr}.adminCard{min-height:210px}.adminToolbar{align-items:stretch;flex-direction:column}.adminToolbar>input{width:100%}.adminTableWrap{display:none}.adminMobileCards{display:grid;gap:12px}.adminMobileCards article{border:1px solid var(--line);padding:18px}.adminMobileCards article>div:first-child{display:flex;justify-content:space-between;gap:10px;align-items:center}.adminMobileCards p{font-size:13px;color:var(--muted);margin:8px 0}.adminMobileCards .adminActions{margin-top:15px}.emptyMobile{color:var(--muted);text-align:center;padding:30px}.adminSummary{grid-template-columns:1fr 1fr 1fr}.loginApply{gap:20px}.buttons .heroButton{padding:12px 23px}}
 @media(max-width:620px){.loginSection{padding:45px 20px 60px}.loginBox>h1{font-size:29px}.loginUtility{align-items:flex-start;gap:14px;flex-direction:column}.loginApply{flex-direction:column}.adminSection,.adminManage{padding:44px 20px 60px}.adminSummary{grid-template-columns:1fr}.adminTabs{width:100%;display:grid;grid-template-columns:repeat(3,1fr)}.adminTabs button{padding:10px 6px}.approvalNotice h1{font-size:26px}}
+
+/* Signup */
+.mobileSignedUser{color:#315f4e;font-weight:700;cursor:default}
+.signupSection{padding:62px 20px 82px;max-width:920px}
+.signupBox{max-width:720px;margin:0 auto;border-top:2px solid #315f4e;padding:34px 0 0}
+.signupBox>h1{font-size:34px;margin:12px 0 12px}
+.signupGrid{display:grid;grid-template-columns:1fr 1fr;gap:18px 20px}
+.signupForm label>span{display:block;font-size:13px;font-weight:700;margin-bottom:9px}
+.signupForm input{width:100%;border:1px solid #d8e0db;border-radius:4px;padding:14px;font:inherit;font-size:14px;outline:none}
+.signupForm input:focus{border-color:#5b8a70;box-shadow:0 0 0 3px rgba(59,119,91,.08)}
+.signupFull{grid-column:1/-1}
+.signupForm .loginSubmit{margin-top:24px}
+.signupSuccess{font-size:13px;color:#315f4e;background:#f0f7f2;border:1px solid #d5e7da;padding:12px 14px;margin-top:20px}
+@media(max-width:620px){.signupSection{padding:45px 20px 60px}.signupBox>h1{font-size:29px}.signupGrid{grid-template-columns:1fr}.signupFull{grid-column:auto}}

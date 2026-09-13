@@ -1,33 +1,48 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import MobileNav from "./MobileNav";
 
 export default function Header() {
   const [session, setSession] = useState(null);
   const [loaded, setLoaded] = useState(false);
   const router = useRouter();
+  const pathname = usePathname();
+
+  const refreshSession = useCallback(async () => {
+    try {
+      const response = await fetch("/api/auth/session", { cache: "no-store" });
+      const data = await response.json();
+      setSession(data?.session || null);
+    } catch {
+      setSession(null);
+    } finally {
+      setLoaded(true);
+    }
+  }, []);
 
   useEffect(() => {
-    let active = true;
-    fetch("/api/auth/session", { cache: "no-store" })
-      .then((r) => r.json())
-      .then((data) => { if (active) setSession(data?.session || null); })
-      .catch(() => {})
-      .finally(() => { if (active) setLoaded(true); });
-    return () => { active = false; };
-  }, []);
+    refreshSession();
+  }, [pathname, refreshSession]);
+
+  useEffect(() => {
+    const handleAuthChanged = () => refreshSession();
+    window.addEventListener("shinnong-auth-changed", handleAuthChanged);
+    return () => window.removeEventListener("shinnong-auth-changed", handleAuthChanged);
+  }, [refreshSession]);
 
   const logout = async () => {
     await fetch("/api/auth/logout", { method: "POST" });
     setSession(null);
+    window.dispatchEvent(new Event("shinnong-auth-changed"));
     router.push("/");
     router.refresh();
   };
 
   const isAdmin = session?.profile?.role === "admin";
+  const username = session?.profile?.username || "회원";
 
   return (
     <header className="header">
@@ -46,7 +61,7 @@ export default function Header() {
       <div className="headerActions">
         {loaded && session ? (
           <>
-            <span className="signedUser">{session.profile?.username || "회원"}</span>
+            <span className="signedUser" title={`${username}님`}>{username}님</span>
             <button type="button" className="headerLogout" onClick={logout}>로그아웃</button>
           </>
         ) : (
