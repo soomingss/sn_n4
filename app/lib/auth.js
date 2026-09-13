@@ -50,7 +50,7 @@ function readSessionToken(token) {
 
 export async function getProfileByUserId(id) {
   if (!id) return null;
-  const response = await supabaseAdminFetch(`/rest/v1/profiles?id=eq.${encodeURIComponent(id)}&select=id,username,company_name,contact_name,phone,email,status,role,created_at&limit=1`);
+  const response = await supabaseAdminFetch(`/rest/v1/profiles?id=eq.${encodeURIComponent(id)}&select=id,username,company_name,contact_name,phone,email,status,role,price_grade,created_at&limit=1`);
   if (!response.ok) return null;
   const rows = await response.json();
   return rows?.[0] || null;
