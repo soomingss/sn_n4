@@ -15,6 +15,15 @@ button{font:inherit;cursor:pointer}
 .headerActions button,.headerActions .partnerApply,.buttons .primary{background:#315f4e;color:#fff}
 .smallIcon{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8}
 
+.partnerDropdown{position:relative}
+.partnerDropdownToggle{min-width:108px}
+.partnerDropdownMenu{position:absolute;right:0;top:calc(100% + 9px);width:178px;background:#fff;border:1px solid #dfe5e1;box-shadow:0 10px 24px rgba(24,55,47,.10);opacity:0;visibility:hidden;transform:translateY(-4px);transition:opacity .15s ease,transform .15s ease,visibility .15s ease;z-index:60}
+.partnerDropdownMenu:before{content:"";position:absolute;left:0;right:0;top:-10px;height:10px}
+.partnerDropdownMenu a{display:block;padding:13px 15px;font-size:13px;color:#314a41;background:#fff}
+.partnerDropdownMenu a+a{border-top:1px solid #edf0ee}
+.partnerDropdownMenu a:hover{background:#f4f7f4}
+.partnerDropdown:hover .partnerDropdownMenu,.partnerDropdown:focus-within .partnerDropdownMenu{opacity:1;visibility:visible;transform:translateY(0)}
+
 .mainHero{height:505px;display:grid;grid-template-columns:42.5% 57.5%;background:var(--cream);overflow:hidden}
 .mainCopy{padding:64px 7% 28px 22%}
 .eyebrow{font-size:11px;letter-spacing:4px;line-height:1.8;color:#66776f;margin:0}
@@ -176,3 +185,5 @@ footer{min-height:95px;border-top:1px solid #ddd;padding:20px 6%;display:grid;gr
   .formFull{grid-column:auto}
   .inquirySubmit{width:100%}
 }
+
+.inquiryCompanyHero{border-bottom:1px solid #e2e8e3}

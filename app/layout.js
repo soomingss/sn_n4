@@ -37,7 +37,13 @@ function Header() {
       <div className="headerActions">
         <SearchIcon />
         <span>로그인</span>
-        <a className="partnerApply" href="http://pf.kakao.com/_axdbrX" target="_blank" rel="noopener noreferrer">거래처 신청</a>
+        <div className="partnerDropdown">
+          <button type="button" className="partnerApply partnerDropdownToggle" aria-haspopup="true">거래처 신청</button>
+          <div className="partnerDropdownMenu">
+            <Link href="/inquiry">홈페이지 문의하기</Link>
+            <a href="http://pf.kakao.com/_axdbrX" target="_blank" rel="noopener noreferrer">카카오톡 문의하기</a>
+          </div>
+        </div>
       </div>
 
       <MobileNav />

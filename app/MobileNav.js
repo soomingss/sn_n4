@@ -59,7 +59,7 @@ export default function MobileNav() {
               aria-expanded={inquiryOpen}
               onClick={() => setInquiryOpen((value) => !value)}
             >
-              <span>거래처 문의</span>
+              <span>거래처 신청</span>
               <span className={`mobileChevron ${inquiryOpen ? "isOpen" : ""}`}>⌄</span>
             </button>
 
@@ -72,7 +72,6 @@ export default function MobileNav() {
 
             <a className="mobileMenuRow" href="http://pf.kakao.com/_axdbrX" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>고객센터</a>
             <span className="mobileMenuRow">로그인</span>
-            <a className="mobileMenuRow mobilePartnerApply" href="http://pf.kakao.com/_axdbrX" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>거래처 신청</a>
           </div>
         </div>
       )}

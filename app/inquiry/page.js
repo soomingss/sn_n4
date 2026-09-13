@@ -44,11 +44,11 @@ export default function InquiryPage() {
 
   return (
     <main>
-      <section className="inquiryHero">
-        <div className="contentWidth inquiryHeroInner">
-          <p className="eyebrow">SHINNONG HERB</p>
+      <section className="companyHero inquiryCompanyHero">
+        <div className="companyHeroCopy">
+          <p>SHINNONG HERB</p>
           <h1>홈페이지 문의하기</h1>
-          <p>제품 및 납품 관련 문의를 남겨주시면 확인 후 연락드리겠습니다.</p>
+          <span>HOME &gt; 홈페이지 문의하기</span>
         </div>
       </section>
 
@@ -83,8 +83,8 @@ export default function InquiryPage() {
               <span>문의 유형 <b>*</b></span>
               <select name="inquiry_type" value={form.inquiry_type} onChange={update} required>
                 <option>제품 문의</option>
+                <option>가격 문의</option>
                 <option>납품 문의</option>
-                <option>거래처 문의</option>
                 <option>기타 문의</option>
               </select>
             </label>
