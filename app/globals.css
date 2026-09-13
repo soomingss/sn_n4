@@ -187,3 +187,18 @@ footer{min-height:95px;border-top:1px solid #ddd;padding:20px 6%;display:grid;gr
 }
 
 .inquiryCompanyHero{border-bottom:1px solid #e2e8e3}
+
+/* Order & delivery */
+.orderDelivery{padding:58px 20px 76px}
+.orderIntro{margin-bottom:38px}.orderIntro .greenLine{margin-bottom:27px}.orderIntro h1{font-size:34px;letter-spacing:-1.2px;margin:0 0 15px}.orderIntro p{font-size:14px;color:var(--muted);margin:0;line-height:1.8}
+.orderSteps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-bottom:52px}
+.orderStep{position:relative;min-height:180px;border:1px solid var(--line);padding:20px 22px;background:#fff}
+.stepTop{display:flex;justify-content:space-between;align-items:flex-start}.stepTop>b{font-size:12px;color:var(--green2)}
+.orderIcon{width:42px;height:42px;fill:none;stroke:var(--green2);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.orderStep h2{font-size:20px;margin:5px 0 14px}.orderStep p{font-size:13px;line-height:1.7;color:var(--muted);margin:0}
+.stepArrow{position:absolute;right:-16px;top:72px;color:#91a69a;font-size:21px;z-index:2}
+.deliveryInfo>h2{font-size:28px;margin:0 0 12px}.deliveryInfo>p{font-size:14px;color:var(--muted);margin:0 0 25px}
+.deliveryGrid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.deliveryGrid article{background:var(--sage);border:1px solid var(--line);padding:26px 28px;min-height:145px}.deliveryGrid h3{font-size:20px;margin:0 0 12px}.deliveryGrid b{font-size:15px;color:var(--green2)}.deliveryGrid p{font-size:13px;color:var(--muted);margin:18px 0 0}
+.orderNotice{margin-top:42px;background:#faf8f1;border:1px solid #e5dfce;padding:22px 26px}.orderNotice h2{font-size:16px;margin:0 0 16px}.orderNotice p{font-size:13px;line-height:1.75;color:var(--muted);margin:7px 0}
+@media(max-width:950px){.orderSteps{grid-template-columns:1fr 1fr}.stepArrow{display:none}.orderDelivery{padding-top:44px}}
+@media(max-width:620px){.orderIntro h1{font-size:28px;line-height:1.4}.orderSteps,.deliveryGrid{grid-template-columns:1fr}.orderStep{min-height:160px}.orderNotice{padding:20px}.orderNotice p{padding-left:0}.orderDeliveryHero .companyHeroCopy h1{font-size:36px}}

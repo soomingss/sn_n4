@@ -50,8 +50,7 @@ export default function MobileNav() {
             )}
 
             <span className="mobileMenuRow">제품안내</span>
-            <span className="mobileMenuRow">품질관리</span>
-            <span className="mobileMenuRow">B2B 납품안내</span>
+            <Link className="mobileMenuRow" href="/order-delivery" onClick={closeMenu}>주문·배송 안내</Link>
 
             <button
               type="button"

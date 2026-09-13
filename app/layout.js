@@ -29,13 +29,11 @@ function Header() {
       <nav className="mainNav">
         <Link href="/company">회사소개</Link>
         <span>제품안내</span>
-        <span>품질관리</span>
-        <span>B2B 납품안내</span>
+        <Link href="/order-delivery">주문·배송 안내</Link>
         <a href="http://pf.kakao.com/_axdbrX" target="_blank" rel="noopener noreferrer">고객센터</a>
       </nav>
 
       <div className="headerActions">
-        <SearchIcon />
         <span>로그인</span>
         <div className="partnerDropdown">
           <button type="button" className="partnerApply partnerDropdownToggle" aria-haspopup="true">거래처 신청</button>
