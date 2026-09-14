@@ -28,7 +28,10 @@ export async function POST(request) {
 
   const productIds = [...new Set(normalized.map((item) => item.product_id))];
   const idFilter = productIds.join(",");
-  const productsRes = await supabaseAdminFetch(`/rest/v1/products?id=in.(${idFilter})&is_active=eq.true&select=id,name,weight,origin,supplier`);
+  let productsRes = await supabaseAdminFetch(`/rest/v1/products?id=in.(${idFilter})&is_active=eq.true&select=id,name,weight,origin,supplier,tax_type`);
+  if (!productsRes.ok) {
+    productsRes = await supabaseAdminFetch(`/rest/v1/products?id=in.(${idFilter})&is_active=eq.true&select=id,name,weight,origin,supplier`);
+  }
   if (!productsRes.ok) return NextResponse.json({ error: "상품 정보를 확인하지 못했습니다." }, { status: 500 });
   const products = await productsRes.json();
   const productMap = new Map(products.map((p) => [Number(p.id), p]));
@@ -57,6 +60,7 @@ export async function POST(request) {
       unit_price: unitPrice,
       quantity: item.quantity,
       subtotal,
+      tax_type: product.tax_type || (product.origin === "국산" ? "exempt" : "taxable"),
     });
   }
 
@@ -78,11 +82,19 @@ export async function POST(request) {
   const created = (await orderRes.json())?.[0];
   if (!created?.id) return NextResponse.json({ error: "주문번호를 확인하지 못했습니다." }, { status: 500 });
 
-  const itemsRes = await supabaseAdminFetch(`/rest/v1/order_items`, {
+  let itemsRes = await supabaseAdminFetch(`/rest/v1/order_items`, {
     method: "POST",
     headers: { Prefer: "return=minimal" },
     body: JSON.stringify(orderItems.map((item) => ({ ...item, order_id: created.id }))),
   });
+  if (!itemsRes.ok) {
+    const legacyItems = orderItems.map(({ tax_type, ...item }) => ({ ...item, order_id: created.id }));
+    itemsRes = await supabaseAdminFetch(`/rest/v1/order_items`, {
+      method: "POST",
+      headers: { Prefer: "return=minimal" },
+      body: JSON.stringify(legacyItems),
+    });
+  }
   if (!itemsRes.ok) {
     await supabaseAdminFetch(`/rest/v1/orders?id=eq.${created.id}`, { method: "DELETE" });
     return NextResponse.json({ error: "주문 품목을 저장하지 못했습니다." }, { status: 500 });
