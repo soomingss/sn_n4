@@ -36,7 +36,7 @@ export default function OrderDeliveryPage(){
         <h2>배송 안내</h2>
         <p>지역에 따라 직접 배송 또는 택배로 발송합니다.</p>
         <div className="deliveryGrid">
-          <article><h3>직접 배송</h3><b>서울 · 경기 · 인천</b><p>서울, 경기, 인천 지역은 신농허브가 직접 배송합니다.</p></article>
+          <article><h3>직접 배송</h3><b>서울 · 경기 · 인천 (일부지역 제외)</b><p>서울, 경기, 인천 지역은 신농허브가 직접 배송합니다.</p></article>
           <article><h3>택배 배송</h3><b>그 외 지역</b><p>직접 배송 지역 외에는 택배를 통해 안전하게 발송합니다.</p></article>
         </div>
       </section>
