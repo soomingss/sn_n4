@@ -1,4 +1,11 @@
 import { redirect } from "next/navigation";
 import Link from "next/link";
-import { getCurrentSession } from "../../lib/auth";
-export default async function OrdersAdmin(){const s=await getCurrentSession();if(!s)redirect("/login?next=/admin/orders");if(s.profile?.role!=="admin")redirect("/");return <main><section className="companyHero adminHero"><div className="companyHeroCopy"><p>SHINNONG HERB</p><h1>주문관리</h1><span>ADMIN &gt; 주문관리</span></div></section><section className="adminPlaceholder contentWidth"><h1>주문관리</h1><p>주문 데이터 구조를 연결한 뒤 이 화면에서 주문 및 배송 상태를 관리할 수 있도록 구성합니다.</p><Link href="/admin">관리자 업무로 돌아가기</Link></section></main>}
+import { getCurrentSession, supabaseAdminFetch } from "../../lib/auth";
+import OrdersClient from "./OrdersClient";
+
+export default async function OrdersAdmin(){
+  const s=await getCurrentSession();if(!s)redirect("/login?next=/admin/orders");if(s.profile?.role!=="admin")redirect("/");
+  const res=await supabaseAdminFetch('/rest/v1/orders?select=id,created_at,user_id,company_name,status,delivery_request,total_amount&order=created_at.desc');
+  const orders=res.ok?await res.json():[];
+  return <main><section className="companyHero adminHero"><div className="companyHeroCopy"><p>SHINNONG HERB</p><h1>주문관리</h1><span>ADMIN &gt; 주문관리</span></div></section><section className="adminManage contentWidth"><div className="adminManageIntro"><h1>주문관리</h1><p>접수된 주문과 배송 진행 상태를 확인하고 관리합니다. 배송완료 처리 시 거래장부에 매출이 반영됩니다.</p></div><div className="adminOrderTop"><span>총 주문</span><b>{orders.length}건</b><Link href="/admin">관리자 업무로 돌아가기</Link></div><OrdersClient initialOrders={orders}/></section></main>
+}

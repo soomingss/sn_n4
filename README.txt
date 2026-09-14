@@ -53,3 +53,36 @@
 - Supabase 권한 오류가 발생하는 경우 SQL Editor에서 다음 권한을 확인하세요:
   GRANT SELECT, UPDATE ON public.profiles TO service_role;
 - 기존 GitHub 저장소에 압축을 풀어 파일을 덮어쓴 뒤 Commit하면 Vercel이 자동 배포합니다.
+
+[v20 업데이트 - v20 기준 추가 반영]
+- v20의 기존 디자인/페이지 구성 유지
+- 제품안내 주문하기를 Supabase orders / order_items 저장 흐름에 연결
+  · 로그인 + 승인 거래처만 주문 가능
+  · profiles.price_grade 기준 product_prices 가격을 서버에서 재검증
+  · 주문금액은 서버에서 계산 후 orders.total_amount 저장
+- 관리자 > 주문관리 실제 주문 목록 연결
+  · 주문접수(new) / 준비중(preparing) / 배송중(shipping) / 배송완료(delivered) / 취소(cancelled)
+  · 배송완료 변경 시 Supabase에 이미 설치한 배송완료 장부 트리거가 실행되는 구조
+- 마이페이지 신규 추가 (/mypage)
+  · 최근 주문내역 / 배송상태
+  · 최근 결제내역
+  · 세금계산서·계산서 상태
+  · 미수금은 첫 화면에서 크게 노출하지 않음
+  · 카드결제 버튼은 바로 보이게 배치
+- 카드결제 화면 신규 추가 (/payment)
+  · customer_balances의 현재 거래잔액 표시
+  · 실제 PG 미연동 상태이므로 결제 버튼은 비활성/안내만 제공
+- 로그인 계정 드롭다운 및 모바일 메뉴에 마이페이지 / 카드결제 연결
+
+[Supabase에 이미 있어야 하는 항목]
+- profiles, products, product_prices, orders, order_items
+- payments, ledger_entries, tax_documents
+- customer_balances View
+- create_ledger_on_delivery() + orders status update trigger
+- create_ledger_on_payment() + payments trigger
+
+[주의]
+- 카드 PG는 아직 연결하지 않았습니다.
+- 전자세금계산서 API도 아직 연결하지 않았습니다.
+- 실제 상품/가격 데이터 업로드는 별도 진행 항목입니다.
+- 서버 환경변수 SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY가 필요합니다.

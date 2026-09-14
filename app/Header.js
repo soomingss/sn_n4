@@ -84,8 +84,8 @@ export default function Header() {
                   <b>{isAdmin ? "관리자 계정" : session?.profile?.status === "approved" ? "승인 완료" : session?.profile?.status === "rejected" ? "승인 거절" : "승인 대기"}</b>
                 </div>
                 <div className="accountMenuLinks">
-                  <span>내 정보</span>
-                  <span>주문내역</span>
+                  <Link href="/mypage" onClick={() => setAccountOpen(false)}>마이페이지</Link>
+                  <Link href="/payment" onClick={() => setAccountOpen(false)}>카드결제</Link>
                 </div>
                 <button type="button" className="accountLogout" onClick={logout}>로그아웃</button>
               </div>

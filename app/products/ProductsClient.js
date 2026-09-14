@@ -21,7 +21,17 @@ export default function ProductsClient({ products = [], companyName = "" }) {
   const addToCart=p=>{const qty=Math.max(1,Number(quantities[p.id]||1));setCart(prev=>({...prev,[p.id]:{...p,quantity:(prev[p.id]?.quantity||0)+qty}}));setMessage("")};
   const changeCartQty=(id,delta)=>setCart(prev=>{const item=prev[id];if(!item)return prev;const next=item.quantity+delta;if(next<=0){const c={...prev};delete c[id];return c}return{...prev,[id]:{...item,quantity:next}}});
   const removeCart=id=>setCart(prev=>{const c={...prev};delete c[id];return c});
-  const prepareOrder=()=>{if(!cartItems.length)return;setMessage("주문 접수 기능은 주문 데이터 연결 후 활성화됩니다.")};
+  const prepareOrder=async()=>{
+    if(!cartItems.length)return;
+    setMessage("주문을 접수하고 있습니다.");
+    try{
+      const response=await fetch("/api/orders",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({items:cartItems.map(i=>({product_id:i.id,quantity:i.quantity})),delivery_request:deliveryRequest})});
+      const data=await response.json();
+      if(!response.ok)throw new Error(data?.error||"주문 접수에 실패했습니다.");
+      setCart({});setQuantities({});
+      setMessage(`주문이 접수되었습니다. 주문번호 #${data.order_id}`);
+    }catch(error){setMessage(error.message||"주문 접수에 실패했습니다.")}
+  };
 
   return <section className="productSection contentWidth">
     <div className="productIntro"><h1>한약재 제품안내</h1><p>원하시는 품목을 검색하고 거래처에 적용된 단가로 바로 주문할 수 있습니다. <strong>(약재의 단가는 수급현황에 따라 달라질 수 있습니다)</strong></p></div>

@@ -60,8 +60,8 @@ export default function MobileNav({ session, loaded, onLogout }) {
                   <span>{session?.profile?.company_name || "신농허브 거래처"} · {isAdmin ? "관리자 계정" : session?.profile?.status === "approved" ? "승인 완료" : session?.profile?.status === "rejected" ? "승인 거절" : "승인 대기"}</span>
                 </div>
                 <div className="mobileAccountLinks">
-                  <span>내 정보</span>
-                  <span>주문내역</span>
+                  <Link href="/mypage" onClick={closeMenu}>마이페이지</Link>
+                  <Link href="/payment" onClick={closeMenu}>카드결제</Link>
                 </div>
                 <div className="mobileLogoutRow">
                   <button type="button" onClick={logout}>로그아웃</button>
