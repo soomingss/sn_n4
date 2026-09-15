@@ -323,3 +323,10 @@ footer{min-height:95px;border-top:1px solid #ddd;padding:20px 6%;display:grid;gr
 .productActionButtons{display:block}.productActionButtons button{width:94px;background:#315f4e;color:#fff}
 .orderCartActions{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px}.orderCartActions .orderSubmit,.orderCartActions .cartSaveButton{width:100%;height:44px;margin:0}.cartSaveButton{border:1px solid #315f4e;background:#fff;color:#315f4e;font-weight:700;cursor:pointer}.cartSaveButton:disabled{opacity:.5;cursor:not-allowed}
 @media(max-width:950px){.productOrderControls{grid-template-columns:minmax(0,1fr) 94px}.productActionButtons button{width:94px}.orderCartActions{grid-template-columns:1fr 1fr}}
+
+
+/* v37.5: restore visible cart symbol + close preview on outside click */
+.headerCartDropdown{position:relative!important;display:inline-flex!important;align-items:center!important}
+.headerCartLink{display:inline-flex!important;visibility:visible!important;opacity:1!important;align-items:center!important;justify-content:center!important;width:38px!important;height:38px!important;min-width:38px!important;padding:0!important;background:transparent!important;border:0!important;color:#315f4e!important;cursor:pointer!important}
+.headerCartLink>svg.headerCartIcon{display:block!important;visibility:visible!important;opacity:1!important;width:24px!important;height:24px!important;min-width:24px!important;overflow:visible!important;color:#315f4e!important}
+@media(max-width:950px){.headerCartDropdown{display:none!important}}

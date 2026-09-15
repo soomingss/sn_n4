@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import MobileNav from "./MobileNav";
@@ -11,6 +11,7 @@ export default function Header() {
   const [accountOpen, setAccountOpen] = useState(false);
   const [cartOpen, setCartOpen] = useState(false);
   const [cartPreview, setCartPreview] = useState([]);
+  const cartDropdownRef = useRef(null);
   const router = useRouter();
   const pathname = usePathname();
 
@@ -55,6 +56,17 @@ export default function Header() {
       window.removeEventListener("storage", handleCartChanged);
     };
   }, [pathname, refreshCartPreview]);
+
+  useEffect(() => {
+    if (!cartOpen) return;
+    const handleOutsideClick = (event) => {
+      if (cartDropdownRef.current && !cartDropdownRef.current.contains(event.target)) {
+        setCartOpen(false);
+      }
+    };
+    document.addEventListener("pointerdown", handleOutsideClick);
+    return () => document.removeEventListener("pointerdown", handleOutsideClick);
+  }, [cartOpen]);
 
   const logout = async () => {
     await fetch("/api/auth/logout", { method: "POST" });
@@ -118,12 +130,12 @@ export default function Header() {
           <Link href="/login">로그인</Link>
         )}
         {loaded && session && !isAdmin && session?.profile?.status === "approved" && (
-          <div className="headerCartDropdown">
+          <div className="headerCartDropdown" ref={cartDropdownRef}>
             <button type="button" className="headerCartLink" aria-label="장바구니" title="장바구니" aria-expanded={cartOpen} onClick={() => { refreshCartPreview(); setCartOpen((value) => !value); setAccountOpen(false); }}>
-              <svg className="headerCartIcon" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M3 4h2l2.1 10.1a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 2-1.6L20 8H6" />
-                <circle cx="10" cy="19" r="1.2" />
-                <circle cx="17" cy="19" r="1.2" />
+              <svg className="headerCartIcon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M3 4H5L7.2 14.2C7.4 15.1 8.2 15.8 9.2 15.8H17.1C18.1 15.8 18.9 15.1 19.1 14.2L20.4 8H6.1" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+                <circle cx="10" cy="19" r="1.25" fill="currentColor" />
+                <circle cx="17" cy="19" r="1.25" fill="currentColor" />
               </svg>
               {cartQty > 0 && <span className="headerCartBadge">{cartQty > 99 ? "99+" : cartQty}</span>}
             </button>
