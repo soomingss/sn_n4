@@ -10,7 +10,7 @@ export default async function OrdersAdmin(){
   let items=[];
   if(orders.length){
     const ids=orders.map(o=>o.id).join(',');
-    const itemRes=await supabaseAdminFetch(`/rest/v1/order_items?order_id=in.(${ids})&select=id,order_id,product_name,origin,weight,unit_price,quantity,subtotal&order=id.asc`);
+    const itemRes=await supabaseAdminFetch(`/rest/v1/order_items?order_id=in.(${ids})&select=id,order_id,product_name,origin,weight,unit_price,quantity,subtotal,packed_checked&order=id.asc`);
     if(itemRes.ok) items=await itemRes.json();
   }
   const itemsByOrder={}; for(const item of items){(itemsByOrder[item.order_id]??=[]).push(item)}
