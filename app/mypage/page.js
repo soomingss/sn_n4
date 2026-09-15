@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import { getCurrentSession, supabaseAdminFetch } from "../lib/auth";
-import ProfileEdit from "./ProfileEdit";
 
 const statusLabel = { new: "주문접수", preparing: "준비중", shipping: "배송중", delivered: "배송완료", cancelled: "취소" };
 const money = (v) => `${Number(v || 0).toLocaleString("ko-KR")}원`;
@@ -27,7 +26,7 @@ export default async function MyPage() {
     <section className="mypageSection contentWidth">
       <div className="mypageWelcome">
         <div><span>MY PAGE</span><h1>{session.profile?.company_name || "거래처"}</h1><p>{session.profile?.contact_name || session.profile?.username || "회원"}님, 주문과 거래내역을 확인하실 수 있습니다.</p></div>
-        <div><ProfileEdit profile={session.profile}/><Link className="mypagePayButton" href="/payment">카드결제</Link></div>
+        <div className="mypageTopActions"><Link className="adminLinkButton" href="/mypage/profile">회원정보 수정</Link><Link className="mypagePayButton" href="/payment">카드결제</Link></div>
       </div>
 
       <div className="mypageGrid">

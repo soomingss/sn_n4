@@ -79,6 +79,25 @@ export default function Header() {
 
   const isAdmin = session?.profile?.role === "admin";
   const username = session?.profile?.username || "회원";
+  const removeCartItem = (id) => {
+    try {
+      const saved = JSON.parse(localStorage.getItem("shinnong-cart") || "{}");
+      delete saved[id];
+      localStorage.setItem("shinnong-cart", JSON.stringify(saved));
+      refreshCartPreview();
+      window.dispatchEvent(new Event("shinnong-cart-changed"));
+    } catch {}
+  };
+
+  const clearCart = () => {
+    if (!window.confirm("장바구니의 모든 상품을 삭제할까요?")) return;
+    try {
+      localStorage.removeItem("shinnong-cart");
+      refreshCartPreview();
+      window.dispatchEvent(new Event("shinnong-cart-changed"));
+    } catch {}
+  };
+
   const cartQty = cartPreview.reduce((sum, item) => sum + Number(item.quantity || 0), 0);
 
   return (
@@ -144,11 +163,11 @@ export default function Header() {
                 <div className="headerCartMenuHead"><b>장바구니</b><span>{cartQty}개</span></div>
                 {cartPreview.length ? (
                   <div className="headerCartPreviewItems">
-                    {cartPreview.slice(0, 5).map((item) => <div className="headerCartPreviewItem" key={item.id}><div><b>{item.name || "상품명 확인 필요"}</b><span>{item.weight || ""}{item.origin ? ` · ${item.origin}` : ""}</span></div><em>{item.quantity}개</em></div>)}
+                    {cartPreview.slice(0, 5).map((item) => <div className="headerCartPreviewItem" key={item.id}><div><b>{item.name || "상품명 확인 필요"}</b><span>{item.weight || ""}{item.origin ? ` · ${item.origin}` : ""}</span></div><em>{item.quantity}개</em><button type="button" className="headerCartRemove" aria-label={`${item.name || "상품"} 삭제`} title="삭제" onClick={() => removeCartItem(item.id)}>×</button></div>)}
                     {cartPreview.length > 5 && <p className="headerCartMore">외 {cartPreview.length - 5}개 품목</p>}
                   </div>
                 ) : <div className="headerCartEmpty">담긴 상품이 없습니다.</div>}
-                <Link className="headerCartView" href="/products?cart=1" onClick={() => setCartOpen(false)}>장바구니 보기</Link>
+                <div className="headerCartMenuActions"><Link className="headerCartView" href="/products?cart=1" onClick={() => setCartOpen(false)}>장바구니 보기</Link>{cartPreview.length > 0 && <button type="button" className="headerCartClear" onClick={clearCart}>장바구니 전체 비우기</button>}</div>
               </div>
             )}
           </div>
