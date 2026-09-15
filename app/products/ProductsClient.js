@@ -5,19 +5,12 @@ import { useEffect, useMemo, useState } from "react";
 const CHOSUNG = ["전체","ㄱ","ㄴ","ㄷ","ㄹ","ㅁ","ㅂ","ㅅ","ㅇ","ㅈ","ㅊ","ㅋ","ㅌ","ㅍ","ㅎ"];
 const PAGE_SIZE = 6;
 const INITIALS = ["ㄱ","ㄲ","ㄴ","ㄷ","ㄸ","ㄹ","ㅁ","ㅂ","ㅃ","ㅅ","ㅆ","ㅇ","ㅈ","ㅉ","ㅊ","ㅋ","ㅌ","ㅍ","ㅎ"];
-const DEMO = [
-  ["인삼","insam","국내산"],["황기","hwanggi","국내산"],["당귀","danggwi","국내산"],["대추","daechu","국내산"],["구기자","gugija","국내산"],["백작약","baekjakyak","국내산"],
-  ["감초","gamcho","국내산"],["계피","gyepi","베트남산"],["천궁","cheongung","국내산"],["복령","bokryeong","국내산"],["백출","baekchul","국내산"],["숙지황","sukjihwang","국내산"],
-  ["생강","saenggang","국내산"],["산약","sanyak","국내산"],["연자육","yeonjayuk","국내산"],["홍화","honghwa","국내산"],["맥문동","maekmundong","국내산"],["오미자","omija","국내산"]
-].map((x,i)=>({id:`demo-${i+1}`,name:x[0],weight:"600g",origin:x[2],supplier:"",image_url:`/products-demo/${x[1]}.jpg`,price:null,demo:true}));
-
 function getInitial(text="") { const ch=text.trim().charAt(0); if(!ch)return""; const code=ch.charCodeAt(0); if(code<0xac00||code>0xd7a3)return ch.toUpperCase(); return INITIALS[Math.floor((code-0xac00)/588)]||""; }
 function money(value) { if(value===null||value===undefined||value==="")return "단가 문의"; return `${Number(value).toLocaleString("ko-KR")}원`; }
 
 export default function ProductsClient({ products = [], companyName = "", adminManual = false, partners = [], pricesByGrade = {} }) {
-  const displayProducts=products.length?products:DEMO;
   const [query,setQuery]=useState(""); const [initial,setInitial]=useState("전체"); const [page,setPage]=useState(1); const [quantities,setQuantities]=useState({}); const [cart,setCart]=useState({}); const [deliveryRequest,setDeliveryRequest]=useState("당일"); const [message,setMessage]=useState(""); const [mobileCartOpen,setMobileCartOpen]=useState(false); const [manualUserId,setManualUserId]=useState(partners[0]?.id||""); const [orderSource,setOrderSource]=useState("kakao");
-  const manualPartner=adminManual?partners.find(p=>p.id===manualUserId):null; const activeGrade=manualPartner?.price_grade; const activeProducts=adminManual?products.map(p=>({...p,price:pricesByGrade?.[String(activeGrade)]?.[String(p.id)]??null})):displayProducts;
+  const manualPartner=adminManual?partners.find(p=>p.id===manualUserId):null; const activeGrade=manualPartner?.price_grade; const activeProducts=adminManual?products.map(p=>({...p,price:pricesByGrade?.[String(activeGrade)]?.[String(p.id)]??null})):products;
   const filtered=useMemo(()=>activeProducts.filter(p=>{const q=query.trim().toLowerCase(); return (!q||`${p.name} ${p.weight||""} ${p.origin||""} ${p.supplier||""}`.toLowerCase().includes(q))&&(initial==="전체"||getInitial(p.name)===initial)}),[activeProducts,query,initial]);
   useEffect(()=>setPage(1),[query,initial]);
   useEffect(()=>{ if(adminManual)return; const id=new URLSearchParams(window.location.search).get("reorder"); if(!id)return; (async()=>{try{const r=await fetch(`/api/orders/reorder?id=${encodeURIComponent(id)}`);const d=await r.json();if(!r.ok)throw new Error(d.error||"이전 주문을 불러오지 못했습니다.");const next={};for(const old of d.items||[]){const cur=activeProducts.find(p=>String(p.id)===String(old.product_id));if(cur&&cur.stock_status!=="low")next[cur.id]={...cur,quantity:old.quantity};}setCart(next);setMessage((d.items||[]).length>Object.keys(next).length?"이전 주문을 담았습니다. 현재 품절된 품목은 제외되었습니다.":"이전 주문을 현재 단가로 다시 담았습니다.");}catch(e){setMessage(e.message)}})();},[]);
