@@ -21,7 +21,7 @@ export async function PATCH(request) {
   const grade = body.price_grade == null || body.price_grade === "" ? null : String(body.price_grade).trim();
   if (!id) return NextResponse.json({ message: "잘못된 요청입니다." }, { status: 400 });
   if (grade !== null && !["1","2","3","4","5"].includes(grade)) return NextResponse.json({ message: "가격등급은 1~5등급 중에서 선택해주세요." }, { status: 400 });
-  if (status && !["approved","rejected"].includes(status)) return NextResponse.json({ message: "잘못된 승인 상태입니다." }, { status: 400 });
+  if (status && !["approved","rejected","pending"].includes(status)) return NextResponse.json({ message: "잘못된 승인 상태입니다." }, { status: 400 });
   if (status === "approved" && !grade) return NextResponse.json({ message: "가격등급을 먼저 선택해주세요." }, { status: 400 });
   if (!status && !grade) return NextResponse.json({ message: "변경할 가격등급을 선택해주세요." }, { status: 400 });
   const payload = {};

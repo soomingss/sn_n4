@@ -61,6 +61,7 @@ export default function MobileNav({ session, loaded, onLogout }) {
                 </div>
                 <div className="mobileAccountLinks">
                   <Link href="/mypage" onClick={closeMenu}>마이페이지</Link>
+                  {!isAdmin && session?.profile?.status === "approved" && <Link href="/products?cart=1" onClick={closeMenu}>장바구니</Link>}
                   <Link href="/payment" onClick={closeMenu}>카드결제</Link>
                 </div>
                 <div className="mobileLogoutRow">

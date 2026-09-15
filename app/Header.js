@@ -94,6 +94,7 @@ export default function Header() {
         ) : (
           <Link href="/login">로그인</Link>
         )}
+        {loaded && session && !isAdmin && session?.profile?.status === "approved" && <Link className="headerCartLink" href="/products?cart=1">장바구니</Link>}
         <div className="partnerDropdown">
           <button type="button" className="partnerApply partnerDropdownToggle" aria-haspopup="true">거래처 신청</button>
           <div className="partnerDropdownMenu">
