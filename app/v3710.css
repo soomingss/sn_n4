@@ -1,0 +1,6 @@
+/* v37.10: 세금자료 다운로드 옵션 배치 */
+.taxDownloadGroup{display:inline-flex;align-items:center;gap:10px;height:42px}
+.taxDownloadGroup .taxIncludeProducts{display:inline-flex!important;align-items:center;gap:7px;min-width:0!important;width:auto!important;height:42px;margin:0;padding:0 2px;white-space:nowrap;font-size:12px;color:#40564d;cursor:pointer}
+.taxDownloadGroup .taxIncludeProducts span{display:inline!important;margin:0!important;font-size:12px!important;font-weight:700!important;color:#40564d!important}
+.taxDownloadGroup .taxIncludeProducts input{width:16px!important;height:16px!important;min-width:16px!important;margin:0!important;padding:0!important}
+@media(max-width:620px){.taxDownloadGroup{width:100%;height:auto;display:flex;align-items:center;gap:10px}.taxDownloadGroup .taxDownloadButton{width:auto;flex:0 0 auto}.taxDownloadGroup .taxIncludeProducts{width:auto!important;flex:0 0 auto}}

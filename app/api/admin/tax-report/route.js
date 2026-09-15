@@ -20,18 +20,30 @@ function esc(value) {
   return String(value ?? "").replace(/[&<>\"]/g, (ch) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[ch]));
 }
 
-function excelXml(month, summary, details, includeProducts = false) {
+function excelXml(month, summary, details, totals, includeProducts = false) {
   const cell = (v, type = "String", style = "") => `<Cell${style ? ` ss:StyleID="${style}"` : ""}><Data ss:Type="${type}">${esc(v)}</Data></Cell>`;
-  const row = (cells) => `<Row>${cells.join("")}</Row>`;
+  const row = (cells, style = "") => `<Row${style ? ` ss:StyleID="${style}"` : ""}>${cells.join("")}</Row>`;
+
+  if (includeProducts) {
+    const detailRows = details.map((r) => row([
+      cell(r.date), cell(r.order_id, "Number"), cell(r.company_name), cell(r.product_name), cell(r.origin),
+      cell(r.tax_type === "exempt" ? "면세" : "과세"), cell(r.quantity, "Number"), cell(r.unit_price, "Number"),
+      cell(r.supply_amount, "Number"), cell(r.vat_amount, "Number"), cell(r.subtotal, "Number")
+    ])).join("");
+    const totalSupply = Number(totals?.exempt_amount || 0) + Number(totals?.taxable_supply || 0);
+    const totalRow = row([
+      cell("전체 합계", "String", "Total"), cell(""), cell(""), cell(""), cell(""), cell(""), cell(""), cell(""),
+      cell(totalSupply, "Number", "Total"), cell(Number(totals?.vat_amount || 0), "Number", "Total"), cell(Number(totals?.grand_total || 0), "Number", "Total")
+    ]);
+    const sheet = `<Worksheet ss:Name="상세내역"><Table>${row([cell("거래일","String","Header"),cell("주문번호","String","Header"),cell("거래처명","String","Header"),cell("상품명","String","Header"),cell("원산지","String","Header"),cell("과세구분","String","Header"),cell("수량","String","Header"),cell("단가(VAT포함)","String","Header"),cell("공급가액","String","Header"),cell("부가세","String","Header"),cell("합계","String","Header")])}${detailRows}${totalRow}</Table></Worksheet>`;
+    return `<?xml version="1.0" encoding="UTF-8"?>\n<?mso-application progid="Excel.Sheet"?>\n<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"><Styles><Style ss:ID="Header"><Font ss:Bold="1"/><Interior ss:Color="#EEF4EF" ss:Pattern="Solid"/></Style><Style ss:ID="Total"><Font ss:Bold="1"/><Interior ss:Color="#F5F7F4" ss:Pattern="Solid"/></Style></Styles>${sheet}</Workbook>`;
+  }
+
   const summaryRows = summary.map((r) => row([
     cell(r.company_name), cell(r.exempt_amount, "Number"), cell(r.taxable_supply, "Number"), cell(r.vat_amount, "Number"), cell(r.taxable_total, "Number"), cell(r.grand_total, "Number")
   ])).join("");
-  const detailRows = details.map((r) => row([
-    cell(r.date), cell(r.order_id, "Number"), cell(r.company_name), cell(r.product_name), cell(r.origin), cell(r.tax_type === "exempt" ? "면세" : "과세"), cell(r.quantity, "Number"), cell(r.unit_price, "Number"), cell(r.supply_amount, "Number"), cell(r.vat_amount, "Number"), cell(r.subtotal, "Number")
-  ])).join("");
   const summarySheet = `<Worksheet ss:Name="월별 요약"><Table>${row([cell("거래처","String","Header"),cell("면세금액","String","Header"),cell("과세 공급가액","String","Header"),cell("부가세","String","Header"),cell("과세 포함금액","String","Header"),cell("총 거래금액","String","Header")])}${summaryRows}</Table></Worksheet>`;
-  const detailSheet = includeProducts ? `<Worksheet ss:Name="상세내역"><Table>${row([cell("거래일","String","Header"),cell("주문번호","String","Header"),cell("거래처명","String","Header"),cell("상품명","String","Header"),cell("원산지","String","Header"),cell("과세구분","String","Header"),cell("수량","String","Header"),cell("단가(VAT포함)","String","Header"),cell("공급가액","String","Header"),cell("부가세","String","Header"),cell("합계","String","Header")])}${detailRows}</Table></Worksheet>` : "";
-  return `<?xml version="1.0" encoding="UTF-8"?>\n<?mso-application progid="Excel.Sheet"?>\n<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"><Styles><Style ss:ID="Header"><Font ss:Bold="1"/><Interior ss:Color="#EEF4EF" ss:Pattern="Solid"/></Style></Styles>${summarySheet}${detailSheet}</Workbook>`;
+  return `<?xml version="1.0" encoding="UTF-8"?>\n<?mso-application progid="Excel.Sheet"?>\n<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"><Styles><Style ss:ID="Header"><Font ss:Bold="1"/><Interior ss:Color="#EEF4EF" ss:Pattern="Solid"/></Style></Styles>${summarySheet}</Workbook>`;
 }
 
 async function fetchJson(path) {
@@ -55,7 +67,6 @@ export async function GET(request) {
   const range = monthRange(month);
   if (!range) return NextResponse.json({ error: "조회 월 형식이 올바르지 않습니다." }, { status: 400 });
 
-  // v29: 세금자료의 월 귀속은 주문일이 아니라 배송완료일(delivered_at)을 기준으로 고정합니다.
   let ordersResult = await fetchJson(`/rest/v1/orders?status=eq.delivered&delivered_at=gte.${encodeURIComponent(range.start)}&delivered_at=lt.${encodeURIComponent(range.end)}&select=id,user_id,company_name,status,total_amount,created_at,delivered_at&order=delivered_at.asc`);
   if (!ordersResult.ok) return NextResponse.json({ error: "배송완료 주문자료를 불러오지 못했습니다." }, { status: 500 });
   let orders = ordersResult.data || [];
@@ -67,7 +78,7 @@ export async function GET(request) {
   if (!orders.length) {
     const payload = { month, profiles, summary: [], details: [], totals: { exempt_amount: 0, taxable_supply: 0, vat_amount: 0, taxable_total: 0, grand_total: 0 } };
     if (format === "xls") {
-      return new Response(excelXml(month, [], [], includeProducts), { headers: { "Content-Type": "application/vnd.ms-excel; charset=utf-8", "Content-Disposition": `attachment; filename*=UTF-8''${encodeURIComponent(`신농허브_${month}_세금계산서용.xls`)}` } });
+      return new Response(excelXml(month, [], [], payload.totals, includeProducts), { headers: { "Content-Type": "application/vnd.ms-excel; charset=utf-8", "Content-Disposition": `attachment; filename*=UTF-8''${encodeURIComponent(`신농허브_${month}_세금계산서용.xls`)}` } });
     }
     return NextResponse.json(payload);
   }
@@ -76,7 +87,6 @@ export async function GET(request) {
   const ids = orderIds.join(",");
   const orderMap = new Map(orders.map((o) => [Number(o.id), o]));
 
-  // v29 migration 이전 데이터 보완 확인용. 신규 주문은 orders.delivered_at을 기준으로 고정됩니다.
   const ledgerResult = await fetchJson(`/rest/v1/ledger_entries?entry_type=eq.order&order_id=in.(${ids})&select=order_id,occurred_at`);
   const deliveredAtMap = new Map();
   if (ledgerResult.ok) {
@@ -138,7 +148,7 @@ export async function GET(request) {
   const totals = summary.reduce((a, r) => ({ exempt_amount: a.exempt_amount + r.exempt_amount, taxable_supply: a.taxable_supply + r.taxable_supply, vat_amount: a.vat_amount + r.vat_amount, taxable_total: a.taxable_total + r.taxable_total, grand_total: a.grand_total + r.grand_total }), { exempt_amount: 0, taxable_supply: 0, vat_amount: 0, taxable_total: 0, grand_total: 0 });
 
   if (format === "xls") {
-    return new Response(excelXml(month, summary, details, includeProducts), { headers: { "Content-Type": "application/vnd.ms-excel; charset=utf-8", "Content-Disposition": `attachment; filename*=UTF-8''${encodeURIComponent(`신농허브_${month}_세금계산서용.xls`)}` } });
+    return new Response(excelXml(month, summary, details, totals, includeProducts), { headers: { "Content-Type": "application/vnd.ms-excel; charset=utf-8", "Content-Disposition": `attachment; filename*=UTF-8''${encodeURIComponent(`신농허브_${month}_세금계산서용.xls`)}` } });
   }
   return NextResponse.json({ month, profiles, summary, details, totals });
 }
