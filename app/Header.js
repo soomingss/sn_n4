@@ -163,7 +163,7 @@ export default function Header() {
                 <div className="headerCartMenuHead"><b>장바구니</b><span>{cartQty}개</span></div>
                 {cartPreview.length ? (
                   <div className="headerCartPreviewItems">
-                    {cartPreview.slice(0, 5).map((item) => <div className="headerCartPreviewItem" key={item.id}><div><b>{item.name || "상품명 확인 필요"}</b><span>{item.weight || ""}{item.origin ? ` · ${item.origin}` : ""}</span></div><em>{item.quantity}개</em><button type="button" className="headerCartRemove" aria-label={`${item.name || "상품"} 삭제`} title="삭제" onClick={() => removeCartItem(item.id)}>×</button></div>)}
+                    {cartPreview.slice(0, 5).map((item) => <div className="headerCartPreviewItem" key={item.id}><div><b>{item.name || "상품명 확인 필요"}</b><span>{item.weight || ""}{item.origin ? ` · ${item.origin}` : ""}</span></div><em style={{ marginRight: "24px" }}>{item.quantity}개</em><button type="button" className="headerCartRemove" style={{ background: "transparent", border: 0, padding: 0, color: "#68766f", width: "24px", height: "24px" }} aria-label={`${item.name || "상품"} 삭제`} title="삭제" onClick={() => removeCartItem(item.id)}>×</button></div>)}
                     {cartPreview.length > 5 && <p className="headerCartMore">외 {cartPreview.length - 5}개 품목</p>}
                   </div>
                 ) : <div className="headerCartEmpty">담긴 상품이 없습니다.</div>}
