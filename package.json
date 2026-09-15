@@ -1,6 +1,6 @@
 {
   "name": "shinnong-herb",
-  "version": "1.0.36",
+  "version": "37.2.0",
   "private": true,
   "scripts": {
     "dev": "next dev",

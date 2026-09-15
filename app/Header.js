@@ -94,7 +94,15 @@ export default function Header() {
         ) : (
           <Link href="/login">로그인</Link>
         )}
-        {loaded && session && !isAdmin && session?.profile?.status === "approved" && <Link className="headerCartLink" href="/products?cart=1">장바구니</Link>}
+        {loaded && session && !isAdmin && session?.profile?.status === "approved" && (
+          <Link className="headerCartLink" href="/products?cart=1" aria-label="장바구니" title="장바구니">
+            <svg className="headerCartIcon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M3 4h2l2.1 10.1a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 2-1.6L20 8H6" />
+              <circle cx="10" cy="19" r="1.2" />
+              <circle cx="17" cy="19" r="1.2" />
+            </svg>
+          </Link>
+        )}
         <div className="partnerDropdown">
           <button type="button" className="partnerApply partnerDropdownToggle" aria-haspopup="true">거래처 신청</button>
           <div className="partnerDropdownMenu">
