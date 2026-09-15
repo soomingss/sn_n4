@@ -34,7 +34,7 @@ export default async function MyPage() {
           <div className="mypagePanelHead"><div><span>ORDER</span><h2>최근 주문내역</h2></div><Link href="/products">제품 주문하기 →</Link></div>
           {orders.length ? <div className="mypageOrderList">{orders.map(o => <article key={o.id}>
             <div className="mypageOrderMain"><b>주문 #{o.id}</b><span>{date(o.created_at)}</span></div>
-            <div className="mypageOrderMeta"><span className={`orderStatus ${o.status}`}>{statusLabel[o.status] || o.status}</span><span>{o.delivery_request || "-"}</span><strong>{money(o.total_amount)}</strong></div>
+            <div className="mypageOrderMeta"><span className={`orderStatus ${o.status}`}>{statusLabel[o.status] || o.status}</span><span>{o.delivery_request || "-"}</span><strong>{money(o.total_amount)}</strong><Link className="reorderButton" href={`/products?reorder=${o.id}`}>이 주문 다시 담기</Link></div>
           </article>)}</div> : <div className="mypageEmpty">최근 주문내역이 없습니다.</div>}
         </section>
 

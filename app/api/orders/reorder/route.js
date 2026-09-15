@@ -1,0 +1,3 @@
+import { NextResponse } from "next/server";
+import { getCurrentSession, supabaseAdminFetch } from "../../../lib/auth";
+export async function GET(req){const s=await getCurrentSession();if(!s)return NextResponse.json({error:"로그인이 필요합니다."},{status:401});const id=new URL(req.url).searchParams.get("id");const o=await supabaseAdminFetch(`/rest/v1/orders?id=eq.${encodeURIComponent(id)}&user_id=eq.${encodeURIComponent(s.user.id)}&select=id&limit=1`);if(!o.ok||(await o.json()).length===0)return NextResponse.json({error:"주문을 찾을 수 없습니다."},{status:404});const r=await supabaseAdminFetch(`/rest/v1/order_items?order_id=eq.${encodeURIComponent(id)}&select=product_id,quantity`);return NextResponse.json({items:r.ok?await r.json():[]});}

@@ -9,7 +9,7 @@ export default async function ManualOrderPage(){
   if(s.profile?.role!=="admin")redirect("/");
   const [partnersRes,productsRes,pricesRes]=await Promise.all([
     supabaseAdminFetch('/rest/v1/profiles?status=eq.approved&role=eq.customer&select=id,company_name,price_grade&order=company_name.asc'),
-    supabaseAdminFetch('/rest/v1/products?select=id,name,weight,origin,supplier,image_url,is_active&is_active=eq.true&order=name.asc'),
+    supabaseAdminFetch('/rest/v1/products?select=id,name,weight,origin,supplier,image_url,is_active,stock_status&is_active=eq.true&order=name.asc'),
     supabaseAdminFetch('/rest/v1/product_prices?select=product_id,price_grade,price')
   ]);
   const partners=partnersRes.ok?await partnersRes.json():[];

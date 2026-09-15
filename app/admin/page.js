@@ -15,7 +15,9 @@ export default async function AdminPage() {
         <AdminCard no="01" title="거래처 승인관리" desc="신규 거래처 신청 정보를 확인하고 승인 또는 거절 처리합니다." href="/admin/partners" />
         <AdminCard no="02" title="주문관리" desc="접수된 주문과 배송 진행 상태를 확인하고 관리합니다." href="/admin/orders" />
         <AdminCard no="03" title="문의사항관리" desc="홈페이지로 접수된 문의 내용을 확인하고 처리 상태를 관리합니다." href="/admin/inquiries" />
-        <AdminCard no="04" title="세금계산서용" desc="월별 과세·면세 거래를 확인하고 세금계산서용 엑셀 자료를 다운로드합니다." href="/admin/tax-report" />
+        <AdminCard no="04" title="상품 관리" desc="상품 노출 여부와 재고부족·품절 상태를 관리합니다." href="/admin/products" />
+        <AdminCard no="05" title="거래처 장부 · 미수금" desc="거래처별 거래장부와 현재 미수금을 확인합니다." href="/admin/ledger" />
+        <AdminCard no="06" title="세금계산서용" desc="월별 과세·면세 거래를 확인하고 세금계산서용 엑셀 자료를 다운로드합니다." href="/admin/tax-report" />
       </div>
     </section>
   </main>;

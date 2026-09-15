@@ -3,7 +3,7 @@ import { getCurrentSession, supabaseAdminFetch } from "../lib/auth";
 import ProductsClient from "./ProductsClient";
 
 async function loadProducts(priceGrade) {
-  const productsRes = await supabaseAdminFetch('/rest/v1/products?select=id,name,weight,origin,supplier,image_url,is_active&is_active=eq.true&order=name.asc');
+  const productsRes = await supabaseAdminFetch('/rest/v1/products?select=id,name,weight,origin,supplier,image_url,is_active,stock_status&is_active=eq.true&order=name.asc');
   if (!productsRes.ok) return [];
   const products = await productsRes.json();
   if (!products?.length) return [];
