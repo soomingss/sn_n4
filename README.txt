@@ -86,3 +86,11 @@
 - 전자세금계산서 API도 아직 연결하지 않았습니다.
 - 실제 상품/가격 데이터 업로드는 별도 진행 항목입니다.
 - 서버 환경변수 SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY가 필요합니다.
+
+[v29 운영 전 필수]
+세금/매출 데이터 무결성을 위해 app/lib/supabase-v29.sql 을 Supabase SQL Editor에서 1회 실행한 뒤 실제 주문을 받으세요.
+- 배송완료일(delivered_at) 기준 월별 세금자료
+- 주문 당시 origin/tax_type 스냅샷
+- 배송완료 후 임의 취소/상태 되돌림 방지
+- 주문+주문품목 단일 DB 트랜잭션
+- 중복 주문 방지 request_key

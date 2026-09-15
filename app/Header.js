@@ -49,7 +49,7 @@ export default function Header() {
   return (
     <header className="header">
       <Link href="/" className="logoWrap" aria-label="신농허브 홈">
-        <img src="/logo.jpg" alt="신농허브 SHINNONG HERB" className="logoImg" />
+        <img src="/logo-hq.png" alt="신농허브 SHINNONG HERB" className="logoImg" />
       </Link>
 
       <nav className="mainNav">

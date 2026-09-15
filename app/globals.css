@@ -6,8 +6,8 @@ body{margin:0;color:var(--text);font-family:Arial,"Noto Sans KR","Malgun Gothic"
 a{text-decoration:none;color:inherit}
 button{font:inherit;cursor:pointer}
 .header{height:80px;display:flex;align-items:center;padding:0 6%;border-bottom:1px solid #eee;background:#fff;z-index:20}
-.logoWrap{width:220px;height:64px;display:flex;align-items:center;overflow:hidden}
-.logoImg{width:178px;height:62px;object-fit:cover;object-position:center top;display:block}
+.logoWrap{width:220px;height:64px;display:inline-flex;align-items:center;overflow:hidden;cursor:pointer}
+.logoImg{width:178px;height:62px;object-fit:cover;object-position:center top;display:block;pointer-events:none}
 .mainNav{display:flex;justify-content:center;gap:42px;flex:1;font-size:14px}
 .mainNav span{cursor:default}
 .headerActions{width:230px;display:flex;align-items:center;justify-content:flex-end;gap:17px;font-size:13px}
@@ -44,7 +44,7 @@ button{font:inherit;cursor:pointer}
 .bottomCopy{text-align:center;font-family:Georgia,"Batang",serif;font-size:25px;line-height:1.5}
 .bottomCopy small{display:block;font:10px Arial;letter-spacing:5px;margin-top:18px}
 
-.companyHero{height:295px;display:flex;justify-content:space-between;align-items:flex-start;padding:67px 9.5%;background:linear-gradient(90deg,#f5f0e4 0%,rgba(245,240,228,.86) 36%,rgba(245,240,228,0) 66%),url("/company-hero.jpg") right center/62% 100% no-repeat}
+.companyHero{height:295px;display:flex;justify-content:space-between;align-items:flex-start;padding:67px 9.5%;background:linear-gradient(90deg,#f5f0e4 0%,#f5f0e4 27%,rgba(245,240,228,.96) 36%,rgba(245,240,228,.78) 46%,rgba(245,240,228,.42) 57%,rgba(245,240,228,.12) 68%,rgba(245,240,228,0) 76%),url("/company-hero.jpg") right center/68% 100% no-repeat}
 .companyHeroCopy p{font-size:11px;letter-spacing:2px;margin:0}
 .companyHeroCopy h1{font-size:46px;margin:15px 0 14px;letter-spacing:-1px}
 .companyHeroCopy span{font-size:12px}
@@ -112,7 +112,7 @@ footer{min-height:95px;border-top:1px solid #ddd;padding:20px 6%;display:grid;gr
   .valueCard{padding:20px;border-bottom:1px solid var(--line)}
   .mainBottom{grid-template-columns:1fr;height:150px}
   .leafPhoto{display:none}
-  .companyHero{height:250px;padding:55px 7%;background-size:cover;background-position:left center}
+  .companyHero{height:250px;padding:55px 7%;background:linear-gradient(90deg,#f5f0e4 0%,rgba(245,240,228,.86) 36%,rgba(245,240,228,0) 66%),url("/company-hero.jpg") left center/cover no-repeat}
   .subnav{overflow-x:auto;justify-content:flex-start}
   .subnav a{min-width:120px}
   .intro p br{display:none}
@@ -294,3 +294,11 @@ footer{min-height:95px;border-top:1px solid #ddd;padding:20px 6%;display:grid;gr
 .taxReportTable{width:100%;border-collapse:collapse;font-size:12px;min-width:900px}.taxReportTable th{background:#f5f7f4;text-align:left;padding:13px 11px;border-bottom:1px solid var(--line)}.taxReportTable td{padding:14px 11px;border-bottom:1px solid var(--line);color:#4f625a}.taxReportTable td.num,.taxReportTable th.num{text-align:right}.taxReportEmpty{padding:42px 20px;text-align:center;color:var(--muted);border:1px solid var(--line);background:#fff}.taxReportNote{font-size:12px;color:var(--muted);line-height:1.7;margin:14px 0 0}.taxReportBack{display:inline-block;margin-top:26px;color:#315f4e;font-weight:700;font-size:13px}
 @media(max-width:1100px){.adminCards{grid-template-columns:repeat(2,1fr)}.taxReportSummary{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:620px){.adminCards{grid-template-columns:1fr}.taxReportControls{align-items:stretch}.taxReportControls label,.taxReportControls input,.taxReportControls select,.taxReportControls button,.taxDownloadButton{width:100%;min-width:0}.taxReportSummary{grid-template-columns:1fr 1fr}.taxReportSummary>div:last-child{grid-column:1/-1}.taxReportTable{min-width:760px}}
+
+/* v30 admin order detail + A4 print */
+.orderPrintToolbar{display:flex;align-items:center;justify-content:flex-end;gap:14px;margin:0 0 14px}.orderPrintToolbar span{font-size:12px;color:var(--muted)}.orderPrintToolbar button,.orderPrintActions button,.orderDetailPrint{border:1px solid #315f4e;background:#315f4e;color:#fff;padding:8px 12px;cursor:pointer}.orderPrintToolbar button:disabled{opacity:.4;cursor:default}.orderCheckCol{width:48px}.orderPrintActions{display:flex;gap:6px;white-space:nowrap}.orderPrintActions .outline{background:#fff;color:#315f4e}.orderPrintActions.mobile{margin-top:12px}.orderPrintActions.mobile button{flex:1}.orderDetailBackdrop{position:fixed;inset:0;z-index:120;background:rgba(18,34,28,.42);display:flex;align-items:center;justify-content:center;padding:20px}.orderDetailModal{width:min(720px,100%);max-height:88vh;overflow:auto;background:#fff;padding:28px;box-shadow:0 20px 60px rgba(0,0,0,.18)}.orderDetailHead{display:flex;justify-content:space-between;align-items:flex-start;border-bottom:1px solid var(--line);padding-bottom:18px}.orderDetailHead span{font-size:10px;letter-spacing:2px;color:#5d806f}.orderDetailHead h2{margin:5px 0 0;font-size:24px}.orderDetailHead>button{border:0;background:transparent;font-size:28px;color:#68766f;cursor:pointer}.orderDetailMeta{display:grid;grid-template-columns:1fr 1fr;gap:10px 24px;padding:20px 0}.orderDetailMeta p{margin:0;font-size:12px;color:#4f625a}.orderDetailMeta b{display:inline-block;width:72px;color:#18372f}.orderDetailItems{border-top:1px solid var(--line)}.orderDetailItems>div{display:grid;grid-template-columns:1fr auto 100px;gap:16px;align-items:center;padding:14px 0;border-bottom:1px solid var(--line);font-size:12px}.orderDetailItems span:first-child b,.orderDetailItems span:first-child small{display:block}.orderDetailItems small{margin-top:4px;color:var(--muted);font-weight:400}.orderDetailItems strong{text-align:right}.orderDetailTotal{display:flex;justify-content:space-between;align-items:center;padding:20px 0}.orderDetailTotal span{font-size:13px}.orderDetailTotal b{font-size:20px}.orderDetailPrint{width:100%;height:44px}.adminOrdersTable{min-width:1180px}
+@media(max-width:620px){.orderPrintToolbar{display:none}.orderDetailBackdrop{padding:12px}.orderDetailModal{padding:20px}.orderDetailMeta{grid-template-columns:1fr}.orderDetailItems>div{grid-template-columns:1fr auto}.orderDetailItems strong{grid-column:2}.orderDetailHead h2{font-size:21px}}
+
+/* v31 관리자 수기 주문 */
+.adminOrderTopLinks{margin-left:auto;display:flex;align-items:center;gap:14px}.adminOrderTop .adminOrderTopLinks a{margin-left:0}.adminOrderTop .manualOrderButton{display:inline-flex;align-items:center;justify-content:center;padding:9px 14px;background:#315f4e;color:#fff}.manualOrderBack{padding-top:28px}.manualOrderBack a{font-size:12px;color:#315f4e}.manualOrderSetup{display:grid;grid-template-columns:1fr 240px;gap:16px;margin:0 0 24px;padding:20px;background:#f7f9f6;border:1px solid var(--line)}.manualOrderSetup label{display:flex;flex-direction:column;gap:8px}.manualOrderSetup span{font-size:12px;font-weight:700;color:#31483f}.manualOrderSetup select{height:44px;border:1px solid var(--line);background:#fff;padding:0 12px;color:#31483f}
+@media(max-width:620px){.adminOrderTopLinks{width:100%;margin-left:0;justify-content:space-between}.manualOrderSetup{grid-template-columns:1fr;padding:16px}.manualOrderBack{padding:20px 18px 0}}

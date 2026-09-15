@@ -52,16 +52,16 @@ export async function GET(request) {
   const range = monthRange(month);
   if (!range) return NextResponse.json({ error: "조회 월 형식이 올바르지 않습니다." }, { status: 400 });
 
-  const ledgerPath = `/rest/v1/ledger_entries?entry_type=eq.order&occurred_at=gte.${encodeURIComponent(range.start)}&occurred_at=lt.${encodeURIComponent(range.end)}&select=order_id,user_id,occurred_at&order=occurred_at.asc`;
-  const ledgerResult = await fetchJson(ledgerPath);
-  if (!ledgerResult.ok) return NextResponse.json({ error: "배송완료 거래자료를 불러오지 못했습니다." }, { status: 500 });
-  let ledger = ledgerResult.data.filter((r) => r.order_id);
-  if (userId) ledger = ledger.filter((r) => r.user_id === userId);
+  // v29: 세금자료의 월 귀속은 주문일이 아니라 배송완료일(delivered_at)을 기준으로 고정합니다.
+  let ordersResult = await fetchJson(`/rest/v1/orders?status=eq.delivered&delivered_at=gte.${encodeURIComponent(range.start)}&delivered_at=lt.${encodeURIComponent(range.end)}&select=id,user_id,company_name,status,total_amount,created_at,delivered_at&order=delivered_at.asc`);
+  if (!ordersResult.ok) return NextResponse.json({ error: "배송완료 주문자료를 불러오지 못했습니다." }, { status: 500 });
+  let orders = ordersResult.data || [];
+  if (userId) orders = orders.filter((o) => o.user_id === userId);
 
   const profileResult = await fetchJson('/rest/v1/profiles?select=id,company_name&order=company_name.asc');
   const profiles = profileResult.ok ? profileResult.data : [];
 
-  if (!ledger.length) {
+  if (!orders.length) {
     const payload = { month, profiles, summary: [], details: [], totals: { exempt_amount: 0, taxable_supply: 0, vat_amount: 0, taxable_total: 0, grand_total: 0 } };
     if (format === "xls") {
       return new Response(excelXml(month, [], []), { headers: { "Content-Type": "application/vnd.ms-excel; charset=utf-8", "Content-Disposition": `attachment; filename*=UTF-8''${encodeURIComponent(`신농허브_${month}_세금계산서용.xls`)}` } });
@@ -69,14 +69,23 @@ export async function GET(request) {
     return NextResponse.json(payload);
   }
 
-  const orderIds = [...new Set(ledger.map((r) => Number(r.order_id)))];
+  const orderIds = [...new Set(orders.map((o) => Number(o.id)).filter(Boolean))];
   const ids = orderIds.join(",");
-  const ordersResult = await fetchJson(`/rest/v1/orders?id=in.(${ids})&select=id,user_id,company_name,status,total_amount`);
-  const orders = ordersResult.ok ? ordersResult.data : [];
   const orderMap = new Map(orders.map((o) => [Number(o.id), o]));
-  const deliveredAtMap = new Map(ledger.map((l) => [Number(l.order_id), l.occurred_at]));
 
-  let itemsResult = await fetchJson(`/rest/v1/order_items?order_id=in.(${ids})&select=id,order_id,product_id,product_name,weight,unit_price,quantity,subtotal,tax_type&order=order_id.asc,id.asc`);
+  // v29 migration 이전 데이터 보완 확인용. 신규 주문은 orders.delivered_at을 기준으로 고정됩니다.
+  const ledgerResult = await fetchJson(`/rest/v1/ledger_entries?entry_type=eq.order&order_id=in.(${ids})&select=order_id,occurred_at`);
+  const deliveredAtMap = new Map();
+  if (ledgerResult.ok) {
+    for (const row of ledgerResult.data || []) {
+      if (row.order_id) deliveredAtMap.set(Number(row.order_id), row.occurred_at);
+    }
+  }
+  for (const order of orders) {
+    deliveredAtMap.set(Number(order.id), order.delivered_at || deliveredAtMap.get(Number(order.id)) || order.created_at);
+  }
+
+  let itemsResult = await fetchJson(`/rest/v1/order_items?order_id=in.(${ids})&select=id,order_id,product_id,product_name,weight,origin,unit_price,quantity,subtotal,tax_type&order=order_id.asc,id.asc`);
   let items = itemsResult.data;
   if (!itemsResult.ok) {
     itemsResult = await fetchJson(`/rest/v1/order_items?order_id=in.(${ids})&select=id,order_id,product_id,product_name,weight,unit_price,quantity,subtotal&order=order_id.asc,id.asc`);
@@ -99,7 +108,7 @@ export async function GET(request) {
     if (!order) continue;
     if (userId && order.user_id !== userId) continue;
     const product = productMap.get(Number(item.product_id)) || {};
-    const origin = product.origin || "";
+    const origin = item.origin || product.origin || "";
     const taxType = item.tax_type || product.tax_type || (origin === "국산" ? "exempt" : "taxable");
     const subtotal = Number(item.subtotal) || 0;
     const supply = taxType === "exempt" ? subtotal : Math.round(subtotal / 1.1);
