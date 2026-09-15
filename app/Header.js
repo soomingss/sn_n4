@@ -132,7 +132,7 @@ export default function Header() {
                 <div className="headerCartMenuHead"><b>장바구니</b><span>{cartQty}개</span></div>
                 {cartPreview.length ? (
                   <div className="headerCartPreviewItems">
-                    {cartPreview.slice(0, 5).map((item) => <div className="headerCartPreviewItem" key={item.id}><div><b>{item.name || `상품 #${item.id}`}</b><span>{item.weight || ""}{item.origin ? ` · ${item.origin}` : ""}</span></div><em>{item.quantity}개</em></div>)}
+                    {cartPreview.slice(0, 5).map((item) => <div className="headerCartPreviewItem" key={item.id}><div><b>{item.name || "상품명 확인 필요"}</b><span>{item.weight || ""}{item.origin ? ` · ${item.origin}` : ""}</span></div><em>{item.quantity}개</em></div>)}
                     {cartPreview.length > 5 && <p className="headerCartMore">외 {cartPreview.length - 5}개 품목</p>}
                   </div>
                 ) : <div className="headerCartEmpty">담긴 상품이 없습니다.</div>}
