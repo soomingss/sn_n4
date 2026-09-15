@@ -9,6 +9,8 @@ export default function Header() {
   const [session, setSession] = useState(null);
   const [loaded, setLoaded] = useState(false);
   const [accountOpen, setAccountOpen] = useState(false);
+  const [cartOpen, setCartOpen] = useState(false);
+  const [cartPreview, setCartPreview] = useState([]);
   const router = useRouter();
   const pathname = usePathname();
 
@@ -34,6 +36,26 @@ export default function Header() {
     return () => window.removeEventListener("shinnong-auth-changed", handleAuthChanged);
   }, [refreshSession]);
 
+  const refreshCartPreview = useCallback(() => {
+    try {
+      const saved = JSON.parse(localStorage.getItem("shinnong-cart") || "{}");
+      setCartPreview(Object.entries(saved).map(([id, item]) => ({ id, ...item, quantity: Math.max(1, Number(item?.quantity || 1)) })));
+    } catch {
+      setCartPreview([]);
+    }
+  }, []);
+
+  useEffect(() => {
+    refreshCartPreview();
+    const handleCartChanged = () => refreshCartPreview();
+    window.addEventListener("shinnong-cart-changed", handleCartChanged);
+    window.addEventListener("storage", handleCartChanged);
+    return () => {
+      window.removeEventListener("shinnong-cart-changed", handleCartChanged);
+      window.removeEventListener("storage", handleCartChanged);
+    };
+  }, [pathname, refreshCartPreview]);
+
   const logout = async () => {
     await fetch("/api/auth/logout", { method: "POST" });
     setSession(null);
@@ -45,6 +67,7 @@ export default function Header() {
 
   const isAdmin = session?.profile?.role === "admin";
   const username = session?.profile?.username || "회원";
+  const cartQty = cartPreview.reduce((sum, item) => sum + Number(item.quantity || 0), 0);
 
   return (
     <header className="header">
@@ -95,13 +118,28 @@ export default function Header() {
           <Link href="/login">로그인</Link>
         )}
         {loaded && session && !isAdmin && session?.profile?.status === "approved" && (
-          <Link className="headerCartLink" href="/products?cart=1" aria-label="장바구니" title="장바구니">
-            <svg className="headerCartIcon" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M3 4h2l2.1 10.1a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 2-1.6L20 8H6" />
-              <circle cx="10" cy="19" r="1.2" />
-              <circle cx="17" cy="19" r="1.2" />
-            </svg>
-          </Link>
+          <div className="headerCartDropdown">
+            <button type="button" className="headerCartLink" aria-label="장바구니" title="장바구니" aria-expanded={cartOpen} onClick={() => { refreshCartPreview(); setCartOpen((value) => !value); setAccountOpen(false); }}>
+              <svg className="headerCartIcon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M3 4h2l2.1 10.1a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 2-1.6L20 8H6" />
+                <circle cx="10" cy="19" r="1.2" />
+                <circle cx="17" cy="19" r="1.2" />
+              </svg>
+              {cartQty > 0 && <span className="headerCartBadge">{cartQty > 99 ? "99+" : cartQty}</span>}
+            </button>
+            {cartOpen && (
+              <div className="headerCartMenu">
+                <div className="headerCartMenuHead"><b>장바구니</b><span>{cartQty}개</span></div>
+                {cartPreview.length ? (
+                  <div className="headerCartPreviewItems">
+                    {cartPreview.slice(0, 5).map((item) => <div className="headerCartPreviewItem" key={item.id}><div><b>{item.name || `상품 #${item.id}`}</b><span>{item.weight || ""}{item.origin ? ` · ${item.origin}` : ""}</span></div><em>{item.quantity}개</em></div>)}
+                    {cartPreview.length > 5 && <p className="headerCartMore">외 {cartPreview.length - 5}개 품목</p>}
+                  </div>
+                ) : <div className="headerCartEmpty">담긴 상품이 없습니다.</div>}
+                <Link className="headerCartView" href="/products?cart=1" onClick={() => setCartOpen(false)}>장바구니 보기</Link>
+              </div>
+            )}
+          </div>
         )}
         <div className="partnerDropdown">
           <button type="button" className="partnerApply partnerDropdownToggle" aria-haspopup="true">거래처 신청</button>
