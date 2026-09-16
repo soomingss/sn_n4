@@ -95,7 +95,7 @@ export default function ProductsClient({products=[],companyName="",adminManual=f
       )}
       <div className="productOrderLayout">
         <div className="productCatalog">
-          <div className="productSearch v21Search"><input value={query} onChange={e=>setQuery(e.target.value)} placeholder="제품명, 효능, 원산지 등으로 검색해보세요."/><span>검색</span></div>
+          <div className="productSearch v21Search"><input value={query} onChange={e=>setQuery(e.target.value)} placeholder="제품명, 원산지 등으로 검색해보세요."/><span>검색</span></div>
           <div className="v21Filter"><div className="initialFilter">{CHOSUNG.map(ch=><button key={ch} className={initial===ch?"active":""} onClick={()=>setInitial(ch)}>{ch}</button>)}</div><b>총 {filtered.length}개 제품</b></div>
           <div className="productList">
             {visible.length?visible.map(product=>(
