@@ -25,8 +25,9 @@ function Footer() {
     <footer>
       <div className="footerBrand"><img src="/logo.jpg" alt="" className="footerLogoImg" /></div>
       <div className="footerInfo">
-        <div>주소 : 인천광역시 부평구 주부토로 193 대동아파트 상가동　|　대표자명 : 정세직　|　사업자번호 : 407-11-96509</div>
-        <div>전화번호 : 032 - 501 - 2348　|　팩스번호 : 032 - 525 - 2435　|　이메일 : tpwlrdldi@naver.com</div>
+        <div className="footerAddress">주소 : 인천광역시 부평구 주부토로 193 대동아파트 상가동</div>
+        <div className="footerBusiness">대표자명 : 정세직　|　사업자번호 : 407-11-96509</div>
+        <div className="footerContact">전화번호 : 032 - 501 - 2348　|　팩스번호 : 032 - 525 - 2435　|　이메일 : shinnong_herb@naver.com</div>
       </div>
       <div className="policy">개인정보처리방침　|　이용약관</div>
     </footer>
