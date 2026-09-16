@@ -1,10 +1,10 @@
 import Link from "next/link";
 
 const steps = [
-  { no: "01", title: "주문 접수", desc: <>주문 품목과 수량을<br/>확인합니다.</>, icon: <OrderIcon/> },
-  { no: "02", title: "재고 확인", desc: <>보유 재고와 주문 내용을<br/>꼼꼼하게 확인합니다.</>, icon: <StockIcon/> },
-  { no: "03", title: "상품 준비·검수", desc: <>출고 전 상품 상태를<br/>다시 한번 확인합니다.</>, icon: <CheckIcon/> },
-  { no: "04", title: "배송", desc: <>지역에 따라 직접 배송 또는<br/>택배로 안전하게 발송합니다.</>, icon: <TruckIcon/> },
+  { no: "01", title: "주문 접수", desc: <>주문 품목과 수량을 확인합니다</>, icon: <OrderIcon/> },
+  { no: "02", title: "재고 확인", desc: <>보유 재고와 주문 내용을 꼼꼼하게 확인합니다</>, icon: <StockIcon/> },
+  { no: "03", title: "상품 준비·검수", desc: <>출고 전 상품 상태를 다시 한 번 확인합니다.</>, icon: <CheckIcon/> },
+  { no: "04", title: "배송", desc: <>지역에 따라 직접 배송 또는 택배로 안전하게 발송합니다</>, icon: <TruckIcon/> },
 ];
 
 export default function OrderDeliveryPage(){
