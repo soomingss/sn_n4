@@ -1,0 +1,46 @@
+.mobileMypageIdentity,.mobileTaxReportBack{display:none}
+
+@media(max-width:950px){
+  /* 1. 메인 안정적인 공급 설명은 모바일 한 줄 유지 */
+  .fiveValues .valueCard:nth-child(4) p{white-space:nowrap;font-size:11px;letter-spacing:-.55px}
+
+  /* 2. 모바일 푸터: 전화/팩스 다음 줄에 이메일 전체 표시 */
+  .footerContact .footerPhoneFax,.footerContact .footerEmail{display:block}
+  .footerContact .footerEmail{margin:0;padding:0}
+
+  /* 3. 햄버거 메뉴를 기존 정상 헤더 배치로 복원 */
+  .header{justify-content:space-between!important}
+  .logoWrap{position:static!important;left:auto!important;transform:none!important;margin:0!important}
+  .mobileNavWrap{position:static!important;right:auto!important;margin-left:auto!important}
+
+  /* 5, 6. 마이페이지 아이디/회원정보 수정 동일 라인 + 카드결제 우측 */
+  .mobileMypageIdentity{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:10px;font-size:12px;color:#65766f}
+  .mobileMypageIdentity>a{flex:0 0 auto;border:1px solid #cbd8d1;padding:5px 7px;color:#315f4e;font-size:10px;white-space:nowrap}
+  .mypageTopActions{display:flex!important;justify-content:flex-end!important;width:100%}
+  .mypageTopActions .adminLinkButton{display:none!important}
+  .mypageTopActions .mypagePayButton{margin-left:auto!important}
+
+  /* 7. 전체 주문내역 제목과 마이페이지 복귀를 동일 가로 라인으로 */
+  .mypageAllOrdersHead{display:flex!important;flex-direction:row!important;align-items:flex-end!important;justify-content:space-between!important;gap:12px!important}
+  .mypageAllOrdersHead>div{min-width:0}
+  .mypageAllOrdersHead>a{flex:0 0 auto;white-space:nowrap;margin-bottom:3px}
+
+  /* 8. 로그인 유틸리티는 좌/우 동일 가로 라인 유지 */
+  .loginUtility{display:flex!important;flex-direction:row!important;align-items:center!important;justify-content:space-between!important;gap:8px!important;white-space:nowrap!important}
+  .loginUtility .rememberLabel{flex:0 0 auto;margin:0!important}
+  .loginUtility>div{flex:0 0 auto;margin:0 0 0 auto!important;text-align:right}
+
+  /* 9, 10. 주문관리: 복귀는 윗줄 우측, 제목/수기주문은 아랫줄 동일 라인 */
+  .adminManage{position:relative}
+  .adminManageIntro{position:relative!important;padding-top:42px!important;padding-right:118px!important;margin-bottom:24px!important}
+  .adminManageIntro h1{white-space:nowrap}
+  .adminOrderTop{margin:0!important;min-height:0!important}
+  .adminOrderTopLinks .adminBackLink{position:absolute!important;right:0!important;top:0!important;margin:0!important}
+  .adminOrderTopLinks .manualOrderButton{position:absolute!important;right:0!important;top:46px!important;margin:0!important}
+
+  /* 11. 월별 세금자료 복귀 버튼을 제목보다 살짝 위 우측 끝으로 */
+  .taxReportManage{position:relative;padding-top:28px!important}
+  .taxReportManage .mobileTaxReportBack{display:block;position:absolute;right:20px;top:8px;font-size:12px;color:#315f4e;white-space:nowrap}
+  .taxReportManage .adminManageIntro{padding-top:16px!important;padding-right:0!important}
+  .taxReportManage .taxReportBack{display:none!important}
+}
