@@ -15,12 +15,11 @@ export default async function PaymentPage() {
     <section className="paymentSection contentWidth">
       <div className="paymentCard">
         <span className="paymentEyebrow">CARD PAYMENT</span>
-        <h1>카드결제</h1>
+        <div className="paymentTitleRow"><h1>카드결제</h1><Link className="paymentBack" href="/mypage">마이페이지로 돌아가기</Link></div>
         <p className="paymentDesc">거래잔액 중 원하시는 금액을 선택하여 결제할 수 있도록 준비 중입니다.</p>
         <div className="paymentBalance"><span>현재 거래잔액</span><b>{money(balance)}</b></div>
         <div className="paymentQuick"><button disabled>100,000원</button><button disabled>300,000원</button><button disabled>500,000원</button><button disabled>직접 입력</button></div>
         <div className="paymentNotice"><b>카드결제 연동 준비 중</b><p>현재는 결제 화면만 제공됩니다. PG 연동 전에는 실제 카드 승인 및 결제가 진행되지 않습니다.</p></div>
-        <Link className="paymentBack" href="/mypage">마이페이지로 돌아가기</Link>
       </div>
     </section>
   </main>;
