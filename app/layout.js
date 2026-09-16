@@ -1,6 +1,7 @@
 import "./globals.css";
 import "./v3710.css";
 import "./v3711.css";
+import "./mobile-batch-20260917.css";
 import Header from "./Header";
 
 export const metadata = {
