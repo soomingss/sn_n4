@@ -6,7 +6,7 @@ export default function History(){
     <section className="historyWrap">
       <div className="historySide">
         <p className="eyebrow">HISTORY</p>
-        <h1>신농허브의 걸어온 길</h1>
+        <h1>신농허브의<span className="historyTitleBreak"><br/></span> 걸어온 길</h1>
         <p>자연과 사람을 생각하는 신농허브의 발자취는 더 건강한 내일을 향한 약속입니다.</p>
       </div>
       <div className="timeline">
