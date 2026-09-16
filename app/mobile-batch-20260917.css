@@ -30,8 +30,7 @@
   .adminMobileBackRow{display:flex!important;justify-content:flex-end!important;align-items:center!important;padding-top:22px!important;padding-bottom:0!important;margin-bottom:-12px!important}
   .adminMobileBackRow>a{font-size:12px!important;color:#315f4e!important;white-space:nowrap!important;text-decoration:none!important}
   .adminManage>.adminManageIntro{padding-top:0!important;padding-right:0!important}
-  .desktopAdminBackLink{display:none!important}
-  .mobileTaxReportBack{display:none!important}
+  .desktopAdminBackLink,.mobileTaxReportBack,.taxReportBack{display:none!important}
   .taxReportManage{padding-top:0!important}
 
   /* 오늘 3. 주문관리: 제목 왼쪽 + 수기주문등록 오른쪽, 정확히 같은 가로 라인 */
