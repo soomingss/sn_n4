@@ -6,6 +6,7 @@
 
   /* 2. 모바일 푸터: 전화/팩스 다음 줄에 이메일 전체 표시 */
   .footerContact .footerPhoneFax,.footerContact .footerEmail{display:block}
+  .footerContact .footerEmailDivider{display:none}
   .footerContact .footerEmail{margin:0;padding:0}
 
   /* 3. 햄버거 메뉴를 기존 정상 헤더 배치로 복원 */
