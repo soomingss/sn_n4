@@ -5,7 +5,7 @@ import OrdersClient from "./OrdersClient";
 
 export default async function OrdersAdmin(){
   const s=await getCurrentSession();if(!s)redirect("/login?next=/admin/orders");if(s.profile?.role!=="admin")redirect("/");
-  const res=await supabaseAdminFetch('/rest/v1/orders?select=id,created_at,user_id,company_name,status,delivery_request,total_amount,order_source&order=created_at.desc');
+  const res=await supabaseAdminFetch('/rest/v1/orders?select=id,order_number,created_at,user_id,company_name,status,delivery_request,total_amount,order_source&order=created_at.desc');
   const orders=res.ok?await res.json():[];
   let items=[];
   if(orders.length){
