@@ -12,8 +12,8 @@ export default function MobileNav({ session, loaded, onLogout, siteSettings }) {
   const logout = async () => { closeMenu(); await onLogout?.(); };
   const isAdmin = session?.profile?.role === "admin";
   const username = session?.profile?.username || "회원";
-  const companyName = siteSettings?.company_name || "거래처";
-  const kakaoChannelUrl = siteSettings?.kakao_channel_url || "#";
+  const companyName = siteSettings?.company_name || "신농허브";
+  const kakaoChannelUrl = siteSettings?.kakao_channel_url || "http://pf.kakao.com/_axdbrX";
 
   return <div className="mobileNavWrap">
     <button type="button" className={`hamburger ${open ? "isOpen" : ""}`} aria-label={open ? "메뉴 닫기" : "메뉴 열기"} aria-expanded={open} onClick={() => setOpen(v => !v)}><span /><span /><span /></button>
