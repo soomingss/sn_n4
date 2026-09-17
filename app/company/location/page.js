@@ -5,10 +5,9 @@ import KakaoMap from "./KakaoMap";
 
 export default async function Location(){
   const settings = await getSiteSettings();
-  const addressLines = (settings.address || "").split(" 대동아파트 상가동");
 
   return <main>
-    <CompanyHero title="오시는 길" crumb="오시는 길"/>
+    <CompanyHero title="오시는 길" crumb="오시는 길" companyNameEn={settings.company_name_en}/>
     <Subnav active="location"/>
 
     <section className="location contentWidth">
@@ -19,7 +18,7 @@ export default async function Location(){
       <KakaoMap address={settings.map_address} placeName={settings.map_place_name || settings.company_name}/>
 
       <div className="contactCards">
-        <Info icon="pin" title="주소">{addressLines[0]}{addressLines[1] !== undefined && <><br/>대동아파트 상가동</>}</Info>
+        <Info icon="pin" title="주소">{settings.address}</Info>
         <Info icon="phone" title="전화번호">{settings.phone}</Info>
         <Info icon="fax" title="팩스번호">{settings.fax}</Info>
       </div>
