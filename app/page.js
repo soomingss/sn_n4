@@ -1,13 +1,16 @@
 import Link from "next/link";
 import {ValueCard} from "./components";
+import {getSiteSettings} from "./lib/site-settings";
 
-export default function Home(){
+export default async function Home(){
+  const settings = await getSiteSettings();
+
   return <main>
     <section className="mainHero">
       <div className="mainCopy">
         <p className="eyebrow">NATURAL HERITAGE<br/>FOR A HEALTHY TOMORROW</p>
         <h1>좋은 원료가<br/><span className="heroSecondLine">좋은 내일을 만듭니다.</span></h1>
-        <p className="desc">신농허브는 자연이 주는 소중한 원료를<br/>정직하게 선별하여, 한의학의 건강한 미래를 함께 만들어갑니다.</p>
+        <p className="desc">{settings.company_name}는 자연이 주는 소중한 원료를<br/>정직하게 선별하여, 한의학의 건강한 미래를 함께 만들어갑니다.</p>
         <div className="buttons"><Link className="primary" href="/products">제품 둘러보기 →</Link><a className="heroButton" href="/inquiry">거래 문의하기</a></div>
       </div>
       <div className="mainImage"></div>
@@ -23,7 +26,7 @@ export default function Home(){
 
     <section className="mainBottom">
       <div className="leafPhoto"></div>
-      <div className="bottomCopy">자연이 전하는 건강한 가치,<br/>신농허브가 이어갑니다.<small>SHINNONG HERB</small></div>
+      <div className="bottomCopy">자연이 전하는 건강한 가치,<br/>{settings.company_name}가 이어갑니다.<small>{settings.company_name_en}</small></div>
     </section>
   </main>
 }
