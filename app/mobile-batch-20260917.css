@@ -26,17 +26,18 @@
   .loginApply>span,.loginApply>a{margin:0!important;white-space:nowrap!important}
   .loginApply>a{margin-left:auto!important;text-align:right!important}
 
-  /* 오늘 2. 모든 관리자 업무 상세: 복귀 버튼을 제목 위 우측 끝으로 통일 */
-  .adminMobileBackRow{display:flex!important;justify-content:flex-end!important;align-items:center!important;padding-top:22px!important;padding-bottom:0!important;margin-bottom:-12px!important}
+  /* 오늘 2. 모든 관리자 업무 상세: 복귀 버튼은 제목 위 우측, 화면 끝과 소폭 여백 */
+  .adminMobileBackRow{display:flex!important;justify-content:flex-end!important;align-items:center!important;padding-top:22px!important;padding-bottom:0!important;padding-right:8px!important;margin-bottom:-12px!important}
   .adminMobileBackRow>a{font-size:12px!important;color:#315f4e!important;white-space:nowrap!important;text-decoration:none!important}
   .adminManage>.adminManageIntro{padding-top:0!important;padding-right:0!important}
   .desktopAdminBackLink,.mobileTaxReportBack,.taxReportBack{display:none!important}
   .taxReportManage{padding-top:0!important}
 
-  /* 오늘 3. 주문관리: 제목 왼쪽 + 수기주문등록 오른쪽, 정확히 같은 가로 라인 */
-  .mobileOrderAdminTitleRow{display:flex!important;flex-direction:row!important;align-items:center!important;justify-content:space-between!important;gap:12px!important;width:100%!important}
+  /* 오늘 3. 주문관리: 제목/수기주문 동일 라인 유지 + 설명문과 소폭 간격 */
+  .mobileOrderAdminTitleRow{display:flex!important;flex-direction:row!important;align-items:center!important;justify-content:space-between!important;gap:12px!important;width:100%!important;margin-bottom:9px!important}
   .mobileOrderAdminTitleRow h1{margin:0!important;white-space:nowrap!important}
   .mobileManualOrderButton{display:inline-flex!important;align-items:center!important;justify-content:center!important;flex:0 0 auto!important;margin-left:auto!important;padding:8px 10px!important;background:#315f4e!important;color:#fff!important;font-size:11px!important;line-height:1!important;white-space:nowrap!important;text-decoration:none!important}
+  .adminOrderIntroText span{display:block!important}
   .adminOrderTopLinks .adminBackLink,.adminOrderTopLinks .manualOrderButton{display:none!important}
   .adminOrderTop{margin-top:18px!important;min-height:0!important}
 }
