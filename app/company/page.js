@@ -34,10 +34,10 @@ export default async function Company(){
   </main>
 }
 
-export function CompanyHero({title,crumb,companyNameEn="SHINNONG HERB"}){
+export function CompanyHero({title,crumb,companyNameEn=""}){
   return <section className="companyHero">
     <div className="companyHeroCopy">
-      <p>{companyNameEn}</p>
+      {companyNameEn ? <p>{companyNameEn}</p> : null}
       <h1>{title}</h1>
       <span>HOME　›　회사소개{crumb !== "회사소개" ? "　›　" + crumb : ""}</span>
     </div>
