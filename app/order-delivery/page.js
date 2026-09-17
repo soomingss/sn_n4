@@ -1,4 +1,5 @@
 import Link from "next/link";
+import {getSiteSettings} from "../lib/site-settings";
 
 const steps = [
   { no: "01", title: "주문 접수", desc: <>주문 품목과 수량을 확인합니다</>, icon: <OrderIcon/> },
@@ -7,11 +8,13 @@ const steps = [
   { no: "04", title: "배송", desc: <>지역에 따라 직접 배송 또는 택배로 안전하게 발송합니다</>, icon: <TruckIcon/> },
 ];
 
-export default function OrderDeliveryPage(){
+export default async function OrderDeliveryPage(){
+  const settings = await getSiteSettings();
+
   return <>
     <section className="companyHero orderDeliveryHero">
       <div className="companyHeroCopy">
-        <p>SHINNONG HERB</p>
+        <p>{settings.company_name_en}</p>
         <h1>주문·배송 안내</h1>
         <span><Link href="/">HOME</Link>　›　주문·배송 안내</span>
       </div>
@@ -21,7 +24,7 @@ export default function OrderDeliveryPage(){
       <section className="orderIntro">
         <div className="greenLine" />
         <h1>주문부터 배송까지 꼼꼼하게 확인합니다.</h1>
-        <p>신농허브는 주문 접수부터 상품 준비와 검수, 배송까지 각 단계를 확인하여 안전하게 전달합니다.</p>
+        <p>{settings.company_name}는 주문 접수부터 상품 준비와 검수, 배송까지 각 단계를 확인하여 안전하게 전달합니다.</p>
       </section>
 
       <section className="orderSteps">
@@ -36,7 +39,7 @@ export default function OrderDeliveryPage(){
         <h2>배송 안내</h2>
         <p>지역에 따라 직접 배송 또는 택배로 발송합니다.</p>
         <div className="deliveryGrid">
-          <article><h3>직접 배송</h3><b>서울 · 경기 · 인천 (일부지역 제외)</b><p>서울, 경기, 인천 지역은 신농허브가 직접 배송합니다.</p></article>
+          <article><h3>직접 배송</h3><b>서울 · 경기 · 인천 (일부지역 제외)</b><p>서울, 경기, 인천 지역은 {settings.company_name}가 직접 배송합니다.</p></article>
           <article><h3>택배 배송</h3><b>그 외 지역</b><p>직접 배송 지역 외에는 택배를 통해 안전하게 발송합니다.</p></article>
         </div>
       </section>
