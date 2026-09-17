@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import MobileNav from "./MobileNav";
 
-export default function Header() {
+export default function Header({ siteSettings = {} }) {
   const [session, setSession] = useState(null);
   const [loaded, setLoaded] = useState(false);
   const [accountOpen, setAccountOpen] = useState(false);
@@ -14,6 +14,10 @@ export default function Header() {
   const cartDropdownRef = useRef(null);
   const router = useRouter();
   const pathname = usePathname();
+  const companyName = siteSettings.company_name || "신농허브";
+  const companyNameEn = siteSettings.company_name_en || "SHINNONG HERB";
+  const logoHeaderPath = siteSettings.logo_header_path || "/logo-hq.png";
+  const kakaoChannelUrl = siteSettings.kakao_channel_url || "http://pf.kakao.com/_axdbrX";
 
   const refreshSession = useCallback(async () => {
     try {
@@ -46,9 +50,9 @@ export default function Header() {
 
   return (
     <header className="header">
-      <Link href="/" className="logoWrap" aria-label="신농허브 홈"><img src="/logo-hq.png" alt="신농허브 SHINNONG HERB" className="logoImg" /></Link>
+      <Link href="/" className="logoWrap" aria-label={`${companyName} 홈`}><img src={logoHeaderPath} alt={`${companyName} ${companyNameEn}`} className="logoImg" /></Link>
       <nav className="mainNav">
-        <Link href="/company">회사소개</Link><Link href="/products">제품안내</Link><Link href="/order-delivery">주문·배송 안내</Link><a href="http://pf.kakao.com/_axdbrX" target="_blank" rel="noopener noreferrer">고객센터</a>{isAdmin && <Link className="adminNavLink" href="/admin">관리자업무</Link>}
+        <Link href="/company">회사소개</Link><Link href="/products">제품안내</Link><Link href="/order-delivery">주문·배송 안내</Link><a href={kakaoChannelUrl} target="_blank" rel="noopener noreferrer">고객센터</a>{isAdmin && <Link className="adminNavLink" href="/admin">관리자업무</Link>}
       </nav>
       <div className="headerActions">
         {loaded && session ? (
@@ -56,7 +60,7 @@ export default function Header() {
             <button type="button" className="accountDropdownToggle" aria-haspopup="true" aria-expanded={accountOpen} onClick={() => setAccountOpen((value) => !value)}><span className="signedUser" title={`${username}님`}>{username}님</span><span className={`accountChevron ${accountOpen ? "isOpen" : ""}`}>⌄</span></button>
             {accountOpen && (
               <div className="accountDropdownMenu">
-                <div className="accountIdentity"><div className="accountIdentityTop"><b>{username}님</b><Link className="accountProfileEdit" href="/mypage/profile" onClick={() => setAccountOpen(false)}>회원정보 수정</Link></div><span>{session?.profile?.company_name || "신농허브 거래처"}</span></div>
+                <div className="accountIdentity"><div className="accountIdentityTop"><b>{username}님</b><Link className="accountProfileEdit" href="/mypage/profile" onClick={() => setAccountOpen(false)}>회원정보 수정</Link></div><span>{session?.profile?.company_name || `${companyName} 거래처`}</span></div>
                 <div className="accountStatusRow"><span>계정 상태</span><b>{isAdmin ? "관리자 계정" : session?.profile?.status === "approved" ? "승인 완료" : session?.profile?.status === "rejected" ? "승인 거절" : "승인 대기"}</b></div>
                 <div className="accountMenuLinks"><Link href="/mypage" onClick={() => setAccountOpen(false)}>마이페이지</Link><Link href="/payment" onClick={() => setAccountOpen(false)}>카드결제</Link></div>
                 <button type="button" className="accountLogout" onClick={logout}>로그아웃</button>
@@ -70,9 +74,9 @@ export default function Header() {
             {cartOpen && <div className="headerCartMenu"><div className="headerCartMenuHead"><b>장바구니</b><span>{cartQty}개</span></div>{cartPreview.length ? <div className="headerCartPreviewItems">{cartPreview.slice(0, 5).map((item) => <div className="headerCartPreviewItem" key={item.id}><div><b>{item.name || "상품명 확인 필요"}</b><span>{item.weight || ""}{item.origin ? ` · ${item.origin}` : ""}</span></div><em style={{ marginRight: "24px" }}>{item.quantity}개</em><button type="button" className="headerCartRemove" style={{ background: "transparent", border: 0, padding: 0, color: "#68766f", width: "24px", height: "24px" }} aria-label={`${item.name || "상품"} 삭제`} title="삭제" onClick={() => removeCartItem(item.id)}>×</button></div>)}{cartPreview.length > 5 && <p className="headerCartMore">외 {cartPreview.length - 5}개 품목</p>}</div> : <div className="headerCartEmpty">담긴 상품이 없습니다.</div>}<div className="headerCartMenuActions"><Link className="headerCartView" href="/products?cart=1" onClick={() => setCartOpen(false)}>장바구니 보기</Link>{cartPreview.length > 0 && <button type="button" className="headerCartClear" onClick={clearCart}>장바구니 전체 비우기</button>}</div></div>}
           </div>
         )}
-        <div className="partnerDropdown"><button type="button" className="partnerApply partnerDropdownToggle" aria-haspopup="true">거래처 신청</button><div className="partnerDropdownMenu"><Link href="/inquiry">홈페이지 문의하기</Link><a href="http://pf.kakao.com/_axdbrX" target="_blank" rel="noopener noreferrer">카카오톡 문의하기</a></div></div>
+        <div className="partnerDropdown"><button type="button" className="partnerApply partnerDropdownToggle" aria-haspopup="true">거래처 신청</button><div className="partnerDropdownMenu"><Link href="/inquiry">홈페이지 문의하기</Link><a href={kakaoChannelUrl} target="_blank" rel="noopener noreferrer">카카오톡 문의하기</a></div></div>
       </div>
-      <MobileNav session={session} loaded={loaded} onLogout={logout} />
+      <MobileNav session={session} loaded={loaded} onLogout={logout} siteSettings={siteSettings} />
     </header>
   );
 }
