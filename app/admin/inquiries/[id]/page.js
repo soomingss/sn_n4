@@ -16,6 +16,7 @@ export default async function InquiryDetail({params}){
   if(!q)notFound();
   return <main>
     <section className="companyHero adminHero"><div className="companyHeroCopy"><p>SHINNONG HERB</p><h1>문의사항관리</h1><span>ADMIN &gt; 문의사항관리</span></div></section>
+    <div className="adminMobileBackRow contentWidth inquiryDetailMobileBack"><Link href="/admin/inquiries">문의목록으로 돌아가기 →</Link></div>
     <section className="inquiryDetailManage contentWidth">
       <div className="inquiryDetailHead"><div><h1>{q.inquiry_type||"기타 문의"}</h1><p>접수된 문의사항의 상세 내용을 확인합니다.</p></div><Link href="/admin/inquiries">문의목록으로 돌아가기</Link></div>
       <div className="inquiryDetailBox">
