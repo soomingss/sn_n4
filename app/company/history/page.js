@@ -1,13 +1,17 @@
 import {CompanyHero,Subnav} from "../page";
-export default function History(){
+import {getSiteSettings} from "../../lib/site-settings";
+
+export default async function History(){
+  const settings = await getSiteSettings();
+
   return <main>
-    <CompanyHero title="연혁" crumb="연혁"/>
+    <CompanyHero title="연혁" crumb="연혁" companyNameEn={settings.company_name_en}/>
     <Subnav active="history"/>
     <section className="historyWrap">
       <div className="historySide">
         <p className="eyebrow">HISTORY</p>
-        <h1>신농허브의<span className="historyTitleBreak"><br/></span> 걸어온 길</h1>
-        <p>자연과 사람을 생각하는 신농허브의 발자취는 더 건강한 내일을 향한 약속입니다.</p>
+        <h1>{settings.company_name}의<span className="historyTitleBreak"><br/></span> 걸어온 길</h1>
+        <p>자연과 사람을 생각하는 {settings.company_name}의 발자취는 더 건강한 내일을 향한 약속입니다.</p>
       </div>
       <div className="timeline">
         <H y="2008">전국 14개사 공동 네트워크 결성<br/>GAP인증 황기 강원 정선 GAP황기 작목반 계약</H>
