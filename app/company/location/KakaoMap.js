@@ -2,10 +2,7 @@
 
 import {useEffect, useRef, useState} from "react";
 
-const ADDRESS = "인천광역시 부평구 주부토로 193";
-const PLACE_NAME = "신농허브";
-
-export default function KakaoMap(){
+export default function KakaoMap({address = "인천광역시 부평구 주부토로 193", placeName = "신농허브"}){
   const mapRef = useRef(null);
   const [status, setStatus] = useState("loading");
   const appKey = process.env.NEXT_PUBLIC_KAKAO_MAP_APP_KEY;
@@ -20,7 +17,7 @@ export default function KakaoMap(){
       if (!window.kakao?.maps || !mapRef.current) return;
       window.kakao.maps.load(() => {
         const geocoder = new window.kakao.maps.services.Geocoder();
-        geocoder.addressSearch(ADDRESS, (result, resultStatus) => {
+        geocoder.addressSearch(address, (result, resultStatus) => {
           if (resultStatus !== window.kakao.maps.services.Status.OK || !result?.[0]) {
             setStatus("error");
             return;
@@ -32,12 +29,11 @@ export default function KakaoMap(){
             level: 3,
           });
 
-          new window.kakao.maps.Marker({map, position: coords});
-
+          const marker = new window.kakao.maps.Marker({map, position: coords});
           const info = new window.kakao.maps.InfoWindow({
-            content: '<div style="padding:8px 12px;font-size:13px;white-space:nowrap;font-weight:700;color:#214d40">신농허브</div>',
+            content: `<div style="padding:8px 12px;font-size:13px;white-space:nowrap;font-weight:700;color:#214d40">${placeName}</div>`,
           });
-          info.open(map, new window.kakao.maps.Marker({map, position: coords}));
+          info.open(map, marker);
           map.setCenter(coords);
           setStatus("ready");
         });
@@ -62,13 +58,13 @@ export default function KakaoMap(){
     script.onload = initMap;
     script.onerror = () => setStatus("error");
     document.head.appendChild(script);
-  }, [appKey]);
+  }, [appKey, address, placeName]);
 
-  const searchUrl = `https://map.kakao.com/link/search/${encodeURIComponent(ADDRESS)}`;
-  const routeUrl = `https://map.kakao.com/link/to/${encodeURIComponent(PLACE_NAME)},${encodeURIComponent(ADDRESS)}`;
+  const searchUrl = `https://map.kakao.com/link/search/${encodeURIComponent(address)}`;
+  const routeUrl = `https://map.kakao.com/link/to/${encodeURIComponent(placeName)},${encodeURIComponent(address)}`;
 
   return <div className="kakaoMapWrap">
-    <div ref={mapRef} className="kakaoMapCanvas" aria-label="신농허브 카카오맵 지도" />
+    <div ref={mapRef} className="kakaoMapCanvas" aria-label={`${placeName} 카카오맵 지도`} />
     {status === "loading" && <div className="mapStatus">지도를 불러오는 중입니다.</div>}
     {status === "missing-key" && <div className="mapStatus mapStatusGuide"><b>카카오맵 연동 준비 완료</b><span>Vercel 환경변수에 <code>NEXT_PUBLIC_KAKAO_MAP_APP_KEY</code>를 등록하면 실제 지도가 표시됩니다.</span></div>}
     {status === "error" && <div className="mapStatus mapStatusGuide"><b>지도를 불러오지 못했습니다.</b><span>카카오 JavaScript 키와 등록 도메인을 확인해주세요.</span></div>}
