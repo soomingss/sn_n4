@@ -1,4 +1,10 @@
-.mobileMypageIdentity,.mobileTaxReportBack,.adminMobileBackRow,.mobileManualOrderButton{display:none}
+.mobileMypageIdentity,.mobileTaxReportBack,.adminMobileBackRow,.mobileManualOrderButton,.inquiryBoardMobile{display:none}
+
+/* 문의사항 관리 게시판 */
+.inquiryAdminManage,.inquiryDetailManage{padding:54px 20px 72px}
+.inquiryAdminHead,.inquiryDetailHead{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:28px}
+.inquiryAdminHead h1,.inquiryDetailHead h1{margin:0 0 8px;font-size:30px}.inquiryAdminHead p,.inquiryDetailHead p{margin:0;color:#65766f;font-size:13px}
+.inquiryBoard{border-top:2px solid #315f4e}.inquiryBoardRow{display:grid;grid-template-columns:120px minmax(220px,1fr) 150px 190px 140px;align-items:center;min-height:62px;border-bottom:1px solid #dfe5e1;padding:0 16px;font-size:13px}.inquiryBoardHeader{min-height:48px;background:#f4f7f4;font-weight:700;text-align:center}.inquiryBoardRow:not(.inquiryBoardHeader)>span{text-align:center}.inquiryBoardRow:not(.inquiryBoardHeader)>strong{font-size:14px}.inquiryBoardRow:not(.inquiryBoardHeader):hover{background:#fafcfb}.inquiryStatus{display:inline-flex;align-items:center;justify-content:center;min-width:70px;height:26px;padding:0 9px;border:1px solid #cbd8d1;border-radius:14px;font-size:11px;color:#315f4e;background:#fff}.inquiryStatus-checking{background:#f5f1e7;border-color:#ddd0aa;color:#765f22}.inquiryStatus-answered{background:#edf5ef;border-color:#bcd2c3;color:#315f4e}.inquiryEmpty{padding:56px 20px;text-align:center;color:#718079;border-bottom:1px solid #dfe5e1}.inquiryDetailHead>a{font-size:12px;color:#315f4e}.inquiryDetailBox{border-top:2px solid #315f4e;border-bottom:1px solid #dfe5e1}.inquiryDetailMeta{display:grid;grid-template-columns:repeat(2,1fr)}.inquiryDetailMeta>div{display:grid;grid-template-columns:110px 1fr;align-items:center;min-height:58px;border-bottom:1px solid #e5eae7}.inquiryDetailMeta>div:nth-child(odd){border-right:1px solid #e5eae7}.inquiryDetailMeta span,.inquiryDetailMessage>span{font-size:12px;font-weight:700;padding-left:18px}.inquiryDetailMeta strong{font-size:13px;font-weight:500}.inquiryDetailMessage{display:grid;grid-template-columns:110px 1fr;min-height:220px}.inquiryDetailMessage>span{padding-top:22px;background:#f8faf8}.inquiryDetailMessage p{margin:0;padding:22px 24px;white-space:pre-wrap;font-size:14px;line-height:1.8}
 
 @media(max-width:950px){
   /* 기존 모바일 반영사항 유지 */
@@ -20,24 +26,21 @@
   .loginUtility{display:flex!important;flex-direction:row!important;align-items:center!important;justify-content:space-between!important;gap:8px!important;white-space:nowrap!important}
   .loginUtility .rememberLabel{flex:0 0 auto;margin:0!important}
   .loginUtility>div{flex:0 0 auto;margin:0 0 0 auto!important;text-align:right}
-
-  /* 오늘 1. 로그인 하단 신청 안내: 좌/우 같은 가로 라인 */
   .loginApply{display:flex!important;flex-direction:row!important;align-items:center!important;justify-content:space-between!important;gap:12px!important;width:100%!important}
   .loginApply>span,.loginApply>a{margin:0!important;white-space:nowrap!important}
   .loginApply>a{margin-left:auto!important;text-align:right!important}
-
-  /* 오늘 2. 모든 관리자 업무 상세: 복귀 버튼은 제목 위 우측, 화면 끝과 소폭 여백 */
   .adminMobileBackRow{display:flex!important;justify-content:flex-end!important;align-items:center!important;padding-top:22px!important;padding-bottom:0!important;padding-right:8px!important;margin-bottom:-12px!important}
   .adminMobileBackRow>a{font-size:12px!important;color:#315f4e!important;white-space:nowrap!important;text-decoration:none!important}
   .adminManage>.adminManageIntro{padding-top:0!important;padding-right:0!important}
   .desktopAdminBackLink,.mobileTaxReportBack,.taxReportBack{display:none!important}
   .taxReportManage{padding-top:0!important}
-
-  /* 오늘 3. 주문관리: 제목/수기주문 동일 라인 유지 + 설명문과 소폭 간격 */
   .mobileOrderAdminTitleRow{display:flex!important;flex-direction:row!important;align-items:center!important;justify-content:space-between!important;gap:12px!important;width:100%!important;margin-bottom:9px!important}
   .mobileOrderAdminTitleRow h1{margin:0!important;white-space:nowrap!important}
   .mobileManualOrderButton{display:inline-flex!important;align-items:center!important;justify-content:center!important;flex:0 0 auto!important;margin-left:auto!important;padding:8px 10px!important;background:#315f4e!important;color:#fff!important;font-size:11px!important;line-height:1!important;white-space:nowrap!important;text-decoration:none!important}
   .adminOrderIntroText span{display:block!important}
   .adminOrderTopLinks .adminBackLink,.adminOrderTopLinks .manualOrderButton{display:none!important}
   .adminOrderTop{margin-top:18px!important;min-height:0!important}
+
+  /* 문의사항 관리 모바일 */
+  .inquiryAdminManage,.inquiryDetailManage{padding:28px 20px 58px!important}.inquiryAdminHead,.inquiryDetailHead{display:block;margin-bottom:20px}.inquiryAdminHead h1,.inquiryDetailHead h1{font-size:25px}.inquiryAdminHead .desktopAdminBackLink{display:none!important}.inquiryBoardDesktop{display:none!important}.inquiryBoardMobile{display:block!important;border-top:2px solid #315f4e}.inquiryMobileCard{display:block;padding:17px 4px;border-bottom:1px solid #dfe5e1}.inquiryMobileCard>div{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}.inquiryMobileCard>div>span{font-size:11px;color:#718079}.inquiryMobileCard>strong{display:block;font-size:15px;margin-bottom:7px}.inquiryMobileCard>p{margin:0;font-size:12px;color:#65766f}.inquiryDetailHead>a{display:inline-block;margin-top:12px}.inquiryDetailMeta{grid-template-columns:1fr}.inquiryDetailMeta>div{grid-template-columns:86px 1fr}.inquiryDetailMeta>div:nth-child(odd){border-right:0}.inquiryDetailMeta span,.inquiryDetailMessage>span{padding-left:10px}.inquiryDetailMessage{grid-template-columns:86px 1fr;min-height:180px}.inquiryDetailMessage p{padding:18px 14px;font-size:13px}
 }
