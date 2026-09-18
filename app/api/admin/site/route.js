@@ -33,6 +33,17 @@ export async function PATCH(request){
         body:JSON.stringify({content_value:String(body.value ?? "")})
       });
       if (!res.ok) throw new Error(await res.text());
+    } else if (type === "core_active") {
+      const number = Number(body.number);
+      if (![1,2,3,4,5].includes(number)) return NextResponse.json({message:"핵심가치 정보가 올바르지 않습니다."},{status:400});
+      const active = Boolean(body.active);
+      const keys = [`core_value_${number}_title`,`core_value_${number}_description`];
+      const res = await supabaseAdminFetch(`/rest/v1/site_content?page_key=eq.company&content_key=in.(${keys.join(",")})`,{
+        method:"PATCH",
+        headers:{Prefer:"return=minimal"},
+        body:JSON.stringify({is_active:active})
+      });
+      if (!res.ok) throw new Error(await res.text());
     } else if (type === "history") {
       const id = Number(body.id);
       if (!Number.isFinite(id)) return NextResponse.json({message:"연혁 정보가 올바르지 않습니다."},{status:400});
