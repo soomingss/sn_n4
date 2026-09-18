@@ -58,9 +58,12 @@ export default function SiteEditor({settings,pages,history}){
 
     <Block title="연혁">
       {historyValues.map((item,index)=><div key={item.id} style={{padding:"14px 0",borderBottom:"1px solid #e7e7e7"}}>
-        <div style={labelRowStyle}><b>{item.year || "연혁"}</b><SaveButton compact busy={state.saving===`history:${item.id}`} onClick={()=>save({type:"history",id:item.id,year:item.year,content:item.content},`history:${item.id}`)}/></div>
-        <input aria-label="연도" value={item.year} onChange={(e)=>setHistoryValues(historyValues.map((row,i)=>i===index?{...row,year:e.target.value}:row))} style={{...inputStyle,marginBottom:"8px"}}/>
-        <textarea aria-label="연혁 내용" rows={3} value={item.content} onChange={(e)=>setHistoryValues(historyValues.map((row,i)=>i===index?{...row,content:e.target.value}:row))} style={inputStyle}/>
+        <div style={labelRowStyle}>
+          <b>{`연혁 ${index+1}`}</b>
+          <label style={{display:"flex",alignItems:"center",gap:"6px",fontSize:"13px"}}><input type="checkbox" checked={item.is_active!==false} onChange={(e)=>{const active=e.target.checked;setHistoryValues(historyValues.map((row,i)=>i===index?{...row,is_active:active}:row));save({type:"history_active",id:item.id,active},`history-active:${item.id}`)}}/>{item.is_active!==false?"사용":"미사용"}</label>
+        </div>
+        <Field label="연도" value={item.year} onChange={(value)=>setHistoryValues(historyValues.map((row,i)=>i===index?{...row,year:value}:row))}/>
+        <Field label="내용" value={item.content} multiline onChange={(value)=>setHistoryValues(historyValues.map((row,i)=>i===index?{...row,content:value}:row))} action={<SaveButton compact busy={state.saving===`history:${item.id}`} onClick={()=>save({type:"history",id:item.id,year:item.year,content:item.content},`history:${item.id}`)}/>}/>
       </div>)}
     </Block>
 
