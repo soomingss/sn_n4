@@ -16,7 +16,15 @@ function HeroTitle({value}){
 
 export default async function Home(){
   const settings = await getSiteSettings();
-  const content = await getSiteContent("home", settings);\n  const companyContent = await getSiteContent("company", settings);\n  const coreValues = [\n    {icon:"leaf",title:companyContent.core_value_1_title,description:companyContent.core_value_1_description},\n    {icon:"gap",title:companyContent.core_value_2_title,description:companyContent.core_value_2_description},\n    {icon:"shield",title:companyContent.core_value_3_title,description:companyContent.core_value_3_description},\n    {icon:"truck",title:companyContent.core_value_4_title,description:companyContent.core_value_4_description},\n    {icon:"handshake",title:companyContent.core_value_5_title,description:companyContent.core_value_5_description},\n  ].filter((value)=>value.title && value.description);
+  const content = await getSiteContent("home", settings);
+  const companyContent = await getSiteContent("company", settings);
+  const coreValues = [
+    {icon:"leaf",title:companyContent.core_value_1_title,description:companyContent.core_value_1_description},
+    {icon:"gap",title:companyContent.core_value_2_title,description:companyContent.core_value_2_description},
+    {icon:"shield",title:companyContent.core_value_3_title,description:companyContent.core_value_3_description},
+    {icon:"truck",title:companyContent.core_value_4_title,description:companyContent.core_value_4_description},
+    {icon:"handshake",title:companyContent.core_value_5_title,description:companyContent.core_value_5_description},
+  ].filter((value)=>value.title && value.description);
 
   return <main>
     <section className="mainHero">
