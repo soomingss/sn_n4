@@ -39,7 +39,7 @@ export default function SiteEditor({settings,pages,history}){
       <SaveButton busy={state.saving==="settings"} onClick={()=>save({type:"settings",values:settingValues},"settings")}/>
     </Block>
 
-    {pages.map((page)=><Block key={page.key} title={page.label}>
+    {pages.map((page)=><Block key={page.key} title={page.label} action={page.key==="company"?<AddButton onClick={()=>save({type:"core_add"},"core-add")}>+ 핵심가치 추가</AddButton>:null}>
       {Object.entries(contentValues[page.key]||{}).map(([contentKey,item])=>{
         const coreMatch=page.key==="company"&&contentKey.match(/^core_value_(\\d+)_title$/);
         const hideCoreDescription=page.key==="company"&&/^core_value_\\d+_description$/.test(contentKey);
@@ -47,7 +47,7 @@ export default function SiteEditor({settings,pages,history}){
         if(coreMatch){
           const no=coreMatch[1], descKey=`core_value_${no}_description`, desc=contentValues[page.key][descKey]||{value:"",active:item.active};
           return <div key={contentKey} style={{padding:"16px 0",borderBottom:"1px solid #eee"}}>
-            <div style={labelRowStyle}><b>{`핵심가치 ${no}`}</b><label style={{display:"flex",alignItems:"center",gap:"6px",fontSize:"13px"}}><input type="checkbox" checked={item.active&&desc.active} onChange={(e)=>save({type:"core_active",number:no,active:e.target.checked},`core-active:${no}`)}/>{item.active&&desc.active?"사용":"미사용"}</label></div>
+            <div style={labelRowStyle}><b>{`핵심가치 ${no}`}</b><div style={rowActionsStyle}><label style={toggleStyle}><input type="checkbox" checked={item.active&&desc.active} onChange={(e)=>save({type:"core_active",number:no,active:e.target.checked},`core-active:${no}`)}/>{item.active&&desc.active?"사용":"미사용"}</label><button type="button" style={dangerButtonStyle} onClick={()=>confirm("이 핵심가치를 삭제할까요?")&&save({type:"core_delete",number:no},`core-delete:${no}`)}>삭제</button></div></div>
             <Field label="제목" value={item.value} onChange={(next)=>setContentValues({...contentValues,[page.key]:{...contentValues[page.key],[contentKey]:{...item,value:next}}})} action={<SaveButton compact busy={state.saving===`content:${page.key}:${contentKey}`} onClick={()=>save({type:"content",pageKey:page.key,contentKey,value:item.value},`content:${page.key}:${contentKey}`)}/>}/>
             <Field label="설명" value={desc.value} multiline onChange={(next)=>setContentValues({...contentValues,[page.key]:{...contentValues[page.key],[descKey]:{...desc,value:next}}})} action={<SaveButton compact busy={state.saving===`content:${page.key}:${descKey}`} onClick={()=>save({type:"content",pageKey:page.key,contentKey:descKey,value:desc.value},`content:${page.key}:${descKey}`)}/>}/>
           </div>;
@@ -56,11 +56,11 @@ export default function SiteEditor({settings,pages,history}){
       })}
     </Block>)}
 
-    <Block title="연혁">
+    <Block title="연혁" action={<AddButton onClick={()=>save({type:"history_add"},"history-add")}>+ 연혁 추가</AddButton>}>
       {historyValues.map((item,index)=><div key={item.id} style={{padding:"14px 0",borderBottom:"1px solid #e7e7e7"}}>
         <div style={labelRowStyle}>
           <b>{`연혁 ${index+1}`}</b>
-          <label style={{display:"flex",alignItems:"center",gap:"6px",fontSize:"13px"}}><input type="checkbox" checked={item.is_active!==false} onChange={(e)=>{const active=e.target.checked;setHistoryValues(historyValues.map((row,i)=>i===index?{...row,is_active:active}:row));save({type:"history_active",id:item.id,active},`history-active:${item.id}`)}}/>{item.is_active!==false?"사용":"미사용"}</label>
+          <div style={rowActionsStyle}><label style={toggleStyle}><input type="checkbox" checked={item.is_active!==false} onChange={(e)=>{const active=e.target.checked;setHistoryValues(historyValues.map((row,i)=>i===index?{...row,is_active:active}:row));save({type:"history_active",id:item.id,active},`history-active:${item.id}`)}}/>{item.is_active!==false?"사용":"미사용"}</label><button type="button" style={dangerButtonStyle} onClick={()=>confirm("이 연혁을 삭제할까요?")&&save({type:"history_delete",id:item.id},`history-delete:${item.id}`)}>삭제</button></div>
         </div>
         <Field label="연도" value={item.year} onChange={(value)=>setHistoryValues(historyValues.map((row,i)=>i===index?{...row,year:value}:row))}/>
         <Field label="내용" value={item.content} multiline onChange={(value)=>setHistoryValues(historyValues.map((row,i)=>i===index?{...row,content:value}:row))} action={<SaveButton compact busy={state.saving===`history:${item.id}`} onClick={()=>save({type:"history",id:item.id,year:item.year,content:item.content},`history:${item.id}`)}/>}/>
@@ -71,7 +71,7 @@ export default function SiteEditor({settings,pages,history}){
   </>;
 }
 
-function Block({title,children}){return <section style={{marginTop:"28px",padding:"24px",border:"1px solid #e2e8e2",borderRadius:"12px",background:"#fff"}}><h2 style={{marginTop:0}}>{title}</h2>{children}</section>}
+function Block({title,children,action=null}){return <section style={{marginTop:"28px",padding:"24px",border:"1px solid #e2e8e2",borderRadius:"12px",background:"#fff"}}><div style={labelRowStyle}><h2 style={{margin:0}}>{title}</h2>{action}</div>{children}</section>}\nfunction AddButton({children,onClick}){return <button type="button" onClick={onClick} style={{padding:"8px 12px",border:"1px solid #315f4e",background:"#fff",color:"#315f4e",borderRadius:"6px"}}>{children}</button>}
 
 function Field({label,value,onChange,multiline=false,action=null}){
   return <div style={{padding:"12px 0",borderBottom:"1px solid #eee"}}>
@@ -80,7 +80,7 @@ function Field({label,value,onChange,multiline=false,action=null}){
   </div>;
 }
 function SaveButton({busy,onClick,compact=false}){return <button type="button" onClick={onClick} disabled={busy} style={{padding:compact?"8px 14px":"11px 20px",marginTop:compact?0:"18px",cursor:"pointer",flexShrink:0}}>{busy?"저장 중...":"저장"}</button>}
-const labelRowStyle={display:"flex",alignItems:"center",justifyContent:"space-between",gap:"12px",marginBottom:"8px"};
+const toggleStyle={display:"flex",alignItems:"center",gap:"6px",fontSize:"13px"};\nconst rowActionsStyle={display:"flex",alignItems:"center",gap:"10px"};\nconst dangerButtonStyle={border:"0",background:"transparent",color:"#8a3a32",fontSize:"12px",padding:"4px"};\nconst labelRowStyle={display:"flex",alignItems:"center",justifyContent:"space-between",gap:"12px",marginBottom:"8px"};
 const inputStyle={display:"block",width:"100%",maxWidth:"100%",boxSizing:"border-box",padding:"11px 12px",border:"1px solid #ccd5cc",borderRadius:"6px",font:"inherit"};
 
 const contentLabels={
