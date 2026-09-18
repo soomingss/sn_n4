@@ -44,10 +44,10 @@ export default function SiteEditor({settings,pages,history}){
     </Block>)}
 
     <Block title="연혁">
-      {historyValues.map((item,index)=><div key={item.id} style={{display:"grid",gridTemplateColumns:"110px 1fr auto",gap:"12px",alignItems:"start",padding:"14px 0",borderBottom:"1px solid #e7e7e7"}}>
-        <input value={item.year} onChange={(e)=>setHistoryValues(historyValues.map((row,i)=>i===index?{...row,year:e.target.value}:row))} style={inputStyle}/>
-        <textarea rows={3} value={item.content} onChange={(e)=>setHistoryValues(historyValues.map((row,i)=>i===index?{...row,content:e.target.value}:row))} style={inputStyle}/>
-        <SaveButton compact busy={state.saving===`history:${item.id}`} onClick={()=>save({type:"history",id:item.id,year:item.year,content:item.content},`history:${item.id}`)}/>
+      {historyValues.map((item,index)=><div key={item.id} style={{padding:"14px 0",borderBottom:"1px solid #e7e7e7"}}>
+        <div style={labelRowStyle}><b>{item.year || "연혁"}</b><SaveButton compact busy={state.saving===`history:${item.id}`} onClick={()=>save({type:"history",id:item.id,year:item.year,content:item.content},`history:${item.id}`)}/></div>
+        <input aria-label="연도" value={item.year} onChange={(e)=>setHistoryValues(historyValues.map((row,i)=>i===index?{...row,year:e.target.value}:row))} style={{...inputStyle,marginBottom:"8px"}}/>
+        <textarea aria-label="연혁 내용" rows={3} value={item.content} onChange={(e)=>setHistoryValues(historyValues.map((row,i)=>i===index?{...row,content:e.target.value}:row))} style={inputStyle}/>
       </div>)}
     </Block>
 
@@ -58,11 +58,11 @@ export default function SiteEditor({settings,pages,history}){
 function Block({title,children}){return <section style={{marginTop:"28px",padding:"24px",border:"1px solid #e2e8e2",borderRadius:"12px",background:"#fff"}}><h2 style={{marginTop:0}}>{title}</h2>{children}</section>}
 
 function Field({label,value,onChange,multiline=false,action=null}){
-  return <div style={{display:"grid",gridTemplateColumns:"minmax(140px,220px) 1fr auto",gap:"12px",alignItems:"start",padding:"12px 0",borderBottom:"1px solid #eee"}}>
-    <b style={{paddingTop:"10px"}}>{label}</b>
+  return <div style={{padding:"12px 0",borderBottom:"1px solid #eee"}}>
+    <div style={labelRowStyle}><b>{label}</b>{action}</div>
     {multiline?<textarea rows={3} value={value||""} onChange={(e)=>onChange(e.target.value)} style={inputStyle}/>:<input value={value||""} onChange={(e)=>onChange(e.target.value)} style={inputStyle}/>}
-    {action}
   </div>;
 }
-function SaveButton({busy,onClick,compact=false}){return <button type="button" onClick={onClick} disabled={busy} style={{padding:compact?"10px 14px":"11px 20px",marginTop:compact?0:"18px",cursor:"pointer"}}>{busy?"저장 중...":"저장"}</button>}
-const inputStyle={width:"100%",boxSizing:"border-box",padding:"10px 12px",border:"1px solid #ccd5cc",borderRadius:"6px",font:"inherit"};
+function SaveButton({busy,onClick,compact=false}){return <button type="button" onClick={onClick} disabled={busy} style={{padding:compact?"8px 14px":"11px 20px",marginTop:compact?0:"18px",cursor:"pointer",flexShrink:0}}>{busy?"저장 중...":"저장"}</button>}
+const labelRowStyle={display:"flex",alignItems:"center",justifyContent:"space-between",gap:"12px",marginBottom:"8px"};
+const inputStyle={display:"block",width:"100%",maxWidth:"100%",boxSizing:"border-box",padding:"11px 12px",border:"1px solid #ccd5cc",borderRadius:"6px",font:"inherit"};
