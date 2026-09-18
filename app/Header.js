@@ -52,7 +52,7 @@ export default function Header({ siteSettings = {} }) {
     <header className="header">
       <Link href="/" className="logoWrap" aria-label={companyName ? `${companyName} 홈` : "홈"}>{logoHeaderPath && <img src={logoHeaderPath} alt={[companyName, companyNameEn].filter(Boolean).join(" ")} className="logoImg" />}</Link>
       <nav className="mainNav">
-        <Link href="/company">회사소개</Link><Link href="/products">약재 주문</Link><Link href="/order-delivery">주문·배송 안내</Link>{kakaoChannelUrl && <a href={kakaoChannelUrl} target="_blank" rel="noopener noreferrer">고객센터</a>}{isAdmin && <Link className="adminNavLink" href="/admin">관리자업무</Link>}
+        <Link href="/company">회사소개</Link><Link href="/products">약재주문</Link><Link href="/order-delivery">주문·배송 안내</Link>{kakaoChannelUrl && <a href={kakaoChannelUrl} target="_blank" rel="noopener noreferrer">고객센터</a>}{isAdmin && <Link className="adminNavLink" href="/admin">관리자업무</Link>}
       </nav>
       <div className="headerActions">
         {loaded && session ? (
