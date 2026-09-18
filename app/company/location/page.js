@@ -1,10 +1,17 @@
 import {CompanyHero,Subnav} from "../page";
 import {Icon} from "../../components";
 import {getSiteSettings} from "../../lib/site-settings";
+import {contentLines, getSiteContent} from "../../lib/site-content";
 import KakaoMap from "./KakaoMap";
+
+function Lines({value}){
+  const lines = contentLines(value);
+  return <>{lines.map((line, index)=><span key={index}>{index > 0 && <br/>}{line}</span>)}</>;
+}
 
 export default async function Location(){
   const settings = await getSiteSettings();
+  const content = await getSiteContent("location", settings);
 
   return <main>
     <CompanyHero title="오시는 길" crumb="오시는 길" companyNameEn={settings.company_name_en}/>
@@ -12,8 +19,8 @@ export default async function Location(){
 
     <section className="location contentWidth">
       <p className="eyebrow">LOCATION</p>
-      <h1>{settings.company_name}는<br/>언제든 열려있습니다.</h1>
-      <p className="locationDesc">좋은 한약재로 더 건강한 내일을 만드는 {settings.company_name}에 찾아오시는 길을 안내드립니다.</p>
+      <h1><Lines value={content.title}/></h1>
+      <p className="locationDesc"><Lines value={content.description}/></p>
 
       <KakaoMap address={settings.map_address} placeName={settings.map_place_name || settings.company_name}/>
 
@@ -23,9 +30,9 @@ export default async function Location(){
         <Info icon="fax" title="팩스번호">{settings.fax}</Info>
       </div>
 
-      <h2 className="transportTitle">주차 안내</h2>
+      <h2 className="transportTitle">{content.parking_title}</h2>
       <div className="transportCards parkingCards">
-        <Info icon="car" title="자차 이용 시">대동아파트 상가동 내 주차 공간을 이용하실 수 있습니다.</Info>
+        <Info icon="car" title={content.parking_label}><Lines value={content.parking_description}/></Info>
       </div>
     </section>
   </main>
