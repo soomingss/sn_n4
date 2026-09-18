@@ -44,6 +44,15 @@ export async function PATCH(request){
         body:JSON.stringify({is_active:active})
       });
       if (!res.ok) throw new Error(await res.text());
+    } else if (type === "history_active") {
+      const id = Number(body.id);
+      if (!Number.isFinite(id)) return NextResponse.json({message:"연혁 정보가 올바르지 않습니다."},{status:400});
+      const res = await supabaseAdminFetch(`/rest/v1/site_history?id=eq.${id}`,{
+        method:"PATCH",
+        headers:{Prefer:"return=minimal"},
+        body:JSON.stringify({is_active:Boolean(body.active)})
+      });
+      if (!res.ok) throw new Error(await res.text());
     } else if (type === "history") {
       const id = Number(body.id);
       if (!Number.isFinite(id)) return NextResponse.json({message:"연혁 정보가 올바르지 않습니다."},{status:400});
