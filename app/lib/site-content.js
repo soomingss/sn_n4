@@ -50,6 +50,19 @@ export async function getAdminSiteContent(pageKey) {
   }
 }
 
+export async function getAdminSiteHistory() {
+  try {
+    const response = await supabaseAdminFetch(
+      "/rest/v1/site_history?select=id,year,content,sort_order,is_active&order=sort_order.asc"
+    );
+    if (!response.ok) return [];
+    return (await response.json()) || [];
+  } catch (error) {
+    console.error("[site-history] Admin read error", error instanceof Error ? error.message : error);
+    return [];
+  }
+}
+
 export async function getSiteHistory() {
   try {
     const response = await supabaseAdminFetch(
