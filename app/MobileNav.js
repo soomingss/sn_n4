@@ -20,7 +20,7 @@ export default function MobileNav({ session, loaded, onLogout, siteSettings }) {
     {open && <div className="mobileMenu"><div className="mobileMenuInner">
       <button type="button" className="mobileMenuRow mobileCompanyToggle" aria-expanded={companyOpen} onClick={() => setCompanyOpen(v => !v)}><span>회사소개</span><span className={`mobileChevron ${companyOpen ? "isOpen" : ""}`}>⌄</span></button>
       {companyOpen && <div className="mobileSubmenu"><Link href="/company" onClick={closeMenu}>회사소개</Link><Link href="/company/history" onClick={closeMenu}>연혁</Link><Link href="/company/location" onClick={closeMenu}>오시는 길</Link></div>}
-      <Link className="mobileMenuRow" href="/products" onClick={closeMenu}>약재 주문</Link>
+      <Link className="mobileMenuRow" href="/products" onClick={closeMenu}>약재주문</Link>
       <Link className="mobileMenuRow" href="/order-delivery" onClick={closeMenu}>주문·배송 안내</Link>
       {isAdmin && <Link className="mobileMenuRow adminMobileLink" href="/admin" onClick={closeMenu}>관리자업무</Link>}
       <button type="button" className="mobileMenuRow mobileCompanyToggle" aria-expanded={inquiryOpen} onClick={() => setInquiryOpen(v => !v)}><span>거래처 신청</span><span className={`mobileChevron ${inquiryOpen ? "isOpen" : ""}`}>⌄</span></button>
