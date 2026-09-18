@@ -36,6 +36,20 @@ export async function getSiteContent(pageKey, settings = {}) {
   }
 }
 
+export async function getAdminSiteContent(pageKey) {
+  if (!pageKey) return [];
+  try {
+    const response = await supabaseAdminFetch(
+      `/rest/v1/site_content?select=content_key,content_value,sort_order,is_active&page_key=eq.${encodeURIComponent(pageKey)}&order=sort_order.asc`
+    );
+    if (!response.ok) return [];
+    return (await response.json()) || [];
+  } catch (error) {
+    console.error("[site-content] Admin read error", error instanceof Error ? error.message : error);
+    return [];
+  }
+}
+
 export async function getSiteHistory() {
   try {
     const response = await supabaseAdminFetch(
