@@ -39,11 +39,23 @@ export default function SiteEditor({settings,pages,history}){
       <SaveButton busy={state.saving==="settings"} onClick={()=>save({type:"settings",values:settingValues},"settings")}/>
     </Block>
 
-    {pages.map((page)=><Block key={page.key} title={page.label} action={page.key==="company"?<AddButton onClick={()=>save({type:"core_add"},"core-add")}>+ 핵심가치 추가</AddButton>:null}>
+    {pages.map((page)=><Block key={page.key} title={page.label} action={page.key==="company"?<AddButton onClick={()=>save({type:"core_add"},"core-add")}>+ 핵심가치 추가</AddButton>:page.key==="location"&&!contentValues.location?.parking_title?<AddButton onClick={()=>save({type:"parking_add"},"parking-add")}>+ 주차안내 추가</AddButton>:null}>
       {Object.entries(contentValues[page.key]||{}).map(([contentKey,item])=>{
         const coreMatch=page.key==="company"&&contentKey.match(/^core_value_(\d+)_title$/);
+        const parkingTitle=page.key==="location"&&contentKey==="parking_title";
+        const hideParkingChild=page.key==="location"&&(contentKey==="parking_label"||contentKey==="parking_description");
         const hideCoreDescription=page.key==="company"&&/^core_value_\d+_description$/.test(contentKey);
-        if(hideCoreDescription)return null;
+        if(hideCoreDescription||hideParkingChild)return null;
+        if(parkingTitle){
+          const labelItem=contentValues.location?.parking_label||{value:""};
+          const descItem=contentValues.location?.parking_description||{value:""};
+          return <div key={contentKey} style={{padding:"16px 0",borderBottom:"1px solid #eee"}}>
+            <div style={labelRowStyle}><b>주차 안내</b><button type="button" style={dangerButtonStyle} onClick={()=>confirm("주차 안내를 삭제할까요?")&&save({type:"parking_delete"},"parking-delete")}>삭제</button></div>
+            <Field label="제목" value={item.value} onChange={(next)=>setContentValues({...contentValues,location:{...contentValues.location,parking_title:{...item,value:next}}})} action={<SaveButton compact busy={state.saving==="content:location:parking_title"} onClick={()=>save({type:"content",pageKey:"location",contentKey:"parking_title",value:item.value},"content:location:parking_title")}/>}/>
+            <Field label="구분" value={labelItem.value} onChange={(next)=>setContentValues({...contentValues,location:{...contentValues.location,parking_label:{...labelItem,value:next}}})} action={<SaveButton compact busy={state.saving==="content:location:parking_label"} onClick={()=>save({type:"content",pageKey:"location",contentKey:"parking_label",value:labelItem.value},"content:location:parking_label")}/>}/>
+            <Field label="내용" value={descItem.value} multiline onChange={(next)=>setContentValues({...contentValues,location:{...contentValues.location,parking_description:{...descItem,value:next}}})} action={<SaveButton compact busy={state.saving==="content:location:parking_description"} onClick={()=>save({type:"content",pageKey:"location",contentKey:"parking_description",value:descItem.value},"content:location:parking_description")}/>}/>
+          </div>;
+        }
         if(coreMatch){
           const no=coreMatch[1], descKey=`core_value_${no}_description`, desc=contentValues[page.key][descKey]||{value:"",active:item.active};
           return <div key={contentKey} style={{padding:"16px 0",borderBottom:"1px solid #eee"}}>
@@ -67,7 +79,7 @@ export default function SiteEditor({settings,pages,history}){
       </div>)}
     </Block>
 
-    <div style={{marginTop:"28px"}}><Link href="/admin">← 관리자 업무로 돌아가기</Link></div>
+    <div style={{marginTop:"32px",display:"flex",justifyContent:"center"}}><Link href="/admin" style={backButtonStyle}>← 관리자 업무로 돌아가기</Link></div>
   </>;
 }
 
@@ -83,6 +95,7 @@ function Field({label,value,onChange,multiline=false,action=null}){
 function SaveButton({busy,onClick,compact=false}){return <button type="button" onClick={onClick} disabled={busy} style={{padding:compact?"8px 14px":"11px 20px",marginTop:compact?0:"18px",cursor:"pointer",flexShrink:0}}>{busy?"저장 중...":"저장"}</button>}
 const toggleStyle={display:"flex",alignItems:"center",gap:"6px",fontSize:"13px"};
 const rowActionsStyle={display:"flex",alignItems:"center",gap:"10px"};
+const backButtonStyle={display:"inline-flex",alignItems:"center",justifyContent:"center",padding:"10px 16px",background:"#315f4e",color:"#fff",textDecoration:"none",fontSize:"12px",fontWeight:700,borderRadius:"6px"};
 const dangerButtonStyle={border:"0",background:"transparent",color:"#8a3a32",fontSize:"12px",padding:"4px"};
 const labelRowStyle={display:"flex",alignItems:"center",justifyContent:"space-between",gap:"12px",marginBottom:"8px"};
 const inputStyle={display:"block",width:"100%",maxWidth:"100%",boxSizing:"border-box",padding:"11px 12px",border:"1px solid #ccd5cc",borderRadius:"6px",font:"inherit"};
