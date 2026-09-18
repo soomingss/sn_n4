@@ -16,7 +16,7 @@ function HeroTitle({value}){
 
 export default async function Home(){
   const settings = await getSiteSettings();
-  const content = await getSiteContent("home", settings);
+  const content = await getSiteContent("home", settings);\n  const companyContent = await getSiteContent("company", settings);\n  const coreValues = [\n    {icon:"leaf",title:companyContent.core_value_1_title,description:companyContent.core_value_1_description},\n    {icon:"gap",title:companyContent.core_value_2_title,description:companyContent.core_value_2_description},\n    {icon:"shield",title:companyContent.core_value_3_title,description:companyContent.core_value_3_description},\n    {icon:"truck",title:companyContent.core_value_4_title,description:companyContent.core_value_4_description},\n    {icon:"handshake",title:companyContent.core_value_5_title,description:companyContent.core_value_5_description},\n  ].filter((value)=>value.title && value.description);
 
   return <main>
     <section className="mainHero">
@@ -29,12 +29,8 @@ export default async function Home(){
       <div className="mainImage"></div>
     </section>
 
-    <section className="fiveValues">
-      <ValueCard icon="leaf" title="엄선된 원료">좋은 산지의 신선한 원료만을 선별합니다.</ValueCard>
-      <ValueCard icon="gap" title="GAP 인증">안전하고 신뢰할 수 있는 한약재 유통</ValueCard>
-      <ValueCard icon="shield" title="철저한 품질관리">입고부터 출고까지 체계적으로 관리합니다.</ValueCard>
-      <ValueCard icon="truck" title="안정적인 공급">한의원과 의료기관을 위한 신뢰할 수 있는 공급시스템</ValueCard>
-      <ValueCard icon="handshake" title="함께하는 성장">신뢰를 바탕으로 지속 가능한 파트너십.</ValueCard>
+    <section className="fiveValues" style={{gridTemplateColumns:`repeat(${coreValues.length || 1}, minmax(0, 1fr))`}}>
+      {coreValues.map((value)=><ValueCard key={value.icon} icon={value.icon} title={value.title}><Lines value={value.description}/></ValueCard>)}
     </section>
 
     <section className="mainBottom">
