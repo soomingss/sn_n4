@@ -65,6 +65,17 @@ export async function PATCH(request){
         body:JSON.stringify({is_active:active})
       });
       if (!res.ok) throw new Error(await res.text());
+    } else if (type === "parking_add") {
+      const rows = [
+        {page_key:"location",content_key:"parking_title",content_value:"주차 안내",sort_order:40,is_active:true},
+        {page_key:"location",content_key:"parking_label",content_value:"자차 이용 시",sort_order:41,is_active:true},
+        {page_key:"location",content_key:"parking_description",content_value:"주차 안내 내용을 입력해 주세요.",sort_order:42,is_active:true}
+      ];
+      const res = await supabaseAdminFetch("/rest/v1/site_content",{method:"POST",headers:{Prefer:"return=minimal"},body:JSON.stringify(rows)});
+      if(!res.ok)throw new Error(await res.text());
+    } else if (type === "parking_delete") {
+      const res = await supabaseAdminFetch("/rest/v1/site_content?page_key=eq.location&content_key=in.(parking_title,parking_label,parking_description)",{method:"DELETE",headers:{Prefer:"return=minimal"}});
+      if(!res.ok)throw new Error(await res.text());
     } else if (type === "history_add") {
       const list=await supabaseAdminFetch("/rest/v1/site_history?select=sort_order&order=sort_order.desc&limit=1");
       if(!list.ok)throw new Error(await list.text());
