@@ -1,7 +1,7 @@
 import { redirect } from "next/navigation";
 import { getCurrentSession } from "../../lib/auth";
 import { getSiteSettings } from "../../lib/site-settings";
-import { getAdminSiteContent, getSiteHistory } from "../../lib/site-content";
+import { getAdminSiteContent, getAdminSiteHistory } from "../../lib/site-content";
 import SiteEditor from "./SiteEditor";
 
 const pages = [
@@ -21,7 +21,7 @@ export default async function AdminSitePage(){
   const contentEntries = await Promise.all(
     pages.map(async ([key, label]) => ({key, label, rows:await getAdminSiteContent(key)}))
   );
-  const history = await getSiteHistory();
+  const history = await getAdminSiteHistory();
 
   return <main>
     <section className="companyHero adminHero">
