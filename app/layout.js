@@ -17,10 +17,11 @@ export default async function RootLayout({ children }) {
   const settings = await getSiteSettings();
   return (
     <html lang="ko">
-      <body>
+      <body id="top">
         <Header siteSettings={settings} />
         {children}
         <Footer settings={settings} />
+        <a className="mobileScrollTop" href="#top" aria-label="페이지 맨 위로">↑</a>
       </body>
     </html>
   );
