@@ -19,7 +19,7 @@ export default async function Company(){
     {icon:"shield", title:content.core_value_3_title, description:content.core_value_3_description},
     {icon:"truck", title:content.core_value_4_title, description:content.core_value_4_description},
     {icon:"handshake", title:content.core_value_5_title, description:content.core_value_5_description},
-  ];
+  ].filter((value)=>value.title && value.description);
 
   return <main>
     <CompanyHero title="회사소개" crumb="회사소개" companyNameEn={settings.company_name_en}/>
