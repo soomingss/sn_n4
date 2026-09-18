@@ -13,13 +13,9 @@ export default async function Company(){
   const content = await getSiteContent("company", settings);
   const companyName = settings.company_name;
 
-  const values = [
-    {icon:"leaf", title:content.core_value_1_title, description:content.core_value_1_description},
-    {icon:"gap", title:content.core_value_2_title, description:content.core_value_2_description},
-    {icon:"shield", title:content.core_value_3_title, description:content.core_value_3_description},
-    {icon:"truck", title:content.core_value_4_title, description:content.core_value_4_description},
-    {icon:"handshake", title:content.core_value_5_title, description:content.core_value_5_description},
-  ].filter((value)=>value.title && value.description);
+  const coreIcons=["leaf","gap","shield","truck","handshake"];
+  const coreNumbers=[...new Set(Object.keys(content).map((key)=>key.match(/^core_value_(\d+)_title$/)?.[1]).filter(Boolean))].sort((a,b)=>Number(a)-Number(b));
+  const values=coreNumbers.map((no,index)=>({icon:coreIcons[index%coreIcons.length],title:content[`core_value_${no}_title`],description:content[`core_value_${no}_description`]})).filter((value)=>value.title&&value.description);
 
   return <main>
     <CompanyHero title="회사소개" crumb="회사소개" companyNameEn={settings.company_name_en}/>
