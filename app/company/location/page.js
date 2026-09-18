@@ -30,10 +30,12 @@ export default async function Location(){
         <Info icon="fax" title="팩스번호">{settings.fax}</Info>
       </div>
 
-      <h2 className="transportTitle">{content.parking_title}</h2>
-      <div className="transportCards parkingCards">
-        <Info icon="car" title={content.parking_label}><Lines value={content.parking_description}/></Info>
-      </div>
+      {content.parking_title && content.parking_label && content.parking_description ? <>
+        <h2 className="transportTitle">{content.parking_title}</h2>
+        <div className="transportCards parkingCards">
+          <Info icon="car" title={content.parking_label}><Lines value={content.parking_description}/></Info>
+        </div>
+      </> : null}
     </section>
   </main>
 }
