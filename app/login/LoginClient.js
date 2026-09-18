@@ -33,7 +33,7 @@ export default function LoginClient({ companyNameEn }) {
       <div className="loginBox">
         <p className="eyebrow">MEMBER LOGIN</p>
         <h1>거래처 로그인</h1>
-        <p className="loginDesc">승인된 거래처 회원은 로그인 후 제품안내를 이용하실 수 있습니다.</p>
+        <p className="loginDesc">승인된 거래처 회원은 로그인 후 약재주문을 이용하실 수 있습니다.</p>
         <form onSubmit={submit} className="loginForm">
           <label><span>아이디</span><input value={form.username} onChange={(e)=>setForm({...form,username:e.target.value})} autoComplete="username" placeholder="아이디를 입력해 주세요." required /></label>
           <label><span>비밀번호</span><input type="password" value={form.password} onChange={(e)=>setForm({...form,password:e.target.value})} autoComplete="current-password" placeholder="비밀번호를 입력해 주세요." required /></label>
