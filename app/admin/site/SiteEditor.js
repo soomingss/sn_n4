@@ -41,8 +41,8 @@ export default function SiteEditor({settings,pages,history}){
 
     {pages.map((page)=><Block key={page.key} title={page.label} action={page.key==="company"?<AddButton onClick={()=>save({type:"core_add"},"core-add")}>+ 핵심가치 추가</AddButton>:null}>
       {Object.entries(contentValues[page.key]||{}).map(([contentKey,item])=>{
-        const coreMatch=page.key==="company"&&contentKey.match(/^core_value_(\\d+)_title$/);
-        const hideCoreDescription=page.key==="company"&&/^core_value_\\d+_description$/.test(contentKey);
+        const coreMatch=page.key==="company"&&contentKey.match(/^core_value_(\d+)_title$/);
+        const hideCoreDescription=page.key==="company"&&/^core_value_\d+_description$/.test(contentKey);
         if(hideCoreDescription)return null;
         if(coreMatch){
           const no=coreMatch[1], descKey=`core_value_${no}_description`, desc=contentValues[page.key][descKey]||{value:"",active:item.active};
@@ -71,7 +71,8 @@ export default function SiteEditor({settings,pages,history}){
   </>;
 }
 
-function Block({title,children,action=null}){return <section style={{marginTop:"28px",padding:"24px",border:"1px solid #e2e8e2",borderRadius:"12px",background:"#fff"}}><div style={labelRowStyle}><h2 style={{margin:0}}>{title}</h2>{action}</div>{children}</section>}\nfunction AddButton({children,onClick}){return <button type="button" onClick={onClick} style={{padding:"8px 12px",border:"1px solid #315f4e",background:"#fff",color:"#315f4e",borderRadius:"6px"}}>{children}</button>}
+function Block({title,children,action=null}){return <section style={{marginTop:"28px",padding:"24px",border:"1px solid #e2e8e2",borderRadius:"12px",background:"#fff"}}><div style={labelRowStyle}><h2 style={{margin:0}}>{title}</h2>{action}</div>{children}</section>}
+function AddButton({children,onClick}){return <button type="button" onClick={onClick} style={{padding:"8px 12px",border:"1px solid #315f4e",background:"#fff",color:"#315f4e",borderRadius:"6px"}}>{children}</button>}
 
 function Field({label,value,onChange,multiline=false,action=null}){
   return <div style={{padding:"12px 0",borderBottom:"1px solid #eee"}}>
@@ -80,7 +81,10 @@ function Field({label,value,onChange,multiline=false,action=null}){
   </div>;
 }
 function SaveButton({busy,onClick,compact=false}){return <button type="button" onClick={onClick} disabled={busy} style={{padding:compact?"8px 14px":"11px 20px",marginTop:compact?0:"18px",cursor:"pointer",flexShrink:0}}>{busy?"저장 중...":"저장"}</button>}
-const toggleStyle={display:"flex",alignItems:"center",gap:"6px",fontSize:"13px"};\nconst rowActionsStyle={display:"flex",alignItems:"center",gap:"10px"};\nconst dangerButtonStyle={border:"0",background:"transparent",color:"#8a3a32",fontSize:"12px",padding:"4px"};\nconst labelRowStyle={display:"flex",alignItems:"center",justifyContent:"space-between",gap:"12px",marginBottom:"8px"};
+const toggleStyle={display:"flex",alignItems:"center",gap:"6px",fontSize:"13px"};
+const rowActionsStyle={display:"flex",alignItems:"center",gap:"10px"};
+const dangerButtonStyle={border:"0",background:"transparent",color:"#8a3a32",fontSize:"12px",padding:"4px"};
+const labelRowStyle={display:"flex",alignItems:"center",justifyContent:"space-between",gap:"12px",marginBottom:"8px"};
 const inputStyle={display:"block",width:"100%",maxWidth:"100%",boxSizing:"border-box",padding:"11px 12px",border:"1px solid #ccd5cc",borderRadius:"6px",font:"inherit"};
 
 const contentLabels={
