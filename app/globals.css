@@ -353,3 +353,17 @@ footer{min-height:95px;border-top:1px solid #ddd;padding:20px 6%;display:grid;gr
 .productAdminManage .adminTable th:nth-child(7),.productAdminManage .adminTable td:nth-child(7){width:17%}
 .taxIncludeProducts{display:inline-flex!important;align-items:center;gap:7px;white-space:nowrap;font-size:13px;color:var(--text)}
 .taxIncludeProducts input{width:16px;height:16px;margin:0}
+
+/* Managed core values: center active items and reflow by count */
+.coreGrid{display:flex;justify-content:center}
+.coreGrid .valueCard{flex:1 1 0;max-width:236px}
+@media(max-width:950px){
+  .coreGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+  .coreGrid .valueCard{max-width:none}
+  .fiveValues{display:flex;justify-content:center;flex-wrap:wrap}
+  .fiveValues .valueCard{flex:1 1 calc(50% - 1px);max-width:50%}
+}
+@media(max-width:620px){
+  .coreGrid{grid-template-columns:1fr}
+  .fiveValues .valueCard{flex-basis:100%;max-width:100%}
+}
