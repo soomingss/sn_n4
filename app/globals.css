@@ -367,3 +367,8 @@ footer{min-height:95px;border-top:1px solid #ddd;padding:20px 6%;display:grid;gr
   .coreGrid{grid-template-columns:1fr}
   .fiveValues .valueCard{flex-basis:100%;max-width:100%}
 }
+
+
+/* Mobile persistent scroll-to-top */
+.mobileScrollTop{display:none}
+@media(max-width:950px){.mobileScrollTop{position:fixed;right:18px;bottom:22px;z-index:110;display:flex;width:42px;height:42px;align-items:center;justify-content:center;border-radius:50%;background:#315f4e;color:#fff;text-decoration:none;font-size:20px;line-height:1;box-shadow:0 4px 14px rgba(0,0,0,.16)}}
