@@ -13,7 +13,7 @@ const settingFields = [
 export default function SiteEditor({settings,pages,history}){
   const router=useRouter();
   const [settingValues,setSettingValues]=useState(Object.fromEntries(settingFields.map(([key])=>[key,settings[key]||""])));
-  const [contentValues,setContentValues]=useState(()=>Object.fromEntries(pages.map((page)=>[page.key,{...page.values}])));
+  const [contentValues,setContentValues]=useState(()=>Object.fromEntries(pages.map((page)=>[page.key,Object.fromEntries(page.rows.map((row)=>[row.content_key,{value:row.content_value||"",active:row.is_active!==false}]))])));
   const [historyValues,setHistoryValues]=useState(()=>history.map((item)=>({...item})));
   const [state,setState]=useState({saving:"",message:"",error:false});
 
@@ -40,7 +40,20 @@ export default function SiteEditor({settings,pages,history}){
     </Block>
 
     {pages.map((page)=><Block key={page.key} title={page.label}>
-      {Object.entries(contentValues[page.key]||{}).map(([contentKey,value])=><Field key={contentKey} label={contentKey} value={value} multiline onChange={(next)=>setContentValues({...contentValues,[page.key]:{...contentValues[page.key],[contentKey]:next}})} action={<SaveButton compact busy={state.saving===`content:${page.key}:${contentKey}`} onClick={()=>save({type:"content",pageKey:page.key,contentKey,value:contentValues[page.key][contentKey]},`content:${page.key}:${contentKey}`)}/>}/>)}
+      {Object.entries(contentValues[page.key]||{}).map(([contentKey,item])=>{
+        const coreMatch=page.key==="company"&&contentKey.match(/^core_value_(\\d+)_title$/);
+        const hideCoreDescription=page.key==="company"&&/^core_value_\\d+_description$/.test(contentKey);
+        if(hideCoreDescription)return null;
+        if(coreMatch){
+          const no=coreMatch[1], descKey=`core_value_${no}_description`, desc=contentValues[page.key][descKey]||{value:"",active:item.active};
+          return <div key={contentKey} style={{padding:"16px 0",borderBottom:"1px solid #eee"}}>
+            <div style={labelRowStyle}><b>{`핵심가치 ${no}`}</b><label style={{display:"flex",alignItems:"center",gap:"6px",fontSize:"13px"}}><input type="checkbox" checked={item.active&&desc.active} onChange={(e)=>save({type:"core_active",number:no,active:e.target.checked},`core-active:${no}`)}/>{item.active&&desc.active?"사용":"미사용"}</label></div>
+            <Field label="제목" value={item.value} onChange={(next)=>setContentValues({...contentValues,[page.key]:{...contentValues[page.key],[contentKey]:{...item,value:next}}})} action={<SaveButton compact busy={state.saving===`content:${page.key}:${contentKey}`} onClick={()=>save({type:"content",pageKey:page.key,contentKey,value:item.value},`content:${page.key}:${contentKey}`)}/>}/>
+            <Field label="설명" value={desc.value} multiline onChange={(next)=>setContentValues({...contentValues,[page.key]:{...contentValues[page.key],[descKey]:{...desc,value:next}}})} action={<SaveButton compact busy={state.saving===`content:${page.key}:${descKey}`} onClick={()=>save({type:"content",pageKey:page.key,contentKey:descKey,value:desc.value},`content:${page.key}:${descKey}`)}/>}/>
+          </div>;
+        }
+        return <Field key={contentKey} label={contentLabel(page.key,contentKey)} value={item.value} multiline onChange={(next)=>setContentValues({...contentValues,[page.key]:{...contentValues[page.key],[contentKey]:{...item,value:next}}})} action={<SaveButton compact busy={state.saving===`content:${page.key}:${contentKey}`} onClick={()=>save({type:"content",pageKey:page.key,contentKey,value:item.value},`content:${page.key}:${contentKey}`)}/>}/>;
+      })}
     </Block>)}
 
     <Block title="연혁">
@@ -66,3 +79,12 @@ function Field({label,value,onChange,multiline=false,action=null}){
 function SaveButton({busy,onClick,compact=false}){return <button type="button" onClick={onClick} disabled={busy} style={{padding:compact?"8px 14px":"11px 20px",marginTop:compact?0:"18px",cursor:"pointer",flexShrink:0}}>{busy?"저장 중...":"저장"}</button>}
 const labelRowStyle={display:"flex",alignItems:"center",justifyContent:"space-between",gap:"12px",marginBottom:"8px"};
 const inputStyle={display:"block",width:"100%",maxWidth:"100%",boxSizing:"border-box",padding:"11px 12px",border:"1px solid #ccd5cc",borderRadius:"6px",font:"inherit"};
+
+const contentLabels={
+  home:{hero_eyebrow:"메인 배너 상단 문구",hero_title:"메인 배너 제목",hero_description:"메인 배너 설명",bottom_copy:"메인 하단 문구"},
+  company:{intro_title:"회사소개 제목",intro_paragraph_1:"회사소개 문구 1",intro_paragraph_2:"회사소개 문구 2",intro_paragraph_3:"회사소개 문구 3"},
+  history:{title:"연혁 제목",description:"연혁 소개 문구"},
+  location:{title:"오시는 길 제목",description:"오시는 길 안내 문구",parking_title:"주차 안내 제목",parking_label:"주차 안내 구분",parking_description:"주차 안내 내용"},
+  order_delivery:{intro_title:"주문·배송 안내 제목",intro_description:"주문·배송 소개 문구",delivery_description:"배송 안내 설명",direct_delivery_region:"직접 배송 지역",direct_delivery_description:"직접 배송 설명",parcel_region:"택배 배송 지역",parcel_description:"택배 배송 설명",notice_1:"주문 전 확인사항 1",notice_2:"주문 전 확인사항 2"}
+};
+function contentLabel(pageKey,key){return contentLabels[pageKey]?.[key]||key;}
