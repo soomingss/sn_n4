@@ -84,7 +84,7 @@ export default function ProductsClient({products=[],companyName="",adminManual=f
   return (
     <section className="productSection contentWidth">
       <div className="productIntro">
-        <h1>{adminManual?"수기 주문 등록":"한약재 제품안내"}</h1>
+        <h1>{adminManual?"수기 주문 등록":"한약재 주문"}</h1>
         <p>{adminManual?"거래처를 선택한 뒤 일반 주문과 동일하게 상품을 담아 주문을 등록합니다.":<>원하시는 품목을 검색하고 바로 주문할 수 있습니다. <strong>(약재의 단가는 수급현황에 따라 달라질 수 있습니다)</strong></>}</p>
       </div>
       {adminManual&&(
