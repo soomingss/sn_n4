@@ -18,13 +18,9 @@ export default async function Home(){
   const settings = await getSiteSettings();
   const content = await getSiteContent("home", settings);
   const companyContent = await getSiteContent("company", settings);
-  const coreValues = [
-    {icon:"leaf",title:companyContent.core_value_1_title,description:companyContent.core_value_1_description},
-    {icon:"gap",title:companyContent.core_value_2_title,description:companyContent.core_value_2_description},
-    {icon:"shield",title:companyContent.core_value_3_title,description:companyContent.core_value_3_description},
-    {icon:"truck",title:companyContent.core_value_4_title,description:companyContent.core_value_4_description},
-    {icon:"handshake",title:companyContent.core_value_5_title,description:companyContent.core_value_5_description},
-  ].filter((value)=>value.title && value.description);
+  const coreIcons=["leaf","gap","shield","truck","handshake"];
+  const coreNumbers=[...new Set(Object.keys(companyContent).map((key)=>key.match(/^core_value_(\d+)_title$/)?.[1]).filter(Boolean))].sort((a,b)=>Number(a)-Number(b));
+  const coreValues=coreNumbers.map((no,index)=>({icon:coreIcons[index%coreIcons.length],title:companyContent[`core_value_${no}_title`],description:companyContent[`core_value_${no}_description`]})).filter((value)=>value.title&&value.description);
 
   return <main>
     <section className="mainHero">
