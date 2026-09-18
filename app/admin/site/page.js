@@ -1,7 +1,7 @@
 import { redirect } from "next/navigation";
 import { getCurrentSession } from "../../lib/auth";
 import { getSiteSettings } from "../../lib/site-settings";
-import { getSiteContent, getSiteHistory } from "../../lib/site-content";
+import { getAdminSiteContent, getSiteHistory } from "../../lib/site-content";
 import SiteEditor from "./SiteEditor";
 
 const pages = [
@@ -19,7 +19,7 @@ export default async function AdminSitePage(){
 
   const settings = await getSiteSettings();
   const contentEntries = await Promise.all(
-    pages.map(async ([key, label]) => ({key, label, values:await getSiteContent(key, settings)}))
+    pages.map(async ([key, label]) => ({key, label, rows:await getAdminSiteContent(key)}))
   );
   const history = await getSiteHistory();
 
