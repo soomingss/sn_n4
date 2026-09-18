@@ -47,7 +47,7 @@ export default function SiteEditor({settings,pages,history}){
         if(coreMatch){
           const no=coreMatch[1], descKey=`core_value_${no}_description`, desc=contentValues[page.key][descKey]||{value:"",active:item.active};
           return <div key={contentKey} style={{padding:"16px 0",borderBottom:"1px solid #eee"}}>
-            <div style={labelRowStyle}><b>{`핵심가치 ${no}`}</b><div style={rowActionsStyle}><label style={toggleStyle}><input type="checkbox" checked={item.active&&desc.active} onChange={(e)=>save({type:"core_active",number:no,active:e.target.checked},`core-active:${no}`)}/>{item.active&&desc.active?"사용":"미사용"}</label><button type="button" style={dangerButtonStyle} onClick={()=>confirm("이 핵심가치를 삭제할까요?")&&save({type:"core_delete",number:no},`core-delete:${no}`)}>삭제</button></div></div>
+            <div style={labelRowStyle}><b>{`핵심가치 ${no}`}</b><button type="button" style={dangerButtonStyle} onClick={()=>confirm("이 핵심가치를 삭제할까요?")&&save({type:"core_delete",number:no},`core-delete:${no}`)}>삭제</button></div>
             <Field label="제목" value={item.value} onChange={(next)=>setContentValues({...contentValues,[page.key]:{...contentValues[page.key],[contentKey]:{...item,value:next}}})} action={<SaveButton compact busy={state.saving===`content:${page.key}:${contentKey}`} onClick={()=>save({type:"content",pageKey:page.key,contentKey,value:item.value},`content:${page.key}:${contentKey}`)}/>}/>
             <Field label="설명" value={desc.value} multiline onChange={(next)=>setContentValues({...contentValues,[page.key]:{...contentValues[page.key],[descKey]:{...desc,value:next}}})} action={<SaveButton compact busy={state.saving===`content:${page.key}:${descKey}`} onClick={()=>save({type:"content",pageKey:page.key,contentKey:descKey,value:desc.value},`content:${page.key}:${descKey}`)}/>}/>
           </div>;
@@ -60,7 +60,7 @@ export default function SiteEditor({settings,pages,history}){
       {historyValues.map((item,index)=><div key={item.id} style={{padding:"14px 0",borderBottom:"1px solid #e7e7e7"}}>
         <div style={labelRowStyle}>
           <b>{`연혁 ${index+1}`}</b>
-          <div style={rowActionsStyle}><label style={toggleStyle}><input type="checkbox" checked={item.is_active!==false} onChange={(e)=>{const active=e.target.checked;setHistoryValues(historyValues.map((row,i)=>i===index?{...row,is_active:active}:row));save({type:"history_active",id:item.id,active},`history-active:${item.id}`)}}/>{item.is_active!==false?"사용":"미사용"}</label><button type="button" style={dangerButtonStyle} onClick={()=>confirm("이 연혁을 삭제할까요?")&&save({type:"history_delete",id:item.id},`history-delete:${item.id}`)}>삭제</button></div>
+          <button type="button" style={dangerButtonStyle} onClick={()=>confirm("이 연혁을 삭제할까요?")&&save({type:"history_delete",id:item.id},`history-delete:${item.id}`)}>삭제</button>
         </div>
         <Field label="연도" value={item.year} onChange={(value)=>setHistoryValues(historyValues.map((row,i)=>i===index?{...row,year:value}:row))}/>
         <Field label="내용" value={item.content} multiline onChange={(value)=>setHistoryValues(historyValues.map((row,i)=>i===index?{...row,content:value}:row))} action={<SaveButton compact busy={state.saving===`history:${item.id}`} onClick={()=>save({type:"history",id:item.id,year:item.year,content:item.content},`history:${item.id}`)}/>}/>
