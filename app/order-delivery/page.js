@@ -1,5 +1,6 @@
 import Link from "next/link";
 import {getSiteSettings} from "../lib/site-settings";
+import {contentLines, getSiteContent} from "../lib/site-content";
 
 const steps = [
   { no: "01", title: "주문 접수", desc: <>주문 품목과 수량을 확인합니다</>, icon: <OrderIcon/> },
@@ -8,8 +9,14 @@ const steps = [
   { no: "04", title: "배송", desc: <>지역에 따라 직접 배송 또는 택배로 안전하게 발송합니다</>, icon: <TruckIcon/> },
 ];
 
+function Lines({value}){
+  const lines = contentLines(value);
+  return <>{lines.map((line, index)=><span key={index}>{index > 0 && <br/>}{line}</span>)}</>;
+}
+
 export default async function OrderDeliveryPage(){
   const settings = await getSiteSettings();
+  const content = await getSiteContent("order_delivery", settings);
 
   return <>
     <section className="companyHero orderDeliveryHero">
@@ -23,8 +30,8 @@ export default async function OrderDeliveryPage(){
     <main className="orderDelivery contentWidth">
       <section className="orderIntro">
         <div className="greenLine" />
-        <h1>주문부터 배송까지 꼼꼼하게 확인합니다.</h1>
-        <p>{settings.company_name}는 주문 접수부터 상품 준비와 검수, 배송까지 각 단계를 확인하여 안전하게 전달합니다.</p>
+        <h1><Lines value={content.intro_title}/></h1>
+        <p><Lines value={content.intro_description}/></p>
       </section>
 
       <section className="orderSteps">
@@ -37,17 +44,17 @@ export default async function OrderDeliveryPage(){
 
       <section className="deliveryInfo">
         <h2>배송 안내</h2>
-        <p>지역에 따라 직접 배송 또는 택배로 발송합니다.</p>
+        <p><Lines value={content.delivery_description}/></p>
         <div className="deliveryGrid">
-          <article><h3>직접 배송</h3><b>서울 · 경기 · 인천 (일부지역 제외)</b><p>서울, 경기, 인천 지역은 {settings.company_name}가 직접 배송합니다.</p></article>
-          <article><h3>택배 배송</h3><b>그 외 지역</b><p>직접 배송 지역 외에는 택배를 통해 안전하게 발송합니다.</p></article>
+          <article><h3>직접 배송</h3><b><Lines value={content.direct_delivery_region}/></b><p><Lines value={content.direct_delivery_description}/></p></article>
+          <article><h3>택배 배송</h3><b><Lines value={content.parcel_region}/></b><p><Lines value={content.parcel_description}/></p></article>
         </div>
       </section>
 
       <section className="orderNotice">
         <h2>주문 전 확인해 주세요</h2>
-        <p>• 당일 오전 11시 이전 주문 완료 건은 당일 배송, 이후 주문 건은 익일 배송을 원칙으로 합니다.</p>
-        <p>• 당일 재고가 모두 소진되었거나 보유하지 않은 품목을 주문하신 경우, 별도로 연락드린 후 주문 및 배송 일정을 조정합니다.</p>
+        <p>• <Lines value={content.notice_1}/></p>
+        <p>• <Lines value={content.notice_2}/></p>
       </section>
     </main>
   </>;
