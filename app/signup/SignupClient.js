@@ -38,7 +38,7 @@ export default function SignupClient({ companyNameEn }) {
       });
       const data = await res.json().catch(() => ({}));
       if (!res.ok) throw new Error(data?.message || "회원가입 신청에 실패했습니다.");
-      setState({ loading: false, message: "거래처 회원가입 신청이 완료되었습니다. 관리자 승인 후 제품안내를 이용하실 수 있습니다.", success: true });
+      setState({ loading: false, message: "거래처 회원가입 신청이 완료되었습니다. 관리자 승인 후 약재주문을 이용하실 수 있습니다.", success: true });
       setForm(initialForm);
       setTimeout(() => router.push("/login"), 1800);
     } catch (error) {
@@ -55,7 +55,7 @@ export default function SignupClient({ companyNameEn }) {
         <div className="signupBox">
           <p className="eyebrow">PARTNER MEMBER</p>
           <h1>거래처 회원가입</h1>
-          <p className="loginDesc">회원가입 신청 후 관리자 승인이 완료되면 제품안내를 이용하실 수 있습니다.</p>
+          <p className="loginDesc">회원가입 신청 후 관리자 승인이 완료되면 약재주문을 이용하실 수 있습니다.</p>
           <form onSubmit={submit} className="signupForm">
             <div className="signupGrid">
               <label><span>아이디</span><input value={form.username} onChange={(e)=>setField("username", e.target.value)} autoComplete="username" placeholder="사용할 아이디를 입력해 주세요." required /></label>
