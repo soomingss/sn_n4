@@ -19,8 +19,8 @@ export default async function Location(){
 
     <section className="location contentWidth">
       <p className="eyebrow">LOCATION</p>
-      <h1><Lines value={content.title}/></h1>
-      <p className="locationDesc"><Lines value={content.description}/></p>
+      <h1 data-site-key="title"><Lines value={content.title}/></h1>
+      <p className="locationDesc" data-site-key="description"><Lines value={content.description}/></p>
 
       <KakaoMap address={settings.map_address} placeName={settings.map_place_name || settings.company_name}/>
 
@@ -31,9 +31,9 @@ export default async function Location(){
       </div>
 
       {content.parking_title && content.parking_label && content.parking_description ? <>
-        <h2 className="transportTitle">{content.parking_title}</h2>
+        <h2 className="transportTitle" data-site-key="parking_title">{content.parking_title}</h2>
         <div className="transportCards parkingCards">
-          <Info icon="car" title={content.parking_label}><Lines value={content.parking_description}/></Info>
+          <div data-site-group="parking"><Info icon="car" title={content.parking_label}><Lines value={content.parking_description}/></Info></div>
         </div>
       </> : null}
     </section>
