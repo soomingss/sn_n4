@@ -21,6 +21,10 @@ export default async function AdminSitePage(){
   const contentEntries = await Promise.all(
     pages.map(async ([key, label]) => {
       const rows=await getAdminSiteContent(key);
+      if(key==="order_delivery"){
+        if(!rows.some((row)=>row.content_key==="direct_delivery_title")) rows.push({content_key:"direct_delivery_title",content_value:"직접 배송",is_active:true});
+        if(!rows.some((row)=>row.content_key==="parcel_title")) rows.push({content_key:"parcel_title",content_value:"택배 배송",is_active:true});
+      }
       if(key==="order_delivery"&&!rows.some((row)=>/^delivery_step_\d+_title$/.test(row.content_key))){
         rows.push(
           {content_key:"delivery_step_1_title",content_value:"주문 접수",is_active:true},
