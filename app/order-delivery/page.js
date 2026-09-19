@@ -17,7 +17,7 @@ function Lines({value}){
 export default async function OrderDeliveryPage(){
   const settings = await getSiteSettings();
   const content = await getSiteContent("order_delivery", settings);
-  const stepNumbers=[...new Set(Object.keys(content).map((key)=>key.match(/^delivery_step_(\\d+)_title$/)?.[1]).filter(Boolean))].sort((a,b)=>Number(a)-Number(b));
+  const stepNumbers=[...new Set(Object.keys(content).map((key)=>key.match(/^delivery_step_(\d+)_title$/)?.[1]).filter(Boolean))].sort((a,b)=>Number(a)-Number(b));
   const steps=stepNumbers.length?stepNumbers.map((no,index)=>({no:String(index+1).padStart(2,"0"),title:content[`delivery_step_${no}_title`],desc:content[`delivery_step_${no}_description`],icon:content[`delivery_step_${no}_icon`]||"order"})).filter((step)=>step.title||step.desc):defaultSteps;
 
   return <>
