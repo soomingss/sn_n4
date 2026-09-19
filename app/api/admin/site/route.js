@@ -98,11 +98,22 @@ export async function PATCH(request){
       const numbers=rows.map((row)=>Number(String(row.content_key).match(/^delivery_step_(\\d+)_/)?.[1]||0));
       const number=Math.max(0,...numbers)+1;
       const maxSort=Math.max(0,...rows.map((row)=>Number(row.sort_order)||0),100);
-      const res=await supabaseAdminFetch("/rest/v1/site_content",{method:"POST",headers:{Prefer:"return=minimal"},body:JSON.stringify([
+      const initial=[
+        ["주문 접수","주문 품목과 수량을 확인합니다","order"],
+        ["재고 확인","보유 재고와 주문 내용을 꼼꼼하게 확인합니다","stock"],
+        ["상품 준비·검수","출고 전 상품 상태를 다시 한 번 확인합니다.","check"],
+        ["배송","지역에 따라 직접 배송 또는 택배로 안전하게 발송합니다","truck"]
+      ];
+      const insertRows=rows.length?[
         {page_key:"order_delivery",content_key:`delivery_step_${number}_title`,content_value:"새 배송 단계",sort_order:maxSort+10,is_active:true},
         {page_key:"order_delivery",content_key:`delivery_step_${number}_description`,content_value:"배송 단계 설명을 입력해 주세요.",sort_order:maxSort+11,is_active:true},
         {page_key:"order_delivery",content_key:`delivery_step_${number}_icon`,content_value:"order",sort_order:maxSort+12,is_active:true}
-      ])});
+      ]:initial.flatMap((step,index)=>[
+        {page_key:"order_delivery",content_key:`delivery_step_${index+1}_title`,content_value:step[0],sort_order:110+index*10,is_active:true},
+        {page_key:"order_delivery",content_key:`delivery_step_${index+1}_description`,content_value:step[1],sort_order:111+index*10,is_active:true},
+        {page_key:"order_delivery",content_key:`delivery_step_${index+1}_icon`,content_value:step[2],sort_order:112+index*10,is_active:true}
+      ]);
+      const res=await supabaseAdminFetch("/rest/v1/site_content",{method:"POST",headers:{Prefer:"return=minimal"},body:JSON.stringify(insertRows)});
       if(!res.ok)throw new Error(await res.text());
     } else if (type === "delivery_step_delete") {
       const number=Number(body.number);
