@@ -128,7 +128,7 @@ export default function SiteEditor({settings,pages,history}){
       </div>)}
     </Block></details>}
 
-    {groupEdit&&<GroupEditModal pageKey={groupEdit.pageKey} groupKey={groupEdit.groupKey} values={contentValues[groupEdit.pageKey]||{}} onClose={()=>setGroupEdit(null)} onChange={(key,value)=>setContentValues({...contentValues,[groupEdit.pageKey]:{...contentValues[groupEdit.pageKey],[key]:{...(contentValues[groupEdit.pageKey]?.[key]||{}),value}}})} onSave={(items)=>{save({type:"content_group",items},"visual-group:"+groupEdit.groupKey);setGroupEdit(null);}}/>}
+    {groupEdit&&<GroupEditModal pageKey={groupEdit.pageKey} groupKey={groupEdit.groupKey} values={contentValues[groupEdit.pageKey]||{}} historyValues={historyValues} setHistoryValues={setHistoryValues} save={save} state={state} onClose={()=>setGroupEdit(null)} onChange={(key,value)=>setContentValues({...contentValues,[groupEdit.pageKey]:{...contentValues[groupEdit.pageKey],[key]:{...(contentValues[groupEdit.pageKey]?.[key]||{}),value}}})} onSave={(items)=>{save({type:"content_group",items},"visual-group:"+groupEdit.groupKey);setGroupEdit(null);}}/>}
 
     {visualEdit&&<EditModal pageKey={visualEdit.pageKey} contentKey={visualEdit.contentKey} item={contentValues[visualEdit.pageKey]?.[visualEdit.contentKey]} onClose={()=>setVisualEdit(null)} onChange={(value)=>setContentValues({...contentValues,[visualEdit.pageKey]:{...contentValues[visualEdit.pageKey],[visualEdit.contentKey]:{...(contentValues[visualEdit.pageKey]?.[visualEdit.contentKey]||{}),value}}})} onSave={()=>{const item=contentValues[visualEdit.pageKey]?.[visualEdit.contentKey];save({type:"content",pageKey:visualEdit.pageKey,contentKey:visualEdit.contentKey,value:item?.value||""},`visual:${visualEdit.pageKey}:${visualEdit.contentKey}`);setVisualEdit(null);}}/>}
 
@@ -169,7 +169,19 @@ function VisualPreview({pageKey,version,content,onEdit}){
   },[pageKey,version,onEdit]);
   return <section style={previewWrapStyle}><div style={previewHeadStyle}><div><b>실제 화면 미리보기</b><p style={{margin:"4px 0 0",fontSize:"13px",color:"#718078"}}>점선으로 표시된 문구를 클릭하면 바로 수정할 수 있습니다.</p></div><span style={previewBadgeStyle}>LIVE PREVIEW</span></div><div style={iframeShellStyle}><iframe ref={iframeRef} key={version} src={routes[pageKey]} title="홈페이지 화면 미리보기" style={iframeStyle}/></div></section>;
 }
-function GroupEditModal({pageKey,groupKey,values,onClose,onChange,onSave}){
+function GroupEditModal({pageKey,groupKey,values,historyValues,setHistoryValues,save,state,onClose,onChange,onSave}){
+  const historyMatch=pageKey==="history"&&groupKey.match(/^history_item_(.+)$/);
+  if(historyMatch){
+    const id=historyMatch[1], index=historyValues.findIndex((row)=>String(row.id)===String(id)), item=historyValues[index];
+    if(!item)return null;
+    const change=(field,value)=>setHistoryValues(historyValues.map((row,i)=>i===index?{...row,[field]:value}:row));
+    return <div style={modalBackdropStyle} onClick={onClose}><div style={{...iconModalStyle,width:"min(680px,100%)"}} onClick={(e)=>e.stopPropagation()}>
+      <div style={labelRowStyle}><div><small style={{color:"#718078"}}>연혁</small><h3 style={{margin:"4px 0 0"}}>연혁 수정</h3></div><button type="button" onClick={onClose} style={modalCloseStyle}>닫기</button></div>
+      <Field label="연도" value={item.year} onChange={(value)=>change("year",value)}/>
+      <Field label="내용" value={item.content} multiline onChange={(value)=>change("content",value)}/>
+      <div style={groupActionsStyle}><button type="button" onClick={onClose} style={{...dangerButtonStyle,background:"#fff",color:"#52645b",borderColor:"#d7ddd9"}}>취소</button><SaveButton compact busy={state.saving===`history:${item.id}`} onClick={()=>{save({type:"history",id:item.id,year:item.year,content:item.content},`history:${item.id}`);onClose();}}/></div>
+    </div></div>;
+  }
   const delivery=pageKey==="order_delivery"&&groupKey.match(/^delivery_step_(\d+)$/);
   const parking=pageKey==="location"&&groupKey==="parking";
   if(parking){
