@@ -45,6 +45,20 @@ export async function PATCH(request){
         });
         if(!res.ok) throw new Error(await res.text());
       }
+    } else if (type === "intro_add") {
+      const list=await supabaseAdminFetch("/rest/v1/site_content?select=content_key,sort_order&page_key=eq.company&content_key=like.intro_paragraph_*");
+      if(!list.ok) throw new Error(await list.text());
+      const rows=await list.json();
+      const numbers=rows.map((row)=>Number(String(row.content_key).match(/^intro_paragraph_(\d+)$/)?.[1]||0));
+      const number=Math.max(0,...numbers)+1;
+      const maxSort=Math.max(0,...rows.map((row)=>Number(row.sort_order)||0));
+      const res=await supabaseAdminFetch("/rest/v1/site_content",{method:"POST",headers:{Prefer:"return=minimal"},body:JSON.stringify({page_key:"company",content_key:`intro_paragraph_${number}`,content_value:"회사소개 내용을 입력해 주세요.",sort_order:maxSort+1,is_active:true})});
+      if(!res.ok) throw new Error(await res.text());
+    } else if (type === "intro_delete") {
+      const contentKey=String(body.contentKey||"");
+      if(!/^intro_paragraph_\d+$/.test(contentKey)) return NextResponse.json({message:"회사소개 정보가 올바르지 않습니다."},{status:400});
+      const res=await supabaseAdminFetch(`/rest/v1/site_content?page_key=eq.company&content_key=eq.${encodeURIComponent(contentKey)}`,{method:"DELETE",headers:{Prefer:"return=minimal"}});
+      if(!res.ok) throw new Error(await res.text());
     } else if (type === "core_add") {
       const list = await supabaseAdminFetch("/rest/v1/site_content?select=content_key,sort_order&page_key=eq.company&content_key=like.core_value_*");
       if (!list.ok) throw new Error(await list.text());
