@@ -33,6 +33,18 @@ export async function PATCH(request){
         body:JSON.stringify({content_value:String(body.value ?? "")})
       });
       if (!res.ok) throw new Error(await res.text());
+    } else if (type === "content_group") {
+      const items = Array.isArray(body.items) ? body.items : [];
+      if (!items.length) return NextResponse.json({message:"저장할 항목이 없습니다."},{status:400});
+      for (const item of items) {
+        const pageKey=String(item.pageKey||"");
+        const contentKey=String(item.contentKey||"");
+        if(!pageKey||!contentKey) return NextResponse.json({message:"콘텐츠 정보가 올바르지 않습니다."},{status:400});
+        const res=await supabaseAdminFetch(`/rest/v1/site_content?page_key=eq.${encodeURIComponent(pageKey)}&content_key=eq.${encodeURIComponent(contentKey)}`,{
+          method:"PATCH",headers:{Prefer:"return=minimal"},body:JSON.stringify({content_value:String(item.value??"")})
+        });
+        if(!res.ok) throw new Error(await res.text());
+      }
     } else if (type === "core_add") {
       const list = await supabaseAdminFetch("/rest/v1/site_content?select=content_key,sort_order&page_key=eq.company&content_key=like.core_value_*");
       if (!list.ok) throw new Error(await list.text());
