@@ -1,7 +1,7 @@
 import Link from "next/link";
 import {getSiteSettings} from "../lib/site-settings";
 import {contentLines, getSiteContent} from "../lib/site-content";
-import {IconClipboardText,IconPackage,IconChecklist,IconTruckDelivery} from "@tabler/icons-react";
+import {IconClipboardText,IconPackage,IconChecklist,IconTruckDelivery,IconLeaf,IconShieldCheck,IconCertificate,IconBuildingWarehouse,IconHeartHandshake,IconBox,IconPackages,IconShoppingCart,IconReceipt,IconFileText,IconClock,IconCalendar,IconMapPin,IconHome,IconBuilding,IconPhone,IconMail,IconMessageCircle,IconUser,IconUsers,IconStar,IconSparkles,IconHeart,IconPlant,IconSeedling,IconFlask,IconMicroscope,IconScale,IconRosetteDiscountCheck,IconCircleCheck,IconCircleNumber1,IconArrowRight,IconRoute,IconCar,IconTruck,IconWorld} from "@tabler/icons-react";
 
 const defaultSteps = [
   { no: "01", title: "주문 접수", desc: "주문 품목과 수량을 확인합니다", icon: "order" },
@@ -63,7 +63,7 @@ export default async function OrderDeliveryPage(){
   </>;
 }
 function StepIcon({type}){
-  const icons={order:IconClipboardText,stock:IconPackage,check:IconChecklist,truck:IconTruckDelivery};
+  const icons={order:IconClipboardText,stock:IconPackage,check:IconChecklist,truck:IconTruckDelivery,leaf:IconLeaf,shield:IconShieldCheck,certificate:IconCertificate,warehouse:IconBuildingWarehouse,handshake:IconHeartHandshake,box:IconBox,packages:IconPackages,cart:IconShoppingCart,receipt:IconReceipt,file:IconFileText,clock:IconClock,calendar:IconCalendar,map:IconMapPin,home:IconHome,building:IconBuilding,phone:IconPhone,mail:IconMail,message:IconMessageCircle,user:IconUser,users:IconUsers,star:IconStar,sparkles:IconSparkles,heart:IconHeart,plant:IconPlant,seedling:IconSeedling,flask:IconFlask,microscope:IconMicroscope,scale:IconScale,verified:IconRosetteDiscountCheck,"circle-check":IconCircleCheck,step:IconCircleNumber1,arrow:IconArrowRight,route:IconRoute,car:IconCar,delivery:IconTruck,world:IconWorld};
   const Icon=icons[type]||IconClipboardText;
   return <Icon className="orderIcon" stroke={1.7}/>;
 }
