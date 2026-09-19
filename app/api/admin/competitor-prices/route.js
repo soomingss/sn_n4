@@ -28,6 +28,17 @@ function candidates(item,products){
   const a=item.normalized_name,o=item.normalized_origin;
   return products.map(p=>{const b=norm(p.name),po=normOrigin(p.origin);let score=0;if(a===b)score=o&&po===o?100:95;else if(a&&b&&(a.includes(b)||b.includes(a)))score=o&&po===o?85:70;return {...p,confidence:score}}).filter(x=>x.confidence>0).sort((x,y)=>y.confidence-x.confidence).slice(0,10);
 }
+async function finalizeImport(id){
+  const pending=await rest(`/rest/v1/competitor_import_items?import_id=eq.${id}&match_status=in.(review,unmatched)&select=id`);
+  if(pending?.length)return {ok:false,pending:pending.length};
+  const imp=(await rest(`/rest/v1/competitor_imports?id=eq.${id}&select=*`))?.[0];
+  const items=await rest(`/rest/v1/competitor_import_items?import_id=eq.${id}&match_status=in.(auto,manual)&select=*`);
+  if(!imp)throw new Error("업로드 작업을 찾지 못했습니다.");
+  await rest(`/rest/v1/competitor_prices?import_id=eq.${id}`,{method:"DELETE",headers:{Prefer:"return=minimal"}});
+  if(items?.length)await rest("/rest/v1/competitor_prices",{method:"POST",headers:{Prefer:"resolution=merge-duplicates,return=minimal"},body:JSON.stringify(items.map(x=>({import_id:id,competitor_id:x.competitor_id,product_id:x.confirmed_product_id||x.suggested_product_id,mapping_id:x.mapping_id||null,price_month:imp.price_month,original_product_name:x.original_product_name,original_origin:x.original_origin,original_weight_g:x.original_weight_g,original_price:x.original_price,price_500g:x.price_500g})))});
+  await rest(`/rest/v1/competitor_imports?id=eq.${id}`,{method:"PATCH",headers:{Prefer:"return=minimal"},body:JSON.stringify({status:"completed",completed_at:new Date().toISOString()})});
+  return {ok:true};
+}
 export async function GET(){
   if(!await admin())return NextResponse.json({message:"관리자 권한이 필요합니다."},{status:403});
   try{
@@ -66,6 +77,7 @@ export async function POST(req){
       const insertItems=items.map(item=>({import_id:item.import_id,competitor_id:item.competitor_id,original_product_name:item.original_product_name,original_origin:item.original_origin??null,original_weight_g:item.original_weight_g,original_price:item.original_price,price_500g:item.price_500g,normalized_name:item.normalized_name,normalized_origin:item.normalized_origin??"",suggested_product_id:item.suggested_product_id??null,confirmed_product_id:item.confirmed_product_id??null,mapping_id:item.mapping_id??null,confidence:item.confidence??null,match_status:item.match_status}));
       await rest("/rest/v1/competitor_import_items",{method:"POST",headers:{Prefer:"return=minimal"},body:JSON.stringify(insertItems)});
       await rest(`/rest/v1/competitor_imports?id=eq.${importId}`,{method:"PATCH",headers:{Prefer:"return=minimal"},body:JSON.stringify({status:review+unmatched?"review":"ready",total_count:items.length,auto_matched_count:auto,review_count:review,unmatched_count:unmatched,excluded_count:excluded})});
+      if(!(review+unmatched))await finalizeImport(importId);
       saved.push({id:importId,month:month.slice(0,7),count:items.length,review:review+unmatched});
     }
     return NextResponse.json({ok:true,saved});
@@ -87,13 +99,8 @@ export async function PATCH(req){
       return NextResponse.json({ok:true});
     }
     if(b.action==="finalize"){
-      const id=Number(b.importId),pending=await rest(`/rest/v1/competitor_import_items?import_id=eq.${id}&match_status=in.(review,unmatched)&select=id`);
-      if(pending?.length)return NextResponse.json({message:`확인이 필요한 품목이 ${pending.length}개 남아 있습니다.`},{status:400});
-      const imp=(await rest(`/rest/v1/competitor_imports?id=eq.${id}&select=*`))?.[0],items=await rest(`/rest/v1/competitor_import_items?import_id=eq.${id}&match_status=in.(auto,manual)&select=*`);
-      if(!imp)throw new Error("업로드 작업을 찾지 못했습니다.");
-      await rest(`/rest/v1/competitor_prices?price_month=eq.${imp.price_month}&import_id=eq.${id}`,{method:"DELETE",headers:{Prefer:"return=minimal"}});
-      if(items.length)await rest("/rest/v1/competitor_prices",{method:"POST",headers:{Prefer:"resolution=merge-duplicates,return=minimal"},body:JSON.stringify(items.map(x=>({import_id:id,competitor_id:x.competitor_id,product_id:x.confirmed_product_id||x.suggested_product_id,mapping_id:x.mapping_id||null,price_month:imp.price_month,original_product_name:x.original_product_name,original_origin:x.original_origin,original_weight_g:x.original_weight_g,original_price:x.original_price,price_500g:x.price_500g})))});
-      await rest(`/rest/v1/competitor_imports?id=eq.${id}`,{method:"PATCH",headers:{Prefer:"return=minimal"},body:JSON.stringify({status:"completed",completed_at:new Date().toISOString()})});
+      const id=Number(b.importId),result=await finalizeImport(id);
+      if(!result.ok)return NextResponse.json({message:`확인이 필요한 품목이 ${result.pending}개 남아 있습니다.`},{status:400});
       return NextResponse.json({ok:true});
     }
     return NextResponse.json({message:"지원하지 않는 요청입니다."},{status:400});
