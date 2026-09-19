@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import {useState} from "react";
+import {useEffect,useRef,useState} from "react";
 import {useRouter} from "next/navigation";
 import {IconClipboardText,IconPackage,IconChecklist,IconTruckDelivery,IconLeaf,IconShieldCheck,IconCertificate,IconBuildingWarehouse,IconHeartHandshake,IconBox,IconPackages,IconShoppingCart,IconReceipt,IconFileText,IconClock,IconCalendar,IconMapPin,IconHome,IconBuilding,IconPhone,IconMail,IconMessageCircle,IconUser,IconUsers,IconStar,IconSparkles,IconHeart,IconPlant,IconSeedling,IconFlask,IconMicroscope,IconScale,IconRosetteDiscountCheck,IconCircleCheck,IconCircleNumber1,IconArrowRight,IconRoute,IconCar,IconTruck,IconWorld,IconSearch} from "@tabler/icons-react";
 
@@ -18,6 +18,8 @@ export default function SiteEditor({settings,pages,history}){
   const [historyValues,setHistoryValues]=useState(()=>history.map((item)=>({...item})));
   const [state,setState]=useState({saving:"",message:"",error:false});
   const [activeSection,setActiveSection]=useState(null);
+  const [visualEdit,setVisualEdit]=useState(null);
+  const [previewVersion,setPreviewVersion]=useState(0);
 
   async function save(payload,key){
     if(state.saving)return;
@@ -28,6 +30,7 @@ export default function SiteEditor({settings,pages,history}){
       if(!res.ok)throw new Error(data.message||"저장하지 못했습니다.");
       setState({saving:"",message:"저장되었습니다.",error:false});
       router.refresh();
+      setPreviewVersion((v)=>v+1);
     }catch(error){
       setState({saving:"",message:error.message||"저장하지 못했습니다.",error:true});
     }
@@ -43,7 +46,7 @@ export default function SiteEditor({settings,pages,history}){
       <SaveButton busy={state.saving==="settings"} onClick={()=>save({type:"settings",values:settingValues},"settings")}/>
     </Block></>}
 
-    {activeSection&&activeSection!=="settings"&&activeSection!=="history"&&<><SectionBack onClick={()=>setActiveSection(null)}/>{pages.filter((page)=>page.key===activeSection).map((page)=><Block key={page.key} title={page.label} action={page.key==="company"?<div style={rowActionsStyle}><AddButton onClick={()=>save({type:"intro_add"},"intro-add")}>+ 회사소개 문단 추가</AddButton><AddButton onClick={()=>save({type:"core_add"},"core-add")}>+ 핵심가치 추가</AddButton></div>:page.key==="order_delivery"?<AddButton onClick={()=>save({type:"delivery_step_add"},"delivery-step-add")}>+ 배송단계 추가</AddButton>:page.key==="location"&&!contentValues.location?.parking_title?<AddButton onClick={()=>save({type:"parking_add"},"parking-add")}>+ 주차안내 추가</AddButton>:null}>
+    {activeSection&&activeSection!=="settings"&&<><SectionBack onClick={()=>setActiveSection(null)}/><VisualPreview pageKey={activeSection} version={previewVersion} content={contentValues[activeSection]||{}} onEdit={(contentKey)=>setVisualEdit({pageKey:activeSection,contentKey})}/>{activeSection!=="history"&&pages.filter((page)=>page.key===activeSection).map((page)=><details style={detailsStyle}><summary style={summaryStyle}>세부 항목 관리</summary><Block key={page.key} title={page.label} action={page.key==="company"?<div style={rowActionsStyle}><AddButton onClick={()=>save({type:"intro_add"},"intro-add")}>+ 회사소개 문단 추가</AddButton><AddButton onClick={()=>save({type:"core_add"},"core-add")}>+ 핵심가치 추가</AddButton></div>:page.key==="order_delivery"?<AddButton onClick={()=>save({type:"delivery_step_add"},"delivery-step-add")}>+ 배송단계 추가</AddButton>:page.key==="location"&&!contentValues.location?.parking_title?<AddButton onClick={()=>save({type:"parking_add"},"parking-add")}>+ 주차안내 추가</AddButton>:null}>
       {Object.entries(contentValues[page.key]||{}).map(([contentKey,item])=>{
         const coreMatch=page.key==="company"&&contentKey.match(/^core_value_(\d+)_title$/);
         const introMatch=page.key==="company"&&contentKey.match(/^intro_paragraph_(\d+)$/);
@@ -91,9 +94,9 @@ export default function SiteEditor({settings,pages,history}){
         }
         return <Field key={contentKey} label={contentLabel(page.key,contentKey)} value={item.value} multiline onChange={(next)=>setContentValues({...contentValues,[page.key]:{...contentValues[page.key],[contentKey]:{...item,value:next}}})} action={<SaveButton compact busy={state.saving===`content:${page.key}:${contentKey}`} onClick={()=>save({type:"content",pageKey:page.key,contentKey,value:item.value},`content:${page.key}:${contentKey}`)}/>}/>;
       })}
-    </Block>)}</>}
+    </Block></details>)}</>}
 
-    {activeSection==="history"&&<><SectionBack onClick={()=>setActiveSection(null)}/><Block title="연혁" action={<AddButton onClick={()=>save({type:"history_add"},"history-add")}>+ 연혁 추가</AddButton>}>
+    {activeSection==="history"&&<> onClick={()=>setActiveSection(null)}/><Block title="연혁" action={<AddButton onClick={()=>save({type:"history_add"},"history-add")}>+ 연혁 추가</AddButton>}>
       {historyValues.map((item,index)=><div key={item.id} style={{padding:"14px 0",borderBottom:"1px solid #e7e7e7"}}>
         <div style={labelRowStyle}><b>{`연혁 ${index+1}`}</b></div>
         <Field label="연도" value={item.year} onChange={(value)=>setHistoryValues(historyValues.map((row,i)=>i===index?{...row,year:value}:row))}/>
@@ -102,13 +105,48 @@ export default function SiteEditor({settings,pages,history}){
       </div>)}
     </Block></>}
 
+    {visualEdit&&<EditModal pageKey={visualEdit.pageKey} contentKey={visualEdit.contentKey} item={contentValues[visualEdit.pageKey]?.[visualEdit.contentKey]} onClose={()=>setVisualEdit(null)} onChange={(value)=>setContentValues({...contentValues,[visualEdit.pageKey]:{...contentValues[visualEdit.pageKey],[visualEdit.contentKey]:{...(contentValues[visualEdit.pageKey]?.[visualEdit.contentKey]||{}),value}}})} onSave={()=>{const item=contentValues[visualEdit.pageKey]?.[visualEdit.contentKey];save({type:"content",pageKey:visualEdit.pageKey,contentKey:visualEdit.contentKey,value:item?.value||""},`visual:${visualEdit.pageKey}:${visualEdit.contentKey}`);setVisualEdit(null);}}/>}
+
     <div style={{marginTop:"32px"}}><Link href="/admin" style={backButtonStyle}>← 관리자 업무로 돌아가기</Link></div>
   </>;
 }
 
 function SectionMenu({onOpen}){
   const items=[["settings","회사 기본정보","회사명, 연락처, 주소 등"],["home","메인","메인 화면 문구"],["company","회사소개","회사소개 문구와 핵심가치"],["history","연혁","연혁 소개 및 연혁 목록"],["location","오시는 길","지도 안내와 주차 안내"],["order_delivery","주문·배송 안내","배송단계와 배송 안내 문구"]];
-  return <div style={sectionGridStyle}>{items.map(([key,title,desc])=><button key={key} type="button" onClick={()=>onOpen(key)} style={sectionCardStyle}><b>{title}</b><span>{desc}</span><em>수정하기 →</em></button>)}</div>;
+  return <div className="adminCards" style={{marginTop:"28px"}}>{items.map(([key,title,desc],index)=><button key={key} type="button" onClick={()=>onOpen(key)} className="adminCard" style={sectionCardButtonStyle}><span>{String(index+1).padStart(2,"0")}</span><h2>{title}</h2><p>{desc}</p><b>관리하기 →</b></button>)}</div>;
+}
+function VisualPreview({pageKey,version,content,onEdit}){
+  const iframeRef=useRef(null);
+  const routes={home:"/",company:"/company",history:"/company/history",location:"/company/location",order_delivery:"/order-delivery"};
+  useEffect(()=>{
+    const frame=iframeRef.current;
+    if(!frame)return;
+    const bind=()=>{
+      const doc=frame.contentDocument;
+      if(!doc)return;
+      doc.querySelectorAll("[data-site-key]").forEach((el)=>{
+        el.style.cursor="pointer";
+        el.style.outline="2px dashed rgba(49,95,78,.45)";
+        el.style.outlineOffset="4px";
+        el.title="클릭해서 문구 수정";
+      });
+      const click=(event)=>{
+        const el=event.target.closest?.("[data-site-key]");
+        if(!el)return;
+        event.preventDefault();event.stopPropagation();
+        onEdit(el.dataset.siteKey);
+      };
+      doc.addEventListener("click",click,true);
+      frame._siteCleanup=()=>doc.removeEventListener("click",click,true);
+    };
+    frame.addEventListener("load",bind);
+    return()=>{frame.removeEventListener("load",bind);frame._siteCleanup?.();};
+  },[pageKey,version,onEdit]);
+  return <section style={previewWrapStyle}><div style={previewHeadStyle}><div><b>실제 화면 미리보기</b><p style={{margin:"4px 0 0",fontSize:"13px",color:"#718078"}}>점선으로 표시된 문구를 클릭하면 바로 수정할 수 있습니다.</p></div><span style={previewBadgeStyle}>LIVE PREVIEW</span></div><div style={iframeShellStyle}><iframe ref={iframeRef} key={version} src={routes[pageKey]} title="홈페이지 화면 미리보기" style={iframeStyle}/></div></section>;
+}
+function EditModal({pageKey,contentKey,item,onClose,onChange,onSave}){
+  if(!item)return null;
+  return <div style={modalBackdropStyle} onClick={onClose}><div style={{...iconModalStyle,width:"min(620px,100%)"}} onClick={(e)=>e.stopPropagation()}><div style={labelRowStyle}><div><small style={{color:"#718078"}}>{contentLabel(pageKey,contentKey)}</small><h3 style={{margin:"4px 0 0"}}>문구 수정</h3></div><button type="button" onClick={onClose} style={modalCloseStyle}>닫기</button></div><textarea rows={5} value={item.value||""} onChange={(e)=>onChange(e.target.value)} style={{...inputStyle,marginTop:"16px"}}/><div style={groupActionsStyle}><button type="button" onClick={onClose} style={{...dangerButtonStyle,background:"#fff",color:"#52645b",borderColor:"#d7ddd9"}}>취소</button><SaveButton compact onClick={onSave}/></div></div></div>;
 }
 function SectionBack({onClick}){return <button type="button" onClick={onClick} style={sectionBackStyle}>← 화면 목록으로</button>}
 function Block({title,children,action=null}){return <section style={{marginTop:"28px",padding:"24px",border:"1px solid #e2e8e2",borderRadius:"12px",background:"#fff"}}><div style={labelRowStyle}><h2 style={{margin:0}}>{title}</h2>{action}</div>{children}</section>}
@@ -149,6 +187,14 @@ function SelectField({label,value,onChange}){
   </div>;
 }
 function SaveButton({busy,onClick,compact=false}){return <button type="button" onClick={onClick} disabled={busy} style={{...saveButtonStyle,padding:compact?"8px 16px":"10px 20px",marginTop:compact?0:"18px"}}>{busy?"저장 중...":"저장"}</button>}
+const sectionCardButtonStyle={textDecoration:"none",font:"inherit",cursor:"pointer",textAlign:"left",width:"100%"};
+const previewWrapStyle={marginTop:"22px",padding:"18px",border:"1px solid #dfe7e1",borderRadius:"12px",background:"#fff"};
+const previewHeadStyle={display:"flex",alignItems:"center",justifyContent:"space-between",gap:"12px",marginBottom:"14px"};
+const previewBadgeStyle={padding:"5px 8px",borderRadius:"999px",background:"#eef4f0",color:"#315f4e",fontSize:"10px",fontWeight:700,letterSpacing:".08em"};
+const iframeShellStyle={overflow:"hidden",border:"1px solid #e1e6e2",borderRadius:"10px",background:"#f7f9f7"};
+const iframeStyle={display:"block",width:"100%",height:"760px",border:0,background:"#fff"};
+const detailsStyle={marginTop:"18px"};
+const summaryStyle={cursor:"pointer",padding:"13px 16px",border:"1px solid #dfe7e1",borderRadius:"8px",background:"#f8faf8",color:"#315f4e",fontWeight:600};
 const sectionGridStyle={display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(230px,1fr))",gap:"14px",marginTop:"28px"};
 const sectionCardStyle={display:"flex",flexDirection:"column",alignItems:"flex-start",gap:"8px",minHeight:"130px",padding:"22px",border:"1px solid #dfe7e1",borderRadius:"12px",background:"#fff",color:"#263f35",textAlign:"left",font:"inherit",cursor:"pointer"};
 const sectionBackStyle={marginTop:"28px",padding:"9px 13px",border:"1px solid #ccd8d0",borderRadius:"7px",background:"#fff",color:"#315f4e",font:"inherit",cursor:"pointer"};
