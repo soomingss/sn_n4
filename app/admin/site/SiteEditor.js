@@ -58,6 +58,18 @@ export default function SiteEditor({settings,pages,history}){
         const hideDeliveryChild=page.key==="order_delivery"&&/^delivery_step_\d+_(description|icon)$/.test(contentKey);
         const hideDeliveryMethodChild=page.key==="order_delivery"&&["direct_delivery_region","direct_delivery_description","parcel_region","parcel_description"].includes(contentKey);
         if(hideCoreDescription||hideParkingChild||hideDeliveryChild||hideDeliveryMethodChild)return null;
+        if(page.key==="order_delivery"&&(contentKey==="direct_delivery_title"||contentKey==="parcel_title")){
+          const direct=contentKey==="direct_delivery_title";
+          const regionKey=direct?"direct_delivery_region":"parcel_region", descKey=direct?"direct_delivery_description":"parcel_description";
+          const region=contentValues[page.key][regionKey]||{value:""}, desc=contentValues[page.key][descKey]||{value:""};
+          return <div key={contentKey} style={{padding:"16px 0",borderBottom:"1px solid #eee"}}>
+            <div style={labelRowStyle}><b>{direct?"직접 배송":"택배 배송"}</b></div>
+            <Field label="제목" value={item.value} onChange={(next)=>setContentValues({...contentValues,[page.key]:{...contentValues[page.key],[contentKey]:{...item,value:next}}})}/>
+            <Field label="지역" value={region.value} onChange={(next)=>setContentValues({...contentValues,[page.key]:{...contentValues[page.key],[regionKey]:{...region,value:next}}})}/>
+            <Field label="설명" value={desc.value} multiline onChange={(next)=>setContentValues({...contentValues,[page.key]:{...contentValues[page.key],[descKey]:{...desc,value:next}}})}/>
+            <div style={groupActionsStyle}><SaveButton compact busy={state.saving===`delivery-method:${contentKey}`} onClick={()=>save({type:"content_group",items:[{pageKey:page.key,contentKey,value:item.value},{pageKey:page.key,contentKey:regionKey,value:region.value},{pageKey:page.key,contentKey:descKey,value:desc.value}]},`delivery-method:${contentKey}`)}/></div>
+          </div>;
+        }
         if(introMatch){
           return <div key={contentKey} style={{padding:"16px 0",borderBottom:"1px solid #eee"}}>
             <Field label={`회사소개 문구 ${introMatch[1]}`} value={item.value} multiline onChange={(next)=>setContentValues({...contentValues,[page.key]:{...contentValues[page.key],[contentKey]:{...item,value:next}}})}/>
