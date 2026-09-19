@@ -91,6 +91,25 @@ export async function PATCH(request){
         body:JSON.stringify({is_active:active})
       });
       if (!res.ok) throw new Error(await res.text());
+    } else if (type === "delivery_step_add") {
+      const list=await supabaseAdminFetch("/rest/v1/site_content?select=content_key,sort_order&page_key=eq.order_delivery&content_key=like.delivery_step_*");
+      if(!list.ok)throw new Error(await list.text());
+      const rows=await list.json();
+      const numbers=rows.map((row)=>Number(String(row.content_key).match(/^delivery_step_(\\d+)_/)?.[1]||0));
+      const number=Math.max(0,...numbers)+1;
+      const maxSort=Math.max(0,...rows.map((row)=>Number(row.sort_order)||0),100);
+      const res=await supabaseAdminFetch("/rest/v1/site_content",{method:"POST",headers:{Prefer:"return=minimal"},body:JSON.stringify([
+        {page_key:"order_delivery",content_key:`delivery_step_${number}_title`,content_value:"새 배송 단계",sort_order:maxSort+10,is_active:true},
+        {page_key:"order_delivery",content_key:`delivery_step_${number}_description`,content_value:"배송 단계 설명을 입력해 주세요.",sort_order:maxSort+11,is_active:true},
+        {page_key:"order_delivery",content_key:`delivery_step_${number}_icon`,content_value:"order",sort_order:maxSort+12,is_active:true}
+      ])});
+      if(!res.ok)throw new Error(await res.text());
+    } else if (type === "delivery_step_delete") {
+      const number=Number(body.number);
+      if(!Number.isFinite(number))return NextResponse.json({message:"배송 단계 정보가 올바르지 않습니다."},{status:400});
+      const keys=[`delivery_step_${number}_title`,`delivery_step_${number}_description`,`delivery_step_${number}_icon`];
+      const res=await supabaseAdminFetch(`/rest/v1/site_content?page_key=eq.order_delivery&content_key=in.(${keys.join(",")})`,{method:"DELETE",headers:{Prefer:"return=minimal"}});
+      if(!res.ok)throw new Error(await res.text());
     } else if (type === "parking_add") {
       const rows = [
         {page_key:"location",content_key:"parking_title",content_value:"주차 안내",sort_order:40,is_active:true},
