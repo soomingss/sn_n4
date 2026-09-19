@@ -39,11 +39,11 @@ export default function SiteEditor({settings,pages,history}){
       <SaveButton busy={state.saving==="settings"} onClick={()=>save({type:"settings",values:settingValues},"settings")}/>
     </Block>
 
-    {pages.map((page)=><Block key={page.key} title={page.label} action={page.key==="company"?<div style={rowActionsStyle}><AddButton onClick={()=>save({type:"intro_add"},"intro-add")}>+ 회사소개 문단 추가</AddButton><AddButton onClick={()=>save({type:"core_add"},"core-add")}>+ 핵심가치 추가</AddButton></div>:page.key==="location"&&!contentValues.location?.parking_title?<AddButton onClick={()=>save({type:"parking_add"},"parking-add")}>+ 주차안내 추가</AddButton>:null}>
+    {pages.map((page)=><Block key={page.key} title={page.label} action={page.key==="company"?<div style={rowActionsStyle}><AddButton onClick={()=>save({type:"intro_add"},"intro-add")}>+ 회사소개 문단 추가</AddButton><AddButton onClick={()=>save({type:"core_add"},"core-add")}>+ 핵심가치 추가</AddButton></div>:page.key==="order_delivery"?<AddButton onClick={()=>save({type:"delivery_step_add"},"delivery-step-add")}>+ 배송단계 추가</AddButton>:page.key==="location"&&!contentValues.location?.parking_title?<AddButton onClick={()=>save({type:"parking_add"},"parking-add")}>+ 주차안내 추가</AddButton>:null}>
       {Object.entries(contentValues[page.key]||{}).map(([contentKey,item])=>{
         const coreMatch=page.key==="company"&&contentKey.match(/^core_value_(\d+)_title$/);
         const introMatch=page.key==="company"&&contentKey.match(/^intro_paragraph_(\d+)$/);
-        const parkingTitle=page.key==="location"&&contentKey==="parking_title";
+        const deliveryStepMatch=page.key==="order_delivery"&&contentKey.match(/^delivery_step_(\\d+)_title$/);\n        const parkingTitle=page.key==="location"&&contentKey==="parking_title";
         const hideParkingChild=page.key==="location"&&(contentKey==="parking_label"||contentKey==="parking_description");
         const hideCoreDescription=page.key==="company"&&/^core_value_\d+_description$/.test(contentKey);
         if(hideCoreDescription||hideParkingChild)return null;
@@ -51,6 +51,17 @@ export default function SiteEditor({settings,pages,history}){
           return <div key={contentKey} style={{padding:"16px 0",borderBottom:"1px solid #eee"}}>
             <Field label={`회사소개 문구 ${introMatch[1]}`} value={item.value} multiline onChange={(next)=>setContentValues({...contentValues,[page.key]:{...contentValues[page.key],[contentKey]:{...item,value:next}}})}/>
             <div style={groupActionsStyle}><SaveButton compact busy={state.saving===`content:${page.key}:${contentKey}`} onClick={()=>save({type:"content",pageKey:page.key,contentKey,value:item.value},`content:${page.key}:${contentKey}`)}/><button type="button" style={dangerButtonStyle} onClick={()=>confirm("이 회사소개 문단을 삭제할까요?")&&save({type:"intro_delete",contentKey},`intro-delete:${contentKey}`)}>삭제</button></div>
+          </div>;
+        }
+        if(deliveryStepMatch){
+          const no=deliveryStepMatch[1], descKey=`delivery_step_${no}_description`, iconKey=`delivery_step_${no}_icon`;
+          const desc=contentValues[page.key][descKey]||{value:""}, icon=contentValues[page.key][iconKey]||{value:"order"};
+          return <div key={contentKey} style={{padding:"16px 0",borderBottom:"1px solid #eee"}}>
+            <div style={labelRowStyle}><b>{`배송단계 ${no}`}</b></div>
+            <Field label="제목" value={item.value} onChange={(next)=>setContentValues({...contentValues,[page.key]:{...contentValues[page.key],[contentKey]:{...item,value:next}}})}/>
+            <Field label="설명" value={desc.value} multiline onChange={(next)=>setContentValues({...contentValues,[page.key]:{...contentValues[page.key],[descKey]:{...desc,value:next}}})}/>
+            <SelectField label="아이콘" value={icon.value} onChange={(next)=>setContentValues({...contentValues,[page.key]:{...contentValues[page.key],[iconKey]:{...icon,value:next}}})}/>
+            <div style={groupActionsStyle}><SaveButton compact busy={state.saving===`delivery-step:${no}`} onClick={()=>save({type:"content_group",items:[{pageKey:page.key,contentKey,value:item.value},{pageKey:page.key,contentKey:descKey,value:desc.value},{pageKey:page.key,contentKey:iconKey,value:icon.value}]},`delivery-step:${no}`)}/><button type="button" style={dangerButtonStyle} onClick={()=>confirm("이 배송단계를 삭제할까요?")&&save({type:"delivery_step_delete",number:no},`delivery-step-delete:${no}`)}>삭제</button></div>
           </div>;
         }
         if(parkingTitle){
@@ -99,7 +110,7 @@ function Field({label,value,onChange,multiline=false,action=null}){
     {multiline?<textarea rows={3} value={value||""} onChange={(e)=>onChange(e.target.value)} style={inputStyle}/>:<input value={value||""} onChange={(e)=>onChange(e.target.value)} style={inputStyle}/>}
   </div>;
 }
-function SaveButton({busy,onClick,compact=false}){return <button type="button" onClick={onClick} disabled={busy} style={{...saveButtonStyle,padding:compact?"8px 16px":"10px 20px",marginTop:compact?0:"18px"}}>{busy?"저장 중...":"저장"}</button>}
+function SelectField({label,value,onChange}){return <div style={{padding:"12px 0",borderBottom:"1px solid #eee"}}><div style={labelRowStyle}><b>{label}</b></div><select value={value||"order"} onChange={(e)=>onChange(e.target.value)} style={inputStyle}><option value="order">주문서</option><option value="stock">재고 박스</option><option value="check">검수 체크</option><option value="truck">배송 트럭</option></select></div>}\nfunction SaveButton({busy,onClick,compact=false}){return <button type="button" onClick={onClick} disabled={busy} style={{...saveButtonStyle,padding:compact?"8px 16px":"10px 20px",marginTop:compact?0:"18px"}}>{busy?"저장 중...":"저장"}</button>}
 const toggleStyle={display:"flex",alignItems:"center",gap:"6px",fontSize:"13px"};
 const rowActionsStyle={display:"flex",alignItems:"center",gap:"10px"};
 const groupActionsStyle={display:"flex",alignItems:"center",justifyContent:"flex-end",gap:"10px",paddingTop:"12px"};
