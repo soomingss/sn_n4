@@ -83,6 +83,15 @@ export async function POST(req){
     return NextResponse.json({ok:true,saved});
   }catch(e){return NextResponse.json({message:"시세표 저장에 실패했습니다.",detail:e?.message||String(e)},{status:500})}
 }
+export async function DELETE(){
+  if(!await admin())return NextResponse.json({message:"관리자 권한이 필요합니다."},{status:403});
+  try{
+    for(const path of ["/rest/v1/competitor_prices?id=not.is.null","/rest/v1/competitor_import_items?id=not.is.null","/rest/v1/competitor_product_mappings?id=not.is.null","/rest/v1/competitor_imports?id=not.is.null"]){
+      await rest(path,{method:"DELETE",headers:{Prefer:"return=minimal"}});
+    }
+    return NextResponse.json({ok:true});
+  }catch(e){return NextResponse.json({message:"기존 경쟁업체 업로드 데이터를 초기화하지 못했습니다.",detail:e?.message||String(e)},{status:500})}
+}
 export async function PATCH(req){
   if(!await admin())return NextResponse.json({message:"관리자 권한이 필요합니다."},{status:403});
   try{
