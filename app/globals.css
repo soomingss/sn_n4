@@ -135,7 +135,7 @@ footer{min-height:95px;border-top:1px solid #ddd;padding:20px 6%;display:grid;gr
   .fiveValues{grid-template-columns:1fr}
   .companyHeroCopy h1{font-size:38px}
   .intro h1,.location>h1{font-size:38px}
-  .coreGrid{grid-template-columns:1fr}
+  .coreGrid{grid-template-columns:1fr;gap:16px}
   .historyRow{grid-template-columns:70px 1fr}
 }
 
@@ -362,10 +362,10 @@ footer{min-height:95px;border-top:1px solid #ddd;padding:20px 6%;display:grid;gr
 .taxIncludeProducts input{width:16px;height:16px;margin:0}
 
 /* Managed core values: center active items and reflow by count */
-.coreGrid{display:flex;justify-content:center}
+.coreGrid{display:flex;justify-content:center;gap:22px}
 .coreGrid .valueCard{flex:1 1 0;max-width:236px}
 @media(max-width:950px){
-  .coreGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+  .coreGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
   .coreGrid .valueCard{max-width:none}
   .fiveValues{display:flex;justify-content:center;flex-wrap:wrap}
   .fiveValues .valueCard{flex:1 1 calc(50% - 1px);max-width:50%}
