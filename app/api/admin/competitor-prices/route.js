@@ -49,8 +49,9 @@ export async function GET(){
       loadAllProductsForAdmin(),loadAllPrices(),
       rest("/rest/v1/competitor_import_items?select=*&match_status=in.(review,unmatched)&order=id.asc")
     ]);
-    const reviewWithCandidates=(review||[]).map(x=>({...x,candidates:candidates(x,products)}));
-    return NextResponse.json({competitors:cs,imports,markets,products,prices,review:reviewWithCandidates});
+    const activeProducts=(products||[]).filter(p=>p.is_active!==false);
+    const reviewWithCandidates=(review||[]).map(x=>({...x,candidates:candidates(x,activeProducts)}));
+    return NextResponse.json({competitors:cs,imports,markets,products:activeProducts,prices,review:reviewWithCandidates});
   }catch(e){return NextResponse.json({message:"가격 데이터를 불러오지 못했습니다.",detail:e?.message||String(e)},{status:500})}
 }
 export async function POST(req){
