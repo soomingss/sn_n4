@@ -40,10 +40,22 @@ export async function PATCH(request){
         const pageKey=String(item.pageKey||"");
         const contentKey=String(item.contentKey||"");
         if(!pageKey||!contentKey) return NextResponse.json({message:"콘텐츠 정보가 올바르지 않습니다."},{status:400});
+        const value=String(item.value??"");
         const res=await supabaseAdminFetch(`/rest/v1/site_content?page_key=eq.${encodeURIComponent(pageKey)}&content_key=eq.${encodeURIComponent(contentKey)}`,{
-          method:"PATCH",headers:{Prefer:"return=minimal"},body:JSON.stringify({content_value:String(item.value??"")})
+          method:"PATCH",headers:{Prefer:"return=representation"},body:JSON.stringify({content_value:value})
         });
         if(!res.ok) throw new Error(await res.text());
+        const updated=await res.json().catch(()=>[]);
+        if(!updated.length){
+          const number=Number(contentKey.match(/^delivery_step_(\d+)_/)?.[1]||0);
+          const baseSort=number?100+number*10:999;
+          const offset=contentKey.endsWith("_description")?1:contentKey.endsWith("_icon")?2:0;
+          const insert=await supabaseAdminFetch("/rest/v1/site_content",{
+            method:"POST",headers:{Prefer:"return=minimal"},
+            body:JSON.stringify({page_key:pageKey,content_key:contentKey,content_value:value,sort_order:baseSort+offset,is_active:true})
+          });
+          if(!insert.ok) throw new Error(await insert.text());
+        }
       }
     } else if (type === "intro_add") {
       const list=await supabaseAdminFetch("/rest/v1/site_content?select=content_key,sort_order&page_key=eq.company&content_key=like.intro_paragraph_*");
