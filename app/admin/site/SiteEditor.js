@@ -13,7 +13,9 @@ const settingFields = [
 export default function SiteEditor({settings,pages,history}){
   const router=useRouter();
   const [settingValues,setSettingValues]=useState(Object.fromEntries(settingFields.map(([key])=>[key,settings[key]||""])));
-  const [contentValues,setContentValues]=useState(()=>Object.fromEntries(pages.map((page)=>[page.key,Object.fromEntries(page.rows.map((row)=>[row.content_key,{value:row.content_value||"",active:row.is_active!==false}]))])));
+  const toAdminText=(value)=>String(value||"").replaceAll("{company_name}","[회사명]");
+  const toStoredText=(value)=>String(value||"").replaceAll("[회사명]","{company_name}");
+  const [contentValues,setContentValues]=useState(()=>Object.fromEntries(pages.map((page)=>[page.key,Object.fromEntries(page.rows.map((row)=>[row.content_key,{value:toAdminText(row.content_value),active:row.is_active!==false}]))])));
   const [historyValues,setHistoryValues]=useState(()=>history.map((item)=>({...item})));
   const [state,setState]=useState({saving:"",message:"",error:false});
 
@@ -21,7 +23,7 @@ export default function SiteEditor({settings,pages,history}){
     if(state.saving)return;
     setState({saving:key,message:"",error:false});
     try{
-      const res=await fetch("/api/admin/site",{method:"PATCH",headers:{"Content-Type":"application/json"},body:JSON.stringify(payload)});
+      const res=await fetch("/api/admin/site",{method:"PATCH",headers:{"Content-Type":"application/json"},body:JSON.stringify(payload?.type==="content"?{...payload,value:toStoredText(payload.value)}:payload)});
       const data=await res.json().catch(()=>({}));
       if(!res.ok)throw new Error(data.message||"저장하지 못했습니다.");
       setState({saving:"",message:"저장되었습니다.",error:false});
@@ -50,18 +52,18 @@ export default function SiteEditor({settings,pages,history}){
           const labelItem=contentValues.location?.parking_label||{value:""};
           const descItem=contentValues.location?.parking_description||{value:""};
           return <div key={contentKey} style={{padding:"16px 0",borderBottom:"1px solid #eee"}}>
-            <div style={labelRowStyle}><b>주차 안내</b><button type="button" style={dangerButtonStyle} onClick={()=>confirm("주차 안내를 삭제할까요?")&&save({type:"parking_delete"},"parking-delete")}>삭제</button></div>
+            <div style={labelRowStyle}><b>주차 안내</b></div>
             <Field label="제목" value={item.value} onChange={(next)=>setContentValues({...contentValues,location:{...contentValues.location,parking_title:{...item,value:next}}})} action={<SaveButton compact busy={state.saving==="content:location:parking_title"} onClick={()=>save({type:"content",pageKey:"location",contentKey:"parking_title",value:item.value},"content:location:parking_title")}/>}/>
             <Field label="구분" value={labelItem.value} onChange={(next)=>setContentValues({...contentValues,location:{...contentValues.location,parking_label:{...labelItem,value:next}}})} action={<SaveButton compact busy={state.saving==="content:location:parking_label"} onClick={()=>save({type:"content",pageKey:"location",contentKey:"parking_label",value:labelItem.value},"content:location:parking_label")}/>}/>
-            <Field label="내용" value={descItem.value} multiline onChange={(next)=>setContentValues({...contentValues,location:{...contentValues.location,parking_description:{...descItem,value:next}}})} action={<SaveButton compact busy={state.saving==="content:location:parking_description"} onClick={()=>save({type:"content",pageKey:"location",contentKey:"parking_description",value:descItem.value},"content:location:parking_description")}/>}/>
+            <Field label="내용" value={descItem.value} multiline onChange={(next)=>setContentValues({...contentValues,location:{...contentValues.location,parking_description:{...descItem,value:next}}})} action={<div style={rowActionsStyle}><SaveButton compact busy={state.saving==="content:location:parking_description"} onClick={()=>save({type:"content",pageKey:"location",contentKey:"parking_description",value:descItem.value},"content:location:parking_description")}/><button type="button" style={dangerButtonStyle} onClick={()=>confirm("주차 안내를 삭제할까요?")&&save({type:"parking_delete"},"parking-delete")}>삭제</button></div>}/>
           </div>;
         }
         if(coreMatch){
           const no=coreMatch[1], descKey=`core_value_${no}_description`, desc=contentValues[page.key][descKey]||{value:"",active:item.active};
           return <div key={contentKey} style={{padding:"16px 0",borderBottom:"1px solid #eee"}}>
-            <div style={labelRowStyle}><b>{`핵심가치 ${no}`}</b><button type="button" style={dangerButtonStyle} onClick={()=>confirm("이 핵심가치를 삭제할까요?")&&save({type:"core_delete",number:no},`core-delete:${no}`)}>삭제</button></div>
+            <div style={labelRowStyle}><b>{`핵심가치 ${no}`}</b></div>
             <Field label="제목" value={item.value} onChange={(next)=>setContentValues({...contentValues,[page.key]:{...contentValues[page.key],[contentKey]:{...item,value:next}}})} action={<SaveButton compact busy={state.saving===`content:${page.key}:${contentKey}`} onClick={()=>save({type:"content",pageKey:page.key,contentKey,value:item.value},`content:${page.key}:${contentKey}`)}/>}/>
-            <Field label="설명" value={desc.value} multiline onChange={(next)=>setContentValues({...contentValues,[page.key]:{...contentValues[page.key],[descKey]:{...desc,value:next}}})} action={<SaveButton compact busy={state.saving===`content:${page.key}:${descKey}`} onClick={()=>save({type:"content",pageKey:page.key,contentKey:descKey,value:desc.value},`content:${page.key}:${descKey}`)}/>}/>
+            <Field label="설명" value={desc.value} multiline onChange={(next)=>setContentValues({...contentValues,[page.key]:{...contentValues[page.key],[descKey]:{...desc,value:next}}})} action={<div style={rowActionsStyle}><SaveButton compact busy={state.saving===`content:${page.key}:${descKey}`} onClick={()=>save({type:"content",pageKey:page.key,contentKey:descKey,value:desc.value},`content:${page.key}:${descKey}`)}/><button type="button" style={dangerButtonStyle} onClick={()=>confirm("이 핵심가치를 삭제할까요?")&&save({type:"core_delete",number:no},`core-delete:${no}`)}>삭제</button></div>}/>
           </div>;
         }
         return <Field key={contentKey} label={contentLabel(page.key,contentKey)} value={item.value} multiline onChange={(next)=>setContentValues({...contentValues,[page.key]:{...contentValues[page.key],[contentKey]:{...item,value:next}}})} action={<SaveButton compact busy={state.saving===`content:${page.key}:${contentKey}`} onClick={()=>save({type:"content",pageKey:page.key,contentKey,value:item.value},`content:${page.key}:${contentKey}`)}/>}/>;
@@ -75,7 +77,7 @@ export default function SiteEditor({settings,pages,history}){
           <button type="button" style={dangerButtonStyle} onClick={()=>confirm("이 연혁을 삭제할까요?")&&save({type:"history_delete",id:item.id},`history-delete:${item.id}`)}>삭제</button>
         </div>
         <Field label="연도" value={item.year} onChange={(value)=>setHistoryValues(historyValues.map((row,i)=>i===index?{...row,year:value}:row))}/>
-        <Field label="내용" value={item.content} multiline onChange={(value)=>setHistoryValues(historyValues.map((row,i)=>i===index?{...row,content:value}:row))} action={<SaveButton compact busy={state.saving===`history:${item.id}`} onClick={()=>save({type:"history",id:item.id,year:item.year,content:item.content},`history:${item.id}`)}/>}/>
+        <Field label="내용" value={item.content} multiline onChange={(value)=>setHistoryValues(historyValues.map((row,i)=>i===index?{...row,content:value}:row))} action={<div style={rowActionsStyle}><SaveButton compact busy={state.saving===`history:${item.id}`} onClick={()=>save({type:"history",id:item.id,year:item.year,content:item.content},`history:${item.id}`)}/><button type="button" style={dangerButtonStyle} onClick={()=>confirm("이 연혁을 삭제할까요?")&&save({type:"history_delete",id:item.id},`history-delete:${item.id}`)}>삭제</button></div>}/>
       </div>)}
     </Block>
 
@@ -92,11 +94,12 @@ function Field({label,value,onChange,multiline=false,action=null}){
     {multiline?<textarea rows={3} value={value||""} onChange={(e)=>onChange(e.target.value)} style={inputStyle}/>:<input value={value||""} onChange={(e)=>onChange(e.target.value)} style={inputStyle}/>}
   </div>;
 }
-function SaveButton({busy,onClick,compact=false}){return <button type="button" onClick={onClick} disabled={busy} style={{padding:compact?"8px 14px":"11px 20px",marginTop:compact?0:"18px",cursor:"pointer",flexShrink:0}}>{busy?"저장 중...":"저장"}</button>}
+function SaveButton({busy,onClick,compact=false}){return <button type="button" onClick={onClick} disabled={busy} style={{...saveButtonStyle,padding:compact?"8px 16px":"10px 20px",marginTop:compact?0:"18px"}}>{busy?"저장 중...":"저장"}</button>}
 const toggleStyle={display:"flex",alignItems:"center",gap:"6px",fontSize:"13px"};
 const rowActionsStyle={display:"flex",alignItems:"center",gap:"10px"};
 const backButtonStyle={display:"flex",width:"100%",boxSizing:"border-box",alignItems:"center",justifyContent:"center",padding:"12px 16px",background:"#315f4e",color:"#fff",textDecoration:"none",fontSize:"12px",fontWeight:600,borderRadius:"6px"};
-const dangerButtonStyle={border:"0",background:"transparent",color:"#8a3a32",fontSize:"12px",padding:"4px"};
+const saveButtonStyle={border:"1px solid #315f4e",background:"#315f4e",color:"#fff",borderRadius:"6px",fontSize:"13px",fontWeight:600,cursor:"pointer",flexShrink:0};
+const dangerButtonStyle={border:"1px solid #e9b9bd",background:"#f8e1e3",color:"#9b4a50",fontSize:"13px",fontWeight:600,padding:"8px 16px",borderRadius:"6px",cursor:"pointer",flexShrink:0};
 const labelRowStyle={display:"flex",alignItems:"center",justifyContent:"space-between",gap:"12px",marginBottom:"8px"};
 const inputStyle={display:"block",width:"100%",maxWidth:"100%",boxSizing:"border-box",padding:"11px 12px",border:"1px solid #ccd5cc",borderRadius:"6px",font:"inherit"};
 
