@@ -63,7 +63,8 @@ export async function POST(req){
         if(top){review++;return {...item,import_id:importId,suggested_product_id:top.id,confidence:top.confidence,match_status:"review"}}
         unmatched++;return {...item,import_id:importId,match_status:"unmatched"};
       });
-      for(const item of items){await rest("/rest/v1/competitor_import_items",{method:"POST",headers:{Prefer:"return=minimal"},body:JSON.stringify(item)});}
+      const insertItems=items.map(item=>({import_id:item.import_id,competitor_id:item.competitor_id,original_product_name:item.original_product_name,original_origin:item.original_origin??null,original_weight_g:item.original_weight_g,original_price:item.original_price,price_500g:item.price_500g,normalized_name:item.normalized_name,normalized_origin:item.normalized_origin??"",suggested_product_id:item.suggested_product_id??null,confirmed_product_id:item.confirmed_product_id??null,mapping_id:item.mapping_id??null,confidence:item.confidence??null,match_status:item.match_status}));
+      await rest("/rest/v1/competitor_import_items",{method:"POST",headers:{Prefer:"return=minimal"},body:JSON.stringify(insertItems)});
       await rest(`/rest/v1/competitor_imports?id=eq.${importId}`,{method:"PATCH",headers:{Prefer:"return=minimal"},body:JSON.stringify({status:review+unmatched?"review":"ready",total_count:items.length,auto_matched_count:auto,review_count:review,unmatched_count:unmatched,excluded_count:excluded})});
       saved.push({id:importId,month:month.slice(0,7),count:items.length,review:review+unmatched});
     }
