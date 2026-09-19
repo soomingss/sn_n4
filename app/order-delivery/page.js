@@ -61,7 +61,8 @@ export default async function OrderDeliveryPage(){
     </main>
   </>;
 }
-function StepIcon({type}){if(type==="stock")return <StockIcon/>;if(type==="check")return <CheckIcon/>;if(type==="truck")return <TruckIcon/>;return <OrderIcon/>}\nfunction OrderIcon(){return <svg className="orderIcon" viewBox="0 0 48 48"><rect x="13" y="9" width="22" height="30" rx="3"/><path d="M18 18h12M18 24h12M18 30h8"/></svg>}
+function StepIcon({type}){if(type==="stock")return <StockIcon/>;if(type==="check")return <CheckIcon/>;if(type==="truck")return <TruckIcon/>;return <OrderIcon/>}
+function OrderIcon(){return <svg className="orderIcon" viewBox="0 0 48 48"><rect x="13" y="9" width="22" height="30" rx="3"/><path d="M18 18h12M18 24h12M18 30h8"/></svg>}
 function StockIcon(){return <svg className="orderIcon" viewBox="0 0 48 48"><path d="M10 17l14-8 14 8v21H10zM10 17l14 8 14-8M24 25v13"/></svg>}
 function CheckIcon(){return <svg className="orderIcon" viewBox="0 0 48 48"><circle cx="24" cy="24" r="16"/><path d="M16 24l6 6 11-13"/></svg>}
 function TruckIcon(){return <svg className="orderIcon" viewBox="0 0 48 48"><path d="M6 14h24v20H6zM30 21h7l5 7v6H30z"/><circle cx="15" cy="36" r="3"/><circle cx="36" cy="36" r="3"/></svg>}
