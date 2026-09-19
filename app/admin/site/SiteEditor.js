@@ -19,6 +19,7 @@ export default function SiteEditor({settings,pages,history}){
   const [state,setState]=useState({saving:"",message:"",error:false});
   const [activeSection,setActiveSection]=useState(null);
   const [visualEdit,setVisualEdit]=useState(null);
+  const [groupEdit,setGroupEdit]=useState(null);
   const [previewVersion,setPreviewVersion]=useState(0);
 
   async function save(payload,key){
@@ -46,7 +47,7 @@ export default function SiteEditor({settings,pages,history}){
       <SaveButton busy={state.saving==="settings"} onClick={()=>save({type:"settings",values:settingValues},"settings")}/>
     </Block></>}
 
-    {activeSection&&activeSection!=="settings"&&<><SectionBack onClick={()=>setActiveSection(null)}/><VisualPreview pageKey={activeSection} version={previewVersion} content={contentValues[activeSection]||{}} onEdit={(contentKey)=>setVisualEdit({pageKey:activeSection,contentKey})}/>{activeSection!=="history"&&pages.filter((page)=>page.key===activeSection).map((page)=><details key={page.key} style={detailsStyle}><summary style={summaryStyle}>세부 항목 관리</summary><Block key={page.key} title={page.label} action={page.key==="company"?<div style={rowActionsStyle}><AddButton onClick={()=>save({type:"intro_add"},"intro-add")}>+ 회사소개 문단 추가</AddButton><AddButton onClick={()=>save({type:"core_add"},"core-add")}>+ 핵심가치 추가</AddButton></div>:page.key==="order_delivery"?<AddButton onClick={()=>save({type:"delivery_step_add"},"delivery-step-add")}>+ 배송단계 추가</AddButton>:page.key==="location"&&!contentValues.location?.parking_title?<AddButton onClick={()=>save({type:"parking_add"},"parking-add")}>+ 주차안내 추가</AddButton>:null}>
+    {activeSection&&activeSection!=="settings"&&<><SectionBack onClick={()=>setActiveSection(null)}/><VisualPreview pageKey={activeSection} version={previewVersion} content={contentValues[activeSection]||{}} onEdit={(contentKey)=>contentKey.startsWith("@group:")?setGroupEdit({pageKey:activeSection,groupKey:contentKey.slice(7)}):setVisualEdit({pageKey:activeSection,contentKey})}/>{activeSection!=="history"&&pages.filter((page)=>page.key===activeSection).map((page)=><details key={page.key} style={detailsStyle}><summary style={summaryStyle}>세부 항목 관리</summary><Block key={page.key} title={page.label} action={page.key==="company"?<div style={rowActionsStyle}><AddButton onClick={()=>save({type:"intro_add"},"intro-add")}>+ 회사소개 문단 추가</AddButton><AddButton onClick={()=>save({type:"core_add"},"core-add")}>+ 핵심가치 추가</AddButton></div>:page.key==="order_delivery"?<AddButton onClick={()=>save({type:"delivery_step_add"},"delivery-step-add")}>+ 배송단계 추가</AddButton>:page.key==="location"&&!contentValues.location?.parking_title?<AddButton onClick={()=>save({type:"parking_add"},"parking-add")}>+ 주차안내 추가</AddButton>:null}>
       {Object.entries(contentValues[page.key]||{}).map(([contentKey,item])=>{
         const coreMatch=page.key==="company"&&contentKey.match(/^core_value_(\d+)_title$/);
         const introMatch=page.key==="company"&&contentKey.match(/^intro_paragraph_(\d+)$/);
@@ -106,7 +107,7 @@ export default function SiteEditor({settings,pages,history}){
       </div>)}
     </Block></details>}
 
-    {visualEdit&&<EditModal pageKey={visualEdit.pageKey} contentKey={visualEdit.contentKey} item={contentValues[visualEdit.pageKey]?.[visualEdit.contentKey]} onClose={()=>setVisualEdit(null)} onChange={(value)=>setContentValues({...contentValues,[visualEdit.pageKey]:{...contentValues[visualEdit.pageKey],[visualEdit.contentKey]:{...(contentValues[visualEdit.pageKey]?.[visualEdit.contentKey]||{}),value}}})} onSave={()=>{const item=contentValues[visualEdit.pageKey]?.[visualEdit.contentKey];save({type:"content",pageKey:visualEdit.pageKey,contentKey:visualEdit.contentKey,value:item?.value||""},`visual:${visualEdit.pageKey}:${visualEdit.contentKey}`);setVisualEdit(null);}}/>}
+    {groupEdit&&<GroupEditModal pageKey={groupEdit.pageKey} groupKey={groupEdit.groupKey} values={contentValues[groupEdit.pageKey]||{}} onClose={()=>setGroupEdit(null)} onChange={(key,value)=>setContentValues({...contentValues,[groupEdit.pageKey]:{...contentValues[groupEdit.pageKey],[key]:{...(contentValues[groupEdit.pageKey]?.[key]||{}),value}}})} onSave={(items)=>{save({type:"content_group",items},"visual-group:"+groupEdit.groupKey);setGroupEdit(null);}}/>}\n\n    {visualEdit&&<EditModal pageKey={visualEdit.pageKey} contentKey={visualEdit.contentKey} item={contentValues[visualEdit.pageKey]?.[visualEdit.contentKey]} onClose={()=>setVisualEdit(null)} onChange={(value)=>setContentValues({...contentValues,[visualEdit.pageKey]:{...contentValues[visualEdit.pageKey],[visualEdit.contentKey]:{...(contentValues[visualEdit.pageKey]?.[visualEdit.contentKey]||{}),value}}})} onSave={()=>{const item=contentValues[visualEdit.pageKey]?.[visualEdit.contentKey];save({type:"content",pageKey:visualEdit.pageKey,contentKey:visualEdit.contentKey,value:item?.value||""},`visual:${visualEdit.pageKey}:${visualEdit.contentKey}`);setVisualEdit(null);}}/>}
 
     <div style={{marginTop:"32px"}}><Link href="/admin" style={backButtonStyle}>← 관리자 업무로 돌아가기</Link></div>
   </>;
@@ -125,17 +126,17 @@ function VisualPreview({pageKey,version,content,onEdit}){
     const bind=()=>{
       const doc=frame.contentDocument;
       if(!doc)return;
-      doc.querySelectorAll("[data-site-key]").forEach((el)=>{
+      doc.querySelectorAll("[data-site-key],[data-site-group]").forEach((el)=>{
         el.style.cursor="pointer";
         el.style.outline="2px dashed rgba(49,95,78,.45)";
         el.style.outlineOffset="4px";
-        el.title="클릭해서 문구 수정";
+        el.title=el.dataset.siteGroup?"클릭해서 항목 수정":"클릭해서 문구 수정";
       });
       const click=(event)=>{
-        const el=event.target.closest?.("[data-site-key]");
+        const el=event.target.closest?.("[data-site-key],[data-site-group]");
         if(!el)return;
         event.preventDefault();event.stopPropagation();
-        onEdit(el.dataset.siteKey);
+        if(el.dataset.siteKey) onEdit(el.dataset.siteKey); else if(el.dataset.siteGroup) onEdit("@group:"+el.dataset.siteGroup);
       };
       doc.addEventListener("click",click,true);
       frame._siteCleanup=()=>doc.removeEventListener("click",click,true);
@@ -144,6 +145,19 @@ function VisualPreview({pageKey,version,content,onEdit}){
     return()=>{frame.removeEventListener("load",bind);frame._siteCleanup?.();};
   },[pageKey,version,onEdit]);
   return <section style={previewWrapStyle}><div style={previewHeadStyle}><div><b>실제 화면 미리보기</b><p style={{margin:"4px 0 0",fontSize:"13px",color:"#718078"}}>점선으로 표시된 문구를 클릭하면 바로 수정할 수 있습니다.</p></div><span style={previewBadgeStyle}>LIVE PREVIEW</span></div><div style={iframeShellStyle}><iframe ref={iframeRef} key={version} src={routes[pageKey]} title="홈페이지 화면 미리보기" style={iframeStyle}/></div></section>;
+}
+function GroupEditModal({pageKey,groupKey,values,onClose,onChange,onSave}){
+  const delivery=pageKey==="order_delivery"&&groupKey.match(/^delivery_step_(\d+)$/);
+  if(!delivery)return null;
+  const no=delivery[1], titleKey="delivery_step_"+no+"_title", descKey="delivery_step_"+no+"_description", iconKey="delivery_step_"+no+"_icon";
+  const title=values[titleKey]||{value:""}, desc=values[descKey]||{value:""}, icon=values[iconKey]||{value:"order"};
+  return <div style={modalBackdropStyle} onClick={onClose}><div style={{...iconModalStyle,width:"min(680px,100%)"}} onClick={(e)=>e.stopPropagation()}>
+    <div style={labelRowStyle}><div><small style={{color:"#718078"}}>{"배송단계 "+no}</small><h3 style={{margin:"4px 0 0"}}>배송단계 수정</h3></div><button type="button" onClick={onClose} style={modalCloseStyle}>닫기</button></div>
+    <SelectField label="아이콘" value={icon.value} onChange={(value)=>onChange(iconKey,value)}/>
+    <Field label="제목" value={title.value} onChange={(value)=>onChange(titleKey,value)}/>
+    <Field label="설명" value={desc.value} multiline onChange={(value)=>onChange(descKey,value)}/>
+    <div style={groupActionsStyle}><button type="button" onClick={onClose} style={{...dangerButtonStyle,background:"#fff",color:"#52645b",borderColor:"#d7ddd9"}}>취소</button><SaveButton compact onClick={()=>onSave([{pageKey,contentKey:titleKey,value:title.value},{pageKey,contentKey:descKey,value:desc.value},{pageKey,contentKey:iconKey,value:icon.value}])}/></div>
+  </div></div>;
 }
 function EditModal({pageKey,contentKey,item,onClose,onChange,onSave}){
   if(!item)return null;
