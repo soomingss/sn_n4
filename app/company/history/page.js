@@ -18,8 +18,8 @@ export default async function History(){
     <section className="historyWrap">
       <div className="historySide">
         <p className="eyebrow">HISTORY</p>
-        <h1><Lines value={content.title}/></h1>
-        <p><Lines value={content.description}/></p>
+        <h1 data-site-key="title"><Lines value={content.title}/></h1>
+        <p data-site-key="description"><Lines value={content.description}/></p>
       </div>
       <div className="timeline">
         {history.map((item)=><H key={item.id} y={item.year}><Lines value={item.content}/></H>)}
