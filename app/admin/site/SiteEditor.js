@@ -163,6 +163,17 @@ function VisualPreview({pageKey,version,content,onEdit}){
 }
 function GroupEditModal({pageKey,groupKey,values,onClose,onChange,onSave}){
   const delivery=pageKey==="order_delivery"&&groupKey.match(/^delivery_step_(\d+)$/);
+  const parking=pageKey==="location"&&groupKey==="parking";
+  if(parking){
+    const labelKey="parking_label", descKey="parking_description";
+    const label=values[labelKey]||{value:""}, desc=values[descKey]||{value:""};
+    return <div style={modalBackdropStyle} onClick={onClose}><div style={{...iconModalStyle,width:"min(680px,100%)"}} onClick={(e)=>e.stopPropagation()}>
+      <div style={labelRowStyle}><div><small style={{color:"#718078"}}>주차 안내</small><h3 style={{margin:"4px 0 0"}}>자차 이용 안내 수정</h3></div><button type="button" onClick={onClose} style={modalCloseStyle}>닫기</button></div>
+      <Field label="구분" value={label.value} onChange={(value)=>onChange(labelKey,value)}/>
+      <Field label="내용" value={desc.value} multiline onChange={(value)=>onChange(descKey,value)}/>
+      <div style={groupActionsStyle}><button type="button" onClick={onClose} style={{...dangerButtonStyle,background:"#fff",color:"#52645b",borderColor:"#d7ddd9"}}>취소</button><SaveButton compact onClick={()=>onSave([{pageKey,contentKey:labelKey,value:label.value},{pageKey,contentKey:descKey,value:desc.value}])}/></div>
+    </div></div>;
+  }
   const method=pageKey==="order_delivery"&&(groupKey==="direct_delivery"||groupKey==="parcel_delivery");
   if(method){
     const direct=groupKey==="direct_delivery", titleKey=direct?"direct_delivery_title":"parcel_title", regionKey=direct?"direct_delivery_region":"parcel_region", descKey=direct?"direct_delivery_description":"parcel_description";
