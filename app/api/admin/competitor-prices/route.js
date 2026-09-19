@@ -63,7 +63,7 @@ export async function POST(req){
         if(top){review++;return {...item,import_id:importId,suggested_product_id:top.id,confidence:top.confidence,match_status:"review"}}
         unmatched++;return {...item,import_id:importId,match_status:"unmatched"};
       });
-      await rest("/rest/v1/competitor_import_items",{method:"POST",headers:{Prefer:"return=minimal"},body:JSON.stringify(items)});
+      for(const item of items){await rest("/rest/v1/competitor_import_items",{method:"POST",headers:{Prefer:"return=minimal"},body:JSON.stringify(item)});}
       await rest(`/rest/v1/competitor_imports?id=eq.${importId}`,{method:"PATCH",headers:{Prefer:"return=minimal"},body:JSON.stringify({status:review+unmatched?"review":"ready",total_count:items.length,auto_matched_count:auto,review_count:review,unmatched_count:unmatched,excluded_count:excluded})});
       saved.push({id:importId,month:month.slice(0,7),count:items.length,review:review+unmatched});
     }
