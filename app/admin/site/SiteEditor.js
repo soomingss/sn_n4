@@ -142,6 +142,8 @@ function SectionMenu({onOpen}){
 }
 function VisualPreview({pageKey,version,content,onEdit}){
   const iframeRef=useRef(null);
+  const onEditRef=useRef(onEdit);
+  onEditRef.current=onEdit;
   const routes={home:"/",company:"/company",history:"/company/history",location:"/company/location",order_delivery:"/order-delivery"};
   useEffect(()=>{
     const frame=iframeRef.current;
@@ -159,14 +161,14 @@ function VisualPreview({pageKey,version,content,onEdit}){
         const el=event.target.closest?.("[data-site-key],[data-site-group]");
         if(!el)return;
         event.preventDefault();event.stopPropagation();
-        if(el.dataset.siteKey) onEdit(el.dataset.siteKey); else if(el.dataset.siteGroup) onEdit("@group:"+el.dataset.siteGroup);
+        if(el.dataset.siteKey) onEditRef.current(el.dataset.siteKey); else if(el.dataset.siteGroup) onEditRef.current("@group:"+el.dataset.siteGroup);
       };
       doc.addEventListener("click",click,true);
       frame._siteCleanup=()=>doc.removeEventListener("click",click,true);
     };
     frame.addEventListener("load",bind);
     return()=>{frame.removeEventListener("load",bind);frame._siteCleanup?.();};
-  },[pageKey,version,onEdit]);
+  },[pageKey,version]);
   return <section style={previewWrapStyle}><div style={previewHeadStyle}><div><b>실제 화면 미리보기</b><p style={{margin:"4px 0 0",fontSize:"13px",color:"#718078"}}>점선으로 표시된 문구를 클릭하면 바로 수정할 수 있습니다.</p></div><span style={previewBadgeStyle}>LIVE PREVIEW</span></div><div style={iframeShellStyle}><iframe ref={iframeRef} key={version} src={routes[pageKey]} title="홈페이지 화면 미리보기" style={iframeStyle}/></div></section>;
 }
 function GroupEditModal({pageKey,groupKey,values,historyValues,setHistoryValues,save,state,onClose,onChange,onSave}){
