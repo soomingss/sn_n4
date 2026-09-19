@@ -9,9 +9,8 @@ function baseOrigin(v){const s=String(v||"").replace("대한민국","한국");fo
 function keyName(v){return String(v||"").replace(/\*\s*\d+\s*묶음/g,"").replace(/[\s,]*\d+(?:\.\d+)?\s*(?:g|kg)\b/gi,"").replace(/\d+\s*원/g,"").replace(/[\s,]/g,"").replace(/[（]/g,"(").replace(/[）]/g,")")}
 function core(v){return keyName(v).replace(/\([^)]*\)/g,"").replace(/[<>].*?[<>]/g,"")}
 function bestMatch(product,rows){
-  const pn=keyName(product.name),pc=core(product.name),po=baseOrigin(product.origin);
-  const candidates=rows.filter(r=>{const rn=keyName(r.name),ro=baseOrigin(r.origin);return (!po||!ro||po===ro)&&(rn===pn||core(r.name)===pc||rn.includes(pc)||pn.includes(core(r.name)))});
-  return candidates.length?Math.min(...candidates.map(r=>r.price500)):null;
+  const values=rows.filter(r=>String(r.product_id)===String(product.id)).map(r=>marketAtWeight(Number(r.price_500g),weightG(product.weight))).filter(Number.isFinite);
+  return values.length?Math.min(...values):null;
 }
 export default function CompetitorPriceDashboard(){
   const [data,setData]=useState({markets:[],products:[],prices:[],competitors:[],imports:[],review:[]}),[month,setMonth]=useState(""),[grade,setGrade]=useState("1"),[query,setQuery]=useState(""),[busy,setBusy]=useState(false),[msg,setMsg]=useState(""),[reviewOpen,setReviewOpen]=useState(false);
@@ -28,7 +27,7 @@ export default function CompetitorPriceDashboard(){
     }).filter(r=>r.matched||r.own!=null).sort((a,b)=>(Math.abs(b.diff||0)-Math.abs(a.diff||0)));
   },[data,month,grade,query]);
   const stats=useMemo(()=>{const x=rows.filter(r=>r.diff!=null);return {count:x.length,below:x.filter(r=>r.diff<0).length,above:x.filter(r=>r.diff>0).length,avg:x.length?x.reduce((s,r)=>s+r.diff,0)/x.length:0}},[rows]);
-  async function upload(e){const files=[...e.target.files];if(!files.length)return;setBusy(true);setMsg("");const fd=new FormData();files.forEach(f=>fd.append("files",f));const r=await fetch("/api/admin/competitor-prices",{method:"POST",body:fd});const d=await r.json();setBusy(false);setMsg(r.ok?`${d.saved.map(x=>x.month).join(", ")} 시세표를 반영했습니다.`:[d.message,d.detail].filter(Boolean).join(" · ")||"업로드 실패");if(r.ok){load();setReviewOpen(true)}e.target.value=""}
+  async function upload(e){const files=[...e.target.files];if(!files.length)return;setBusy(true);setMsg("");const fd=new FormData();files.forEach(f=>fd.append("files",f));const r=await fetch("/api/admin/competitor-prices",{method:"POST",body:fd});const d=await r.json();setBusy(false);setMsg(r.ok?`${d.saved.map(x=>x.month).join(", ")} 시세표를 업로드했습니다.${d.saved.some(x=>x.review>0)?" 매칭 확인이 필요한 품목을 처리하면 자동으로 대시보드에 반영됩니다.":" 대시보드 반영까지 완료했습니다."}`:[d.message,d.detail].filter(Boolean).join(" · ")||"업로드 실패");if(r.ok){load();setReviewOpen(true)}e.target.value=""}
   async function confirm(item,productId,excluded=false){setBusy(true);const r=await fetch("/api/admin/competitor-prices",{method:"PATCH",headers:{"Content-Type":"application/json"},body:JSON.stringify({action:"confirm",itemId:item.id,productId,excluded})});const d=await r.json();setBusy(false);if(!r.ok){setMsg([d.message,d.detail].filter(Boolean).join(" · "));return}await load()}
   return <section className="adminSection contentWidth">
     <div className="adminIntro"><h1>경쟁업체 가격 포지셔닝</h1><p>참초원 · 본초마루 · 메디스트림의 가격을 신농허브 상품별 기준중량에 맞춰 비교합니다.</p></div>
