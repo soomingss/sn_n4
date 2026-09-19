@@ -43,7 +43,7 @@ export default function SiteEditor({settings,pages,history}){
       {Object.entries(contentValues[page.key]||{}).map(([contentKey,item])=>{
         const coreMatch=page.key==="company"&&contentKey.match(/^core_value_(\d+)_title$/);
         const introMatch=page.key==="company"&&contentKey.match(/^intro_paragraph_(\d+)$/);
-        const deliveryStepMatch=page.key==="order_delivery"&&contentKey.match(/^delivery_step_(\\d+)_title$/);\n        const parkingTitle=page.key==="location"&&contentKey==="parking_title";
+        const deliveryStepMatch=page.key==="order_delivery"&&contentKey.match(/^delivery_step_(\d+)_title$/);\n        const parkingTitle=page.key==="location"&&contentKey==="parking_title";
         const hideParkingChild=page.key==="location"&&(contentKey==="parking_label"||contentKey==="parking_description");
         const hideCoreDescription=page.key==="company"&&/^core_value_\d+_description$/.test(contentKey);
         if(hideCoreDescription||hideParkingChild)return null;
