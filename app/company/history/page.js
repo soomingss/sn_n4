@@ -22,9 +22,9 @@ export default async function History(){
         <p data-site-key="description"><Lines value={content.description}/></p>
       </div>
       <div className="timeline">
-        {history.map((item)=><H key={item.id} y={item.year}><Lines value={item.content}/></H>)}
+        {history.map((item)=><H key={item.id} id={item.id} y={item.year}><Lines value={item.content}/></H>)}
       </div>
     </section>
   </main>
 }
-function H({y,children}){return <div className="historyRow"><b>{y}</b><p>{children}</p></div>}
+function H({id,y,children}){return <div className="historyRow" data-site-group={`history_item_${id}`}><b>{y}</b><p>{children}</p></div>}
