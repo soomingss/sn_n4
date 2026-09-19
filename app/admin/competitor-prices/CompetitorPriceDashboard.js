@@ -1,0 +1,40 @@
+"use client";
+import {useEffect,useMemo,useState} from "react";
+
+const companies=["참초원","본초마루","메디스트림"];
+const money=(v)=>v==null?"-":Math.round(v).toLocaleString("ko-KR")+"원";
+function baseOrigin(v){const s=String(v||"").replace("대한민국","한국");for(const c of ["한국","중국","인도","베트남","인도네시아","미얀마","태국","라오스","캄보디아","몽골","러시아","일본","이란","터키","파키스탄","네팔"])if(s.includes(c))return c;return s.replace(/\s/g,"")}
+function keyName(v){return String(v||"").replace(/\*\s*\d+\s*묶음/g,"").replace(/[\s,]*\d+(?:\.\d+)?\s*(?:g|kg)\b/gi,"").replace(/\d+\s*원/g,"").replace(/[\s,]/g,"").replace(/[（]/g,"(").replace(/[）]/g,")")}
+function core(v){return keyName(v).replace(/\([^)]*\)/g,"").replace(/[<>].*?[<>]/g,"")}
+function bestMatch(product,rows){
+  const pn=keyName(product.name),pc=core(product.name),po=baseOrigin(product.origin);
+  const candidates=rows.filter(r=>{const rn=keyName(r.name),ro=baseOrigin(r.origin);return (!po||!ro||po===ro)&&(rn===pn||core(r.name)===pc||rn.includes(pc)||pn.includes(core(r.name)))});
+  return candidates.length?Math.min(...candidates.map(r=>r.price500)):null;
+}
+export default function CompetitorPriceDashboard(){
+  const [data,setData]=useState({markets:[],products:[],prices:[]}),[month,setMonth]=useState(""),[grade,setGrade]=useState("1"),[query,setQuery]=useState(""),[busy,setBusy]=useState(false),[msg,setMsg]=useState("");
+  async function load(){const r=await fetch("/api/admin/competitor-prices",{cache:"no-store"});if(r.ok){const d=await r.json();setData(d);const ms=[...new Set(d.markets.map(x=>x.month))].sort();setMonth(m=>m||ms.at(-1)||"")}}
+  useEffect(()=>{load()},[]);
+  const months=useMemo(()=>[...new Set(data.markets.map(x=>x.month))].sort().reverse(),[data.markets]);
+  const rows=useMemo(()=>{
+    const market=data.markets.filter(x=>x.month===month), priceMap=new Map(data.prices.filter(x=>String(x.price_grade)===grade).map(x=>[String(x.product_id),Number(x.price)]));
+    return data.products.filter(p=>p.is_active!==false&&(!query||([p.name,p.origin,p.supplier].join(" ").toLowerCase().includes(query.toLowerCase())))).map(p=>{
+      const weight=Number(String(p.weight||"").replace(/[^0-9.]/g,""))||500, own=priceMap.get(String(p.id)), own500=own!=null?own*500/weight:null;
+      const comps=Object.fromEntries(companies.map(c=>[c,bestMatch(p,market.filter(x=>x.company===c))]));
+      const vals=Object.values(comps).filter(v=>v!=null),avg=vals.length?vals.reduce((a,b)=>a+b,0)/vals.length:null,diff=own500!=null&&avg?((own500-avg)/avg)*100:null;
+      return {...p,own,own500,comps,avg,diff,matched:vals.length};
+    }).filter(r=>r.matched||r.own!=null).sort((a,b)=>(Math.abs(b.diff||0)-Math.abs(a.diff||0)));
+  },[data,month,grade,query]);
+  const stats=useMemo(()=>{const x=rows.filter(r=>r.diff!=null);return {count:x.length,below:x.filter(r=>r.diff<0).length,above:x.filter(r=>r.diff>0).length,avg:x.length?x.reduce((s,r)=>s+r.diff,0)/x.length:0}},[rows]);
+  async function upload(e){const files=[...e.target.files];if(!files.length)return;setBusy(true);setMsg("");const fd=new FormData();files.forEach(f=>fd.append("files",f));const r=await fetch("/api/admin/competitor-prices",{method:"POST",body:fd});const d=await r.json();setBusy(false);setMsg(r.ok?`${d.saved.map(x=>x.month).join(", ")} 시세표를 반영했습니다.`:d.message||"업로드 실패");if(r.ok)load();e.target.value=""}
+  return <section className="adminSection contentWidth">
+    <div className="adminIntro"><h1>경쟁업체 가격 포지셔닝</h1><p>참초원 · 본초마루 · 메디스트림의 500g 환산가와 신농허브 등급별 가격을 비교합니다.</p></div>
+    <div style={toolbar}><label style={uploadBtn}>{busy?"반영 중...":"월별 시세표 업로드"}<input type="file" accept=".xlsx,.xls" multiple hidden disabled={busy} onChange={upload}/></label><select value={month} onChange={e=>setMonth(e.target.value)} style={input}>{months.map(m=><option key={m}>{m}</option>)}</select><select value={grade} onChange={e=>setGrade(e.target.value)} style={input}>{["1","2","3","4","5"].map(g=><option key={g} value={g}>{g}등급 가격</option>)}</select><input value={query} onChange={e=>setQuery(e.target.value)} placeholder="품목명·원산지 검색" style={{...input,minWidth:220}}/></div>
+    {msg&&<p style={{margin:"12px 0",color:"#315f4e"}}>{msg}</p>}
+    {!months.length&&<div style={empty}><b>등록된 경쟁업체 시세표가 없습니다.</b><p>위의 ‘월별 시세표 업로드’에서 지금까지의 엑셀 파일을 한 번에 선택하면 월별 데이터가 누적됩니다.</p></div>}
+    {!!months.length&&<><div style={kpis}><K title="비교 가능 품목" value={stats.count+"개"}/><K title="경쟁사 평균보다 낮음" value={stats.below+"개"}/><K title="경쟁사 평균보다 높음" value={stats.above+"개"}/><K title="평균 가격 위치" value={(stats.avg>=0?"+":"")+stats.avg.toFixed(1)+"%"}/></div>
+    <div style={{overflowX:"auto",marginTop:20}}><table style={table}><thead><tr><th>품목</th><th>원산지</th><th>신농허브</th>{companies.map(c=><th key={c}>{c}</th>)}<th>경쟁사 평균</th><th>평균 대비</th><th>포지션</th></tr></thead><tbody>{rows.map(r=><tr key={r.id}><td><b>{r.name}</b><small style={sub}>{r.weight||""}</small></td><td>{r.origin||"-"}</td><td>{money(r.own500)}</td>{companies.map(c=><td key={c}>{money(r.comps[c])}</td>)}<td>{money(r.avg)}</td><td style={{fontWeight:700}}>{r.diff==null?"-":(r.diff>=0?"+":"")+r.diff.toFixed(1)+"%"}</td><td><span style={badge(r.diff)}>{r.diff==null?"비교불가":Math.abs(r.diff)<=3?"유사":r.diff<0?"낮음":"높음"}</span></td></tr>)}</tbody></table></div></>}
+  </section>
+}
+function K({title,value}){return <div style={kpi}><small>{title}</small><b>{value}</b></div>}
+const toolbar={display:"flex",flexWrap:"wrap",gap:10,alignItems:"center",marginTop:24},input={padding:"10px 12px",border:"1px solid #ccd5cc",borderRadius:7,background:"#fff"},uploadBtn={padding:"10px 14px",borderRadius:7,background:"#315f4e",color:"#fff",fontSize:13,fontWeight:700,cursor:"pointer"},kpis={display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(160px,1fr))",gap:12,marginTop:22},kpi={display:"flex",flexDirection:"column",gap:8,padding:18,border:"1px solid #dfe7e1",borderRadius:10,background:"#fff"},table={width:"100%",borderCollapse:"collapse",fontSize:13},sub={display:"block",marginTop:3,color:"#839087"},empty={marginTop:22,padding:28,border:"1px dashed #cbd8d0",borderRadius:10,background:"#f8faf8"},badge=(d)=>({display:"inline-block",padding:"4px 8px",borderRadius:999,background:d==null?"#f1f3f2":Math.abs(d)<=3?"#eef4f0":d<0?"#e8f3ed":"#f8ecec",color:d==null?"#718078":d<0?"#315f4e":"#8b4b4b",fontSize:12,fontWeight:700});
