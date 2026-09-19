@@ -33,12 +33,12 @@ export default async function OrderDeliveryPage(){
     <main className="orderDelivery contentWidth">
       <section className="orderIntro">
         <div className="greenLine" />
-        <h1><Lines value={content.intro_title}/></h1>
-        <p><Lines value={content.intro_description}/></p>
+        <h1 data-site-key="intro_title"><Lines value={content.intro_title}/></h1>
+        <p data-site-key="intro_description"><Lines value={content.intro_description}/></p>
       </section>
 
       <section className="orderSteps">
-        {steps.map((step, i)=><div className="orderStep" key={step.no}>
+        {steps.map((step, i)=><div className="orderStep" key={step.no} data-site-group={`delivery_step_${stepNumbers[i]||i+1}`}>
           <div className="stepTop"><b>{step.no}</b><StepIcon type={step.icon}/></div>
           <h2>{step.title}</h2><p>{step.desc}</p>
           {i < steps.length-1 && <span className="stepArrow" aria-hidden="true">→</span>}
@@ -47,17 +47,17 @@ export default async function OrderDeliveryPage(){
 
       <section className="deliveryInfo">
         <h2>배송 안내</h2>
-        <p><Lines value={content.delivery_description}/></p>
+        <p data-site-key="delivery_description"><Lines value={content.delivery_description}/></p>
         <div className="deliveryGrid">
-          <article><h3>직접 배송</h3><b><Lines value={content.direct_delivery_region}/></b><p><Lines value={content.direct_delivery_description}/></p></article>
-          <article><h3>택배 배송</h3><b><Lines value={content.parcel_region}/></b><p><Lines value={content.parcel_description}/></p></article>
+          <article><h3>직접 배송</h3><b data-site-key="direct_delivery_region"><Lines value={content.direct_delivery_region}/></b><p data-site-key="direct_delivery_description"><Lines value={content.direct_delivery_description}/></p></article>
+          <article><h3>택배 배송</h3><b data-site-key="parcel_region"><Lines value={content.parcel_region}/></b><p data-site-key="parcel_description"><Lines value={content.parcel_description}/></p></article>
         </div>
       </section>
 
       <section className="orderNotice">
         <h2>주문 전 확인해 주세요</h2>
-        <p>• <Lines value={content.notice_1}/></p>
-        <p>• <Lines value={content.notice_2}/></p>
+        <p data-site-key="notice_1">• <Lines value={content.notice_1}/></p>
+        <p data-site-key="notice_2">• <Lines value={content.notice_2}/></p>
       </section>
     </main>
   </>;
