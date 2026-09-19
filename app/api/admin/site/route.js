@@ -95,7 +95,7 @@ export async function PATCH(request){
       const list=await supabaseAdminFetch("/rest/v1/site_content?select=content_key,sort_order&page_key=eq.order_delivery&content_key=like.delivery_step_*");
       if(!list.ok)throw new Error(await list.text());
       const rows=await list.json();
-      const numbers=rows.map((row)=>Number(String(row.content_key).match(/^delivery_step_(\\d+)_/)?.[1]||0));
+      const numbers=rows.map((row)=>Number(String(row.content_key).match(/^delivery_step_(\d+)_/)?.[1]||0));
       const number=Math.max(0,...numbers)+1;
       const maxSort=Math.max(0,...rows.map((row)=>Number(row.sort_order)||0),100);
       const initial=[
