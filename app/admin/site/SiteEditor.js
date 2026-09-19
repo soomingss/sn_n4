@@ -3,6 +3,7 @@
 import Link from "next/link";
 import {useState} from "react";
 import {useRouter} from "next/navigation";
+import {IconClipboardText,IconPackage,IconChecklist,IconTruckDelivery} from "@tabler/icons-react";
 
 const settingFields = [
   ["company_name","회사명"],["company_name_en","영문 회사명"],["representative_name","대표자"],
@@ -111,7 +112,10 @@ function Field({label,value,onChange,multiline=false,action=null}){
     {multiline?<textarea rows={3} value={value||""} onChange={(e)=>onChange(e.target.value)} style={inputStyle}/>:<input value={value||""} onChange={(e)=>onChange(e.target.value)} style={inputStyle}/>}
   </div>;
 }
-function SelectField({label,value,onChange}){return <div style={{padding:"12px 0",borderBottom:"1px solid #eee"}}><div style={labelRowStyle}><b>{label}</b></div><select value={value||"order"} onChange={(e)=>onChange(e.target.value)} style={inputStyle}><option value="order">주문서</option><option value="stock">재고 박스</option><option value="check">검수 체크</option><option value="truck">배송 트럭</option></select></div>}
+function SelectField({label,value,onChange}){
+  const options=[["order","주문서",IconClipboardText],["stock","재고 박스",IconPackage],["check","검수 체크",IconChecklist],["truck","배송 트럭",IconTruckDelivery]];
+  return <div style={{padding:"12px 0",borderBottom:"1px solid #eee"}}><div style={labelRowStyle}><b>{label}</b></div><div style={iconGridStyle}>{options.map(([key,name,Icon])=><button key={key} type="button" onClick={()=>onChange(key)} style={{...iconChoiceStyle,...((value||"order")===key?iconChoiceActiveStyle:{})}}><Icon size={24} stroke={1.7}/><span>{name}</span></button>)}</div></div>;
+}
 function SaveButton({busy,onClick,compact=false}){return <button type="button" onClick={onClick} disabled={busy} style={{...saveButtonStyle,padding:compact?"8px 16px":"10px 20px",marginTop:compact?0:"18px"}}>{busy?"저장 중...":"저장"}</button>}
 const toggleStyle={display:"flex",alignItems:"center",gap:"6px",fontSize:"13px"};
 const rowActionsStyle={display:"flex",alignItems:"center",gap:"10px"};
@@ -121,6 +125,9 @@ const saveButtonStyle={border:"1px solid #315f4e",background:"#315f4e",color:"#f
 const dangerButtonStyle={border:"1px solid #e9b9bd",background:"#f8e1e3",color:"#9b4a50",fontSize:"13px",fontWeight:600,padding:"8px 16px",borderRadius:"6px",cursor:"pointer",flexShrink:0};
 const labelRowStyle={display:"flex",alignItems:"center",justifyContent:"space-between",gap:"12px",marginBottom:"8px"};
 const inputStyle={display:"block",width:"100%",maxWidth:"100%",boxSizing:"border-box",padding:"11px 12px",border:"1px solid #ccd5cc",borderRadius:"6px",font:"inherit"};
+const iconGridStyle={display:"grid",gridTemplateColumns:"repeat(4,minmax(0,1fr))",gap:"8px"};
+const iconChoiceStyle={display:"flex",alignItems:"center",justifyContent:"center",gap:"8px",padding:"12px 8px",border:"1px solid #d9e0da",borderRadius:"8px",background:"#fff",color:"#40544b",font:"inherit",fontSize:"13px",cursor:"pointer"};
+const iconChoiceActiveStyle={border:"1px solid #315f4e",background:"#eef4f0",color:"#315f4e",fontWeight:600};
 
 const contentLabels={
   home:{hero_eyebrow:"메인 배너 상단 문구",hero_title:"메인 배너 제목",hero_description:"메인 배너 설명",bottom_copy:"메인 하단 문구"},
