@@ -46,7 +46,7 @@ export default function SiteEditor({settings,pages,history}){
       <SaveButton busy={state.saving==="settings"} onClick={()=>save({type:"settings",values:settingValues},"settings")}/>
     </Block></>}
 
-    {activeSection&&activeSection!=="settings"&&<><SectionBack onClick={()=>setActiveSection(null)}/><VisualPreview pageKey={activeSection} version={previewVersion} content={contentValues[activeSection]||{}} onEdit={(contentKey)=>setVisualEdit({pageKey:activeSection,contentKey})}/>{activeSection!=="history"&&pages.filter((page)=>page.key===activeSection).map((page)=><details style={detailsStyle}><summary style={summaryStyle}>세부 항목 관리</summary><Block key={page.key} title={page.label} action={page.key==="company"?<div style={rowActionsStyle}><AddButton onClick={()=>save({type:"intro_add"},"intro-add")}>+ 회사소개 문단 추가</AddButton><AddButton onClick={()=>save({type:"core_add"},"core-add")}>+ 핵심가치 추가</AddButton></div>:page.key==="order_delivery"?<AddButton onClick={()=>save({type:"delivery_step_add"},"delivery-step-add")}>+ 배송단계 추가</AddButton>:page.key==="location"&&!contentValues.location?.parking_title?<AddButton onClick={()=>save({type:"parking_add"},"parking-add")}>+ 주차안내 추가</AddButton>:null}>
+    {activeSection&&activeSection!=="settings"&&<><SectionBack onClick={()=>setActiveSection(null)}/><VisualPreview pageKey={activeSection} version={previewVersion} content={contentValues[activeSection]||{}} onEdit={(contentKey)=>setVisualEdit({pageKey:activeSection,contentKey})}/>{activeSection!=="history"&&pages.filter((page)=>page.key===activeSection).map((page)=><details key={page.key} style={detailsStyle}><summary style={summaryStyle}>세부 항목 관리</summary><Block key={page.key} title={page.label} action={page.key==="company"?<div style={rowActionsStyle}><AddButton onClick={()=>save({type:"intro_add"},"intro-add")}>+ 회사소개 문단 추가</AddButton><AddButton onClick={()=>save({type:"core_add"},"core-add")}>+ 핵심가치 추가</AddButton></div>:page.key==="order_delivery"?<AddButton onClick={()=>save({type:"delivery_step_add"},"delivery-step-add")}>+ 배송단계 추가</AddButton>:page.key==="location"&&!contentValues.location?.parking_title?<AddButton onClick={()=>save({type:"parking_add"},"parking-add")}>+ 주차안내 추가</AddButton>:null}>
       {Object.entries(contentValues[page.key]||{}).map(([contentKey,item])=>{
         const coreMatch=page.key==="company"&&contentKey.match(/^core_value_(\d+)_title$/);
         const introMatch=page.key==="company"&&contentKey.match(/^intro_paragraph_(\d+)$/);
@@ -96,14 +96,14 @@ export default function SiteEditor({settings,pages,history}){
       })}
     </Block></details>)}</>}
 
-    {activeSection==="history"&&<> onClick={()=>setActiveSection(null)}/><Block title="연혁" action={<AddButton onClick={()=>save({type:"history_add"},"history-add")}>+ 연혁 추가</AddButton>}>
+    {activeSection==="history"&&<details style={detailsStyle}><summary style={summaryStyle}>연혁 항목 관리</summary><Block title="연혁" action={<AddButton onClick={()=>save({type:"history_add"},"history-add")}>+ 연혁 추가</AddButton>}>
       {historyValues.map((item,index)=><div key={item.id} style={{padding:"14px 0",borderBottom:"1px solid #e7e7e7"}}>
         <div style={labelRowStyle}><b>{`연혁 ${index+1}`}</b></div>
         <Field label="연도" value={item.year} onChange={(value)=>setHistoryValues(historyValues.map((row,i)=>i===index?{...row,year:value}:row))}/>
         <Field label="내용" value={item.content} multiline onChange={(value)=>setHistoryValues(historyValues.map((row,i)=>i===index?{...row,content:value}:row))}/>
         <div style={groupActionsStyle}><SaveButton compact busy={state.saving===`history:${item.id}`} onClick={()=>save({type:"history",id:item.id,year:item.year,content:item.content},`history:${item.id}`)}/><button type="button" style={dangerButtonStyle} onClick={()=>confirm("이 연혁을 삭제할까요?")&&save({type:"history_delete",id:item.id},`history-delete:${item.id}`)}>삭제</button></div>
       </div>)}
-    </Block></>}
+    </Block></details>}
 
     {visualEdit&&<EditModal pageKey={visualEdit.pageKey} contentKey={visualEdit.contentKey} item={contentValues[visualEdit.pageKey]?.[visualEdit.contentKey]} onClose={()=>setVisualEdit(null)} onChange={(value)=>setContentValues({...contentValues,[visualEdit.pageKey]:{...contentValues[visualEdit.pageKey],[visualEdit.contentKey]:{...(contentValues[visualEdit.pageKey]?.[visualEdit.contentKey]||{}),value}}})} onSave={()=>{const item=contentValues[visualEdit.pageKey]?.[visualEdit.contentKey];save({type:"content",pageKey:visualEdit.pageKey,contentKey:visualEdit.contentKey,value:item?.value||""},`visual:${visualEdit.pageKey}:${visualEdit.contentKey}`);setVisualEdit(null);}}/>}
 
