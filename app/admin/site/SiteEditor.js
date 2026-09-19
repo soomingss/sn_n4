@@ -241,7 +241,17 @@ const legacyIconMap={
   step:"IconCircleNumber1",arrow:"IconArrowRight",route:"IconRoute",car:"IconCar",delivery:"IconTruck",world:"IconWorld"
 };
 const legacyLabels={order:"주문서",stock:"재고 박스",check:"검수 체크",truck:"배송 트럭",leaf:"잎",shield:"품질·보호",certificate:"인증서",warehouse:"창고",handshake:"협력",box:"박스",packages:"상품 묶음",cart:"장바구니",receipt:"주문내역",file:"문서",clock:"시간",calendar:"일정",map:"위치",home:"홈",building:"회사",phone:"전화",mail:"메일",message:"문의",user:"사용자",users:"거래처",star:"추천",sparkles:"엄선",heart:"신뢰",plant:"약재·식물",seedling:"새싹",flask:"검사",microscope:"품질검사",scale:"기준",verified:"인증","circle-check":"확인",step:"단계",arrow:"진행",route:"경로",car:"직접배송",delivery:"운송",world:"지역"};
-const extraIconNames=Object.keys(TablerIcons).filter((name)=>/^Icon[A-Z]/.test(name)&&typeof TablerIcons[name]==="object"&&!Object.values(legacyIconMap).includes(name)).sort().slice(0,260);
+const relatedIconNames=[
+  "IconApple","IconBasket","IconBottle","IconBoxMultiple","IconBoxSeam","IconBuildingFactory2","IconBuildingStore","IconBuildingWarehouse",
+  "IconCalendarCheck","IconCalendarClock","IconCertificate2","IconChecklist","IconCircleCheckFilled","IconClipboardCheck","IconClipboardList","IconClipboardText",
+  "IconClockCheck","IconClockHour4","IconCloudRain","IconDatabase","IconDeviceFloppy","IconDroplet","IconFileCertificate","IconFileCheck","IconFileDescription",
+  "IconFileInvoice","IconFileSpreadsheet","IconFileText","IconFirstAidKit","IconFlask2","IconFlower","IconGardenCart","IconHeartbeat",
+  "IconHerb","IconHistory","IconHomeCheck","IconInfoCircle","IconLeaf2","IconListCheck","IconMap2","IconMapPinCheck","IconMapPins",
+  "IconPackageExport","IconPackageImport","IconPackageOff","IconPackageOpen","IconPackages","IconPlant2","IconReceipt2","IconReceiptTax","IconRecycle",
+  "IconRoute2","IconScaleOutline","IconScan","IconSearch","IconSeedling","IconShieldCheckFilled","IconShoppingBag","IconShoppingCartCheck","IconShoppingCartPlus",
+  "IconStack2","IconTruckDelivery","IconTruckLoading","IconTruckReturn","IconTruckShipping","IconUserCheck","IconUsersGroup","IconWorldPin"
+];
+const extraIconNames=relatedIconNames.filter((name)=>TablerIcons[name]&&!Object.values(legacyIconMap).includes(name)).slice(0,60);
 const iconOptions=[
   ...Object.entries(legacyIconMap).map(([key,name])=>[key,legacyLabels[key],TablerIcons[name]]),
   ...extraIconNames.map((name)=>[name,name.replace(/^Icon/,"").replace(/([a-z0-9])([A-Z])/g,"$1 $2"),TablerIcons[name]])
