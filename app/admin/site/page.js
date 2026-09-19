@@ -19,7 +19,26 @@ export default async function AdminSitePage(){
 
   const settings = await getSiteSettings();
   const contentEntries = await Promise.all(
-    pages.map(async ([key, label]) => ({key, label, rows:await getAdminSiteContent(key)}))
+    pages.map(async ([key, label]) => {
+      const rows=await getAdminSiteContent(key);
+      if(key==="order_delivery"&&!rows.some((row)=>/^delivery_step_\d+_title$/.test(row.content_key))){
+        rows.push(
+          {content_key:"delivery_step_1_title",content_value:"주문 접수",is_active:true},
+          {content_key:"delivery_step_1_description",content_value:"주문 품목과 수량을 확인합니다",is_active:true},
+          {content_key:"delivery_step_1_icon",content_value:"order",is_active:true},
+          {content_key:"delivery_step_2_title",content_value:"재고 확인",is_active:true},
+          {content_key:"delivery_step_2_description",content_value:"보유 재고와 주문 내용을 꼼꼼하게 확인합니다",is_active:true},
+          {content_key:"delivery_step_2_icon",content_value:"stock",is_active:true},
+          {content_key:"delivery_step_3_title",content_value:"상품 준비·검수",is_active:true},
+          {content_key:"delivery_step_3_description",content_value:"출고 전 상품 상태를 다시 한 번 확인합니다.",is_active:true},
+          {content_key:"delivery_step_3_icon",content_value:"check",is_active:true},
+          {content_key:"delivery_step_4_title",content_value:"배송",is_active:true},
+          {content_key:"delivery_step_4_description",content_value:"지역에 따라 직접 배송 또는 택배로 안전하게 발송합니다",is_active:true},
+          {content_key:"delivery_step_4_icon",content_value:"truck",is_active:true}
+        );
+      }
+      return {key,label,rows};
+    })
   );
   const history = await getAdminSiteHistory();
 
