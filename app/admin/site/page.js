@@ -20,7 +20,7 @@ export default async function AdminSitePage(){
   const settings = await getSiteSettings();
   const contentEntries = await Promise.all(
     pages.map(async ([key, label]) => {
-      const rows=await getAdminSiteContent(key);
+      const rows=(await getAdminSiteContent(key)).map((row)=>({...row,content_value:typeof row.content_value==="string"?row.content_value.replaceAll("{company_name}",settings.company_name||"신농허브"):row.content_value}));
       if(key==="order_delivery"){
         if(!rows.some((row)=>row.content_key==="direct_delivery_title")) rows.push({content_key:"direct_delivery_title",content_value:"직접 배송",is_active:true});
         if(!rows.some((row)=>row.content_key==="parcel_title")) rows.push({content_key:"parcel_title",content_value:"택배 배송",is_active:true});
