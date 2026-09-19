@@ -56,7 +56,8 @@ export default function SiteEditor({settings,pages,history}){
         const hideParkingChild=page.key==="location"&&(contentKey==="parking_label"||contentKey==="parking_description");
         const hideCoreDescription=page.key==="company"&&/^core_value_\d+_description$/.test(contentKey);
         const hideDeliveryChild=page.key==="order_delivery"&&/^delivery_step_\d+_(description|icon)$/.test(contentKey);
-        if(hideCoreDescription||hideParkingChild||hideDeliveryChild)return null;
+        const hideDeliveryMethodChild=page.key==="order_delivery"&&["direct_delivery_region","direct_delivery_description","parcel_region","parcel_description"].includes(contentKey);
+        if(hideCoreDescription||hideParkingChild||hideDeliveryChild||hideDeliveryMethodChild)return null;
         if(introMatch){
           return <div key={contentKey} style={{padding:"16px 0",borderBottom:"1px solid #eee"}}>
             <Field label={`회사소개 문구 ${introMatch[1]}`} value={item.value} multiline onChange={(next)=>setContentValues({...contentValues,[page.key]:{...contentValues[page.key],[contentKey]:{...item,value:next}}})}/>
