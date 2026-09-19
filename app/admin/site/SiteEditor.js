@@ -41,7 +41,8 @@ export default function SiteEditor({settings,pages,history}){
 
     {pages.map((page)=><Block key={page.key} title={page.label} action={page.key==="company"?<div style={rowActionsStyle}><AddButton onClick={()=>save({type:"intro_add"},"intro-add")}>+ 회사소개 문단 추가</AddButton><AddButton onClick={()=>save({type:"core_add"},"core-add")}>+ 핵심가치 추가</AddButton></div>:page.key==="location"&&!contentValues.location?.parking_title?<AddButton onClick={()=>save({type:"parking_add"},"parking-add")}>+ 주차안내 추가</AddButton>:null}>
       {Object.entries(contentValues[page.key]||{}).map(([contentKey,item])=>{
-        const coreMatch=page.key==="company"&&contentKey.match(/^core_value_(\d+)_title$/);\n        const introMatch=page.key==="company"&&contentKey.match(/^intro_paragraph_(\d+)$/);
+        const coreMatch=page.key==="company"&&contentKey.match(/^core_value_(\d+)_title$/);
+        const introMatch=page.key==="company"&&contentKey.match(/^intro_paragraph_(\d+)$/);
         const parkingTitle=page.key==="location"&&contentKey==="parking_title";
         const hideParkingChild=page.key==="location"&&(contentKey==="parking_label"||contentKey==="parking_description");
         const hideCoreDescription=page.key==="company"&&/^core_value_\d+_description$/.test(contentKey);
@@ -100,7 +101,8 @@ function Field({label,value,onChange,multiline=false,action=null}){
 }
 function SaveButton({busy,onClick,compact=false}){return <button type="button" onClick={onClick} disabled={busy} style={{...saveButtonStyle,padding:compact?"8px 16px":"10px 20px",marginTop:compact?0:"18px"}}>{busy?"저장 중...":"저장"}</button>}
 const toggleStyle={display:"flex",alignItems:"center",gap:"6px",fontSize:"13px"};
-const rowActionsStyle={display:"flex",alignItems:"center",gap:"10px"};\nconst groupActionsStyle={display:"flex",alignItems:"center",justifyContent:"flex-end",gap:"10px",paddingTop:"12px"};
+const rowActionsStyle={display:"flex",alignItems:"center",gap:"10px"};
+const groupActionsStyle={display:"flex",alignItems:"center",justifyContent:"flex-end",gap:"10px",paddingTop:"12px"};
 const backButtonStyle={display:"flex",width:"100%",boxSizing:"border-box",alignItems:"center",justifyContent:"center",padding:"12px 16px",background:"#315f4e",color:"#fff",textDecoration:"none",fontSize:"12px",fontWeight:600,borderRadius:"6px"};
 const saveButtonStyle={border:"1px solid #315f4e",background:"#315f4e",color:"#fff",borderRadius:"6px",fontSize:"13px",fontWeight:600,cursor:"pointer",flexShrink:0};
 const dangerButtonStyle={border:"1px solid #e9b9bd",background:"#f8e1e3",color:"#9b4a50",fontSize:"13px",fontWeight:600,padding:"8px 16px",borderRadius:"6px",cursor:"pointer",flexShrink:0};
