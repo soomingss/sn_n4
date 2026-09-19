@@ -13,9 +13,7 @@ const settingFields = [
 export default function SiteEditor({settings,pages,history}){
   const router=useRouter();
   const [settingValues,setSettingValues]=useState(Object.fromEntries(settingFields.map(([key])=>[key,settings[key]||""])));
-  const toAdminText=(value)=>String(value||"").replaceAll("{company_name}","[회사명]");
-  const toStoredText=(value)=>String(value||"").replaceAll("[회사명]","{company_name}");
-  const [contentValues,setContentValues]=useState(()=>Object.fromEntries(pages.map((page)=>[page.key,Object.fromEntries(page.rows.map((row)=>[row.content_key,{value:toAdminText(row.content_value),active:row.is_active!==false}]))])));
+  const [contentValues,setContentValues]=useState(()=>Object.fromEntries(pages.map((page)=>[page.key,Object.fromEntries(page.rows.map((row)=>[row.content_key,{value:row.content_value||"",active:row.is_active!==false}]))])));
   const [historyValues,setHistoryValues]=useState(()=>history.map((item)=>({...item})));
   const [state,setState]=useState({saving:"",message:"",error:false});
 
@@ -23,7 +21,7 @@ export default function SiteEditor({settings,pages,history}){
     if(state.saving)return;
     setState({saving:key,message:"",error:false});
     try{
-      const res=await fetch("/api/admin/site",{method:"PATCH",headers:{"Content-Type":"application/json"},body:JSON.stringify(payload?.type==="content"?{...payload,value:toStoredText(payload.value)}:payload?.type==="content_group"?{...payload,items:payload.items.map((item)=>({...item,value:toStoredText(item.value)}))}:payload)});
+      const res=await fetch("/api/admin/site",{method:"PATCH",headers:{"Content-Type":"application/json"},body:JSON.stringify(payload)});
       const data=await res.json().catch(()=>({}));
       if(!res.ok)throw new Error(data.message||"저장하지 못했습니다.");
       setState({saving:"",message:"저장되었습니다.",error:false});
