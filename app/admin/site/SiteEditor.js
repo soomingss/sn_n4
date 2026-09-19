@@ -163,6 +163,18 @@ function VisualPreview({pageKey,version,content,onEdit}){
 }
 function GroupEditModal({pageKey,groupKey,values,onClose,onChange,onSave}){
   const delivery=pageKey==="order_delivery"&&groupKey.match(/^delivery_step_(\d+)$/);
+  const method=pageKey==="order_delivery"&&(groupKey==="direct_delivery"||groupKey==="parcel_delivery");
+  if(method){
+    const direct=groupKey==="direct_delivery", titleKey=direct?"direct_delivery_title":"parcel_title", regionKey=direct?"direct_delivery_region":"parcel_region", descKey=direct?"direct_delivery_description":"parcel_description";
+    const title=values[titleKey]||{value:direct?"직접 배송":"택배 배송"}, region=values[regionKey]||{value:""}, desc=values[descKey]||{value:""};
+    return <div style={modalBackdropStyle} onClick={onClose}><div style={{...iconModalStyle,width:"min(680px,100%)"}} onClick={(e)=>e.stopPropagation()}>
+      <div style={labelRowStyle}><div><small style={{color:"#718078"}}>배송 방식</small><h3 style={{margin:"4px 0 0"}}>{direct?"직접 배송 수정":"택배 배송 수정"}</h3></div><button type="button" onClick={onClose} style={modalCloseStyle}>닫기</button></div>
+      <Field label="제목" value={title.value} onChange={(value)=>onChange(titleKey,value)}/>
+      <Field label="지역" value={region.value} onChange={(value)=>onChange(regionKey,value)}/>
+      <Field label="설명" value={desc.value} multiline onChange={(value)=>onChange(descKey,value)}/>
+      <div style={groupActionsStyle}><button type="button" onClick={onClose} style={{...dangerButtonStyle,background:"#fff",color:"#52645b",borderColor:"#d7ddd9"}}>취소</button><SaveButton compact onClick={()=>onSave([{pageKey,contentKey:titleKey,value:title.value},{pageKey,contentKey:regionKey,value:region.value},{pageKey,contentKey:descKey,value:desc.value}])}/></div>
+    </div></div>;
+  }
   if(!delivery)return null;
   const no=delivery[1], titleKey="delivery_step_"+no+"_title", descKey="delivery_step_"+no+"_description", iconKey="delivery_step_"+no+"_icon";
   const title=values[titleKey]||{value:""}, desc=values[descKey]||{value:""}, icon=values[iconKey]||{value:"order"};
