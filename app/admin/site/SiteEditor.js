@@ -39,13 +39,19 @@ export default function SiteEditor({settings,pages,history}){
       <SaveButton busy={state.saving==="settings"} onClick={()=>save({type:"settings",values:settingValues},"settings")}/>
     </Block>
 
-    {pages.map((page)=><Block key={page.key} title={page.label} action={page.key==="company"?<AddButton onClick={()=>save({type:"core_add"},"core-add")}>+ 핵심가치 추가</AddButton>:page.key==="location"&&!contentValues.location?.parking_title?<AddButton onClick={()=>save({type:"parking_add"},"parking-add")}>+ 주차안내 추가</AddButton>:null}>
+    {pages.map((page)=><Block key={page.key} title={page.label} action={page.key==="company"?<div style={rowActionsStyle}><AddButton onClick={()=>save({type:"intro_add"},"intro-add")}>+ 회사소개 문단 추가</AddButton><AddButton onClick={()=>save({type:"core_add"},"core-add")}>+ 핵심가치 추가</AddButton></div>:page.key==="location"&&!contentValues.location?.parking_title?<AddButton onClick={()=>save({type:"parking_add"},"parking-add")}>+ 주차안내 추가</AddButton>:null}>
       {Object.entries(contentValues[page.key]||{}).map(([contentKey,item])=>{
-        const coreMatch=page.key==="company"&&contentKey.match(/^core_value_(\d+)_title$/);
+        const coreMatch=page.key==="company"&&contentKey.match(/^core_value_(\d+)_title$/);\n        const introMatch=page.key==="company"&&contentKey.match(/^intro_paragraph_(\d+)$/);
         const parkingTitle=page.key==="location"&&contentKey==="parking_title";
         const hideParkingChild=page.key==="location"&&(contentKey==="parking_label"||contentKey==="parking_description");
         const hideCoreDescription=page.key==="company"&&/^core_value_\d+_description$/.test(contentKey);
         if(hideCoreDescription||hideParkingChild)return null;
+        if(introMatch){
+          return <div key={contentKey} style={{padding:"16px 0",borderBottom:"1px solid #eee"}}>
+            <Field label={`회사소개 문구 ${introMatch[1]}`} value={item.value} multiline onChange={(next)=>setContentValues({...contentValues,[page.key]:{...contentValues[page.key],[contentKey]:{...item,value:next}}})}/>
+            <div style={groupActionsStyle}><SaveButton compact busy={state.saving===`content:${page.key}:${contentKey}`} onClick={()=>save({type:"content",pageKey:page.key,contentKey,value:item.value},`content:${page.key}:${contentKey}`)}/><button type="button" style={dangerButtonStyle} onClick={()=>confirm("이 회사소개 문단을 삭제할까요?")&&save({type:"intro_delete",contentKey},`intro-delete:${contentKey}`)}>삭제</button></div>
+          </div>;
+        }
         if(parkingTitle){
           const labelItem=contentValues.location?.parking_label||{value:""};
           const descItem=contentValues.location?.parking_description||{value:""};
