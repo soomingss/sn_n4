@@ -25,9 +25,9 @@ export default async function Home(){
   return <main>
     <section className="mainHero">
       <div className="mainCopy">
-        <p className="eyebrow"><Lines value={content.hero_eyebrow}/></p>
-        <h1><HeroTitle value={content.hero_title}/></h1>
-        <p className="desc"><Lines value={content.hero_description}/></p>
+        <p className="eyebrow" data-site-key="hero_eyebrow"><Lines value={content.hero_eyebrow}/></p>
+        <h1 data-site-key="hero_title"><HeroTitle value={content.hero_title}/></h1>
+        <p className="desc" data-site-key="hero_description"><Lines value={content.hero_description}/></p>
         <div className="buttons"><Link className="primary" href="/products">제품 둘러보기 →</Link><a className="heroButton" href="/inquiry">거래 문의하기</a></div>
       </div>
       <div className="mainImage"></div>
@@ -39,7 +39,7 @@ export default async function Home(){
 
     <section className="mainBottom">
       <div className="leafPhoto"></div>
-      <div className="bottomCopy"><Lines value={content.bottom_copy}/><small>{settings.company_name_en}</small></div>
+      <div className="bottomCopy" data-site-key="bottom_copy"><Lines value={content.bottom_copy}/><small>{settings.company_name_en}</small></div>
     </section>
   </main>
 }
