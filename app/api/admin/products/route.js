@@ -13,10 +13,18 @@ export async function POST(req){
     if(!file)return NextResponse.json({message:"마스터 엑셀 파일을 선택해주세요."},{status:400});
     const wb=XLSX.read(await file.arrayBuffer(),{type:"array"}),ws=wb.Sheets[wb.SheetNames[0]];
     const rows=XLSX.utils.sheet_to_json(ws,{defval:""});
-    const products=rows.filter(x=>String(x["품명"]||"").trim()).map(x=>({
-      name:String(x["품명"]).trim(),supplier:String(x["회사명"]||"").trim(),
-      origin:String(x["원산지"]||"").trim(),weight:"",is_active:true,stock_status:"normal"
-    }));
+    const specialWeights=[
+      {name:"등심",weight:"100g"},{name:"어성초",weight:"600g"},{name:"오공",weight:"80g"},{name:"자연동",weight:"300g"},{name:"포황",weight:"600g"},
+      {name:"대추",weight:"1kg"},{name:"진피",weight:"1kg"},
+      {name:"녹각교",supplier:"신흥",weight:"30g"},{name:"맥아",supplier:"신흥",weight:"1kg"},{name:"모려(가루)",supplier:"신흥",weight:"1kg"},
+      {name:"모려(단)",supplier:"신흥",weight:"1kg"},{name:"석고",supplier:"신흥",weight:"1kg"},{name:"숙지황(원형)",supplier:"신흥",weight:"1kg"},
+      {name:"신곡(초)",supplier:"신흥",weight:"1kg"},{name:"용골 (분말)",supplier:"신흥",weight:"1kg"},{name:"활석",supplier:"신흥",weight:"1kg"}
+    ];
+    const productWeight=(name,supplier)=>specialWeights.find(x=>x.name===name&&(!x.supplier||supplier.includes(x.supplier)))?.weight||"500g";
+    const products=rows.filter(x=>String(x["품명"]||"").trim()).map(x=>{
+      const name=String(x["품명"]).trim(),supplier=String(x["회사명"]||"").trim();
+      return {name,supplier,origin:String(x["원산지"]||"").trim(),weight:productWeight(name,supplier),is_active:true,stock_status:"normal"};
+    });
     if(products.length!==402)return NextResponse.json({message:`마스터 상품 수가 402개가 아닙니다. 현재 ${products.length}개입니다.`},{status:400});
     const del=async(path)=>{const r=await supabaseAdminFetch(path,{method:"DELETE",headers:{Prefer:"return=minimal"}});if(!r.ok)throw new Error(await r.text())};
     for(const path of ["/rest/v1/competitor_prices?id=not.is.null","/rest/v1/competitor_import_items?id=not.is.null","/rest/v1/competitor_product_mappings?id=not.is.null","/rest/v1/competitor_imports?id=not.is.null","/rest/v1/product_prices?product_id=not.is.null","/rest/v1/products?id=not.is.null"])await del(path);
