@@ -38,8 +38,7 @@ export async function POST(req){
       const wb=XLSX.read(await file.arrayBuffer(),{type:"array"}); let data=[];
       for(const company of companies)if(wb.Sheets[company])data.push(...rowsFromSheet(wb.Sheets[company],month,company));
       const key="market_"+month.replace("-","_");
-      const r=await supabaseAdminFetch("/rest/v1/site_content?on_conflict=page_key,content_key",{method:"POST",headers:{Prefer:"resolution=merge-duplicates,return=minimal"},body:JSON.stringify({page_key:"competitor_prices",content_key:key,content_value:JSON.stringify(data),sort_order:Number(month.replace("-","")),is_active:true})});
-      if(!r.ok)throw new Error(await r.text()); saved.push({month,count:data.length});
+      if(!data.length)throw new Error(`${file.name}: 경쟁업체 시트에서 가격 데이터를 찾지 못했습니다.`);\n      const payload={content_value:JSON.stringify(data),sort_order:Number(month.replace("-","")),is_active:true};\n      const update=await supabaseAdminFetch(`/rest/v1/site_content?page_key=eq.competitor_prices&content_key=eq.${encodeURIComponent(key)}`,{method:"PATCH",headers:{Prefer:"return=representation"},body:JSON.stringify(payload)});\n      if(!update.ok)throw new Error(await update.text());\n      const updated=await update.json().catch(()=>[]);\n      if(!updated.length){\n        const insert=await supabaseAdminFetch("/rest/v1/site_content",{method:"POST",headers:{Prefer:"return=minimal"},body:JSON.stringify({page_key:"competitor_prices",content_key:key,...payload})});\n        if(!insert.ok)throw new Error(await insert.text());\n      }\n      saved.push({month,count:data.length});
     }
     return NextResponse.json({ok:true,saved});
   }catch(e){return NextResponse.json({message:"시세표 저장에 실패했습니다.",detail:e?.message||String(e)},{status:500})}
