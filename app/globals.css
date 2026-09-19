@@ -15,6 +15,13 @@ button{font:inherit;cursor:pointer}
 .headerActions button,.headerActions .partnerApply,.buttons .primary{background:#315f4e;color:#fff}
 .smallIcon{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8}
 
+.companyDropdown{position:relative}
+.companyDropdownMenu{position:absolute;left:50%;top:calc(100% + 9px);width:150px;background:#fff;border:1px solid #dfe5e1;box-shadow:0 10px 24px rgba(24,55,47,.10);opacity:0;visibility:hidden;transform:translate(-50%,-4px);transition:opacity .15s ease,transform .15s ease,visibility .15s ease;z-index:60}
+.companyDropdownMenu:before{content:"";position:absolute;left:0;right:0;top:-10px;height:10px}
+.companyDropdownMenu a{display:block;padding:13px 15px;font-size:13px;color:#314a41;background:#fff;white-space:nowrap}
+.companyDropdownMenu a+a{border-top:1px solid #edf0ee}
+.companyDropdownMenu a:hover{background:#f4f7f4}
+.companyDropdown:hover .companyDropdownMenu,.companyDropdown:focus-within .companyDropdownMenu{opacity:1;visibility:visible;transform:translate(-50%,0)}
 .partnerDropdown{position:relative}
 .partnerDropdownToggle{min-width:108px}
 .partnerDropdownMenu{position:absolute;right:0;top:calc(100% + 9px);width:178px;background:#fff;border:1px solid #dfe5e1;box-shadow:0 10px 24px rgba(24,55,47,.10);opacity:0;visibility:hidden;transform:translateY(-4px);transition:opacity .15s ease,transform .15s ease,visibility .15s ease;z-index:60}
