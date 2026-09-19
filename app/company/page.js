@@ -24,8 +24,8 @@ export default async function Company(){
 
     <section className="intro contentWidth">
       <div className="greenLine"></div>
-      <h1><Lines value={content.intro_title}/></h1>
-      {introParagraphs.map((paragraph,index)=><p key={index}><Lines value={paragraph}/></p>)}
+      <h1 data-site-key="intro_title"><Lines value={content.intro_title}/></h1>
+      {introParagraphs.map((paragraph,index)=><p key={index} data-site-key={`intro_paragraph_${index+1}`}><Lines value={paragraph}/></p>)}
     </section>
 
     <section className="coreValues">
@@ -33,7 +33,7 @@ export default async function Company(){
         <p className="eyebrow">CORE VALUES</p>
         <h2>{companyName}의 핵심가치</h2>
         <div className="coreGrid">
-          {values.map((value)=><ValueCard key={value.id} icon={value.icon} title={value.title}><Lines value={value.description}/></ValueCard>)}
+          {values.map((value)=><div key={value.id} data-site-group={`core_value_${value.id}`}><ValueCard icon={value.icon} title={value.title}><Lines value={value.description}/></ValueCard></div>)}
         </div>
       </div>
     </section>
