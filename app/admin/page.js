@@ -18,7 +18,8 @@ export default async function AdminPage() {
         <AdminCard no="04" title="상품 관리" desc="상품 노출 여부와 재고부족·품절 상태를 관리합니다." href="/admin/products" />
         <AdminCard no="05" title="거래처 장부 · 미수금" desc="거래처별 거래장부와 현재 미수금을 확인합니다." href="/admin/ledger" />
         <AdminCard no="06" title="세금계산서용" desc="월별 과세·면세 거래를 확인하고 세금계산서용 엑셀 자료를 다운로드합니다." href="/admin/tax-report" />
-        <AdminCard no="07" title="경쟁업체 가격 대시보드" desc="경쟁업체 3개의 월별 가격을 비교하고 신농허브의 가격 포지셔닝을 확인합니다." href="/admin/competitor-prices" />\n        <AdminCard no="08" title="홈페이지 관리" desc="회사 기본정보와 홈페이지 문구, 연혁을 관리합니다." href="/admin/site" />
+        <AdminCard no="07" title="경쟁업체 가격 대시보드" desc="경쟁업체 3개의 월별 가격을 비교하고 신농허브의 가격 포지셔닝을 확인합니다." href="/admin/competitor-prices" />
+        <AdminCard no="08" title="홈페이지 관리" desc="회사 기본정보와 홈페이지 문구, 연혁을 관리합니다." href="/admin/site" />
       </div>
     </section>
   </main>;
