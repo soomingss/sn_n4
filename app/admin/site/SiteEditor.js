@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import {useEffect,useRef,useState} from "react";
-import {useRouter} from "next/navigation";
+import {useRouter,useSearchParams} from "next/navigation";
 import * as TablerIcons from "@tabler/icons-react";
 
 const settingFields = [
@@ -13,14 +13,22 @@ const settingFields = [
 
 export default function SiteEditor({settings,pages,history}){
   const router=useRouter();
+  const searchParams=useSearchParams();
+  const initialSection=searchParams.get("section");
   const [settingValues,setSettingValues]=useState(Object.fromEntries(settingFields.map(([key])=>[key,settings[key]||""])));
   const [contentValues,setContentValues]=useState(()=>Object.fromEntries(pages.map((page)=>[page.key,Object.fromEntries(page.rows.map((row)=>[row.content_key,{value:row.content_value||"",active:row.is_active!==false}]))])));
   const [historyValues,setHistoryValues]=useState(()=>history.map((item)=>({...item})));
   const [state,setState]=useState({saving:"",message:"",error:false});
-  const [activeSection,setActiveSection]=useState(null);
+  const [activeSection,setActiveSection]=useState(initialSection||null);
   const [visualEdit,setVisualEdit]=useState(null);
   const [groupEdit,setGroupEdit]=useState(null);
   const [previewVersion,setPreviewVersion]=useState(0);
+
+  function openSection(section){
+    setActiveSection(section);
+    const url=section?"/admin/site?section="+encodeURIComponent(section):"/admin/site";
+    window.history.replaceState(null,"",url);
+  }
 
   async function save(payload,key){
     if(state.saving)return;
@@ -40,14 +48,14 @@ export default function SiteEditor({settings,pages,history}){
   return <>
     {state.message&&<div className={state.error?"loginError":"signupSuccess"} style={{marginBottom:"20px"}}>{state.message}</div>}
 
-    {!activeSection&&<SectionMenu onOpen={setActiveSection}/>}
+    {!activeSection&&<SectionMenu onOpen={openSection}/>}
 
-    {activeSection==="settings"&&<><SectionBack onClick={()=>setActiveSection(null)}/><Block title="회사 기본정보">
+    {activeSection==="settings"&&<><SectionBack onClick={()=>openSection(null)}/><Block title="회사 기본정보">
       {settingFields.map(([key,label])=><Field key={key} label={label} value={settingValues[key]} onChange={(value)=>setSettingValues({...settingValues,[key]:value})}/>)}
       <SaveButton busy={state.saving==="settings"} onClick={()=>save({type:"settings",values:settingValues},"settings")}/>
     </Block></>}
 
-    {activeSection&&activeSection!=="settings"&&<><SectionBack onClick={()=>setActiveSection(null)}/><VisualPreview pageKey={activeSection} version={previewVersion} content={contentValues[activeSection]||{}} onEdit={(contentKey)=>contentKey.startsWith("@group:")?setGroupEdit({pageKey:activeSection,groupKey:contentKey.slice(7)}):setVisualEdit({pageKey:activeSection,contentKey})}/>{activeSection!=="history"&&pages.filter((page)=>page.key===activeSection).map((page)=><details key={page.key} style={detailsStyle}><summary style={summaryStyle}>세부 항목 관리</summary><Block key={page.key} title={page.label} action={page.key==="company"?<div style={rowActionsStyle}><AddButton onClick={()=>save({type:"intro_add"},"intro-add")}>+ 회사소개 문단 추가</AddButton><AddButton onClick={()=>save({type:"core_add"},"core-add")}>+ 핵심가치 추가</AddButton></div>:page.key==="order_delivery"?<AddButton onClick={()=>save({type:"delivery_step_add"},"delivery-step-add")}>+ 배송단계 추가</AddButton>:page.key==="location"&&!contentValues.location?.parking_title?<AddButton onClick={()=>save({type:"parking_add"},"parking-add")}>+ 주차안내 추가</AddButton>:null}>
+    {activeSection&&activeSection!=="settings"&&<><SectionBack onClick={()=>openSection(null)}/><VisualPreview pageKey={activeSection} version={previewVersion} content={contentValues[activeSection]||{}} onEdit={(contentKey)=>contentKey.startsWith("@group:")?setGroupEdit({pageKey:activeSection,groupKey:contentKey.slice(7)}):setVisualEdit({pageKey:activeSection,contentKey})}/>{activeSection!=="history"&&pages.filter((page)=>page.key===activeSection).map((page)=><details key={page.key} style={detailsStyle}><summary style={summaryStyle}>세부 항목 관리</summary><Block key={page.key} title={page.label} action={page.key==="company"?<div style={rowActionsStyle}><AddButton onClick={()=>save({type:"intro_add"},"intro-add")}>+ 회사소개 문단 추가</AddButton><AddButton onClick={()=>save({type:"core_add"},"core-add")}>+ 핵심가치 추가</AddButton></div>:page.key==="order_delivery"?<AddButton onClick={()=>save({type:"delivery_step_add"},"delivery-step-add")}>+ 배송단계 추가</AddButton>:page.key==="location"&&!contentValues.location?.parking_title?<AddButton onClick={()=>save({type:"parking_add"},"parking-add")}>+ 주차안내 추가</AddButton>:null}>
       {Object.entries(contentValues[page.key]||{}).map(([contentKey,item])=>{
         const coreMatch=page.key==="company"&&contentKey.match(/^core_value_(\d+)_title$/);
         const introMatch=page.key==="company"&&contentKey.match(/^intro_paragraph_(\d+)$/);
