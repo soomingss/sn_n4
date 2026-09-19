@@ -3,7 +3,7 @@
 import Link from "next/link";
 import {useEffect,useRef,useState} from "react";
 import {useRouter} from "next/navigation";
-import {IconClipboardText,IconPackage,IconChecklist,IconTruckDelivery,IconLeaf,IconShieldCheck,IconCertificate,IconBuildingWarehouse,IconHeartHandshake,IconBox,IconPackages,IconShoppingCart,IconReceipt,IconFileText,IconClock,IconCalendar,IconMapPin,IconHome,IconBuilding,IconPhone,IconMail,IconMessageCircle,IconUser,IconUsers,IconStar,IconSparkles,IconHeart,IconPlant,IconSeedling,IconFlask,IconMicroscope,IconScale,IconRosetteDiscountCheck,IconCircleCheck,IconCircleNumber1,IconArrowRight,IconRoute,IconCar,IconTruck,IconWorld,IconSearch} from "@tabler/icons-react";
+import * as TablerIcons from "@tabler/icons-react";
 
 const settingFields = [
   ["company_name","회사명"],["company_name_en","영문 회사명"],["representative_name","대표자"],
@@ -173,18 +173,19 @@ function Field({label,value,onChange,multiline=false,action=null}){
     {multiline?<textarea rows={3} value={value||""} onChange={(e)=>onChange(e.target.value)} style={inputStyle}/>:<input value={value||""} onChange={(e)=>onChange(e.target.value)} style={inputStyle}/>}
   </div>;
 }
+const legacyIconMap={
+  order:"IconClipboardText",stock:"IconPackage",check:"IconChecklist",truck:"IconTruckDelivery",leaf:"IconLeaf",shield:"IconShieldCheck",certificate:"IconCertificate",warehouse:"IconBuildingWarehouse",
+  handshake:"IconHeartHandshake",box:"IconBox",packages:"IconPackages",cart:"IconShoppingCart",receipt:"IconReceipt",file:"IconFileText",clock:"IconClock",calendar:"IconCalendar",
+  map:"IconMapPin",home:"IconHome",building:"IconBuilding",phone:"IconPhone",mail:"IconMail",message:"IconMessageCircle",user:"IconUser",users:"IconUsers",star:"IconStar",sparkles:"IconSparkles",
+  heart:"IconHeart",plant:"IconPlant",seedling:"IconSeedling",flask:"IconFlask",microscope:"IconMicroscope",scale:"IconScale",verified:"IconRosetteDiscountCheck","circle-check":"IconCircleCheck",
+  step:"IconCircleNumber1",arrow:"IconArrowRight",route:"IconRoute",car:"IconCar",delivery:"IconTruck",world:"IconWorld"
+};
+const legacyLabels={order:"주문서",stock:"재고 박스",check:"검수 체크",truck:"배송 트럭",leaf:"잎",shield:"품질·보호",certificate:"인증서",warehouse:"창고",handshake:"협력",box:"박스",packages:"상품 묶음",cart:"장바구니",receipt:"주문내역",file:"문서",clock:"시간",calendar:"일정",map:"위치",home:"홈",building:"회사",phone:"전화",mail:"메일",message:"문의",user:"사용자",users:"거래처",star:"추천",sparkles:"엄선",heart:"신뢰",plant:"약재·식물",seedling:"새싹",flask:"검사",microscope:"품질검사",scale:"기준",verified:"인증","circle-check":"확인",step:"단계",arrow:"진행",route:"경로",car:"직접배송",delivery:"운송",world:"지역"};
+const extraIconNames=Object.keys(TablerIcons).filter((name)=>/^Icon[A-Z]/.test(name)&&typeof TablerIcons[name]==="object"&&!Object.values(legacyIconMap).includes(name)).sort().slice(0,260);
 const iconOptions=[
-  ["order","주문서",IconClipboardText],["stock","재고 박스",IconPackage],["check","검수 체크",IconChecklist],["truck","배송 트럭",IconTruckDelivery],
-  ["leaf","잎",IconLeaf],["shield","품질·보호",IconShieldCheck],["certificate","인증서",IconCertificate],["warehouse","창고",IconBuildingWarehouse],
-  ["handshake","협력",IconHeartHandshake],["box","박스",IconBox],["packages","상품 묶음",IconPackages],["cart","장바구니",IconShoppingCart],
-  ["receipt","주문내역",IconReceipt],["file","문서",IconFileText],["clock","시간",IconClock],["calendar","일정",IconCalendar],
-  ["map","위치",IconMapPin],["home","홈",IconHome],["building","회사",IconBuilding],["phone","전화",IconPhone],
-  ["mail","메일",IconMail],["message","문의",IconMessageCircle],["user","사용자",IconUser],["users","거래처",IconUsers],
-  ["star","추천",IconStar],["sparkles","엄선",IconSparkles],["heart","신뢰",IconHeart],["plant","약재·식물",IconPlant],
-  ["seedling","새싹",IconSeedling],["flask","검사",IconFlask],["microscope","품질검사",IconMicroscope],["scale","기준",IconScale],
-  ["verified","인증",IconRosetteDiscountCheck],["circle-check","확인",IconCircleCheck],["step","단계",IconCircleNumber1],["arrow","진행",IconArrowRight],
-  ["route","경로",IconRoute],["car","직접배송",IconCar],["delivery","운송",IconTruck],["world","지역",IconWorld]
-];
+  ...Object.entries(legacyIconMap).map(([key,name])=>[key,legacyLabels[key],TablerIcons[name]]),
+  ...extraIconNames.map((name)=>[name,name.replace(/^Icon/,"").replace(/([a-z0-9])([A-Z])/g,"$1 $2"),TablerIcons[name]])
+].filter(([, ,Icon])=>Icon);
 function SelectField({label,value,onChange}){
   const [open,setOpen]=useState(false);
   const [query,setQuery]=useState("");
@@ -196,7 +197,7 @@ function SelectField({label,value,onChange}){
     <button type="button" onClick={()=>setOpen(true)} style={iconSelectedStyle}><SelectedIcon size={30} stroke={1.7}/><span>{selected[1]}</span><small>변경</small></button>
     {open&&<div style={modalBackdropStyle} onClick={()=>setOpen(false)}><div style={iconModalStyle} onClick={(e)=>e.stopPropagation()}>
       <div style={labelRowStyle}><h3 style={{margin:0}}>아이콘 선택</h3><button type="button" onClick={()=>setOpen(false)} style={modalCloseStyle}>닫기</button></div>
-      <div style={searchWrapStyle}><IconSearch size={18}/><input autoFocus value={query} onChange={(e)=>setQuery(e.target.value)} placeholder="아이콘 이름 검색" style={searchInputStyle}/></div>
+      <div style={searchWrapStyle}><TablerIcons.IconSearch size={18}/><input autoFocus value={query} onChange={(e)=>setQuery(e.target.value)} placeholder="아이콘 이름 검색" style={searchInputStyle}/></div>
       <div style={iconPickerGridStyle}>{filtered.map(([key,name,Icon])=><button key={key} type="button" onClick={()=>{onChange(key);setOpen(false);setQuery("");}} style={{...iconPickerChoiceStyle,...((value||"order")===key?iconChoiceActiveStyle:{})}}><Icon size={27} stroke={1.7}/><span>{name}</span></button>)}</div>
     </div></div>}
   </div>;
