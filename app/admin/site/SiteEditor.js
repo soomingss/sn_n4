@@ -43,7 +43,8 @@ export default function SiteEditor({settings,pages,history}){
       {Object.entries(contentValues[page.key]||{}).map(([contentKey,item])=>{
         const coreMatch=page.key==="company"&&contentKey.match(/^core_value_(\d+)_title$/);
         const introMatch=page.key==="company"&&contentKey.match(/^intro_paragraph_(\d+)$/);
-        const deliveryStepMatch=page.key==="order_delivery"&&contentKey.match(/^delivery_step_(\d+)_title$/);\n        const parkingTitle=page.key==="location"&&contentKey==="parking_title";
+        const deliveryStepMatch=page.key==="order_delivery"&&contentKey.match(/^delivery_step_(\d+)_title$/);
+        const parkingTitle=page.key==="location"&&contentKey==="parking_title";
         const hideParkingChild=page.key==="location"&&(contentKey==="parking_label"||contentKey==="parking_description");
         const hideCoreDescription=page.key==="company"&&/^core_value_\d+_description$/.test(contentKey);
         if(hideCoreDescription||hideParkingChild)return null;
@@ -110,7 +111,8 @@ function Field({label,value,onChange,multiline=false,action=null}){
     {multiline?<textarea rows={3} value={value||""} onChange={(e)=>onChange(e.target.value)} style={inputStyle}/>:<input value={value||""} onChange={(e)=>onChange(e.target.value)} style={inputStyle}/>}
   </div>;
 }
-function SelectField({label,value,onChange}){return <div style={{padding:"12px 0",borderBottom:"1px solid #eee"}}><div style={labelRowStyle}><b>{label}</b></div><select value={value||"order"} onChange={(e)=>onChange(e.target.value)} style={inputStyle}><option value="order">주문서</option><option value="stock">재고 박스</option><option value="check">검수 체크</option><option value="truck">배송 트럭</option></select></div>}\nfunction SaveButton({busy,onClick,compact=false}){return <button type="button" onClick={onClick} disabled={busy} style={{...saveButtonStyle,padding:compact?"8px 16px":"10px 20px",marginTop:compact?0:"18px"}}>{busy?"저장 중...":"저장"}</button>}
+function SelectField({label,value,onChange}){return <div style={{padding:"12px 0",borderBottom:"1px solid #eee"}}><div style={labelRowStyle}><b>{label}</b></div><select value={value||"order"} onChange={(e)=>onChange(e.target.value)} style={inputStyle}><option value="order">주문서</option><option value="stock">재고 박스</option><option value="check">검수 체크</option><option value="truck">배송 트럭</option></select></div>}
+function SaveButton({busy,onClick,compact=false}){return <button type="button" onClick={onClick} disabled={busy} style={{...saveButtonStyle,padding:compact?"8px 16px":"10px 20px",marginTop:compact?0:"18px"}}>{busy?"저장 중...":"저장"}</button>}
 const toggleStyle={display:"flex",alignItems:"center",gap:"6px",fontSize:"13px"};
 const rowActionsStyle={display:"flex",alignItems:"center",gap:"10px"};
 const groupActionsStyle={display:"flex",alignItems:"center",justifyContent:"flex-end",gap:"10px",paddingTop:"12px"};
