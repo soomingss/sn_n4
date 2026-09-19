@@ -1,6 +1,7 @@
 import Link from "next/link";
 import {getSiteSettings} from "../lib/site-settings";
 import {contentLines, getSiteContent} from "../lib/site-content";
+import {IconClipboardText,IconPackage,IconChecklist,IconTruckDelivery} from "@tabler/icons-react";
 
 const defaultSteps = [
   { no: "01", title: "주문 접수", desc: "주문 품목과 수량을 확인합니다", icon: "order" },
@@ -61,8 +62,8 @@ export default async function OrderDeliveryPage(){
     </main>
   </>;
 }
-function StepIcon({type}){if(type==="stock")return <StockIcon/>;if(type==="check")return <CheckIcon/>;if(type==="truck")return <TruckIcon/>;return <OrderIcon/>}
-function OrderIcon(){return <svg className="orderIcon" viewBox="0 0 48 48"><rect x="13" y="9" width="22" height="30" rx="3"/><path d="M18 18h12M18 24h12M18 30h8"/></svg>}
-function StockIcon(){return <svg className="orderIcon" viewBox="0 0 48 48"><path d="M10 17l14-8 14 8v21H10zM10 17l14 8 14-8M24 25v13"/></svg>}
-function CheckIcon(){return <svg className="orderIcon" viewBox="0 0 48 48"><circle cx="24" cy="24" r="16"/><path d="M16 24l6 6 11-13"/></svg>}
-function TruckIcon(){return <svg className="orderIcon" viewBox="0 0 48 48"><path d="M6 14h24v20H6zM30 21h7l5 7v6H30z"/><circle cx="15" cy="36" r="3"/><circle cx="36" cy="36" r="3"/></svg>}
+function StepIcon({type}){
+  const icons={order:IconClipboardText,stock:IconPackage,check:IconChecklist,truck:IconTruckDelivery};
+  const Icon=icons[type]||IconClipboardText;
+  return <Icon className="orderIcon" stroke={1.7}/>;
+}
