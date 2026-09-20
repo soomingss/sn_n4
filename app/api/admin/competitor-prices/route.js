@@ -37,7 +37,7 @@ async function finalizeImport(id){
   const items=await rest(`/rest/v1/competitor_import_items?import_id=eq.${id}&match_status=in.(auto,manual)&select=*`);
   if(!imp)throw new Error("업로드 작업을 찾지 못했습니다.");
   await rest(`/rest/v1/competitor_prices?import_id=eq.${id}`,{method:"DELETE",headers:{Prefer:"return=minimal"}});
-  if(items?.length)await rest("/rest/v1/competitor_prices",{method:"POST",headers:{Prefer:"resolution=merge-duplicates,return=minimal"},body:JSON.stringify(items.map(x=>({import_id:id,competitor_id:x.competitor_id,product_id:x.confirmed_product_id||x.suggested_product_id,mapping_id:x.mapping_id||null,price_month:imp.price_month,original_product_name:x.original_product_name,original_origin:x.original_origin,original_weight_g:x.original_weight_g,original_price:x.original_price,price_500g:x.price_500g})))});
+  if(items?.length){const unique=[...new Map(items.map(x=>{const productId=x.confirmed_product_id||x.suggested_product_id;return [`${x.competitor_id}|${productId}|${imp.price_month}`,{import_id:id,competitor_id:x.competitor_id,product_id:productId,mapping_id:x.mapping_id||null,price_month:imp.price_month,original_product_name:x.original_product_name,original_origin:x.original_origin,original_weight_g:x.original_weight_g,original_price:x.original_price,price_500g:x.price_500g}]})).values()];await rest("/rest/v1/competitor_prices?on_conflict=competitor_id,product_id,price_month",{method:"POST",headers:{Prefer:"resolution=merge-duplicates,return=minimal"},body:JSON.stringify(unique)})}
   await rest(`/rest/v1/competitor_imports?id=eq.${id}`,{method:"PATCH",headers:{Prefer:"return=minimal"},body:JSON.stringify({status:"completed",completed_at:new Date().toISOString()})});
   return {ok:true};
 }
