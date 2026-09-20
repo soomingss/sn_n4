@@ -8,16 +8,24 @@ const companies=["참초원","본초마루","메디스트림"];
 const clean=v=>v==null?"":String(v).trim();
 const norm=v=>clean(v).toLowerCase().replace(/\d+(?:\.\d+)?\s*(?:kg|g)/gi,"").replace(/\*\s*\d+\s*묶음/g,"").replace(/[\s,._-]/g,"");
 function normOrigin(v){const s=clean(v);if(/대한민국|국내|국산|한국/.test(s))return "한국";if(s.includes("중국"))return "중국";if(/우즈벡|우즈베키스탄/.test(s))return "우즈베키스탄";for(const x of ["베트남","인도네시아","인도","미얀마","태국","라오스","캄보디아","페루","일본","러시아","이란","터키","파키스탄","네팔"])if(s.includes(x))return x;return s.replace(/\s/g,"").toLowerCase()}
-function monthFromName(name){const s=String(name);let m=s.match(/(?:20)?26[^0-9]?([01]?\d)/);if(!m)m=s.match(/26([01]\d)/);if(!m)return null;const n=Number(m[1]);return n>=1&&n<=12?`2026-${String(n).padStart(2,"0")}-01`:null}
+function monthFromName(name){const s=String(name);const m=s.match(/(?:^|[^0-9])(?:20)?(\d{2})[._-]?(0?[1-9]|1[0-2])(?:[^0-9]|$)/);if(!m)return null;return `20${m[1]}-${String(Number(m[2])).padStart(2,"0")}-01`}
 function parseSheet(sheet,competitorId){
-  const rows=XLSX.utils.sheet_to_json(sheet,{header:1,defval:null}),out=[];
-  for(const row of rows.slice(1))for(const o of [0,6]){
-    const name=clean(row[o]),origin=clean(row[o+1]),weightRaw=row[o+2],price=Number(row[o+3]),p500=Number(row[o+4]);
-    if(!name||!Number.isFinite(price)||price<=0)continue;
-    let weight=Number(weightRaw);
-    if(!Number.isFinite(weight)||weight<=0){const kg=name.match(/([0-9]+(?:\.[0-9]+)?)\s*kg/i),g=name.match(/([0-9]+(?:\.[0-9]+)?)\s*g/i);weight=kg?Number(kg[1])*1000:g?Number(g[1]):500}
-    const price500=Number.isFinite(p500)&&p500>0?p500:price*500/weight;
-    out.push({competitor_id:competitorId,original_product_name:name,original_origin:origin||null,original_weight_g:weight,original_price:price,price_500g:Math.round(price500*100)/100,normalized_name:norm(name),normalized_origin:normOrigin(origin)});
+  const rows=XLSX.utils.sheet_to_json(sheet,{header:1,defval:null,raw:true}),out=[];
+  const seen=new Set();
+  for(const row of rows){
+    for(let o=0;o<row.length-3;o++){
+      const name=clean(row[o]),origin=clean(row[o+1]),weightRaw=row[o+2],price=Number(row[o+3]),p500=Number(row[o+4]);
+      if(!name||/품명|품목|약재명|상품명/.test(name)||!Number.isFinite(price)||price<=0)continue;
+      const context=row.slice(Math.max(0,o-2),Math.min(row.length,o+6)).map(clean).join(" ");
+      if(!origin&&!/[가-힣A-Za-z]/.test(context))continue;
+      let weight=Number(weightRaw);
+      if(!Number.isFinite(weight)||weight<=0){const kg=name.match(/([0-9]+(?:\.[0-9]+)?)\s*kg/i),g=name.match(/([0-9]+(?:\.[0-9]+)?)\s*g/i);weight=kg?Number(kg[1])*1000:g?Number(g[1]):500}
+      const price500=Number.isFinite(p500)&&p500>0?p500:price*500/weight;
+      const k=[competitorId,norm(name),normOrigin(origin),weight,price].join("|");
+      if(seen.has(k))continue;seen.add(k);
+      out.push({competitor_id:competitorId,original_product_name:name,original_origin:origin||null,original_weight_g:weight,original_price:price,price_500g:Math.round(price500*100)/100,normalized_name:norm(name),normalized_origin:normOrigin(origin)});
+      break;
+    }
   }
   return out;
 }
@@ -57,14 +65,14 @@ export async function GET(){
 export async function POST(req){
   if(!await admin())return NextResponse.json({message:"관리자 권한이 필요합니다."},{status:403});
   try{
-    const form=await req.formData(),files=form.getAll("files"),cs=await competitors(),products=await loadAllProductsForAdmin(),savedMaps=await mappings(),saved=[];
+    const form=await req.formData(),files=form.getAll("files"),cs=await competitors(),products=(await loadAllProductsForAdmin()).filter(p=>p.is_active!==false),savedMaps=await mappings(),saved=[];
     const cMap=new Map(cs.map(x=>[x.name,x.id]));
     for(const file of files){
       const month=monthFromName(file.name);if(!month)throw new Error(`${file.name}: 파일명에서 2026년 월 정보를 찾지 못했습니다.`);
       const created=await rest("/rest/v1/competitor_imports",{method:"POST",headers:{Prefer:"return=representation"},body:JSON.stringify({price_month:month,original_filename:file.name,status:"analyzing"})});
       const importId=created?.[0]?.id;if(!importId)throw new Error("업로드 작업 생성에 실패했습니다.");
       const wb=XLSX.read(await file.arrayBuffer(),{type:"array"});let items=[];
-      for(const company of companies)if(wb.Sheets[company]&&cMap.has(company))items.push(...parseSheet(wb.Sheets[company],cMap.get(company)));
+      for(const company of companies){const sheetName=wb.SheetNames.find(n=>clean(n).includes(company));if(sheetName&&cMap.has(company))items.push(...parseSheet(wb.Sheets[sheetName],cMap.get(company)))}
       if(!items.length)throw new Error(`${file.name}: 경쟁업체 가격 데이터를 찾지 못했습니다.`);
       let auto=0,review=0,unmatched=0,excluded=0;
       items=items.map(item=>{
