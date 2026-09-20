@@ -11,20 +11,14 @@ function normOrigin(v){const s=clean(v);if(/대한민국|국내|국산|한국/.t
 function monthFromName(name){const s=String(name);const m=s.match(/(?:^|[^0-9])(?:20)?(\d{2})[._-]?(0?[1-9]|1[0-2])(?:[^0-9]|$)/);if(!m)return null;return `20${m[1]}-${String(Number(m[2])).padStart(2,"0")}-01`}
 function parseSheet(sheet,competitorId){
   const rows=XLSX.utils.sheet_to_json(sheet,{header:1,defval:null,raw:true}),out=[];
-  const seen=new Set();
-  for(const row of rows){
-    for(let o=0;o<row.length-3;o++){
+  for(const row of rows.slice(1)){
+    for(const o of [0,6]){
       const name=clean(row[o]),origin=clean(row[o+1]),weightRaw=row[o+2],price=Number(row[o+3]),p500=Number(row[o+4]);
-      if(!name||/품명|품목|약재명|상품명/.test(name)||!Number.isFinite(price)||price<=0)continue;
-      const context=row.slice(Math.max(0,o-2),Math.min(row.length,o+6)).map(clean).join(" ");
-      if(!origin&&!/[가-힣A-Za-z]/.test(context))continue;
+      if(!name||!Number.isFinite(price)||price<=0)continue;
       let weight=Number(weightRaw);
       if(!Number.isFinite(weight)||weight<=0){const kg=name.match(/([0-9]+(?:\.[0-9]+)?)\s*kg/i),g=name.match(/([0-9]+(?:\.[0-9]+)?)\s*g/i);weight=kg?Number(kg[1])*1000:g?Number(g[1]):500}
       const price500=Number.isFinite(p500)&&p500>0?p500:price*500/weight;
-      const k=[competitorId,norm(name),normOrigin(origin),weight,price].join("|");
-      if(seen.has(k))continue;seen.add(k);
       out.push({competitor_id:competitorId,original_product_name:name,original_origin:origin||null,original_weight_g:weight,original_price:price,price_500g:Math.round(price500*100)/100,normalized_name:norm(name),normalized_origin:normOrigin(origin)});
-      break;
     }
   }
   return out;
@@ -55,7 +49,7 @@ export async function GET(){
       rest("/rest/v1/competitor_imports?select=*&order=created_at.desc"),
       rest("/rest/v1/competitor_prices?select=*&order=price_month.desc"),
       loadAllProductsForAdmin(),loadAllPrices(),
-      rest("/rest/v1/competitor_import_items?select=*&match_status=in.(review,unmatched,auto,manual)&order=id.asc")
+      rest("/rest/v1/competitor_import_items?select=*&match_status=in.(review,unmatched,auto,manual,excluded)&order=id.asc")
     ]);
     const activeProducts=(products||[]).filter(p=>p.is_active!==false);
     const reviewWithCandidates=(review||[]).map(x=>({...x,candidates:candidates(x,activeProducts)}));
@@ -80,13 +74,13 @@ export async function POST(req){
         if(savedMap){if(savedMap.excluded){excluded++;return {...item,import_id:importId,mapping_id:savedMap.id,match_status:"excluded"}}auto++;return {...item,import_id:importId,mapping_id:savedMap.id,suggested_product_id:savedMap.product_id,confirmed_product_id:savedMap.product_id,confidence:100,match_status:"auto"}}
         const cand=candidates(item,products),top=cand[0];
         if(top){auto++;return {...item,import_id:importId,suggested_product_id:top.id,confirmed_product_id:top.id,confidence:top.confidence,match_status:"auto"}}
-        unmatched++;return {...item,import_id:importId,match_status:"unmatched"};
+        excluded++;return {...item,import_id:importId,match_status:"excluded"};
       });
       const insertItems=items.map(item=>({import_id:item.import_id,competitor_id:item.competitor_id,original_product_name:item.original_product_name,original_origin:item.original_origin??null,original_weight_g:item.original_weight_g,original_price:item.original_price,price_500g:item.price_500g,normalized_name:item.normalized_name,normalized_origin:item.normalized_origin??"",suggested_product_id:item.suggested_product_id??null,confirmed_product_id:item.confirmed_product_id??null,mapping_id:item.mapping_id??null,confidence:item.confidence??null,match_status:item.match_status}));
       await rest("/rest/v1/competitor_import_items",{method:"POST",headers:{Prefer:"return=minimal"},body:JSON.stringify(insertItems)});
-      await rest(`/rest/v1/competitor_imports?id=eq.${importId}`,{method:"PATCH",headers:{Prefer:"return=minimal"},body:JSON.stringify({status:review+unmatched?"review":"ready",total_count:items.length,auto_matched_count:auto,review_count:review,unmatched_count:unmatched,excluded_count:excluded})});
-      if(!(review+unmatched))await finalizeImport(importId);
-      saved.push({id:importId,month:month.slice(0,7),count:items.length,review:review+unmatched});
+      await rest(`/rest/v1/competitor_imports?id=eq.${importId}`,{method:"PATCH",headers:{Prefer:"return=minimal"},body:JSON.stringify({status:"ready",total_count:items.length,auto_matched_count:auto,review_count:0,unmatched_count:0,excluded_count:excluded})});
+      await finalizeImport(importId);
+      saved.push({id:importId,month:month.slice(0,7),count:items.length,review:0});
     }
     return NextResponse.json({ok:true,saved});
   }catch(e){return NextResponse.json({message:"시세표 저장에 실패했습니다.",detail:e?.message||String(e)},{status:500})}
@@ -113,6 +107,7 @@ export async function PATCH(req){
       if(mappingId)await rest(`/rest/v1/competitor_product_mappings?id=eq.${mappingId}`,{method:"PATCH",headers:{Prefer:"return=minimal"},body:JSON.stringify(payload)});
       else {const ins=await rest("/rest/v1/competitor_product_mappings",{method:"POST",headers:{Prefer:"return=representation"},body:JSON.stringify(payload)});mappingId=ins?.[0]?.id}
       await rest(`/rest/v1/competitor_import_items?id=eq.${item.id}`,{method:"PATCH",headers:{Prefer:"return=minimal"},body:JSON.stringify({mapping_id:mappingId,confirmed_product_id:productId,match_status:excluded?"excluded":"manual",confidence:100})});
+      await finalizeImport(item.import_id);
       return NextResponse.json({ok:true});
     }
     if(b.action==="finalize"){
