@@ -55,7 +55,7 @@ export async function GET(){
       rest("/rest/v1/competitor_imports?select=*&order=created_at.desc"),
       rest("/rest/v1/competitor_prices?select=*&order=price_month.desc"),
       loadAllProductsForAdmin(),loadAllPrices(),
-      rest("/rest/v1/competitor_import_items?select=*&match_status=in.(review,unmatched)&order=id.asc")
+      rest("/rest/v1/competitor_import_items?select=*&match_status=in.(review,unmatched,auto,manual)&order=id.asc")
     ]);
     const activeProducts=(products||[]).filter(p=>p.is_active!==false);
     const reviewWithCandidates=(review||[]).map(x=>({...x,candidates:candidates(x,activeProducts)}));
@@ -79,8 +79,7 @@ export async function POST(req){
         const savedMap=savedMaps.find(m=>Number(m.competitor_id)===Number(item.competitor_id)&&m.normalized_name===item.normalized_name&&(m.normalized_origin||"")===(item.normalized_origin||""));
         if(savedMap){if(savedMap.excluded){excluded++;return {...item,import_id:importId,mapping_id:savedMap.id,match_status:"excluded"}}auto++;return {...item,import_id:importId,mapping_id:savedMap.id,suggested_product_id:savedMap.product_id,confirmed_product_id:savedMap.product_id,confidence:100,match_status:"auto"}}
         const cand=candidates(item,products),top=cand[0];
-        if(top&&top.confidence>=95&&(!cand[1]||top.confidence>cand[1].confidence)){auto++;return {...item,import_id:importId,suggested_product_id:top.id,confirmed_product_id:top.id,confidence:top.confidence,match_status:"auto"}}
-        if(top){review++;return {...item,import_id:importId,suggested_product_id:top.id,confidence:top.confidence,match_status:"review"}}
+        if(top){auto++;return {...item,import_id:importId,suggested_product_id:top.id,confirmed_product_id:top.id,confidence:top.confidence,match_status:"auto"}}
         unmatched++;return {...item,import_id:importId,match_status:"unmatched"};
       });
       const insertItems=items.map(item=>({import_id:item.import_id,competitor_id:item.competitor_id,original_product_name:item.original_product_name,original_origin:item.original_origin??null,original_weight_g:item.original_weight_g,original_price:item.original_price,price_500g:item.price_500g,normalized_name:item.normalized_name,normalized_origin:item.normalized_origin??"",suggested_product_id:item.suggested_product_id??null,confirmed_product_id:item.confirmed_product_id??null,mapping_id:item.mapping_id??null,confidence:item.confidence??null,match_status:item.match_status}));
