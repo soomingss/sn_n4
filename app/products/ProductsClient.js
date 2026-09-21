@@ -109,7 +109,7 @@ export default function ProductsClient({products=[],companyName="",adminManual=f
               </article>
             )):<div className="productEmpty">조건에 맞는 제품이 없습니다.</div>}
           </div>
-          {pageCount>1&&<div className="v21Pagination"><button disabled={currentPage===1} onClick={()=>setPage(p=>Math.max(1,p-1))}>‹</button>{Array.from({length:pageCount},(_,i)=>i+1).map(n=><button key={n} className={n===currentPage?"active":""} onClick={()=>setPage(n)}>{n}</button>)}<button disabled={currentPage===pageCount} onClick={()=>setPage(p=>Math.min(pageCount,p+1))}>›</button></div>}
+          {pageCount>1&&<div className="v21Pagination"><button disabled={currentPage===1} onClick={()=>setPage(p=>Math.max(1,p-1))}>‹</button>{Array.from({length:Math.min(9,pageCount)},(_,i)=>{const start=Math.min(Math.max(1,currentPage-4),Math.max(1,pageCount-8));const n=start+i;return <button key={n} className={n===currentPage?"active":""} onClick={()=>setPage(n)}>{n}</button>})}<button disabled={currentPage===pageCount} onClick={()=>setPage(p=>Math.min(pageCount,p+1))}>›</button></div>}
         </div>
         <CartPanel items={cartItems} totalPrice={totalPrice} deliveryRequest={deliveryRequest} setDeliveryRequest={setDeliveryRequest} changeCartQty={changeCartQty} removeCart={removeCart} prepareOrder={prepareOrder} message={message} submitting={submitting} afterCutoff={afterCutoff} editOrderId={editOrderId} companyName={adminManual?(manualPartner?.company_name||""):companyName}/>
       </div>
