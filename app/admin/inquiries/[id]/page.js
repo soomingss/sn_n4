@@ -1,5 +1,6 @@
 import { notFound, redirect } from "next/navigation";
 import Link from "next/link";
+import InquiryAnswer from "./InquiryAnswer";
 import { getCurrentSession, supabaseAdminFetch } from "../../../lib/auth";
 
 const statusLabel=(status)=>({new:"문의접수",checking:"확인 중",answered:"답변완료"}[status]||"문의접수");
@@ -10,7 +11,7 @@ export default async function InquiryDetail({params}){
   if(!s)redirect("/login?next=/admin/inquiries");
   if(s.profile?.role!=="admin")redirect("/");
   const {id}=await params;
-  const res=await supabaseAdminFetch(`/rest/v1/inquiries?id=eq.${encodeURIComponent(id)}&select=id,created_at,company_name,contact_name,phone,email,inquiry_type,message,status&limit=1`);
+  const res=await supabaseAdminFetch(`/rest/v1/inquiries?id=eq.${encodeURIComponent(id)}&select=id,created_at,company_name,contact_name,phone,email,inquiry_type,message,status,admin_reply,replied_at&limit=1`);
   const rows=res.ok?await res.json():[];
   const q=rows?.[0];
   if(!q)notFound();
@@ -25,6 +26,7 @@ export default async function InquiryDetail({params}){
         </header>
         <div className="inquiryPostContent">{q.message||"-"}</div>
         <div className="inquiryPostContact"><span>연락처: {q.phone||"-"}</span><span>이메일: {q.email||"-"}</span></div>
+        <InquiryAnswer inquiryId={q.id} initialReply={q.admin_reply||""} repliedAt={q.replied_at||null}/>
         <footer className="inquiryPostFooter"><Link href="/admin/inquiries">← 목록</Link></footer>
       </article>
     </section>
