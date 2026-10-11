@@ -18,11 +18,15 @@ export default async function InquiryDetail({params}){
     <section className="companyHero adminHero"><div className="companyHeroCopy"><p>SHINNONG HERB</p><h1>문의사항관리</h1><span>ADMIN &gt; 문의사항관리</span></div></section>
     <div className="adminMobileBackRow contentWidth inquiryDetailMobileBack"><Link href="/admin/inquiries">문의목록으로 돌아가기 →</Link></div>
     <section className="inquiryDetailManage contentWidth">
-      <div className="inquiryDetailHead"><div><h1>{q.inquiry_type||"기타 문의"}</h1><p>접수된 문의사항의 상세 내용을 확인합니다.</p></div><Link href="/admin/inquiries">문의목록으로 돌아가기</Link></div>
-      <div className="inquiryDetailBox">
-        <div className="inquiryDetailMeta"><div><span>처리상태</span><b className={`inquiryStatus inquiryStatus-${q.status||"new"}`}>{statusLabel(q.status)}</b></div><div><span>문의일시</span><strong>{formatDateTime(q.created_at)}</strong></div><div><span>업체명</span><strong>{q.company_name||"-"}</strong></div><div><span>담당자명</span><strong>{q.contact_name||"-"}</strong></div><div><span>연락처</span><strong>{q.phone||"-"}</strong></div><div><span>이메일</span><strong>{q.email||"-"}</strong></div></div>
-        <div className="inquiryDetailMessage"><span>문의내용</span><p>{q.message||"-"}</p></div>
-      </div>
+      <article className="inquiryPostDetail">
+        <header className="inquiryPostHeader">
+          <h1>{q.inquiry_type||"기타 문의"}</h1>
+          <div className="inquiryPostByline"><span>작성자: {q.contact_name||"-"}</span><span>업체명: {q.company_name||"-"}</span><span>작성일: {formatDateTime(q.created_at)}</span><b className={`inquiryStatus inquiryStatus-${q.status||"new"}`}>{statusLabel(q.status)}</b></div>
+        </header>
+        <div className="inquiryPostContent">{q.message||"-"}</div>
+        <div className="inquiryPostContact"><span>연락처: {q.phone||"-"}</span><span>이메일: {q.email||"-"}</span></div>
+        <footer className="inquiryPostFooter"><Link href="/admin/inquiries">← 목록</Link></footer>
+      </article>
     </section>
   </main>;
 }
