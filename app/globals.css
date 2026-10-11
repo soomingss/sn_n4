@@ -21,6 +21,9 @@ button{font:inherit;cursor:pointer}
 .companyDropdownMenu a{display:block;padding:13px 15px;font-size:13px;color:#314a41;background:#fff;white-space:nowrap}
 .companyDropdownMenu a+a{border-top:1px solid #edf0ee}
 .companyDropdownMenu a:hover{background:#f4f7f4}
+.companyDropdownMenu{border-radius:16px;overflow:hidden;padding:9px 0;width:max-content;min-width:164px;max-width:240px;box-shadow:0 12px 28px rgba(24,55,47,.12)}
+.companyDropdownMenu a{padding:13px 22px;font-size:14px;background:transparent}
+.companyDropdownMenu a+a{border-top:0}
 .companyDropdown:hover .companyDropdownMenu,.companyDropdown:focus-within .companyDropdownMenu{opacity:1;visibility:visible;transform:translate(-50%,0)}
 .partnerDropdown{position:relative}
 .partnerDropdownToggle{min-width:108px}
