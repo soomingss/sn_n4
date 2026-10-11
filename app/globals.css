@@ -389,3 +389,15 @@ footer{min-height:95px;border-top:1px solid #ddd;padding:20px 6%;display:grid;gr
 /* Sage accent for hovered or keyboard-focused dropdown item */
 .companyDropdownMenu a:hover,.companyDropdownMenu a:focus-visible{color:#4c9b73;background:#f4faf5;position:relative}
 .companyDropdownMenu a:hover::before,.companyDropdownMenu a:focus-visible::before{content:"";position:absolute;left:10px;top:50%;transform:translateY(-50%);height:18px;width:2px;background:#76b98b;border-radius:2px}
+
+/* Inquiry post detail layout */
+.inquiryPostDetail{margin:28px auto 80px;color:#283a43}
+.inquiryPostHeader{padding:24px 18px 19px;border-top:2px solid #315f4e;border-bottom:1px solid #dce4e1}
+.inquiryPostHeader h1{margin:0 0 14px;font-size:23px;font-weight:700;line-height:1.45;color:#223b39}
+.inquiryPostByline{display:flex;align-items:center;flex-wrap:wrap;gap:10px 24px;color:#81908d;font-size:14px}
+.inquiryPostByline .inquiryStatus{font-size:12px}
+.inquiryPostContent{padding:46px 18px 54px;min-height:180px;border-bottom:1px solid #dce4e1;white-space:pre-wrap;overflow-wrap:anywhere;line-height:2;font-size:16px}
+.inquiryPostContact{display:flex;flex-wrap:wrap;gap:12px 28px;padding:20px 18px;background:#f6faf8;border-bottom:1px solid #dce4e1;color:#60756d;font-size:14px}
+.inquiryPostFooter{display:flex;justify-content:flex-start;padding-top:30px}
+.inquiryPostFooter a{display:inline-flex;align-items:center;justify-content:center;padding:12px 24px;background:#315f4e;color:#fff;border-radius:5px;text-decoration:none}
+@media(max-width:650px){.inquiryPostDetail{margin:12px auto 48px}.inquiryPostHeader{padding:20px 6px 16px}.inquiryPostHeader h1{font-size:20px}.inquiryPostByline{gap:8px 14px;font-size:12px}.inquiryPostContent{padding:30px 6px 38px;font-size:15px}.inquiryPostContact{padding:16px 12px;font-size:13px}}
