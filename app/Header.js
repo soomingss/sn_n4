@@ -52,7 +52,7 @@ export default function Header({ siteSettings = {} }) {
     <header className="header">
       <Link href="/" className="logoWrap" aria-label={companyName ? `${companyName} 홈` : "홈"}>{logoHeaderPath && <img src={logoHeaderPath} alt={[companyName, companyNameEn].filter(Boolean).join(" ")} className="logoImg" />}</Link>
       <nav className="mainNav">
-        <div className="companyDropdown"><Link href="/company" className="companyDropdownToggle">회사소개</Link><div className="companyDropdownMenu"><Link href="/company">회사소개</Link><Link href="/company/history">연혁</Link><Link href="/company/location">오시는 길</Link></div></div><Link href="/products">약재주문</Link><Link href="/order-delivery">주문·배송 안내</Link>{kakaoChannelUrl && <a href={kakaoChannelUrl} target="_blank" rel="noopener noreferrer">고객센터</a>}{isAdmin && <Link className="adminNavLink" href="/admin">관리자업무</Link>}
+        <div className="companyDropdown"><Link href="/company" className="companyDropdownToggle">회사소개</Link><div className="companyDropdownMenu"><Link href="/company">회사소개</Link><Link href="/company/history">연혁</Link><Link href="/company/location">오시는 길</Link></div></div><Link href="/products">약재주문</Link><Link href="/order-delivery">주문·배송 안내</Link><div className="companyDropdown"><Link href="/inquiry" className="companyDropdownToggle">고객센터</Link><div className="companyDropdownMenu"><Link href="/inquiry">홈페이지 문의하기</Link>{kakaoChannelUrl && <a href={kakaoChannelUrl} target="_blank" rel="noopener noreferrer">카카오톡 문의하기</a>}</div></div>{isAdmin && <Link className="adminNavLink" href="/admin">관리자업무</Link>}
       </nav>
       <div className="headerActions">
         {loaded && session ? (
@@ -74,7 +74,7 @@ export default function Header({ siteSettings = {} }) {
             {cartOpen && <div className="headerCartMenu"><div className="headerCartMenuHead"><b>장바구니</b><span>{cartQty}개</span></div>{cartPreview.length ? <div className="headerCartPreviewItems">{cartPreview.slice(0, 5).map((item) => <div className="headerCartPreviewItem" key={item.id}><div><b>{item.name || "상품명 확인 필요"}</b><span>{item.weight || ""}{item.origin ? ` · ${item.origin}` : ""}</span></div><em style={{ marginRight: "24px" }}>{item.quantity}개</em><button type="button" className="headerCartRemove" style={{ background: "transparent", border: 0, padding: 0, color: "#68766f", width: "24px", height: "24px" }} aria-label={`${item.name || "상품"} 삭제`} title="삭제" onClick={() => removeCartItem(item.id)}>×</button></div>)}{cartPreview.length > 5 && <p className="headerCartMore">외 {cartPreview.length - 5}개 품목</p>}</div> : <div className="headerCartEmpty">담긴 상품이 없습니다.</div>}<div className="headerCartMenuActions"><Link className="headerCartView" href="/products?cart=1" onClick={() => setCartOpen(false)}>장바구니 보기</Link>{cartPreview.length > 0 && <button type="button" className="headerCartClear" onClick={clearCart}>장바구니 전체 비우기</button>}</div></div>}
           </div>
         )}
-        <div className="partnerDropdown"><button type="button" className="partnerApply partnerDropdownToggle" aria-haspopup="true">거래처 신청</button><div className="partnerDropdownMenu"><Link href="/inquiry">홈페이지 문의하기</Link>{kakaoChannelUrl && <a href={kakaoChannelUrl} target="_blank" rel="noopener noreferrer">카카오톡 문의하기</a>}</div></div>
+        <Link className="partnerApply" href="/signup">거래처 신청</Link>
       </div>
       <MobileNav session={session} loaded={loaded} onLogout={logout} siteSettings={siteSettings} />
     </header>
