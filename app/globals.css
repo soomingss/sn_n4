@@ -401,3 +401,12 @@ footer{min-height:95px;border-top:1px solid #ddd;padding:20px 6%;display:grid;gr
 .inquiryPostFooter{display:flex;justify-content:flex-start;padding-top:30px}
 .inquiryPostFooter a{display:inline-flex;align-items:center;justify-content:center;padding:12px 24px;background:#315f4e;color:#fff;border-radius:5px;text-decoration:none}
 @media(max-width:650px){.inquiryPostDetail{margin:12px auto 48px}.inquiryPostHeader{padding:20px 6px 16px}.inquiryPostHeader h1{font-size:20px}.inquiryPostByline{gap:8px 14px;font-size:12px}.inquiryPostContent{padding:30px 6px 38px;font-size:15px}.inquiryPostContact{padding:16px 12px;font-size:13px}}
+
+/* Product admin action buttons */
+.productAdminToolbar{display:flex;flex-direction:row;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.productAdminToolbar .productAdminActions{display:flex;gap:10px;align-items:center;margin-left:auto;order:2}
+.productAdminToolbar>input{order:1;flex:1 1 240px;max-width:440px}
+.productAdminToolbar .productAdminPill{display:inline-flex;align-items:center;justify-content:center;white-space:nowrap;border-radius:28px;padding:11px 22px;min-height:43px;font-weight:600}
+.productAdminToolbar .productAdminActions>button.productAdminPill{background:#88ad91;color:#fff;border:1px solid #88ad91}
+.productAdminToolbar .productAdminActions>label.productAdminPill{background:#fff;color:#537d60;border:1px solid #c9d9cd}
+@media(max-width:650px){.productAdminToolbar>input{flex-basis:100%;max-width:none}.productAdminToolbar .productAdminActions{width:100%;justify-content:flex-end;order:2}.productAdminToolbar .productAdminPill{padding:10px 15px;font-size:13px}}
