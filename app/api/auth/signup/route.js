@@ -21,10 +21,12 @@ export async function POST(request) {
     const contactName = clean(body.contactName, 80);
     const phone = clean(body.phone, 40);
     const email = clean(body.email, 160).toLowerCase();
+    const businessRegistrationNumber = clean(body.businessRegistrationNumber, 12).replace(/-/g, "");
 
-    if (!username || !password || !companyName || !contactName || !phone || !email) {
+    if (!username || !password || !companyName || !contactName || !phone || !email || !businessRegistrationNumber) {
       return NextResponse.json({ message: "필수 항목을 모두 입력해 주세요." }, { status: 400 });
     }
+    if (!/^\d{10}$/.test(businessRegistrationNumber)) return NextResponse.json({ message: "사업자등록번호 10자리를 입력해 주세요." }, { status: 400 });
     if (password.length < 8) return NextResponse.json({ message: "비밀번호는 8자 이상 입력해 주세요." }, { status: 400 });
     if (password !== passwordConfirm) return NextResponse.json({ message: "비밀번호가 일치하지 않습니다." }, { status: 400 });
 
@@ -64,6 +66,7 @@ export async function POST(request) {
         id: createdUserId,
         username,
         company_name: companyName,
+        business_registration_number: businessRegistrationNumber,
         contact_name: contactName,
         phone,
         email,
