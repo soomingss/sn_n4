@@ -6,6 +6,35 @@ async function ok(){return (await getCurrentSession())?.profile?.role==="admin"}
 export async function GET(){if(!await ok())return NextResponse.json({message:"관리자 권한이 필요합니다."},{status:403});try{return NextResponse.json({products:await loadAllProductsForAdmin(),prices:await loadAllPrices()});}catch(error){return NextResponse.json({message:"상품 데이터를 불러오지 못했습니다.",detail:error?.message||String(error)},{status:500});}}
 export async function PATCH(req){if(!await ok())return NextResponse.json({message:"관리자 권한이 필요합니다."},{status:403});const b=await req.json();if(!b.id)return NextResponse.json({message:"잘못된 요청입니다."},{status:400});const patch={};if(typeof b.is_active==="boolean")patch.is_active=b.is_active;if(["normal","low"].includes(b.stock_status))patch.stock_status=b.stock_status;for(const k of ["name","weight","origin","supplier"])if(typeof b[k]==="string")patch[k]=b[k].trim();if(Object.keys(patch).length){const r=await supabaseAdminFetch(`/rest/v1/products?id=eq.${encodeURIComponent(b.id)}`,{method:"PATCH",headers:{Prefer:"return=minimal"},body:JSON.stringify(patch)});if(!r.ok)return NextResponse.json({message:"상품정보 변경에 실패했습니다.",detail:await r.text()},{status:500});}if(b.prices&&typeof b.prices==="object"){for(const g of ["1","2","3","4","5"]){if(b.prices[g]===undefined)continue;const price=Number(b.prices[g]);if(!Number.isFinite(price)||price<0)return NextResponse.json({message:"가격은 0원 이상의 숫자로 입력해주세요."},{status:400});const r=await supabaseAdminFetch('/rest/v1/product_prices?on_conflict=product_id,price_grade',{method:'POST',headers:{Prefer:'resolution=merge-duplicates,return=minimal'},body:JSON.stringify({product_id:Number(b.id),price_grade:g,price:Math.round(price)})});if(!r.ok)return NextResponse.json({message:`${g}등급 가격 저장 실패`,detail:await r.text()},{status:500});}}return NextResponse.json({ok:true});}
 
+export async function DELETE(req){
+ if(!await ok())return NextResponse.json({message:"관리자 권한이 필요합니다."},{status:403});
+ try{
+  const body=await req.json(),id=Number(body.id);
+  if(!Number.isSafeInteger(id)||id<=0)return NextResponse.json({message:"올바른 상품을 선택해 주세요."},{status:400});
+  const get=async(path)=>{const r=await supabaseAdminFetch(path);if(!r.ok)throw new Error(await r.text());return r.json()};
+  const product=await get("/rest/v1/products?id=eq."+id+"&select=id,name,is_active&limit=1");
+  if(!product.length)return NextResponse.json({message:"상품을 찾을 수 없습니다."},{status:404});
+  // Retain historical orders and competitor price comparisons.
+  const related=await Promise.all([
+   get("/rest/v1/order_items?product_id=eq."+id+"&select=id&limit=1"),
+   get("/rest/v1/competitor_prices?product_id=eq."+id+"&select=id&limit=1"),
+   get("/rest/v1/competitor_product_mappings?product_id=eq."+id+"&select=id&limit=1"),
+   get("/rest/v1/competitor_import_items?or=(suggested_product_id.eq."+id+",confirmed_product_id.eq."+id+")&select=id&limit=1")
+  ]);
+  if(related.some(rows=>rows.length)){
+   const r=await supabaseAdminFetch("/rest/v1/products?id=eq."+id,{method:"PATCH",headers:{Prefer:"return=minimal"},body:JSON.stringify({is_active:false})});
+   if(!r.ok)throw new Error(await r.text());
+   return NextResponse.json({ok:true,mode:"hidden",message:"주문 또는 경쟁사 매칭 이력이 있어 상품을 삭제하지 않고 고객 노출에서 제외했습니다."});
+  }
+  const prices=await supabaseAdminFetch("/rest/v1/product_prices?product_id=eq."+id,{method:"DELETE",headers:{Prefer:"return=minimal"}});
+  if(!prices.ok)throw new Error(await prices.text());
+  const del=await supabaseAdminFetch("/rest/v1/products?id=eq."+id,{method:"DELETE",headers:{Prefer:"return=representation"}});
+  if(!del.ok)throw new Error(await del.text());
+  if(!(await del.json()).length)return NextResponse.json({message:"상품을 삭제하지 못했습니다."},{status:409});
+  return NextResponse.json({ok:true,mode:"deleted",message:"상품이 삭제되었습니다."});
+ }catch(error){return NextResponse.json({message:"상품 삭제에 실패했습니다.",detail:error?.message||String(error)},{status:500})}
+}
+
 export async function PUT(req){
   if(!await ok())return NextResponse.json({message:'관리자 권한이 필요합니다.'},{status:403});
   try{
