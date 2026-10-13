@@ -444,3 +444,8 @@ footer{min-height:95px;border-top:1px solid #ddd;padding:20px 6%;display:grid;gr
 }
 .productAdminManage .productDeleteButton{border:1px solid #e9c7c7;background:#fff8f8;color:#aa5757;border-radius:7px;padding:8px 13px;white-space:nowrap}
 .productAdminManage .productDeleteButton:hover{background:#fcecec}
+
+/* Admin-only price category selector in order catalog */
+.adminPricePreview{display:flex;align-items:center;justify-content:flex-end;gap:12px;margin:14px 0 18px;color:#4d6657;font-size:14px;font-weight:600}
+.adminPricePreview select{min-width:180px;padding:10px 14px;border:1px solid #cbdccc;border-radius:9px;background:#f4f9f3;color:#315f4e;font:inherit;cursor:pointer}
+@media(max-width:650px){.adminPricePreview{justify-content:flex-start}.adminPricePreview select{min-width:0;flex:1;max-width:230px}}
