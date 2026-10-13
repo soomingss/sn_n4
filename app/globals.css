@@ -428,3 +428,19 @@ footer{min-height:95px;border-top:1px solid #ddd;padding:20px 6%;display:grid;gr
 .productCatalog .v21Filter .initialFilter button:hover{background:#e5f1e4;border-color:#bad7bc}
 .productCatalog .v21Filter .initialFilter button.active,.productCatalog .v21Filter .initialFilter button.active:hover{background:#b9d9bc;border-color:#a8cdae;color:#284e37;font-weight:700}
 @media(max-width:650px){.productCatalog .v21Filter .initialFilter{gap:2px;margin:0;overflow:visible}.productCatalog .v21Filter .initialFilter button,.productCatalog .v21Filter .initialFilter button:first-child{height:30px;padding:0;border-radius:5px;font-size:11px;letter-spacing:-.5px}}
+
+/* Product administration: keep edit/delete visible on desktop */
+@media(min-width:951px){
+.productAdminManage .adminTable{table-layout:fixed;min-width:0;width:100%}
+.productAdminManage .adminTable th:nth-child(1),.productAdminManage .adminTable td:nth-child(1){width:20%}
+.productAdminManage .adminTable th:nth-child(2),.productAdminManage .adminTable td:nth-child(2){width:9%}
+.productAdminManage .adminTable th:nth-child(3),.productAdminManage .adminTable td:nth-child(3){width:12%}
+.productAdminManage .adminTable th:nth-child(4),.productAdminManage .adminTable td:nth-child(4){width:13%}
+.productAdminManage .adminTable th:nth-child(5),.productAdminManage .adminTable td:nth-child(5){width:12%}
+.productAdminManage .adminTable th:nth-child(6),.productAdminManage .adminTable td:nth-child(6){width:16%}
+.productAdminManage .adminTable th:nth-child(7),.productAdminManage .adminTable td:nth-child(7){width:9%}
+.productAdminManage .adminTable th:nth-child(8),.productAdminManage .adminTable td:nth-child(8){width:9%}
+.productAdminManage .adminTable th,.productAdminManage .adminTable td{overflow-wrap:anywhere;padding-left:8px;padding-right:8px}
+}
+.productAdminManage .productDeleteButton{border:1px solid #e9c7c7;background:#fff8f8;color:#aa5757;border-radius:7px;padding:8px 13px;white-space:nowrap}
+.productAdminManage .productDeleteButton:hover{background:#fcecec}
