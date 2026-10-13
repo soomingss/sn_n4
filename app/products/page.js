@@ -13,7 +13,8 @@ export default async function ProductsPage(){
   let loadError="";
   try {
     const rows=await loadActiveProducts();
-    const prices=await loadPricesForGrade(s.profile?.price_grade);
+    const effectiveGrade=s.profile?.role==="admin"&&!s.profile?.price_grade?"1":s.profile?.price_grade;
+    const prices=await loadPricesForGrade(effectiveGrade);
     products=attachGradePrices(rows,prices);
   } catch (error) {
     console.error("[products] Supabase product load failed", error);
