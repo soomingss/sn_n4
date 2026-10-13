@@ -21,17 +21,6 @@ export async function DELETE(req){
    if(!r.ok)throw new Error(await r.text());
    return NextResponse.json({ok:true,mode:"hidden",message:"기존 주문 이력이 있어 주문 기록을 보존하고 고객 노출에서 제외했습니다."});
   }
-  // Clean up retired competitor references only for this product.
-  const cleanup=[
-   "/rest/v1/competitor_prices?product_id=eq."+id,
-   "/rest/v1/competitor_import_items?confirmed_product_id=eq."+id,
-   "/rest/v1/competitor_import_items?suggested_product_id=eq."+id,
-   "/rest/v1/competitor_product_mappings?product_id=eq."+id
-  ];
-  for(const path of cleanup){
-   const r=await supabaseAdminFetch(path,{method:"DELETE",headers:{Prefer:"return=minimal"}});
-   if(!r.ok)throw new Error(await r.text());
-  }
   const prices=await supabaseAdminFetch("/rest/v1/product_prices?product_id=eq."+id,{method:"DELETE",headers:{Prefer:"return=minimal"}});
   if(!prices.ok)throw new Error(await prices.text());
   const del=await supabaseAdminFetch("/rest/v1/products?id=eq."+id,{method:"DELETE",headers:{Prefer:"return=representation"}});
@@ -88,7 +77,7 @@ export async function POST(req){
     });
     if(products.length!==402)return NextResponse.json({message:`마스터 상품 수가 402개가 아닙니다. 현재 ${products.length}개입니다.`},{status:400});
     const del=async(path)=>{const r=await supabaseAdminFetch(path,{method:"DELETE",headers:{Prefer:"return=minimal"}});if(!r.ok)throw new Error(await r.text())};
-    for(const path of ["/rest/v1/competitor_prices?id=not.is.null","/rest/v1/competitor_import_items?id=not.is.null","/rest/v1/competitor_product_mappings?id=not.is.null","/rest/v1/competitor_imports?id=not.is.null","/rest/v1/product_prices?product_id=not.is.null","/rest/v1/products?id=not.is.null"])await del(path);
+    for(const path of ["/rest/v1/product_prices?product_id=not.is.null","/rest/v1/products?id=not.is.null"])await del(path);
     const ins=await supabaseAdminFetch("/rest/v1/products",{method:"POST",headers:{Prefer:"return=representation"},body:JSON.stringify(products)});
     if(!ins.ok)throw new Error(await ins.text());
     const created=await ins.json(),prices=[];
