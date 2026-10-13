@@ -26,12 +26,15 @@ export async function loadAllProductsForAdmin() {
 }
 
 export async function loadPricesForGrade(priceGrade) {
-  if (priceGrade === null || priceGrade === undefined || String(priceGrade).trim() === "") return [];
-  const grade = String(priceGrade).trim();
+  const grade = ["clinic","oem","special"].includes(String(priceGrade)) ? String(priceGrade) : "clinic";
   const response = await supabaseAdminFetch(
-    `/rest/v1/product_prices?select=product_id,price_grade,price&price_grade=eq.${encodeURIComponent(grade)}`
+    `/rest/v1/product_prices?select=product_id,price_grade,price&price_grade=in.(clinic,${grade})`
   );
-  return readJsonOrThrow(response, "등급가격 조회 실패");
+  const rows = await readJsonOrThrow(response, "구분별 가격 조회 실패");
+  const map = new Map();
+  for (const row of rows.filter(x => x.price_grade === "clinic")) map.set(String(row.product_id), row);
+  for (const row of rows.filter(x => x.price_grade === grade)) map.set(String(row.product_id), row);
+  return [...map.values()];
 }
 
 export async function loadAllPrices() {
