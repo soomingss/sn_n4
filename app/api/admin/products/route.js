@@ -4,7 +4,7 @@ import { loadAllProductsForAdmin,loadAllPrices } from "../../../lib/products";
 import * as XLSX from "xlsx";
 async function ok(){return (await getCurrentSession())?.profile?.role==="admin"}
 export async function GET(){if(!await ok())return NextResponse.json({message:"관리자 권한이 필요합니다."},{status:403});try{return NextResponse.json({products:await loadAllProductsForAdmin(),prices:await loadAllPrices()});}catch(error){return NextResponse.json({message:"상품 데이터를 불러오지 못했습니다.",detail:error?.message||String(error)},{status:500});}}
-export async function PATCH(req){if(!await ok())return NextResponse.json({message:"관리자 권한이 필요합니다."},{status:403});const b=await req.json();if(!b.id)return NextResponse.json({message:"잘못된 요청입니다."},{status:400});const patch={};if(typeof b.is_active==="boolean")patch.is_active=b.is_active;if(["normal","low"].includes(b.stock_status))patch.stock_status=b.stock_status;for(const k of ["name","weight","origin","supplier"])if(typeof b[k]==="string")patch[k]=b[k].trim();if(Object.keys(patch).length){const r=await supabaseAdminFetch(`/rest/v1/products?id=eq.${encodeURIComponent(b.id)}`,{method:"PATCH",headers:{Prefer:"return=minimal"},body:JSON.stringify(patch)});if(!r.ok)return NextResponse.json({message:"상품정보 변경에 실패했습니다.",detail:await r.text()},{status:500});}if(b.prices&&typeof b.prices==="object"){for(const g of ["1","2","3","4","5"]){if(b.prices[g]===undefined)continue;const price=Number(b.prices[g]);if(!Number.isFinite(price)||price<0)return NextResponse.json({message:"가격은 0원 이상의 숫자로 입력해주세요."},{status:400});const r=await supabaseAdminFetch('/rest/v1/product_prices?on_conflict=product_id,price_grade',{method:'POST',headers:{Prefer:'resolution=merge-duplicates,return=minimal'},body:JSON.stringify({product_id:Number(b.id),price_grade:g,price:Math.round(price)})});if(!r.ok)return NextResponse.json({message:`${g}등급 가격 저장 실패`,detail:await r.text()},{status:500});}}return NextResponse.json({ok:true});}
+export async function PATCH(req){if(!await ok())return NextResponse.json({message:"관리자 권한이 필요합니다."},{status:403});const b=await req.json();if(!b.id)return NextResponse.json({message:"잘못된 요청입니다."},{status:400});const patch={};if(typeof b.is_active==="boolean")patch.is_active=b.is_active;if(["normal","low"].includes(b.stock_status))patch.stock_status=b.stock_status;for(const k of ["name","weight","origin","supplier"])if(typeof b[k]==="string")patch[k]=b[k].trim();if(Object.keys(patch).length){const r=await supabaseAdminFetch(`/rest/v1/products?id=eq.${encodeURIComponent(b.id)}`,{method:"PATCH",headers:{Prefer:"return=minimal"},body:JSON.stringify(patch)});if(!r.ok)return NextResponse.json({message:"상품정보 변경에 실패했습니다.",detail:await r.text()},{status:500});}if(b.prices&&typeof b.prices==="object"){for(const g of ["clinic","oem","special"]){if(b.prices[g]===undefined)continue;const raw=b.prices[g];if(g!=="clinic"&&(raw===null||String(raw).trim()==="")){const dr=await supabaseAdminFetch(`/rest/v1/product_prices?product_id=eq.${Number(b.id)}&price_grade=eq.${g}`,{method:"DELETE",headers:{Prefer:"return=minimal"}});if(!dr.ok)return NextResponse.json({message:`${g} 가격 초기화 실패`,detail:await dr.text()},{status:500});continue;}if(raw===null||String(raw).trim()==="")return NextResponse.json({message:"한의원 기준가격은 필수입니다."},{status:400});const price=Number(raw);if(!Number.isFinite(price)||price<0)return NextResponse.json({message:"가격은 0원 이상의 숫자로 입력해주세요."},{status:400});const r=await supabaseAdminFetch('/rest/v1/product_prices?on_conflict=product_id,price_grade',{method:'POST',headers:{Prefer:'resolution=merge-duplicates,return=minimal'},body:JSON.stringify({product_id:Number(b.id),price_grade:g,price:Math.round(price)})});if(!r.ok)return NextResponse.json({message:`${g}등급 가격 저장 실패`,detail:await r.text()},{status:500});}}return NextResponse.json({ok:true});}
 
 export async function DELETE(req){
  if(!await ok())return NextResponse.json({message:"관리자 권한이 필요합니다."},{status:403});
@@ -38,9 +38,9 @@ export async function PUT(req){
     const origin=String(b.origin||'').trim(),supplier=String(b.supplier||'').trim();
     if(!name||!weight)return NextResponse.json({message:'상품명과 중량을 입력해 주세요.'},{status:400});
     const prices=[];
-    for(const g of ['1','2','3','4','5']){
+    for(const g of ['clinic','oem','special']){
       const value=b.prices?.[g];
-      if(value===undefined||value===null||String(value).trim()==='')return NextResponse.json({message:g+'등급 가격을 입력해 주세요.'},{status:400});
+      if(value===undefined||value===null||String(value).trim()===''){if(g==='clinic')return NextResponse.json({message:'한의원 기준가격을 입력해 주세요.'},{status:400});continue;}
       const price=Number(value);
       if(!Number.isFinite(price)||price<0)return NextResponse.json({message:'가격은 0원 이상의 숫자로 입력해 주세요.'},{status:400});
       prices.push({price_grade:g,price:Math.round(price)});
@@ -81,7 +81,7 @@ export async function POST(req){
     const ins=await supabaseAdminFetch("/rest/v1/products",{method:"POST",headers:{Prefer:"return=representation"},body:JSON.stringify(products)});
     if(!ins.ok)throw new Error(await ins.text());
     const created=await ins.json(),prices=[];
-    for(const p of created)for(const g of ["1","2","3","4","5"])prices.push({product_id:p.id,price_grade:g,price:10000});
+    for(const p of created)prices.push({product_id:p.id,price_grade:"clinic",price:10000});
     for(let i=0;i<prices.length;i+=500){const r=await supabaseAdminFetch("/rest/v1/product_prices",{method:"POST",headers:{Prefer:"return=minimal"},body:JSON.stringify(prices.slice(i,i+500))});if(!r.ok)throw new Error(await r.text())}
     return NextResponse.json({ok:true,count:created.length,priceCount:prices.length});
   }catch(error){return NextResponse.json({message:"마스터 초기화에 실패했습니다.",detail:error?.message||String(error)},{status:500})}
