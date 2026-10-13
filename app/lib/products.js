@@ -35,10 +35,17 @@ export async function loadPricesForGrade(priceGrade) {
 }
 
 export async function loadAllPrices() {
-  const response = await supabaseAdminFetch(
-    "/rest/v1/product_prices?select=product_id,price_grade,price"
-  );
-  return readJsonOrThrow(response, "전체 등급가격 조회 실패");
+  const all = [];
+  const pageSize = 500;
+  for (let offset = 0; ; offset += pageSize) {
+    const response = await supabaseAdminFetch(
+      `/rest/v1/product_prices?select=product_id,price_grade,price&order=product_id.asc,price_grade.asc&limit=${pageSize}&offset=${offset}`
+    );
+    const rows = await readJsonOrThrow(response, "전체 등급가격 조회 실패");
+    all.push(...rows);
+    if (rows.length < pageSize) break;
+  }
+  return all;
 }
 
 export function attachGradePrices(products, prices) {
