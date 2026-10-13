@@ -13,8 +13,9 @@ function getInitial(text="") {
 }
 function money(v){if(v===null||v===undefined||v==="")return"단가 문의";return`${Number(v).toLocaleString("ko-KR")}원`}
 
-export default function ProductsClient({products=[],companyName="",adminManual=false,partners=[],pricesByGrade={}}){
+export default function ProductsClient({products=[],companyName="",adminManual=false,partners=[],pricesByGrade={},adminPricePreview=false,adminPrices={}}){
   const [query,setQuery]=useState("");
+  const [previewGrade,setPreviewGrade]=useState("clinic");
   const [initial,setInitial]=useState("전체");
   const [page,setPage]=useState(1);
   const [quantities,setQuantities]=useState({});
@@ -30,7 +31,7 @@ export default function ProductsClient({products=[],companyName="",adminManual=f
 
   const manualPartner=adminManual?partners.find(p=>p.id===manualUserId):null;
   const activeGrade=manualPartner?.price_grade;
-  const activeProducts=adminManual?products.map(p=>({...p,price:pricesByGrade?.[String(activeGrade)]?.[String(p.id)]??null})):products;
+  const activeProducts=adminManual?products.map(p=>({...p,price:pricesByGrade?.[String(activeGrade)]?.[String(p.id)]??pricesByGrade?.clinic?.[String(p.id)]??null})):adminPricePreview?products.map(p=>({...p,price:adminPrices?.[previewGrade]?.[String(p.id)]??adminPrices?.clinic?.[String(p.id)]??p.price})):products;
   const filtered=useMemo(()=>activeProducts.filter(p=>{const q=query.trim().toLowerCase();return(!q||`${p.name} ${p.weight||""} ${p.origin||""} ${p.supplier||""}`.toLowerCase().includes(q))&&(initial==="전체"||getInitial(p.name)===initial)}),[activeProducts,query,initial]);
   useEffect(()=>setPage(1),[query,initial]);
 
@@ -93,6 +94,7 @@ export default function ProductsClient({products=[],companyName="",adminManual=f
           <label><span>주문경로</span><select value={orderSource} onChange={e=>setOrderSource(e.target.value)}><option value="kakao">카카오톡</option><option value="other">기타</option></select></label>
         </div>
       )}
+      {adminPricePreview&&!adminManual&&<div className="adminPricePreview"><label htmlFor="adminPricePreviewGrade">가격 구분</label><select id="adminPricePreviewGrade" value={previewGrade} onChange={e=>{setPreviewGrade(e.target.value);setCart({});setQuantities({});setMessage("")}}><option value="clinic">한의원</option><option value="oem">OEM공장</option><option value="special">특별관리대상</option></select></div>}
       <div className="productOrderLayout">
         <div className="productCatalog">
           <div className="catalogSearchRow"><div className="productSearch v21Search catalogSearch"><input value={query} onChange={e=>setQuery(e.target.value)} placeholder="약재명, 원산지 검색" aria-label="약재 검색"/><button type="button" className="catalogSearchButton" onClick={()=>setPage(1)}>⌕ 검색</button></div></div>
