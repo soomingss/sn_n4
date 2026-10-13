@@ -14,17 +14,23 @@ export async function DELETE(req){
   const get=async(path)=>{const r=await supabaseAdminFetch(path);if(!r.ok)throw new Error(await r.text());return r.json()};
   const product=await get("/rest/v1/products?id=eq."+id+"&select=id,name,is_active&limit=1");
   if(!product.length)return NextResponse.json({message:"상품을 찾을 수 없습니다."},{status:404});
-  // Retain historical orders and competitor price comparisons.
-  const related=await Promise.all([
-   get("/rest/v1/order_items?product_id=eq."+id+"&select=id&limit=1"),
-   get("/rest/v1/competitor_prices?product_id=eq."+id+"&select=id&limit=1"),
-   get("/rest/v1/competitor_product_mappings?product_id=eq."+id+"&select=id&limit=1"),
-   get("/rest/v1/competitor_import_items?or=(suggested_product_id.eq."+id+",confirmed_product_id.eq."+id+")&select=id&limit=1")
-  ]);
-  if(related.some(rows=>rows.length)){
+  // Preserve historical orders, but retired competitor mappings no longer block product deletion.
+  const orders=await get("/rest/v1/order_items?product_id=eq."+id+"&select=id&limit=1");
+  if(orders.length){
    const r=await supabaseAdminFetch("/rest/v1/products?id=eq."+id,{method:"PATCH",headers:{Prefer:"return=minimal"},body:JSON.stringify({is_active:false})});
    if(!r.ok)throw new Error(await r.text());
-   return NextResponse.json({ok:true,mode:"hidden",message:"주문 또는 경쟁사 매칭 이력이 있어 상품을 삭제하지 않고 고객 노출에서 제외했습니다."});
+   return NextResponse.json({ok:true,mode:"hidden",message:"기존 주문 이력이 있어 주문 기록을 보존하고 고객 노출에서 제외했습니다."});
+  }
+  // Clean up retired competitor references only for this product.
+  const cleanup=[
+   "/rest/v1/competitor_prices?product_id=eq."+id,
+   "/rest/v1/competitor_import_items?confirmed_product_id=eq."+id,
+   "/rest/v1/competitor_import_items?suggested_product_id=eq."+id,
+   "/rest/v1/competitor_product_mappings?product_id=eq."+id
+  ];
+  for(const path of cleanup){
+   const r=await supabaseAdminFetch(path,{method:"DELETE",headers:{Prefer:"return=minimal"}});
+   if(!r.ok)throw new Error(await r.text());
   }
   const prices=await supabaseAdminFetch("/rest/v1/product_prices?product_id=eq."+id,{method:"DELETE",headers:{Prefer:"return=minimal"}});
   if(!prices.ok)throw new Error(await prices.text());
