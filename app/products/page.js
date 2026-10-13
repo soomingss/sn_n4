@@ -13,7 +13,7 @@ export default async function ProductsPage(){
   let loadError="";
   try {
     const rows=await loadActiveProducts();
-    const effectiveGrade=s.profile?.role==="admin"&&!s.profile?.price_grade?"1":s.profile?.price_grade;
+    const effectiveGrade=s.profile?.role==="admin"&&!s.profile?.price_grade?"clinic":s.profile?.price_grade;
     const prices=await loadPricesForGrade(effectiveGrade);
     products=attachGradePrices(rows,prices);
   } catch (error) {
