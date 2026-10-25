@@ -1,4 +1,5 @@
 import { supabaseAdminFetch } from "./auth";
+import { withProductImage } from "./product-images";
 
 async function readJsonOrThrow(response, label) {
   if (!response.ok) {
@@ -9,20 +10,19 @@ async function readJsonOrThrow(response, label) {
 }
 
 // Single source of truth for every product-ordering screen.
-// image_url is optional in older product schemas, so it is intentionally not
-// required for the core product query. The UI already has a text fallback.
+// Product images are shared by customer ordering and administrator screens.
 export async function loadActiveProducts() {
   const response = await supabaseAdminFetch(
-    "/rest/v1/products?select=id,name,weight,origin,supplier,is_active,stock_status&is_active=eq.true&order=name.asc"
+    "/rest/v1/products?select=id,name,weight,origin,supplier,image_url,is_active,stock_status&is_active=eq.true&order=name.asc"
   );
-  return readJsonOrThrow(response, "상품 조회 실패");
+  return (await readJsonOrThrow(response, "상품 조회 실패")).map(withProductImage);
 }
 
 export async function loadAllProductsForAdmin() {
   const response = await supabaseAdminFetch(
-    "/rest/v1/products?select=id,name,weight,origin,supplier,is_active,stock_status&order=name.asc"
+    "/rest/v1/products?select=id,name,weight,origin,supplier,image_url,is_active,stock_status&order=name.asc"
   );
-  return readJsonOrThrow(response, "관리자 상품 조회 실패");
+  return (await readJsonOrThrow(response, "관리자 상품 조회 실패")).map(withProductImage);
 }
 
 export async function loadPricesForGrade(priceGrade) {

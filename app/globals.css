@@ -449,3 +449,16 @@ footer{min-height:95px;border-top:1px solid #ddd;padding:20px 6%;display:grid;gr
 .adminPricePreview{display:flex;align-items:center;justify-content:flex-end;gap:12px;margin:14px 0 18px;color:#4d6657;font-size:14px;font-weight:600}
 .adminPricePreview select{min-width:180px;padding:10px 14px;border:1px solid #cbdccc;border-radius:9px;background:#f4f9f3;color:#315f4e;font:inherit;cursor:pointer}
 @media(max-width:650px){.adminPricePreview{justify-content:flex-start}.adminPricePreview select{min-width:0;flex:1;max-width:230px}}
+
+/* Product photography: preserve the entire herb on a clean white background. */
+.productPhoto{position:relative;width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:#fff;overflow:hidden}
+.productThumb .productPhoto img,.productPhoto>img{width:100%;height:100%;object-fit:contain}
+.productPhoto .productPhotoPlaceholder{width:42px;height:42px;display:flex;align-items:center;justify-content:center;border:1px solid #b8c8be;border-radius:50%;color:#62806f;font-weight:700}
+.productPhotoCaption{position:absolute;bottom:1px;left:0;right:0;text-align:center;font-size:9px;line-height:14px;color:#6c746e;background:rgba(255,255,255,.9)}
+.adminProductThumb{width:66px;height:66px}.adminProductThumb .productPhotoCaption{font-size:8px}
+.productPhotoEditor{display:flex;gap:18px;margin:22px 0;padding:16px;border:1px solid #e1e7e2;border-radius:8px;align-items:center}
+.productPhotoEditorPreview{width:145px;height:145px;flex-shrink:0}.productPhotoEditorControls{display:flex;align-items:center;flex-wrap:wrap;gap:10px;min-width:0}
+.productPhotoEditorControls>b,.productPhotoEditorControls>small,.productPhotoUrl{width:100%}.productPhotoEditorControls>small{color:#6c746e;font-size:12px;line-height:1.6}
+.productPhotoEditorControls>p{color:#a13636;font-size:12px;margin:0}.productPhotoEditorControls .adminLinkButton{cursor:pointer}
+.productPhotoUrl span{display:block;font-size:12px;margin-bottom:5px}.productPhotoUrl input{width:100%;min-width:0;padding:8px;border:1px solid #dce5de;border-radius:5px;font-size:12px}
+@media(max-width:620px){.productPhotoEditor{align-items:flex-start;gap:12px;padding:12px}.productPhotoEditorPreview{width:90px;height:100px}.productPhotoEditorControls{gap:8px}}

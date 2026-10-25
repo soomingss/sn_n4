@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import ProductImage from "../ProductImage";
 
 const CHOSUNG = ["전체","ㄱ","ㄴ","ㄷ","ㄹ","ㅁ","ㅂ","ㅅ","ㅇ","ㅈ","ㅊ","ㅋ","ㅌ","ㅍ","ㅎ"];
 const PAGE_SIZE = 6;
@@ -102,7 +103,7 @@ export default function ProductsClient({products=[],companyName="",adminManual=f
           <div className="productList">
             {visible.length?visible.map(product=>(
               <article className="productCard" key={product.id}>
-                <div className="productThumb">{product.image_url?<img src={product.image_url} alt={product.name}/>:<span>{product.name?.slice(0,1)||"약"}</span>}</div>
+                <div className="productThumb"><ProductImage src={product.image_url} name={product.name}/></div>
                 <div className="productInfo"><h2>{product.name}</h2><p>{product.weight||""}{product.origin?`  |  ${product.origin}`:""}{product.supplier?`  |  ${product.supplier}`:""}</p><div className="productPrice"><b>{money(product.price)}</b><em className={product.stock_status==="low"?"soldOut":""}>{product.stock_status==="low"?"품절":"재고 있음"}</em></div></div>
                 <div className={`productOrderControls ${product.stock_status==="low"?"disabled":""}`}>
                   <label><span>수량</span><div className="v21Qty"><button disabled={product.stock_status==="low"} onClick={()=>setQuantities(q=>({...q,[product.id]:Math.max(1,Number(q[product.id]||1)-1)}))}>−</button><input disabled={product.stock_status==="low"} type="number" min="1" value={quantities[product.id]||1} onChange={e=>setQuantities(q=>({...q,[product.id]:e.target.value}))}/><button disabled={product.stock_status==="low"} onClick={()=>setQuantities(q=>({...q,[product.id]:Number(q[product.id]||1)+1}))}>＋</button></div></label>
