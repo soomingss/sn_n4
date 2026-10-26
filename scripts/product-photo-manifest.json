@@ -125,12 +125,13 @@
     },
     {
       "name": "건율",
-      "assetPath": "/products-reference/herb-014-v2.webp",
+      "assetPath": "/products-reference/herb-014-v3.webp",
       "products": [
         "건율"
       ],
       "id": "herb-014",
-      "generationPrompt": "Edit this Korean medicinal material catalog image for 건율. Replace ALL whole peeled chestnut kernels with DRIED CHESTNUT SLICES (건율 절편). A loose pile of many thin flat irregular oval or semicircular ivory cream pale yellow chestnut chips, approximately 2 to 4 mm thick, with visible dry starchy cut faces. Absolutely no whole round chestnuts or spherical kernels. Photograph sliced dried chestnut medicinal material only. Keep premium photorealistic studio product photography, isolated on seamless bright pure white background, subtle natural contact shadow, fully visible centered pile with white margins, slightly elevated three-quarter camera. Only the named medicinal material, no bowls, props, packaging, words, labels or watermark. Keep background white rather than applying a global dark/light filter."
+      "generationPrompt": "Use this uploaded photo as a MATERIAL REFERENCE to create a new clean square premium catalog photograph of 건율, dried sliced chestnuts. Match the actual pictured form: irregular small flat cross-cut chestnut pieces, broken semicircular and angular slices with very pale ivory white dry starchy cut faces, and noticeable warm tan to light chestnut brown thin skin/rind remaining along many outer edges. Some little peel fragments, uneven slice sizes and rough broken edges. They should NOT be whole round chestnuts and NOT uniformly peeled yellow chips. Match the reference's pale white interiors and brown-edged irregular slices. Recompose a modest natural loose mound centered with generous margins, fully visible on pure white seamless #ffffff background, soft neutral studio lighting, subtle contact shadow, slightly elevated three-quarter view, realistic dry texture. Do not reproduce the reference's text, logo or watermark. No lettering, packaging, bowl, plate, hands, decorations, additional herbs or fresh produce.",
+      "editorialNote": "사용자 제공 건율 참고사진 기준: 흰 단면과 갈색 가장자리가 남은 불규칙 절편"
     },
     {
       "name": "견우자",
