@@ -11,21 +11,23 @@
     },
     {
       "name": "갈근",
-      "assetPath": "/products-reference/herb-003.webp",
+      "assetPath": "/products-reference/herb-003-v2.webp",
       "products": [
         "갈근",
         "갈근 (강원문막)"
       ],
       "id": "herb-002",
-      "editorialNote": "사용자 요청: 국산 갈근에 사각 사진 공유"
+      "editorialNote": "사용자 요청: 국산 갈근에 사각 사진 공유",
+      "generationPrompt": "Edit the supplied existing herb product photograph of 갈근. Keep the exact same square-cut dried kudzu root chunks, arrangement and fibrous texture. Make ONLY the root material SLIGHTLY darker: shift pale ivory faces to a subtly deeper natural light beige tan, approximately a 10 to 15 percent modest darkening of material. Do not make it dark brown, roasted or charred. Do not darken background, shadows or global exposure. Retain a clean bright white seamless background and same lighting. Premium realistic ecommerce studio product photo, natural subdued colors, subtle contact shadow. No words, labels, watermark, packaging, containers, hands or extra props."
     },
     {
       "name": "갈근/사각",
-      "assetPath": "/products-reference/herb-003.webp",
+      "assetPath": "/products-reference/herb-003-v2.webp",
       "products": [
         "갈근 (사각)"
       ],
-      "id": "herb-003"
+      "id": "herb-003",
+      "generationPrompt": "Edit the supplied existing herb product photograph of 갈근. Keep the exact same square-cut dried kudzu root chunks, arrangement and fibrous texture. Make ONLY the root material SLIGHTLY darker: shift pale ivory faces to a subtly deeper natural light beige tan, approximately a 10 to 15 percent modest darkening of material. Do not make it dark brown, roasted or charred. Do not darken background, shadows or global exposure. Retain a clean bright white seamless background and same lighting. Premium realistic ecommerce studio product photo, natural subdued colors, subtle contact shadow. No words, labels, watermark, packaging, containers, hands or extra props."
     },
     {
       "name": "갈화",
@@ -288,12 +290,12 @@
     },
     {
       "name": "광곽향",
-      "assetPath": "/products-reference/herb-032-v2.webp",
+      "assetPath": "/products-reference/herb-032-v3.webp",
       "products": [
         "광곽향"
       ],
       "id": "herb-032",
-      "generationPrompt": "Use this uploaded photo strictly as the visual MATERIAL REFERENCE for a fresh high-resolution product catalog photograph of 광곽향. Preserve the pictured material's real cut shape, size proportions, color range and dry texture: a loose mixture of cut yellow tan ridged square-ish stalk segments, curled olive green brown leaves and a few small dry flower spikes; preserve all different dry plant parts shown. Recompose only this material as a modest centered loose pile, fully visible on seamless pure white #ffffff background with generous white margins. Soft neutral studio lighting, slight elevated three quarter view, subtle contact shadow, realistic premium medicinal herb ecommerce photography matching our catalog. Remove all packaging, plate, container, printed branding, logos, writing, borders, watermarks, color casts and background surroundings. Do not reproduce any logo or lettering from the reference. No props, hands, labels, other herbs, fresh plants or decorative elements. The reference's actual material form takes priority over a generic textbook interpretation of the name.",
+      "generationPrompt": "Edit the supplied existing herb product photograph of 광곽향. Keep exactly the same type of dried patchouli medicinal material, olive green brown curled dry leaves, pale yellow tan cut ridged stalk segments and a few dry flower spikes. Make it a moderately FULLER, more abundant loose mound by adding more of these same leaves and stems, around two to three times the current material quantity, with natural overlaps and modest pile height instead of a sparse scattered specimen. Maintain the same leaf/stem proportions, real cut shapes and dry texture. Do not introduce fresh green foliage or other species. The entire mound must remain visible with ample white margins. Premium realistic ecommerce studio product photo, natural subdued colors, subtle contact shadow. No words, labels, watermark, packaging, containers, hands or extra props.",
       "editorialNote": "사용자 제공 참고사진의 원물 모양·색감·절단 형태에 따라 재생성"
     },
     {
