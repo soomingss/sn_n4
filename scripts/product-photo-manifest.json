@@ -11,12 +11,13 @@
     },
     {
       "name": "갈근",
-      "assetPath": "/products-reference/herb-002.webp",
+      "assetPath": "/products-reference/herb-003.webp",
       "products": [
         "갈근",
         "갈근 (강원문막)"
       ],
-      "id": "herb-002"
+      "id": "herb-002",
+      "editorialNote": "사용자 요청: 국산 갈근에 사각 사진 공유"
     },
     {
       "name": "갈근/사각",
@@ -44,25 +45,27 @@
     },
     {
       "name": "감초",
-      "assetPath": "/products-reference/gamcho.webp",
+      "assetPath": "/products-reference/herb-007.webp",
       "products": [
         "감초",
         "감초 (양외1)",
         "감초/양외1",
         "감초/양외2"
       ],
-      "id": "herb-006"
+      "id": "herb-006",
+      "editorialNote": "사용자 요청: 기존 감초초 사진을 생감초 사진으로 사용"
     },
     {
       "name": "감초초",
-      "assetPath": "/products-reference/herb-007.webp",
+      "assetPath": "/products-reference/gamcho-roasted-v2.webp",
       "products": [
         "감초초",
         "감초초/1호",
         "감초초/양외1",
         "감초초/양외2"
       ],
-      "id": "herb-007"
+      "id": "herb-007",
+      "generationPrompt": "Edit existing licorice slices: preserve shapes and white background; darken herb faces to deep toasted brown with near black brown rind, retain fibrous dry texture, no text or props."
     },
     {
       "name": "강활",
