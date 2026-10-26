@@ -80,11 +80,13 @@
     },
     {
       "name": "강활/잠",
-      "assetPath": "/products-reference/herb-009.webp",
+      "assetPath": "/products-reference/herb-009-v2.webp",
       "products": [
         "강활/잠"
       ],
-      "id": "herb-009"
+      "id": "herb-009",
+      "generationPrompt": "Create a clean high-resolution square herb catalog photograph of 강활/잠 using this supplied photo as a strict material shape and color reference. Material details: short knobby irregular dark brown rhizome/root pieces and cross sections, rough ridged almost black-brown outer bark, warm ochre golden brown fibrous cut faces with darker central rings, curled lobed uneven contours, as visible in the photo; not pale straight long roots. The actual pictured cut form takes priority over a generic specimen. Recompose only this material in a modest naturally heaped centered pile, entire pile visible with generous white margins. Seamless pure white #ffffff background, soft neutral studio lighting, subtle contact shadow, slight elevated three quarter camera, realistic dry texture, premium ecommerce medicinal material photography consistent with our site. Remove all source text, labels, logos, watermarks, rulers, borders, packaging, plate, containers and background; no lettering of any kind, no fresh plants, hands, additional herbs or props.",
+      "editorialNote": "사용자 제공 최신 참고사진의 원물 모양·색·절단 형태 반영"
     },
     {
       "name": "강황",
@@ -374,13 +376,13 @@
     },
     {
       "name": "금은화",
-      "assetPath": "/products-reference/herb-041-v2.webp",
+      "assetPath": "/products-reference/herb-041-v3.webp",
       "products": [
         "금은화"
       ],
       "id": "herb-041",
-      "generationPrompt": "Use this uploaded photo strictly as the visual MATERIAL REFERENCE for a fresh high-resolution product catalog photograph of 금은화. Preserve the pictured material's real cut shape, size proportions, color range and dry texture: many slender pale yellow beige and muted olive green tubular closed honeysuckle flower buds with tiny stems, gently curved and elongated; delicate dry texture, not open decorative blossoms. Recompose only this material as a modest centered loose pile, fully visible on seamless pure white #ffffff background with generous white margins. Soft neutral studio lighting, slight elevated three quarter view, subtle contact shadow, realistic premium medicinal herb ecommerce photography matching our catalog. Remove all packaging, plate, container, printed branding, logos, writing, borders, watermarks, color casts and background surroundings. Do not reproduce any logo or lettering from the reference. No props, hands, labels, other herbs, fresh plants or decorative elements. The reference's actual material form takes priority over a generic textbook interpretation of the name.",
-      "editorialNote": "사용자 제공 참고사진의 원물 모양·색감·절단 형태에 따라 재생성"
+      "generationPrompt": "Create a clean high-resolution square herb catalog photograph of 금은화 using this supplied photo as a strict material shape and color reference. Material details: a dense pile of many thin gently curved pale yellow beige and olive tan closed tubular flower buds with small slender stems, dry fine fuzzy texture, matching this photo's proportion of long slender buds; remove the plate. The actual pictured cut form takes priority over a generic specimen. Recompose only this material in a modest naturally heaped centered pile, entire pile visible with generous white margins. Seamless pure white #ffffff background, soft neutral studio lighting, subtle contact shadow, slight elevated three quarter camera, realistic dry texture, premium ecommerce medicinal material photography consistent with our site. Remove all source text, labels, logos, watermarks, rulers, borders, packaging, plate, containers and background; no lettering of any kind, no fresh plants, hands, additional herbs or props.",
+      "editorialNote": "사용자 제공 최신 참고사진의 원물 모양·색·절단 형태 반영"
     },
     {
       "name": "금전초",
@@ -403,28 +405,34 @@
     },
     {
       "name": "내복자",
-      "assetPath": "/products-reference/herb-044.webp",
+      "assetPath": "/products-reference/herb-044-v2.webp",
       "products": [
         "나복자 (세척)",
         "내복자"
       ],
-      "id": "herb-044"
+      "id": "herb-044",
+      "generationPrompt": "Create a clean high-resolution square herb catalog photograph of 내복자 using this supplied photo as a strict material shape and color reference. Material details: many tiny hard angular triangular and rounded seed-like granules, warm orange reddish brown and golden tan with occasional pale cream bits, matching exactly the pictured material shape and color inside the oval photo; the user explicitly selected this pictured morphology despite the source's different printed title; omit ALL source text and do not interpret or reproduce the title. The actual pictured cut form takes priority over a generic specimen. Recompose only this material in a modest naturally heaped centered pile, entire pile visible with generous white margins. Seamless pure white #ffffff background, soft neutral studio lighting, subtle contact shadow, slight elevated three quarter camera, realistic dry texture, premium ecommerce medicinal material photography consistent with our site. Remove all source text, labels, logos, watermarks, rulers, borders, packaging, plate, containers and background; no lettering of any kind, no fresh plants, hands, additional herbs or props.",
+      "editorialNote": "참고사진에 메밀차 문구가 있음을 알린 후 사용자가 사진 형태대로 수정을 선택함. 해당 알갱이 형태·색 기준 반영."
     },
     {
       "name": "낙석등",
-      "assetPath": "/products-reference/herb-045.webp",
+      "assetPath": "/products-reference/herb-045-v2.webp",
       "products": [
         "낙석등"
       ],
-      "id": "herb-045"
+      "id": "herb-045",
+      "generationPrompt": "Create a clean high-resolution square herb catalog photograph of 낙석등 using this supplied photo as a strict material shape and color reference. Material details: short irregular chopped woody vine pieces, thick blocky brown bark segments and chunks with lighter tan fibrous split wood and small round cut ends; match the pictured rough chunky form, not leafy vine sprigs. The actual pictured cut form takes priority over a generic specimen. Recompose only this material in a modest naturally heaped centered pile, entire pile visible with generous white margins. Seamless pure white #ffffff background, soft neutral studio lighting, subtle contact shadow, slight elevated three quarter camera, realistic dry texture, premium ecommerce medicinal material photography consistent with our site. Remove all source text, labels, logos, watermarks, rulers, borders, packaging, plate, containers and background; no lettering of any kind, no fresh plants, hands, additional herbs or props.",
+      "editorialNote": "사용자 제공 최신 참고사진의 원물 모양·색·절단 형태 반영"
     },
     {
       "name": "남성/천",
-      "assetPath": "/products-reference/herb-046.webp",
+      "assetPath": "/products-reference/herb-046-v2.webp",
       "products": [
         "남성/천"
       ],
-      "id": "herb-046"
+      "id": "herb-046",
+      "generationPrompt": "Create a clean high-resolution square herb catalog photograph of 남성/천 using this supplied photo as a strict material shape and color reference. Material details: thin irregular roundish flat off-white gray-cream tuber slices with narrow brown rough outer rim, dry chalky starchy cut faces and natural cracks, some curled concave edges; not whole tubers. The actual pictured cut form takes priority over a generic specimen. Recompose only this material in a modest naturally heaped centered pile, entire pile visible with generous white margins. Seamless pure white #ffffff background, soft neutral studio lighting, subtle contact shadow, slight elevated three quarter camera, realistic dry texture, premium ecommerce medicinal material photography consistent with our site. Remove all source text, labels, logos, watermarks, rulers, borders, packaging, plate, containers and background; no lettering of any kind, no fresh plants, hands, additional herbs or props.",
+      "editorialNote": "사용자 제공 최신 참고사진의 원물 모양·색·절단 형태 반영"
     },
     {
       "name": "남성/천/백반제",
@@ -436,11 +444,13 @@
     },
     {
       "name": "내복자/추말",
-      "assetPath": "/products-reference/herb-048.webp",
+      "assetPath": "/products-reference/herb-048-v2.webp",
       "products": [
         "내복자/추말"
       ],
-      "id": "herb-048"
+      "id": "herb-048",
+      "generationPrompt": "Create a clean high-resolution square herb catalog photograph of 내복자/추말 using this supplied photo as a strict material shape and color reference. Material details: a mound of coarse golden orange brown crushed seed meal, fine grit mixed with small reddish brown husk bits and pale cream crushed kernels, uniform coarse granular texture but not whole seeds; preserve the photo's warm tan gold color. The actual pictured cut form takes priority over a generic specimen. Recompose only this material in a modest naturally heaped centered pile, entire pile visible with generous white margins. Seamless pure white #ffffff background, soft neutral studio lighting, subtle contact shadow, slight elevated three quarter camera, realistic dry texture, premium ecommerce medicinal material photography consistent with our site. Remove all source text, labels, logos, watermarks, rulers, borders, packaging, plate, containers and background; no lettering of any kind, no fresh plants, hands, additional herbs or props.",
+      "editorialNote": "사용자 제공 최신 참고사진의 원물 모양·색·절단 형태 반영"
     },
     {
       "name": "내복자초",
@@ -452,19 +462,23 @@
     },
     {
       "name": "노근",
-      "assetPath": "/products-reference/herb-050.webp",
+      "assetPath": "/products-reference/herb-050-v2.webp",
       "products": [
         "노근"
       ],
-      "id": "herb-050"
+      "id": "herb-050",
+      "generationPrompt": "Create a clean high-resolution square herb catalog photograph of 노근 using this supplied photo as a strict material shape and color reference. Material details: short thick hollow cylindrical pale golden straw yellow reed rhizome segments, sharply visible hollow tube openings and ridged fibrous outer surfaces, some split longitudinal pieces and natural nodes; many cut tubes as shown. The actual pictured cut form takes priority over a generic specimen. Recompose only this material in a modest naturally heaped centered pile, entire pile visible with generous white margins. Seamless pure white #ffffff background, soft neutral studio lighting, subtle contact shadow, slight elevated three quarter camera, realistic dry texture, premium ecommerce medicinal material photography consistent with our site. Remove all source text, labels, logos, watermarks, rulers, borders, packaging, plate, containers and background; no lettering of any kind, no fresh plants, hands, additional herbs or props.",
+      "editorialNote": "사용자 제공 최신 참고사진의 원물 모양·색·절단 형태 반영"
     },
     {
       "name": "녹각/원상",
-      "assetPath": "/products-reference/herb-051.webp",
+      "assetPath": "/products-reference/herb-051-v2.webp",
       "products": [
         "녹각/원상"
       ],
-      "id": "herb-051"
+      "id": "herb-051",
+      "generationPrompt": "Create a clean high-resolution square herb catalog photograph of 녹각/원상 using this supplied photo as a strict material shape and color reference. Material details: irregular broad curled antler/bone-like slices, reddish chestnut brown outer faces and cream white porous bony edges and interiors, curved hollowish crescent contours, some thick broken pieces; reproduce the pictured cut material form, no whole branching antlers. The actual pictured cut form takes priority over a generic specimen. Recompose only this material in a modest naturally heaped centered pile, entire pile visible with generous white margins. Seamless pure white #ffffff background, soft neutral studio lighting, subtle contact shadow, slight elevated three quarter camera, realistic dry texture, premium ecommerce medicinal material photography consistent with our site. Remove all source text, labels, logos, watermarks, rulers, borders, packaging, plate, containers and background; no lettering of any kind, no fresh plants, hands, additional herbs or props.",
+      "editorialNote": "사용자 제공 최신 참고사진의 원물 모양·색·절단 형태 반영"
     },
     {
       "name": "단삼",
