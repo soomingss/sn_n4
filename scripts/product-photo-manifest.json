@@ -148,11 +148,13 @@
     },
     {
       "name": "계내금",
-      "assetPath": "/products-reference/herb-017.webp",
+      "assetPath": "/products-reference/herb-017-v2.webp",
       "products": [
         "계내금"
       ],
-      "id": "herb-017"
+      "id": "herb-017",
+      "generationPrompt": "Use this uploaded photo as a MATERIAL REFERENCE to create a clean premium square product catalog photograph of 계내금. Match the actual 계내금 dried chicken gizzard lining material visible inside the user's bag: thin irregular broad torn flat flakes of mustard yellow, muted golden ochre and light tan, slightly translucent papery leathery sheets, subtly curled edges, fine pebbly wrinkled/ridged membrane texture. Many pieces are broad and flat with irregular broken edges, not neat root slices, not granules, not whole animal organs. Keep the reference's real color and morphology, compensating only for plastic reflections and green cast from packaging. Remove the entire bag, all plastic glare, printed brand logos, labels, barcodes, hands, surroundings and text. Reconstruct only a modest centered loose pile of the actual referenced dried medicinal material, fully visible on seamless pure white #ffffff background with ample white margins, soft neutral studio lighting and subtle contact shadow. Photorealistic natural dry texture, no embellishment, no additional herbs, no container, no words or watermark. The aim is a faithful depiction of this user's actual sold product form, not a generic textbook specimen.",
+      "editorialNote": "사용자가 제공한 실제 판매 상품 사진을 원물 형태·색감 참고자료로 사용"
     },
     {
       "name": "계내금초",
@@ -164,12 +166,13 @@
     },
     {
       "name": "계지",
-      "assetPath": "/products-reference/herb-019-v2.webp",
+      "assetPath": "/products-reference/herb-019-v3.webp",
       "products": [
         "계지"
       ],
       "id": "herb-019",
-      "generationPrompt": "Edit this Korean medicinal material catalog image for 계지. Replace all round cut branch discs with 世界지/세桂枝, very THIN LONG CINNAMON TWIGS (세계지). Show a loose neat pile of slender straight and gently curved reddish tan brown cinnamon twigs, approximately 1 to 3 mm diameter and 8 to 15 cm length, a very high length to thickness ratio. Some pale tiny cut ends visible, subtle bark texture, naturally delicate twig form. No thick branches, no round slices/discs, no cinnamon bark rolls, no leaves. Keep premium photorealistic studio product photography, isolated on seamless bright pure white background, subtle natural contact shadow, fully visible centered pile with white margins, slightly elevated three-quarter camera. Only the named medicinal material, no bowls, props, packaging, words, labels or watermark. Keep background white rather than applying a global dark/light filter."
+      "generationPrompt": "Use this uploaded photo as a MATERIAL REFERENCE to create a clean premium square product catalog photograph of 계지. Match exactly the actual 계지 cinnamon twig material inside the user's bag: a mixture of SHORT chopped slim twigs and narrow lengthwise split twig chips, dark chocolate brown exterior bark, light golden beige wood visible on jagged split faces and tiny round/oblique cut ends. Mostly short irregular pieces about 1 to 3 cm long and a few mm wide, not long uncut branches, not large circular discs, not curled cinnamon bark sticks. Preserve the reference's dark bark and pale fibrous broken interiors, rough dry texture and mixed short chopped shapes. Remove the entire bag, all plastic glare, printed brand logos, labels, barcodes, hands, surroundings and text. Reconstruct only a modest centered loose pile of the actual referenced dried medicinal material, fully visible on seamless pure white #ffffff background with ample white margins, soft neutral studio lighting and subtle contact shadow. Photorealistic natural dry texture, no embellishment, no additional herbs, no container, no words or watermark. The aim is a faithful depiction of this user's actual sold product form, not a generic textbook specimen.",
+      "editorialNote": "사용자가 제공한 실제 판매 상품 사진을 원물 형태·색감 참고자료로 사용"
     },
     {
       "name": "계혈등",
