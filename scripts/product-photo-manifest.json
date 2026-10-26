@@ -112,27 +112,30 @@
     },
     {
       "name": "건강초탄",
-      "assetPath": "/products-reference/herb-013.webp",
+      "assetPath": "/products-reference/herb-013-v2.webp",
       "products": [
         "건강초탄"
       ],
-      "id": "herb-013"
+      "id": "herb-013",
+      "generationPrompt": "Edit this Korean medicinal material catalog image for 건강초탄. Preserve the same dried ginger rhizome slices and arrangement, but make the herbs noticeably LESS BLACK. Replace charcoal-black faces with medium to deep toasted warm brown, with visible ochre brown and tan fibrous interiors and only limited very dark brown around edges. It is roasted ginger but not uniformly charred charcoal. Maintain dry ginger texture and same shapes. Keep premium photorealistic studio product photography, isolated on seamless bright pure white background, subtle natural contact shadow, fully visible centered pile with white margins, slightly elevated three-quarter camera. Only the named medicinal material, no bowls, props, packaging, words, labels or watermark. Keep background white rather than applying a global dark/light filter."
     },
     {
       "name": "건율",
-      "assetPath": "/products-reference/herb-014.webp",
+      "assetPath": "/products-reference/herb-014-v2.webp",
       "products": [
         "건율"
       ],
-      "id": "herb-014"
+      "id": "herb-014",
+      "generationPrompt": "Edit this Korean medicinal material catalog image for 건율. Replace ALL whole peeled chestnut kernels with DRIED CHESTNUT SLICES (건율 절편). A loose pile of many thin flat irregular oval or semicircular ivory cream pale yellow chestnut chips, approximately 2 to 4 mm thick, with visible dry starchy cut faces. Absolutely no whole round chestnuts or spherical kernels. Photograph sliced dried chestnut medicinal material only. Keep premium photorealistic studio product photography, isolated on seamless bright pure white background, subtle natural contact shadow, fully visible centered pile with white margins, slightly elevated three-quarter camera. Only the named medicinal material, no bowls, props, packaging, words, labels or watermark. Keep background white rather than applying a global dark/light filter."
     },
     {
       "name": "견우자",
-      "assetPath": "/products-reference/herb-015.webp",
+      "assetPath": "/products-reference/herb-015-v2.webp",
       "products": [
         "견우자"
       ],
-      "id": "herb-015"
+      "id": "herb-015",
+      "generationPrompt": "Edit this Korean medicinal material catalog image for 견우자. Completely replace these large wrinkled fruit-like objects with a mound of VERY TINY BLACK MORNING GLORY SEEDS (견우자 흑축, Pharbitis/Ipomoea seeds), each only about a few millimeters, tiny like cassia seeds in scale, all solid deep jet black. Small hard slightly angular oval wedge/triangular seeds with subtle fine texture and matte black highlights. Many hundreds of tiny seeds in a modest pile. NOT large wrinkled fruits, not brown, not kidney beans, not peppercorns. Do not turn this into actual brown cassia seeds; use black morning glory seeds but at the tiny scale the user requested. Keep premium photorealistic studio product photography, isolated on seamless bright pure white background, subtle natural contact shadow, fully visible centered pile with white margins, slightly elevated three-quarter camera. Only the named medicinal material, no bowls, props, packaging, words, labels or watermark. Keep background white rather than applying a global dark/light filter."
     },
     {
       "name": "결명자",
@@ -161,11 +164,12 @@
     },
     {
       "name": "계지",
-      "assetPath": "/products-reference/herb-019.webp",
+      "assetPath": "/products-reference/herb-019-v2.webp",
       "products": [
         "계지"
       ],
-      "id": "herb-019"
+      "id": "herb-019",
+      "generationPrompt": "Edit this Korean medicinal material catalog image for 계지. Replace all round cut branch discs with 世界지/세桂枝, very THIN LONG CINNAMON TWIGS (세계지). Show a loose neat pile of slender straight and gently curved reddish tan brown cinnamon twigs, approximately 1 to 3 mm diameter and 8 to 15 cm length, a very high length to thickness ratio. Some pale tiny cut ends visible, subtle bark texture, naturally delicate twig form. No thick branches, no round slices/discs, no cinnamon bark rolls, no leaves. Keep premium photorealistic studio product photography, isolated on seamless bright pure white background, subtle natural contact shadow, fully visible centered pile with white margins, slightly elevated three-quarter camera. Only the named medicinal material, no bowls, props, packaging, words, labels or watermark. Keep background white rather than applying a global dark/light filter."
     },
     {
       "name": "계혈등",
