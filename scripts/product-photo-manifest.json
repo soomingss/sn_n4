@@ -437,11 +437,13 @@
     },
     {
       "name": "남성/천/백반제",
-      "assetPath": "/products-reference/herb-047.webp",
+      "assetPath": "/products-reference/herb-047-v2.webp",
       "products": [
         "남성/천/백반제"
       ],
-      "id": "herb-047"
+      "id": "herb-047",
+      "generationPrompt": "Edit only the color of the medicinal material in this existing 남성/천/백반제 product photo. Keep the same SMALL broken tuber slice/chip sizes, shapes, dry grain, quantity and arrangement. The user wants it SLIGHTLY BLACKISH, not pale tan: change cream/light tan faces to medium-dark toasted brown with some muted charcoal-brown patches and very dark brown edges. The overall material should visibly have a gentle blackish roasted cast while retaining legible warm brown fibrous interiors. Do not turn every piece into solid black ash. Keep the background absolutely pure bright white and lighting unchanged; do not apply global exposure darkening. No extra props, words or watermark.",
+      "editorialNote": "사용자 요청에 따른 원물 기반 가공품 시각 표현"
     },
     {
       "name": "내복자/추말",
@@ -455,11 +457,13 @@
     },
     {
       "name": "내복자초",
-      "assetPath": "/products-reference/herb-049.webp",
+      "assetPath": "/products-reference/herb-049-v2.webp",
       "products": [
         "내복자초"
       ],
-      "id": "herb-049"
+      "id": "herb-049",
+      "generationPrompt": "Edit this existing white background catalog image for 내복자초. Preserve exactly the same tiny angular seed/grain-like shapes, size, mound arrangement and dry texture of the supplied current product photo. Change only their surface color to a naturally dry-roasted deeper warm chestnut brown and toasted medium brown, slightly darker than the current orange tan. Keep subtle color variation and texture, not uniformly black charcoal, no burned ash. This is the user's selected reference morphology; do not substitute other seed shapes. Keep the bright pure white seamless background, soft neutral studio lighting and subtle contact shadow unchanged. Center a fully visible pile with white margins. No global darkening of background, no containers, props, labels, words, logos or watermark.",
+      "editorialNote": "사용자 요청에 따른 원물 기반 가공품 시각 표현"
     },
     {
       "name": "노근",
