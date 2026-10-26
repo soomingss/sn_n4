@@ -207,11 +207,12 @@
     },
     {
       "name": "고삼",
-      "assetPath": "/products-reference/herb-023.webp",
+      "assetPath": "/products-reference/herb-023-v2.webp",
       "products": [
         "고삼"
       ],
-      "id": "herb-023"
+      "id": "herb-023",
+      "generationPrompt": "Use the supplied picture as a strict MATERIAL REFERENCE for 고삼 dried Sophora root. Recompose a natural loose pile of round and oblique thick root cross-section slices, irregular oval coins and some broken halves, pale warm yellow cream starchy interiors with subtle radiating fibers, distinct rough medium tan brown outer bark rims. Match the reference's small compact short slices, not long peeled root sticks. Remove the printed Korean word, blue mat and all background; do not reproduce any words. Premium photorealistic square medicinal herb ecommerce catalog photograph, entire centered pile visible with generous pure white #ffffff background margins, soft neutral studio light, subtle contact shadow, natural dry texture. No text, labels, watermark, packaging, bowls, other herbs or props."
     },
     {
       "name": "곡기생",
@@ -303,12 +304,12 @@
     },
     {
       "name": "괴화",
-      "assetPath": "/products-reference/herb-033-v2.webp",
+      "assetPath": "/products-reference/herb-033-v3.webp",
       "products": [
         "괴화"
       ],
       "id": "herb-033",
-      "generationPrompt": "Use this uploaded photo strictly as the visual MATERIAL REFERENCE for a fresh high-resolution product catalog photograph of 괴화. Preserve the pictured material's real cut shape, size proportions, color range and dry texture: a dense small mound of tiny closed elongated yellow green and pale cream flower buds with little green stalk tips; many hundreds of tiny buds, not broad leaves. Recompose only this material as a modest centered loose pile, fully visible on seamless pure white #ffffff background with generous white margins. Soft neutral studio lighting, slight elevated three quarter view, subtle contact shadow, realistic premium medicinal herb ecommerce photography matching our catalog. Remove all packaging, plate, container, printed branding, logos, writing, borders, watermarks, color casts and background surroundings. Do not reproduce any logo or lettering from the reference. No props, hands, labels, other herbs, fresh plants or decorative elements. The reference's actual material form takes priority over a generic textbook interpretation of the name.",
+      "generationPrompt": "Edit ONLY the material color in this existing 괴화 dried flower bud photo. Preserve the exact same small closed elongated buds, fine dry texture, mound arrangement and amount. Shift the current pale yellow lime buds to a somewhat DARKER, RICHER NATURAL DEEP OLIVE GREEN, with muted green and a few lighter green highlights. Reduce yellow and cream significantly. Modest natural darkening, not black, not vivid artificial emerald, not fresh leafy plants. Keep the pure bright white background and studio exposure unchanged. Premium photorealistic square medicinal herb ecommerce catalog photograph, entire centered pile visible with generous pure white #ffffff background margins, soft neutral studio light, subtle contact shadow, natural dry texture. No text, labels, watermark, packaging, bowls, other herbs or props.",
       "editorialNote": "사용자 제공 참고사진의 원물 모양·색감·절단 형태에 따라 재생성"
     },
     {
