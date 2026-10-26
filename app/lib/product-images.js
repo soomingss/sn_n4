@@ -1,10 +1,7 @@
-// Exact product names only: processed/powdered variants must not inherit a
-// different form's photograph. Empty string intentionally hides an image.
-const referenceImages = {
-  "감초": "/products-reference/gamcho.webp",
-  "구기자": "/products-reference/gugija.webp",
-  "황기/직절": "/products-reference/hwanggi-jikjeol.webp",
-};
+import referenceImages from "./product-photo-map.json";
+
+// Explicit mappings share photographs across grades while preserving cut and
+// powdered forms. An administrator's saved image (including "") takes priority.
 
 export function withProductImage(product) {
   return {

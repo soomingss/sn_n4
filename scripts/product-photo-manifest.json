@@ -1,0 +1,2444 @@
+{
+  "updatedAt": "2026-10-26",
+  "groups": [
+    {
+      "name": "가자",
+      "assetPath": "/products-reference/herb-001.webp",
+      "products": [
+        "가자"
+      ]
+    },
+    {
+      "name": "갈근",
+      "assetPath": "/products-reference/herb-002.webp",
+      "products": [
+        "갈근",
+        "갈근 (강원문막)"
+      ]
+    },
+    {
+      "name": "갈근/사각",
+      "assetPath": "/products-reference/herb-003.webp",
+      "products": [
+        "갈근 (사각)"
+      ]
+    },
+    {
+      "name": "갈화",
+      "assetPath": "/products-reference/herb-004.webp",
+      "products": [
+        "갈화"
+      ]
+    },
+    {
+      "name": "감국",
+      "assetPath": "/products-reference/herb-005.webp",
+      "products": [
+        "감국(국화)"
+      ]
+    },
+    {
+      "name": "감초",
+      "assetPath": "/products-reference/gamcho.webp",
+      "products": [
+        "감초",
+        "감초 (양외1)",
+        "감초/양외1",
+        "감초/양외2"
+      ]
+    },
+    {
+      "name": "감초초",
+      "assetPath": "/products-reference/herb-007.webp",
+      "products": [
+        "감초초",
+        "감초초/1호",
+        "감초초/양외1",
+        "감초초/양외2"
+      ]
+    },
+    {
+      "name": "강활",
+      "assetPath": "/products-reference/herb-008.webp",
+      "products": [
+        "강활",
+        "강활 (남)"
+      ]
+    },
+    {
+      "name": "강활/잠",
+      "assetPath": "/products-reference/herb-009.webp",
+      "products": [
+        "강활/잠"
+      ]
+    },
+    {
+      "name": "강황",
+      "assetPath": "/products-reference/herb-010.webp",
+      "products": [
+        "강황"
+      ]
+    },
+    {
+      "name": "개자",
+      "assetPath": "/products-reference/herb-011.webp",
+      "products": [
+        "개자"
+      ]
+    },
+    {
+      "name": "건강",
+      "assetPath": "/products-reference/herb-012.webp",
+      "products": [
+        "건강",
+        "건강",
+        "건강 (특)"
+      ]
+    },
+    {
+      "name": "건강초탄",
+      "assetPath": "/products-reference/herb-013.webp",
+      "products": [
+        "건강초탄"
+      ]
+    },
+    {
+      "name": "건율",
+      "assetPath": "/products-reference/herb-014.webp",
+      "products": [
+        "건율"
+      ]
+    },
+    {
+      "name": "견우자",
+      "assetPath": "/products-reference/herb-015.webp",
+      "products": [
+        "견우자"
+      ]
+    },
+    {
+      "name": "결명자",
+      "assetPath": "/products-reference/herb-016.webp",
+      "products": [
+        "결명자",
+        "결명자"
+      ]
+    },
+    {
+      "name": "계내금",
+      "assetPath": "/products-reference/herb-017.webp",
+      "products": [
+        "계내금"
+      ]
+    },
+    {
+      "name": "계내금초",
+      "assetPath": "/products-reference/herb-018.webp",
+      "products": [
+        "계내금초"
+      ]
+    },
+    {
+      "name": "계지",
+      "assetPath": "/products-reference/herb-019.webp",
+      "products": [
+        "계지"
+      ]
+    },
+    {
+      "name": "계혈등",
+      "assetPath": "/products-reference/herb-020.webp",
+      "products": [
+        "계혈등"
+      ]
+    },
+    {
+      "name": "고량강",
+      "assetPath": "/products-reference/herb-021.webp",
+      "products": [
+        "고량강"
+      ]
+    },
+    {
+      "name": "고본",
+      "assetPath": "/products-reference/herb-022.webp",
+      "products": [
+        "고본",
+        "고본"
+      ]
+    },
+    {
+      "name": "고삼",
+      "assetPath": "/products-reference/herb-023.webp",
+      "products": [
+        "고삼"
+      ]
+    },
+    {
+      "name": "곡기생",
+      "assetPath": "/products-reference/herb-024.webp",
+      "products": [
+        "곡기생"
+      ]
+    },
+    {
+      "name": "곡아",
+      "assetPath": "/products-reference/herb-025.webp",
+      "products": [
+        "곡아(발아현미)"
+      ]
+    },
+    {
+      "name": "골쇄보",
+      "assetPath": "/products-reference/herb-026.webp",
+      "products": [
+        "골쇄보"
+      ]
+    },
+    {
+      "name": "과루실",
+      "assetPath": "/products-reference/herb-027.webp",
+      "products": [
+        "과루실"
+      ]
+    },
+    {
+      "name": "관동화",
+      "assetPath": "/products-reference/herb-028.webp",
+      "products": [
+        "관동화",
+        "관동화"
+      ]
+    },
+    {
+      "name": "괄루근",
+      "assetPath": "/products-reference/herb-029.webp",
+      "products": [
+        "괄루근(천화분)",
+        "괄루근(천화분)"
+      ]
+    },
+    {
+      "name": "괄루인/추말",
+      "assetPath": "/products-reference/herb-030.webp",
+      "products": [
+        "괄루인/추말"
+      ]
+    },
+    {
+      "name": "괄루인/통",
+      "assetPath": "/products-reference/herb-031.webp",
+      "products": [
+        "괄루인/통"
+      ]
+    },
+    {
+      "name": "광곽향",
+      "assetPath": "/products-reference/herb-032.webp",
+      "products": [
+        "광곽향"
+      ]
+    },
+    {
+      "name": "괴화",
+      "assetPath": "/products-reference/herb-033.webp",
+      "products": [
+        "괴화"
+      ]
+    },
+    {
+      "name": "구기자",
+      "assetPath": "/products-reference/gugija.webp",
+      "products": [
+        "구기자",
+        "구기자/대",
+        "구기자/특"
+      ]
+    },
+    {
+      "name": "구맥",
+      "assetPath": "/products-reference/herb-035.webp",
+      "products": [
+        "구맥"
+      ]
+    },
+    {
+      "name": "구자",
+      "assetPath": "/products-reference/herb-036.webp",
+      "products": [
+        "구자"
+      ]
+    },
+    {
+      "name": "구척",
+      "assetPath": "/products-reference/herb-037.webp",
+      "products": [
+        "구척"
+      ]
+    },
+    {
+      "name": "귀판",
+      "assetPath": "/products-reference/herb-038.webp",
+      "products": [
+        "귀판"
+      ]
+    },
+    {
+      "name": "귀판교",
+      "assetPath": "/products-reference/herb-039.webp",
+      "products": [
+        "귀판교"
+      ]
+    },
+    {
+      "name": "금앵자",
+      "assetPath": "/products-reference/herb-040.webp",
+      "products": [
+        "금앵자"
+      ]
+    },
+    {
+      "name": "금은화",
+      "assetPath": "/products-reference/herb-041.webp",
+      "products": [
+        "금은화"
+      ]
+    },
+    {
+      "name": "금전초",
+      "assetPath": "/products-reference/herb-042.webp",
+      "products": [
+        "금전초"
+      ]
+    },
+    {
+      "name": "길경",
+      "assetPath": "/products-reference/herb-043.webp",
+      "products": [
+        "길경",
+        "길경"
+      ]
+    },
+    {
+      "name": "내복자",
+      "assetPath": "/products-reference/herb-044.webp",
+      "products": [
+        "나복자 (세척)",
+        "내복자"
+      ]
+    },
+    {
+      "name": "낙석등",
+      "assetPath": "/products-reference/herb-045.webp",
+      "products": [
+        "낙석등"
+      ]
+    },
+    {
+      "name": "남성/천",
+      "assetPath": "/products-reference/herb-046.webp",
+      "products": [
+        "남성/천"
+      ]
+    },
+    {
+      "name": "남성/천/백반제",
+      "assetPath": "/products-reference/herb-047.webp",
+      "products": [
+        "남성/천/백반제"
+      ]
+    },
+    {
+      "name": "내복자/추말",
+      "assetPath": "/products-reference/herb-048.webp",
+      "products": [
+        "내복자/추말"
+      ]
+    },
+    {
+      "name": "내복자초",
+      "assetPath": "/products-reference/herb-049.webp",
+      "products": [
+        "내복자초"
+      ]
+    },
+    {
+      "name": "노근",
+      "assetPath": "/products-reference/herb-050.webp",
+      "products": [
+        "노근"
+      ]
+    },
+    {
+      "name": "녹각/원상",
+      "assetPath": "/products-reference/herb-051.webp",
+      "products": [
+        "녹각/원상"
+      ]
+    },
+    {
+      "name": "단삼",
+      "assetPath": "/products-reference/herb-052.webp",
+      "products": [
+        "단삼"
+      ]
+    },
+    {
+      "name": "담두시제",
+      "assetPath": "/products-reference/herb-053.webp",
+      "products": [
+        "담두시제"
+      ]
+    },
+    {
+      "name": "당귀",
+      "assetPath": "/products-reference/herb-054.webp",
+      "products": [
+        "당귀"
+      ]
+    },
+    {
+      "name": "당귀 (GAP/특특)",
+      "assetPath": "/products-reference/herb-055.webp",
+      "products": [
+        "당귀 (GAP/특특)"
+      ]
+    },
+    {
+      "name": "당귀/미",
+      "assetPath": "/products-reference/herb-056.webp",
+      "products": [
+        "당귀/미"
+      ]
+    },
+    {
+      "name": "당귀/신",
+      "assetPath": "/products-reference/herb-057.webp",
+      "products": [
+        "당귀/신"
+      ]
+    },
+    {
+      "name": "당삼",
+      "assetPath": "/products-reference/herb-058.webp",
+      "products": [
+        "당삼"
+      ]
+    },
+    {
+      "name": "대복피",
+      "assetPath": "/products-reference/herb-059.webp",
+      "products": [
+        "대복피"
+      ]
+    },
+    {
+      "name": "대청엽",
+      "assetPath": "/products-reference/herb-060.webp",
+      "products": [
+        "대청엽"
+      ]
+    },
+    {
+      "name": "대추",
+      "assetPath": "/products-reference/herb-061.webp",
+      "products": [
+        "대추 (상)"
+      ]
+    },
+    {
+      "name": "대추/알",
+      "assetPath": "/products-reference/herb-062.webp",
+      "products": [
+        "대추/알"
+      ]
+    },
+    {
+      "name": "대추/절",
+      "assetPath": "/products-reference/herb-063.webp",
+      "products": [
+        "대추/절"
+      ]
+    },
+    {
+      "name": "대황",
+      "assetPath": "/products-reference/herb-064.webp",
+      "products": [
+        "대황"
+      ]
+    },
+    {
+      "name": "대황/장엽",
+      "assetPath": "/products-reference/herb-065.webp",
+      "products": [
+        "대황/장엽"
+      ]
+    },
+    {
+      "name": "대황/종",
+      "assetPath": "/products-reference/herb-066.webp",
+      "products": [
+        "대황/종"
+      ]
+    },
+    {
+      "name": "대황주증",
+      "assetPath": "/products-reference/herb-067.webp",
+      "products": [
+        "대황주증"
+      ]
+    },
+    {
+      "name": "도경",
+      "assetPath": null,
+      "products": [
+        "도경"
+      ]
+    },
+    {
+      "name": "도인",
+      "assetPath": "/products-reference/herb-069.webp",
+      "products": [
+        "도인"
+      ]
+    },
+    {
+      "name": "도인/절",
+      "assetPath": "/products-reference/herb-070.webp",
+      "products": [
+        "도인/절"
+      ]
+    },
+    {
+      "name": "독활",
+      "assetPath": "/products-reference/herb-071.webp",
+      "products": [
+        "독활",
+        "독활"
+      ]
+    },
+    {
+      "name": "동과자",
+      "assetPath": "/products-reference/herb-072.webp",
+      "products": [
+        "동과자"
+      ]
+    },
+    {
+      "name": "동충하초/눈꽃",
+      "assetPath": "/products-reference/herb-073.webp",
+      "products": [
+        "동충하초/눈꽃"
+      ]
+    },
+    {
+      "name": "두시",
+      "assetPath": "/products-reference/herb-074.webp",
+      "products": [
+        "두시"
+      ]
+    },
+    {
+      "name": "두충",
+      "assetPath": "/products-reference/herb-075.webp",
+      "products": [
+        "두충"
+      ]
+    },
+    {
+      "name": "두충/염자",
+      "assetPath": "/products-reference/herb-076.webp",
+      "products": [
+        "두충/염자",
+        "두충/염자",
+        "두충/염자"
+      ]
+    },
+    {
+      "name": "등피",
+      "assetPath": "/products-reference/herb-077.webp",
+      "products": [
+        "등피"
+      ]
+    },
+    {
+      "name": "마가목",
+      "assetPath": "/products-reference/herb-078.webp",
+      "products": [
+        "마가목"
+      ]
+    },
+    {
+      "name": "마황",
+      "assetPath": "/products-reference/herb-079.webp",
+      "products": [
+        "마황",
+        "마황"
+      ]
+    },
+    {
+      "name": "마황/탕포",
+      "assetPath": "/products-reference/herb-080.webp",
+      "products": [
+        "마황/탕포",
+        "마황/탕포"
+      ]
+    },
+    {
+      "name": "만형자",
+      "assetPath": "/products-reference/herb-081.webp",
+      "products": [
+        "만형자"
+      ]
+    },
+    {
+      "name": "망초",
+      "assetPath": "/products-reference/herb-082.webp",
+      "products": [
+        "망초"
+      ]
+    },
+    {
+      "name": "맥문동",
+      "assetPath": "/products-reference/herb-083.webp",
+      "products": [
+        "맥문동",
+        "맥문동",
+        "맥문동/AA"
+      ]
+    },
+    {
+      "name": "맥아초",
+      "assetPath": "/products-reference/herb-084.webp",
+      "products": [
+        "맥아초"
+      ]
+    },
+    {
+      "name": "메밀",
+      "assetPath": "/products-reference/herb-085.webp",
+      "products": [
+        "메밀"
+      ]
+    },
+    {
+      "name": "모과",
+      "assetPath": "/products-reference/herb-086.webp",
+      "products": [
+        "모과"
+      ]
+    },
+    {
+      "name": "모근",
+      "assetPath": "/products-reference/herb-087.webp",
+      "products": [
+        "모근"
+      ]
+    },
+    {
+      "name": "모려",
+      "assetPath": "/products-reference/herb-088.webp",
+      "products": [
+        "모려"
+      ]
+    },
+    {
+      "name": "모려/가루",
+      "assetPath": "/products-reference/herb-089.webp",
+      "products": [
+        "모려가루"
+      ]
+    },
+    {
+      "name": "목단피",
+      "assetPath": "/products-reference/herb-090.webp",
+      "products": [
+        "목단피/AA"
+      ]
+    },
+    {
+      "name": "목적",
+      "assetPath": "/products-reference/herb-091.webp",
+      "products": [
+        "목적"
+      ]
+    },
+    {
+      "name": "목통",
+      "assetPath": "/products-reference/herb-092.webp",
+      "products": [
+        "목통"
+      ]
+    },
+    {
+      "name": "목향",
+      "assetPath": "/products-reference/herb-093.webp",
+      "products": [
+        "목향"
+      ]
+    },
+    {
+      "name": "몰약",
+      "assetPath": "/products-reference/herb-094.webp",
+      "products": [
+        "몰약"
+      ]
+    },
+    {
+      "name": "미후도",
+      "assetPath": "/products-reference/herb-095.webp",
+      "products": [
+        "미후도"
+      ]
+    },
+    {
+      "name": "미후도/연조",
+      "assetPath": "/products-reference/herb-096.webp",
+      "products": [
+        "미후도/연조"
+      ]
+    },
+    {
+      "name": "밀납",
+      "assetPath": "/products-reference/herb-097.webp",
+      "products": [
+        "밀납(황납)"
+      ]
+    },
+    {
+      "name": "반하",
+      "assetPath": "/products-reference/herb-098.webp",
+      "products": [
+        "반하"
+      ]
+    },
+    {
+      "name": "반하/생강백반제",
+      "assetPath": "/products-reference/herb-099.webp",
+      "products": [
+        "반하/생강백반제"
+      ]
+    },
+    {
+      "name": "반하/절",
+      "assetPath": "/products-reference/herb-100.webp",
+      "products": [
+        "반하/절"
+      ]
+    },
+    {
+      "name": "반하/절/생강백반제",
+      "assetPath": "/products-reference/herb-101.webp",
+      "products": [
+        "반하/절/생강백반제",
+        "반하/절/생강백반제"
+      ]
+    },
+    {
+      "name": "방기",
+      "assetPath": "/products-reference/herb-102.webp",
+      "products": [
+        "방기"
+      ]
+    },
+    {
+      "name": "방풍",
+      "assetPath": "/products-reference/herb-103.webp",
+      "products": [
+        "방풍"
+      ]
+    },
+    {
+      "name": "방풍/식",
+      "assetPath": "/products-reference/herb-104.webp",
+      "products": [
+        "방풍/식"
+      ]
+    },
+    {
+      "name": "백강잠",
+      "assetPath": "/products-reference/herb-105.webp",
+      "products": [
+        "백강잠"
+      ]
+    },
+    {
+      "name": "백급",
+      "assetPath": "/products-reference/herb-106.webp",
+      "products": [
+        "백급"
+      ]
+    },
+    {
+      "name": "백두구",
+      "assetPath": "/products-reference/herb-107.webp",
+      "products": [
+        "백두구"
+      ]
+    },
+    {
+      "name": "백두구/추말",
+      "assetPath": "/products-reference/herb-108.webp",
+      "products": [
+        "백두구/추말"
+      ]
+    },
+    {
+      "name": "백두옹",
+      "assetPath": "/products-reference/herb-109.webp",
+      "products": [
+        "백두옹"
+      ]
+    },
+    {
+      "name": "백렴",
+      "assetPath": "/products-reference/herb-110.webp",
+      "products": [
+        "백렴"
+      ]
+    },
+    {
+      "name": "백반",
+      "assetPath": "/products-reference/herb-111.webp",
+      "products": [
+        "백반"
+      ]
+    },
+    {
+      "name": "백부근",
+      "assetPath": "/products-reference/herb-112.webp",
+      "products": [
+        "백부근"
+      ]
+    },
+    {
+      "name": "백부자",
+      "assetPath": "/products-reference/herb-113.webp",
+      "products": [
+        "백부자"
+      ]
+    },
+    {
+      "name": "백선피",
+      "assetPath": "/products-reference/herb-114.webp",
+      "products": [
+        "백선피"
+      ]
+    },
+    {
+      "name": "백수오",
+      "assetPath": "/products-reference/herb-115.webp",
+      "products": [
+        "백수오"
+      ]
+    },
+    {
+      "name": "백자인",
+      "assetPath": "/products-reference/herb-116.webp",
+      "products": [
+        "백자인"
+      ]
+    },
+    {
+      "name": "백지",
+      "assetPath": "/products-reference/herb-117.webp",
+      "products": [
+        "백지",
+        "백지"
+      ]
+    },
+    {
+      "name": "백출",
+      "assetPath": "/products-reference/herb-118.webp",
+      "products": [
+        "백출"
+      ]
+    },
+    {
+      "name": "백출/기원",
+      "assetPath": "/products-reference/herb-119.webp",
+      "products": [
+        "백출/기원"
+      ]
+    },
+    {
+      "name": "백출/미감침",
+      "assetPath": "/products-reference/herb-120.webp",
+      "products": [
+        "백출/미감침"
+      ]
+    },
+    {
+      "name": "백출/재배",
+      "assetPath": "/products-reference/herb-121.webp",
+      "products": [
+        "백출/재배"
+      ]
+    },
+    {
+      "name": "백출/황토",
+      "assetPath": "/products-reference/herb-122.webp",
+      "products": [
+        "백출/황토"
+      ]
+    },
+    {
+      "name": "백출초",
+      "assetPath": "/products-reference/herb-123.webp",
+      "products": [
+        "백출초"
+      ]
+    },
+    {
+      "name": "백편두",
+      "assetPath": "/products-reference/herb-124.webp",
+      "products": [
+        "백편두"
+      ]
+    },
+    {
+      "name": "백편두/추말",
+      "assetPath": "/products-reference/herb-125.webp",
+      "products": [
+        "백편두/추말"
+      ]
+    },
+    {
+      "name": "백합",
+      "assetPath": "/products-reference/herb-126.webp",
+      "products": [
+        "백합"
+      ]
+    },
+    {
+      "name": "별갑",
+      "assetPath": "/products-reference/herb-127.webp",
+      "products": [
+        "별갑"
+      ]
+    },
+    {
+      "name": "별갑교",
+      "assetPath": "/products-reference/herb-128.webp",
+      "products": [
+        "별갑교"
+      ]
+    },
+    {
+      "name": "보골지/염자",
+      "assetPath": "/products-reference/herb-129.webp",
+      "products": [
+        "보골지/염자",
+        "보골지/염자"
+      ]
+    },
+    {
+      "name": "복령",
+      "assetPath": "/products-reference/herb-130.webp",
+      "products": [
+        "복령",
+        "복령"
+      ]
+    },
+    {
+      "name": "복령/신",
+      "assetPath": "/products-reference/herb-131.webp",
+      "products": [
+        "복령/신"
+      ]
+    },
+    {
+      "name": "복령/적",
+      "assetPath": "/products-reference/herb-132.webp",
+      "products": [
+        "복령/적"
+      ]
+    },
+    {
+      "name": "복령/칼",
+      "assetPath": "/products-reference/herb-133.webp",
+      "products": [
+        "복령/칼"
+      ]
+    },
+    {
+      "name": "복령피",
+      "assetPath": "/products-reference/herb-134.webp",
+      "products": [
+        "복령피"
+      ]
+    },
+    {
+      "name": "복분자",
+      "assetPath": "/products-reference/herb-135.webp",
+      "products": [
+        "복분자"
+      ]
+    },
+    {
+      "name": "부자",
+      "assetPath": "/products-reference/herb-136.webp",
+      "products": [
+        "부자"
+      ]
+    },
+    {
+      "name": "부자/포",
+      "assetPath": "/products-reference/herb-137.webp",
+      "products": [
+        "부자/포"
+      ]
+    },
+    {
+      "name": "비해",
+      "assetPath": "/products-reference/herb-138.webp",
+      "products": [
+        "비해"
+      ]
+    },
+    {
+      "name": "빈랑자",
+      "assetPath": "/products-reference/herb-139.webp",
+      "products": [
+        "빈랑자"
+      ]
+    },
+    {
+      "name": "사간",
+      "assetPath": "/products-reference/herb-140.webp",
+      "products": [
+        "사간"
+      ]
+    },
+    {
+      "name": "사삼",
+      "assetPath": "/products-reference/herb-141.webp",
+      "products": [
+        "사삼"
+      ]
+    },
+    {
+      "name": "사상자",
+      "assetPath": "/products-reference/herb-142.webp",
+      "products": [
+        "사상자"
+      ]
+    },
+    {
+      "name": "사인초",
+      "assetPath": "/products-reference/herb-143.webp",
+      "products": [
+        "사인초"
+      ]
+    },
+    {
+      "name": "사인초/추말",
+      "assetPath": "/products-reference/herb-144.webp",
+      "products": [
+        "사인초/추말"
+      ]
+    },
+    {
+      "name": "산사",
+      "assetPath": "/products-reference/herb-145.webp",
+      "products": [
+        "산사"
+      ]
+    },
+    {
+      "name": "산사초",
+      "assetPath": "/products-reference/herb-146.webp",
+      "products": [
+        "산사초"
+      ]
+    },
+    {
+      "name": "산수유",
+      "assetPath": "/products-reference/herb-147.webp",
+      "products": [
+        "산수유",
+        "산수유"
+      ]
+    },
+    {
+      "name": "산약",
+      "assetPath": "/products-reference/herb-148.webp",
+      "products": [
+        "산약"
+      ]
+    },
+    {
+      "name": "산약/사각",
+      "assetPath": "/products-reference/herb-149.webp",
+      "products": [
+        "산약(사각)"
+      ]
+    },
+    {
+      "name": "산장",
+      "assetPath": "/products-reference/herb-150.webp",
+      "products": [
+        "산장"
+      ]
+    },
+    {
+      "name": "산조인",
+      "assetPath": "/products-reference/herb-151.webp",
+      "products": [
+        "산조인"
+      ]
+    },
+    {
+      "name": "산조인초",
+      "assetPath": "/products-reference/herb-152.webp",
+      "products": [
+        "산조인초"
+      ]
+    },
+    {
+      "name": "산초",
+      "assetPath": "/products-reference/herb-153.webp",
+      "products": [
+        "산초(천초)"
+      ]
+    },
+    {
+      "name": "삼릉",
+      "assetPath": "/products-reference/herb-154.webp",
+      "products": [
+        "삼릉"
+      ]
+    },
+    {
+      "name": "상기생",
+      "assetPath": "/products-reference/herb-155.webp",
+      "products": [
+        "상기생"
+      ]
+    },
+    {
+      "name": "상백피",
+      "assetPath": "/products-reference/herb-156.webp",
+      "products": [
+        "상백피",
+        "상백피"
+      ]
+    },
+    {
+      "name": "상백피/거피",
+      "assetPath": "/products-reference/herb-157.webp",
+      "products": [
+        "상백피/거피"
+      ]
+    },
+    {
+      "name": "상심자",
+      "assetPath": "/products-reference/herb-158.webp",
+      "products": [
+        "상심자"
+      ]
+    },
+    {
+      "name": "상지",
+      "assetPath": "/products-reference/herb-159.webp",
+      "products": [
+        "상지"
+      ]
+    },
+    {
+      "name": "상표초",
+      "assetPath": "/products-reference/herb-160.webp",
+      "products": [
+        "상표초"
+      ]
+    },
+    {
+      "name": "상황버섯",
+      "assetPath": "/products-reference/herb-161.webp",
+      "products": [
+        "상황버섯"
+      ]
+    },
+    {
+      "name": "서장경",
+      "assetPath": "/products-reference/herb-162.webp",
+      "products": [
+        "서장경"
+      ]
+    },
+    {
+      "name": "석결명/가루",
+      "assetPath": "/products-reference/herb-163.webp",
+      "products": [
+        "석결명/가루"
+      ]
+    },
+    {
+      "name": "석고/가루",
+      "assetPath": "/products-reference/herb-164.webp",
+      "products": [
+        "석고/가루"
+      ]
+    },
+    {
+      "name": "석곡",
+      "assetPath": "/products-reference/herb-165.webp",
+      "products": [
+        "석곡"
+      ]
+    },
+    {
+      "name": "석창포",
+      "assetPath": "/products-reference/herb-166.webp",
+      "products": [
+        "석창포"
+      ]
+    },
+    {
+      "name": "선복화",
+      "assetPath": "/products-reference/herb-167.webp",
+      "products": [
+        "선복화"
+      ]
+    },
+    {
+      "name": "세신",
+      "assetPath": "/products-reference/herb-168.webp",
+      "products": [
+        "세신"
+      ]
+    },
+    {
+      "name": "센나엽",
+      "assetPath": "/products-reference/herb-169.webp",
+      "products": [
+        "센나엽"
+      ]
+    },
+    {
+      "name": "소맥",
+      "assetPath": "/products-reference/herb-170.webp",
+      "products": [
+        "소맥(밀)"
+      ]
+    },
+    {
+      "name": "소목",
+      "assetPath": "/products-reference/herb-171.webp",
+      "products": [
+        "소목"
+      ]
+    },
+    {
+      "name": "속단",
+      "assetPath": "/products-reference/herb-172.webp",
+      "products": [
+        "속단"
+      ]
+    },
+    {
+      "name": "송엽",
+      "assetPath": "/products-reference/herb-173.webp",
+      "products": [
+        "송엽"
+      ]
+    },
+    {
+      "name": "송절",
+      "assetPath": "/products-reference/herb-174.webp",
+      "products": [
+        "송절"
+      ]
+    },
+    {
+      "name": "송화분",
+      "assetPath": "/products-reference/herb-175.webp",
+      "products": [
+        "송화분"
+      ]
+    },
+    {
+      "name": "수세미",
+      "assetPath": "/products-reference/herb-176.webp",
+      "products": [
+        "수세미"
+      ]
+    },
+    {
+      "name": "수오등",
+      "assetPath": "/products-reference/herb-177.webp",
+      "products": [
+        "수오등"
+      ]
+    },
+    {
+      "name": "숙지황",
+      "assetPath": "/products-reference/herb-178.webp",
+      "products": [
+        "숙지황",
+        "숙지황",
+        "숙지황"
+      ]
+    },
+    {
+      "name": "승마",
+      "assetPath": "/products-reference/herb-179.webp",
+      "products": [
+        "승마"
+      ]
+    },
+    {
+      "name": "시호/북",
+      "assetPath": "/products-reference/herb-180.webp",
+      "products": [
+        "시호/북"
+      ]
+    },
+    {
+      "name": "시호/은",
+      "assetPath": "/products-reference/herb-181.webp",
+      "products": [
+        "시호/은"
+      ]
+    },
+    {
+      "name": "시호/장",
+      "assetPath": "/products-reference/herb-182.webp",
+      "products": [
+        "시호/장"
+      ]
+    },
+    {
+      "name": "신곡",
+      "assetPath": "/products-reference/herb-183.webp",
+      "products": [
+        "신곡"
+      ]
+    },
+    {
+      "name": "신이",
+      "assetPath": "/products-reference/herb-184.webp",
+      "products": [
+        "신이"
+      ]
+    },
+    {
+      "name": "아교",
+      "assetPath": "/products-reference/herb-185.webp",
+      "products": [
+        "아교"
+      ]
+    },
+    {
+      "name": "아출",
+      "assetPath": "/products-reference/herb-186.webp",
+      "products": [
+        "아출"
+      ]
+    },
+    {
+      "name": "여정실",
+      "assetPath": "/products-reference/herb-187.webp",
+      "products": [
+        "여정실"
+      ]
+    },
+    {
+      "name": "여정실/주증",
+      "assetPath": "/products-reference/herb-188.webp",
+      "products": [
+        "여정실/주증"
+      ]
+    },
+    {
+      "name": "연교",
+      "assetPath": "/products-reference/herb-189.webp",
+      "products": [
+        "연교"
+      ]
+    },
+    {
+      "name": "연자육",
+      "assetPath": "/products-reference/herb-190.webp",
+      "products": [
+        "연자육"
+      ]
+    },
+    {
+      "name": "영지버섯",
+      "assetPath": "/products-reference/herb-191.webp",
+      "products": [
+        "영지버섯"
+      ]
+    },
+    {
+      "name": "오가피",
+      "assetPath": "/products-reference/herb-192.webp",
+      "products": [
+        "오가피"
+      ]
+    },
+    {
+      "name": "오가피/내피/정품",
+      "assetPath": "/products-reference/herb-193.webp",
+      "products": [
+        "오가피/내피/정품"
+      ]
+    },
+    {
+      "name": "오령지",
+      "assetPath": "/products-reference/herb-194.webp",
+      "products": [
+        "오령지"
+      ]
+    },
+    {
+      "name": "오매",
+      "assetPath": "/products-reference/herb-195.webp",
+      "products": [
+        "오매"
+      ]
+    },
+    {
+      "name": "오미자",
+      "assetPath": "/products-reference/herb-196.webp",
+      "products": [
+        "오미자",
+        "오미자"
+      ]
+    },
+    {
+      "name": "오수유",
+      "assetPath": "/products-reference/herb-197.webp",
+      "products": [
+        "오수유"
+      ]
+    },
+    {
+      "name": "오약",
+      "assetPath": "/products-reference/herb-198.webp",
+      "products": [
+        "오약"
+      ]
+    },
+    {
+      "name": "용골",
+      "assetPath": "/products-reference/herb-199.webp",
+      "products": [
+        "용골"
+      ]
+    },
+    {
+      "name": "용골/가루",
+      "assetPath": "/products-reference/herb-200.webp",
+      "products": [
+        "용골/가루"
+      ]
+    },
+    {
+      "name": "용담",
+      "assetPath": "/products-reference/herb-201.webp",
+      "products": [
+        "용담"
+      ]
+    },
+    {
+      "name": "용안육",
+      "assetPath": "/products-reference/herb-202.webp",
+      "products": [
+        "용안육",
+        "용안육"
+      ]
+    },
+    {
+      "name": "우담남성",
+      "assetPath": "/products-reference/herb-203.webp",
+      "products": [
+        "우담남성"
+      ]
+    },
+    {
+      "name": "우방자",
+      "assetPath": "/products-reference/herb-204.webp",
+      "products": [
+        "우방자"
+      ]
+    },
+    {
+      "name": "우슬",
+      "assetPath": "/products-reference/herb-205.webp",
+      "products": [
+        "우슬",
+        "우슬"
+      ]
+    },
+    {
+      "name": "우슬/주자",
+      "assetPath": "/products-reference/herb-206.webp",
+      "products": [
+        "우슬/주자"
+      ]
+    },
+    {
+      "name": "욱리인",
+      "assetPath": "/products-reference/herb-207.webp",
+      "products": [
+        "욱리인"
+      ]
+    },
+    {
+      "name": "울금",
+      "assetPath": "/products-reference/herb-208.webp",
+      "products": [
+        "울금"
+      ]
+    },
+    {
+      "name": "원지/밀자",
+      "assetPath": "/products-reference/herb-209.webp",
+      "products": [
+        "원지/밀자"
+      ]
+    },
+    {
+      "name": "원지",
+      "assetPath": "/products-reference/herb-210.webp",
+      "products": [
+        "원지/상",
+        "원지/특"
+      ]
+    },
+    {
+      "name": "위령선",
+      "assetPath": null,
+      "products": [
+        "위령선"
+      ]
+    },
+    {
+      "name": "유백피",
+      "assetPath": null,
+      "products": [
+        "유백피",
+        "유백피"
+      ]
+    },
+    {
+      "name": "유향",
+      "assetPath": null,
+      "products": [
+        "유향"
+      ]
+    },
+    {
+      "name": "육계",
+      "assetPath": null,
+      "products": [
+        "육계",
+        "육계/YB1"
+      ]
+    },
+    {
+      "name": "육두구",
+      "assetPath": null,
+      "products": [
+        "육두구"
+      ]
+    },
+    {
+      "name": "육종용주증",
+      "assetPath": null,
+      "products": [
+        "육종용주증"
+      ]
+    },
+    {
+      "name": "율피",
+      "assetPath": null,
+      "products": [
+        "율피"
+      ]
+    },
+    {
+      "name": "은행잎",
+      "assetPath": null,
+      "products": [
+        "은행잎"
+      ]
+    },
+    {
+      "name": "의이인",
+      "assetPath": null,
+      "products": [
+        "의이인",
+        "의이인"
+      ]
+    },
+    {
+      "name": "익지",
+      "assetPath": null,
+      "products": [
+        "익지"
+      ]
+    },
+    {
+      "name": "익지/추말",
+      "assetPath": null,
+      "products": [
+        "익지/추말"
+      ]
+    },
+    {
+      "name": "인동",
+      "assetPath": null,
+      "products": [
+        "인동",
+        "인동"
+      ]
+    },
+    {
+      "name": "일당귀",
+      "assetPath": null,
+      "products": [
+        "일당귀",
+        "일당귀"
+      ]
+    },
+    {
+      "name": "일당귀/신",
+      "assetPath": null,
+      "products": [
+        "일당귀/신"
+      ]
+    },
+    {
+      "name": "자근",
+      "assetPath": null,
+      "products": [
+        "자근"
+      ]
+    },
+    {
+      "name": "자노아",
+      "assetPath": null,
+      "products": [
+        "자노아"
+      ]
+    },
+    {
+      "name": "자소자",
+      "assetPath": null,
+      "products": [
+        "자소자"
+      ]
+    },
+    {
+      "name": "자연동",
+      "assetPath": null,
+      "products": [
+        "자연동"
+      ]
+    },
+    {
+      "name": "자완",
+      "assetPath": null,
+      "products": [
+        "자완"
+      ]
+    },
+    {
+      "name": "자충",
+      "assetPath": null,
+      "products": [
+        "자충"
+      ]
+    },
+    {
+      "name": "작약",
+      "assetPath": null,
+      "products": [
+        "작약"
+      ]
+    },
+    {
+      "name": "작약/강",
+      "assetPath": null,
+      "products": [
+        "작약/강"
+      ]
+    },
+    {
+      "name": "작약/적/직",
+      "assetPath": null,
+      "products": [
+        "작약/적/직"
+      ]
+    },
+    {
+      "name": "작약/적/편",
+      "assetPath": null,
+      "products": [
+        "작약/적/편"
+      ]
+    },
+    {
+      "name": "작약/주자",
+      "assetPath": null,
+      "products": [
+        "작약/주자"
+      ]
+    },
+    {
+      "name": "작약초",
+      "assetPath": null,
+      "products": [
+        "작약초",
+        "작약초"
+      ]
+    },
+    {
+      "name": "작약초/편",
+      "assetPath": null,
+      "products": [
+        "작약초/편"
+      ]
+    },
+    {
+      "name": "저두강",
+      "assetPath": null,
+      "products": [
+        "저두강"
+      ]
+    },
+    {
+      "name": "저령",
+      "assetPath": null,
+      "products": [
+        "저령"
+      ]
+    },
+    {
+      "name": "저백피",
+      "assetPath": null,
+      "products": [
+        "저백피(소백피)"
+      ]
+    },
+    {
+      "name": "저실자",
+      "assetPath": null,
+      "products": [
+        "저실자"
+      ]
+    },
+    {
+      "name": "전호",
+      "assetPath": null,
+      "products": [
+        "전호"
+      ]
+    },
+    {
+      "name": "절패모",
+      "assetPath": null,
+      "products": [
+        "절패모"
+      ]
+    },
+    {
+      "name": "접골목",
+      "assetPath": null,
+      "products": [
+        "접골목"
+      ]
+    },
+    {
+      "name": "정향",
+      "assetPath": null,
+      "products": [
+        "정향"
+      ]
+    },
+    {
+      "name": "제니",
+      "assetPath": null,
+      "products": [
+        "제니"
+      ]
+    },
+    {
+      "name": "제조",
+      "assetPath": null,
+      "products": [
+        "제조"
+      ]
+    },
+    {
+      "name": "조각자",
+      "assetPath": null,
+      "products": [
+        "조각자"
+      ]
+    },
+    {
+      "name": "조구등",
+      "assetPath": null,
+      "products": [
+        "조구등"
+      ]
+    },
+    {
+      "name": "종대황",
+      "assetPath": null,
+      "products": [
+        "종대황"
+      ]
+    },
+    {
+      "name": "지각",
+      "assetPath": null,
+      "products": [
+        "지각"
+      ]
+    },
+    {
+      "name": "지각초",
+      "assetPath": null,
+      "products": [
+        "지각초"
+      ]
+    },
+    {
+      "name": "지골피",
+      "assetPath": null,
+      "products": [
+        "지골피"
+      ]
+    },
+    {
+      "name": "지구자",
+      "assetPath": null,
+      "products": [
+        "지구자"
+      ]
+    },
+    {
+      "name": "지구자/씨",
+      "assetPath": null,
+      "products": [
+        "지구자/씨"
+      ]
+    },
+    {
+      "name": "지룡",
+      "assetPath": null,
+      "products": [
+        "지룡"
+      ]
+    },
+    {
+      "name": "지룡/속제거",
+      "assetPath": null,
+      "products": [
+        "지룡/속제거"
+      ]
+    },
+    {
+      "name": "지모",
+      "assetPath": null,
+      "products": [
+        "지모"
+      ]
+    },
+    {
+      "name": "지모/염자",
+      "assetPath": null,
+      "products": [
+        "지모/염자"
+      ]
+    },
+    {
+      "name": "지부자",
+      "assetPath": null,
+      "products": [
+        "지부자"
+      ]
+    },
+    {
+      "name": "지실/애",
+      "assetPath": null,
+      "products": [
+        "지실/애"
+      ]
+    },
+    {
+      "name": "지실/중",
+      "assetPath": null,
+      "products": [
+        "지실/중"
+      ]
+    },
+    {
+      "name": "지유",
+      "assetPath": null,
+      "products": [
+        "지유"
+      ]
+    },
+    {
+      "name": "지황",
+      "assetPath": null,
+      "products": [
+        "지황"
+      ]
+    },
+    {
+      "name": "진교",
+      "assetPath": null,
+      "products": [
+        "진교"
+      ]
+    },
+    {
+      "name": "진피",
+      "assetPath": null,
+      "products": [
+        "진피",
+        "진피"
+      ]
+    },
+    {
+      "name": "질려자",
+      "assetPath": null,
+      "products": [
+        "질려자"
+      ]
+    },
+    {
+      "name": "질려자/염자",
+      "assetPath": null,
+      "products": [
+        "질려자/염자"
+      ]
+    },
+    {
+      "name": "차전자",
+      "assetPath": null,
+      "products": [
+        "차전자"
+      ]
+    },
+    {
+      "name": "차전자피",
+      "assetPath": null,
+      "products": [
+        "차전자피"
+      ]
+    },
+    {
+      "name": "창이자",
+      "assetPath": null,
+      "products": [
+        "창이자"
+      ]
+    },
+    {
+      "name": "창출",
+      "assetPath": null,
+      "products": [
+        "창출"
+      ]
+    },
+    {
+      "name": "창출/모",
+      "assetPath": null,
+      "products": [
+        "창출/모"
+      ]
+    },
+    {
+      "name": "창출/미감침",
+      "assetPath": null,
+      "products": [
+        "창출/미감침"
+      ]
+    },
+    {
+      "name": "천궁",
+      "assetPath": null,
+      "products": [
+        "천궁",
+        "천궁"
+      ]
+    },
+    {
+      "name": "천마",
+      "assetPath": null,
+      "products": [
+        "천마"
+      ]
+    },
+    {
+      "name": "천문동",
+      "assetPath": null,
+      "products": [
+        "천문동"
+      ]
+    },
+    {
+      "name": "천오",
+      "assetPath": null,
+      "products": [
+        "천오"
+      ]
+    },
+    {
+      "name": "천오제",
+      "assetPath": null,
+      "products": [
+        "천오제"
+      ]
+    },
+    {
+      "name": "청피",
+      "assetPath": null,
+      "products": [
+        "청피"
+      ]
+    },
+    {
+      "name": "초과",
+      "assetPath": null,
+      "products": [
+        "초과"
+      ]
+    },
+    {
+      "name": "초두구",
+      "assetPath": null,
+      "products": [
+        "초두구"
+      ]
+    },
+    {
+      "name": "초오",
+      "assetPath": null,
+      "products": [
+        "초오"
+      ]
+    },
+    {
+      "name": "초오제",
+      "assetPath": null,
+      "products": [
+        "초오제"
+      ]
+    },
+    {
+      "name": "측백엽",
+      "assetPath": null,
+      "products": [
+        "측백엽"
+      ]
+    },
+    {
+      "name": "치자",
+      "assetPath": null,
+      "products": [
+        "치자",
+        "치자"
+      ]
+    },
+    {
+      "name": "치자초",
+      "assetPath": null,
+      "products": [
+        "치자초"
+      ]
+    },
+    {
+      "name": "택사",
+      "assetPath": null,
+      "products": [
+        "택사",
+        "택사"
+      ]
+    },
+    {
+      "name": "토복령",
+      "assetPath": null,
+      "products": [
+        "토복령"
+      ]
+    },
+    {
+      "name": "토사자",
+      "assetPath": null,
+      "products": [
+        "토사자"
+      ]
+    },
+    {
+      "name": "토사자/주증",
+      "assetPath": null,
+      "products": [
+        "토사자/주증"
+      ]
+    },
+    {
+      "name": "파극천",
+      "assetPath": null,
+      "products": [
+        "파극천"
+      ]
+    },
+    {
+      "name": "파극천/주자",
+      "assetPath": null,
+      "products": [
+        "파극천/주자"
+      ]
+    },
+    {
+      "name": "판람근",
+      "assetPath": null,
+      "products": [
+        "판람근"
+      ]
+    },
+    {
+      "name": "팔각회향",
+      "assetPath": null,
+      "products": [
+        "팔각회향"
+      ]
+    },
+    {
+      "name": "패장",
+      "assetPath": null,
+      "products": [
+        "패장"
+      ]
+    },
+    {
+      "name": "편축",
+      "assetPath": null,
+      "products": [
+        "편축"
+      ]
+    },
+    {
+      "name": "포도근",
+      "assetPath": null,
+      "products": [
+        "포도근"
+      ]
+    },
+    {
+      "name": "포황",
+      "assetPath": null,
+      "products": [
+        "포황"
+      ]
+    },
+    {
+      "name": "하수오/적",
+      "assetPath": null,
+      "products": [
+        "하수오/적"
+      ]
+    },
+    {
+      "name": "하수오/주증",
+      "assetPath": null,
+      "products": [
+        "하수오/주증"
+      ]
+    },
+    {
+      "name": "하수오/흡두즙돈",
+      "assetPath": null,
+      "products": [
+        "하수오/흡두즙돈"
+      ]
+    },
+    {
+      "name": "합환피",
+      "assetPath": null,
+      "products": [
+        "합환피"
+      ]
+    },
+    {
+      "name": "해동피",
+      "assetPath": null,
+      "products": [
+        "해동피"
+      ]
+    },
+    {
+      "name": "해방풍",
+      "assetPath": null,
+      "products": [
+        "해방풍"
+      ]
+    },
+    {
+      "name": "해표초/가루",
+      "assetPath": null,
+      "products": [
+        "해표초/가루"
+      ]
+    },
+    {
+      "name": "해풍등",
+      "assetPath": null,
+      "products": [
+        "해풍등"
+      ]
+    },
+    {
+      "name": "행인",
+      "assetPath": null,
+      "products": [
+        "행인"
+      ]
+    },
+    {
+      "name": "행인/절",
+      "assetPath": null,
+      "products": [
+        "행인/절"
+      ]
+    },
+    {
+      "name": "행인/추말",
+      "assetPath": null,
+      "products": [
+        "행인/추말"
+      ]
+    },
+    {
+      "name": "향부자",
+      "assetPath": null,
+      "products": [
+        "향부자",
+        "향부자"
+      ]
+    },
+    {
+      "name": "향부자/동변",
+      "assetPath": null,
+      "products": [
+        "향부자/동변"
+      ]
+    },
+    {
+      "name": "향부자/주초",
+      "assetPath": null,
+      "products": [
+        "향부자/주초"
+      ]
+    },
+    {
+      "name": "향부자/초",
+      "assetPath": null,
+      "products": [
+        "향부자/초"
+      ]
+    },
+    {
+      "name": "헛개나무",
+      "assetPath": null,
+      "products": [
+        "헛개나무"
+      ]
+    },
+    {
+      "name": "현삼",
+      "assetPath": null,
+      "products": [
+        "현삼"
+      ]
+    },
+    {
+      "name": "현호색",
+      "assetPath": null,
+      "products": [
+        "현호색"
+      ]
+    },
+    {
+      "name": "호장근",
+      "assetPath": null,
+      "products": [
+        "호장근"
+      ]
+    },
+    {
+      "name": "홍화",
+      "assetPath": null,
+      "products": [
+        "홍화"
+      ]
+    },
+    {
+      "name": "화피",
+      "assetPath": null,
+      "products": [
+        "화피",
+        "화피"
+      ]
+    },
+    {
+      "name": "활석",
+      "assetPath": null,
+      "products": [
+        "활석"
+      ]
+    },
+    {
+      "name": "황금",
+      "assetPath": null,
+      "products": [
+        "황금"
+      ]
+    },
+    {
+      "name": "황금/고금",
+      "assetPath": null,
+      "products": [
+        "황금/고금"
+      ]
+    },
+    {
+      "name": "황금/조금",
+      "assetPath": null,
+      "products": [
+        "황금/조금"
+      ]
+    },
+    {
+      "name": "황금/주자",
+      "assetPath": null,
+      "products": [
+        "황금/주자"
+      ]
+    },
+    {
+      "name": "황기",
+      "assetPath": null,
+      "products": [
+        "황기"
+      ]
+    },
+    {
+      "name": "황기/밀자",
+      "assetPath": null,
+      "products": [
+        "황기/밀자",
+        "황기/밀자"
+      ]
+    },
+    {
+      "name": "황기/직절",
+      "assetPath": "/products-reference/hwanggi-jikjeol.webp",
+      "products": [
+        "황기/직절",
+        "황기/직절AA"
+      ]
+    },
+    {
+      "name": "황기/편",
+      "assetPath": null,
+      "products": [
+        "황기/편"
+      ]
+    },
+    {
+      "name": "황기/편/일",
+      "assetPath": null,
+      "products": [
+        "황기/편/일"
+      ]
+    },
+    {
+      "name": "황련",
+      "assetPath": null,
+      "products": [
+        "황련"
+      ]
+    },
+    {
+      "name": "황백",
+      "assetPath": null,
+      "products": [
+        "황백",
+        "황백"
+      ]
+    },
+    {
+      "name": "황백/염자",
+      "assetPath": null,
+      "products": [
+        "황백/염자"
+      ]
+    },
+    {
+      "name": "황백/주자",
+      "assetPath": null,
+      "products": [
+        "황백/주자"
+      ]
+    },
+    {
+      "name": "황정",
+      "assetPath": null,
+      "products": [
+        "황정"
+      ]
+    },
+    {
+      "name": "회향",
+      "assetPath": null,
+      "products": [
+        "회향"
+      ]
+    },
+    {
+      "name": "후박",
+      "assetPath": null,
+      "products": [
+        "후박"
+      ]
+    },
+    {
+      "name": "후박/강자",
+      "assetPath": null,
+      "products": [
+        "후박/강자"
+      ]
+    },
+    {
+      "name": "후박/근",
+      "assetPath": null,
+      "products": [
+        "후박/근"
+      ]
+    },
+    {
+      "name": "후추",
+      "assetPath": null,
+      "products": [
+        "후추"
+      ]
+    },
+    {
+      "name": "흑두",
+      "assetPath": null,
+      "products": [
+        "흑두"
+      ]
+    }
+  ]
+}
