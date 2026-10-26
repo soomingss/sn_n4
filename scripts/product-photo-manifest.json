@@ -158,11 +158,12 @@
     },
     {
       "name": "계내금초",
-      "assetPath": "/products-reference/herb-018.webp",
+      "assetPath": "/products-reference/herb-018-v2.webp",
       "products": [
         "계내금초"
       ],
-      "id": "herb-018"
+      "id": "herb-018",
+      "generationPrompt": "Edit this existing 계내금 dried chicken gizzard lining product photograph into 계내금초, LIGHTLY dry-roasted material. Preserve the exact same thin broad irregular torn flakes, shapes, arrangement, delicate papery membrane texture, curled edges and white background. Change ONLY the herb color modestly: the current mustard golden yellow should become slightly deeper warm golden tan and light toasted caramel brown, with gentle light brown edges. A subtle lightly roasted color, NOT dark brown, NOT black, NOT charred or burned. Keep varied natural yellow-gold highlights and legible wrinkles. Do not darken the background or entire exposure. Bright pure white seamless background, same soft studio lighting and subtle contact shadow. No new objects, packaging, text, labels, watermark, bowls or props."
     },
     {
       "name": "계지",
