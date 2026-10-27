@@ -1326,43 +1326,53 @@
     },
     {
       "name": "사간",
-      "assetPath": "/products-reference/herb-140.webp",
+      "assetPath": "/products-reference/herb-140-20261027-s.webp",
       "products": [
         "사간"
       ],
-      "id": "herb-140"
+      "id": "herb-140",
+      "generationPrompt": "Use case product-mockup. Create photorealistic catalog photograph of 사간. Closely match the reference image material color, shape, cutting and texture. Generous natural pile on clean white seamless background, soft diffuse studio light, all edges visible. No text, logos, watermark, bowl, packaging, hands, props, other plants.",
+      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색 반영."
     },
     {
       "name": "사삼",
-      "assetPath": "/products-reference/herb-141.webp",
+      "assetPath": "/products-reference/herb-141-20261027-s.webp",
       "products": [
         "사삼"
       ],
-      "id": "herb-141"
+      "id": "herb-141",
+      "generationPrompt": "Use case product-mockup. Create photorealistic catalog photograph of 사삼. Closely match the reference image material color, shape, cutting and texture. Generous natural pile on clean white seamless background, soft diffuse studio light, all edges visible. No text, logos, watermark, bowl, packaging, hands, props, other plants.",
+      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색 반영."
     },
     {
       "name": "사상자",
-      "assetPath": "/products-reference/herb-142.webp",
+      "assetPath": "/products-reference/herb-142-20261027-s.webp",
       "products": [
         "사상자"
       ],
-      "id": "herb-142"
+      "id": "herb-142",
+      "generationPrompt": "Use case product-mockup. Create photorealistic catalog photograph of 사상자. Closely match the reference image material color, shape, cutting and texture. Generous natural pile on clean white seamless background, soft diffuse studio light, all edges visible. No text, logos, watermark, bowl, packaging, hands, props, other plants.",
+      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색 반영."
     },
     {
       "name": "사인초",
-      "assetPath": "/products-reference/herb-143.webp",
+      "assetPath": "/products-reference/herb-143-20261027-s.webp",
       "products": [
         "사인초"
       ],
-      "id": "herb-143"
+      "id": "herb-143",
+      "generationPrompt": "Use case product-mockup. Create photorealistic catalog photograph of 사인초. Closely match the reference image material color, shape, cutting and texture. Generous natural pile on clean white seamless background, soft diffuse studio light, all edges visible. No text, logos, watermark, bowl, packaging, hands, props, other plants.",
+      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색 반영."
     },
     {
       "name": "사인초/추말",
-      "assetPath": "/products-reference/herb-144.webp",
+      "assetPath": "/products-reference/herb-144-20261027-s.webp",
       "products": [
         "사인초/추말"
       ],
-      "id": "herb-144"
+      "id": "herb-144",
+      "generationPrompt": "Use case product-mockup. Create photorealistic catalog photograph of 사인초/추말. Closely match the reference image material color, shape, cutting and texture. Generous natural pile on clean white seamless background, soft diffuse studio light, all edges visible. No text, logos, watermark, bowl, packaging, hands, props, other plants.",
+      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색 반영."
     },
     {
       "name": "산사",
@@ -1374,28 +1384,34 @@
     },
     {
       "name": "산사초",
-      "assetPath": "/products-reference/herb-146.webp",
+      "assetPath": "/products-reference/herb-146-20261027-s.webp",
       "products": [
         "산사초"
       ],
-      "id": "herb-146"
+      "id": "herb-146",
+      "generationPrompt": "Use case product-mockup. Create photorealistic catalog photograph of 산사초. Closely match the reference image material color, shape, cutting and texture. Generous natural pile on clean white seamless background, soft diffuse studio light, all edges visible. No text, logos, watermark, bowl, packaging, hands, props, other plants.",
+      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색 반영."
     },
     {
       "name": "산수유",
-      "assetPath": "/products-reference/herb-147.webp",
+      "assetPath": "/products-reference/herb-147-20261027-s.webp",
       "products": [
         "산수유",
         "산수유"
       ],
-      "id": "herb-147"
+      "id": "herb-147",
+      "generationPrompt": "Use case product-mockup. Create photorealistic catalog photograph of 산수유. Closely match the reference image material color, shape, cutting and texture. Generous natural pile on clean white seamless background, soft diffuse studio light, all edges visible. No text, logos, watermark, bowl, packaging, hands, props, other plants.",
+      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색 반영."
     },
     {
       "name": "산약",
-      "assetPath": "/products-reference/herb-148.webp",
+      "assetPath": "/products-reference/herb-148-20261027-s.webp",
       "products": [
         "산약"
       ],
-      "id": "herb-148"
+      "id": "herb-148",
+      "generationPrompt": "Use case product-mockup. Create photorealistic catalog photograph of 산약. Closely match the reference image material color, shape, cutting and texture. Generous natural pile on clean white seamless background, soft diffuse studio light, all edges visible. No text, logos, watermark, bowl, packaging, hands, props, other plants.",
+      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색 반영."
     },
     {
       "name": "산약/사각",
@@ -1407,35 +1423,43 @@
     },
     {
       "name": "산장",
-      "assetPath": "/products-reference/herb-150.webp",
+      "assetPath": "/products-reference/herb-150-20261027-s.webp",
       "products": [
         "산장"
       ],
-      "id": "herb-150"
+      "id": "herb-150",
+      "generationPrompt": "Create photorealistic product catalog photo of DRIED 산장 herbal material, chopped mostly stems and twigs with very few flowers, as user specifies. The photo reference depicts a living plant, use it only for identification, not a whole live plant or fruit. A generous pile of dry cut stems with very sparse dried flowers against a clean white background, soft studio light, no bowl, labels, text or packaging.",
+      "editorialNote": "산장: 사용자 요청대로 꽃을 거의 빼고 줄기 위주로 표현."
     },
     {
       "name": "산조인",
-      "assetPath": "/products-reference/herb-151.webp",
+      "assetPath": "/products-reference/herb-151-20261027-s.webp",
       "products": [
         "산조인"
       ],
-      "id": "herb-151"
+      "id": "herb-151",
+      "generationPrompt": "Use case product-mockup. Create photorealistic catalog photograph of 산조인. Closely match the reference image material color, shape, cutting and texture. Generous natural pile on clean white seamless background, soft diffuse studio light, all edges visible. No text, logos, watermark, bowl, packaging, hands, props, other plants.",
+      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색 반영."
     },
     {
       "name": "산조인초",
-      "assetPath": "/products-reference/herb-152.webp",
+      "assetPath": "/products-reference/herb-152-20261027-s.webp",
       "products": [
         "산조인초"
       ],
-      "id": "herb-152"
+      "id": "herb-152",
+      "generationPrompt": "Use case product-mockup. Create photorealistic catalog photograph of 산조인초. Closely match the reference image material color, shape, cutting and texture. Generous natural pile on clean white seamless background, soft diffuse studio light, all edges visible. No text, logos, watermark, bowl, packaging, hands, props, other plants.",
+      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색 반영."
     },
     {
       "name": "산초",
-      "assetPath": "/products-reference/herb-153.webp",
+      "assetPath": "/products-reference/herb-153-20261027-s.webp",
       "products": [
         "산초(천초)"
       ],
-      "id": "herb-153"
+      "id": "herb-153",
+      "generationPrompt": "Use case product-mockup. Create photorealistic catalog photograph of 산초. Closely match the reference image material color, shape, cutting and texture. Generous natural pile on clean white seamless background, soft diffuse studio light, all edges visible. No text, logos, watermark, bowl, packaging, hands, props, other plants.",
+      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색 반영."
     },
     {
       "name": "삼릉",
@@ -1447,20 +1471,24 @@
     },
     {
       "name": "상기생",
-      "assetPath": "/products-reference/herb-155.webp",
+      "assetPath": "/products-reference/herb-155-20261027-s.webp",
       "products": [
         "상기생"
       ],
-      "id": "herb-155"
+      "id": "herb-155",
+      "generationPrompt": "Use case product-mockup. Create photorealistic catalog photograph of 상기생. Closely match the reference image material color, shape, cutting and texture. Generous natural pile on clean white seamless background, soft diffuse studio light, all edges visible. No text, logos, watermark, bowl, packaging, hands, props, other plants.",
+      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색 반영."
     },
     {
       "name": "상백피",
-      "assetPath": "/products-reference/herb-156.webp",
+      "assetPath": "/products-reference/herb-156-20261027-s.webp",
       "products": [
         "상백피",
         "상백피"
       ],
-      "id": "herb-156"
+      "id": "herb-156",
+      "generationPrompt": "Use case product-mockup. Create photorealistic catalog photograph of 상백피. Closely match the reference image material color, shape, cutting and texture. Generous natural pile on clean white seamless background, soft diffuse studio light, all edges visible. No text, logos, watermark, bowl, packaging, hands, props, other plants.",
+      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색 반영."
     },
     {
       "name": "상백피/거피",
@@ -1472,35 +1500,43 @@
     },
     {
       "name": "상심자",
-      "assetPath": "/products-reference/herb-158.webp",
+      "assetPath": "/products-reference/herb-158-20261027-s.webp",
       "products": [
         "상심자"
       ],
-      "id": "herb-158"
+      "id": "herb-158",
+      "generationPrompt": "Use case product-mockup. Create photorealistic catalog photograph of 상심자. Closely match the reference image material color, shape, cutting and texture. Generous natural pile on clean white seamless background, soft diffuse studio light, all edges visible. No text, logos, watermark, bowl, packaging, hands, props, other plants.",
+      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색 반영."
     },
     {
       "name": "상지",
-      "assetPath": "/products-reference/herb-159.webp",
+      "assetPath": "/products-reference/herb-159-20261027-s.webp",
       "products": [
         "상지"
       ],
-      "id": "herb-159"
+      "id": "herb-159",
+      "generationPrompt": "Use case product-mockup. Create photorealistic catalog photograph of 상지. Closely match the reference image material color, shape, cutting and texture. Generous natural pile on clean white seamless background, soft diffuse studio light, all edges visible. No text, logos, watermark, bowl, packaging, hands, props, other plants.",
+      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색 반영."
     },
     {
       "name": "상표초",
-      "assetPath": "/products-reference/herb-160.webp",
+      "assetPath": "/products-reference/herb-160-20261027-s.webp",
       "products": [
         "상표초"
       ],
-      "id": "herb-160"
+      "id": "herb-160",
+      "generationPrompt": "Use case product-mockup. Create photorealistic catalog photograph of 상표초. Closely match the reference image material color, shape, cutting and texture. Generous natural pile on clean white seamless background, soft diffuse studio light, all edges visible. No text, logos, watermark, bowl, packaging, hands, props, other plants.",
+      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색 반영."
     },
     {
       "name": "상황버섯",
-      "assetPath": "/products-reference/herb-161.webp",
+      "assetPath": "/products-reference/herb-161-20261027-s.webp",
       "products": [
         "상황버섯"
       ],
-      "id": "herb-161"
+      "id": "herb-161",
+      "generationPrompt": "Use case product-mockup. Create photorealistic catalog photograph of 상황버섯. Closely match the reference image material color, shape, cutting and texture. Generous natural pile on clean white seamless background, soft diffuse studio light, all edges visible. No text, logos, watermark, bowl, packaging, hands, props, other plants.",
+      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색 반영."
     },
     {
       "name": "서장경",
