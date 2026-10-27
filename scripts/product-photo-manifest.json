@@ -1286,13 +1286,13 @@
     },
     {
       "name": "부자",
-      "assetPath": "/products-reference/herb-136-20261027-c.webp",
+      "assetPath": "/products-reference/herb-136-20261027-d.webp",
       "products": [
         "부자"
       ],
       "id": "herb-136",
-      "generationPrompt": "Use case product-mockup. Photorealistic product catalog photo of 부자. Match supplied reference material color, form, cut and texture. A generous natural pile on a clean white background with soft studio lighting, no plate, spoon, text, logos, label, packaging or watermark.",
-      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색 반영."
+      "generationPrompt": "Edit image 1 (target, roasted aconite slices) for a catalog: preserve EXACTLY its composition, quantity, shape, size, edges and arrangement of the slices, white background and natural texture. Change ONLY the color of slices to match image 2 (color reference, raw aconite): warm tan, amber and translucent brown with dark brown edges. Do not change to the shapes in image 2. Keep light studio style, no text.",
+      "editorialNote": "부자/포 사진의 형태를 기준으로 기존 부자 사진의 밝은 황갈색을 적용."
     },
     {
       "name": "부자/포",
