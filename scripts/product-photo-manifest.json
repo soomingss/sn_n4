@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-26",
+  "updatedAt": "2026-10-27",
   "groups": [
     {
       "name": "가자",
@@ -498,13 +498,13 @@
     },
     {
       "name": "담두시제",
-      "assetPath": "/products-reference/herb-053-v2.webp",
+      "assetPath": "/products-reference/herb-074-20261027.webp",
       "products": [
         "담두시제"
       ],
       "id": "herb-053",
-      "generationPrompt": "Product catalog photograph of 담두시제. Reference image defines the exact material, cut form and color: 검정에 가까운 짙은 자갈색 발효 콩, 주름지고 쪼그라든 콩알 모양, 은은한 갈색 하이라이트. A generous natural pile on pure white seamless background, soft studio light, slight contact shadow, realistic dry texture. Center entire pile with margins. No packaging, text, logos, watermark, props.",
-      "editorialNote": "2026-10-26 사용자 제공 참고사진의 색·절단 형태를 반영. 흰 배경의 새 상품사진. 사용자가 두시 사진은 담두시제라고 명시함. 별도 두시 그룹 유지."
+      "generationPrompt": "Use case: product-mockup. Photorealistic catalog image for 두시. Use the supplied photo as reference for actual material, color, shape and cut; depict a generous natural pile of exactly that material on a pure white background, soft studio lighting, whole pile visible. No bowl, spoon, packaging, labels, logos, watermark or text.",
+      "editorialNote": "사용자 요청에 따라 두시와 담두시제 사진 공유."
     },
     {
       "name": "당귀",
@@ -690,11 +690,13 @@
     },
     {
       "name": "두시",
-      "assetPath": "/products-reference/herb-074.webp",
+      "assetPath": "/products-reference/herb-074-20261027.webp",
       "products": [
         "두시"
       ],
-      "id": "herb-074"
+      "id": "herb-074",
+      "generationPrompt": "Use case: product-mockup. Photorealistic catalog image for 두시. Use the supplied photo as reference for actual material, color, shape and cut; depict a generous natural pile of exactly that material on a pure white background, soft studio lighting, whole pile visible. No bowl, spoon, packaging, labels, logos, watermark or text.",
+      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색에 맞춘 이미지."
     },
     {
       "name": "두충",
@@ -706,38 +708,46 @@
     },
     {
       "name": "두충/염자",
-      "assetPath": "/products-reference/herb-076.webp",
+      "assetPath": "/products-reference/herb-076-20261027.webp",
       "products": [
         "두충/염자",
         "두충/염자",
         "두충/염자"
       ],
-      "id": "herb-076"
+      "id": "herb-076",
+      "generationPrompt": "Use case: product-mockup. Photorealistic catalog image for 두충염자. Use the supplied photo as reference for actual material, color, shape and cut; depict a generous natural pile of exactly that material on a pure white background, soft studio lighting, whole pile visible. No bowl, spoon, packaging, labels, logos, watermark or text.",
+      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색에 맞춘 이미지."
     },
     {
       "name": "등피",
-      "assetPath": "/products-reference/herb-077.webp",
+      "assetPath": "/products-reference/herb-077-20261027.webp",
       "products": [
         "등피"
       ],
-      "id": "herb-077"
+      "id": "herb-077",
+      "generationPrompt": "Use case: product-mockup. Photorealistic catalog image for 등피. Use the supplied photo as reference for actual material, color, shape and cut; depict a generous natural pile of exactly that material on a pure white background, soft studio lighting, whole pile visible. No bowl, spoon, packaging, labels, logos, watermark or text.",
+      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색에 맞춘 이미지."
     },
     {
       "name": "마가목",
-      "assetPath": "/products-reference/herb-078.webp",
+      "assetPath": "/products-reference/herb-078-20261027.webp",
       "products": [
         "마가목"
       ],
-      "id": "herb-078"
+      "id": "herb-078",
+      "generationPrompt": "Use case: product-mockup. Photorealistic catalog image for 마가목. Use the supplied photo as reference for actual material, color, shape and cut; depict a generous natural pile of exactly that material on a pure white background, soft studio lighting, whole pile visible. No bowl, spoon, packaging, labels, logos, watermark or text.",
+      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색에 맞춘 이미지."
     },
     {
       "name": "마황",
-      "assetPath": "/products-reference/herb-079.webp",
+      "assetPath": "/products-reference/herb-079-20261027.webp",
       "products": [
         "마황",
         "마황"
       ],
-      "id": "herb-079"
+      "id": "herb-079",
+      "generationPrompt": "Use case: product-mockup. Photorealistic catalog image for 마황. Use the supplied photo as reference for actual material, color, shape and cut; depict a generous natural pile of exactly that material on a pure white background, soft studio lighting, whole pile visible. No bowl, spoon, packaging, labels, logos, watermark or text.",
+      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색에 맞춘 이미지."
     },
     {
       "name": "마황/탕포",
@@ -750,19 +760,23 @@
     },
     {
       "name": "만형자",
-      "assetPath": "/products-reference/herb-081.webp",
+      "assetPath": "/products-reference/herb-081-20261027.webp",
       "products": [
         "만형자"
       ],
-      "id": "herb-081"
+      "id": "herb-081",
+      "generationPrompt": "Use case: product-mockup. Photorealistic catalog image for 만형자. Use the supplied photo as reference for actual material, color, shape and cut; depict a generous natural pile of exactly that material on a pure white background, soft studio lighting, whole pile visible. No bowl, spoon, packaging, labels, logos, watermark or text.",
+      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색에 맞춘 이미지."
     },
     {
       "name": "망초",
-      "assetPath": "/products-reference/herb-082.webp",
+      "assetPath": "/products-reference/herb-082-20261027.webp",
       "products": [
         "망초"
       ],
-      "id": "herb-082"
+      "id": "herb-082",
+      "generationPrompt": "Use case: product-mockup. Photorealistic catalog image for 망초. Use the supplied photo as reference for actual material, color, shape and cut; depict a generous natural pile of exactly that material on a pure white background, soft studio lighting, whole pile visible. No bowl, spoon, packaging, labels, logos, watermark or text.",
+      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색에 맞춘 이미지."
     },
     {
       "name": "맥문동",
@@ -784,19 +798,23 @@
     },
     {
       "name": "메밀",
-      "assetPath": "/products-reference/herb-085.webp",
+      "assetPath": "/products-reference/herb-085-20261027.webp",
       "products": [
         "메밀"
       ],
-      "id": "herb-085"
+      "id": "herb-085",
+      "generationPrompt": "Use case: product-mockup. Photorealistic catalog image for 메밀. Use the supplied photo as reference for actual material, color, shape and cut; depict a generous natural pile of exactly that material on a pure white background, soft studio lighting, whole pile visible. No bowl, spoon, packaging, labels, logos, watermark or text.",
+      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색에 맞춘 이미지."
     },
     {
       "name": "모과",
-      "assetPath": "/products-reference/herb-086.webp",
+      "assetPath": "/products-reference/herb-086-20261027.webp",
       "products": [
         "모과"
       ],
-      "id": "herb-086"
+      "id": "herb-086",
+      "generationPrompt": "Use case: product-mockup. Photorealistic catalog image for 모과. Use the supplied photo as reference for actual material, color, shape and cut; depict a generous natural pile of exactly that material on a pure white background, soft studio lighting, whole pile visible. No bowl, spoon, packaging, labels, logos, watermark or text.",
+      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색에 맞춘 이미지."
     },
     {
       "name": "모근",
@@ -824,43 +842,53 @@
     },
     {
       "name": "목단피",
-      "assetPath": "/products-reference/herb-090.webp",
+      "assetPath": "/products-reference/herb-090-20261027.webp",
       "products": [
         "목단피/AA"
       ],
-      "id": "herb-090"
+      "id": "herb-090",
+      "generationPrompt": "Use case: product-mockup. Photorealistic catalog image for 목단피. Use the supplied photo as reference for actual material, color, shape and cut; depict a generous natural pile of exactly that material on a pure white background, soft studio lighting, whole pile visible. No bowl, spoon, packaging, labels, logos, watermark or text.",
+      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색에 맞춘 이미지."
     },
     {
       "name": "목적",
-      "assetPath": "/products-reference/herb-091.webp",
+      "assetPath": "/products-reference/herb-091-20261027.webp",
       "products": [
         "목적"
       ],
-      "id": "herb-091"
+      "id": "herb-091",
+      "generationPrompt": "Use case: product-mockup. Photorealistic catalog image for 목적. Use the supplied photo as reference for actual material, color, shape and cut; depict a generous natural pile of exactly that material on a pure white background, soft studio lighting, whole pile visible. No bowl, spoon, packaging, labels, logos, watermark or text.",
+      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색에 맞춘 이미지."
     },
     {
       "name": "목통",
-      "assetPath": "/products-reference/herb-092.webp",
+      "assetPath": "/products-reference/herb-092-20261027.webp",
       "products": [
         "목통"
       ],
-      "id": "herb-092"
+      "id": "herb-092",
+      "generationPrompt": "Use case: product-mockup. Photorealistic catalog image for 목통. Use the supplied photo as reference for actual material, color, shape and cut; depict a generous natural pile of exactly that material on a pure white background, soft studio lighting, whole pile visible. No bowl, spoon, packaging, labels, logos, watermark or text.",
+      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색에 맞춘 이미지."
     },
     {
       "name": "목향",
-      "assetPath": "/products-reference/herb-093.webp",
+      "assetPath": "/products-reference/herb-093-20261027.webp",
       "products": [
         "목향"
       ],
-      "id": "herb-093"
+      "id": "herb-093",
+      "generationPrompt": "Use case: product-mockup. Photorealistic catalog image for 목향. Use the supplied photo as reference for actual material, color, shape and cut; depict a generous natural pile of exactly that material on a pure white background, soft studio lighting, whole pile visible. No bowl, spoon, packaging, labels, logos, watermark or text.",
+      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색에 맞춘 이미지."
     },
     {
       "name": "몰약",
-      "assetPath": "/products-reference/herb-094.webp",
+      "assetPath": "/products-reference/herb-094-20261027.webp",
       "products": [
         "몰약"
       ],
-      "id": "herb-094"
+      "id": "herb-094",
+      "generationPrompt": "Use case: product-mockup. Photorealistic catalog image for 몰약. Use the supplied photo as reference for actual material, color, shape and cut; depict a generous natural pile of exactly that material on a pure white background, soft studio lighting, whole pile visible. No bowl, spoon, packaging, labels, logos, watermark or text.",
+      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색에 맞춘 이미지."
     },
     {
       "name": "미후도",
