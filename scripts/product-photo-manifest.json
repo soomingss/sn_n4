@@ -1346,13 +1346,13 @@
     },
     {
       "name": "사상자",
-      "assetPath": "/products-reference/herb-142-20261027-s.webp",
+      "assetPath": "/products-reference/herb-142-20261027-rev.webp",
       "products": [
         "사상자"
       ],
       "id": "herb-142",
-      "generationPrompt": "Use case product-mockup. Create photorealistic catalog photograph of 사상자. Closely match the reference image material color, shape, cutting and texture. Generous natural pile on clean white seamless background, soft diffuse studio light, all edges visible. No text, logos, watermark, bowl, packaging, hands, props, other plants.",
-      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색 반영."
+      "generationPrompt": "Edit product photo. Change the green herb material to natural medium dark brown instead of green. Preserve the small seed texture, shape, pile and white background. Only requested changes; no text, logos, packaging or props.",
+      "editorialNote": "사용자 요청에 따라 모양, 크기 또는 색을 변경."
     },
     {
       "name": "사인초",
@@ -1376,11 +1376,13 @@
     },
     {
       "name": "산사",
-      "assetPath": "/products-reference/herb-145.webp",
+      "assetPath": "/products-reference/herb-145-20261027-rev.webp",
       "products": [
         "산사"
       ],
-      "id": "herb-145"
+      "id": "herb-145",
+      "generationPrompt": "Edit product photo. Use image 1 as edit target; preserve its small sliced hawthorn pieces and composition, recolor to the lighter red peel and tan interior of image 2. Keep white background. Only requested changes; no text, logos, packaging or props.",
+      "editorialNote": "사용자 요청에 따라 모양, 크기 또는 색을 변경."
     },
     {
       "name": "산사초",
@@ -1394,14 +1396,14 @@
     },
     {
       "name": "산수유",
-      "assetPath": "/products-reference/herb-147-20261027-s.webp",
+      "assetPath": "/products-reference/herb-147-20261027-rev.webp",
       "products": [
         "산수유",
         "산수유"
       ],
       "id": "herb-147",
-      "generationPrompt": "Use case product-mockup. Create photorealistic catalog photograph of 산수유. Closely match the reference image material color, shape, cutting and texture. Generous natural pile on clean white seamless background, soft diffuse studio light, all edges visible. No text, logos, watermark, bowl, packaging, hands, props, other plants.",
-      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색 반영."
+      "generationPrompt": "Edit product photo. Keep same fruit forms, quantity and arrangement. Darken the red fruit slightly towards deep blackish burgundy, not pure black. Preserve white background. Only requested changes; no text, logos, packaging or props.",
+      "editorialNote": "사용자 요청에 따라 모양, 크기 또는 색을 변경."
     },
     {
       "name": "산약",
@@ -1415,11 +1417,13 @@
     },
     {
       "name": "산약/사각",
-      "assetPath": "/products-reference/herb-149.webp",
+      "assetPath": "/products-reference/herb-149-20261027-rev.webp",
       "products": [
         "산약(사각)"
       ],
-      "id": "herb-149"
+      "id": "herb-149",
+      "generationPrompt": "Edit product photo. Keep same white diced rhizome material and shapes. Make each individual block approximately one third the size and show more numerous small blocks in a pile of similar overall size. White background. Only requested changes; no text, logos, packaging or props.",
+      "editorialNote": "사용자 요청에 따라 모양, 크기 또는 색을 변경."
     },
     {
       "name": "산장",
@@ -1433,13 +1437,13 @@
     },
     {
       "name": "산조인",
-      "assetPath": "/products-reference/herb-151-20261027-s.webp",
+      "assetPath": "/products-reference/herb-151-20261027-rev.webp",
       "products": [
         "산조인"
       ],
       "id": "herb-151",
-      "generationPrompt": "Use case product-mockup. Create photorealistic catalog photograph of 산조인. Closely match the reference image material color, shape, cutting and texture. Generous natural pile on clean white seamless background, soft diffuse studio light, all edges visible. No text, logos, watermark, bowl, packaging, hands, props, other plants.",
-      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색 반영."
+      "generationPrompt": "Edit product photo. Edit image 1: keep its small seed shapes, quantity, full composition and pile size, but change the seed color to the natural deep reddish red of image 2. White background. Only requested changes; no text, logos, packaging or props.",
+      "editorialNote": "사용자 요청에 따라 모양, 크기 또는 색을 변경."
     },
     {
       "name": "산조인초",
@@ -1492,31 +1496,33 @@
     },
     {
       "name": "상백피/거피",
-      "assetPath": "/products-reference/herb-157.webp",
+      "assetPath": "/products-reference/herb-157-20261027-rev.webp",
       "products": [
         "상백피/거피"
       ],
-      "id": "herb-157"
+      "id": "herb-157",
+      "generationPrompt": "Edit product photo. Keep same bark pieces shapes and composition but change their orange brown outer color to pale ivory white peeled bark color. Keep fine fibrous texture and white background. Only requested changes; no text, logos, packaging or props.",
+      "editorialNote": "사용자 요청에 따라 모양, 크기 또는 색을 변경."
     },
     {
       "name": "상심자",
-      "assetPath": "/products-reference/herb-158-20261027-s.webp",
+      "assetPath": "/products-reference/herb-158-20261027-rev.webp",
       "products": [
         "상심자"
       ],
       "id": "herb-158",
-      "generationPrompt": "Use case product-mockup. Create photorealistic catalog photograph of 상심자. Closely match the reference image material color, shape, cutting and texture. Generous natural pile on clean white seamless background, soft diffuse studio light, all edges visible. No text, logos, watermark, bowl, packaging, hands, props, other plants.",
-      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색 반영."
+      "generationPrompt": "Edit product photo. Keep the same dried mulberry shapes, make each individual fruit about half size and show many more in a pile of similar overall size. Darken slightly toward blackish brown, preserve white background. Only requested changes; no text, logos, packaging or props.",
+      "editorialNote": "사용자 요청에 따라 모양, 크기 또는 색을 변경."
     },
     {
       "name": "상지",
-      "assetPath": "/products-reference/herb-159-20261027-s.webp",
+      "assetPath": "/products-reference/herb-159-20261027-rev.webp",
       "products": [
         "상지"
       ],
       "id": "herb-159",
-      "generationPrompt": "Use case product-mockup. Create photorealistic catalog photograph of 상지. Closely match the reference image material color, shape, cutting and texture. Generous natural pile on clean white seamless background, soft diffuse studio light, all edges visible. No text, logos, watermark, bowl, packaging, hands, props, other plants.",
-      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색 반영."
+      "generationPrompt": "Edit product photo. Make the existing pile noticeably larger in the frame, keeping same twigs, colors, material, arrangement and white background. Entire pile remains in frame. Only requested changes; no text, logos, packaging or props.",
+      "editorialNote": "사용자 요청에 따라 모양, 크기 또는 색을 변경."
     },
     {
       "name": "상표초",
