@@ -977,11 +977,13 @@
     },
     {
       "name": "방풍/식",
-      "assetPath": "/products-reference/herb-104.webp",
+      "assetPath": "/products-reference/herb-104-20261027-c.webp",
       "products": [
         "방풍/식"
       ],
-      "id": "herb-104"
+      "id": "herb-104",
+      "generationPrompt": "Use case product-mockup. Photorealistic product catalog photo of 방풍/식. Match supplied reference material color, form, cut and texture. A generous natural pile on a clean white background with soft studio lighting, no plate, spoon, text, logos, label, packaging or watermark.",
+      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색 반영."
     },
     {
       "name": "백강잠",
@@ -1001,12 +1003,12 @@
     },
     {
       "name": "백두구",
-      "assetPath": "/products-reference/herb-107-20261027.webp",
+      "assetPath": "/products-reference/herb-107-20261027-c.webp",
       "products": [
         "백두구"
       ],
       "id": "herb-107",
-      "generationPrompt": "Use case product-mockup. Create a photorealistic catalog product photo for 백두구. Use attached reference as material appearance reference, faithfully replicate its color, texture, cut shape and proportion. The individual particles are very tiny; show many tiny dark seed fragments, never large pods.  Center a generous pile on pure white background, diffuse studio lighting, all edges visible. No text, packaging, labels, logos, watermark, bowls, utensils, or other objects.",
+      "generationPrompt": "Use case product-mockup. Photorealistic product catalog photo of 백두구. Match supplied reference material color, form, cut and texture. Very tiny dark brown granules as in reference, not big pods. A generous natural pile on a clean white background with soft studio lighting, no plate, spoon, text, logos, label, packaging or watermark.",
       "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색 반영."
     },
     {
@@ -1154,11 +1156,13 @@
     },
     {
       "name": "백출초",
-      "assetPath": "/products-reference/herb-123.webp",
+      "assetPath": "/products-reference/herb-123-20261027-c.webp",
       "products": [
         "백출초"
       ],
-      "id": "herb-123"
+      "id": "herb-123",
+      "generationPrompt": "Edit this existing herb catalog photo: keep the exact same sliced root shapes, quantity, arrangement, detail and white background. Make slices slightly darker with subtle toasted brown and a hint of dark brown from roasting; do not make black or charred.",
+      "editorialNote": "백출/재배 기준 약간 거무스름하게 볶은 색으로 수정."
     },
     {
       "name": "백편두",
@@ -1190,109 +1194,135 @@
     },
     {
       "name": "별갑",
-      "assetPath": "/products-reference/herb-127.webp",
+      "assetPath": "/products-reference/herb-127-20261027-c.webp",
       "products": [
         "별갑"
       ],
-      "id": "herb-127"
+      "id": "herb-127",
+      "generationPrompt": "Use case product-mockup. Photorealistic product catalog photo of 별갑. Match supplied reference material color, form, cut and texture. A generous natural pile on a clean white background with soft studio lighting, no plate, spoon, text, logos, label, packaging or watermark.",
+      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색 반영."
     },
     {
       "name": "별갑교",
-      "assetPath": "/products-reference/herb-128.webp",
+      "assetPath": "/products-reference/herb-128-20261027-c.webp",
       "products": [
         "별갑교"
       ],
-      "id": "herb-128"
+      "id": "herb-128",
+      "generationPrompt": "Use case product-mockup. Photorealistic product catalog photo of 별갑교. Match supplied reference material color, form, cut and texture. A generous natural pile on a clean white background with soft studio lighting, no plate, spoon, text, logos, label, packaging or watermark.",
+      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색 반영."
     },
     {
       "name": "보골지/염자",
-      "assetPath": "/products-reference/herb-129.webp",
+      "assetPath": "/products-reference/herb-129-20261027-c.webp",
       "products": [
         "보골지/염자",
         "보골지/염자"
       ],
-      "id": "herb-129"
+      "id": "herb-129",
+      "generationPrompt": "Use case product-mockup. Photorealistic product catalog photo of 보골지/염자. Match supplied reference material color, form, cut and texture. A generous natural pile on a clean white background with soft studio lighting, no plate, spoon, text, logos, label, packaging or watermark.",
+      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색 반영."
     },
     {
       "name": "복령",
-      "assetPath": "/products-reference/herb-130.webp",
+      "assetPath": "/products-reference/herb-130-20261027-c.webp",
       "products": [
         "복령",
         "복령"
       ],
-      "id": "herb-130"
+      "id": "herb-130",
+      "generationPrompt": "Use case product-mockup. Photorealistic product catalog photo of 복령. Match supplied reference material color, form, cut and texture. A generous natural pile on a clean white background with soft studio lighting, no plate, spoon, text, logos, label, packaging or watermark.",
+      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색 반영."
     },
     {
       "name": "복령/신",
-      "assetPath": "/products-reference/herb-131.webp",
+      "assetPath": "/products-reference/herb-131-20261027-c.webp",
       "products": [
         "복령/신"
       ],
-      "id": "herb-131"
+      "id": "herb-131",
+      "generationPrompt": "Use case product-mockup. Photorealistic product catalog photo of 복령/신. Match supplied reference material color, form, cut and texture. A generous natural pile on a clean white background with soft studio lighting, no plate, spoon, text, logos, label, packaging or watermark.",
+      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색 반영."
     },
     {
       "name": "복령/적",
-      "assetPath": "/products-reference/herb-132.webp",
+      "assetPath": "/products-reference/herb-132-20261027-c.webp",
       "products": [
         "복령/적"
       ],
-      "id": "herb-132"
+      "id": "herb-132",
+      "generationPrompt": "Use case product-mockup. Photorealistic product catalog photo of 복령/적. Match supplied reference material color, form, cut and texture. A generous natural pile on a clean white background with soft studio lighting, no plate, spoon, text, logos, label, packaging or watermark.",
+      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색 반영."
     },
     {
       "name": "복령/칼",
-      "assetPath": "/products-reference/herb-133.webp",
+      "assetPath": "/products-reference/herb-133-20261027-c.webp",
       "products": [
         "복령/칼"
       ],
-      "id": "herb-133"
+      "id": "herb-133",
+      "generationPrompt": "Use case product-mockup. Photorealistic product catalog photo of 복령/칼. Match supplied reference material color, form, cut and texture. A generous natural pile on a clean white background with soft studio lighting, no plate, spoon, text, logos, label, packaging or watermark.",
+      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색 반영."
     },
     {
       "name": "복령피",
-      "assetPath": "/products-reference/herb-134.webp",
+      "assetPath": "/products-reference/herb-134-20261027-c.webp",
       "products": [
         "복령피"
       ],
-      "id": "herb-134"
+      "id": "herb-134",
+      "generationPrompt": "Use case product-mockup. Photorealistic product catalog photo of 복령피. Match supplied reference material color, form, cut and texture. A generous natural pile on a clean white background with soft studio lighting, no plate, spoon, text, logos, label, packaging or watermark.",
+      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색 반영."
     },
     {
       "name": "복분자",
-      "assetPath": "/products-reference/herb-135.webp",
+      "assetPath": "/products-reference/herb-135-20261027-c.webp",
       "products": [
         "복분자"
       ],
-      "id": "herb-135"
+      "id": "herb-135",
+      "generationPrompt": "Use case product-mockup. Photorealistic product catalog photo of 복분자. Match supplied reference material color, form, cut and texture. A generous natural pile on a clean white background with soft studio lighting, no plate, spoon, text, logos, label, packaging or watermark.",
+      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색 반영."
     },
     {
       "name": "부자",
-      "assetPath": "/products-reference/herb-136.webp",
+      "assetPath": "/products-reference/herb-136-20261027-c.webp",
       "products": [
         "부자"
       ],
-      "id": "herb-136"
+      "id": "herb-136",
+      "generationPrompt": "Use case product-mockup. Photorealistic product catalog photo of 부자. Match supplied reference material color, form, cut and texture. A generous natural pile on a clean white background with soft studio lighting, no plate, spoon, text, logos, label, packaging or watermark.",
+      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색 반영."
     },
     {
       "name": "부자/포",
-      "assetPath": "/products-reference/herb-137.webp",
+      "assetPath": "/products-reference/herb-137-20261027-c.webp",
       "products": [
         "부자/포"
       ],
-      "id": "herb-137"
+      "id": "herb-137",
+      "generationPrompt": "Use case product-mockup. Photorealistic product catalog photo of 부자/포. Match supplied reference material color, form, cut and texture. A generous natural pile on a clean white background with soft studio lighting, no plate, spoon, text, logos, label, packaging or watermark.",
+      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색 반영."
     },
     {
       "name": "비해",
-      "assetPath": "/products-reference/herb-138.webp",
+      "assetPath": "/products-reference/herb-138-20261027-c.webp",
       "products": [
         "비해"
       ],
-      "id": "herb-138"
+      "id": "herb-138",
+      "generationPrompt": "Use case product-mockup. Photorealistic product catalog photo of 비해. Match supplied reference material color, form, cut and texture. A generous natural pile on a clean white background with soft studio lighting, no plate, spoon, text, logos, label, packaging or watermark.",
+      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색 반영."
     },
     {
       "name": "빈랑자",
-      "assetPath": "/products-reference/herb-139.webp",
+      "assetPath": "/products-reference/herb-139-20261027-c.webp",
       "products": [
         "빈랑자"
       ],
-      "id": "herb-139"
+      "id": "herb-139",
+      "generationPrompt": "Use case product-mockup. Photorealistic product catalog photo of 빈랑자. Match supplied reference material color, form, cut and texture. A generous natural pile on a clean white background with soft studio lighting, no plate, spoon, text, logos, label, packaging or watermark.",
+      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색 반영."
     },
     {
       "name": "사간",
