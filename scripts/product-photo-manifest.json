@@ -751,12 +751,14 @@
     },
     {
       "name": "마황/탕포",
-      "assetPath": "/products-reference/herb-080.webp",
+      "assetPath": "/products-reference/herb-080-20261027.webp",
       "products": [
         "마황/탕포",
         "마황/탕포"
       ],
-      "id": "herb-080"
+      "id": "herb-080",
+      "generationPrompt": "Use case product-mockup: create photorealistic catalog photo of 마황/탕포 using attached reference for its appearance: a pile of many very fine, slender, short, dry brown ochre stems and tiny twig segments, warm brown tones. Center a generous pile on a pure white seamless background, soft diffuse studio light, entire pile in frame. No bowl, text, labels, watermark, packaging, hands or other objects.",
+      "editorialNote": "2026-10-27 마황/탕포 사용자 참고사진 기준."
     },
     {
       "name": "만형자",
