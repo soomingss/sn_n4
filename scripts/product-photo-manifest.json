@@ -916,52 +916,64 @@
     },
     {
       "name": "반하",
-      "assetPath": "/products-reference/herb-098.webp",
+      "assetPath": "/products-reference/herb-098-20261027.webp",
       "products": [
         "반하"
       ],
-      "id": "herb-098"
+      "id": "herb-098",
+      "generationPrompt": "Use case product-mockup. Create a photorealistic catalog product photo for 반하. Use attached reference as material appearance reference, faithfully replicate its color, texture, cut shape and proportion.   Center a generous pile on pure white background, diffuse studio lighting, all edges visible. No text, packaging, labels, logos, watermark, bowls, utensils, or other objects.",
+      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색 반영."
     },
     {
       "name": "반하/생강백반제",
-      "assetPath": "/products-reference/herb-099.webp",
+      "assetPath": "/products-reference/herb-099-20261027.webp",
       "products": [
         "반하/생강백반제"
       ],
-      "id": "herb-099"
+      "id": "herb-099",
+      "generationPrompt": "Use case product-mockup. Create a photorealistic catalog product photo for 반하/생강백반제. Use attached reference as material appearance reference, faithfully replicate its color, texture, cut shape and proportion.   Center a generous pile on pure white background, diffuse studio lighting, all edges visible. No text, packaging, labels, logos, watermark, bowls, utensils, or other objects.",
+      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색 반영."
     },
     {
       "name": "반하/절",
-      "assetPath": "/products-reference/herb-100.webp",
+      "assetPath": "/products-reference/herb-100-20261027.webp",
       "products": [
         "반하/절"
       ],
-      "id": "herb-100"
+      "id": "herb-100",
+      "generationPrompt": "Use case product-mockup. Create a photorealistic catalog product photo for 반하/절. Use attached reference as material appearance reference, faithfully replicate its color, texture, cut shape and proportion.   Center a generous pile on pure white background, diffuse studio lighting, all edges visible. No text, packaging, labels, logos, watermark, bowls, utensils, or other objects.",
+      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색 반영."
     },
     {
       "name": "반하/절/생강백반제",
-      "assetPath": "/products-reference/herb-101.webp",
+      "assetPath": "/products-reference/herb-101-20261027.webp",
       "products": [
         "반하/절/생강백반제",
         "반하/절/생강백반제"
       ],
-      "id": "herb-101"
+      "id": "herb-101",
+      "generationPrompt": "Use case product-mockup. Create a photorealistic catalog product photo for 반하/절/생강백반제. Use attached reference as material appearance reference, faithfully replicate its color, texture, cut shape and proportion.   Center a generous pile on pure white background, diffuse studio lighting, all edges visible. No text, packaging, labels, logos, watermark, bowls, utensils, or other objects.",
+      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색 반영."
     },
     {
       "name": "방기",
-      "assetPath": "/products-reference/herb-102.webp",
+      "assetPath": "/products-reference/herb-102-20261027.webp",
       "products": [
         "방기"
       ],
-      "id": "herb-102"
+      "id": "herb-102",
+      "generationPrompt": "Use case product-mockup. Create a photorealistic catalog product photo for 방기. Use attached reference as material appearance reference, faithfully replicate its color, texture, cut shape and proportion.   Center a generous pile on pure white background, diffuse studio lighting, all edges visible. No text, packaging, labels, logos, watermark, bowls, utensils, or other objects.",
+      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색 반영."
     },
     {
       "name": "방풍",
-      "assetPath": "/products-reference/herb-103.webp",
+      "assetPath": "/products-reference/herb-103-20261027.webp",
       "products": [
         "방풍"
       ],
-      "id": "herb-103"
+      "id": "herb-103",
+      "generationPrompt": "Use case product-mockup. Create a photorealistic catalog product photo for 방풍. Use attached reference as material appearance reference, faithfully replicate its color, texture, cut shape and proportion.   Center a generous pile on pure white background, diffuse studio lighting, all edges visible. No text, packaging, labels, logos, watermark, bowls, utensils, or other objects.",
+      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색 반영."
     },
     {
       "name": "방풍/식",
@@ -989,11 +1001,13 @@
     },
     {
       "name": "백두구",
-      "assetPath": "/products-reference/herb-107.webp",
+      "assetPath": "/products-reference/herb-107-20261027.webp",
       "products": [
         "백두구"
       ],
-      "id": "herb-107"
+      "id": "herb-107",
+      "generationPrompt": "Use case product-mockup. Create a photorealistic catalog product photo for 백두구. Use attached reference as material appearance reference, faithfully replicate its color, texture, cut shape and proportion. The individual particles are very tiny; show many tiny dark seed fragments, never large pods.  Center a generous pile on pure white background, diffuse studio lighting, all edges visible. No text, packaging, labels, logos, watermark, bowls, utensils, or other objects.",
+      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색 반영."
     },
     {
       "name": "백두구/추말",
@@ -1005,19 +1019,23 @@
     },
     {
       "name": "백두옹",
-      "assetPath": "/products-reference/herb-109.webp",
+      "assetPath": "/products-reference/herb-109-20261027.webp",
       "products": [
         "백두옹"
       ],
-      "id": "herb-109"
+      "id": "herb-109",
+      "generationPrompt": "Use case product-mockup. Create a photorealistic catalog product photo for 백두옹. Use attached reference as material appearance reference, faithfully replicate its color, texture, cut shape and proportion.   Center a generous pile on pure white background, diffuse studio lighting, all edges visible. No text, packaging, labels, logos, watermark, bowls, utensils, or other objects.",
+      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색 반영."
     },
     {
       "name": "백렴",
-      "assetPath": "/products-reference/herb-110.webp",
+      "assetPath": "/products-reference/herb-110-20261027.webp",
       "products": [
         "백렴"
       ],
-      "id": "herb-110"
+      "id": "herb-110",
+      "generationPrompt": "Use case product-mockup. Create a photorealistic catalog product photo for 백렴. Use attached reference as material appearance reference, faithfully replicate its color, texture, cut shape and proportion.   Center a generous pile on pure white background, diffuse studio lighting, all edges visible. No text, packaging, labels, logos, watermark, bowls, utensils, or other objects.",
+      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색 반영."
     },
     {
       "name": "백반",
@@ -1029,76 +1047,94 @@
     },
     {
       "name": "백부근",
-      "assetPath": "/products-reference/herb-112.webp",
+      "assetPath": "/products-reference/herb-112-20261027.webp",
       "products": [
         "백부근"
       ],
-      "id": "herb-112"
+      "id": "herb-112",
+      "generationPrompt": "Use case product-mockup. Create a photorealistic catalog product photo for 백부근. Use attached reference as material appearance reference, faithfully replicate its color, texture, cut shape and proportion.   Center a generous pile on pure white background, diffuse studio lighting, all edges visible. No text, packaging, labels, logos, watermark, bowls, utensils, or other objects.",
+      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색 반영."
     },
     {
       "name": "백부자",
-      "assetPath": "/products-reference/herb-113.webp",
+      "assetPath": "/products-reference/herb-113-20261027.webp",
       "products": [
         "백부자"
       ],
-      "id": "herb-113"
+      "id": "herb-113",
+      "generationPrompt": "Use case product-mockup. Create a photorealistic catalog product photo for 백부자. Use attached reference as material appearance reference, faithfully replicate its color, texture, cut shape and proportion.   Center a generous pile on pure white background, diffuse studio lighting, all edges visible. No text, packaging, labels, logos, watermark, bowls, utensils, or other objects.",
+      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색 반영."
     },
     {
       "name": "백선피",
-      "assetPath": "/products-reference/herb-114.webp",
+      "assetPath": "/products-reference/herb-114-20261027.webp",
       "products": [
         "백선피"
       ],
-      "id": "herb-114"
+      "id": "herb-114",
+      "generationPrompt": "Use case product-mockup. Create a photorealistic catalog product photo for 백선피. Use attached reference as material appearance reference, faithfully replicate its color, texture, cut shape and proportion.   Center a generous pile on pure white background, diffuse studio lighting, all edges visible. No text, packaging, labels, logos, watermark, bowls, utensils, or other objects.",
+      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색 반영."
     },
     {
       "name": "백수오",
-      "assetPath": "/products-reference/herb-115.webp",
+      "assetPath": "/products-reference/herb-115-20261027.webp",
       "products": [
         "백수오"
       ],
-      "id": "herb-115"
+      "id": "herb-115",
+      "generationPrompt": "Use case product-mockup. Create a photorealistic catalog product photo for 백수오. Use attached reference as material appearance reference, faithfully replicate its color, texture, cut shape and proportion.   Center a generous pile on pure white background, diffuse studio lighting, all edges visible. No text, packaging, labels, logos, watermark, bowls, utensils, or other objects.",
+      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색 반영."
     },
     {
       "name": "백자인",
-      "assetPath": "/products-reference/herb-116.webp",
+      "assetPath": "/products-reference/herb-116-20261027.webp",
       "products": [
         "백자인"
       ],
-      "id": "herb-116"
+      "id": "herb-116",
+      "generationPrompt": "Use case product-mockup. Create a photorealistic catalog product photo for 백자인. Use attached reference as material appearance reference, faithfully replicate its color, texture, cut shape and proportion.   Center a generous pile on pure white background, diffuse studio lighting, all edges visible. No text, packaging, labels, logos, watermark, bowls, utensils, or other objects.",
+      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색 반영."
     },
     {
       "name": "백지",
-      "assetPath": "/products-reference/herb-117.webp",
+      "assetPath": "/products-reference/herb-117-20261027.webp",
       "products": [
         "백지",
         "백지"
       ],
-      "id": "herb-117"
+      "id": "herb-117",
+      "generationPrompt": "Use case product-mockup. Create a photorealistic catalog product photo for 백지. Use attached reference as material appearance reference, faithfully replicate its color, texture, cut shape and proportion.   Center a generous pile on pure white background, diffuse studio lighting, all edges visible. No text, packaging, labels, logos, watermark, bowls, utensils, or other objects.",
+      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색 반영."
     },
     {
       "name": "백출",
-      "assetPath": "/products-reference/herb-118.webp",
+      "assetPath": "/products-reference/herb-118-20261027.webp",
       "products": [
         "백출"
       ],
-      "id": "herb-118"
+      "id": "herb-118",
+      "generationPrompt": "Use case product-mockup. Create a photorealistic catalog product photo for 백출. Use attached reference as material appearance reference, faithfully replicate its color, texture, cut shape and proportion.   Center a generous pile on pure white background, diffuse studio lighting, all edges visible. No text, packaging, labels, logos, watermark, bowls, utensils, or other objects.",
+      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색 반영."
     },
     {
       "name": "백출/기원",
-      "assetPath": "/products-reference/herb-119.webp",
+      "assetPath": "/products-reference/herb-119-20261027.webp",
       "products": [
         "백출/기원"
       ],
-      "id": "herb-119"
+      "id": "herb-119",
+      "generationPrompt": "Use case product-mockup. Create a photorealistic catalog product photo for 백출/기원. Use attached reference as material appearance reference, faithfully replicate its color, texture, cut shape and proportion.   Center a generous pile on pure white background, diffuse studio lighting, all edges visible. No text, packaging, labels, logos, watermark, bowls, utensils, or other objects.",
+      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색 반영."
     },
     {
       "name": "백출/미감침",
-      "assetPath": "/products-reference/herb-120.webp",
+      "assetPath": "/products-reference/herb-120-20261027.webp",
       "products": [
         "백출/미감침"
       ],
-      "id": "herb-120"
+      "id": "herb-120",
+      "generationPrompt": "Use case product-mockup. Create a photorealistic catalog product photo for 백출/미감침. Use attached reference as material appearance reference, faithfully replicate its color, texture, cut shape and proportion.   Center a generous pile on pure white background, diffuse studio lighting, all edges visible. No text, packaging, labels, logos, watermark, bowls, utensils, or other objects.",
+      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색 반영."
     },
     {
       "name": "백출/재배",
@@ -1126,19 +1162,23 @@
     },
     {
       "name": "백편두",
-      "assetPath": "/products-reference/herb-124.webp",
+      "assetPath": "/products-reference/herb-124-20261027.webp",
       "products": [
         "백편두"
       ],
-      "id": "herb-124"
+      "id": "herb-124",
+      "generationPrompt": "Use case product-mockup. Create a photorealistic catalog product photo for 백편두. Use attached reference as material appearance reference, faithfully replicate its color, texture, cut shape and proportion.   Center a generous pile on pure white background, diffuse studio lighting, all edges visible. No text, packaging, labels, logos, watermark, bowls, utensils, or other objects.",
+      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색 반영."
     },
     {
       "name": "백편두/추말",
-      "assetPath": "/products-reference/herb-125.webp",
+      "assetPath": "/products-reference/herb-125-20261027.webp",
       "products": [
         "백편두/추말"
       ],
-      "id": "herb-125"
+      "id": "herb-125",
+      "generationPrompt": "Use case product-mockup. Create a photorealistic catalog product photo for 백편두/추말. Use attached reference as material appearance reference, faithfully replicate its color, texture, cut shape and proportion.  Depict the finely coarse crushed white beans in the package, not whole beans and not powder. Center a generous pile on pure white background, diffuse studio lighting, all edges visible. No text, packaging, labels, logos, watermark, bowls, utensils, or other objects.",
+      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색 반영."
     },
     {
       "name": "백합",
