@@ -1366,13 +1366,13 @@
     },
     {
       "name": "사인초/추말",
-      "assetPath": "/products-reference/herb-144-20261027-s.webp",
+      "assetPath": "/products-reference/herb-144-20261027-large.webp",
       "products": [
         "사인초/추말"
       ],
       "id": "herb-144",
-      "generationPrompt": "Use case product-mockup. Create photorealistic catalog photograph of 사인초/추말. Closely match the reference image material color, shape, cutting and texture. Generous natural pile on clean white seamless background, soft diffuse studio light, all edges visible. No text, logos, watermark, bowl, packaging, hands, props, other plants.",
-      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색 반영."
+      "generationPrompt": "Edit this product photo: enlarge the existing pile of ground roasted cardamom by around 30 percent in the frame so it is much easier to see. Keep its exact brown color, fine powder texture, round shape, composition, and white background. Keep the whole pile visible with a small white margin. No text, labels, props, or other changes.",
+      "editorialNote": "사인초/추말 가루가 화면에 더 크게 보이도록 확대."
     },
     {
       "name": "산사",
