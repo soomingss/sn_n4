@@ -1788,13 +1788,14 @@
     },
     {
       "name": "여정실",
-      "assetPath": "/products-reference/herb-187-20261028.webp",
+      "assetPath": "/products-reference/herb-187-20261028-v2.webp",
       "products": [
         "여정실"
       ],
       "id": "herb-187",
-      "generationPrompt": "Product catalog photograph of 여정실, match attached reference material color, cut, texture and shape. A generous pile centered on pure white background, studio light. No bowl, text, logos, watermark, packaging, hands or props.",
-      "editorialNote": "2026-10-28 사용자 참고사진 반영."
+      "generationPrompt": "Edit product photo: Change ONLY color of berries to near black natural dark charcoal black. Keep same wrinkled shapes, quantity, arrangement and white background.",
+      "editorialNote": "2026-10-28 사용자 요청: 용골 풍성하게, 여정실 검게, 우담남성 흰 배경.",
+      "imageType": "AI-edited product photo"
     },
     {
       "name": "여정실/주증",
@@ -1901,13 +1902,14 @@
     },
     {
       "name": "용골",
-      "assetPath": "/products-reference/herb-199-20261028.webp",
+      "assetPath": "/products-reference/herb-199-20261028-v2.webp",
       "products": [
         "용골"
       ],
       "id": "herb-199",
-      "generationPrompt": "Product catalog photograph of 용골, match attached reference material color, cut, texture and shape. A generous pile centered on pure white background, studio light. No bowl, text, logos, watermark, packaging, hands or props.",
-      "editorialNote": "2026-10-28 사용자 참고사진 반영."
+      "generationPrompt": "Edit product photo: Keep exact porous ivory white chunks. Increase quantity into a slightly more generous fuller pile, soft studio lighting and pure white background. No props or text.",
+      "editorialNote": "2026-10-28 사용자 요청: 용골 풍성하게, 여정실 검게, 우담남성 흰 배경.",
+      "imageType": "AI-edited product photo"
     },
     {
       "name": "용골/가루",
@@ -1938,13 +1940,14 @@
     },
     {
       "name": "우담남성",
-      "assetPath": "/products/herb-203-original.jpg",
+      "assetPath": "/products/herb-203-20261028-v2.webp",
       "products": [
         "우담남성"
       ],
       "id": "herb-203",
-      "imageType": "user-provided original photo",
-      "editorialNote": "내용물이 보이지 않는 용기 참고사진은 원본 사용."
+      "imageType": "AI-edited product photo",
+      "editorialNote": "2026-10-28 사용자 요청: 용골 풍성하게, 여정실 검게, 우담남성 흰 배경.",
+      "generationPrompt": "Edit product photo: Replace ONLY the background with pure white studio background. Preserve jar and packaging geometry, label, all original text and colors exactly. Keep natural soft contact shadow. Do not invent contents or alter label."
     },
     {
       "name": "우방자",
