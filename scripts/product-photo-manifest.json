@@ -2177,12 +2177,13 @@
     },
     {
       "name": "자근",
-      "assetPath": "/products-reference/herb-225.webp",
+      "assetPath": "/products-reference/herb-225-20261028-peony.webp",
       "products": [
         "자근"
       ],
       "id": "herb-225",
-      "generationPrompt": "Use case: product-mockup. Asset: square Korean medicinal material catalog photograph for Shinnong Herb. Subject: 자근 (Lithospermum erythrorhizon dried deep purple red roots). Product names: 자근. . . Show only this correctly identified dried medicinal material in the commercial form named, a modest loose pile centered at about 65 percent of frame width, fully visible with generous white margins. Seamless pure white #ffffff background, natural soft studio light, subtle contact shadow, realistic dry texture and true subdued material colors, crisp macro detail, slightly elevated three quarter camera, premium clean ecommerce product photography. No living growing plant, no fresh produce unless the named material requires it. No containers, bowls, spoons, packaging, hands, labels, words, watermark, collage, comparison grid, decorative elements or additional herbs. One single product photograph."
+      "generationPrompt": "Product catalog photograph of 자근. Match reference material texture and color.  Generous natural pile on pure white background, entire pile visible with clean margin, studio lighting. No text, logos, watermark, bowls or other objects.",
+      "editorialNote": "사용자 참고사진 및 절단 형태 반영."
     },
     {
       "name": "자노아",
@@ -2195,30 +2196,33 @@
     },
     {
       "name": "자소자",
-      "assetPath": "/products-reference/herb-227.webp",
+      "assetPath": "/products-reference/herb-227-20261028-peony.webp",
       "products": [
         "자소자"
       ],
       "id": "herb-227",
-      "generationPrompt": "Use case: product-mockup. Asset: square Korean medicinal material catalog photograph for Shinnong Herb. Subject: 자소자 (Perilla frutescens dried tiny gray brown seeds). Product names: 자소자. . . Show only this correctly identified dried medicinal material in the commercial form named, a modest loose pile centered at about 65 percent of frame width, fully visible with generous white margins. Seamless pure white #ffffff background, natural soft studio light, subtle contact shadow, realistic dry texture and true subdued material colors, crisp macro detail, slightly elevated three quarter camera, premium clean ecommerce product photography. No living growing plant, no fresh produce unless the named material requires it. No containers, bowls, spoons, packaging, hands, labels, words, watermark, collage, comparison grid, decorative elements or additional herbs. One single product photograph."
+      "generationPrompt": "Product catalog photograph of 자소자. Match reference material texture and color.  Generous natural pile on pure white background, entire pile visible with clean margin, studio lighting. No text, logos, watermark, bowls or other objects.",
+      "editorialNote": "사용자 참고사진 및 절단 형태 반영."
     },
     {
       "name": "자연동",
-      "assetPath": "/products-reference/herb-228.webp",
+      "assetPath": "/products-reference/herb-228-20261028-peony.webp",
       "products": [
         "자연동"
       ],
       "id": "herb-228",
-      "generationPrompt": "Use case: product-mockup. Asset: square Korean medicinal material catalog photograph for Shinnong Herb. Subject: 자연동 (Pyritum natural pyrite irregular dark brass brown mineral chunks). Product names: 자연동. . . Show only this correctly identified dried medicinal material in the commercial form named, a modest loose pile centered at about 65 percent of frame width, fully visible with generous white margins. Seamless pure white #ffffff background, natural soft studio light, subtle contact shadow, realistic dry texture and true subdued material colors, crisp macro detail, slightly elevated three quarter camera, premium clean ecommerce product photography. No living growing plant, no fresh produce unless the named material requires it. No containers, bowls, spoons, packaging, hands, labels, words, watermark, collage, comparison grid, decorative elements or additional herbs. One single product photograph."
+      "generationPrompt": "Product catalog photograph of 자연동. Match reference material texture and color.  Generous natural pile on pure white background, entire pile visible with clean margin, studio lighting. No text, logos, watermark, bowls or other objects.",
+      "editorialNote": "사용자 참고사진 및 절단 형태 반영."
     },
     {
       "name": "자완",
-      "assetPath": "/products-reference/herb-229.webp",
+      "assetPath": "/products-reference/herb-229-20261028-peony.webp",
       "products": [
         "자완"
       ],
       "id": "herb-229",
-      "generationPrompt": "Use case: product-mockup. Asset: square Korean medicinal material catalog photograph for Shinnong Herb. Subject: 자완 (Aster tataricus dried thin tangled fibrous roots). Product names: 자완. . . Show only this correctly identified dried medicinal material in the commercial form named, a modest loose pile centered at about 65 percent of frame width, fully visible with generous white margins. Seamless pure white #ffffff background, natural soft studio light, subtle contact shadow, realistic dry texture and true subdued material colors, crisp macro detail, slightly elevated three quarter camera, premium clean ecommerce product photography. No living growing plant, no fresh produce unless the named material requires it. No containers, bowls, spoons, packaging, hands, labels, words, watermark, collage, comparison grid, decorative elements or additional herbs. One single product photograph."
+      "generationPrompt": "Product catalog photograph of 자완. Match reference material texture and color.  Generous natural pile on pure white background, entire pile visible with clean margin, studio lighting. No text, logos, watermark, bowls or other objects.",
+      "editorialNote": "사용자 참고사진 및 절단 형태 반영."
     },
     {
       "name": "자충",
@@ -2231,58 +2235,64 @@
     },
     {
       "name": "작약",
-      "assetPath": "/products-reference/herb-231.webp",
+      "assetPath": "/products-reference/herb-231-20261028-peony.webp",
       "products": [
         "작약"
       ],
       "id": "herb-231",
-      "generationPrompt": "Use case: product-mockup. Asset: square Korean medicinal material catalog photograph for Shinnong Herb. Subject: 작약 (Paeonia lactiflora dried pale root slices). Product names: 작약. . . Show only this correctly identified dried medicinal material in the commercial form named, a modest loose pile centered at about 65 percent of frame width, fully visible with generous white margins. Seamless pure white #ffffff background, natural soft studio light, subtle contact shadow, realistic dry texture and true subdued material colors, crisp macro detail, slightly elevated three quarter camera, premium clean ecommerce product photography. No living growing plant, no fresh produce unless the named material requires it. No containers, bowls, spoons, packaging, hands, labels, words, watermark, collage, comparison grid, decorative elements or additional herbs. One single product photograph."
+      "generationPrompt": "Product catalog photograph of 작약. Match reference material texture and color.  Generous natural pile on pure white background, entire pile visible with clean margin, studio lighting. No text, logos, watermark, bowls or other objects.",
+      "editorialNote": "사용자 참고사진 및 절단 형태 반영."
     },
     {
       "name": "작약/강",
-      "assetPath": "/products-reference/herb-232.webp",
+      "assetPath": "/products-reference/herb-232-20261028-peony.webp",
       "products": [
         "작약/강"
       ],
       "id": "herb-232",
-      "generationPrompt": "Use case: product-mockup. Asset: square Korean medicinal material catalog photograph for Shinnong Herb. Subject: 작약/강 (Paeonia lactiflora dried pale root slices). Product names: 작약/강. . . Show only this correctly identified dried medicinal material in the commercial form named, a modest loose pile centered at about 65 percent of frame width, fully visible with generous white margins. Seamless pure white #ffffff background, natural soft studio light, subtle contact shadow, realistic dry texture and true subdued material colors, crisp macro detail, slightly elevated three quarter camera, premium clean ecommerce product photography. No living growing plant, no fresh produce unless the named material requires it. No containers, bowls, spoons, packaging, hands, labels, words, watermark, collage, comparison grid, decorative elements or additional herbs. One single product photograph."
+      "generationPrompt": "Product catalog photograph of 작약/강. Match reference material texture and color.  Generous natural pile on pure white background, entire pile visible with clean margin, studio lighting. No text, logos, watermark, bowls or other objects.",
+      "editorialNote": "사용자 참고사진 및 절단 형태 반영."
     },
     {
       "name": "작약/적/직",
-      "assetPath": "/products-reference/herb-233.webp",
+      "assetPath": "/products-reference/herb-233-20261028-peony.webp",
       "products": [
         "작약/적/직"
       ],
       "id": "herb-233",
-      "generationPrompt": "Use case: product-mockup. Asset: square Korean medicinal material catalog photograph for Shinnong Herb. Subject: 작약/적/직 (Paeonia lactiflora dried pale root slices). Product names: 작약/적/직. red peony root long straight cut pieces. . Show only this correctly identified dried medicinal material in the commercial form named, a modest loose pile centered at about 65 percent of frame width, fully visible with generous white margins. Seamless pure white #ffffff background, natural soft studio light, subtle contact shadow, realistic dry texture and true subdued material colors, crisp macro detail, slightly elevated three quarter camera, premium clean ecommerce product photography. No living growing plant, no fresh produce unless the named material requires it. No containers, bowls, spoons, packaging, hands, labels, words, watermark, collage, comparison grid, decorative elements or additional herbs. One single product photograph."
+      "generationPrompt": "Product catalog photograph of 작약/적/직. Match reference material texture and color. CHANGE cut shape to round coin-like cross sections only, NOT long lengthwise slices. Generous natural pile on pure white background, entire pile visible with clean margin, studio lighting. No text, logos, watermark, bowls or other objects.",
+      "editorialNote": "사용자 참고사진 및 절단 형태 반영."
     },
     {
       "name": "작약/적/편",
-      "assetPath": "/products-reference/herb-234.webp",
+      "assetPath": "/products-reference/herb-234-20261028-peony.webp",
       "products": [
         "작약/적/편"
       ],
       "id": "herb-234",
-      "generationPrompt": "Use case: product-mockup. Asset: square Korean medicinal material catalog photograph for Shinnong Herb. Subject: 작약/적/편 (Paeonia lactiflora dried pale root slices). Product names: 작약/적/편. red peony root thin oblique slices. . Show only this correctly identified dried medicinal material in the commercial form named, a modest loose pile centered at about 65 percent of frame width, fully visible with generous white margins. Seamless pure white #ffffff background, natural soft studio light, subtle contact shadow, realistic dry texture and true subdued material colors, crisp macro detail, slightly elevated three quarter camera, premium clean ecommerce product photography. No living growing plant, no fresh produce unless the named material requires it. No containers, bowls, spoons, packaging, hands, labels, words, watermark, collage, comparison grid, decorative elements or additional herbs. One single product photograph."
+      "generationPrompt": "Product catalog photograph of 작약/적/편. Match reference material texture and color.  Generous natural pile on pure white background, entire pile visible with clean margin, studio lighting. No text, logos, watermark, bowls or other objects.",
+      "editorialNote": "사용자 참고사진 및 절단 형태 반영."
     },
     {
       "name": "작약/주자",
-      "assetPath": "/products-reference/herb-235.webp",
+      "assetPath": "/products-reference/herb-235-20261028-peony.webp",
       "products": [
         "작약/주자"
       ],
       "id": "herb-235",
-      "generationPrompt": "Use case: product-mockup. Asset: square Korean medicinal material catalog photograph for Shinnong Herb. Subject: 작약/주자 (Paeonia lactiflora dried pale root slices). Product names: 작약/주자. . wine processed dried medicinal material with naturally darker brown color. Show only this correctly identified dried medicinal material in the commercial form named, a modest loose pile centered at about 65 percent of frame width, fully visible with generous white margins. Seamless pure white #ffffff background, natural soft studio light, subtle contact shadow, realistic dry texture and true subdued material colors, crisp macro detail, slightly elevated three quarter camera, premium clean ecommerce product photography. No living growing plant, no fresh produce unless the named material requires it. No containers, bowls, spoons, packaging, hands, labels, words, watermark, collage, comparison grid, decorative elements or additional herbs. One single product photograph."
+      "generationPrompt": "Product catalog photograph of 작약/주자. Match reference material texture and color.  Generous natural pile on pure white background, entire pile visible with clean margin, studio lighting. No text, logos, watermark, bowls or other objects.",
+      "editorialNote": "작약초는 작약/주자 사진 공유."
     },
     {
       "name": "작약초",
-      "assetPath": "/products-reference/herb-236.webp",
+      "assetPath": "/products-reference/herb-235-20261028-peony.webp",
       "products": [
         "작약초",
         "작약초"
       ],
       "id": "herb-236",
-      "generationPrompt": "Use case: product-mockup. Asset: square Korean medicinal material catalog photograph for Shinnong Herb. Subject: 작약초 (작약초). Product names: 작약초, 작약초. . dry stir roasted medicinal material, light toasted brown. Show only this correctly identified dried medicinal material in the commercial form named, a modest loose pile centered at about 65 percent of frame width, fully visible with generous white margins. Seamless pure white #ffffff background, natural soft studio light, subtle contact shadow, realistic dry texture and true subdued material colors, crisp macro detail, slightly elevated three quarter camera, premium clean ecommerce product photography. No living growing plant, no fresh produce unless the named material requires it. No containers, bowls, spoons, packaging, hands, labels, words, watermark, collage, comparison grid, decorative elements or additional herbs. One single product photograph."
+      "generationPrompt": "Product catalog photograph of 작약/주자. Match reference material texture and color.  Generous natural pile on pure white background, entire pile visible with clean margin, studio lighting. No text, logos, watermark, bowls or other objects.",
+      "editorialNote": "작약초는 작약/주자 사진 공유."
     },
     {
       "name": "작약초/편",
@@ -2295,39 +2305,43 @@
     },
     {
       "name": "저두강",
-      "assetPath": "/products-reference/herb-238.webp",
+      "assetPath": "/products-reference/herb-238-20261028-peony.webp",
       "products": [
         "저두강"
       ],
       "id": "herb-238",
-      "generationPrompt": "Use case: product-mockup. Asset: square Korean medicinal material catalog photograph for Shinnong Herb. Subject: 저두강 (Broussonetia papyrifera dried root, woody root pieces). Product names: 저두강. . . Show only this correctly identified dried medicinal material in the commercial form named, a modest loose pile centered at about 65 percent of frame width, fully visible with generous white margins. Seamless pure white #ffffff background, natural soft studio light, subtle contact shadow, realistic dry texture and true subdued material colors, crisp macro detail, slightly elevated three quarter camera, premium clean ecommerce product photography. No living growing plant, no fresh produce unless the named material requires it. No containers, bowls, spoons, packaging, hands, labels, words, watermark, collage, comparison grid, decorative elements or additional herbs. One single product photograph."
+      "generationPrompt": "Product catalog photograph of 저두강. Match reference material texture and color.  Generous natural pile on pure white background, entire pile visible with clean margin, studio lighting. No text, logos, watermark, bowls or other objects.",
+      "editorialNote": "사용자 참고사진 및 절단 형태 반영."
     },
     {
       "name": "저령",
-      "assetPath": "/products-reference/herb-239.webp",
+      "assetPath": "/products-reference/herb-239-20261028-peony.webp",
       "products": [
         "저령"
       ],
       "id": "herb-239",
-      "generationPrompt": "Use case: product-mockup. Asset: square Korean medicinal material catalog photograph for Shinnong Herb. Subject: 저령 (Polyporus umbellatus dried irregular dark sclerotia). Product names: 저령. . . Show only this correctly identified dried medicinal material in the commercial form named, a modest loose pile centered at about 65 percent of frame width, fully visible with generous white margins. Seamless pure white #ffffff background, natural soft studio light, subtle contact shadow, realistic dry texture and true subdued material colors, crisp macro detail, slightly elevated three quarter camera, premium clean ecommerce product photography. No living growing plant, no fresh produce unless the named material requires it. No containers, bowls, spoons, packaging, hands, labels, words, watermark, collage, comparison grid, decorative elements or additional herbs. One single product photograph."
+      "generationPrompt": "Product catalog photograph of 저령. Match reference material texture and color.  Generous natural pile on pure white background, entire pile visible with clean margin, studio lighting. No text, logos, watermark, bowls or other objects.",
+      "editorialNote": "사용자 참고사진 및 절단 형태 반영."
     },
     {
       "name": "저백피",
-      "assetPath": "/products-reference/herb-240.webp",
+      "assetPath": "/products-reference/herb-240-20261028-peony.webp",
       "products": [
         "저백피(소백피)"
       ],
       "id": "herb-240",
-      "generationPrompt": "Use case: product-mockup. Asset: square Korean medicinal material catalog photograph for Shinnong Herb. Subject: 저백피 (Ailanthus altissima dried root bark strips). Product names: 저백피(소백피). . . Show only this correctly identified dried medicinal material in the commercial form named, a modest loose pile centered at about 65 percent of frame width, fully visible with generous white margins. Seamless pure white #ffffff background, natural soft studio light, subtle contact shadow, realistic dry texture and true subdued material colors, crisp macro detail, slightly elevated three quarter camera, premium clean ecommerce product photography. No living growing plant, no fresh produce unless the named material requires it. No containers, bowls, spoons, packaging, hands, labels, words, watermark, collage, comparison grid, decorative elements or additional herbs. One single product photograph."
+      "generationPrompt": "Product catalog photograph of 저백피. Match reference material texture and color.  Generous natural pile on pure white background, entire pile visible with clean margin, studio lighting. No text, logos, watermark, bowls or other objects.",
+      "editorialNote": "사용자 참고사진 및 절단 형태 반영."
     },
     {
       "name": "저실자",
-      "assetPath": "/products-reference/herb-241.webp",
+      "assetPath": "/products-reference/herb-241-20261028-peony.webp",
       "products": [
         "저실자"
       ],
       "id": "herb-241",
-      "generationPrompt": "Use case: product-mockup. Asset: square Korean medicinal material catalog photograph for Shinnong Herb. Subject: 저실자 (Broussonetia papyrifera dried fruit clusters). Product names: 저실자. . . Show only this correctly identified dried medicinal material in the commercial form named, a modest loose pile centered at about 65 percent of frame width, fully visible with generous white margins. Seamless pure white #ffffff background, natural soft studio light, subtle contact shadow, realistic dry texture and true subdued material colors, crisp macro detail, slightly elevated three quarter camera, premium clean ecommerce product photography. No living growing plant, no fresh produce unless the named material requires it. No containers, bowls, spoons, packaging, hands, labels, words, watermark, collage, comparison grid, decorative elements or additional herbs. One single product photograph."
+      "generationPrompt": "Product catalog photograph of 저실자. Match reference material texture and color.  Generous natural pile on pure white background, entire pile visible with clean margin, studio lighting. No text, logos, watermark, bowls or other objects.",
+      "editorialNote": "사용자 참고사진 및 절단 형태 반영."
     },
     {
       "name": "전호",
