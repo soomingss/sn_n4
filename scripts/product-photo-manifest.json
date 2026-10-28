@@ -2346,39 +2346,43 @@
     },
     {
       "name": "전호",
-      "assetPath": "/products-reference/herb-242.webp",
+      "assetPath": "/products-reference/herb-242-20261028-ji.webp",
       "products": [
         "전호"
       ],
       "id": "herb-242",
-      "generationPrompt": "Use case: product-mockup. Asset: square Korean medicinal material catalog photograph for Shinnong Herb. Subject: 전호 (Peucedanum praeruptorum dried root pieces). Product names: 전호. . . Show only this correctly identified dried medicinal material in the commercial form named, a modest loose pile centered at about 65 percent of frame width, fully visible with generous white margins. Seamless pure white #ffffff background, natural soft studio light, subtle contact shadow, realistic dry texture and true subdued material colors, crisp macro detail, slightly elevated three quarter camera, premium clean ecommerce product photography. No living growing plant, no fresh produce unless the named material requires it. No containers, bowls, spoons, packaging, hands, labels, words, watermark, collage, comparison grid, decorative elements or additional herbs. One single product photograph."
+      "generationPrompt": "Create one premium square ecommerce catalog photograph of 전호: irregular pale yellow cream root slices with tan brown skin. Match the supplied reference material's actual shape, cut, color and texture closely. Show a generous natural loose pile, entirely visible centered at 70% frame width on seamless pure white background with soft diffuse studio lighting and subtle contact shadow. Realistic dried medicinal material macro detail. Remove all packaging, containers, plates, scoops, labels, typography, logos, watermark and props. No collage.",
+      "editorialNote": "사용자 제공 참고 사진의 형태·색·절단 상태를 반영, 흰 배경 약재 단독 이미지."
     },
     {
       "name": "절패모",
-      "assetPath": "/products-reference/herb-243.webp",
+      "assetPath": "/products-reference/herb-243-20261028-ji.webp",
       "products": [
         "절패모"
       ],
       "id": "herb-243",
-      "generationPrompt": "Use case: product-mockup. Asset: square Korean medicinal material catalog photograph for Shinnong Herb. Subject: 절패모 (Fritillaria thunbergii dried cream white bulb halves). Product names: 절패모. . . Show only this correctly identified dried medicinal material in the commercial form named, a modest loose pile centered at about 65 percent of frame width, fully visible with generous white margins. Seamless pure white #ffffff background, natural soft studio light, subtle contact shadow, realistic dry texture and true subdued material colors, crisp macro detail, slightly elevated three quarter camera, premium clean ecommerce product photography. No living growing plant, no fresh produce unless the named material requires it. No containers, bowls, spoons, packaging, hands, labels, words, watermark, collage, comparison grid, decorative elements or additional herbs. One single product photograph."
+      "generationPrompt": "Create one premium square ecommerce catalog photograph of 절패모: ivory cream bulb slices and halves with tan edges. Match the supplied reference material's actual shape, cut, color and texture closely. Show a generous natural loose pile, entirely visible centered at 70% frame width on seamless pure white background with soft diffuse studio lighting and subtle contact shadow. Realistic dried medicinal material macro detail. Remove all packaging, containers, plates, scoops, labels, typography, logos, watermark and props. No collage.",
+      "editorialNote": "사용자 제공 참고 사진의 형태·색·절단 상태를 반영, 흰 배경 약재 단독 이미지."
     },
     {
       "name": "접골목",
-      "assetPath": "/products-reference/herb-244.webp",
+      "assetPath": "/products-reference/herb-244-20261028-ji.webp",
       "products": [
         "접골목"
       ],
       "id": "herb-244",
-      "generationPrompt": "Use case: product-mockup. Asset: square Korean medicinal material catalog photograph for Shinnong Herb. Subject: 접골목 (Sambucus williamsii dried twig segments showing pale pith). Product names: 접골목. . . Show only this correctly identified dried medicinal material in the commercial form named, a modest loose pile centered at about 65 percent of frame width, fully visible with generous white margins. Seamless pure white #ffffff background, natural soft studio light, subtle contact shadow, realistic dry texture and true subdued material colors, crisp macro detail, slightly elevated three quarter camera, premium clean ecommerce product photography. No living growing plant, no fresh produce unless the named material requires it. No containers, bowls, spoons, packaging, hands, labels, words, watermark, collage, comparison grid, decorative elements or additional herbs. One single product photograph."
+      "generationPrompt": "Create one premium square ecommerce catalog photograph of 접골목: short woody twig segments, greenish tan bark and light yellow cut ends. Match the supplied reference material's actual shape, cut, color and texture closely. Show a generous natural loose pile, entirely visible centered at 70% frame width on seamless pure white background with soft diffuse studio lighting and subtle contact shadow. Realistic dried medicinal material macro detail. Remove all packaging, containers, plates, scoops, labels, typography, logos, watermark and props. No collage.",
+      "editorialNote": "사용자 제공 참고 사진의 형태·색·절단 상태를 반영, 흰 배경 약재 단독 이미지."
     },
     {
       "name": "정향",
-      "assetPath": "/products-reference/herb-245.webp",
+      "assetPath": "/products-reference/herb-245-20261028-ji.webp",
       "products": [
         "정향"
       ],
       "id": "herb-245",
-      "generationPrompt": "Use case: product-mockup. Asset: square Korean medicinal material catalog photograph for Shinnong Herb. Subject: 정향 (dried cloves Syzygium aromaticum flower buds). Product names: 정향. . . Show only this correctly identified dried medicinal material in the commercial form named, a modest loose pile centered at about 65 percent of frame width, fully visible with generous white margins. Seamless pure white #ffffff background, natural soft studio light, subtle contact shadow, realistic dry texture and true subdued material colors, crisp macro detail, slightly elevated three quarter camera, premium clean ecommerce product photography. No living growing plant, no fresh produce unless the named material requires it. No containers, bowls, spoons, packaging, hands, labels, words, watermark, collage, comparison grid, decorative elements or additional herbs. One single product photograph."
+      "generationPrompt": "Create one premium square ecommerce catalog photograph of 정향: small dark brown whole dried clove flower buds. Match the supplied reference material's actual shape, cut, color and texture closely. Show a generous natural loose pile, entirely visible centered at 70% frame width on seamless pure white background with soft diffuse studio lighting and subtle contact shadow. Realistic dried medicinal material macro detail. Remove all packaging, containers, plates, scoops, labels, typography, logos, watermark and props. No collage.",
+      "editorialNote": "사용자 제공 참고 사진의 형태·색·절단 상태를 반영, 흰 배경 약재 단독 이미지."
     },
     {
       "name": "제니",
@@ -2391,21 +2395,23 @@
     },
     {
       "name": "제조",
-      "assetPath": "/products-reference/herb-247.webp",
+      "assetPath": "/products-reference/herb-247-20261028-ji.webp",
       "products": [
         "제조"
       ],
       "id": "herb-247",
-      "generationPrompt": "Use case: product-mockup. Asset: square Korean medicinal material catalog photograph for Shinnong Herb. Subject: 제조 (dried white grub medicinal larvae, non graphic clean specimens). Product names: 제조. . . Show only this correctly identified dried medicinal material in the commercial form named, a modest loose pile centered at about 65 percent of frame width, fully visible with generous white margins. Seamless pure white #ffffff background, natural soft studio light, subtle contact shadow, realistic dry texture and true subdued material colors, crisp macro detail, slightly elevated three quarter camera, premium clean ecommerce product photography. No living growing plant, no fresh produce unless the named material requires it. No containers, bowls, spoons, packaging, hands, labels, words, watermark, collage, comparison grid, decorative elements or additional herbs. One single product photograph."
+      "generationPrompt": "Create one premium square ecommerce catalog photograph of 제조: dried tan brown segmented beetle larvae, plump curled bodies, accurately match reference. Match the supplied reference material's actual shape, cut, color and texture closely. Show a generous natural loose pile, entirely visible centered at 70% frame width on seamless pure white background with soft diffuse studio lighting and subtle contact shadow. Realistic dried medicinal material macro detail. Remove all packaging, containers, plates, scoops, labels, typography, logos, watermark and props. No collage.",
+      "editorialNote": "사용자 제공 참고 사진의 형태·색·절단 상태를 반영, 흰 배경 약재 단독 이미지."
     },
     {
       "name": "조각자",
-      "assetPath": "/products-reference/herb-248.webp",
+      "assetPath": "/products-reference/herb-248-20261028-ji.webp",
       "products": [
         "조각자"
       ],
       "id": "herb-248",
-      "generationPrompt": "Use case: product-mockup. Asset: square Korean medicinal material catalog photograph for Shinnong Herb. Subject: 조각자 (Gleditsia sinensis dried brown branching thorns). Product names: 조각자. . . Show only this correctly identified dried medicinal material in the commercial form named, a modest loose pile centered at about 65 percent of frame width, fully visible with generous white margins. Seamless pure white #ffffff background, natural soft studio light, subtle contact shadow, realistic dry texture and true subdued material colors, crisp macro detail, slightly elevated three quarter camera, premium clean ecommerce product photography. No living growing plant, no fresh produce unless the named material requires it. No containers, bowls, spoons, packaging, hands, labels, words, watermark, collage, comparison grid, decorative elements or additional herbs. One single product photograph."
+      "generationPrompt": "Create one premium square ecommerce catalog photograph of 조각자: reddish dark brown woody thorn fragments, long sharp angular points. Match the supplied reference material's actual shape, cut, color and texture closely. Show a generous natural loose pile, entirely visible centered at 70% frame width on seamless pure white background with soft diffuse studio lighting and subtle contact shadow. Realistic dried medicinal material macro detail. Remove all packaging, containers, plates, scoops, labels, typography, logos, watermark and props. No collage.",
+      "editorialNote": "사용자 제공 참고 사진의 형태·색·절단 상태를 반영, 흰 배경 약재 단독 이미지."
     },
     {
       "name": "조구등",
@@ -2427,57 +2433,63 @@
     },
     {
       "name": "지각",
-      "assetPath": "/products-reference/herb-251.webp",
+      "assetPath": "/products-reference/herb-251-20261028-ji.webp",
       "products": [
         "지각"
       ],
       "id": "herb-251",
-      "generationPrompt": "Use case: product-mockup. Asset: square Korean medicinal material catalog photograph for Shinnong Herb. Subject: 지각 (Citrus aurantium dried mature unripe bitter orange halves). Product names: 지각. . . Show only this correctly identified dried medicinal material in the commercial form named, a modest loose pile centered at about 65 percent of frame width, fully visible with generous white margins. Seamless pure white #ffffff background, natural soft studio light, subtle contact shadow, realistic dry texture and true subdued material colors, crisp macro detail, slightly elevated three quarter camera, premium clean ecommerce product photography. No living growing plant, no fresh produce unless the named material requires it. No containers, bowls, spoons, packaging, hands, labels, words, watermark, collage, comparison grid, decorative elements or additional herbs. One single product photograph."
+      "generationPrompt": "Create one premium square ecommerce catalog photograph of 지각: thin curved citrus peel cross-section strips, cream pith and dark green brown rind. Match the supplied reference material's actual shape, cut, color and texture closely. Show a generous natural loose pile, entirely visible centered at 70% frame width on seamless pure white background with soft diffuse studio lighting and subtle contact shadow. Realistic dried medicinal material macro detail. Remove all packaging, containers, plates, scoops, labels, typography, logos, watermark and props. No collage.",
+      "editorialNote": "사용자 제공 참고 사진의 형태·색·절단 상태를 반영, 흰 배경 약재 단독 이미지."
     },
     {
       "name": "지각초",
-      "assetPath": "/products-reference/herb-252.webp",
+      "assetPath": "/products-reference/herb-252-20261028-ji.webp",
       "products": [
         "지각초"
       ],
       "id": "herb-252",
-      "generationPrompt": "Use case: product-mockup. Square premium Korean dried medicinal herb catalog photograph of 지각초, 枳殼炒, dry stir-roasted Citrus aurantium bitter orange fruit halves and thick cross-sectional slices. These are round/oval citrus fruit sections with thick toasted tan-brown peel, pale beige spongy pith ring and dark dried radial interior compartments. NOT stems, NOT grass, NOT twigs. Show a modest loose pile of about 15 dried roasted bitter orange halves/slices centered in the middle, 65 percent of frame width, full pieces visible with white margins. Seamless pure white #ffffff background, soft studio lighting, subtle contact shadows, photorealistic authentic dry texture, slight elevated three quarter view. No words, watermark, labels, container, spoon, packaging, other herbs, fresh orange fruit or leaves."
+      "generationPrompt": "Edit this catalog photograph to create 지각초: preserve the exact citrus slice shapes, pile composition and pure white background. Change only the medicinal slices to a noticeably roasted medium brown and dark brown toasted color, cream pith becomes warm tan brown with darker edges. Naturally dry roasted, not charred black. No text or props.",
+      "editorialNote": "사용자 요청: 새 지각 사진의 형태를 유지하고 볶은 갈색으로 변경."
     },
     {
       "name": "지골피",
-      "assetPath": "/products-reference/herb-253.webp",
+      "assetPath": "/products-reference/herb-253-20261028-ji.webp",
       "products": [
         "지골피"
       ],
       "id": "herb-253",
-      "generationPrompt": "Use case: product-mockup. Asset: square Korean medicinal material catalog photograph for Shinnong Herb. Subject: 지골피 (Lycium dried pale tan root bark tubes). Product names: 지골피. . . Show only this correctly identified dried medicinal material in the commercial form named, a modest loose pile centered at about 65 percent of frame width, fully visible with generous white margins. Seamless pure white #ffffff background, natural soft studio light, subtle contact shadow, realistic dry texture and true subdued material colors, crisp macro detail, slightly elevated three quarter camera, premium clean ecommerce product photography. No living growing plant, no fresh produce unless the named material requires it. No containers, bowls, spoons, packaging, hands, labels, words, watermark, collage, comparison grid, decorative elements or additional herbs. One single product photograph."
+      "generationPrompt": "Create one premium square ecommerce catalog photograph of 지골피: thin fibrous brown gray root bark strips and rough twig-like fragments. Match the supplied reference material's actual shape, cut, color and texture closely. Show a generous natural loose pile, entirely visible centered at 70% frame width on seamless pure white background with soft diffuse studio lighting and subtle contact shadow. Realistic dried medicinal material macro detail. Remove all packaging, containers, plates, scoops, labels, typography, logos, watermark and props. No collage.",
+      "editorialNote": "사용자 제공 참고 사진의 형태·색·절단 상태를 반영, 흰 배경 약재 단독 이미지."
     },
     {
       "name": "지구자",
-      "assetPath": "/products-reference/herb-254.webp",
+      "assetPath": "/products-reference/herb-254-20261028-ji.webp",
       "products": [
         "지구자"
       ],
       "id": "herb-254",
-      "generationPrompt": "Use case: product-mockup. Asset: square Korean medicinal material catalog photograph for Shinnong Herb. Subject: 지구자 (Hovenia dulcis dried fruiting stalks and attached fruits). Product names: 지구자. . . Show only this correctly identified dried medicinal material in the commercial form named, a modest loose pile centered at about 65 percent of frame width, fully visible with generous white margins. Seamless pure white #ffffff background, natural soft studio light, subtle contact shadow, realistic dry texture and true subdued material colors, crisp macro detail, slightly elevated three quarter camera, premium clean ecommerce product photography. No living growing plant, no fresh produce unless the named material requires it. No containers, bowls, spoons, packaging, hands, labels, words, watermark, collage, comparison grid, decorative elements or additional herbs. One single product photograph."
+      "generationPrompt": "Create one premium square ecommerce catalog photograph of 지구자: dark brown branched knobbly dried fruit peduncles, clustered bulbous irregular pieces. Match the supplied reference material's actual shape, cut, color and texture closely. Show a generous natural loose pile, entirely visible centered at 70% frame width on seamless pure white background with soft diffuse studio lighting and subtle contact shadow. Realistic dried medicinal material macro detail. Remove all packaging, containers, plates, scoops, labels, typography, logos, watermark and props. No collage.",
+      "editorialNote": "사용자 제공 참고 사진의 형태·색·절단 상태를 반영, 흰 배경 약재 단독 이미지."
     },
     {
       "name": "지구자/씨",
-      "assetPath": "/products-reference/herb-255.webp",
+      "assetPath": "/products-reference/herb-255-20261028-ji.webp",
       "products": [
         "지구자/씨"
       ],
       "id": "herb-255",
-      "generationPrompt": "Use case: product-mockup. Asset: square Korean medicinal material catalog photograph for Shinnong Herb. Subject: 지구자/씨 (Hovenia dulcis dried small round brown seeds only). Product names: 지구자/씨. . . Show only this correctly identified dried medicinal material in the commercial form named, a modest loose pile centered at about 65 percent of frame width, fully visible with generous white margins. Seamless pure white #ffffff background, natural soft studio light, subtle contact shadow, realistic dry texture and true subdued material colors, crisp macro detail, slightly elevated three quarter camera, premium clean ecommerce product photography. No living growing plant, no fresh produce unless the named material requires it. No containers, bowls, spoons, packaging, hands, labels, words, watermark, collage, comparison grid, decorative elements or additional herbs. One single product photograph."
+      "generationPrompt": "Create one premium square ecommerce catalog photograph of 지구자/씨: very tiny dark reddish black seeds, dense granular mound. Match the supplied reference material's actual shape, cut, color and texture closely. Show a generous natural loose pile, entirely visible centered at 70% frame width on seamless pure white background with soft diffuse studio lighting and subtle contact shadow. Realistic dried medicinal material macro detail. Remove all packaging, containers, plates, scoops, labels, typography, logos, watermark and props. No collage.",
+      "editorialNote": "사용자 제공 참고 사진의 형태·색·절단 상태를 반영, 흰 배경 약재 단독 이미지."
     },
     {
       "name": "지룡",
-      "assetPath": "/products-reference/herb-256.webp",
+      "assetPath": "/products-reference/herb-256-20261028-ji.webp",
       "products": [
         "지룡"
       ],
       "id": "herb-256",
-      "generationPrompt": "Use case: product-mockup. Asset: square Korean medicinal material catalog photograph for Shinnong Herb. Subject: 지룡 (dried earthworm medicinal material, clean non graphic specimens). Product names: 지룡. . . Show only this correctly identified dried medicinal material in the commercial form named, a modest loose pile centered at about 65 percent of frame width, fully visible with generous white margins. Seamless pure white #ffffff background, natural soft studio light, subtle contact shadow, realistic dry texture and true subdued material colors, crisp macro detail, slightly elevated three quarter camera, premium clean ecommerce product photography. No living growing plant, no fresh produce unless the named material requires it. No containers, bowls, spoons, packaging, hands, labels, words, watermark, collage, comparison grid, decorative elements or additional herbs. One single product photograph."
+      "generationPrompt": "Create one premium square ecommerce catalog photograph of 지룡: thin curled dried earthworms, golden tan and brown strands. Match the supplied reference material's actual shape, cut, color and texture closely. Show a generous natural loose pile, entirely visible centered at 70% frame width on seamless pure white background with soft diffuse studio lighting and subtle contact shadow. Realistic dried medicinal material macro detail. Remove all packaging, containers, plates, scoops, labels, typography, logos, watermark and props. No collage.",
+      "editorialNote": "사용자 제공 참고 사진의 형태·색·절단 상태를 반영, 흰 배경 약재 단독 이미지."
     },
     {
       "name": "지룡/속제거",
@@ -2517,21 +2529,23 @@
     },
     {
       "name": "지실/애",
-      "assetPath": "/products-reference/herb-261.webp",
+      "assetPath": "/products-reference/herb-261-20261028-ji.webp",
       "products": [
         "지실/애"
       ],
       "id": "herb-261",
-      "generationPrompt": "Use case: product-mockup. Asset: square Korean medicinal material catalog photograph for Shinnong Herb. Subject: 지실/애 (Citrus aurantium dried very small immature fruit halves). Product names: 지실/애. . . Show only this correctly identified dried medicinal material in the commercial form named, a modest loose pile centered at about 65 percent of frame width, fully visible with generous white margins. Seamless pure white #ffffff background, natural soft studio light, subtle contact shadow, realistic dry texture and true subdued material colors, crisp macro detail, slightly elevated three quarter camera, premium clean ecommerce product photography. No living growing plant, no fresh produce unless the named material requires it. No containers, bowls, spoons, packaging, hands, labels, words, watermark, collage, comparison grid, decorative elements or additional herbs. One single product photograph."
+      "generationPrompt": "Create one premium square ecommerce catalog photograph of 지실/애: numerous small immature green gray citrus cut discs and halves with pale centers. Match the supplied reference material's actual shape, cut, color and texture closely. Show a generous natural loose pile, entirely visible centered at 70% frame width on seamless pure white background with soft diffuse studio lighting and subtle contact shadow. Realistic dried medicinal material macro detail. Remove all packaging, containers, plates, scoops, labels, typography, logos, watermark and props. No collage.",
+      "editorialNote": "사용자 제공 참고 사진의 형태·색·절단 상태를 반영, 흰 배경 약재 단독 이미지."
     },
     {
       "name": "지실/중",
-      "assetPath": "/products-reference/herb-262.webp",
+      "assetPath": "/products-reference/herb-262-20261028-ji.webp",
       "products": [
         "지실/중"
       ],
       "id": "herb-262",
-      "generationPrompt": "Use case: product-mockup. Asset: square Korean medicinal material catalog photograph for Shinnong Herb. Subject: 지실/중 (Citrus aurantium dried medium size immature fruit halves). Product names: 지실/중. . . Show only this correctly identified dried medicinal material in the commercial form named, a modest loose pile centered at about 65 percent of frame width, fully visible with generous white margins. Seamless pure white #ffffff background, natural soft studio light, subtle contact shadow, realistic dry texture and true subdued material colors, crisp macro detail, slightly elevated three quarter camera, premium clean ecommerce product photography. No living growing plant, no fresh produce unless the named material requires it. No containers, bowls, spoons, packaging, hands, labels, words, watermark, collage, comparison grid, decorative elements or additional herbs. One single product photograph."
+      "generationPrompt": "Create one premium square ecommerce catalog photograph of 지실/중: medium sized dark green gray immature citrus halves with cream centers, larger pieces than tiny immature fruit. Match the supplied reference material's actual shape, cut, color and texture closely. Show a generous natural loose pile, entirely visible centered at 70% frame width on seamless pure white background with soft diffuse studio lighting and subtle contact shadow. Realistic dried medicinal material macro detail. Remove all packaging, containers, plates, scoops, labels, typography, logos, watermark and props. No collage.",
+      "editorialNote": "사용자 제공 참고 사진의 형태·색·절단 상태를 반영, 흰 배경 약재 단독 이미지."
     },
     {
       "name": "지유",
@@ -2544,12 +2558,13 @@
     },
     {
       "name": "지황",
-      "assetPath": "/products-reference/herb-264.webp",
+      "assetPath": "/products-reference/herb-264-20261028-ji.webp",
       "products": [
         "지황"
       ],
       "id": "herb-264",
-      "generationPrompt": "Use case: product-mockup. Asset: square Korean medicinal material catalog photograph for Shinnong Herb. Subject: 지황 (Rehmannia glutinosa dried unsteamed brown root slices). Product names: 지황. . . Show only this correctly identified dried medicinal material in the commercial form named, a modest loose pile centered at about 65 percent of frame width, fully visible with generous white margins. Seamless pure white #ffffff background, natural soft studio light, subtle contact shadow, realistic dry texture and true subdued material colors, crisp macro detail, slightly elevated three quarter camera, premium clean ecommerce product photography. No living growing plant, no fresh produce unless the named material requires it. No containers, bowls, spoons, packaging, hands, labels, words, watermark, collage, comparison grid, decorative elements or additional herbs. One single product photograph."
+      "generationPrompt": "Create one premium square ecommerce catalog photograph of 지황: irregular thick wrinkled brown dried root chunks, matching reference. Match the supplied reference material's actual shape, cut, color and texture closely. Show a generous natural loose pile, entirely visible centered at 70% frame width on seamless pure white background with soft diffuse studio lighting and subtle contact shadow. Realistic dried medicinal material macro detail. Remove all packaging, containers, plates, scoops, labels, typography, logos, watermark and props. No collage.",
+      "editorialNote": "사용자 제공 참고 사진의 형태·색·절단 상태를 반영, 흰 배경 약재 단독 이미지."
     },
     {
       "name": "진교",
