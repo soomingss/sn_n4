@@ -2702,13 +2702,13 @@
     },
     {
       "name": "천오",
-      "assetPath": "/products-reference/herb-278-20261028-cha.webp",
+      "assetPath": "/products-reference/herb-278-20261028-small.webp",
       "products": [
         "천오"
       ],
       "id": "herb-278",
-      "generationPrompt": "Use case: product-mockup. Create one square ecommerce catalog photo of 천오: a pile of thick chunky irregular root blocks and large thick sections, tan cream interiors and dark brown rough skin. User requires chunky bulky pieces, NOT thin slices. Input image is material reference; match its true color, texture and cut, except explicit chunky request for 천오 takes priority. Generous natural loose pile entirely visible with white margins, seamless pure white background, soft diffuse studio lighting, crisp photoreal dried material detail. Remove bowls, scoop, packaging, text, labels, logos, watermark and props. No collage.",
-      "editorialNote": "사용자 참고 사진을 기준으로 두툼한 뭉텅이 형태로 생성."
+      "generationPrompt": "Use case: precise-object-edit. Correct 천오 product photograph. Image 1 is the 천오 material identity/color reference: preserve its tan cut interior and dark rough brown outer skin. Image 2 is the REQUIRED individual piece scale and pile composition reference (천궁). Replace the oversized bulky blocks of image 1 with many small thin irregular root cross-section slices, each approximately one third the width of the original oversized chunks, similar in apparent size and thickness to the slices in image 2. Generous mound of 60-100 small pieces, same overall frame occupancy. Do not copy 천궁 botanical identity; preserve 천오 texture/color. Entire pile visible, pure white seamless background, soft diffuse studio light. No text, watermark, props or packaging.",
+      "editorialNote": "천궁 사진과 비슷한 작은 절편 크기로 수정. 기존 천오의 색·껍질 질감 유지."
     },
     {
       "name": "천오제",
