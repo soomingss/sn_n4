@@ -2255,13 +2255,13 @@
     },
     {
       "name": "작약/적/직",
-      "assetPath": "/products-reference/herb-233-20261028-peony.webp",
+      "assetPath": "/products-reference/herb-233-20261028-fix.webp",
       "products": [
         "작약/적/직"
       ],
       "id": "herb-233",
-      "generationPrompt": "Product catalog photograph of 작약/적/직. Match reference material texture and color. CHANGE cut shape to round coin-like cross sections only, NOT long lengthwise slices. Generous natural pile on pure white background, entire pile visible with clean margin, studio lighting. No text, logos, watermark, bowls or other objects.",
-      "editorialNote": "사용자 참고사진 및 절단 형태 반영."
+      "generationPrompt": "Edit product photo. Make each individual round coin slice one third the current diameter. Keep same color and round coin shapes; make many more small slices in a full pile of similar overall size. Pure white background, soft studio light, no text, logos, props.",
+      "editorialNote": "2026-10-28 크기·구도 수정."
     },
     {
       "name": "작약/적/편",
@@ -2285,33 +2285,34 @@
     },
     {
       "name": "작약초",
-      "assetPath": "/products-reference/herb-235-20261028-peony.webp",
+      "assetPath": "/products-reference/herb-236-20261028-fix.webp",
       "products": [
         "작약초",
         "작약초"
       ],
       "id": "herb-236",
-      "generationPrompt": "Product catalog photograph of 작약/주자. Match reference material texture and color.  Generous natural pile on pure white background, entire pile visible with clean margin, studio lighting. No text, logos, watermark, bowls or other objects.",
-      "editorialNote": "작약초는 작약/주자 사진 공유."
+      "generationPrompt": "Edit product photo. Change only color to much darker blackish brown, keep same long slices, texture and composition. Pure white background, soft studio light, no text, logos, props.",
+      "editorialNote": "작약초와 작약초/편은 더 검은 동일 사진 사용."
     },
     {
       "name": "작약초/편",
-      "assetPath": "/products-reference/herb-237.webp",
+      "assetPath": "/products-reference/herb-236-20261028-fix.webp",
       "products": [
         "작약초/편"
       ],
       "id": "herb-237",
-      "generationPrompt": "Use case: product-mockup. Asset: square Korean medicinal material catalog photograph for Shinnong Herb. Subject: 작약초/편 (작약초/편). Product names: 작약초/편. thin cut slices. dry stir roasted medicinal material, light toasted brown. Show only this correctly identified dried medicinal material in the commercial form named, a modest loose pile centered at about 65 percent of frame width, fully visible with generous white margins. Seamless pure white #ffffff background, natural soft studio light, subtle contact shadow, realistic dry texture and true subdued material colors, crisp macro detail, slightly elevated three quarter camera, premium clean ecommerce product photography. No living growing plant, no fresh produce unless the named material requires it. No containers, bowls, spoons, packaging, hands, labels, words, watermark, collage, comparison grid, decorative elements or additional herbs. One single product photograph."
+      "generationPrompt": "Edit product photo. Change only color to much darker blackish brown, keep same long slices, texture and composition. Pure white background, soft studio light, no text, logos, props.",
+      "editorialNote": "작약초와 작약초/편은 더 검은 동일 사진 사용."
     },
     {
       "name": "저두강",
-      "assetPath": "/products-reference/herb-238-20261028-peony.webp",
+      "assetPath": "/products-reference/herb-238-20261028-fix.webp",
       "products": [
         "저두강"
       ],
       "id": "herb-238",
-      "generationPrompt": "Product catalog photograph of 저두강. Match reference material texture and color.  Generous natural pile on pure white background, entire pile visible with clean margin, studio lighting. No text, logos, watermark, bowls or other objects.",
-      "editorialNote": "사용자 참고사진 및 절단 형태 반영."
+      "generationPrompt": "Edit product photo. Rearrange powder as a neat circular rounded mound, attractive balanced centered composition. Entire pile visible, no cropped or straight cut-off sides. Preserve yellow green color and powder texture. Pure white background, soft studio light, no text, logos, props.",
+      "editorialNote": "2026-10-28 크기·구도 수정."
     },
     {
       "name": "저령",
