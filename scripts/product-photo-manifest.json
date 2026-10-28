@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-27",
+  "updatedAt": "2026-10-28",
   "groups": [
     {
       "name": "가자",
@@ -1768,35 +1768,43 @@
     },
     {
       "name": "아교",
-      "assetPath": "/products-reference/herb-185.webp",
+      "assetPath": "/products-reference/herb-185-20261028.webp",
       "products": [
         "아교"
       ],
-      "id": "herb-185"
+      "id": "herb-185",
+      "generationPrompt": "Product catalog photograph of 아교, match attached reference material color, cut, texture and shape. A generous pile centered on pure white background, studio light. No bowl, text, logos, watermark, packaging, hands or props.",
+      "editorialNote": "2026-10-28 사용자 참고사진 반영."
     },
     {
       "name": "아출",
-      "assetPath": "/products-reference/herb-186.webp",
+      "assetPath": "/products-reference/herb-186-20261028.webp",
       "products": [
         "아출"
       ],
-      "id": "herb-186"
+      "id": "herb-186",
+      "generationPrompt": "Product catalog photograph of 아출, match attached reference material color, cut, texture and shape. A generous pile centered on pure white background, studio light. No bowl, text, logos, watermark, packaging, hands or props.",
+      "editorialNote": "2026-10-28 사용자 참고사진 반영."
     },
     {
       "name": "여정실",
-      "assetPath": "/products-reference/herb-187.webp",
+      "assetPath": "/products-reference/herb-187-20261028.webp",
       "products": [
         "여정실"
       ],
-      "id": "herb-187"
+      "id": "herb-187",
+      "generationPrompt": "Product catalog photograph of 여정실, match attached reference material color, cut, texture and shape. A generous pile centered on pure white background, studio light. No bowl, text, logos, watermark, packaging, hands or props.",
+      "editorialNote": "2026-10-28 사용자 참고사진 반영."
     },
     {
       "name": "여정실/주증",
-      "assetPath": "/products-reference/herb-188.webp",
+      "assetPath": "/products-reference/herb-188-20261028.webp",
       "products": [
         "여정실/주증"
       ],
-      "id": "herb-188"
+      "id": "herb-188",
+      "generationPrompt": "Edit this photo, preserve same form and pile, make the material darker roasted brown, not black. White background, no text.",
+      "editorialNote": "2026-10-28 사용자 참고사진 반영."
     },
     {
       "name": "연교",
@@ -1808,11 +1816,13 @@
     },
     {
       "name": "연자육",
-      "assetPath": "/products-reference/herb-190.webp",
+      "assetPath": "/products-reference/herb-190-20261028.webp",
       "products": [
         "연자육"
       ],
-      "id": "herb-190"
+      "id": "herb-190",
+      "generationPrompt": "Product catalog photograph of 연자육, match attached reference material color, cut, texture and shape. A generous pile centered on pure white background, studio light. No bowl, text, logos, watermark, packaging, hands or props.",
+      "editorialNote": "2026-10-28 사용자 참고사진 반영."
     },
     {
       "name": "영지버섯",
@@ -1840,52 +1850,64 @@
     },
     {
       "name": "오령지",
-      "assetPath": "/products-reference/herb-194.webp",
+      "assetPath": "/products-reference/herb-194-20261028.webp",
       "products": [
         "오령지"
       ],
-      "id": "herb-194"
+      "id": "herb-194",
+      "generationPrompt": "Product catalog photograph of 오령지, match attached reference material color, cut, texture and shape. A generous pile centered on pure white background, studio light. No bowl, text, logos, watermark, packaging, hands or props.",
+      "editorialNote": "2026-10-28 사용자 참고사진 반영."
     },
     {
       "name": "오매",
-      "assetPath": "/products-reference/herb-195.webp",
+      "assetPath": "/products-reference/herb-195-20261028.webp",
       "products": [
         "오매"
       ],
-      "id": "herb-195"
+      "id": "herb-195",
+      "generationPrompt": "Product catalog photograph of 오매, match attached reference material color, cut, texture and shape. A generous pile centered on pure white background, studio light. No bowl, text, logos, watermark, packaging, hands or props.",
+      "editorialNote": "2026-10-28 사용자 참고사진 반영."
     },
     {
       "name": "오미자",
-      "assetPath": "/products-reference/herb-196.webp",
+      "assetPath": "/products-reference/herb-196-20261028.webp",
       "products": [
         "오미자",
         "오미자"
       ],
-      "id": "herb-196"
+      "id": "herb-196",
+      "generationPrompt": "Product catalog photograph of 오미자, match attached reference material color, cut, texture and shape. A generous pile centered on pure white background, studio light. No bowl, text, logos, watermark, packaging, hands or props.",
+      "editorialNote": "2026-10-28 사용자 참고사진 반영."
     },
     {
       "name": "오수유",
-      "assetPath": "/products-reference/herb-197.webp",
+      "assetPath": "/products-reference/herb-197-20261028.webp",
       "products": [
         "오수유"
       ],
-      "id": "herb-197"
+      "id": "herb-197",
+      "generationPrompt": "Product catalog photograph of 오수유, match attached reference material color, cut, texture and shape. A generous pile centered on pure white background, studio light. No bowl, text, logos, watermark, packaging, hands or props.",
+      "editorialNote": "2026-10-28 사용자 참고사진 반영."
     },
     {
       "name": "오약",
-      "assetPath": "/products-reference/herb-198.webp",
+      "assetPath": "/products-reference/herb-198-20261028.webp",
       "products": [
         "오약"
       ],
-      "id": "herb-198"
+      "id": "herb-198",
+      "generationPrompt": "Product catalog photograph of 오약, match attached reference material color, cut, texture and shape. A generous pile centered on pure white background, studio light. No bowl, text, logos, watermark, packaging, hands or props.",
+      "editorialNote": "2026-10-28 사용자 참고사진 반영."
     },
     {
       "name": "용골",
-      "assetPath": "/products-reference/herb-199.webp",
+      "assetPath": "/products-reference/herb-199-20261028.webp",
       "products": [
         "용골"
       ],
-      "id": "herb-199"
+      "id": "herb-199",
+      "generationPrompt": "Product catalog photograph of 용골, match attached reference material color, cut, texture and shape. A generous pile centered on pure white background, studio light. No bowl, text, logos, watermark, packaging, hands or props.",
+      "editorialNote": "2026-10-28 사용자 참고사진 반영."
     },
     {
       "name": "용골/가루",
@@ -1897,11 +1919,13 @@
     },
     {
       "name": "용담",
-      "assetPath": "/products-reference/herb-201.webp",
+      "assetPath": "/products-reference/herb-201-20261028.webp",
       "products": [
         "용담"
       ],
-      "id": "herb-201"
+      "id": "herb-201",
+      "generationPrompt": "Product catalog photograph of 용담, match attached reference material color, cut, texture and shape. A generous pile centered on pure white background, studio light. No bowl, text, logos, watermark, packaging, hands or props.",
+      "editorialNote": "2026-10-28 사용자 참고사진 반영."
     },
     {
       "name": "용안육",
@@ -1914,36 +1938,47 @@
     },
     {
       "name": "우담남성",
-      "assetPath": "/products-reference/herb-203.webp",
+      "assetPath": "/products/herb-203-original.jpg",
       "products": [
         "우담남성"
       ],
-      "id": "herb-203"
+      "id": "herb-203",
+      "imageType": "user-provided original photo",
+      "editorialNote": "내용물이 보이지 않는 용기 참고사진은 원본 사용."
     },
     {
       "name": "우방자",
-      "assetPath": "/products-reference/herb-204.webp",
+      "assetPath": "/products-reference/herb-204-20261028.webp",
       "products": [
         "우방자"
       ],
-      "id": "herb-204"
+      "id": "herb-204",
+      "generationPrompt": "Product catalog photograph of 우방자, match attached reference material color, cut, texture and shape. A generous pile centered on pure white background, studio light. No bowl, text, logos, watermark, packaging, hands or props.",
+      "editorialNote": "2026-10-28 사용자 참고사진 반영."
     },
     {
       "name": "우슬",
-      "assetPath": "/products-reference/herb-205.webp",
+      "assetPath": "/products-reference/herb-205-20261028.webp",
       "products": [
         "우슬",
         "우슬"
       ],
-      "id": "herb-205"
+      "id": "herb-205",
+      "generationPrompt": "Product catalog photograph of 우슬, match attached reference material color, cut, texture and shape. A generous pile centered on pure white background, studio light. No bowl, text, logos, watermark, packaging, hands or props.",
+      "editorialNote": "2026-10-28 사용자 참고사진 반영.",
+      "originVariants": {
+        "국산": "/products-reference/herb-205k-20261028.webp"
+      }
     },
     {
       "name": "우슬/주자",
-      "assetPath": "/products-reference/herb-206.webp",
+      "assetPath": "/products-reference/herb-206-20261028.webp",
       "products": [
         "우슬/주자"
       ],
-      "id": "herb-206"
+      "id": "herb-206",
+      "generationPrompt": "Edit this photo, preserve same form and pile, make the material darker roasted brown, not black. White background, no text.",
+      "editorialNote": "2026-10-28 사용자 참고사진 반영."
     },
     {
       "name": "욱리인",

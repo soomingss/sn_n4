@@ -4,9 +4,12 @@ import referenceImages from "./product-photo-map.json";
 // powdered forms. An administrator's saved image (including "") takes priority.
 
 export function withProductImage(product) {
+  const originKey = product.name === "우슬" && /국산|한국|대한민국/.test(product.origin || "")
+    ? "우슬|국산"
+    : product.name;
   return {
     ...product,
-    image_url: product.image_url ?? referenceImages[product.name] ?? null,
+    image_url: product.image_url ?? referenceImages[originKey] ?? referenceImages[product.name] ?? null,
   };
 }
 
