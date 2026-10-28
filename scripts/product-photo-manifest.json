@@ -1799,13 +1799,13 @@
     },
     {
       "name": "여정실/주증",
-      "assetPath": "/products-reference/herb-188-20261028.webp",
+      "assetPath": "/products-reference/herb-188-20261028-v2.webp",
       "products": [
         "여정실/주증"
       ],
       "id": "herb-188",
-      "generationPrompt": "Edit this photo, preserve same form and pile, make the material darker roasted brown, not black. White background, no text.",
-      "editorialNote": "2026-10-28 사용자 참고사진 반영."
+      "generationPrompt": "Edit ONLY color of these dried privet berries to near-black dark charcoal black. Keep exact same shape, arrangement, quantity and wrinkled texture. Preserve pure white background and soft light.",
+      "editorialNote": "여정실/주증도 검은색에 가깝게 수정."
     },
     {
       "name": "연교",
