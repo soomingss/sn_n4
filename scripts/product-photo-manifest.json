@@ -2011,11 +2011,13 @@
     },
     {
       "name": "원지/밀자",
-      "assetPath": "/products-reference/herb-209.webp",
+      "assetPath": "/products-reference/herb-209-20261028-round.webp",
       "products": [
         "원지/밀자"
       ],
-      "id": "herb-209"
+      "id": "herb-209",
+      "generationPrompt": "Edit root photo: preserve same root shapes and pile, darken roots to deep blackish brown, not charred, white background. No text.",
+      "editorialNote": "원지 기준 검은 갈색으로 수정."
     },
     {
       "name": "원지",
@@ -2118,9 +2120,9 @@
       "id": "herb-219",
       "generationPrompt": "Use case: product-mockup. Asset: square Korean medicinal material catalog photograph for Shinnong Herb. Subject: 의이인 (Coix lacryma-jobi dehulled pearly white seed kernels). Product names: 의이인, 의이인. . . Show only this correctly identified dried medicinal material in the commercial form named, a modest loose pile centered at about 65 percent of frame width, fully visible with generous white margins. Seamless pure white #ffffff background, natural soft studio light, subtle contact shadow, realistic dry texture and true subdued material colors, crisp macro detail, slightly elevated three quarter camera, premium clean ecommerce product photography. No living growing plant, no fresh produce unless the named material requires it. No containers, bowls, spoons, packaging, hands, labels, words, watermark, collage, comparison grid, decorative elements or additional herbs. One single product photograph.",
       "originVariants": {
-        "국산": "/products-reference/herb-219k-20261028-b5.webp"
+        "국산": "/products-reference/herb-219k-20261028-round.webp"
       },
-      "originVariantPrompt": "Product catalog photo of 의이인 국산. Match reference material form and texture.  Generous pile on pure white background, soft studio lighting, entire pile visible. No text, logos, watermark, packaging, bowls, props."
+      "originVariantPrompt": "Edit image 1: preserve same brown grains, make a full ROUND mound centered like the composition in image 2. NO cropped or straight cut-off sides. Entire pile visible with white margin all around, white background. No text."
     },
     {
       "name": "익지",
