@@ -4,8 +4,8 @@ import referenceImages from "./product-photo-map.json";
 // powdered forms. An administrator's saved image (including "") takes priority.
 
 export function withProductImage(product) {
-  const originKey = product.name === "우슬" && /국산|한국|대한민국/.test(product.origin || "")
-    ? "우슬|국산"
+  const originKey = ["우슬", "의이인"].includes(product.name) && /국산|한국|대한민국/.test(product.origin || "")
+    ? product.name + "|국산"
     : product.name;
   return {
     ...product,

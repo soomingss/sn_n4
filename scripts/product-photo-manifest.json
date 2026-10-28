@@ -1835,29 +1835,33 @@
     },
     {
       "name": "오가피",
-      "assetPath": "/products-reference/herb-192.webp",
+      "assetPath": "/products-reference/herb-192-20261028-b5.webp",
       "products": [
         "오가피"
       ],
-      "id": "herb-192"
+      "id": "herb-192",
+      "generationPrompt": "Product catalog photo of 오가피. Match reference material form and texture.  Generous pile on pure white background, soft studio lighting, entire pile visible. No text, logos, watermark, packaging, bowls, props.",
+      "editorialNote": "2026-10-28 사용자 참고사진 및 추가 색상·형태 요청 반영."
     },
     {
       "name": "오가피/내피/정품",
-      "assetPath": "/products-reference/herb-193.webp",
+      "assetPath": "/products-reference/herb-193-20261028-b5.webp",
       "products": [
         "오가피/내피/정품"
       ],
-      "id": "herb-193"
+      "id": "herb-193",
+      "generationPrompt": "Product catalog photo of 오가피/내피/정품. Match reference material form and texture.  Generous pile on pure white background, soft studio lighting, entire pile visible. No text, logos, watermark, packaging, bowls, props.",
+      "editorialNote": "2026-10-28 사용자 참고사진 및 추가 색상·형태 요청 반영."
     },
     {
       "name": "오령지",
-      "assetPath": "/products-reference/herb-194-20261028.webp",
+      "assetPath": "/products-reference/herb-194-20261028-b5.webp",
       "products": [
         "오령지"
       ],
       "id": "herb-194",
-      "generationPrompt": "Product catalog photograph of 오령지, match attached reference material color, cut, texture and shape. A generous pile centered on pure white background, studio light. No bowl, text, logos, watermark, packaging, hands or props.",
-      "editorialNote": "2026-10-28 사용자 참고사진 반영."
+      "generationPrompt": "Product catalog photo of 오령지. Match reference material form and texture. Edit only color to near-black dark charcoal black, preserve same shape and arrangement. Generous pile on pure white background, soft studio lighting, entire pile visible. No text, logos, watermark, packaging, bowls, props.",
+      "editorialNote": "2026-10-28 사용자 참고사진 및 추가 색상·형태 요청 반영."
     },
     {
       "name": "오매",
@@ -1902,13 +1906,13 @@
     },
     {
       "name": "용골",
-      "assetPath": "/products-reference/herb-199-20261028-v2.webp",
+      "assetPath": "/products-reference/herb-199-20261028-b5.webp",
       "products": [
         "용골"
       ],
       "id": "herb-199",
-      "generationPrompt": "Edit product photo: Keep exact porous ivory white chunks. Increase quantity into a slightly more generous fuller pile, soft studio lighting and pure white background. No props or text.",
-      "editorialNote": "2026-10-28 사용자 요청: 용골 풍성하게, 여정실 검게, 우담남성 흰 배경.",
+      "generationPrompt": "Product catalog photo of 용골. Match reference material form and texture. Crush into pieces about one third the size, numerous smaller irregular porous white fragments, same overall pile size. Generous pile on pure white background, soft studio lighting, entire pile visible. No text, logos, watermark, packaging, bowls, props.",
+      "editorialNote": "2026-10-28 사용자 참고사진 및 추가 색상·형태 요청 반영.",
       "imageType": "AI-edited product photo"
     },
     {
@@ -1931,12 +1935,14 @@
     },
     {
       "name": "용안육",
-      "assetPath": "/products-reference/herb-202.webp",
+      "assetPath": "/products-reference/herb-202-20261028-b5.webp",
       "products": [
         "용안육",
         "용안육"
       ],
-      "id": "herb-202"
+      "id": "herb-202",
+      "generationPrompt": "Product catalog photo of 용안육. Match reference material form and texture. Edit color slightly darker blackish brown, preserve same shapes. Generous pile on pure white background, soft studio lighting, entire pile visible. No text, logos, watermark, packaging, bowls, props.",
+      "editorialNote": "2026-10-28 사용자 참고사진 및 추가 색상·형태 요청 반영."
     },
     {
       "name": "우담남성",
@@ -1985,19 +1991,23 @@
     },
     {
       "name": "욱리인",
-      "assetPath": "/products-reference/herb-207.webp",
+      "assetPath": "/products-reference/herb-207-20261028-b5.webp",
       "products": [
         "욱리인"
       ],
-      "id": "herb-207"
+      "id": "herb-207",
+      "generationPrompt": "Product catalog photo of 욱리인. Match reference material form and texture. Show the kernels cut into thin slices only, not whole kernels. Generous pile on pure white background, soft studio lighting, entire pile visible. No text, logos, watermark, packaging, bowls, props.",
+      "editorialNote": "2026-10-28 사용자 참고사진 및 추가 색상·형태 요청 반영."
     },
     {
       "name": "울금",
-      "assetPath": "/products-reference/herb-208.webp",
+      "assetPath": "/products-reference/herb-208-20261028-b5.webp",
       "products": [
         "울금"
       ],
-      "id": "herb-208"
+      "id": "herb-208",
+      "generationPrompt": "Product catalog photo of 울금. Match reference material form and texture. Change yellow surfaces to natural gray and gray-brown, no yellow, preserve exact cut shapes. Generous pile on pure white background, soft studio lighting, entire pile visible. No text, logos, watermark, packaging, bowls, props.",
+      "editorialNote": "2026-10-28 사용자 참고사진 및 추가 색상·형태 요청 반영."
     },
     {
       "name": "원지/밀자",
@@ -2009,31 +2019,35 @@
     },
     {
       "name": "원지",
-      "assetPath": "/products-reference/herb-210.webp",
+      "assetPath": "/products-reference/herb-210-20261028-b5.webp",
       "products": [
         "원지/상",
         "원지/특"
       ],
-      "id": "herb-210"
+      "id": "herb-210",
+      "generationPrompt": "Product catalog photo of 원지. Match reference material form and texture.  Generous pile on pure white background, soft studio lighting, entire pile visible. No text, logos, watermark, packaging, bowls, props.",
+      "editorialNote": "2026-10-28 사용자 참고사진 및 추가 색상·형태 요청 반영."
     },
     {
       "name": "위령선",
-      "assetPath": "/products-reference/herb-211.webp",
+      "assetPath": "/products-reference/herb-211-20261028-b5.webp",
       "products": [
         "위령선"
       ],
       "id": "herb-211",
-      "generationPrompt": "White background single herb product photograph: Clematis dried fine fibrous roots with short rhizome"
+      "generationPrompt": "Product catalog photo of 위령선. Match reference material form and texture.  Generous pile on pure white background, soft studio lighting, entire pile visible. No text, logos, watermark, packaging, bowls, props.",
+      "editorialNote": "2026-10-28 사용자 참고사진 및 추가 색상·형태 요청 반영."
     },
     {
       "name": "유백피",
-      "assetPath": "/products-reference/herb-212.webp",
+      "assetPath": "/products-reference/herb-212-20261028-b5.webp",
       "products": [
         "유백피",
         "유백피"
       ],
       "id": "herb-212",
-      "generationPrompt": "White background single herb product photograph: Ulmus root bark, dried pale fibrous inner bark strips"
+      "generationPrompt": "Product catalog photo of 유백피. Match reference material form and texture.  Generous pile on pure white background, soft studio lighting, entire pile visible. No text, logos, watermark, packaging, bowls, props.",
+      "editorialNote": "2026-10-28 사용자 참고사진 및 추가 색상·형태 요청 반영."
     },
     {
       "name": "유향",
@@ -2046,40 +2060,44 @@
     },
     {
       "name": "육계",
-      "assetPath": "/products-reference/herb-214.webp",
+      "assetPath": "/products-reference/herb-214-20261028-b5.webp",
       "products": [
         "육계",
         "육계/YB1"
       ],
       "id": "herb-214",
-      "generationPrompt": "White background single herb product photograph: Cinnamomum cassia thick cinnamon bark rolls"
+      "generationPrompt": "Product catalog photo of 육계. Match reference material form and texture.  Generous pile on pure white background, soft studio lighting, entire pile visible. No text, logos, watermark, packaging, bowls, props.",
+      "editorialNote": "2026-10-28 사용자 참고사진 및 추가 색상·형태 요청 반영."
     },
     {
       "name": "육두구",
-      "assetPath": "/products-reference/herb-215.webp",
+      "assetPath": "/products-reference/herb-215-20261028-b5.webp",
       "products": [
         "육두구"
       ],
       "id": "herb-215",
-      "generationPrompt": "White background single herb product photograph: whole dried nutmeg kernels, no outer mace"
+      "generationPrompt": "Product catalog photo of 육두구. Match reference material form and texture.  Generous pile on pure white background, soft studio lighting, entire pile visible. No text, logos, watermark, packaging, bowls, props.",
+      "editorialNote": "2026-10-28 사용자 참고사진 및 추가 색상·형태 요청 반영."
     },
     {
       "name": "육종용주증",
-      "assetPath": "/products-reference/herb-216.webp",
+      "assetPath": "/products-reference/herb-216-20261028-b5.webp",
       "products": [
         "육종용주증"
       ],
       "id": "herb-216",
-      "generationPrompt": "White background single herb product photograph: wine steamed Cistanche dried dark brown stem slices"
+      "generationPrompt": "Product catalog photo of 육종용주증. Match reference material form and texture.  Generous pile on pure white background, soft studio lighting, entire pile visible. No text, logos, watermark, packaging, bowls, props.",
+      "editorialNote": "2026-10-28 사용자 참고사진 및 추가 색상·형태 요청 반영."
     },
     {
       "name": "율피",
-      "assetPath": "/products-reference/herb-217.webp",
+      "assetPath": "/products-reference/herb-217-20261028-b5.webp",
       "products": [
         "율피"
       ],
       "id": "herb-217",
-      "generationPrompt": "White background single herb product photograph: thin dry chestnut inner skins, brown curled flakes"
+      "generationPrompt": "Product catalog photo of 율피. Match reference material form and texture.  Generous pile on pure white background, soft studio lighting, entire pile visible. No text, logos, watermark, packaging, bowls, props.",
+      "editorialNote": "2026-10-28 사용자 참고사진 및 추가 색상·형태 요청 반영."
     },
     {
       "name": "은행잎",
@@ -2098,7 +2116,11 @@
         "의이인"
       ],
       "id": "herb-219",
-      "generationPrompt": "Use case: product-mockup. Asset: square Korean medicinal material catalog photograph for Shinnong Herb. Subject: 의이인 (Coix lacryma-jobi dehulled pearly white seed kernels). Product names: 의이인, 의이인. . . Show only this correctly identified dried medicinal material in the commercial form named, a modest loose pile centered at about 65 percent of frame width, fully visible with generous white margins. Seamless pure white #ffffff background, natural soft studio light, subtle contact shadow, realistic dry texture and true subdued material colors, crisp macro detail, slightly elevated three quarter camera, premium clean ecommerce product photography. No living growing plant, no fresh produce unless the named material requires it. No containers, bowls, spoons, packaging, hands, labels, words, watermark, collage, comparison grid, decorative elements or additional herbs. One single product photograph."
+      "generationPrompt": "Use case: product-mockup. Asset: square Korean medicinal material catalog photograph for Shinnong Herb. Subject: 의이인 (Coix lacryma-jobi dehulled pearly white seed kernels). Product names: 의이인, 의이인. . . Show only this correctly identified dried medicinal material in the commercial form named, a modest loose pile centered at about 65 percent of frame width, fully visible with generous white margins. Seamless pure white #ffffff background, natural soft studio light, subtle contact shadow, realistic dry texture and true subdued material colors, crisp macro detail, slightly elevated three quarter camera, premium clean ecommerce product photography. No living growing plant, no fresh produce unless the named material requires it. No containers, bowls, spoons, packaging, hands, labels, words, watermark, collage, comparison grid, decorative elements or additional herbs. One single product photograph.",
+      "originVariants": {
+        "국산": "/products-reference/herb-219k-20261028-b5.webp"
+      },
+      "originVariantPrompt": "Product catalog photo of 의이인 국산. Match reference material form and texture.  Generous pile on pure white background, soft studio lighting, entire pile visible. No text, logos, watermark, packaging, bowls, props."
     },
     {
       "name": "익지",
@@ -2111,41 +2133,45 @@
     },
     {
       "name": "익지/추말",
-      "assetPath": "/products-reference/herb-221.webp",
+      "assetPath": "/products-reference/herb-221-20261028-b5.webp",
       "products": [
         "익지/추말"
       ],
       "id": "herb-221",
-      "generationPrompt": "Use case: product-mockup. Asset: square Korean medicinal material catalog photograph for Shinnong Herb. Subject: 익지/추말 (Alpinia oxyphylla dried ridged elongated fruits). Product names: 익지/추말. coarsely crushed material, irregular granules, not whole pieces. . Show only this correctly identified dried medicinal material in the commercial form named, a modest loose pile centered at about 65 percent of frame width, fully visible with generous white margins. Seamless pure white #ffffff background, natural soft studio light, subtle contact shadow, realistic dry texture and true subdued material colors, crisp macro detail, slightly elevated three quarter camera, premium clean ecommerce product photography. No living growing plant, no fresh produce unless the named material requires it. No containers, bowls, spoons, packaging, hands, labels, words, watermark, collage, comparison grid, decorative elements or additional herbs. One single product photograph."
+      "generationPrompt": "Product catalog photo of 익지/추말. Match reference material form and texture.  Generous pile on pure white background, soft studio lighting, entire pile visible. No text, logos, watermark, packaging, bowls, props.",
+      "editorialNote": "2026-10-28 사용자 참고사진 및 추가 색상·형태 요청 반영."
     },
     {
       "name": "인동",
-      "assetPath": "/products-reference/herb-222.webp",
+      "assetPath": "/products-reference/herb-222-20261028-b5.webp",
       "products": [
         "인동",
         "인동"
       ],
       "id": "herb-222",
-      "generationPrompt": "Use case: product-mockup. Asset: square Korean medicinal material catalog photograph for Shinnong Herb. Subject: 인동 (Lonicera japonica dried vine stem segments, not flowers). Product names: 인동, 인동. . . Show only this correctly identified dried medicinal material in the commercial form named, a modest loose pile centered at about 65 percent of frame width, fully visible with generous white margins. Seamless pure white #ffffff background, natural soft studio light, subtle contact shadow, realistic dry texture and true subdued material colors, crisp macro detail, slightly elevated three quarter camera, premium clean ecommerce product photography. No living growing plant, no fresh produce unless the named material requires it. No containers, bowls, spoons, packaging, hands, labels, words, watermark, collage, comparison grid, decorative elements or additional herbs. One single product photograph."
+      "generationPrompt": "Product catalog photo of 인동. Match reference material form and texture.  Generous pile on pure white background, soft studio lighting, entire pile visible. No text, logos, watermark, packaging, bowls, props.",
+      "editorialNote": "2026-10-28 사용자 참고사진 및 추가 색상·형태 요청 반영."
     },
     {
       "name": "일당귀",
-      "assetPath": "/products-reference/herb-223.webp",
+      "assetPath": "/products-reference/herb-223-20261028-b5.webp",
       "products": [
         "일당귀",
         "일당귀"
       ],
       "id": "herb-223",
-      "generationPrompt": "Use case: product-mockup. Asset: square Korean medicinal material catalog photograph for Shinnong Herb. Subject: 일당귀 (Angelica acutiloba dried root slices). Product names: 일당귀, 일당귀. . . Show only this correctly identified dried medicinal material in the commercial form named, a modest loose pile centered at about 65 percent of frame width, fully visible with generous white margins. Seamless pure white #ffffff background, natural soft studio light, subtle contact shadow, realistic dry texture and true subdued material colors, crisp macro detail, slightly elevated three quarter camera, premium clean ecommerce product photography. No living growing plant, no fresh produce unless the named material requires it. No containers, bowls, spoons, packaging, hands, labels, words, watermark, collage, comparison grid, decorative elements or additional herbs. One single product photograph."
+      "generationPrompt": "Product catalog photo of 일당귀. Match reference material form and texture.  Generous pile on pure white background, soft studio lighting, entire pile visible. No text, logos, watermark, packaging, bowls, props.",
+      "editorialNote": "2026-10-28 사용자 참고사진 및 추가 색상·형태 요청 반영."
     },
     {
       "name": "일당귀/신",
-      "assetPath": "/products-reference/herb-224.webp",
+      "assetPath": "/products-reference/herb-224-20261028-b5.webp",
       "products": [
         "일당귀/신"
       ],
       "id": "herb-224",
-      "generationPrompt": "Use case: product-mockup. Asset: square Korean medicinal material catalog photograph for Shinnong Herb. Subject: 일당귀/신 (Angelica acutiloba dried main root bodies without lateral rootlets). Product names: 일당귀/신. . . Show only this correctly identified dried medicinal material in the commercial form named, a modest loose pile centered at about 65 percent of frame width, fully visible with generous white margins. Seamless pure white #ffffff background, natural soft studio light, subtle contact shadow, realistic dry texture and true subdued material colors, crisp macro detail, slightly elevated three quarter camera, premium clean ecommerce product photography. No living growing plant, no fresh produce unless the named material requires it. No containers, bowls, spoons, packaging, hands, labels, words, watermark, collage, comparison grid, decorative elements or additional herbs. One single product photograph."
+      "generationPrompt": "Edit this Japanese angelica root photo: remove all branch root and thin root-tail parts, keep only unbranched main root body slices, same color and texture, generous pile on white background, no text.",
+      "editorialNote": "2026-10-28 사용자 참고사진 및 추가 색상·형태 요청 반영."
     },
     {
       "name": "자근",
