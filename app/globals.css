@@ -462,3 +462,33 @@ footer{min-height:95px;border-top:1px solid #ddd;padding:20px 6%;display:grid;gr
 .productPhotoEditorControls>p{color:#a13636;font-size:12px;margin:0}.productPhotoEditorControls .adminLinkButton{cursor:pointer}
 .productPhotoUrl span{display:block;font-size:12px;margin-bottom:5px}.productPhotoUrl input{width:100%;min-width:0;padding:8px;border:1px solid #dce5de;border-radius:5px;font-size:12px}
 @media(max-width:620px){.productPhotoEditor{align-items:flex-start;gap:12px;padding:12px}.productPhotoEditorPreview{width:90px;height:100px}.productPhotoEditorControls{gap:8px}}
+/* Herbal product information: shared ordering view, native accessible dialog. */
+.productPhotoButton{position:relative;display:block;padding:0;border:0;cursor:pointer;flex-shrink:0}
+.productPhotoButton:focus-visible{outline:3px solid #54816a;outline-offset:3px}
+.productThumb .productPhotoOpenHint{position:absolute;right:3px;bottom:3px;width:22px;height:22px;border:1px solid #dce6de;border-radius:50%;background:#fff;color:#315f4e;font-size:17px;font-weight:400;line-height:1;display:flex;align-items:center;justify-content:center;pointer-events:none}
+.herbDetailHelp{margin:0 0 12px;color:#64746a;font-size:12px}
+.herbDetailDialog{width:min(760px,calc(100% - 28px));max-height:calc(100dvh - 32px);margin:auto;padding:0;border:1px solid #dce6df;border-radius:12px;background:#fff;color:#263a30;overflow:auto;overscroll-behavior:contain;box-shadow:0 20px 80px #17302433}
+.herbDetailDialog::backdrop{background:#10271d88}
+.herbDetailContent{padding:28px}
+.herbDetailHeader{display:flex;justify-content:space-between;align-items:flex-start;gap:20px;margin-bottom:20px}
+.herbDetailHeader span{font-size:12px;color:#6b7b70}
+.herbDetailHeader h2{font-size:27px;line-height:1.4;margin:6px 0 0;word-break:keep-all;overflow-wrap:anywhere}
+.herbDetailHeader>button{width:40px;height:40px;flex-shrink:0;border:1px solid #dce6de;border-radius:50%;background:#fff;color:#315f4e;font-size:28px;line-height:1;cursor:pointer}
+.herbDetailHeader>button:focus-visible{outline:3px solid #54816a;outline-offset:2px}
+.herbDetailOverview{display:grid;grid-template-columns:250px minmax(0,1fr);align-items:center;gap:26px;padding-bottom:24px}
+.herbDetailPhoto{width:250px;height:250px;background:#fff}
+.herbDetailFacts{margin:0;min-width:0}
+.herbDetailFacts>div{display:grid;grid-template-columns:64px minmax(0,1fr);gap:12px;padding:11px 0;border-bottom:1px solid #edf1ed;font-size:13px;line-height:1.6}
+.herbDetailFacts dt{color:#6b7b70}
+.herbDetailFacts dd{margin:0;overflow-wrap:anywhere}
+.herbDetailSection{border-top:1px solid #e4ebe5;padding:22px 0}
+.herbDetailSection h3,.herbDetailSources h3{font-size:16px;margin:0 0 14px;font-weight:700}
+.herbDetailEffects{display:grid;gap:16px;margin:0}
+.herbDetailEffects dt{font-size:14px;color:#315f4e;font-weight:700;margin-bottom:5px;line-height:1.5}
+.herbDetailEffects dd,.herbDetailCaution p{font-size:14px;line-height:1.8;margin:0;word-break:keep-all;overflow-wrap:anywhere}
+.herbDetailVariant,.herbDetailContext,.herbDetailEmpty{font-size:12px;line-height:1.8;color:#6b786f;margin:0 0 16px}
+.herbDetailContext{margin:20px 0 0;padding:12px 14px;background:#f5f8f4;border-radius:6px}
+.herbDetailCaution{color:#654a35}
+.herbDetailSources{border-top:1px solid #e4ebe5;padding-top:20px;font-size:12px;color:#6b786f}
+.herbDetailSources h3{font-size:13px;margin-bottom:10px}.herbDetailSources ul{list-style:none;padding:0;margin:0;display:grid;gap:8px}.herbDetailSources a{color:#416951;text-decoration:underline;text-underline-offset:3px;line-height:1.6}.herbDetailSources>p{margin:12px 0 0;font-size:11px}
+@media(max-width:620px){.herbDetailDialog{width:calc(100% - 20px);max-height:calc(100dvh - 20px);border-radius:10px}.herbDetailContent{padding:20px}.herbDetailHeader h2{font-size:23px}.herbDetailOverview{grid-template-columns:1fr;gap:12px}.herbDetailPhoto{width:210px;height:210px;margin:auto}.herbDetailFacts>div{grid-template-columns:66px minmax(0,1fr)}.herbDetailSection{padding:20px 0}.herbDetailHelp{font-size:11px}}

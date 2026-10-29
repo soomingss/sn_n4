@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import ProductImage from "../ProductImage";
+import HerbDetails from "./HerbDetails";
 
 const CHOSUNG = ["전체","ㄱ","ㄴ","ㄷ","ㄹ","ㅁ","ㅂ","ㅅ","ㅇ","ㅈ","ㅊ","ㅋ","ㅌ","ㅍ","ㅎ"];
 const PAGE_SIZE = 6;
@@ -16,6 +17,7 @@ function money(v){if(v===null||v===undefined||v==="")return"단가 문의";retur
 
 export default function ProductsClient({products=[],companyName="",adminManual=false,partners=[],pricesByGrade={},adminPricePreview=false,adminPrices={}}){
   const [query,setQuery]=useState("");
+  const [detailProduct,setDetailProduct]=useState(null);
   const [previewGrade,setPreviewGrade]=useState("clinic");
   const [initial,setInitial]=useState("전체");
   const [page,setPage]=useState(1);
@@ -100,10 +102,11 @@ export default function ProductsClient({products=[],companyName="",adminManual=f
         <div className="productCatalog">
           <div className="catalogSearchRow"><div className="productSearch v21Search catalogSearch"><input value={query} onChange={e=>setQuery(e.target.value)} placeholder="약재명, 원산지 검색" aria-label="약재 검색"/><button type="button" className="catalogSearchButton" onClick={()=>setPage(1)}>⌕ 검색</button></div></div>
           <div className="v21Filter"><div className="initialFilter">{CHOSUNG.map(ch=><button key={ch} className={initial===ch?"active":""} onClick={()=>setInitial(ch)}>{ch}</button>)}</div></div>
+          <p className="herbDetailHelp">사진을 누르면 약재의 상세 설명을 볼 수 있습니다.</p>
           <div className="productList">
             {visible.length?visible.map(product=>(
               <article className="productCard" key={product.id}>
-                <div className="productThumb"><ProductImage src={product.image_url} name={product.name}/></div>
+                <button type="button" className="productThumb productPhotoButton" aria-label={`${product.name} 약재 설명 보기`} aria-haspopup="dialog" onClick={()=>setDetailProduct(product)}><ProductImage src={product.image_url} name={product.name}/><span className="productPhotoOpenHint" aria-hidden="true">＋</span></button>
                 <div className="productInfo"><h2>{product.name}</h2><p>{product.weight||""}{product.origin?`  |  ${product.origin}`:""}{product.supplier?`  |  ${product.supplier}`:""}</p><div className="productPrice"><b>{money(product.price)}</b><em className={product.stock_status==="low"?"soldOut":""}>{product.stock_status==="low"?"품절":"재고 있음"}</em></div></div>
                 <div className={`productOrderControls ${product.stock_status==="low"?"disabled":""}`}>
                   <label><span>수량</span><div className="v21Qty"><button disabled={product.stock_status==="low"} onClick={()=>setQuantities(q=>({...q,[product.id]:Math.max(1,Number(q[product.id]||1)-1)}))}>−</button><input disabled={product.stock_status==="low"} type="number" min="1" value={quantities[product.id]||1} onChange={e=>setQuantities(q=>({...q,[product.id]:e.target.value}))}/><button disabled={product.stock_status==="low"} onClick={()=>setQuantities(q=>({...q,[product.id]:Number(q[product.id]||1)+1}))}>＋</button></div></label>
@@ -118,6 +121,7 @@ export default function ProductsClient({products=[],companyName="",adminManual=f
       </div>
       <div className="mobileCartBar" onClick={()=>setMobileCartOpen(true)}><span>주문 목록</span><b>{totalQty}개 · {money(totalPrice)}</b></div>
       {mobileCartOpen&&<div className="mobileCartOverlay" onClick={()=>setMobileCartOpen(false)}><div className="mobileCartSheet" onClick={e=>e.stopPropagation()}><button className="mobileCartClose" onClick={()=>setMobileCartOpen(false)}>닫기</button><CartPanel items={cartItems} totalPrice={totalPrice} deliveryRequest={deliveryRequest} setDeliveryRequest={setDeliveryRequest} changeCartQty={changeCartQty} removeCart={removeCart} prepareOrder={prepareOrder} message={message} submitting={submitting} afterCutoff={afterCutoff} editOrderId={editOrderId} companyName={adminManual?(manualPartner?.company_name||""):companyName}/></div></div>}
+      {detailProduct&&<HerbDetails product={detailProduct} onClose={()=>setDetailProduct(null)}/>}
     </section>
   );
 }
