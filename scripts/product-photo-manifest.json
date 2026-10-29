@@ -944,13 +944,13 @@
     },
     {
       "name": "목적",
-      "assetPath": "/products-reference/uniform-20261029/herb-091-20261027.webp",
+      "assetPath": "/products-reference/uniform-20261029/herb-091-20261029-revised.webp",
       "products": [
         "목적"
       ],
       "id": "herb-091",
-      "generationPrompt": "Use case: product-mockup. Photorealistic catalog image for 목적. Use the supplied photo as reference for actual material, color, shape and cut; depict a generous natural pile of exactly that material on a pure white background, soft studio lighting, whole pile visible. No bowl, spoon, packaging, labels, logos, watermark or text.",
-      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색에 맞춘 이미지.",
+      "generationPrompt": "Use case: product-mockup. Create one square herbal ecommerce catalog photograph of 목적 matching the supplied material reference EXACTLY: numerous short hollow cylindrical dried horsetail stem segments, straight tubes with fine parallel longitudinal ridges, muted pale sage gray green and beige colors, occasional darker brown ring nodes and visible hollow open ends. These are chunky short cut tubes, NOT twigs or leaves. Arrange in a generous compact rounded mound, softly domed, centered fully visible on seamless pure white background, gentle studio lighting and realistic dry detail. Preserve the actual material identity, shape, cut proportions and colors from reference. No container, text, packaging, logo, watermark or props.",
+      "editorialNote": "사용자 신규 참고 사진의 짧고 속이 빈 마디 줄기 형태 반영.",
       "framing": "960px square; centered subject; 84% maximum edge; white background"
     },
     {
@@ -1015,13 +1015,13 @@
     },
     {
       "name": "반하",
-      "assetPath": "/products-reference/uniform-20261029/herb-098-20261027.webp",
+      "assetPath": "/products-reference/uniform-20261029/herb-098-20261029-revised.webp",
       "products": [
         "반하"
       ],
       "id": "herb-098",
-      "generationPrompt": "Use case product-mockup. Create a photorealistic catalog product photo for 반하. Use attached reference as material appearance reference, faithfully replicate its color, texture, cut shape and proportion.   Center a generous pile on pure white background, diffuse studio lighting, all edges visible. No text, packaging, labels, logos, watermark, bowls, utensils, or other objects.",
-      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색 반영.",
+      "generationPrompt": "Use case: precise-object-edit. Create 반하 from this catalog photograph. Preserve EXACT individual shapes, sizes, whole versus sliced form, dry texture, pile arrangement, camera and pure white background. Change ONLY the medicinal material color to clean natural ivory WHITE. Remove all golden yellow, orange and brown tones from the material while retaining fine cracks, subtle light gray shadows and realistic texture so the white material remains visible. No text, props or packaging.",
+      "editorialNote": "사용자 지정 생강백반제 사진의 모양·구도를 유지하고 흰색으로 변경.",
       "framing": "960px square; centered subject; 84% maximum edge; white background"
     },
     {
@@ -1037,13 +1037,13 @@
     },
     {
       "name": "반하/절",
-      "assetPath": "/products-reference/uniform-20261029/herb-100-20261027.webp",
+      "assetPath": "/products-reference/uniform-20261029/herb-100-20261029-revised.webp",
       "products": [
         "반하/절"
       ],
       "id": "herb-100",
-      "generationPrompt": "Use case product-mockup. Create a photorealistic catalog product photo for 반하/절. Use attached reference as material appearance reference, faithfully replicate its color, texture, cut shape and proportion.   Center a generous pile on pure white background, diffuse studio lighting, all edges visible. No text, packaging, labels, logos, watermark, bowls, utensils, or other objects.",
-      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색 반영.",
+      "generationPrompt": "Use case: precise-object-edit. Create 반하/절 from this catalog photograph. Preserve EXACT individual shapes, sizes, whole versus sliced form, dry texture, pile arrangement, camera and pure white background. Change ONLY the medicinal material color to clean natural ivory WHITE. Remove all golden yellow, orange and brown tones from the material while retaining fine cracks, subtle light gray shadows and realistic texture so the white material remains visible. No text, props or packaging.",
+      "editorialNote": "사용자 지정 생강백반제 사진의 모양·구도를 유지하고 흰색으로 변경.",
       "framing": "960px square; centered subject; 84% maximum edge; white background"
     },
     {
