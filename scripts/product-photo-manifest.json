@@ -818,14 +818,14 @@
     },
     {
       "name": "마황",
-      "assetPath": "/products-reference/uniform-20261029/herb-079-20261027.webp",
+      "assetPath": "/products-reference/uniform-20261029/herb-079-20261029-revised.webp",
       "products": [
         "마황",
         "마황"
       ],
       "id": "herb-079",
-      "generationPrompt": "Use case: product-mockup. Photorealistic catalog image for 마황. Use the supplied photo as reference for actual material, color, shape and cut; depict a generous natural pile of exactly that material on a pure white background, soft studio lighting, whole pile visible. No bowl, spoon, packaging, labels, logos, watermark or text.",
-      "editorialNote": "2026-10-27 사용자 참고사진의 형태와 색에 맞춘 이미지.",
+      "generationPrompt": "Use case: precise-object-edit. Image 1 is the edit target, 마황/탕포, with thin long twig-like ephedra stems. Preserve its exact long stem shapes, sizes, pile arrangement, texture, framing and pure white background. Change ONLY material color to the natural muted olive GREEN of image 2 (color reference only), keeping green rather than toasted brown. Do not copy image 2's short cut shape. No text, packaging or props.",
+      "editorialNote": "마황/탕포의 긴 줄기 형태 유지, 기존 마황의 초록색으로 변경.",
       "framing": "960px square; centered subject; 84% maximum edge; white background"
     },
     {
@@ -1122,12 +1122,14 @@
     },
     {
       "name": "백두구/추말",
-      "assetPath": "/products-reference/uniform-20261029/herb-108.webp",
+      "assetPath": "/products-reference/uniform-20261029/herb-108-20261029-revised.webp",
       "products": [
         "백두구/추말"
       ],
       "id": "herb-108",
-      "framing": "960px square; centered subject; 84% maximum edge; white background"
+      "framing": "960px square; centered subject; 84% maximum edge; white background",
+      "generationPrompt": "Use case: precise-object-edit. Grind the supplied 백두구 material into an extremely fine uniform soft flour powder. Preserve its natural dark brown gray color with lighter brown specks, but NO coarse grains, fragments, seeds or chunks visible. Powder should have a fine smooth flour-like texture. Generous compact rounded mound centered on pure white seamless background, whole mound visible with margins, soft studio light. No text, bowls, props or packaging.",
+      "editorialNote": "백두구 기준 굵은 조각 없이 아주 고운 분말로 변경."
     },
     {
       "name": "백두옹",
