@@ -2984,13 +2984,13 @@
     },
     {
       "name": "해풍등",
-      "assetPath": "/products-reference/herb-307-20261029-hwal.webp",
+      "assetPath": "/products-reference/herb-307-20261029-full.webp",
       "products": [
         "해풍등"
       ],
       "id": "herb-307",
-      "generationPrompt": "Use case: product-mockup. One square ecommerce catalog photograph of 해풍등: thin short dark brown woody vine stem strips and segments. Supplied image is material reference; match actual color, cut, proportions and texture closely. Show a generous natural mound fully visible with white margins on seamless pure white background, soft diffuse studio light, crisp realistic dried material detail. Remove bowls, scoops, packaging, props, text, labels, logos and watermark. No collage.",
-      "editorialNote": "사용자 참고 사진의 색·형태·절단 상태를 반영한 흰 배경 약재 단독 사진."
+      "generationPrompt": "Use case: precise-object-edit. Edit supplied catalog image: Preserve exact woody vine material and brown colors. Increase quantity substantially to a dense generous tall rounded mound, roughly 3 times the material, fewer empty gaps, individual piece size unchanged. Entire pile visible occupying about 80% of square frame with margins. Pure white background, soft diffuse studio lighting, realistic material detail. No text, packaging, props, watermark or collage.",
+      "editorialNote": "기존 색감 유지, 양을 늘려 풍성하고 높은 더미로 수정."
     },
     {
       "name": "행인",
@@ -3014,53 +3014,54 @@
     },
     {
       "name": "행인/추말",
-      "assetPath": "/products-reference/herb-310.webp",
+      "assetPath": "/products-reference/herb-310-20261029-full.webp",
       "products": [
         "행인/추말"
       ],
       "id": "herb-310",
-      "generationPrompt": "Use case: product-mockup. Asset: square Korean medicinal material catalog photograph for Shinnong Herb. Subject: 행인/추말 (coarsely crushed dry apricot kernels, not flour). Product names: 행인/추말. coarsely crushed material, irregular granules, not whole pieces. . Show only this correctly identified dried medicinal material in the commercial form named, a modest loose pile centered at about 65 percent of frame width, fully visible with generous white margins. Seamless pure white #ffffff background, natural soft studio light, subtle contact shadow, realistic dry texture and true subdued material colors, crisp macro detail, slightly elevated three quarter camera, premium clean ecommerce product photography. No living growing plant, no fresh produce unless the named material requires it. No containers, bowls, spoons, packaging, hands, labels, words, watermark, collage, comparison grid, decorative elements or additional herbs. One single product photograph."
+      "generationPrompt": "Use case: precise-object-edit. Edit supplied catalog image: Grind ALL kernels into extremely fine smooth ivory beige flour powder, no visible chunks, slices, coarse grains or whole seeds. Natural generous round fine powder mound with subtle soft surface texture. Entire pile visible occupying about 80% of square frame with margins. Pure white background, soft diffuse studio lighting, realistic material detail. No text, packaging, props, watermark or collage.",
+      "editorialNote": "사용자 요청: 굵은 조각 없이 아주 고운 가루로 수정."
     },
     {
       "name": "향부자",
-      "assetPath": "/products-reference/herb-311-20261029-hwal.webp",
+      "assetPath": "/products-reference/herb-311-20261029-full.webp",
       "products": [
         "향부자",
         "향부자"
       ],
       "id": "herb-311",
-      "generationPrompt": "Use case: product-mockup. One square ecommerce catalog photograph of 향부자: small irregular gray dark brown rhizome slices and angular chips with ivory cream interiors. Supplied image is material reference; match actual color, cut, proportions and texture closely. Show a generous natural mound fully visible with white margins on seamless pure white background, soft diffuse studio light, crisp realistic dried material detail. Remove bowls, scoops, packaging, props, text, labels, logos and watermark. No collage.",
-      "editorialNote": "사용자 참고 사진의 색·형태·절단 상태를 반영한 흰 배경 약재 단독 사진."
+      "generationPrompt": "Use case: precise-object-edit. Edit supplied catalog image: Preserve exact pale cream interiors and dark brown skin colors and slice shapes. Increase quantity to a generous dense tall three dimensional rounded mound, about 3 times the material, less sparse, same individual size. Entire pile visible occupying about 80% of square frame with margins. Pure white background, soft diffuse studio lighting, realistic material detail. No text, packaging, props, watermark or collage.",
+      "editorialNote": "기존 색감 유지, 양을 늘려 풍성하고 높은 더미로 수정."
     },
     {
       "name": "향부자/동변",
-      "assetPath": "/products-reference/herb-312-20261029-hwal.webp",
+      "assetPath": "/products-reference/herb-312-20261029-full.webp",
       "products": [
         "향부자/동변"
       ],
       "id": "herb-312",
-      "generationPrompt": "Use case: precise-object-edit. Create 향부자/동변 from this 향부자 catalog photograph. Preserve exact slice shapes, individual sizes, pile composition, texture, white background and light. Change only color: shift the pale interiors and entire material toward a distinctly warmer medium brown, much more brownish than original, while retaining some lighter tan variation. No text, props or packaging.",
-      "editorialNote": "향부자와 같은 형태에서 갈색빛을 더함."
+      "generationPrompt": "Use case: precise-object-edit. Edit supplied catalog image: Preserve exact warm medium brown interiors and dark skin colors and slice shapes. Increase quantity to a generous dense tall three dimensional rounded mound, about 3 times the material, less sparse, same individual size. Entire pile visible occupying about 80% of square frame with margins. Pure white background, soft diffuse studio lighting, realistic material detail. No text, packaging, props, watermark or collage.",
+      "editorialNote": "기존 색감 유지, 양을 늘려 풍성하고 높은 더미로 수정."
     },
     {
       "name": "향부자/주초",
-      "assetPath": "/products-reference/herb-313-20261029-hwal.webp",
+      "assetPath": "/products-reference/herb-313-20261029-full.webp",
       "products": [
         "향부자/주초"
       ],
       "id": "herb-313",
-      "generationPrompt": "Use case: precise-object-edit. Create 향부자/주초 from this 향부자 catalog photograph. Preserve exact slice shapes, individual sizes, pile composition, texture, white background and light. Change only color: make the material naturally roasted deep golden brown to dark warm brown, including pale interiors, with dark toasted edges, not charred black. No text, props or packaging.",
-      "editorialNote": "향부자와 같은 형태에서 볶은 갈색으로 변경, 향부자/초와 사진 공유."
+      "generationPrompt": "Use case: precise-object-edit. Edit supplied catalog image: Preserve exact roasted golden brown interiors and dark brown skin colors and slice shapes. Increase quantity to a generous dense tall three dimensional rounded mound, about 3 times the material, less sparse, same individual size. Entire pile visible occupying about 80% of square frame with margins. Pure white background, soft diffuse studio lighting, realistic material detail. No text, packaging, props, watermark or collage.",
+      "editorialNote": "기존 색감 유지, 양을 늘려 풍성하고 높은 더미로 수정."
     },
     {
       "name": "향부자/초",
-      "assetPath": "/products-reference/herb-313-20261029-hwal.webp",
+      "assetPath": "/products-reference/herb-313-20261029-full.webp",
       "products": [
         "향부자/초"
       ],
       "id": "herb-314",
-      "generationPrompt": "Use case: precise-object-edit. Create 향부자/주초 from this 향부자 catalog photograph. Preserve exact slice shapes, individual sizes, pile composition, texture, white background and light. Change only color: make the material naturally roasted deep golden brown to dark warm brown, including pale interiors, with dark toasted edges, not charred black. No text, props or packaging.",
-      "editorialNote": "향부자/주초와 동일한 볶은 색 사진 공유."
+      "generationPrompt": "Use case: precise-object-edit. Edit supplied catalog image: Preserve exact roasted golden brown interiors and dark brown skin colors and slice shapes. Increase quantity to a generous dense tall three dimensional rounded mound, about 3 times the material, less sparse, same individual size. Entire pile visible occupying about 80% of square frame with margins. Pure white background, soft diffuse studio lighting, realistic material detail. No text, packaging, props, watermark or collage.",
+      "editorialNote": "향부자/주초와 같은 풍성한 볶은 색 사진 공유."
     },
     {
       "name": "헛개나무",
@@ -3174,40 +3175,45 @@
     },
     {
       "name": "황기",
-      "assetPath": "/products-reference/herb-326.webp",
+      "assetPath": "/products-reference/herb-326-20261029-full.webp",
       "products": [
         "황기"
       ],
       "id": "herb-326",
-      "generationPrompt": "Use case: product-mockup. Asset: square Korean medicinal material catalog photograph for Shinnong Herb. Subject: 황기 (Astragalus membranaceus dried long pale beige root sticks). Product names: 황기. . . Show only this correctly identified dried medicinal material in the commercial form named, a modest loose pile centered at about 65 percent of frame width, fully visible with generous white margins. Seamless pure white #ffffff background, natural soft studio light, subtle contact shadow, realistic dry texture and true subdued material colors, crisp macro detail, slightly elevated three quarter camera, premium clean ecommerce product photography. No living growing plant, no fresh produce unless the named material requires it. No containers, bowls, spoons, packaging, hands, labels, words, watermark, collage, comparison grid, decorative elements or additional herbs. One single product photograph."
+      "generationPrompt": "Use case: product-mockup. One square ecommerce catalog photograph of 황기: thin pale cream beige long root strips with fibrous texture. Match supplied material reference closely in shape, cut, color and texture. Generous dense natural mound, fully visible with white margins, seamless pure white background, soft diffuse studio light and crisp realistic dried detail. No containers, bowls, scoops, props, text, labels, logos, watermarks or collage.",
+      "editorialNote": "사용자 참고 사진의 색·형태·절단 상태를 반영한 흰 배경 약재 단독 사진."
     },
     {
       "name": "황기/밀자",
-      "assetPath": "/products-reference/herb-327.webp",
+      "assetPath": "/products-reference/herb-327-20261029-full.webp",
       "products": [
         "황기/밀자",
         "황기/밀자"
       ],
       "id": "herb-327",
-      "generationPrompt": "Use case: product-mockup. Asset: square Korean medicinal material catalog photograph for Shinnong Herb. Subject: 황기/밀자 (Astragalus membranaceus dried long pale beige root sticks). Product names: 황기/밀자, 황기/밀자. . honey processed dried medicinal material with subtle amber surface, no liquid honey. Show only this correctly identified dried medicinal material in the commercial form named, a modest loose pile centered at about 65 percent of frame width, fully visible with generous white margins. Seamless pure white #ffffff background, natural soft studio light, subtle contact shadow, realistic dry texture and true subdued material colors, crisp macro detail, slightly elevated three quarter camera, premium clean ecommerce product photography. No living growing plant, no fresh produce unless the named material requires it. No containers, bowls, spoons, packaging, hands, labels, words, watermark, collage, comparison grid, decorative elements or additional herbs. One single product photograph."
+      "generationPrompt": "Use case: product-mockup. One square ecommerce catalog photograph of 황기/밀자: long golden toasted amber brown root slices and strips. Match supplied material reference closely in shape, cut, color and texture. Generous dense natural mound, fully visible with white margins, seamless pure white background, soft diffuse studio light and crisp realistic dried detail. No containers, bowls, scoops, props, text, labels, logos, watermarks or collage.",
+      "editorialNote": "사용자 참고 사진의 색·형태·절단 상태를 반영한 흰 배경 약재 단독 사진."
     },
     {
       "name": "황기/직절",
-      "assetPath": "/products-reference/hwanggi-jikjeol.webp",
+      "assetPath": "/products-reference/herb-328-20261029-full.webp",
       "products": [
         "황기/직절",
         "황기/직절AA"
       ],
-      "id": "herb-328"
+      "id": "herb-328",
+      "generationPrompt": "Use case: product-mockup. One square ecommerce catalog photograph of 황기/직절: small round pale cream root cross-section discs, light brown skin and subtle centers. Match supplied material reference closely in shape, cut, color and texture. Generous dense natural mound, fully visible with white margins, seamless pure white background, soft diffuse studio light and crisp realistic dried detail. No containers, bowls, scoops, props, text, labels, logos, watermarks or collage.",
+      "editorialNote": "사용자 참고 사진의 색·형태·절단 상태를 반영한 흰 배경 약재 단독 사진."
     },
     {
       "name": "황기/편",
-      "assetPath": "/products-reference/herb-329.webp",
+      "assetPath": "/products-reference/herb-329-20261029-full.webp",
       "products": [
         "황기/편"
       ],
       "id": "herb-329",
-      "generationPrompt": "Use case: product-mockup. Asset: square Korean medicinal material catalog photograph for Shinnong Herb. Subject: 황기/편 (Astragalus dried diagonal oval pale yellow root slices). Product names: 황기/편. thin cut slices. . Show only this correctly identified dried medicinal material in the commercial form named, a modest loose pile centered at about 65 percent of frame width, fully visible with generous white margins. Seamless pure white #ffffff background, natural soft studio light, subtle contact shadow, realistic dry texture and true subdued material colors, crisp macro detail, slightly elevated three quarter camera, premium clean ecommerce product photography. No living growing plant, no fresh produce unless the named material requires it. No containers, bowls, spoons, packaging, hands, labels, words, watermark, collage, comparison grid, decorative elements or additional herbs. One single product photograph."
+      "generationPrompt": "Use case: product-mockup. One square ecommerce catalog photograph of 황기/편: long narrow pointed oblique pale cream yellow root slices. Match supplied material reference closely in shape, cut, color and texture. Generous dense natural mound, fully visible with white margins, seamless pure white background, soft diffuse studio light and crisp realistic dried detail. No containers, bowls, scoops, props, text, labels, logos, watermarks or collage.",
+      "editorialNote": "사용자 참고 사진의 색·형태·절단 상태를 반영한 흰 배경 약재 단독 사진."
     },
     {
       "name": "황기/편/일",
@@ -3239,12 +3245,13 @@
     },
     {
       "name": "황백/염자",
-      "assetPath": "/products-reference/herb-333.webp",
+      "assetPath": "/products-reference/herb-334.webp",
       "products": [
         "황백/염자"
       ],
       "id": "herb-333",
-      "generationPrompt": "Use case: product-mockup. Asset: square Korean medicinal material catalog photograph for Shinnong Herb. Subject: 황백/염자 (Phellodendron dried bark strips with bright yellow inner surface). Product names: 황백/염자. . salt processed dried medicinal material. Show only this correctly identified dried medicinal material in the commercial form named, a modest loose pile centered at about 65 percent of frame width, fully visible with generous white margins. Seamless pure white #ffffff background, natural soft studio light, subtle contact shadow, realistic dry texture and true subdued material colors, crisp macro detail, slightly elevated three quarter camera, premium clean ecommerce product photography. No living growing plant, no fresh produce unless the named material requires it. No containers, bowls, spoons, packaging, hands, labels, words, watermark, collage, comparison grid, decorative elements or additional herbs. One single product photograph."
+      "generationPrompt": "Use case: product-mockup. Asset: square Korean medicinal material catalog photograph for Shinnong Herb. Subject: 황백/주자 (Phellodendron dried bark strips with bright yellow inner surface). Product names: 황백/주자. . wine processed dried medicinal material with naturally darker brown color. Show only this correctly identified dried medicinal material in the commercial form named, a modest loose pile centered at about 65 percent of frame width, fully visible with generous white margins. Seamless pure white #ffffff background, natural soft studio light, subtle contact shadow, realistic dry texture and true subdued material colors, crisp macro detail, slightly elevated three quarter camera, premium clean ecommerce product photography. No living growing plant, no fresh produce unless the named material requires it. No containers, bowls, spoons, packaging, hands, labels, words, watermark, collage, comparison grid, decorative elements or additional herbs. One single product photograph.",
+      "editorialNote": "사용자 요청: 황백/주자와 사진 공유."
     },
     {
       "name": "황백/주자",
@@ -3257,30 +3264,33 @@
     },
     {
       "name": "황정",
-      "assetPath": "/products-reference/herb-335.webp",
+      "assetPath": "/products-reference/herb-335-20261029-full.webp",
       "products": [
         "황정"
       ],
       "id": "herb-335",
-      "generationPrompt": "Use case: product-mockup. Asset: square Korean medicinal material catalog photograph for Shinnong Herb. Subject: 황정 (Polygonatum sibiricum dried yellow brown knobby rhizome pieces). Product names: 황정. . . Show only this correctly identified dried medicinal material in the commercial form named, a modest loose pile centered at about 65 percent of frame width, fully visible with generous white margins. Seamless pure white #ffffff background, natural soft studio light, subtle contact shadow, realistic dry texture and true subdued material colors, crisp macro detail, slightly elevated three quarter camera, premium clean ecommerce product photography. No living growing plant, no fresh produce unless the named material requires it. No containers, bowls, spoons, packaging, hands, labels, words, watermark, collage, comparison grid, decorative elements or additional herbs. One single product photograph."
+      "generationPrompt": "Use case: product-mockup. One square ecommerce catalog photograph of 황정: wrinkled golden tan brown irregular dried rhizome segments. Match supplied material reference closely in shape, cut, color and texture. Generous dense natural mound, fully visible with white margins, seamless pure white background, soft diffuse studio light and crisp realistic dried detail. No containers, bowls, scoops, props, text, labels, logos, watermarks or collage.",
+      "editorialNote": "사용자 참고 사진의 색·형태·절단 상태를 반영한 흰 배경 약재 단독 사진."
     },
     {
       "name": "회향",
-      "assetPath": "/products-reference/herb-336.webp",
+      "assetPath": "/products-reference/herb-336-20261029-full.webp",
       "products": [
         "회향"
       ],
       "id": "herb-336",
-      "generationPrompt": "Use case: product-mockup. Asset: square Korean medicinal material catalog photograph for Shinnong Herb. Subject: 회향 (Foeniculum vulgare dried greenish tan ridged fennel seeds). Product names: 회향. . . Show only this correctly identified dried medicinal material in the commercial form named, a modest loose pile centered at about 65 percent of frame width, fully visible with generous white margins. Seamless pure white #ffffff background, natural soft studio light, subtle contact shadow, realistic dry texture and true subdued material colors, crisp macro detail, slightly elevated three quarter camera, premium clean ecommerce product photography. No living growing plant, no fresh produce unless the named material requires it. No containers, bowls, spoons, packaging, hands, labels, words, watermark, collage, comparison grid, decorative elements or additional herbs. One single product photograph."
+      "generationPrompt": "Use case: product-mockup. One square ecommerce catalog photograph of 회향: tiny elongated ribbed greenish gray tan fennel seeds. Match supplied material reference closely in shape, cut, color and texture. Generous dense natural mound, fully visible with white margins, seamless pure white background, soft diffuse studio light and crisp realistic dried detail. No containers, bowls, scoops, props, text, labels, logos, watermarks or collage.",
+      "editorialNote": "사용자 참고 사진의 색·형태·절단 상태를 반영한 흰 배경 약재 단독 사진."
     },
     {
       "name": "후박",
-      "assetPath": "/products-reference/herb-337.webp",
+      "assetPath": "/products-reference/herb-337-20261029-full.webp",
       "products": [
         "후박"
       ],
       "id": "herb-337",
-      "generationPrompt": "Use case: product-mockup. Asset: square Korean medicinal material catalog photograph for Shinnong Herb. Subject: 후박 (Magnolia officinalis dried thick brown bark rolls). Product names: 후박. . . Show only this correctly identified dried medicinal material in the commercial form named, a modest loose pile centered at about 65 percent of frame width, fully visible with generous white margins. Seamless pure white #ffffff background, natural soft studio light, subtle contact shadow, realistic dry texture and true subdued material colors, crisp macro detail, slightly elevated three quarter camera, premium clean ecommerce product photography. No living growing plant, no fresh produce unless the named material requires it. No containers, bowls, spoons, packaging, hands, labels, words, watermark, collage, comparison grid, decorative elements or additional herbs. One single product photograph."
+      "generationPrompt": "Use case: product-mockup. One square ecommerce catalog photograph of 후박: curled brown bark tubes and scrolls, warm tan interiors. Match supplied material reference closely in shape, cut, color and texture. Generous dense natural mound, fully visible with white margins, seamless pure white background, soft diffuse studio light and crisp realistic dried detail. No containers, bowls, scoops, props, text, labels, logos, watermarks or collage.",
+      "editorialNote": "사용자 참고 사진의 색·형태·절단 상태를 반영한 흰 배경 약재 단독 사진."
     },
     {
       "name": "후박/강자",
@@ -3302,12 +3312,13 @@
     },
     {
       "name": "후추",
-      "assetPath": "/products-reference/herb-340.webp",
+      "assetPath": "/products-reference/herb-340-20261029-full.webp",
       "products": [
         "후추"
       ],
       "id": "herb-340",
-      "generationPrompt": "Use case: product-mockup. Asset: square Korean medicinal material catalog photograph for Shinnong Herb. Subject: 후추 (Piper nigrum dried black peppercorns). Product names: 후추. . . Show only this correctly identified dried medicinal material in the commercial form named, a modest loose pile centered at about 65 percent of frame width, fully visible with generous white margins. Seamless pure white #ffffff background, natural soft studio light, subtle contact shadow, realistic dry texture and true subdued material colors, crisp macro detail, slightly elevated three quarter camera, premium clean ecommerce product photography. No living growing plant, no fresh produce unless the named material requires it. No containers, bowls, spoons, packaging, hands, labels, words, watermark, collage, comparison grid, decorative elements or additional herbs. One single product photograph."
+      "generationPrompt": "Use case: product-mockup. One square ecommerce catalog photograph of 후추: small whole black dark gray wrinkled peppercorns. Match supplied material reference closely in shape, cut, color and texture. Generous dense natural mound, fully visible with white margins, seamless pure white background, soft diffuse studio light and crisp realistic dried detail. No containers, bowls, scoops, props, text, labels, logos, watermarks or collage.",
+      "editorialNote": "사용자 참고 사진의 색·형태·절단 상태를 반영한 흰 배경 약재 단독 사진."
     },
     {
       "name": "흑두",
