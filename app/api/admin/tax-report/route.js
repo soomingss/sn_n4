@@ -122,7 +122,7 @@ export async function GET(request) {
     if (userId && order.user_id !== userId) continue;
     const product = productMap.get(Number(item.product_id)) || {};
     const origin = item.origin || product.origin || "";
-    const taxType = item.tax_type || product.tax_type || (origin === "국산" ? "exempt" : "taxable");
+    const taxType = item.tax_type || product.tax_type || (["국내산","국산"].includes(origin) ? "exempt" : "taxable");
     const subtotal = Number(item.subtotal) || 0;
     const supply = taxType === "exempt" ? subtotal : Math.round(subtotal / 1.1);
     const vat = taxType === "exempt" ? 0 : subtotal - supply;
