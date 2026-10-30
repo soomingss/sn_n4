@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import CartIcon from "./CartIcon";
 
 export default function MobileNav({ session, loaded, onLogout, siteSettings }) {
   const [open, setOpen] = useState(false);
@@ -30,7 +31,7 @@ export default function MobileNav({ session, loaded, onLogout, siteSettings }) {
       <Link className="mobileMenuRow" href="/signup" onClick={closeMenu}>거래처 신청</Link>
       {loaded && session ? <div className="mobileAccountArea">
         <div className="mobileAccountIdentity"><div className="mobileAccountNameRow"><b>{username}님</b>{!isAdmin && <Link className="mobileProfileMini" href="/mypage/profile" onClick={closeMenu}>회원정보 수정</Link>}</div><span>{session?.profile?.company_name || (companyName ? `${companyName} 거래처` : "거래처")} · {isAdmin ? "관리자 계정" : session?.profile?.status === "approved" ? "승인 완료" : session?.profile?.status === "rejected" ? "승인 거절" : "승인 대기"}</span></div>
-        <div className="mobileAccountLinks"><Link href="/mypage" onClick={closeMenu}>마이페이지</Link>{!isAdmin && session?.profile?.status === "approved" && <Link href="/products?cart=1" onClick={closeMenu}>장바구니</Link>}<Link href="/payment" onClick={closeMenu}>카드결제</Link></div>
+        <div className="mobileAccountLinks"><Link href="/mypage" onClick={closeMenu}>마이페이지</Link>{!isAdmin && session?.profile?.status === "approved" && <Link href="/cart" onClick={closeMenu} aria-label="장바구니 보기"><CartIcon/></Link>}<Link href="/payment" onClick={closeMenu}>카드결제</Link></div>
         <div className="mobileLogoutRow"><button type="button" onClick={logout}>로그아웃</button></div>
       </div> : <Link className="mobileMenuRow" href="/login" onClick={closeMenu}>로그인</Link>}
     </div></div>}
