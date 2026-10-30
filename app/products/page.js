@@ -17,6 +17,7 @@ export default async function ProductsPage(){
     const effectiveGrade=s.profile?.role==="admin"&&!s.profile?.price_grade?"clinic":s.profile?.price_grade;
     const prices=await loadPricesForGrade(effectiveGrade);
     products=attachGradePrices(rows,prices);
+    if(s.profile?.role!=="admin")products=products.map(({supplier,...product})=>String(supplier||"").includes("신흥")?{...product,supplier}:product);
     if(s.profile?.role==="admin"){
       const [oem,special]=await Promise.all([loadPricesForGrade("oem"),loadPricesForGrade("special")]);
       adminPrices={clinic:Object.fromEntries(products.map(p=>[String(p.id),p.price])),oem:Object.fromEntries(oem.map(p=>[String(p.product_id),p.price])),special:Object.fromEntries(special.map(p=>[String(p.product_id),p.price]))};
