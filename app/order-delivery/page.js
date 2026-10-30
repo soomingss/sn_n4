@@ -18,7 +18,7 @@ function Lines({value}){
 function DeliveryNotice({value}){
   const warning="택배 배송은 당일 배송 대상에서 제외됩니다.";
   const parts=String(value||"").split(warning);
-  return <>{parts.map((part,index)=><span key={index}>{index>0&&<strong className="deliveryParcelWarning">※※ {warning}</strong>}<Lines value={part}/></span>)}</>;
+  return <>{parts.map((part,index)=><span key={index}>{index>0&&<span className="deliveryParcelNotice"><strong className="deliveryParcelTitle">택배 배송 안내</strong><span className="deliveryParcelWarning">{warning}</span></span>}<Lines value={part}/></span>)}</>;
 }
 
 export default async function OrderDeliveryPage(){
