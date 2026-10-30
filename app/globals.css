@@ -559,3 +559,7 @@ footer{min-height:95px;border-top:1px solid #ddd;padding:20px 6%;display:grid;gr
 .cartPageActions{display:flex;align-items:center;gap:14px}.cartClearAll{border:0;background:transparent;color:#8d4c45;font-size:12px;cursor:pointer;white-space:nowrap}@media(max-width:620px){.cartPageActions{flex-direction:column-reverse;gap:10px;align-items:flex-end}}
 
 .orderCartActions .orderReviewButton{grid-column:1/-1;display:flex;align-items:center;justify-content:center;text-decoration:none}
+
+.deliveryRequest textarea{display:block;width:100%;min-height:88px;padding:11px;border:1px solid var(--line);border-radius:4px;background:#fff;color:#263f35;font:inherit;font-size:13px;line-height:1.7;resize:vertical;box-sizing:border-box}.deliveryRequest textarea:focus-visible{outline:2px solid #54816a;outline-offset:2px}.deliveryRequest>small{display:block;margin-top:6px;font-size:11px;color:#68766f}
+
+.deliveryRequestText{white-space:pre-wrap;overflow-wrap:anywhere;word-break:break-word}.adminTable .deliveryRequestText{display:block;min-width:140px;max-width:260px;white-space:pre-wrap}

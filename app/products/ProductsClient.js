@@ -7,6 +7,7 @@ import Link from "next/link";
 import CartIcon from "../CartIcon";
 import {cartQuantity,restoreCart} from "../lib/cart";
 import {productSpecs} from "../lib/product-display";
+import {DELIVERY_REQUEST_MAX_LENGTH} from "../lib/delivery-request";
 
 const CHOSUNG = ["전체","ㄱ","ㄴ","ㄷ","ㄹ","ㅁ","ㅂ","ㅅ","ㅇ","ㅈ","ㅊ","ㅋ","ㅌ","ㅍ","ㅎ"];
 const PAGE_SIZE = 6;
@@ -28,11 +29,10 @@ export default function ProductsClient({products=[],companyName="",adminManual=f
   const [quantities,setQuantities]=useState({});
   const [cart,setCart]=useState({});
   const [cartLoaded,setCartLoaded]=useState(false);
-  const [deliveryRequest,setDeliveryRequest]=useState("당일");
+  const [deliveryRequest,setDeliveryRequest]=useState("");
   const [message,setMessage]=useState("");
   const [mobileCartOpen,setMobileCartOpen]=useState(false);
   const [submitting,setSubmitting]=useState(false);
-  const [afterCutoff,setAfterCutoff]=useState(false);
   const [editOrderId,setEditOrderId]=useState(null);
   const [manualUserId,setManualUserId]=useState(partners[0]?.id||"");
   const [orderSource,setOrderSource]=useState("kakao");
@@ -46,16 +46,14 @@ export default function ProductsClient({products=[],companyName="",adminManual=f
   useEffect(()=>{
     if(adminManual)return;
     const params=new URLSearchParams(window.location.search);
-    const check=()=>{const parts=new Intl.DateTimeFormat("en-US",{timeZone:"Asia/Seoul",hour:"2-digit",hour12:false}).formatToParts(new Date());setAfterCutoff(Number(parts.find(x=>x.type==="hour")?.value||0)>=11)};
-    check(); const t=setInterval(check,30000);
-    try{const savedRequest=sessionStorage.getItem("shinnong-delivery-request");if(["당일","익일"].includes(savedRequest))setDeliveryRequest(savedRequest)}catch{}
+    try{const savedRequest=sessionStorage.getItem("shinnong-delivery-note");if(savedRequest!==null)setDeliveryRequest(savedRequest.slice(0,DELIVERY_REQUEST_MAX_LENGTH))}catch{}
     try{const saved=JSON.parse(localStorage.getItem("shinnong-cart")||"{}"),next=restoreCart(saved,activeProducts);setCart(next);persistCart(next);if(Object.keys(saved||{}).length>Object.keys(next).length)setMessage("현재 주문할 수 없는 품목은 목록에서 제외되었습니다.")}catch{}finally{setCartLoaded(true)}
     const syncStorage=event=>{if(event.key!=="shinnong-cart"&&event.key!==null)return;try{setCart(restoreCart(JSON.parse(localStorage.getItem("shinnong-cart")||"{}"),activeProducts))}catch{}};
     window.addEventListener("storage",syncStorage);
     const reorder=params.get("reorder"),edit=params.get("edit");
-    if(reorder||edit)(async()=>{try{const r=await fetch(`/api/orders/reorder?id=${encodeURIComponent(reorder||edit)}`),d=await r.json();if(!r.ok)throw new Error(d.error||"주문을 불러오지 못했습니다.");if(edit&&d.order?.status!=="new")throw new Error("준비가 시작된 주문은 수정할 수 없습니다.");const next={};for(const old of d.items||[]){const cur=activeProducts.find(p=>String(p.id)===String(old.product_id));if(cur&&cur.stock_status!=="low")next[cur.id]={...cur,quantity:old.quantity}}setCart(next);persistCart(next);if(edit){setEditOrderId(edit);setDeliveryRequest(d.order?.delivery_request||"익일");setMessage("")}else setMessage((d.items||[]).length>Object.keys(next).length?"현재 품절된 품목은 제외되었습니다.":"")}catch(e){setMessage(e.message)}})();
+    if(reorder||edit)(async()=>{try{const r=await fetch(`/api/orders/reorder?id=${encodeURIComponent(reorder||edit)}`),d=await r.json();if(!r.ok)throw new Error(d.error||"주문을 불러오지 못했습니다.");if(edit&&d.order?.status!=="new")throw new Error("준비가 시작된 주문은 수정할 수 없습니다.");const next={};for(const old of d.items||[]){const cur=activeProducts.find(p=>String(p.id)===String(old.product_id));if(cur&&cur.stock_status!=="low")next[cur.id]={...cur,quantity:old.quantity}}setCart(next);persistCart(next);if(edit){setEditOrderId(edit);setDeliveryRequest(d.order?.delivery_request||"");setMessage("")}else setMessage((d.items||[]).length>Object.keys(next).length?"현재 품절된 품목은 제외되었습니다.":"")}catch(e){setMessage(e.message)}})();
     if(params.get("cart")==="1"&&window.innerWidth<=950)setMobileCartOpen(true);
-    return()=>{clearInterval(t);window.removeEventListener("storage",syncStorage)};
+    return()=>{window.removeEventListener("storage",syncStorage)};
   },[]);
 
   const pageCount=Math.max(1,Math.ceil(filtered.length/PAGE_SIZE));
@@ -65,7 +63,7 @@ export default function ProductsClient({products=[],companyName="",adminManual=f
   const totalQty=cartItems.reduce((s,i)=>s+i.quantity,0);
   const totalPrice=cartItems.reduce((s,i)=>s+Number(i.price||0)*i.quantity,0);
   const persistCart=next=>{if(adminManual)return;try{const out={};for(const item of Object.values(next))out[item.id]={name:item.name,weight:item.weight||"",origin:item.origin||"",supplier:item.supplier||"",price:item.price,quantity:item.quantity};localStorage.setItem("shinnong-cart",JSON.stringify(out));window.dispatchEvent(new Event("shinnong-cart-changed"))}catch{}};
-  const updateDeliveryRequest=value=>{setDeliveryRequest(value);if(!adminManual)try{sessionStorage.setItem("shinnong-delivery-request",value)}catch{}};
+  const updateDeliveryRequest=value=>{setDeliveryRequest(value);if(!adminManual)try{sessionStorage.setItem("shinnong-delivery-note",value)}catch{}};
   const addToCart=p=>{const qty=cartQuantity(quantities[p.id]||1);setCart(prev=>{const next={...prev,[p.id]:{...p,quantity:(prev[p.id]?.quantity||0)+qty}};persistCart(next);return next});setMessage("")};
   const changeCartQty=(id,delta)=>setCart(prev=>{const item=prev[id];if(!item)return prev;const n=item.quantity+delta,next={...prev};if(n<=0)delete next[id];else next[id]={...item,quantity:n};persistCart(next);return next});
   const clearCart=()=>{if(window.confirm("담은 약재를 모두 삭제할까요?")){setCart({});persistCart({});setMessage("")}};
@@ -74,7 +72,6 @@ export default function ProductsClient({products=[],companyName="",adminManual=f
 
   const prepareOrder=async()=>{
     if(!cartItems.length||submitting)return;
-    if(afterCutoff&&deliveryRequest==="당일"){setMessage("오전 11시 이후 주문은 익일 배송만 가능합니다.");return}
     setSubmitting(true); setMessage(editOrderId?"주문을 수정하고 있습니다.":"주문을 접수하고 있습니다.");
     try{
       if(adminManual&&!manualUserId)throw new Error("거래처를 선택해주세요.");
@@ -88,7 +85,7 @@ export default function ProductsClient({products=[],companyName="",adminManual=f
       const data=await response.json();
       if(!response.ok)throw new Error(data?.error||"주문 처리에 실패했습니다.");
       setCart({}); setQuantities({});
-      if(!adminManual)try{localStorage.removeItem("shinnong-cart");window.dispatchEvent(new Event("shinnong-cart-changed"));sessionStorage.removeItem("shinnong-order-key")}catch{}
+      if(!adminManual)try{localStorage.removeItem("shinnong-cart");window.dispatchEvent(new Event("shinnong-cart-changed"));sessionStorage.removeItem("shinnong-order-key");sessionStorage.removeItem("shinnong-delivery-note")}catch{}
       const completedOrderId=editOrderId||data.order_id;
       if(!adminManual&&completedOrderId){window.location.href=`/mypage/orders/${encodeURIComponent(completedOrderId)}`;return}
       setMessage(`주문이 접수되었습니다. 주문번호 #${data.order_id}`); setEditOrderId(null);
@@ -98,7 +95,7 @@ export default function ProductsClient({products=[],companyName="",adminManual=f
 
   if(cartPage)return <section className="cartPage contentWidth">
     <div className="cartPageIntro"><div><CartIcon size={32}/><h2>주문할 약재를 확인해 주세요</h2><p>{cartLoaded?`${cartItems.length}개 품목 · ${totalQty}개`:"담은 상품을 불러오고 있습니다."}</p></div><div className="cartPageActions">{cartItems.length>0&&<button type="button" className="cartClearAll" disabled={submitting} onClick={clearCart}>전체 비우기</button>}<Link className="cartContinue" href="/products">쇼핑 계속하기</Link></div></div>
-    {!cartLoaded?<p className="cartLoading" role="status">상품과 가격을 확인하고 있습니다.</p>:<CartPanel fullPage setCartQty={setCartQty} parcelShippingNotice={parcelShippingNotice} items={cartItems} totalPrice={totalPrice} deliveryRequest={deliveryRequest} setDeliveryRequest={updateDeliveryRequest} changeCartQty={changeCartQty} removeCart={removeCart} prepareOrder={prepareOrder} message={message} submitting={submitting} afterCutoff={afterCutoff} editOrderId={editOrderId} companyName={companyName}/>}
+    {!cartLoaded?<p className="cartLoading" role="status">상품과 가격을 확인하고 있습니다.</p>:<CartPanel fullPage setCartQty={setCartQty} parcelShippingNotice={parcelShippingNotice} items={cartItems} totalPrice={totalPrice} deliveryRequest={deliveryRequest} setDeliveryRequest={updateDeliveryRequest} changeCartQty={changeCartQty} removeCart={removeCart} prepareOrder={prepareOrder} message={message} submitting={submitting} editOrderId={editOrderId} companyName={companyName}/>}
   </section>;
 
   return (
@@ -134,16 +131,16 @@ export default function ProductsClient({products=[],companyName="",adminManual=f
           </div>
           {pageCount>1&&<div className="v21Pagination"><button disabled={currentPage===1} onClick={()=>setPage(p=>Math.max(1,p-1))}>‹</button>{Array.from({length:Math.min(9,pageCount)},(_,i)=>{const start=Math.min(Math.max(1,currentPage-4),Math.max(1,pageCount-8));const n=start+i;return <button key={n} className={n===currentPage?"active":""} onClick={()=>setPage(n)}>{n}</button>})}<button disabled={currentPage===pageCount} onClick={()=>setPage(p=>Math.min(pageCount,p+1))}>›</button></div>}
         </div>
-        <CartPanel reviewBeforeOrder={!adminManual&&!editOrderId} parcelShippingNotice={parcelShippingNotice} items={cartItems} totalPrice={totalPrice} deliveryRequest={deliveryRequest} setDeliveryRequest={updateDeliveryRequest} changeCartQty={changeCartQty} removeCart={removeCart} prepareOrder={prepareOrder} message={message} submitting={submitting} afterCutoff={afterCutoff} editOrderId={editOrderId} companyName={adminManual?(manualPartner?.company_name||""):companyName}/>
+        <CartPanel reviewBeforeOrder={!adminManual&&!editOrderId} parcelShippingNotice={parcelShippingNotice} items={cartItems} totalPrice={totalPrice} deliveryRequest={deliveryRequest} setDeliveryRequest={updateDeliveryRequest} changeCartQty={changeCartQty} removeCart={removeCart} prepareOrder={prepareOrder} message={message} submitting={submitting} editOrderId={editOrderId} companyName={adminManual?(manualPartner?.company_name||""):companyName}/>
       </div>
       {adminManual?<div className="mobileCartBar" onClick={()=>setMobileCartOpen(true)}><span>주문 목록</span><b>{totalQty}개 · {money(totalPrice)}</b></div>:<Link className="mobileCartBar mobileCartIconBar" href="/cart" aria-label="장바구니 보기"><CartIcon size={26}/><b>{totalQty}개 · {money(totalPrice)}</b></Link>}
-      {mobileCartOpen&&<div className="mobileCartOverlay" onClick={()=>setMobileCartOpen(false)}><div className="mobileCartSheet" onClick={e=>e.stopPropagation()}><button className="mobileCartClose" onClick={()=>setMobileCartOpen(false)}>닫기</button><CartPanel reviewBeforeOrder={!adminManual&&!editOrderId} parcelShippingNotice={parcelShippingNotice} items={cartItems} totalPrice={totalPrice} deliveryRequest={deliveryRequest} setDeliveryRequest={updateDeliveryRequest} changeCartQty={changeCartQty} removeCart={removeCart} prepareOrder={prepareOrder} message={message} submitting={submitting} afterCutoff={afterCutoff} editOrderId={editOrderId} companyName={adminManual?(manualPartner?.company_name||""):companyName}/></div></div>}
+      {mobileCartOpen&&<div className="mobileCartOverlay" onClick={()=>setMobileCartOpen(false)}><div className="mobileCartSheet" onClick={e=>e.stopPropagation()}><button className="mobileCartClose" onClick={()=>setMobileCartOpen(false)}>닫기</button><CartPanel reviewBeforeOrder={!adminManual&&!editOrderId} parcelShippingNotice={parcelShippingNotice} items={cartItems} totalPrice={totalPrice} deliveryRequest={deliveryRequest} setDeliveryRequest={updateDeliveryRequest} changeCartQty={changeCartQty} removeCart={removeCart} prepareOrder={prepareOrder} message={message} submitting={submitting} editOrderId={editOrderId} companyName={adminManual?(manualPartner?.company_name||""):companyName}/></div></div>}
       {detailProduct&&<HerbDetails product={detailProduct} onClose={()=>setDetailProduct(null)}/>}
     </section>
   );
 }
 
-function CartPanel({items,totalPrice,deliveryRequest,setDeliveryRequest,changeCartQty,removeCart,prepareOrder,message,submitting,afterCutoff,editOrderId,companyName,parcelShippingNotice,fullPage=false,setCartQty,reviewBeforeOrder=false}){
+function CartPanel({items,totalPrice,deliveryRequest,setDeliveryRequest,changeCartQty,removeCart,prepareOrder,message,submitting,editOrderId,companyName,parcelShippingNotice,fullPage=false,setCartQty,reviewBeforeOrder=false}){
   return (
     <aside className={fullPage?"orderCart fullCart":"orderCart"}>
       <div className="orderCartHead"><h2>주문 목록</h2>{companyName&&<span>{companyName}</span>}</div>
@@ -156,13 +153,12 @@ function CartPanel({items,totalPrice,deliveryRequest,setDeliveryRequest,changeCa
           <button type="button" className="fullCartRemove" disabled={submitting} onClick={()=>removeCart(item.id)} aria-label={`${item.name} 삭제`}>삭제</button>
         </article>)}</div>:<div className="orderCartItems">{items.map(item=><div className="orderCartItem" key={item.id}><div><b>{item.name}</b><span>{item.weight||""}</span><em>{money(item.price)}</em></div><div className="cartQty"><button onClick={()=>changeCartQty(item.id,-1)}>−</button><span>{item.quantity}</span><button onClick={()=>changeCartQty(item.id,1)}>+</button></div><button className="cartRemove" onClick={()=>removeCart(item.id)}>삭제</button></div>)}</div>}
         <div className={fullPage?"fullCartCheckout":"cartCheckout"}>
-        <label className="deliveryRequest"><span>배송 요청사항</span><select value={deliveryRequest} onChange={e=>setDeliveryRequest(e.target.value)}><option value="당일">당일 (오전 11시 이전 주문시 가능)</option><option value="익일">익일</option></select></label>
+        <label className="deliveryRequest"><span>배송 요청사항 (선택)</span><textarea rows={3} maxLength={DELIVERY_REQUEST_MAX_LENGTH} value={deliveryRequest} disabled={submitting} onChange={e=>setDeliveryRequest(e.target.value)} placeholder="예: 도착 전 연락 부탁드립니다."/><small>500자 이내로 입력해 주세요.</small></label>
         <div className="orderTotal"><span>{fullPage?"총 상품금액":"주문 예상금액"}</span><b>{money(totalPrice)}</b></div>
         {parcelShippingNotice&&<p className="orderShippingNotice">{parcelShippingNotice}</p>}
-        {afterCutoff&&deliveryRequest==="당일"&&<p className="orderCartMessage">오전 11시 이후 주문은 익일 배송만 가능합니다.</p>}
         {message&&<p className="orderCartMessage">{message}</p>}
         <a className="orderPolicyLink" href="/order-delivery/returns#refund-policy" target="_blank" rel="noopener noreferrer" aria-label="교환·반품 및 환불 안내 보기 (새 창)">교환·반품 및 환불 안내 보기 ↗</a>
-        <div className="orderCartActions">{reviewBeforeOrder&&!fullPage?<Link className="orderSubmit orderReviewButton" href="/cart">결제하기</Link>:<button className="orderSubmit" disabled={submitting||(afterCutoff&&deliveryRequest==="당일")} onClick={prepareOrder}>{submitting?"처리중...":editOrderId?"주문 수정 저장":"주문하기"}</button>}</div>
+        <div className="orderCartActions">{reviewBeforeOrder&&!fullPage?<Link className="orderSubmit orderReviewButton" href="/cart">결제하기</Link>:<button className="orderSubmit" disabled={submitting} onClick={prepareOrder}>{submitting?"처리중...":editOrderId?"주문 수정 저장":"주문하기"}</button>}</div>
         </div>
       </>:fullPage?<div className="fullCartEmpty"><CartIcon size={56}/><h3>아직 담은 약재가 없습니다.</h3><p>{message||"약재주문 화면에서 필요한 상품을 담아 주세요."}</p><Link className="cartContinue" href="/products">약재 둘러보기</Link></div>:<div className="cartEmpty">주문할 제품을 담아주세요.</div>}
     </aside>

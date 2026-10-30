@@ -1,3 +1,4 @@
+import {normalizeDeliveryRequest} from "../../../../lib/delivery-request";
 import crypto from "node:crypto";
 import { NextResponse } from "next/server";
 import { getCurrentSession, supabaseAdminFetch } from "../../../../lib/auth";
@@ -17,8 +18,9 @@ export async function POST(request){
   const profile=(await profileRes.json())?.[0];
   if(!profile) return NextResponse.json({error:"승인된 거래처를 찾을 수 없습니다."},{status:400});
   if(!profile.price_grade) return NextResponse.json({error:"거래처 가격등급이 설정되지 않았습니다."},{status:400});
+  let delivery;try{delivery=normalizeDeliveryRequest(body.delivery_request)}catch(error){return NextResponse.json({error:error.message},{status:400})}
   const requestKey=crypto.randomUUID();
-  const rpc=await supabaseAdminFetch('/rest/v1/rpc/create_order_v31',{method:'POST',headers:{Prefer:'return=representation'},body:JSON.stringify({p_user_id:profile.id,p_company_name:profile.company_name||'',p_price_grade:String(profile.price_grade),p_delivery_request:String(body.delivery_request||'당일'),p_request_key:requestKey,p_order_source:source,p_items:items})});
+  const rpc=await supabaseAdminFetch('/rest/v1/rpc/create_order_v31',{method:'POST',headers:{Prefer:'return=representation'},body:JSON.stringify({p_user_id:profile.id,p_company_name:profile.company_name||'',p_price_grade:String(profile.price_grade),p_delivery_request:delivery,p_request_key:requestKey,p_order_source:source,p_items:items})});
   if(!rpc.ok){const detail=await rpc.text();return NextResponse.json({error:"수기 주문을 저장하지 못했습니다. v31 데이터베이스 SQL이 적용되었는지 확인해주세요.",detail},{status:500});}
   const row=(await rpc.json())?.[0];
   return NextResponse.json({ok:true,order_id:row?.order_id,total_amount:Number(row?.total_amount||0),request_key:requestKey});
