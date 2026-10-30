@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import ProductImage from "../ProductImage";
+import { visibleProductSupplier } from "../lib/product-supplier";
 import HerbDetails from "./HerbDetails";
 
 const CHOSUNG = ["전체","ㄱ","ㄴ","ㄷ","ㄹ","ㅁ","ㅂ","ㅅ","ㅇ","ㅈ","ㅊ","ㅋ","ㅌ","ㅍ","ㅎ"];
@@ -16,7 +17,6 @@ function getInitial(text="") {
 function money(v){if(v===null||v===undefined||v==="")return"단가 문의";return`${Number(v).toLocaleString("ko-KR")}원`}
 
 export default function ProductsClient({products=[],companyName="",adminManual=false,partners=[],pricesByGrade={},adminPricePreview=false,adminPrices={}}){
-  const showSupplier=adminManual||adminPricePreview;
   const [query,setQuery]=useState("");
   const [detailProduct,setDetailProduct]=useState(null);
   const [previewGrade,setPreviewGrade]=useState("clinic");
@@ -36,7 +36,7 @@ export default function ProductsClient({products=[],companyName="",adminManual=f
   const manualPartner=adminManual?partners.find(p=>p.id===manualUserId):null;
   const activeGrade=manualPartner?.price_grade;
   const activeProducts=adminManual?products.map(p=>({...p,price:pricesByGrade?.[String(activeGrade)]?.[String(p.id)]??pricesByGrade?.clinic?.[String(p.id)]??null})):adminPricePreview?products.map(p=>({...p,price:adminPrices?.[previewGrade]?.[String(p.id)]??adminPrices?.clinic?.[String(p.id)]??p.price})):products;
-  const filtered=useMemo(()=>activeProducts.filter(p=>{const q=query.trim().toLowerCase();return(!q||`${p.name} ${p.weight||""} ${p.origin||""} ${showSupplier||p.supplier?.includes("신흥")?(p.supplier||""):""}`.toLowerCase().includes(q))&&(initial==="전체"||getInitial(p.name)===initial)}),[activeProducts,query,initial,showSupplier]);
+  const filtered=useMemo(()=>activeProducts.filter(p=>{const q=query.trim().toLowerCase();return(!q||`${p.name} ${p.weight||""} ${p.origin||""} ${visibleProductSupplier(p.supplier)}`.toLowerCase().includes(q))&&(initial==="전체"||getInitial(p.name)===initial)}),[activeProducts,query,initial]);
   useEffect(()=>setPage(1),[query,initial]);
 
   useEffect(()=>{
@@ -108,7 +108,7 @@ export default function ProductsClient({products=[],companyName="",adminManual=f
             {visible.length?visible.map(product=>(
               <article className="productCard" key={product.id}>
                 <button type="button" className="productThumb productPhotoButton" aria-label={`${product.name} 약재 설명 보기`} aria-haspopup="dialog" onClick={()=>setDetailProduct(product)}><ProductImage src={product.image_url} name={product.name}/><span className="productPhotoOpenHint" aria-hidden="true">＋</span></button>
-                <div className="productInfo"><h2>{product.name}</h2><p>{product.weight||""}{product.origin?`  |  ${product.origin}`:""}{(showSupplier||product.supplier?.includes("신흥"))&&product.supplier?`  |  ${product.supplier}`:""}</p><div className="productPrice"><b>{money(product.price)}</b><em className={product.stock_status==="low"?"soldOut":""}>{product.stock_status==="low"?"품절":"재고 있음"}</em></div></div>
+                <div className="productInfo"><h2>{product.name}</h2><p>{product.weight||""}{product.origin?`  |  ${product.origin}`:""}{visibleProductSupplier(product.supplier)?`  |  ${visibleProductSupplier(product.supplier)}`:""}</p><div className="productPrice"><b>{money(product.price)}</b><em className={product.stock_status==="low"?"soldOut":""}>{product.stock_status==="low"?"품절":"재고 있음"}</em></div></div>
                 <div className={`productOrderControls ${product.stock_status==="low"?"disabled":""}`}>
                   <label><span>수량</span><div className="v21Qty"><button disabled={product.stock_status==="low"} onClick={()=>setQuantities(q=>({...q,[product.id]:Math.max(1,Number(q[product.id]||1)-1)}))}>−</button><input disabled={product.stock_status==="low"} type="number" min="1" value={quantities[product.id]||1} onChange={e=>setQuantities(q=>({...q,[product.id]:e.target.value}))}/><button disabled={product.stock_status==="low"} onClick={()=>setQuantities(q=>({...q,[product.id]:Number(q[product.id]||1)+1}))}>＋</button></div></label>
                   <div className="productActionButtons"><button className="productCartIconButton" disabled={product.stock_status==="low"} onClick={()=>addToCart(product)} aria-label={product.stock_status==="low"?"품절":"장바구니에 담기"}>{product.stock_status==="low"?<span>품절</span>:<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 10.2c.2.9 1 1.6 2 1.6h7.9c1 0 1.8-.7 2-1.6L20.4 8H6.1"/><circle cx="10" cy="19" r="1.25"/><circle cx="17" cy="19" r="1.25"/></svg>}</button></div>
@@ -122,7 +122,7 @@ export default function ProductsClient({products=[],companyName="",adminManual=f
       </div>
       <div className="mobileCartBar" onClick={()=>setMobileCartOpen(true)}><span>주문 목록</span><b>{totalQty}개 · {money(totalPrice)}</b></div>
       {mobileCartOpen&&<div className="mobileCartOverlay" onClick={()=>setMobileCartOpen(false)}><div className="mobileCartSheet" onClick={e=>e.stopPropagation()}><button className="mobileCartClose" onClick={()=>setMobileCartOpen(false)}>닫기</button><CartPanel items={cartItems} totalPrice={totalPrice} deliveryRequest={deliveryRequest} setDeliveryRequest={setDeliveryRequest} changeCartQty={changeCartQty} removeCart={removeCart} prepareOrder={prepareOrder} message={message} submitting={submitting} afterCutoff={afterCutoff} editOrderId={editOrderId} companyName={adminManual?(manualPartner?.company_name||""):companyName}/></div></div>}
-      {detailProduct&&<HerbDetails product={detailProduct} showSupplier={showSupplier} onClose={()=>setDetailProduct(null)}/>}
+      {detailProduct&&<HerbDetails product={detailProduct} onClose={()=>setDetailProduct(null)}/>}
     </section>
   );
 }

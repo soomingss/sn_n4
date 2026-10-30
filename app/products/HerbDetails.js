@@ -2,9 +2,10 @@
 
 import { useEffect, useRef } from "react";
 import ProductImage from "../ProductImage";
+import { visibleProductSupplier } from "../lib/product-supplier";
 import herbInformation from "../lib/herb-information.json";
 
-export default function HerbDetails({ product, onClose, showSupplier = false }) {
+export default function HerbDetails({ product, onClose }) {
   const dialog = useRef(null);
   const information = herbInformation.products[product.name];
   const entry = information ? herbInformation.herbs[information.key] : null;
@@ -36,7 +37,7 @@ export default function HerbDetails({ product, onClose, showSupplier = false }) 
           <dl className="herbDetailFacts">
             <div><dt>원산지</dt><dd>{product.origin || "별도 문의"}</dd></div>
             <div><dt>규격</dt><dd>{product.weight || "별도 문의"}</dd></div>
-            {(showSupplier || product.supplier?.includes("신흥")) && product.supplier && <div><dt>수입원</dt><dd>{product.supplier}</dd></div>}
+            {visibleProductSupplier(product.supplier) && <div><dt>수입원</dt><dd>{visibleProductSupplier(product.supplier)}</dd></div>}
             {entry?.latin && <div><dt>생약명</dt><dd lang="la">{entry.latin}</dd></div>}
             {information?.form && <div><dt>상품 형태</dt><dd>{information.form}</dd></div>}
           </dl>
