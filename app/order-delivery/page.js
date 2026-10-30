@@ -15,6 +15,12 @@ function Lines({value}){
   return <>{lines.map((line, index)=><span key={index}>{index > 0 && <br/>}{line}</span>)}</>;
 }
 
+function DeliveryNotice({value}){
+  const warning="택배 배송은 당일 배송 대상에서 제외됩니다.";
+  const parts=String(value||"").split(warning);
+  return <>{parts.map((part,index)=><span key={index}>{index>0&&<strong className="deliveryParcelWarning">※※ {warning}</strong>}<Lines value={part}/></span>)}</>;
+}
+
 export default async function OrderDeliveryPage(){
   const settings = await getSiteSettings();
   const content = await getSiteContent("order_delivery", settings);
@@ -56,7 +62,7 @@ export default async function OrderDeliveryPage(){
 
       <section className="orderNotice">
         <h2>주문 전 확인해 주세요</h2>
-        <p data-site-key="notice_1">• <Lines value={content.notice_1}/></p>
+        <p data-site-key="notice_1">• <DeliveryNotice value={content.notice_1}/></p>
         <p data-site-key="notice_2">• <Lines value={content.notice_2}/></p>
       </section>
     </main>
