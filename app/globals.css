@@ -494,3 +494,15 @@ footer{min-height:95px;border-top:1px solid #ddd;padding:20px 6%;display:grid;gr
 @media(max-width:620px){.herbDetailDialog{width:calc(100% - 20px);max-height:calc(100dvh - 20px);border-radius:10px}.herbDetailContent{padding:20px}.herbDetailHeader h2{font-size:23px}.herbDetailOverview{grid-template-columns:1fr;gap:12px}.herbDetailPhoto{width:210px;height:210px;margin:auto}.herbDetailFacts>div{grid-template-columns:66px minmax(0,1fr)}.herbDetailSection{padding:20px 0}.herbDetailHelp{font-size:11px}}
 
 .orderNotice .deliveryParcelWarning{color:#c0392b;font-weight:700}
+.refundPolicy{margin-top:48px;padding-top:32px;border-top:1px solid #dce5de}
+.refundPolicy h2{margin:0 0 22px;font-size:24px;color:#263f35;line-height:1.5;word-break:keep-all}
+.refundPolicyDetails{margin:0;border-top:1px solid #e3e9e4}
+.refundPolicyDetails>div{display:grid;grid-template-columns:140px minmax(0,1fr);gap:24px;padding:19px 0;border-bottom:1px solid #e3e9e4}
+.refundPolicyDetails dt{font-size:14px;font-weight:700;color:#315f4e;line-height:1.8}
+.refundPolicyDetails dd{margin:0;font-size:14px;line-height:1.8;color:#52645b;word-break:keep-all;overflow-wrap:anywhere}
+.refundPolicyContact{margin-top:24px;padding:22px 24px;background:#f5f8f4;border-radius:6px}
+.refundPolicyContact h3{margin:0 0 8px;font-size:15px;color:#263f35}
+.refundPolicyContact p{margin:0;font-size:13px;line-height:1.8;color:#52645b;word-break:keep-all}
+.refundPolicyLinks{display:flex;flex-wrap:wrap;gap:10px 24px;margin-top:14px}
+.refundPolicyLinks a{font-size:13px;color:#315f4e;text-decoration:underline;text-underline-offset:3px;line-height:1.8}
+@media(max-width:620px){.refundPolicy{margin-top:36px;padding-top:26px}.refundPolicy h2{font-size:22px}.refundPolicyDetails>div{grid-template-columns:1fr;gap:5px;padding:16px 0}.refundPolicyContact{padding:18px}.refundPolicyLinks{flex-direction:column;gap:8px}}
