@@ -7,8 +7,9 @@ export default function MobileNav({ session, loaded, onLogout, siteSettings }) {
   const [open, setOpen] = useState(false);
   const [companyOpen, setCompanyOpen] = useState(false);
   const [inquiryOpen, setInquiryOpen] = useState(false);
+  const [deliveryOpen, setDeliveryOpen] = useState(false);
 
-  const closeMenu = () => { setOpen(false); setCompanyOpen(false); setInquiryOpen(false); };
+  const closeMenu = () => { setOpen(false); setCompanyOpen(false); setInquiryOpen(false); setDeliveryOpen(false); };
   const logout = async () => { closeMenu(); await onLogout?.(); };
   const isAdmin = session?.profile?.role === "admin";
   const username = session?.profile?.username || "회원";
@@ -21,7 +22,8 @@ export default function MobileNav({ session, loaded, onLogout, siteSettings }) {
       <button type="button" className="mobileMenuRow mobileCompanyToggle" aria-expanded={companyOpen} onClick={() => setCompanyOpen(v => !v)}><span>회사소개</span><span className={`mobileChevron ${companyOpen ? "isOpen" : ""}`}>⌄</span></button>
       {companyOpen && <div className="mobileSubmenu"><Link href="/company" onClick={closeMenu}>회사소개</Link><Link href="/company/history" onClick={closeMenu}>연혁</Link><Link href="/company/location" onClick={closeMenu}>오시는 길</Link></div>}
       <Link className="mobileMenuRow" href="/products" onClick={closeMenu}>약재주문</Link>
-      <Link className="mobileMenuRow" href="/order-delivery" onClick={closeMenu}>주문·배송 안내</Link>
+      <button type="button" className="mobileMenuRow mobileCompanyToggle" aria-expanded={deliveryOpen} onClick={() => setDeliveryOpen(v => !v)}><span>주문·배송 안내</span><span className={`mobileChevron ${deliveryOpen ? "isOpen" : ""}`}>⌄</span></button>
+      {deliveryOpen && <div className="mobileSubmenu"><Link href="/order-delivery" onClick={closeMenu}>주문·배송 안내</Link><Link href="/order-delivery/returns" onClick={closeMenu}>교환·반품 및 환불 안내</Link></div>}
       {isAdmin && <Link className="mobileMenuRow adminMobileLink" href="/admin" onClick={closeMenu}>관리자업무</Link>}
       <button type="button" className="mobileMenuRow mobileCompanyToggle" aria-expanded={inquiryOpen} onClick={() => setInquiryOpen(v => !v)}><span>고객센터</span><span className={`mobileChevron ${inquiryOpen ? "isOpen" : ""}`}>⌄</span></button>
       {inquiryOpen && <div className="mobileSubmenu"><Link href="/inquiry" onClick={closeMenu}>홈페이지 문의하기</Link>{kakaoChannelUrl && <a href={kakaoChannelUrl} target="_blank" rel="noopener noreferrer" onClick={closeMenu}>카카오톡 문의하기</a>}</div>}

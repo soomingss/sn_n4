@@ -137,6 +137,7 @@ function CartPanel({items,totalPrice,deliveryRequest,setDeliveryRequest,changeCa
         <div className="orderTotal"><span>주문 예상금액</span><b>{money(totalPrice)}</b></div>
         {afterCutoff&&deliveryRequest==="당일"&&<p className="orderCartMessage">오전 11시 이후 주문은 익일 배송만 가능합니다.</p>}
         {message&&<p className="orderCartMessage">{message}</p>}
+        <a className="orderPolicyLink" href="/order-delivery/returns#refund-policy" target="_blank" rel="noopener noreferrer" aria-label="교환·반품 및 환불 안내 보기 (새 창)">교환·반품 및 환불 안내 보기 ↗</a>
         <div className="orderCartActions"><button className="orderSubmit" disabled={submitting||(afterCutoff&&deliveryRequest==="당일")} onClick={prepareOrder}>{submitting?"처리중...":editOrderId?"주문 수정 저장":"주문하기"}</button></div>
       </>:<div className="cartEmpty">주문할 제품을 담아주세요.</div>}
     </aside>
