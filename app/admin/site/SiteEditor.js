@@ -307,6 +307,6 @@ const contentLabels={
   company:{intro_title:"회사소개 제목",intro_paragraph_1:"회사소개 문구 1",intro_paragraph_2:"회사소개 문구 2",intro_paragraph_3:"회사소개 문구 3"},
   history:{title:"연혁 제목",description:"연혁 소개 문구"},
   location:{title:"오시는 길 제목",description:"오시는 길 안내 문구",parking_title:"주차 안내 제목",parking_label:"주차 안내 구분",parking_description:"주차 안내 내용"},
-  order_delivery:{intro_title:"주문·배송 안내 제목",intro_description:"주문·배송 소개 문구",delivery_description:"배송 안내 설명",direct_delivery_region:"직접 배송 지역",direct_delivery_description:"직접 배송 설명",parcel_region:"택배 배송 지역",parcel_description:"택배 배송 설명",notice_1:"주문 전 확인사항 1",notice_2:"주문 전 확인사항 2",refund_title:"교환·반품 및 환불 안내 제목",refund_period:"교환·반품 접수 기한",refund_eligible:"교환·반품 대상",refund_change_mind:"단순 변심 안내",refund_shipping:"교환·반품 배송비",refund_process:"환불 절차",refund_contact:"교환·반품 접수 안내"}
+  order_delivery:{intro_title:"주문·배송 안내 제목",intro_description:"주문·배송 소개 문구",delivery_description:"배송 안내 설명",direct_delivery_region:"직접 배송 지역",direct_delivery_description:"직접 배송 설명",parcel_region:"택배 배송 지역",parcel_description:"택배 배송 설명",parcel_shipping_notice:"택배 배송비 안내",notice_1:"주문 전 확인사항 1",notice_2:"주문 전 확인사항 2",refund_title:"교환·반품 및 환불 안내 제목",refund_period:"교환·반품 접수 기한",refund_eligible:"교환·반품 대상",refund_change_mind:"단순 변심 안내",refund_shipping:"교환·반품 배송비",refund_process:"환불 절차",refund_contact:"교환·반품 접수 안내"}
 };
 function contentLabel(pageKey,key){return contentLabels[pageKey]?.[key]||key;}

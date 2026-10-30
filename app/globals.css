@@ -514,3 +514,6 @@ footer{min-height:95px;border-top:1px solid #ddd;padding:20px 6%;display:grid;gr
 @media(max-width:620px){.deliverySubnav a{width:auto;flex:1;min-width:0;padding:18px 8px;font-size:12px;line-height:1.8}.refundPage .refundPolicy{scroll-margin-top:80px}}
 
 .deliveryDropdown .companyDropdownMenu{width:210px}
+
+.deliveryGrid .parcelShippingNotice{margin-top:14px;padding-top:12px;border-top:1px solid #dce5de;color:#315f4e;font-weight:600;line-height:1.8}
+.orderShippingNotice{margin:10px 0 0;font-size:12px;line-height:1.8;color:#52645b;white-space:pre-line;word-break:keep-all}

@@ -58,7 +58,7 @@ export default async function OrderDeliveryPage(){
         <p data-site-key="delivery_description"><Lines value={content.delivery_description}/></p>
         <div className="deliveryGrid">
           <article data-site-group="direct_delivery"><h3><Lines value={content.direct_delivery_title||"직접 배송"}/></h3><b><Lines value={content.direct_delivery_region}/></b><p><Lines value={content.direct_delivery_description}/></p></article>
-          <article data-site-group="parcel_delivery"><h3><Lines value={content.parcel_title||"택배 배송"}/></h3><b><Lines value={content.parcel_region}/></b><p><Lines value={content.parcel_description}/></p></article>
+          <article data-site-group="parcel_delivery"><h3><Lines value={content.parcel_title||"택배 배송"}/></h3><b><Lines value={content.parcel_region}/></b><p><Lines value={content.parcel_description}/></p>{content.parcel_shipping_notice&&<p className="parcelShippingNotice" data-site-key="parcel_shipping_notice"><Lines value={content.parcel_shipping_notice}/></p>}</article>
         </div>
       </section>
 
