@@ -1,5 +1,5 @@
 {
-  "verifiedAt": "2026-10-29",
+  "verifiedAt": "2026-10-30",
   "products": {
     "가자": {
       "key": "가자",
@@ -1849,6 +1849,281 @@
     "흑두": {
       "key": "흑두",
       "form": "",
+      "variant": false
+    },
+    "감인(검인)": {
+      "key": "검인",
+      "form": "가시연꽃 씨",
+      "variant": false
+    },
+    "귀전우": {
+      "key": "귀전우",
+      "form": "화살나무 가지·날개깃",
+      "variant": false
+    },
+    "백굴채": {
+      "key": "백굴채",
+      "form": "애기똥풀 전초",
+      "variant": false
+    },
+    "곽향": {
+      "key": "곽향",
+      "form": "배초향 지상부",
+      "variant": false
+    },
+    "구절초": {
+      "key": "구절초",
+      "form": "지상부",
+      "variant": false
+    },
+    "등심초": {
+      "key": "등심초",
+      "form": "골풀류 줄기 속",
+      "variant": false
+    },
+    "석고": {
+      "key": "석고",
+      "form": "",
+      "variant": false
+    },
+    "박하/참": {
+      "key": "박하",
+      "form": "참 표기 품목",
+      "variant": true
+    },
+    "부평초": {
+      "key": "부평",
+      "form": "개구리밥류",
+      "variant": false
+    },
+    "맥문동/거심/특": {
+      "key": "맥문동",
+      "form": "거심 · 특",
+      "variant": true
+    },
+    "목단피/대": {
+      "key": "목단피",
+      "form": "대",
+      "variant": true
+    },
+    "메밀(교맥)": {
+      "key": "교맥",
+      "form": "메밀",
+      "variant": false
+    },
+    "방풍/해": {
+      "key": "북사삼",
+      "form": "해방풍 표기 · 기원 확인 필요",
+      "variant": true
+    },
+    "백두구/유피/추말": {
+      "key": "백두구",
+      "form": "껍질 포함 · 추말",
+      "variant": true
+    },
+    "백두구/거피": {
+      "key": "백두구",
+      "form": "거피",
+      "variant": true
+    },
+    "백부자/정품/관백부": {
+      "key": "백부자",
+      "form": "관백부 · 정품 표기",
+      "variant": true
+    },
+    "백출/동북/특특": {
+      "key": "백출",
+      "form": "동북 · 특특",
+      "variant": true
+    },
+    "복령/야생": {
+      "key": "복령",
+      "form": "야생 표기",
+      "variant": true
+    },
+    "부자/경포": {
+      "key": "부자",
+      "form": "경포 표기 · 가공 상태 확인",
+      "variant": true
+    },
+    "산수유/특/손치": {
+      "key": "산수유",
+      "form": "특 · 손치",
+      "variant": true
+    },
+    "산수유/손치/구례": {
+      "key": "산수유",
+      "form": "손치 · 구례",
+      "variant": true
+    },
+    "산약/거피": {
+      "key": "산약",
+      "form": "거피",
+      "variant": true
+    },
+    "산조인/원": {
+      "key": "산조인",
+      "form": "원형",
+      "variant": true
+    },
+    "산조인초/원": {
+      "key": "산조인",
+      "form": "볶음 · 원형",
+      "variant": true
+    },
+    "상백피/유피": {
+      "key": "상백피",
+      "form": "유피",
+      "variant": true
+    },
+    "상표초/야생": {
+      "key": "상표초",
+      "form": "야생 표기",
+      "variant": true
+    },
+    "사과락": {
+      "key": "사과락",
+      "form": "수세미 열매의 섬유 조직",
+      "variant": false
+    },
+    "숙지황/9증": {
+      "key": "숙지황",
+      "form": "9증 표기",
+      "variant": true
+    },
+    "시호/서장": {
+      "key": "시호",
+      "form": "서장 표기 · 기원 확인 필요",
+      "variant": true
+    },
+    "시호/황": {
+      "key": "시호",
+      "form": "황 표기 · 기원 확인 필요",
+      "variant": true
+    },
+    "신곡초": {
+      "key": "신곡",
+      "form": "볶음",
+      "variant": true
+    },
+    "아출(봉충)": {
+      "key": "아출",
+      "form": "봉충 표기",
+      "variant": true
+    },
+    "오가피/거피/정품": {
+      "key": "오가피",
+      "form": "거피 · 정품 표기",
+      "variant": true
+    },
+    "오미자/무농약": {
+      "key": "오미자",
+      "form": "무농약 상품 표기",
+      "variant": true
+    },
+    "용안육/특": {
+      "key": "용안육",
+      "form": "특",
+      "variant": true
+    },
+    "우슬/특특": {
+      "key": "우슬",
+      "form": "특특",
+      "variant": true
+    },
+    "울금/온": {
+      "key": "울금",
+      "form": "온 표기",
+      "variant": true
+    },
+    "유백피(유근피)": {
+      "key": "유백피",
+      "form": "유근피",
+      "variant": true
+    },
+    "육종용주증/특": {
+      "key": "육종용",
+      "form": "주증 · 특",
+      "variant": true
+    },
+    "의이인/피": {
+      "key": "의이인",
+      "form": "피 표기 · 거피 여부 확인",
+      "variant": true
+    },
+    "선퇴": {
+      "key": "선퇴",
+      "form": "매미 탈피각",
+      "variant": false
+    },
+    "쇄양": {
+      "key": "쇄양",
+      "form": "",
+      "variant": false
+    },
+    "삼백초": {
+      "key": "삼백초",
+      "form": "",
+      "variant": false
+    },
+    "생지황": {
+      "key": "생지황",
+      "form": "신선한 지황 뿌리",
+      "variant": false
+    },
+    "생강": {
+      "key": "생강",
+      "form": "신선한 생강 뿌리줄기",
+      "variant": false
+    },
+    "자소엽(소엽)": {
+      "key": "자소엽",
+      "form": "잎 및 끝가지",
+      "variant": false
+    },
+    "어성초": {
+      "key": "어성초",
+      "form": "약모밀",
+      "variant": false
+    },
+    "오가피/진/유피": {
+      "key": "오가피",
+      "form": "진 · 유피",
+      "variant": true
+    },
+    "오공": {
+      "key": "오공",
+      "form": "지네 전형 약재",
+      "variant": false
+    },
+    "원지/대": {
+      "key": "원지",
+      "form": "대",
+      "variant": true
+    },
+    "음양곽": {
+      "key": "음양곽",
+      "form": "",
+      "variant": false
+    },
+    "애엽": {
+      "key": "애엽",
+      "form": "약쑥류 잎·어린줄기",
+      "variant": false
+    },
+    "왕불류행": {
+      "key": "왕불류행",
+      "form": "기원·사용 부위 확인",
+      "variant": false
+    },
+    "익모초": {
+      "key": "익모초",
+      "form": "지상부",
+      "variant": false
+    },
+    "인삼/저온건조": {
+      "key": "인삼",
+      "form": "저온건조",
       "variant": false
     }
   },
@@ -9078,6 +9353,528 @@
       ],
       "caution": "",
       "latin": ""
+    },
+    "검인": {
+      "name": "검인",
+      "latin": "",
+      "effects": [
+        {
+          "term": "보신(補腎)",
+          "description": "전통 의학에서 정기를 보완하고 정이 새는 양상을 수렴하는 데 활용한 약재입니다. 현대의 신장 기능 개선 효과를 뜻하는 표현은 아닙니다."
+        },
+        {
+          "term": "지사(止瀉)·지대하(止帶下)",
+          "description": "오래 이어지는 묽은 변이나 대하처럼 수렴이 필요한 양상을 다뤄 온 전통적 용도를 말합니다."
+        }
+      ],
+      "sources": [
+        {
+          "name": "한국학중앙연구원 · 조선왕조실록사전",
+          "url": "https://dh.aks.ac.kr/sillokwiki/index.php/검인(芡仁)"
+        }
+      ],
+      "kind": "traditional",
+      "caution": ""
+    },
+    "귀전우": {
+      "name": "귀전우",
+      "latin": "Euonymi Caulis Suberatum",
+      "effects": [
+        {
+          "term": "파혈통경(破血通經)",
+          "description": "어혈로 설명되는 정체를 풀고 월경의 흐름이 막힌 양상을 다루는 데 사용해 온 전통 개념입니다. 월경 이상이나 통증의 원인 진단을 대신하지 않습니다."
+        }
+      ],
+      "sources": [
+        {
+          "name": "한국전통지식포탈 · 약재",
+          "url": "https://koreantk.com/ktkp2014/medicine/medicine-view.view?medCd=M0000469&tempLang=ko"
+        }
+      ],
+      "kind": "traditional",
+      "caution": "전통 문헌에 임산부 금기로 기재된 약재입니다. 임신 중에는 사용하지 않으며 처방 시 출혈 여부와 병용 약물을 함께 확인해야 합니다."
+    },
+    "백굴채": {
+      "name": "백굴채",
+      "latin": "Chelidonii Herba",
+      "effects": [
+        {
+          "term": "위장관 불편에 대한 전통적 활용",
+          "description": "애기똥풀의 전초로, 위장관의 불편과 복부 통증 등의 양상에 사용된 기록이 있습니다. 임상적으로 효과가 확정된 소화기 치료제라는 뜻은 아닙니다."
+        }
+      ],
+      "sources": [
+        {
+          "name": "부산대학교 약학대학 · 생약 자료",
+          "url": "https://pharmacy.pusan.ac.kr/sites/pharmacy/download/01/1_16.pdf"
+        },
+        {
+          "name": "미국 NIH · LiverTox",
+          "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK548684/"
+        }
+      ],
+      "kind": "traditional",
+      "caution": "Chelidonium majus 유래 제품에서 간손상 사례가 보고되어 있습니다. 간질환이나 간손상 병력이 있는 경우 특히 주의가 필요하며, 자가 사용을 위한 약재가 아닙니다."
+    },
+    "곽향": {
+      "name": "곽향",
+      "latin": "Agastachis Herba",
+      "effects": [
+        {
+          "term": "방향화습(芳香化濕)",
+          "description": "향기 성분을 가진 약재로 습탁에 따른 더부룩함과 답답함을 다룬다는 전통적 의미입니다."
+        },
+        {
+          "term": "화중지구(和中止嘔)",
+          "description": "비위의 기능을 조화롭게 하여 메스꺼움과 구역 양상을 다뤄 온 용도를 말합니다."
+        },
+        {
+          "term": "발표해서(發表解暑)",
+          "description": "겉의 사기와 더위·습기에 관련된 불편을 풀어낸다는 본초학적 개념입니다."
+        }
+      ],
+      "sources": [
+        {
+          "name": "한국전통지식포탈 · 약재",
+          "url": "https://koreantk.com/ktkp2014/medicine/medicine-view.view?medCd=M0000321&tempLang=ko"
+        }
+      ],
+      "kind": "traditional",
+      "caution": "배초향을 기원으로 하는 곽향 자료입니다. 광곽향은 기원 식물이 다르므로 두 품목을 동일하게 취급하지 않습니다. 열이 강하거나 진액이 부족한 양상에는 적합성 확인이 필요합니다."
+    },
+    "구절초": {
+      "name": "구절초",
+      "latin": "Chrysanthemi Zawadskii Herba",
+      "effects": [
+        {
+          "term": "여성의 냉증·월경 불편에 대한 전통적 활용",
+          "description": "예로부터 몸이 차다고 설명되는 여성의 불편과 월경이 고르지 않은 양상 등에 사용된 기록이 있습니다. 불임 개선이나 호르몬 조절 효과가 임상적으로 입증되었다는 뜻은 아닙니다."
+        }
+      ],
+      "sources": [
+        {
+          "name": "한국학중앙연구원 · 한국민족문화대백과사전",
+          "url": "https://encykorea.aks.ac.kr/Article/E0006021"
+        },
+        {
+          "name": "한국전통지식포탈 · 약재",
+          "url": "https://koreantk.com/ktkp2014/medicine/medicine-view.view?medCd=M0000420&tempLang=ko"
+        }
+      ],
+      "kind": "traditional",
+      "caution": "구절초 원물과 특정 추출물·건강기능식품은 구분해야 합니다. 추출물을 대상으로 한 연구 결과를 현재 판매 원물의 치료 효과로 일반화하지 않습니다."
+    },
+    "등심초": {
+      "name": "등심초",
+      "latin": "Junci Medulla",
+      "effects": [
+        {
+          "term": "청심제번(淸心除煩)",
+          "description": "전통 의학에서 심열로 설명하는 답답함과 번조를 가라앉힌다는 의미입니다."
+        },
+        {
+          "term": "이수삼습(利水滲濕)",
+          "description": "소변의 흐름을 돕고 수습이 정체된 양상을 다룬다는 전통 개념입니다."
+        }
+      ],
+      "sources": [
+        {
+          "name": "한국전통지식포탈 · 약재",
+          "url": "https://koreantk.com/ktkp2014/medicine/medicine-view.view?medCd=M0000999&tempLang=ko"
+        }
+      ],
+      "kind": "traditional",
+      "caution": "골풀류 줄기의 속을 사용하는 약재입니다. 문헌상 허한한 상태에서는 적합하지 않을 수 있어 확인이 필요합니다."
+    },
+    "박하": {
+      "name": "박하",
+      "latin": "Menthae Herba",
+      "effects": [
+        {
+          "term": "소산풍열(疏散風熱)",
+          "description": "풍열에 해당하는 감기 초기의 열감과 머리·목의 불편을 풀어낸다는 전통 용어입니다."
+        },
+        {
+          "term": "이인투진(利咽透疹)",
+          "description": "목의 불편과 발진이 충분히 드러나지 않는 양상을 다루는 본초학적 개념입니다."
+        },
+        {
+          "term": "소해간울(疏解肝鬱)",
+          "description": "간의 소설 기능과 관련된 기의 울체, 답답함을 풀어낸다는 전통적 의미입니다."
+        }
+      ],
+      "sources": [
+        {
+          "name": "KMCRIC 생약 up-to-date",
+          "url": "https://www.kmcric.com/database/herb_list?isKor=all&search_word=%EB%B0%95%ED%95%98"
+        }
+      ],
+      "kind": "traditional",
+      "caution": "박하 지상부에 대한 설명입니다. 박하 정유나 멘톨 단일 성분 제품의 효능·안전성과 동일하게 해석하지 않습니다."
+    },
+    "부평": {
+      "name": "부평",
+      "latin": "",
+      "effects": [
+        {
+          "term": "발한거풍(發汗祛風)·투진(透疹)",
+          "description": "겉에 머문 풍사를 발산시키고 발진 양상을 다룬다는 전통적 개념입니다."
+        },
+        {
+          "term": "이수소종(利水消腫)",
+          "description": "소변의 흐름을 돕고 수분 정체에 따른 부종을 다룬다는 본초학적 의미입니다."
+        }
+      ],
+      "sources": [
+        {
+          "name": "한국전통지식포탈 · 약재",
+          "url": "https://koreantk.com/ktkp2014/medicine/medicine-view.view?medCd=M0001600&tempLang=ko"
+        },
+        {
+          "name": "한국전통지식포탈 · 약재",
+          "url": "https://koreantk.com/ktkp2014/medicine/medicine-view.view?medCd=M0001603&tempLang=ko"
+        }
+      ],
+      "kind": "traditional",
+      "caution": "기원이 되는 개구리밥류의 확인이 필요합니다. 문헌에서는 기가 허해 저절로 땀이 나는 양상에 주의하도록 설명합니다."
+    },
+    "선퇴": {
+      "name": "선퇴",
+      "latin": "",
+      "effects": [
+        {
+          "term": "산풍제열(散風除熱)",
+          "description": "몸의 겉에 머문 풍열을 풀어내는 데 활용해 온 전통적 의미입니다."
+        },
+        {
+          "term": "선폐투진(宣肺透疹)",
+          "description": "폐기의 소통과 발진 양상에 관한 본초학적 설명입니다."
+        },
+        {
+          "term": "정경·해경(定驚·解痙)",
+          "description": "놀람이나 경련으로 설명되는 양상을 안정시키는 전통 용어입니다. 응급 경련의 치료 안내가 아닙니다."
+        }
+      ],
+      "sources": [
+        {
+          "name": "한국전통지식포탈 · 약재",
+          "url": "https://koreantk.com/ktkp2014/medicine/medicine-view.view?medCd=M0002038&tempLang=ko"
+        }
+      ],
+      "kind": "traditional",
+      "caution": "매미의 탈피각을 사용하는 동물성 약재입니다. 관련 알레르기 병력과 기원·이물 관리 상태를 확인해야 합니다."
+    },
+    "쇄양": {
+      "name": "쇄양",
+      "latin": "",
+      "effects": [
+        {
+          "term": "보신양(補腎陽)·익정혈(益精血)",
+          "description": "전통 의학에서 양기와 정혈이 부족하다고 설명되는 허약 양상을 보완한다는 의미입니다."
+        },
+        {
+          "term": "양근(養筋)",
+          "description": "근육과 힘줄을 자양하여 허리·무릎의 무력감 등을 다뤄 온 본초학적 개념입니다."
+        },
+        {
+          "term": "윤장통변(潤腸通便)",
+          "description": "장의 건조와 진액 부족으로 변이 굳는 양상에 활용한 전통적 의미입니다."
+        }
+      ],
+      "sources": [
+        {
+          "name": "한국전통지식포탈 · 약재",
+          "url": "https://koreantk.com/ktkp2014/medicine/medicine-view.view?medCd=M0002165&tempLang=ko"
+        }
+      ],
+      "kind": "traditional",
+      "caution": "보신양이라는 전통 용어를 신장질환 치료나 성기능 개선의 임상적 보장으로 해석하지 않습니다."
+    },
+    "삼백초": {
+      "name": "삼백초",
+      "latin": "",
+      "effects": [
+        {
+          "term": "청열이수(淸熱利水)",
+          "description": "열과 수습의 정체를 소변으로 풀어낸다고 설명하는 전통적 용도입니다."
+        },
+        {
+          "term": "해독소종(解毒消腫)",
+          "description": "열독으로 설명되는 붓고 불편한 양상을 다뤄 온 전통 개념입니다."
+        },
+        {
+          "term": "거담(祛痰)",
+          "description": "담이 정체된 양상을 풀어낸다는 본초학적 의미입니다."
+        }
+      ],
+      "sources": [
+        {
+          "name": "한국전통지식포탈 · 약재",
+          "url": "https://koreantk.com/ktkp2014/medicine/medicine-view.view?medCd=M0005491&tempLang=ko"
+        }
+      ],
+      "kind": "traditional",
+      "caution": "문헌에서는 비위가 허하고 찬 상태에 주의하도록 설명합니다. 삼백초와 어성초는 별개의 약재입니다."
+    },
+    "생지황": {
+      "name": "생지황",
+      "latin": "Rehmanniae Radix Recens",
+      "effects": [
+        {
+          "term": "청열양혈(淸熱涼血)",
+          "description": "혈분의 열로 설명되는 양상을 식히는 데 활용한 전통적 의미입니다."
+        },
+        {
+          "term": "생진지갈(生津止渴)",
+          "description": "진액이 부족하여 건조하고 갈증이 나는 양상을 다루는 본초학적 개념입니다."
+        }
+      ],
+      "sources": [
+        {
+          "name": "KMCRIC 생약 up-to-date",
+          "url": "https://www.kmcric.com/database/herb_list?isKor=all&search_word=%EC%83%9D%EC%A7%80%ED%99%A9"
+        }
+      ],
+      "kind": "traditional",
+      "caution": "신선한 지황 뿌리에 관한 설명입니다. 건조 지황이나 증숙한 숙지황과 가공 상태 및 전통적 용도를 구분합니다."
+    },
+    "생강": {
+      "name": "생강",
+      "latin": "Zingiberis Rhizoma Recens",
+      "effects": [
+        {
+          "term": "발한해표(發汗解表)",
+          "description": "찬 기운을 받아 몸의 겉에 나타나는 오한 등의 양상을 풀어낸다는 전통적 의미입니다."
+        },
+        {
+          "term": "온중지구(溫中止嘔)",
+          "description": "비위를 따뜻하게 하여 찬 기운과 관련된 구역·구토 양상을 다룬다는 의미입니다."
+        },
+        {
+          "term": "온폐지해(溫肺止咳)",
+          "description": "폐의 한증으로 설명하는 기침 양상을 다루는 전통적 용도입니다."
+        }
+      ],
+      "sources": [
+        {
+          "name": "KMCRIC 생약 up-to-date",
+          "url": "https://www.kmcric.com/database/herb_list?id=62&search_word=%EC%83%9D%EA%B0%95"
+        }
+      ],
+      "kind": "traditional",
+      "caution": "신선한 생강 뿌리줄기의 설명이며, 말린 건강이나 생강 추출 제제와 구분합니다."
+    },
+    "자소엽": {
+      "name": "자소엽",
+      "latin": "Perillae Folium",
+      "effects": [
+        {
+          "term": "해표산한(解表散寒)",
+          "description": "몸의 겉에 머문 찬 사기를 발산시킨다는 전통적 의미입니다."
+        },
+        {
+          "term": "행기관중(行氣寬中)",
+          "description": "기의 흐름을 도와 명치와 배가 더부룩하고 답답한 양상을 다뤄 온 개념입니다."
+        }
+      ],
+      "sources": [
+        {
+          "name": "KMCRIC 생약 up-to-date",
+          "url": "https://www.kmcric.com/database/herb_list?isKor=all&search_word=%EC%9E%90%EC%86%8C%EC%97%BD"
+        }
+      ],
+      "kind": "traditional",
+      "caution": "차즈기류의 잎과 끝가지를 대상으로 한 자료입니다. 자소자(씨)와는 사용하는 부위가 다르며 설명을 혼용하지 않습니다."
+    },
+    "어성초": {
+      "name": "어성초",
+      "latin": "",
+      "effects": [
+        {
+          "term": "청열해독(淸熱解毒)",
+          "description": "열독에 해당하는 염증성 양상을 다뤄 온 전통적 용어입니다."
+        },
+        {
+          "term": "배농소종(排膿消腫)",
+          "description": "고름과 붓기가 동반된 양상을 다룬다는 본초학적 설명입니다."
+        },
+        {
+          "term": "이뇨통림(利尿通淋)",
+          "description": "소변이 시원하지 않고 불편한 양상에 사용된 전통적 의미입니다."
+        }
+      ],
+      "sources": [
+        {
+          "name": "KMCRIC · 안덕균 교수의 약초 이야기",
+          "url": "https://www.kmcric.com/knowledge/inlife/view_inlife/22808?cat=9&page=1"
+        }
+      ],
+      "kind": "traditional",
+      "caution": "약모밀을 기원으로 하는 어성초 자료입니다. 전통적 효능이나 실험 결과를 감염증 치료, 암 치료 또는 발모 효과가 확정된 것으로 해석하지 않습니다."
+    },
+    "오공": {
+      "name": "오공",
+      "latin": "Scolopendra",
+      "effects": [
+        {
+          "term": "식풍지경(熄風止痙)",
+          "description": "내풍으로 설명되는 떨림과 경련 양상을 다뤄 온 전통적 용어입니다."
+        },
+        {
+          "term": "통락지통(通絡止痛)",
+          "description": "경락의 막힘에 따른 통증 양상을 풀어낸다는 본초학적 의미입니다."
+        },
+        {
+          "term": "해독산결(解毒散結)",
+          "description": "열독과 뭉침에 해당하는 양상을 다루는 전통 개념입니다."
+        }
+      ],
+      "sources": [
+        {
+          "name": "한국전통지식포탈 · 약재",
+          "url": "https://koreantk.com/ktkp2014/medicine/medicine-view.view?medCd=M0002612&tempLang=ko"
+        },
+        {
+          "name": "약학정보원 · 본초정보",
+          "url": "https://health.kr/researchInfo/herbalMedicine1_detail.asp?idx=448"
+        }
+      ],
+      "kind": "traditional",
+      "caution": "문헌에 유독한 약재로 분류되며 임산부 금기입니다. 일반 식품처럼 임의 사용하지 않으며, 기원과 가공 상태 및 전문가의 처방 판단이 필요합니다."
+    },
+    "음양곽": {
+      "name": "음양곽",
+      "latin": "",
+      "effects": [
+        {
+          "term": "보신장양(補腎壯陽)",
+          "description": "신양 부족으로 설명하는 허약과 냉한 양상을 보완하는 전통적 의미입니다."
+        },
+        {
+          "term": "견근골(堅筋骨)",
+          "description": "근육과 뼈를 자양하여 허리·무릎의 무력감 등을 다룬다는 본초학적 개념입니다."
+        },
+        {
+          "term": "거풍제습(祛風除濕)",
+          "description": "풍습으로 설명하는 관절의 무거움과 불편한 양상을 풀어낸다는 전통적 의미입니다."
+        }
+      ],
+      "sources": [
+        {
+          "name": "한국전통지식포탈 · 약재",
+          "url": "https://koreantk.com/ktkp2014/medicine/medicine-view.view?medCd=M0002980&tempLang=ko"
+        }
+      ],
+      "kind": "traditional",
+      "caution": "전통적 보신장양을 성기능 개선 효과의 보장으로 표현하지 않습니다. 특정 성분·추출물의 연구를 원물 전체의 임상 효과로 일반화하지 않습니다."
+    },
+    "애엽": {
+      "name": "애엽",
+      "latin": "Artemisiae Argyi Folium",
+      "effects": [
+        {
+          "term": "온경지혈(溫經止血)",
+          "description": "경맥을 따뜻하게 하여 허한에 관련된 출혈 양상을 다뤄 온 전통적 의미입니다."
+        },
+        {
+          "term": "산한지통(散寒止痛)",
+          "description": "찬 기운과 관련된 복부 등의 통증 양상을 풀어낸다는 본초학적 개념입니다."
+        },
+        {
+          "term": "제습지양(除濕止痒)",
+          "description": "습사에 해당하는 가려움과 불편을 다뤄 온 전통적 용어입니다."
+        }
+      ],
+      "sources": [
+        {
+          "name": "KMCRIC 생약 up-to-date",
+          "url": "https://www.kmcric.com/database/herb_list?isKor=all&search_word=%EC%95%A0%EC%97%BD"
+        }
+      ],
+      "kind": "traditional",
+      "caution": "약쑥류의 잎과 어린줄기에 대한 설명입니다. 현재 상품의 용도를 뜸 재료나 정유 제품의 사용과 동일하게 해석하지 않습니다."
+    },
+    "왕불류행": {
+      "name": "왕불류행",
+      "latin": "",
+      "effects": [
+        {
+          "term": "활혈통경(活血通經)",
+          "description": "혈의 정체를 풀고 월경의 흐름과 관련된 불편을 다루는 전통적 개념입니다."
+        },
+        {
+          "term": "하유소종(下乳消腫)",
+          "description": "젖의 흐름이 막혀 붓고 불편한 양상을 다뤄 온 본초학적 설명입니다. 수유 문제의 원인 진단을 대신하지 않습니다."
+        }
+      ],
+      "sources": [
+        {
+          "name": "한국학중앙연구원 · 조선왕조실록사전",
+          "url": "https://dh.aks.ac.kr/sillokwiki/index.php/왕불류행(王不留行)"
+        }
+      ],
+      "kind": "traditional",
+      "caution": "국내 장구채류의 지상부와 해외에서 왕불류행으로 유통되는 종자 약재를 구분해야 합니다. 공급 제품의 기원·사용 부위를 우선 확인합니다."
+    },
+    "익모초": {
+      "name": "익모초",
+      "latin": "",
+      "effects": [
+        {
+          "term": "활혈거어(活血祛瘀)",
+          "description": "어혈로 설명하는 혈의 정체와 월경 관련 불편을 다루는 전통적 의미입니다."
+        },
+        {
+          "term": "이뇨소종(利尿消腫)",
+          "description": "소변의 흐름을 돕고 수습이 정체된 부종 양상을 다룬다는 개념입니다."
+        },
+        {
+          "term": "청열해독(淸熱解毒)",
+          "description": "열독에 해당하는 양상을 가라앉히는 데 활용한 본초학적 용어입니다."
+        }
+      ],
+      "sources": [
+        {
+          "name": "KMCRIC 생약 up-to-date",
+          "url": "https://www.kmcric.com/database/herb_list?isKor=all&search_word=%EC%9D%B5%EB%AA%A8%EC%B4%88"
+        }
+      ],
+      "kind": "traditional",
+      "caution": "익모초 지상부와 씨인 충울자는 구분합니다. 임신·출혈 관련 상태에서는 자가 사용하지 않고 전문가의 판단을 받아야 합니다."
+    },
+    "인삼": {
+      "name": "인삼",
+      "latin": "",
+      "effects": [
+        {
+          "term": "대보원기(大補元氣)",
+          "description": "원기가 크게 부족하다고 설명되는 허약 양상을 보완한다는 전통적 의미입니다."
+        },
+        {
+          "term": "보비익폐(補脾益肺)",
+          "description": "한의학적 비·폐의 기능이 허한 양상을 보완하는 본초학적 개념입니다."
+        },
+        {
+          "term": "생진지갈(生津止渴)",
+          "description": "진액 부족으로 생긴 건조함과 갈증을 다룬다는 전통적 의미입니다."
+        },
+        {
+          "term": "안신증지(安神增智)",
+          "description": "정신의 불안정과 기억·집중의 불편에 활용해 온 문헌상의 설명입니다. 인지기능 개선이 임상적으로 보장된다는 뜻은 아닙니다."
+        }
+      ],
+      "sources": [
+        {
+          "name": "KMCRIC 생약 up-to-date",
+          "url": "https://www.kmcric.com/database/herb_list?isKor=all&search_word=%EC%9D%B8%EC%82%BC"
+        },
+        {
+          "name": "KMCRIC · 약물상호작용 DB",
+          "url": "https://www.kmcric.com/database/interact_herb_list/Ginseng/drug/Antineoplastics"
+        }
+      ],
+      "kind": "traditional",
+      "caution": "저온건조는 상품의 가공 표기이며 별도의 우수한 효능을 입증하는 표시가 아닙니다. 약물 치료 중인 경우 인삼과의 상호작용 여부를 확인해야 합니다."
     }
   }
 }
