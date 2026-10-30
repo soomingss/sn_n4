@@ -493,6 +493,4 @@ footer{min-height:95px;border-top:1px solid #ddd;padding:20px 6%;display:grid;gr
 .herbDetailSources h3{font-size:13px;margin-bottom:10px}.herbDetailSources ul{list-style:none;padding:0;margin:0;display:grid;gap:8px}.herbDetailSources a{color:#416951;text-decoration:underline;text-underline-offset:3px;line-height:1.6}.herbDetailSources>p{margin:12px 0 0;font-size:11px}
 @media(max-width:620px){.herbDetailDialog{width:calc(100% - 20px);max-height:calc(100dvh - 20px);border-radius:10px}.herbDetailContent{padding:20px}.herbDetailHeader h2{font-size:23px}.herbDetailOverview{grid-template-columns:1fr;gap:12px}.herbDetailPhoto{width:210px;height:210px;margin:auto}.herbDetailFacts>div{grid-template-columns:66px minmax(0,1fr)}.herbDetailSection{padding:20px 0}.herbDetailHelp{font-size:11px}}
 
-.orderNotice .deliveryParcelNotice{display:block;margin-top:12px}
-.orderNotice .deliveryParcelTitle{display:block;color:#263a30;font-weight:700}
-.orderNotice .deliveryParcelWarning{display:block;color:#c0392b}
+.orderNotice .deliveryParcelWarning{color:#c0392b;font-weight:700}
