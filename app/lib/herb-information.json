@@ -1,5 +1,5 @@
 {
-  "verifiedAt": "2026-10-30",
+  "verifiedAt": "2026-11-10",
   "products": {
     "가자": {
       "key": "가자",
@@ -2125,6 +2125,81 @@
       "key": "인삼",
       "form": "저온건조",
       "variant": false
+    },
+    "아출(봉출)": {
+      "key": "아출",
+      "form": "봉출 표기",
+      "variant": true
+    },
+    "자노아(총목피)": {
+      "key": "총목피",
+      "form": "두릅나무 줄기껍질",
+      "variant": false
+    },
+    "자충(토별충)": {
+      "key": "자충",
+      "form": "토별충 표기",
+      "variant": false
+    },
+    "형개/수": {
+      "key": "형개",
+      "form": "꽃이삭",
+      "variant": true
+    },
+    "형개": {
+      "key": "형개",
+      "form": "상품의 사용 부위 확인",
+      "variant": false
+    },
+    "지구자(지구병)": {
+      "key": "지구자",
+      "form": "열매자루 표기",
+      "variant": true
+    },
+    "포공영": {
+      "key": "포공영",
+      "form": "민들레류 전초",
+      "variant": false
+    },
+    "포황/정품": {
+      "key": "포황",
+      "form": "정품 표기",
+      "variant": true
+    },
+    "지구목(헛개나무)": {
+      "key": "지구목",
+      "form": "헛개나무 줄기",
+      "variant": false
+    },
+    "희렴/농산물": {
+      "key": "희렴",
+      "form": "농산물",
+      "variant": true
+    },
+    "황기/편AA": {
+      "key": "황기",
+      "form": "절편 · AA",
+      "variant": true
+    },
+    "황련/천": {
+      "key": "황련",
+      "form": "천 표기",
+      "variant": true
+    },
+    "자단향": {
+      "key": "자단향",
+      "form": "자단나무 심재",
+      "variant": false
+    },
+    "죽여": {
+      "key": "죽여",
+      "form": "대나무 줄기 속층",
+      "variant": false
+    },
+    "흑지마/농산물": {
+      "key": "흑지마",
+      "form": "검은 참깨 · 농산물",
+      "variant": true
     }
   },
   "herbs": {
@@ -9875,6 +9950,166 @@
       ],
       "kind": "traditional",
       "caution": "저온건조는 상품의 가공 표기이며 별도의 우수한 효능을 입증하는 표시가 아닙니다. 약물 치료 중인 경우 인삼과의 상호작용 여부를 확인해야 합니다."
+    },
+    "형개": {
+      "name": "형개",
+      "latin": "Schizonepetae Spica",
+      "kind": "traditional",
+      "effects": [
+        {
+          "term": "거풍해표(祛風解表)",
+          "description": "몸의 겉에 머문 풍사를 풀어낸다는 뜻으로, 오한과 열감이 동반되는 초기 외감 양상에 활용해 온 약재입니다."
+        },
+        {
+          "term": "거풍투진(祛風透疹)",
+          "description": "풍으로 설명하는 피부 발진이 충분히 드러나지 않는 양상을 다뤄 온 전통 용어입니다."
+        }
+      ],
+      "sources": [
+        {
+          "name": "KMCRIC 생약 up-to-date",
+          "url": "https://m.kmcric.com/database/view_herb/database_herb/59061"
+        }
+      ],
+      "caution": "출처는 형개 꽃이삭에 관한 자료입니다. 상품의 사용 부위를 확인해야 하며, 초탄한 형개의 지혈 용도를 원물에 그대로 적용하지 않습니다."
+    },
+    "포공영": {
+      "name": "포공영",
+      "latin": "Taraxaci Herba",
+      "kind": "traditional",
+      "effects": [
+        {
+          "term": "청열해독(淸熱解毒)",
+          "description": "열독으로 설명하는 붉고 열감이 있는 양상을 다뤄 온 전통적 용도입니다."
+        },
+        {
+          "term": "소종산결(消腫散結)",
+          "description": "부어오르거나 뭉친 양상을 풀어낸다는 본초학적 표현입니다."
+        },
+        {
+          "term": "이뇨통림(利尿通淋)",
+          "description": "소변이 시원하지 않고 불편한 양상에 활용한 전통적 의미입니다."
+        }
+      ],
+      "sources": [
+        {
+          "name": "한국전통지식포탈 · 약재",
+          "url": "https://koreantk.com/ktkp2014/medicine/medicine-view.view?medCd=M0004030&tempLang=ko"
+        },
+        {
+          "name": "약학정보원 · 본초정보",
+          "url": "https://health.kr/researchInfo/herbalMedicine1_detail.asp?idx=361"
+        }
+      ],
+      "caution": "민들레류 전초의 전통적 용도입니다. 감염이나 배뇨 장애의 원인 진단을 대신하지 않습니다."
+    },
+    "희렴": {
+      "name": "희렴",
+      "latin": "",
+      "kind": "traditional",
+      "effects": [
+        {
+          "term": "거풍습(祛風濕)",
+          "description": "풍습으로 설명하는 관절의 무거움, 저림, 뻣뻣함에 활용해 온 전통 개념입니다."
+        },
+        {
+          "term": "이관절(利關節)",
+          "description": "관절 움직임이 불편한 양상을 풀어낸다는 본초학적 의미입니다."
+        },
+        {
+          "term": "청열해독·소종(淸熱解毒·消腫)",
+          "description": "열독으로 설명되는 붉고 부은 양상을 다뤄 온 전통 용도입니다."
+        }
+      ],
+      "sources": [
+        {
+          "name": "한국전통지식포탈 · 약재",
+          "url": "https://koreantk.com/ktkp2014/medicine/medicine-view.view?medCd=M0004482&tempLang=ko"
+        },
+        {
+          "name": "한국전통지식포탈 · 약재",
+          "url": "https://koreantk.com/ktkp2014/medicine/medicine-view.view?medCd=M0004484&tempLang=ko"
+        }
+      ],
+      "caution": "진득찰류의 전통 문헌 자료입니다. 농산물 표기 상품을 규격 한약재나 특정 가공품과 동일하게 해석하지 않습니다."
+    },
+    "자단향": {
+      "name": "자단향",
+      "latin": "Santalini Lignum Rubrum",
+      "kind": "traditional",
+      "effects": [
+        {
+          "term": "화혈·지혈(和血·止血)",
+          "description": "혈의 흐름을 조화롭게 하고 외상 뒤 출혈 양상을 다뤄 온 전통적 용도입니다."
+        },
+        {
+          "term": "소종·정통(消腫·定痛)",
+          "description": "상처에 따른 붓기와 통증 양상을 다뤄 온 본초학적 표현입니다."
+        }
+      ],
+      "sources": [
+        {
+          "name": "한국전통지식포탈 · 약재",
+          "url": "https://koreantk.com/ktkp2014/medicine/medicine-view.view?medCd=M0003079&tempLang=ko"
+        },
+        {
+          "name": "식품의약품안전평가원 · 생약 규격 자료",
+          "url": "https://nifds.go.kr/nhmi/download.do?flgrpNo=573&sn=1"
+        }
+      ],
+      "caution": "자단나무 심재에 관한 자료입니다. 백단향 등 이름이 비슷한 다른 약재와 기원을 구분합니다."
+    },
+    "죽여": {
+      "name": "죽여",
+      "latin": "",
+      "kind": "traditional",
+      "effects": [
+        {
+          "term": "청열화담(淸熱化痰)",
+          "description": "열과 함께 담이 정체된 양상에 활용해 온 전통적 용도입니다."
+        },
+        {
+          "term": "제번지구(除煩止嘔)",
+          "description": "가슴이 답답하고 열감과 구역이 동반되는 양상을 다룬다는 본초학적 의미입니다."
+        }
+      ],
+      "sources": [
+        {
+          "name": "한국학중앙연구원 · 조선왕조실록사전",
+          "url": "https://dh.aks.ac.kr/sillokwiki/index.php/%EC%A3%BD%EC%97%AC%28%E7%AB%B9%E8%8C%B9%29"
+        },
+        {
+          "name": "약학정보원 · 본초정보",
+          "url": "https://health.kr/researchInfo/herbalMedicine1_detail.asp?idx=444"
+        }
+      ],
+      "caution": "대나무 줄기의 속층을 긁어낸 약재의 자료입니다. 대나무 잎을 쓰는 죽엽과 사용 부위가 다릅니다."
+    },
+    "흑지마": {
+      "name": "흑지마",
+      "latin": "Sesami Semen Nigrum",
+      "kind": "traditional",
+      "effects": [
+        {
+          "term": "보간신·익정혈(補肝腎·益精血)",
+          "description": "한의학에서 간과 신의 정혈이 부족하다고 설명하는 양상을 보완한다는 전통적 의미입니다."
+        },
+        {
+          "term": "윤조·이장(潤燥·利腸)",
+          "description": "기름기가 있는 씨앗을 장의 건조와 배변이 불편한 양상에 활용해 온 기록을 말합니다."
+        }
+      ],
+      "sources": [
+        {
+          "name": "한국전통지식포탈 · 약재",
+          "url": "https://koreantk.com/ktkp2014/medicine/medicine-view.view?medCd=M0004475&tempLang=ko"
+        },
+        {
+          "name": "한국전통지식포탈 · 약재",
+          "url": "https://koreantk.com/ktkp2014/medicine/medicine-view.view?medCd=M0002629&tempLang=ko"
+        }
+      ],
+      "caution": "검은 참깨에 관한 전통 자료입니다. 농산물의 치료 효과를 보장하지 않으며 참깨 알레르기가 있는 경우 주의가 필요합니다."
     }
   }
 }
