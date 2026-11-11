@@ -42,6 +42,11 @@ export default function HerbDetails({ product, onClose }) {
             {information?.form && <div><dt>상품 형태</dt><dd>{information.form}</dd></div>}
           </dl>
         </div>
+        {entry?.description && <section className="herbDetailSection herbDetailDescription" aria-labelledby="herb-description-title">
+          <h3 id="herb-description-title">약재 설명</h3>
+          <p>{entry.description}</p>
+          {information?.description && <p className="herbDetailVariant">{information.description}</p>}
+        </section>}
         <section className="herbDetailSection" aria-labelledby="herb-effects-title">
           <h3 id="herb-effects-title">{entry?.kind === "evidence" ? "효능과 연구 근거" : "전통적으로 알려진 효능"}</h3>
           {entry?.effects?.length ? <>
@@ -51,7 +56,7 @@ export default function HerbDetails({ product, onClose }) {
           <p className="herbDetailContext">{entry?.kind === "evidence" ? "연구에서 평가한 원료·추출물·제제와 현재 상품의 차이를 함께 확인해 주세요." : "전통 본초 문헌의 효능을 설명한 정보이며, 현대 임상시험으로 확인된 치료 효과와는 구분됩니다."}</p>
         </section>
         {entry?.caution && <section className="herbDetailSection herbDetailCaution"><h3>확인할 점</h3><p>{entry.caution}</p></section>}
-        {entry?.sources?.length > 0 && <footer className="herbDetailSources"><h3>자료 출처</h3><ul>{entry.sources.map(source => <li key={source.url}><a href={source.url} target="_blank" rel="noopener noreferrer">{source.name} · {entry.name}<span aria-hidden="true"> ↗</span></a></li>)}</ul><p>자료 확인일 {herbInformation.verifiedAt}</p></footer>}
+        {entry?.sources?.length > 0 && <footer className="herbDetailSources"><h3>자료 출처</h3><ul>{entry.sources.map(source => <li key={source.url}><a href={source.url} target="_blank" rel="noopener noreferrer">{source.name} · {entry.name}<span aria-hidden="true"> ↗</span></a></li>)}</ul><p>자료 확인일 {entry.verifiedAt || herbInformation.verifiedAt}</p></footer>}
       </div>
     </dialog>
   );

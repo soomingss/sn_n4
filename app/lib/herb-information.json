@@ -4,2202 +4,2642 @@
     "가자": {
       "key": "가자",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "갈근 (강원문막)": {
       "key": "갈근",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "갈근": {
       "key": "갈근",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "갈근/사각": {
       "key": "갈근",
       "form": "사각 절단",
-      "variant": true
+      "variant": true,
+      "description": "절단해 단면이 보이는 상품으로, 절편의 크기와 두께는 규격에 따라 다를 수 있습니다."
     },
     "갈근 (사각)": {
       "key": "갈근",
       "form": "사각 절단",
-      "variant": true
+      "variant": true,
+      "description": "절단해 단면이 보이는 상품으로, 절편의 크기와 두께는 규격에 따라 다를 수 있습니다."
     },
     "갈화": {
       "key": "갈화",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "감국": {
       "key": "감국",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "감국(국화)": {
       "key": "감국",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "감초": {
       "key": "감초",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "감초/양외2": {
       "key": "감초",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "감초/양외1": {
       "key": "감초",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "감초 (양외1)": {
       "key": "감초",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "감초초": {
       "key": "감초",
       "form": "",
-      "variant": true
+      "variant": true,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "감초초/양외1": {
       "key": "감초",
       "form": "",
-      "variant": true
+      "variant": true,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "감초초/양외2": {
       "key": "감초",
       "form": "",
-      "variant": true
+      "variant": true,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "감초초/1호": {
       "key": "감초",
       "form": "",
-      "variant": true
+      "variant": true,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "강활 (남)": {
       "key": "강활",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "강활": {
       "key": "강활",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "강활/잠": {
       "key": "강활",
       "form": "잠",
-      "variant": true
+      "variant": true,
+      "description": "이 상품은 잠 형태·규격으로 구분합니다."
     },
     "강황": {
       "key": "강황",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "개자": {
       "key": "개자",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "건강": {
       "key": "건강",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "건강 (특)": {
       "key": "건강",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다. 상품명에 표시된 등급·재배·가공 구분만으로 별도의 치료 효과를 의미하지는 않습니다."
     },
     "건강초탄": {
       "key": "건강",
       "form": "",
-      "variant": true
+      "variant": true,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "건율": {
       "key": "건율",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "견우자": {
       "key": "견우자",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "결명자": {
       "key": "결명자",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "계내금": {
       "key": "계내금",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "계내금초": {
       "key": "계내금",
       "form": "",
-      "variant": true
+      "variant": true,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "계지": {
       "key": "계지",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "계혈등": {
       "key": "계혈등",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "고량강": {
       "key": "고량강",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "고본": {
       "key": "고본",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "고삼": {
       "key": "고삼",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "곡기생": {
       "key": "곡기생",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "곡아": {
       "key": "곡아",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "곡아(발아현미)": {
       "key": "곡아",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "골쇄보": {
       "key": "골쇄보",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "과루실": {
       "key": "과루실",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "관동화": {
       "key": "관동화",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "괄루근": {
       "key": "천화분",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "괄루근(천화분)": {
       "key": "천화분",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "괄루인/추말": {
       "key": "과루인",
       "form": "분쇄품",
-      "variant": true
+      "variant": true,
+      "description": "잘게 분쇄한 상품으로, 원형·절편 상품과 입자 형태가 다릅니다."
     },
     "괄루인/통": {
       "key": "과루인",
       "form": "통 형태",
-      "variant": true
+      "variant": true,
+      "description": "이 상품은 통 형태 형태·규격으로 구분합니다."
     },
     "광곽향": {
       "key": "광곽향",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "괴화": {
       "key": "괴화",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "구기자/특": {
       "key": "구기자",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다. 상품명에 표시된 등급·재배·가공 구분만으로 별도의 치료 효과를 의미하지는 않습니다."
     },
     "구기자/대": {
       "key": "구기자",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "구기자": {
       "key": "구기자",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "구맥": {
       "key": "구맥",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "구자": {
       "key": "구자",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "구척": {
       "key": "구척",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "귀판": {
       "key": "귀갑",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "귀판교": {
       "key": "귀판교",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "금앵자": {
       "key": "금앵자",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "금은화": {
       "key": "금은화",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "금전초": {
       "key": "금전초",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "길경": {
       "key": "길경",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "나복자 (세척)": {
       "key": "내복자",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "내복자": {
       "key": "내복자",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "낙석등": {
       "key": "낙석등",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "남성/천": {
       "key": "천남성",
       "form": "천",
-      "variant": true
+      "variant": true,
+      "description": "이 상품은 천 형태·규격으로 구분합니다."
     },
     "남성/천/백반제": {
       "key": "천남성",
       "form": "천 · 백반제 가공",
-      "variant": true
+      "variant": true,
+      "description": "천 · 백반제 가공으로 구분한 가공 상품입니다. 아래 원물 자료만으로 생품과 가공품의 작용이 동일하다고 단정하지 않습니다."
     },
     "내복자/추말": {
       "key": "내복자",
       "form": "분쇄품",
-      "variant": true
+      "variant": true,
+      "description": "잘게 분쇄한 상품으로, 원형·절편 상품과 입자 형태가 다릅니다."
     },
     "내복자초": {
       "key": "내복자",
       "form": "",
-      "variant": true
+      "variant": true,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "노근": {
       "key": "노근",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "녹각/원상": {
       "key": "녹각",
       "form": "원상",
-      "variant": true
+      "variant": true,
+      "description": "이 상품은 원상 형태·규격으로 구분합니다."
     },
     "단삼": {
       "key": "단삼",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "담두시제": {
       "key": "담두시",
       "form": "",
-      "variant": true
+      "variant": true,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "당귀": {
       "key": "당귀",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "당귀 (GAP/특특)": {
       "key": "당귀",
       "form": "특특)",
-      "variant": true
+      "variant": true,
+      "description": "이 상품은 특특) 형태·규격으로 구분합니다. 상품명에 표시된 등급·재배·가공 구분만으로 별도의 치료 효과를 의미하지는 않습니다."
     },
     "당귀/미": {
       "key": "당귀",
       "form": "미 부분",
-      "variant": true
+      "variant": true,
+      "description": "이 상품은 미 부분 형태·규격으로 구분합니다."
     },
     "당귀/신": {
       "key": "당귀",
       "form": "신 품목",
-      "variant": true
+      "variant": true,
+      "description": "이 상품은 신 품목 형태·규격으로 구분합니다."
     },
     "당삼": {
       "key": "당삼",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "대복피": {
       "key": "대복피",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "대청엽": {
       "key": "대청엽",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "대추 (상)": {
       "key": "대조",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "대추": {
       "key": "대조",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "대추/알": {
       "key": "대조",
       "form": "알",
-      "variant": true
+      "variant": true,
+      "description": "이 상품은 알 형태·규격으로 구분합니다."
     },
     "대추/절": {
       "key": "대조",
       "form": "절편",
-      "variant": true
+      "variant": true,
+      "description": "절단해 단면이 보이는 상품으로, 절편의 크기와 두께는 규격에 따라 다를 수 있습니다."
     },
     "대황": {
       "key": "대황",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "대황/장엽": {
       "key": "대황",
       "form": "장엽",
-      "variant": true
+      "variant": true,
+      "description": "이 상품은 장엽 형태·규격으로 구분합니다."
     },
     "대황/종": {
       "key": "대황",
       "form": "종",
-      "variant": true
+      "variant": true,
+      "description": "이 상품은 종 형태·규격으로 구분합니다."
     },
     "대황주증": {
       "key": "대황",
       "form": "",
-      "variant": true
+      "variant": true,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "도경": {
       "key": "도간",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "도인": {
       "key": "도인",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "도인/절": {
       "key": "도인",
       "form": "절편",
-      "variant": true
+      "variant": true,
+      "description": "절단해 단면이 보이는 상품으로, 절편의 크기와 두께는 규격에 따라 다를 수 있습니다."
     },
     "독활": {
       "key": "독활",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "동과자": {
       "key": "동과자",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "동충하초/눈꽃": {
       "key": "동충하초/눈꽃",
       "form": "눈꽃",
-      "variant": true
+      "variant": true,
+      "description": "이 상품은 눈꽃 형태·규격으로 구분합니다."
     },
     "두시": {
       "key": "담두시",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "두충": {
       "key": "두충",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "두충/염자": {
       "key": "두충",
       "form": "염자 가공",
-      "variant": true
+      "variant": true,
+      "description": "염자 가공으로 구분한 가공 상품입니다. 아래 원물 자료만으로 생품과 가공품의 작용이 동일하다고 단정하지 않습니다."
     },
     "등피": {
       "key": "등피",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "마가목": {
       "key": "마가목",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "마황": {
       "key": "마황",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "마황/탕포": {
       "key": "마황",
       "form": "탕포",
-      "variant": true
+      "variant": true,
+      "description": "탕포으로 구분한 가공 상품입니다. 아래 원물 자료만으로 생품과 가공품의 작용이 동일하다고 단정하지 않습니다."
     },
     "만형자": {
       "key": "만형자",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "망초": {
       "key": "망초",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "맥문동/AA": {
       "key": "맥문동",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다. 상품명에 표시된 등급·재배·가공 구분만으로 별도의 치료 효과를 의미하지는 않습니다."
     },
     "맥문동": {
       "key": "맥문동",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "맥아초": {
       "key": "맥아",
       "form": "",
-      "variant": true
+      "variant": true,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "메밀": {
       "key": "교맥",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "모과": {
       "key": "모과",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "모근": {
       "key": "모근",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "모려": {
       "key": "모려",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "모려가루": {
       "key": "모려",
       "form": "가루",
-      "variant": true
+      "variant": true,
+      "description": "잘게 분쇄한 상품으로, 원형·절편 상품과 입자 형태가 다릅니다."
     },
     "모려/가루": {
       "key": "모려",
       "form": "가루",
-      "variant": true
+      "variant": true,
+      "description": "잘게 분쇄한 상품으로, 원형·절편 상품과 입자 형태가 다릅니다."
     },
     "목단피/AA": {
       "key": "목단피",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다. 상품명에 표시된 등급·재배·가공 구분만으로 별도의 치료 효과를 의미하지는 않습니다."
     },
     "목단피": {
       "key": "목단피",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "목적": {
       "key": "목적",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "목통": {
       "key": "목통",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "목향": {
       "key": "목향",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "몰약": {
       "key": "몰약",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "미후도": {
       "key": "미후도",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "미후도/연조": {
       "key": "미후도",
       "form": "연조",
-      "variant": true
+      "variant": true,
+      "description": "이 상품은 연조 형태·규격으로 구분합니다."
     },
     "밀납(황납)": {
       "key": "황랍",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "밀납": {
       "key": "황랍",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "반하": {
       "key": "반하",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "반하/생강백반제": {
       "key": "반하",
       "form": "생강백반제 가공",
-      "variant": true
+      "variant": true,
+      "description": "생강백반제 가공으로 구분한 가공 상품입니다. 아래 원물 자료만으로 생품과 가공품의 작용이 동일하다고 단정하지 않습니다."
     },
     "반하/절": {
       "key": "반하",
       "form": "절편",
-      "variant": true
+      "variant": true,
+      "description": "절단해 단면이 보이는 상품으로, 절편의 크기와 두께는 규격에 따라 다를 수 있습니다."
     },
     "반하/절/생강백반제": {
       "key": "반하",
       "form": "절편 · 생강백반제 가공",
-      "variant": true
+      "variant": true,
+      "description": "절단해 단면이 보이는 상품으로, 절편의 크기와 두께는 규격에 따라 다를 수 있습니다. 절편 · 생강백반제 가공으로 구분한 가공 상품입니다. 아래 원물 자료만으로 생품과 가공품의 작용이 동일하다고 단정하지 않습니다."
     },
     "방기": {
       "key": "방기",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "방풍": {
       "key": "방풍",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "방풍/식": {
       "key": "방풍",
       "form": "식",
-      "variant": true
+      "variant": true,
+      "description": "이 상품은 식 형태·규격으로 구분합니다."
     },
     "백강잠": {
       "key": "백강잠",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "백급": {
       "key": "백급",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "백두구": {
       "key": "백두구",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "백두구/추말": {
       "key": "백두구",
       "form": "아주 고운 분말",
-      "variant": true
+      "variant": true,
+      "description": "잘게 분쇄한 상품으로, 원형·절편 상품과 입자 형태가 다릅니다."
     },
     "백두옹": {
       "key": "백두옹",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "백렴": {
       "key": "백렴",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "백반": {
       "key": "백반",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "백부근": {
       "key": "백부근",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "백부자": {
       "key": "백부자",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "백선피": {
       "key": "백선피",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "백수오": {
       "key": "백수오",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "백자인": {
       "key": "백자인",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "백지": {
       "key": "백지",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "백출": {
       "key": "백출",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "백출/기원": {
       "key": "백출",
       "form": "기원",
-      "variant": true
+      "variant": true,
+      "description": "이 상품은 기원 형태·규격으로 구분합니다."
     },
     "백출/미감침": {
       "key": "백출",
       "form": "미감침 가공",
-      "variant": true
+      "variant": true,
+      "description": "미감침 가공으로 구분한 가공 상품입니다. 아래 원물 자료만으로 생품과 가공품의 작용이 동일하다고 단정하지 않습니다."
     },
     "백출/재배": {
       "key": "백출",
       "form": "재배",
-      "variant": true
+      "variant": true,
+      "description": "이 상품은 재배 형태·규격으로 구분합니다."
     },
     "백출/황토": {
       "key": "백출",
       "form": "황토 가공",
-      "variant": true
+      "variant": true,
+      "description": "황토 가공으로 구분한 가공 상품입니다. 아래 원물 자료만으로 생품과 가공품의 작용이 동일하다고 단정하지 않습니다."
     },
     "백출초": {
       "key": "백출",
       "form": "",
-      "variant": true
+      "variant": true,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "백편두": {
       "key": "백편두",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "백편두/추말": {
       "key": "백편두",
       "form": "분쇄품",
-      "variant": true
+      "variant": true,
+      "description": "잘게 분쇄한 상품으로, 원형·절편 상품과 입자 형태가 다릅니다."
     },
     "백합": {
       "key": "백합",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "별갑": {
       "key": "별갑",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "별갑교": {
       "key": "별갑교",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "보골지/염자": {
       "key": "보골지",
       "form": "염자 가공",
-      "variant": true
+      "variant": true,
+      "description": "염자 가공으로 구분한 가공 상품입니다. 아래 원물 자료만으로 생품과 가공품의 작용이 동일하다고 단정하지 않습니다."
     },
     "복령": {
       "key": "복령",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "복령/신": {
       "key": "복령",
       "form": "신 품목",
-      "variant": true
+      "variant": true,
+      "description": "이 상품은 신 품목 형태·규격으로 구분합니다."
     },
     "복령/적": {
       "key": "복령",
       "form": "적",
-      "variant": true
+      "variant": true,
+      "description": "이 상품은 적 형태·규격으로 구분합니다."
     },
     "복령/칼": {
       "key": "복령",
       "form": "칼",
-      "variant": true
+      "variant": true,
+      "description": "이 상품은 칼 형태·규격으로 구분합니다."
     },
     "복령피": {
       "key": "복령피",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "복분자": {
       "key": "복분자",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "부자": {
       "key": "부자",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "부자/포": {
       "key": "부자",
       "form": "포제품",
-      "variant": true
+      "variant": true,
+      "description": "포제품으로 구분한 가공 상품입니다. 아래 원물 자료만으로 생품과 가공품의 작용이 동일하다고 단정하지 않습니다."
     },
     "비해": {
       "key": "비해",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "빈랑자": {
       "key": "빈랑",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "사간": {
       "key": "사간",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "사삼": {
       "key": "사삼",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "사상자": {
       "key": "사상자",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "사인초": {
       "key": "사인",
       "form": "",
-      "variant": true
+      "variant": true,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "사인초/추말": {
       "key": "사인",
       "form": "분쇄품",
-      "variant": true
+      "variant": true,
+      "description": "잘게 분쇄한 상품으로, 원형·절편 상품과 입자 형태가 다릅니다."
     },
     "산사": {
       "key": "산사",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "산사초": {
       "key": "산사",
       "form": "",
-      "variant": true
+      "variant": true,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "산수유": {
       "key": "산수유",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "산약": {
       "key": "산약",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "산약/사각": {
       "key": "산약",
       "form": "사각 절단",
-      "variant": true
+      "variant": true,
+      "description": "절단해 단면이 보이는 상품으로, 절편의 크기와 두께는 규격에 따라 다를 수 있습니다."
     },
     "산약(사각)": {
       "key": "산약",
       "form": "사각 절단",
-      "variant": true
+      "variant": true,
+      "description": "절단해 단면이 보이는 상품으로, 절편의 크기와 두께는 규격에 따라 다를 수 있습니다."
     },
     "산장": {
       "key": "산장",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "산조인": {
       "key": "산조인",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "산조인초": {
       "key": "산조인",
       "form": "",
-      "variant": true
+      "variant": true,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "산초(천초)": {
       "key": "산초",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "산초": {
       "key": "산초",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "삼릉": {
       "key": "삼릉",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "상기생": {
       "key": "상기생",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "상백피": {
       "key": "상백피",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "상백피/거피": {
       "key": "상백피",
       "form": "거피 품목",
-      "variant": true
+      "variant": true,
+      "description": "거피는 겉껍질을 제거한 형태를 뜻합니다."
     },
     "상심자": {
       "key": "상심자",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "상지": {
       "key": "상지",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "상표초": {
       "key": "상표초",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "상황버섯": {
       "key": "상황",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "서장경": {
       "key": "서장경",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "석결명/가루": {
       "key": "석결명",
       "form": "가루",
-      "variant": true
+      "variant": true,
+      "description": "잘게 분쇄한 상품으로, 원형·절편 상품과 입자 형태가 다릅니다."
     },
     "석고/가루": {
       "key": "석고",
       "form": "가루",
-      "variant": true
+      "variant": true,
+      "description": "잘게 분쇄한 상품으로, 원형·절편 상품과 입자 형태가 다릅니다."
     },
     "석곡": {
       "key": "석곡",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "석창포": {
       "key": "석창포",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "선복화": {
       "key": "선복화",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "세신": {
       "key": "세신",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "센나엽": {
       "key": "센나엽",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "소맥": {
       "key": "소맥",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "소맥(밀)": {
       "key": "소맥",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "소목": {
       "key": "소목",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "속단": {
       "key": "속단",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "송엽": {
       "key": "송엽",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "송절": {
       "key": "송절",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "송화분": {
       "key": "송화분",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "수세미": {
       "key": "사과락",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "수오등": {
       "key": "야교등",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "숙지황": {
       "key": "숙지황",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "승마": {
       "key": "승마",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "시호/북": {
       "key": "시호",
       "form": "북",
-      "variant": true
+      "variant": true,
+      "description": "이 상품은 북 형태·규격으로 구분합니다."
     },
     "시호/은": {
       "key": "은시호",
       "form": "은시호 품목",
-      "variant": true
+      "variant": true,
+      "description": "이 상품은 은시호 품목 형태·규격으로 구분합니다."
     },
     "시호/장": {
       "key": "시호",
       "form": "장",
-      "variant": true
+      "variant": true,
+      "description": "이 상품은 장 형태·규격으로 구분합니다."
     },
     "신곡": {
       "key": "신곡",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "신이": {
       "key": "신이",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "아교": {
       "key": "아교",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "아출": {
       "key": "아출",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "여정실": {
       "key": "여정실",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "여정실/주증": {
       "key": "여정실",
       "form": "주증 가공",
-      "variant": true
+      "variant": true,
+      "description": "주증 가공으로 구분한 가공 상품입니다. 아래 원물 자료만으로 생품과 가공품의 작용이 동일하다고 단정하지 않습니다."
     },
     "연교": {
       "key": "연교",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "연자육": {
       "key": "연자육",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "영지버섯": {
       "key": "영지",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "오가피": {
       "key": "오가피",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "오가피/내피/정품": {
       "key": "오가피",
       "form": "내피 · 정품",
-      "variant": true
+      "variant": true,
+      "description": "이 상품은 내피 · 정품 형태·규격으로 구분합니다. 상품명에 표시된 등급·재배·가공 구분만으로 별도의 치료 효과를 의미하지는 않습니다."
     },
     "오령지": {
       "key": "오령지",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "오매": {
       "key": "오매",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "오미자": {
       "key": "오미자",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "오수유": {
       "key": "오수유",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "오약": {
       "key": "오약",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "용골": {
       "key": "용골",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "용골/가루": {
       "key": "용골",
       "form": "가루",
-      "variant": true
+      "variant": true,
+      "description": "잘게 분쇄한 상품으로, 원형·절편 상품과 입자 형태가 다릅니다."
     },
     "용담": {
       "key": "용담",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "용안육": {
       "key": "용안육",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "우담남성": {
       "key": "우담남성",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "우방자": {
       "key": "우방자",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "우슬": {
       "key": "우슬",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "우슬/주자": {
       "key": "우슬",
       "form": "주자 가공",
-      "variant": true
+      "variant": true,
+      "description": "주자 가공으로 구분한 가공 상품입니다. 아래 원물 자료만으로 생품과 가공품의 작용이 동일하다고 단정하지 않습니다."
     },
     "욱리인": {
       "key": "욱리인",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "울금": {
       "key": "울금",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "원지/밀자": {
       "key": "원지",
       "form": "밀자 가공",
-      "variant": true
+      "variant": true,
+      "description": "밀자 가공으로 구분한 가공 상품입니다. 아래 원물 자료만으로 생품과 가공품의 작용이 동일하다고 단정하지 않습니다."
     },
     "원지/특": {
       "key": "원지",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다. 상품명에 표시된 등급·재배·가공 구분만으로 별도의 치료 효과를 의미하지는 않습니다."
     },
     "원지/상": {
       "key": "원지",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "원지": {
       "key": "원지",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "위령선": {
       "key": "위령선",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "유백피": {
       "key": "유백피",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "유향": {
       "key": "유향",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "육계/YB1": {
       "key": "육계",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "육계": {
       "key": "육계",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "육두구": {
       "key": "육두구",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "육종용주증": {
       "key": "육종용",
       "form": "",
-      "variant": true
+      "variant": true,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "율피": {
       "key": "율피",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "은행잎": {
       "key": "은행잎",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "의이인": {
       "key": "의이인",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "익지": {
       "key": "익지",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "익지/추말": {
       "key": "익지",
       "form": "분쇄품",
-      "variant": true
+      "variant": true,
+      "description": "잘게 분쇄한 상품으로, 원형·절편 상품과 입자 형태가 다릅니다."
     },
     "인동": {
       "key": "인동등",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "일당귀": {
       "key": "일당귀",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "일당귀/신": {
       "key": "일당귀",
       "form": "신 품목",
-      "variant": true
+      "variant": true,
+      "description": "이 상품은 신 품목 형태·규격으로 구분합니다."
     },
     "자근": {
       "key": "자초",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "자노아": {
       "key": "총목피",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "자소자": {
       "key": "자소자",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "자연동": {
       "key": "자연동",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "자완": {
       "key": "자완",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "자충": {
       "key": "자충",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "작약": {
       "key": "작약",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "작약/강": {
       "key": "작약",
       "form": "강",
-      "variant": true
+      "variant": true,
+      "description": "이 상품은 강 형태·규격으로 구분합니다."
     },
     "작약/적/직": {
       "key": "적작약",
       "form": "적 · 직",
-      "variant": true
+      "variant": true,
+      "description": "이 상품은 적 · 직 형태·규격으로 구분합니다."
     },
     "작약/적/편": {
       "key": "적작약",
       "form": "적 · 절편",
-      "variant": true
+      "variant": true,
+      "description": "절단해 단면이 보이는 상품으로, 절편의 크기와 두께는 규격에 따라 다를 수 있습니다."
     },
     "작약/주자": {
       "key": "작약",
       "form": "주자 가공",
-      "variant": true
+      "variant": true,
+      "description": "주자 가공으로 구분한 가공 상품입니다. 아래 원물 자료만으로 생품과 가공품의 작용이 동일하다고 단정하지 않습니다."
     },
     "작약초": {
       "key": "작약",
       "form": "",
-      "variant": true
+      "variant": true,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "작약초/편": {
       "key": "작약",
       "form": "절편",
-      "variant": true
+      "variant": true,
+      "description": "절단해 단면이 보이는 상품으로, 절편의 크기와 두께는 규격에 따라 다를 수 있습니다."
     },
     "저두강": {
       "key": "저두강",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "저령": {
       "key": "저령",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "저백피": {
       "key": "저백피",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "저백피(소백피)": {
       "key": "저백피",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "저실자": {
       "key": "저실자",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "전호": {
       "key": "전호",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "절패모": {
       "key": "절패모",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "접골목": {
       "key": "접골목",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "정향": {
       "key": "정향",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "제니": {
       "key": "제니",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "제조": {
       "key": "제조",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "조각자": {
       "key": "조각자",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "조구등": {
       "key": "조구등",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "종대황": {
       "key": "대황",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "지각": {
       "key": "지각",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "지각초": {
       "key": "지각",
       "form": "",
-      "variant": true
+      "variant": true,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "지골피": {
       "key": "지골피",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "지구자": {
       "key": "지구자",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "지구자/씨": {
       "key": "지구자",
       "form": "씨",
-      "variant": true
+      "variant": true,
+      "description": "이 상품은 씨 형태·규격으로 구분합니다."
     },
     "지룡": {
       "key": "지룡",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "지룡/속제거": {
       "key": "지룡",
       "form": "속제거",
-      "variant": true
+      "variant": true,
+      "description": "이 상품은 속제거 형태·규격으로 구분합니다."
     },
     "지모": {
       "key": "지모",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "지모/염자": {
       "key": "지모",
       "form": "염자 가공",
-      "variant": true
+      "variant": true,
+      "description": "염자 가공으로 구분한 가공 상품입니다. 아래 원물 자료만으로 생품과 가공품의 작용이 동일하다고 단정하지 않습니다."
     },
     "지부자": {
       "key": "지부자",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "지실/애": {
       "key": "지실",
       "form": "애",
-      "variant": true
+      "variant": true,
+      "description": "이 상품은 애 형태·규격으로 구분합니다."
     },
     "지실/중": {
       "key": "지실",
       "form": "중",
-      "variant": true
+      "variant": true,
+      "description": "이 상품은 중 형태·규격으로 구분합니다."
     },
     "지유": {
       "key": "지유",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "지황": {
       "key": "지황",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "진교": {
       "key": "진교",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "진피": {
       "key": "진피",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "질려자": {
       "key": "질려자",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "질려자/염자": {
       "key": "질려자",
       "form": "염자 가공",
-      "variant": true
+      "variant": true,
+      "description": "염자 가공으로 구분한 가공 상품입니다. 아래 원물 자료만으로 생품과 가공품의 작용이 동일하다고 단정하지 않습니다."
     },
     "차전자": {
       "key": "차전자",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "차전자피": {
       "key": "차전자피",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "창이자": {
       "key": "창이자",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "창출": {
       "key": "창출",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "창출/모": {
       "key": "창출",
       "form": "모",
-      "variant": true
+      "variant": true,
+      "description": "이 상품은 모 형태·규격으로 구분합니다."
     },
     "창출/미감침": {
       "key": "창출",
       "form": "미감침 가공",
-      "variant": true
+      "variant": true,
+      "description": "미감침 가공으로 구분한 가공 상품입니다. 아래 원물 자료만으로 생품과 가공품의 작용이 동일하다고 단정하지 않습니다."
     },
     "천궁": {
       "key": "천궁",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "천마": {
       "key": "천마",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "천문동": {
       "key": "천문동",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "천오": {
       "key": "천오",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "천오제": {
       "key": "천오",
       "form": "",
-      "variant": true
+      "variant": true,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "청피": {
       "key": "청피",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "초과": {
       "key": "초과",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "초두구": {
       "key": "초두구",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "초오": {
       "key": "초오",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "초오제": {
       "key": "초오",
       "form": "",
-      "variant": true
+      "variant": true,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "측백엽": {
       "key": "측백엽",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "치자": {
       "key": "치자",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "치자초": {
       "key": "치자",
       "form": "",
-      "variant": true
+      "variant": true,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "택사": {
       "key": "택사",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "토복령": {
       "key": "토복령",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "토사자": {
       "key": "토사자",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "토사자/주증": {
       "key": "토사자",
       "form": "주증 가공",
-      "variant": true
+      "variant": true,
+      "description": "주증 가공으로 구분한 가공 상품입니다. 아래 원물 자료만으로 생품과 가공품의 작용이 동일하다고 단정하지 않습니다."
     },
     "파극천": {
       "key": "파극천",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "파극천/주자": {
       "key": "파극천",
       "form": "주자 가공",
-      "variant": true
+      "variant": true,
+      "description": "주자 가공으로 구분한 가공 상품입니다. 아래 원물 자료만으로 생품과 가공품의 작용이 동일하다고 단정하지 않습니다."
     },
     "판람근": {
       "key": "판람근",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "팔각회향": {
       "key": "팔각회향",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "패장": {
       "key": "패장",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "편축": {
       "key": "편축",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "포도근": {
       "key": "포도근",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "포황": {
       "key": "포황",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "하수오/적": {
       "key": "하수오",
       "form": "적",
-      "variant": true
+      "variant": true,
+      "description": "이 상품은 적 형태·규격으로 구분합니다."
     },
     "하수오/주증": {
       "key": "하수오",
       "form": "주증 가공",
-      "variant": true
+      "variant": true,
+      "description": "주증 가공으로 구분한 가공 상품입니다. 아래 원물 자료만으로 생품과 가공품의 작용이 동일하다고 단정하지 않습니다."
     },
     "하수오/흡두즙돈": {
       "key": "하수오",
       "form": "흡두즙돈 가공",
-      "variant": true
+      "variant": true,
+      "description": "흡두즙돈 가공으로 구분한 가공 상품입니다. 아래 원물 자료만으로 생품과 가공품의 작용이 동일하다고 단정하지 않습니다."
     },
     "합환피": {
       "key": "합환피",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "해동피": {
       "key": "해동피",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "해방풍": {
       "key": "북사삼",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "해표초/가루": {
       "key": "해표초",
       "form": "가루",
-      "variant": true
+      "variant": true,
+      "description": "잘게 분쇄한 상품으로, 원형·절편 상품과 입자 형태가 다릅니다."
     },
     "해풍등": {
       "key": "해풍등",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "행인": {
       "key": "행인",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "행인/절": {
       "key": "행인",
       "form": "절편",
-      "variant": true
+      "variant": true,
+      "description": "절단해 단면이 보이는 상품으로, 절편의 크기와 두께는 규격에 따라 다를 수 있습니다."
     },
     "행인/추말": {
       "key": "행인",
       "form": "아주 고운 분말",
-      "variant": true
+      "variant": true,
+      "description": "잘게 분쇄한 상품으로, 원형·절편 상품과 입자 형태가 다릅니다."
     },
     "향부자": {
       "key": "향부자",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "향부자/동변": {
       "key": "향부자",
       "form": "동변 가공",
-      "variant": true
+      "variant": true,
+      "description": "동변 가공으로 구분한 가공 상품입니다. 아래 원물 자료만으로 생품과 가공품의 작용이 동일하다고 단정하지 않습니다."
     },
     "향부자/주초": {
       "key": "향부자",
       "form": "주초 가공",
-      "variant": true
+      "variant": true,
+      "description": "주초 가공으로 구분한 가공 상품입니다. 아래 원물 자료만으로 생품과 가공품의 작용이 동일하다고 단정하지 않습니다."
     },
     "향부자/초": {
       "key": "향부자",
       "form": "볶음 가공",
-      "variant": true
+      "variant": true,
+      "description": "볶음 가공으로 구분한 가공 상품입니다. 아래 원물 자료만으로 생품과 가공품의 작용이 동일하다고 단정하지 않습니다."
     },
     "헛개나무": {
       "key": "지구목",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "현삼": {
       "key": "현삼",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "현호색": {
       "key": "현호색",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "호장근": {
       "key": "호장근",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "홍화": {
       "key": "홍화",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "화피": {
       "key": "화피",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "활석": {
       "key": "활석",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "황금": {
       "key": "황금",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "황금/고금": {
       "key": "황금",
       "form": "고금",
-      "variant": true
+      "variant": true,
+      "description": "이 상품은 고금 형태·규격으로 구분합니다."
     },
     "황금/조금": {
       "key": "황금",
       "form": "조금",
-      "variant": true
+      "variant": true,
+      "description": "이 상품은 조금 형태·규격으로 구분합니다."
     },
     "황금/주자": {
       "key": "황금",
       "form": "주자 가공",
-      "variant": true
+      "variant": true,
+      "description": "주자 가공으로 구분한 가공 상품입니다. 아래 원물 자료만으로 생품과 가공품의 작용이 동일하다고 단정하지 않습니다."
     },
     "황기": {
       "key": "황기",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "황기/밀자": {
       "key": "황기",
       "form": "밀자 가공",
-      "variant": true
+      "variant": true,
+      "description": "밀자 가공으로 구분한 가공 상품입니다. 아래 원물 자료만으로 생품과 가공품의 작용이 동일하다고 단정하지 않습니다."
     },
     "황기/직절AA": {
       "key": "황기",
       "form": "직절",
-      "variant": true
+      "variant": true,
+      "description": "절단해 단면이 보이는 상품으로, 절편의 크기와 두께는 규격에 따라 다를 수 있습니다. 상품명에 표시된 등급·재배·가공 구분만으로 별도의 치료 효과를 의미하지는 않습니다."
     },
     "황기/직절": {
       "key": "황기",
       "form": "직절",
-      "variant": true
+      "variant": true,
+      "description": "절단해 단면이 보이는 상품으로, 절편의 크기와 두께는 규격에 따라 다를 수 있습니다."
     },
     "황기/편": {
       "key": "황기",
       "form": "절편",
-      "variant": true
+      "variant": true,
+      "description": "절단해 단면이 보이는 상품으로, 절편의 크기와 두께는 규격에 따라 다를 수 있습니다."
     },
     "황기/편/일": {
       "key": "황기",
       "form": "절편 · 일",
-      "variant": true
+      "variant": true,
+      "description": "절단해 단면이 보이는 상품으로, 절편의 크기와 두께는 규격에 따라 다를 수 있습니다."
     },
     "황련": {
       "key": "황련",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "황백": {
       "key": "황백",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "황백/염자": {
       "key": "황백",
       "form": "염자 가공",
-      "variant": true
+      "variant": true,
+      "description": "염자 가공으로 구분한 가공 상품입니다. 아래 원물 자료만으로 생품과 가공품의 작용이 동일하다고 단정하지 않습니다."
     },
     "황백/주자": {
       "key": "황백",
       "form": "주자 가공",
-      "variant": true
+      "variant": true,
+      "description": "주자 가공으로 구분한 가공 상품입니다. 아래 원물 자료만으로 생품과 가공품의 작용이 동일하다고 단정하지 않습니다."
     },
     "황정": {
       "key": "황정",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "회향": {
       "key": "회향",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "후박": {
       "key": "후박",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "후박/강자": {
       "key": "후박",
       "form": "강자",
-      "variant": true
+      "variant": true,
+      "description": "강자으로 구분한 가공 상품입니다. 아래 원물 자료만으로 생품과 가공품의 작용이 동일하다고 단정하지 않습니다."
     },
     "후박/근": {
       "key": "후박",
       "form": "근",
-      "variant": true
+      "variant": true,
+      "description": "이 상품은 근 형태·규격으로 구분합니다."
     },
     "후추": {
       "key": "호초",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "흑두": {
       "key": "흑두",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "감인(검인)": {
       "key": "검인",
       "form": "가시연꽃 씨",
-      "variant": false
+      "variant": false,
+      "description": "이 상품은 가시연꽃 씨 형태·규격으로 구분합니다."
     },
     "귀전우": {
       "key": "귀전우",
       "form": "화살나무 가지·날개깃",
-      "variant": false
+      "variant": false,
+      "description": "이 상품은 화살나무 가지·날개깃 형태·규격으로 구분합니다."
     },
     "백굴채": {
       "key": "백굴채",
       "form": "애기똥풀 전초",
-      "variant": false
+      "variant": false,
+      "description": "이 상품은 애기똥풀 전초 형태·규격으로 구분합니다."
     },
     "곽향": {
       "key": "곽향",
       "form": "배초향 지상부",
-      "variant": false
+      "variant": false,
+      "description": "이 상품은 배초향 지상부 형태·규격으로 구분합니다."
     },
     "구절초": {
       "key": "구절초",
       "form": "지상부",
-      "variant": false
+      "variant": false,
+      "description": "이 상품은 지상부 형태·규격으로 구분합니다."
     },
     "등심초": {
       "key": "등심초",
       "form": "골풀류 줄기 속",
-      "variant": false
+      "variant": false,
+      "description": "이 상품은 골풀류 줄기 속 형태·규격으로 구분합니다."
     },
     "석고": {
       "key": "석고",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "박하/참": {
       "key": "박하",
       "form": "참 표기 품목",
-      "variant": true
+      "variant": true,
+      "description": "이 상품은 참 표기 품목 형태·규격으로 구분합니다."
     },
     "부평초": {
       "key": "부평",
       "form": "개구리밥류",
-      "variant": false
+      "variant": false,
+      "description": "이 상품은 개구리밥류 형태·규격으로 구분합니다."
     },
     "맥문동/거심/특": {
       "key": "맥문동",
       "form": "거심 · 특",
-      "variant": true
+      "variant": true,
+      "description": "거심은 중심 부위를 제거한 형태를 구분하는 표기입니다. 상품명에 표시된 등급·재배·가공 구분만으로 별도의 치료 효과를 의미하지는 않습니다."
     },
     "목단피/대": {
       "key": "목단피",
       "form": "대",
-      "variant": true
+      "variant": true,
+      "description": "이 상품은 대 형태·규격으로 구분합니다."
     },
     "메밀(교맥)": {
       "key": "교맥",
       "form": "메밀",
-      "variant": false
+      "variant": false,
+      "description": "이 상품은 메밀 형태·규격으로 구분합니다."
     },
     "방풍/해": {
       "key": "북사삼",
       "form": "해방풍 표기 · 기원 확인 필요",
-      "variant": true
+      "variant": true,
+      "description": "이 상품은 해방풍 표기 · 기원 확인 필요 형태·규격으로 구분합니다."
     },
     "백두구/유피/추말": {
       "key": "백두구",
       "form": "껍질 포함 · 추말",
-      "variant": true
+      "variant": true,
+      "description": "잘게 분쇄한 상품으로, 원형·절편 상품과 입자 형태가 다릅니다. 유피는 껍질이 남아 있는 형태를 구분하는 상품 표기입니다."
     },
     "백두구/거피": {
       "key": "백두구",
       "form": "거피",
-      "variant": true
+      "variant": true,
+      "description": "거피는 겉껍질을 제거한 형태를 뜻합니다."
     },
     "백부자/정품/관백부": {
       "key": "백부자",
       "form": "관백부 · 정품 표기",
-      "variant": true
+      "variant": true,
+      "description": "이 상품은 관백부 · 정품 표기 형태·규격으로 구분합니다. 상품명에 표시된 등급·재배·가공 구분만으로 별도의 치료 효과를 의미하지는 않습니다."
     },
     "백출/동북/특특": {
       "key": "백출",
       "form": "동북 · 특특",
-      "variant": true
+      "variant": true,
+      "description": "이 상품은 동북 · 특특 형태·규격으로 구분합니다. 상품명에 표시된 등급·재배·가공 구분만으로 별도의 치료 효과를 의미하지는 않습니다."
     },
     "복령/야생": {
       "key": "복령",
       "form": "야생 표기",
-      "variant": true
+      "variant": true,
+      "description": "이 상품은 야생 표기 형태·규격으로 구분합니다."
     },
     "부자/경포": {
       "key": "부자",
       "form": "경포 표기 · 가공 상태 확인",
-      "variant": true
+      "variant": true,
+      "description": "이 상품은 경포 표기 · 가공 상태 확인 형태·규격으로 구분합니다."
     },
     "산수유/특/손치": {
       "key": "산수유",
       "form": "특 · 손치",
-      "variant": true
+      "variant": true,
+      "description": "이 상품은 특 · 손치 형태·규격으로 구분합니다. 상품명에 표시된 등급·재배·가공 구분만으로 별도의 치료 효과를 의미하지는 않습니다."
     },
     "산수유/손치/구례": {
       "key": "산수유",
       "form": "손치 · 구례",
-      "variant": true
+      "variant": true,
+      "description": "이 상품은 손치 · 구례 형태·규격으로 구분합니다."
     },
     "산약/거피": {
       "key": "산약",
       "form": "거피",
-      "variant": true
+      "variant": true,
+      "description": "거피는 겉껍질을 제거한 형태를 뜻합니다."
     },
     "산조인/원": {
       "key": "산조인",
       "form": "원형",
-      "variant": true
+      "variant": true,
+      "description": "이 상품은 원형 형태·규격으로 구분합니다."
     },
     "산조인초/원": {
       "key": "산조인",
       "form": "볶음 · 원형",
-      "variant": true
+      "variant": true,
+      "description": "볶음 · 원형으로 구분한 가공 상품입니다. 아래 원물 자료만으로 생품과 가공품의 작용이 동일하다고 단정하지 않습니다."
     },
     "상백피/유피": {
       "key": "상백피",
       "form": "유피",
-      "variant": true
+      "variant": true,
+      "description": "유피는 껍질이 남아 있는 형태를 구분하는 상품 표기입니다."
     },
     "상표초/야생": {
       "key": "상표초",
       "form": "야생 표기",
-      "variant": true
+      "variant": true,
+      "description": "이 상품은 야생 표기 형태·규격으로 구분합니다."
     },
     "사과락": {
       "key": "사과락",
       "form": "수세미 열매의 섬유 조직",
-      "variant": false
+      "variant": false,
+      "description": "이 상품은 수세미 열매의 섬유 조직 형태·규격으로 구분합니다."
     },
     "숙지황/9증": {
       "key": "숙지황",
       "form": "9증 표기",
-      "variant": true
+      "variant": true,
+      "description": "9증 표기으로 구분한 가공 상품입니다. 아래 원물 자료만으로 생품과 가공품의 작용이 동일하다고 단정하지 않습니다."
     },
     "시호/서장": {
       "key": "시호",
       "form": "서장 표기 · 기원 확인 필요",
-      "variant": true
+      "variant": true,
+      "description": "이 상품은 서장 표기 · 기원 확인 필요 형태·규격으로 구분합니다."
     },
     "시호/황": {
       "key": "시호",
       "form": "황 표기 · 기원 확인 필요",
-      "variant": true
+      "variant": true,
+      "description": "이 상품은 황 표기 · 기원 확인 필요 형태·규격으로 구분합니다."
     },
     "신곡초": {
       "key": "신곡",
       "form": "볶음",
-      "variant": true
+      "variant": true,
+      "description": "볶음으로 구분한 가공 상품입니다. 아래 원물 자료만으로 생품과 가공품의 작용이 동일하다고 단정하지 않습니다."
     },
     "아출(봉충)": {
       "key": "아출",
       "form": "봉충 표기",
-      "variant": true
+      "variant": true,
+      "description": "이 상품은 봉충 표기 형태·규격으로 구분합니다."
     },
     "오가피/거피/정품": {
       "key": "오가피",
       "form": "거피 · 정품 표기",
-      "variant": true
+      "variant": true,
+      "description": "거피는 겉껍질을 제거한 형태를 뜻합니다. 상품명에 표시된 등급·재배·가공 구분만으로 별도의 치료 효과를 의미하지는 않습니다."
     },
     "오미자/무농약": {
       "key": "오미자",
       "form": "무농약 상품 표기",
-      "variant": true
+      "variant": true,
+      "description": "이 상품은 무농약 상품 표기 형태·규격으로 구분합니다. 상품명에 표시된 등급·재배·가공 구분만으로 별도의 치료 효과를 의미하지는 않습니다."
     },
     "용안육/특": {
       "key": "용안육",
       "form": "특",
-      "variant": true
+      "variant": true,
+      "description": "이 상품은 특 형태·규격으로 구분합니다. 상품명에 표시된 등급·재배·가공 구분만으로 별도의 치료 효과를 의미하지는 않습니다."
     },
     "우슬/특특": {
       "key": "우슬",
       "form": "특특",
-      "variant": true
+      "variant": true,
+      "description": "이 상품은 특특 형태·규격으로 구분합니다. 상품명에 표시된 등급·재배·가공 구분만으로 별도의 치료 효과를 의미하지는 않습니다."
     },
     "울금/온": {
       "key": "울금",
       "form": "온 표기",
-      "variant": true
+      "variant": true,
+      "description": "이 상품은 온 표기 형태·규격으로 구분합니다."
     },
     "유백피(유근피)": {
       "key": "유백피",
       "form": "유근피",
-      "variant": true
+      "variant": true,
+      "description": "이 상품은 유근피 형태·규격으로 구분합니다."
     },
     "육종용주증/특": {
       "key": "육종용",
       "form": "주증 · 특",
-      "variant": true
+      "variant": true,
+      "description": "주증 · 특으로 구분한 가공 상품입니다. 아래 원물 자료만으로 생품과 가공품의 작용이 동일하다고 단정하지 않습니다. 상품명에 표시된 등급·재배·가공 구분만으로 별도의 치료 효과를 의미하지는 않습니다."
     },
     "의이인/피": {
       "key": "의이인",
       "form": "피 표기 · 거피 여부 확인",
-      "variant": true
+      "variant": true,
+      "description": "이 상품은 피 표기 · 거피 여부 확인 형태·규격으로 구분합니다."
     },
     "선퇴": {
       "key": "선퇴",
       "form": "매미 탈피각",
-      "variant": false
+      "variant": false,
+      "description": "이 상품은 매미 탈피각 형태·규격으로 구분합니다."
     },
     "쇄양": {
       "key": "쇄양",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "삼백초": {
       "key": "삼백초",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "생지황": {
       "key": "생지황",
       "form": "신선한 지황 뿌리",
-      "variant": false
+      "variant": false,
+      "description": "이 상품은 신선한 지황 뿌리 형태·규격으로 구분합니다."
     },
     "생강": {
       "key": "생강",
-      "form": "신선한 생강 뿌리줄기",
-      "variant": false
+      "form": "신선한 생강 절편",
+      "variant": false,
+      "description": "절단해 단면이 보이는 상품으로, 절편의 크기와 두께는 규격에 따라 다를 수 있습니다."
     },
     "자소엽(소엽)": {
       "key": "자소엽",
       "form": "잎 및 끝가지",
-      "variant": false
+      "variant": false,
+      "description": "이 상품은 잎 및 끝가지 형태·규격으로 구분합니다."
     },
     "어성초": {
       "key": "어성초",
       "form": "약모밀",
-      "variant": false
+      "variant": false,
+      "description": "이 상품은 약모밀 형태·규격으로 구분합니다."
     },
     "오가피/진/유피": {
       "key": "오가피",
       "form": "진 · 유피",
-      "variant": true
+      "variant": true,
+      "description": "유피는 껍질이 남아 있는 형태를 구분하는 상품 표기입니다."
     },
     "오공": {
       "key": "오공",
       "form": "지네 전형 약재",
-      "variant": false
+      "variant": false,
+      "description": "이 상품은 지네 전형 약재 형태·규격으로 구분합니다."
     },
     "원지/대": {
       "key": "원지",
       "form": "대",
-      "variant": true
+      "variant": true,
+      "description": "이 상품은 대 형태·규격으로 구분합니다."
     },
     "음양곽": {
       "key": "음양곽",
       "form": "",
-      "variant": false
+      "variant": false,
+      "description": "원물의 기본 효능과 특징을 안내하며, 원산지와 규격은 위 상품정보에서 확인할 수 있습니다."
     },
     "애엽": {
       "key": "애엽",
       "form": "약쑥류 잎·어린줄기",
-      "variant": false
+      "variant": false,
+      "description": "이 상품은 약쑥류 잎·어린줄기 형태·규격으로 구분합니다."
     },
     "왕불류행": {
       "key": "왕불류행",
       "form": "기원·사용 부위 확인",
-      "variant": false
+      "variant": false,
+      "description": "이 상품은 기원·사용 부위 확인 형태·규격으로 구분합니다."
     },
     "익모초": {
       "key": "익모초",
       "form": "지상부",
-      "variant": false
+      "variant": false,
+      "description": "이 상품은 지상부 형태·규격으로 구분합니다."
     },
     "인삼/저온건조": {
       "key": "인삼",
       "form": "저온건조",
-      "variant": false
+      "variant": false,
+      "description": "이 상품은 저온건조 형태·규격으로 구분합니다. 상품명에 표시된 등급·재배·가공 구분만으로 별도의 치료 효과를 의미하지는 않습니다."
     },
     "아출(봉출)": {
       "key": "아출",
       "form": "봉출 표기",
-      "variant": true
+      "variant": true,
+      "description": "이 상품은 봉출 표기 형태·규격으로 구분합니다."
     },
     "자노아(총목피)": {
       "key": "총목피",
       "form": "두릅나무 줄기껍질",
-      "variant": false
+      "variant": false,
+      "description": "이 상품은 두릅나무 줄기껍질 형태·규격으로 구분합니다."
     },
     "자충(토별충)": {
       "key": "자충",
       "form": "토별충 표기",
-      "variant": false
+      "variant": false,
+      "description": "이 상품은 토별충 표기 형태·규격으로 구분합니다."
     },
     "형개/수": {
       "key": "형개",
       "form": "꽃이삭",
-      "variant": true
+      "variant": true,
+      "description": "이 상품은 꽃이삭 형태·규격으로 구분합니다."
     },
     "형개": {
       "key": "형개",
       "form": "상품의 사용 부위 확인",
-      "variant": false
+      "variant": false,
+      "description": "이 상품은 상품의 사용 부위 확인 형태·규격으로 구분합니다."
     },
     "지구자(지구병)": {
       "key": "지구자",
       "form": "열매자루 표기",
-      "variant": true
+      "variant": true,
+      "description": "이 상품은 열매자루 표기 형태·규격으로 구분합니다."
     },
     "포공영": {
       "key": "포공영",
       "form": "민들레류 전초",
-      "variant": false
+      "variant": false,
+      "description": "이 상품은 민들레류 전초 형태·규격으로 구분합니다."
     },
     "포황/정품": {
       "key": "포황",
       "form": "정품 표기",
-      "variant": true
+      "variant": true,
+      "description": "이 상품은 정품 표기 형태·규격으로 구분합니다. 상품명에 표시된 등급·재배·가공 구분만으로 별도의 치료 효과를 의미하지는 않습니다."
     },
     "지구목(헛개나무)": {
       "key": "지구목",
       "form": "헛개나무 줄기",
-      "variant": false
+      "variant": false,
+      "description": "이 상품은 헛개나무 줄기 형태·규격으로 구분합니다."
     },
     "희렴/농산물": {
       "key": "희렴",
       "form": "농산물",
-      "variant": true
+      "variant": true,
+      "description": "이 상품은 농산물 형태·규격으로 구분합니다. 상품명에 표시된 등급·재배·가공 구분만으로 별도의 치료 효과를 의미하지는 않습니다."
     },
     "황기/편AA": {
       "key": "황기",
       "form": "절편 · AA",
-      "variant": true
+      "variant": true,
+      "description": "절단해 단면이 보이는 상품으로, 절편의 크기와 두께는 규격에 따라 다를 수 있습니다. 상품명에 표시된 등급·재배·가공 구분만으로 별도의 치료 효과를 의미하지는 않습니다."
     },
     "황련/천": {
       "key": "황련",
       "form": "천 표기",
-      "variant": true
+      "variant": true,
+      "description": "이 상품은 천 표기 형태·규격으로 구분합니다."
     },
     "자단향": {
       "key": "자단향",
       "form": "자단나무 심재",
-      "variant": false
+      "variant": false,
+      "description": "이 상품은 자단나무 심재 형태·규격으로 구분합니다."
     },
     "죽여": {
       "key": "죽여",
       "form": "대나무 줄기 속층",
-      "variant": false
+      "variant": false,
+      "description": "이 상품은 대나무 줄기 속층 형태·규격으로 구분합니다."
     },
     "흑지마/농산물": {
       "key": "흑지마",
       "form": "검은 참깨 · 농산물",
-      "variant": true
+      "variant": true,
+      "description": "이 상품은 검은 참깨 · 농산물 형태·규격으로 구분합니다. 상품명에 표시된 등급·재배·가공 구분만으로 별도의 치료 효과를 의미하지는 않습니다."
     }
   },
   "herbs": {
@@ -2239,7 +2679,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "가자의 전통적 활용은 소담 · 하기 · 강화 등으로 설명됩니다. 담으로 설명되는 정체를 풀어낸다는 뜻입니다."
     },
     "갈근": {
       "name": "갈근",
@@ -2269,7 +2710,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "갈근의 전통적 활용은 발표해기 · 투발마진 · 해열생진 등으로 설명됩니다. 몸의 겉에 머문 사기를 밖으로 풀어내는 방법을 가리킵니다. 겉의 근육층에 머문 사기를 풀어 뻣뻣함과 긴장 양상을 다룬다는 뜻입니다."
     },
     "갈화": {
       "name": "갈화",
@@ -2291,7 +2733,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "갈화의 전통적 활용은 성위지갈 · 해주독 등으로 설명됩니다. 음주 등으로 위 기능이 흐트러진 양상을 회복시킨다는 전통 개념입니다. 갈증을 가라앉히는 데 활용해 온 의미입니다."
     },
     "감국": {
       "name": "감국",
@@ -2309,7 +2752,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "감국의 전통적 활용은 청열해독 등으로 설명됩니다. 한의학에서 열로 분류하는 증후를 가라앉힌다는 전통적 의미입니다. 전통 문헌의 독증을 풀어낸다는 개념입니다. 현대 중독에 대한 해독제나 임상적으로 입증된 항염 효과와 동일한 뜻은 아닙니다."
     },
     "감초": {
       "name": "감초",
@@ -2343,37 +2787,32 @@
         }
       ],
       "caution": "글리시리진에 의한 심혈관계 이상 위험과 약물 상호작용이 보고됩니다. 고혈압이나 심장·신장 질환이 있는 경우 특히 검토가 필요합니다.",
-      "kind": "traditional"
+      "kind": "traditional",
+      "description": "감초의 전통적 활용은 보비익기 · 윤폐지해 · 완급지통 등으로 설명됩니다. 비위의 기능이 약해진 허약 양상을 보완한다는 전통적 의미입니다. 기허로 설명되는 무력하고 기능이 약한 양상을 보완한다는 의미입니다."
     },
     "강활": {
       "name": "강활",
       "latin": "Osterici Radix",
       "effects": [
         {
-          "term": "발표해기(發表解肌)",
-          "description": "몸의 겉에 머문 사기를 밖으로 풀어내는 방법을 가리킵니다. 겉의 근육층에 머문 사기를 풀어 뻣뻣함과 긴장 양상을 다룬다는 뜻입니다."
+          "term": "산한해표(散寒解表)",
+          "description": "풍한으로 설명하는 오한·몸살 등 몸의 겉에 나타나는 양상을 풀어내는 데 사용한 전통 용어입니다."
         },
         {
-          "term": "투발마진(透發痲疹)",
-          "description": "발진이 충분히 드러나지 않는 양상을 밖으로 발산시킨다는 옛 본초 용어입니다."
-        },
-        {
-          "term": "해열생진(解熱生津)",
-          "description": "열이 나는 양상을 가라앉히는 데 활용한 전통적 의미입니다. 부족한 진액을 보충해 건조함과 갈증을 다룬다는 전통 개념입니다."
-        },
-        {
-          "term": "승양지사(升陽止瀉)",
-          "description": "아래로 처진 중초의 기를 북돋운다는 전통적 의미입니다. 설사가 지속되는 양상을 다룬다는 전통적 의미입니다."
+          "term": "거풍승습(祛風勝濕)·지통(止痛)",
+          "description": "풍과 습으로 설명하는 머리와 몸의 무거움, 근육·관절의 통증 양상을 다뤄 온 본초학적 용도입니다."
         }
       ],
       "sources": [
         {
-          "name": "KMCRIC 생약 up-to-date",
-          "url": "https://www.kmcric.com/database/herb_list?isKor=all&search_word=%EA%B0%95%ED%99%9C"
+          "name": "한국전통지식포탈 · 약재",
+          "url": "https://koreantk.com/ktkp2014/medicine/medicine-view.view?medCd=M0000098&tempLang=ko"
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "강활류의 뿌리 또는 뿌리줄기를 사용하는 약재입니다. 전통적으로 풍한습과 관련된 오한, 두통, 몸의 무거움과 통증 양상에 활용해 왔습니다. 갈근의 효능과 구분합니다.",
+      "verifiedAt": "2026-11-11"
     },
     "강황": {
       "name": "강황",
@@ -2395,7 +2834,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "강황의 전통적 활용은 파혈행기 · 통경지통 등으로 설명됩니다. 강하게 정체된 어혈을 풀어낸다는 전통 개념입니다. 정체된 기의 흐름을 원활하게 한다는 전통 개념입니다."
     },
     "개자": {
       "name": "개자",
@@ -2433,7 +2873,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "개자의 전통적 활용은 온폐 · 이기활담 · 개위 등으로 설명됩니다. 폐의 차가운 양상을 따뜻하게 한다는 뜻입니다."
     },
     "건강": {
       "name": "건강",
@@ -2463,7 +2904,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "건강의 전통적 활용은 온중 · 회양 · 온폐화음 등으로 설명됩니다. 차가워진 중초를 따뜻하게 해 소화기 기능의 허한 양상을 다룬다는 뜻입니다."
     },
     "건율": {
       "name": "건율",
@@ -2493,7 +2935,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "건율의 전통적 활용은 익기건비 · 보신강근 · 지혈 등으로 설명됩니다. 기허로 설명되는 무력하고 기능이 약한 양상을 보완한다는 의미입니다. 한의학적 비위의 운화 기능, 즉 음식과 수분을 처리하는 기능을 돕는다는 뜻입니다."
     },
     "견우자": {
       "name": "견우자",
@@ -2519,7 +2962,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "견우자의 전통적 활용은 살충공적 · 사수통변 · 소담척음 등으로 설명됩니다. 전통적으로 기생충이나 피부의 충증 양상을 다루는 의미입니다. 강하게 쌓인 적체를 풀어 배출시킨다는 전통 개념입니다."
     },
     "결명자": {
       "name": "결명자",
@@ -2545,7 +2989,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "결명자의 전통적 활용은 청간명목 · 평간잠양 · 윤장통변 등으로 설명됩니다. 한의학적 간의 열로 설명하는 양상을 가라앉힌다는 의미입니다. 눈이 침침하거나 불편한 양상을 다루는 전통적 의미입니다."
     },
     "계내금": {
       "name": "계내금",
@@ -2571,7 +3016,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "계내금의 전통적 활용은 건위소식 · 삽정지유 · 제열지번 등으로 설명됩니다. 위가 약해 음식 수용과 소화가 원활하지 못한 양상을 돕는다는 뜻입니다. 음식이 정체된 식적을 풀어 소화를 돕는다는 전통적 의미입니다."
     },
     "계지": {
       "name": "계지",
@@ -2593,7 +3039,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "계지의 전통적 활용은 발한해기 · 온경통양 등으로 설명됩니다. 땀을 통해 겉에 머문 사기를 풀어낸다는 전통 개념입니다. 겉의 근육층에 머문 사기를 풀어 뻣뻣함과 긴장 양상을 다룬다는 뜻입니다."
     },
     "계혈등": {
       "name": "계혈등",
@@ -2615,7 +3062,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "계혈등의 전통적 활용은 서근활락 · 행혈보혈 등으로 설명됩니다. 근육과 힘줄이 당기거나 뻣뻣한 양상을 부드럽게 한다는 의미입니다. 경락의 움직임과 소통을 원활하게 한다는 전통 개념입니다."
     },
     "고량강": {
       "name": "고량강",
@@ -2637,7 +3085,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "고량강의 전통적 활용은 온중지통 · 강역 등으로 설명됩니다. 차가워진 중초를 따뜻하게 해 소화기 기능의 허한 양상을 다룬다는 뜻입니다. 통증 양상을 덜어내는 데 활용해 온 의미입니다."
     },
     "고본": {
       "name": "고본",
@@ -2659,7 +3108,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "고본의 전통적 활용은 거풍산한 · 제습지통 등으로 설명됩니다. 한의학에서 풍사로 설명하는 움직이는 통증·가려움 등의 양상을 다루는 개념입니다. 차가운 성질의 사기로 설명하는 오한·통증 양상을 풀어낸다는 뜻입니다."
     },
     "고삼": {
       "name": "고삼",
@@ -2685,7 +3135,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "고삼의 전통적 활용은 청열조습 · 거풍살충 · 이뇨 등으로 설명됩니다. 한의학에서 열로 분류하는 증후를 가라앉힌다는 전통적 의미입니다. 습사로 설명하는 눅눅하고 정체된 양상을 말려 없앤다는 뜻입니다."
     },
     "곡기생": {
       "name": "곡기생",
@@ -2706,10 +3157,6 @@
         {
           "term": "보간신(補肝腎)",
           "description": "한의학적 간·신의 허약으로 설명하는 근골·정혈의 부족을 보완한다는 뜻입니다."
-        },
-        {
-          "term": "안태(安胎)",
-          "description": "한의학에서 임신 중 태동불안으로 분류하는 양상을 안정시키는 전통 용어입니다."
         }
       ],
       "sources": [
@@ -2719,7 +3166,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "곡기생의 전통적 활용은 강근골 · 안태 · 거풍습 등으로 설명됩니다. 근육·힘줄·뼈가 약한 양상을 보완한다는 전통 개념입니다."
     },
     "곡아": {
       "name": "곡아",
@@ -2753,7 +3201,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "곡아의 전통적 활용은 건비개위 · 소식화중 · 제번갈 등으로 설명됩니다. 한의학적 비위의 운화 기능, 즉 음식과 수분을 처리하는 기능을 돕는다는 뜻입니다. 식욕과 음식 수용 기능을 원활하게 한다는 의미입니다."
     },
     "골쇄보": {
       "name": "골쇄보",
@@ -2775,7 +3224,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "골쇄보의 전통적 활용은 보신 · 활혈지혈 등으로 설명됩니다. 한의학적 신의 허약과 정기 부족을 보완한다는 전통 개념입니다."
     },
     "과루실": {
       "name": "과루실",
@@ -2813,7 +3263,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "과루실의 전통적 활용은 강화 · 산결 · 소옹종 등으로 설명됩니다. 위로 치솟는 화열을 아래로 내린다는 전통적 의미입니다."
     },
     "과루인": {
       "name": "과루인",
@@ -2851,7 +3302,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "과루인의 전통적 활용은 사화 · 생진 · 소종 등으로 설명됩니다. 열이 심해 화로 설명되는 양상을 내려 가라앉힌다는 개념입니다."
     },
     "관동화": {
       "name": "관동화",
@@ -2860,10 +3312,6 @@
         {
           "term": "평천(平喘)",
           "description": "한의학의 천증, 즉 거칠고 가쁜 호흡 양상을 다루는 전통적 의미입니다."
-        },
-        {
-          "term": "강기(降氣)",
-          "description": "치솟거나 정체된 기를 아래로 내려 호흡·소화기의 역상 양상을 다룬다는 뜻입니다."
         },
         {
           "term": "강기(降氣)",
@@ -2889,7 +3337,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "관동화의 전통적 활용은 평천 · 강기 · 명목 등으로 설명됩니다. 한의학의 천증, 즉 거칠고 가쁜 호흡 양상을 다루는 전통적 의미입니다."
     },
     "광곽향": {
       "name": "광곽향",
@@ -2915,7 +3364,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "광곽향류의 지상부를 쓰는 방향성 약재입니다. 전통적으로 습의 정체, 중초의 불편과 구역 양상에 활용하며, 배초향에서 얻는 곽향과 기원을 구분합니다."
     },
     "괴화": {
       "name": "괴화",
@@ -2933,7 +3383,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "괴화의 전통적 활용은 청간사화 등으로 설명됩니다. 한의학적 간의 열로 설명하는 양상을 가라앉힌다는 의미입니다. 열이 심해 화로 설명되는 양상을 내려 가라앉힌다는 개념입니다."
     },
     "교맥": {
       "name": "교맥",
@@ -2951,7 +3402,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "교맥의 전통적 활용은 하기소적 등으로 설명됩니다. 위로 치미는 기를 아래로 내린다는 전통적 의미입니다. 덩어리처럼 뭉치거나 음식이 쌓인 적체를 풀어낸다는 전통 개념입니다."
     },
     "구기자": {
       "name": "구기자",
@@ -2977,7 +3429,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "구기자의 전통적 활용은 자신보간 · 명목 · 윤폐 등으로 설명됩니다. 한의학적 신음의 부족을 보완한다는 의미입니다. 한의학적 간의 허약 양상을 보완한다는 뜻입니다."
     },
     "구맥": {
       "name": "구맥",
@@ -3015,7 +3468,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "구맥의 전통적 활용은 배농 · 이수통림 · 강심화 등으로 설명됩니다. 고름이 정체된 양상의 배출을 돕는다는 전통적 의미입니다."
     },
     "구자": {
       "name": "구자",
@@ -3045,7 +3499,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "구자의 전통적 활용은 온보명문 · 난요슬 · 자보간신 등으로 설명됩니다. 한의학적 명문화가 약한 허한 양상을 따뜻하게 보완한다는 뜻입니다."
     },
     "구척": {
       "name": "구척",
@@ -3071,7 +3526,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "구척의 전통적 활용은 보간신 · 강요슬 · 거풍습 등으로 설명됩니다. 한의학적 간·신의 허약으로 설명하는 근골·정혈의 부족을 보완한다는 뜻입니다."
     },
     "귀갑": {
       "name": "귀갑",
@@ -3109,7 +3565,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "귀갑의 전통적 활용은 건골 · 거어혈 · 보심신 등으로 설명됩니다. 뼈가 약한 양상을 보완한다는 전통적 의미입니다."
     },
     "귀판교": {
       "name": "귀판교",
@@ -3135,7 +3592,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "귀판교의 전통적 활용은 보혈 · 자음 · 지혈 등으로 설명됩니다. 혈허로 설명되는 영양·자양의 부족을 보완한다는 전통 개념입니다."
     },
     "금앵자": {
       "name": "금앵자",
@@ -3173,37 +3631,36 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "금앵자의 전통적 활용은 고정비기 · 보신 · 삽장 등으로 설명됩니다. 정이 쉽게 새는 양상을 수렴한다는 한의학적 표현입니다. 기가 쉽게 흩어지지 않도록 수렴한다는 뜻입니다."
     },
     "금은화": {
       "name": "금은화",
       "latin": "Lonicerae Flos",
       "effects": [
         {
-          "term": "발표해기(發表解肌)",
-          "description": "몸의 겉에 머문 사기를 밖으로 풀어내는 방법을 가리킵니다. 겉의 근육층에 머문 사기를 풀어 뻣뻣함과 긴장 양상을 다룬다는 뜻입니다."
+          "term": "청열해독(淸熱解毒)",
+          "description": "열독으로 설명하는 붓고 열감이 나는 양상을 다루는 전통 개념입니다. 감염에 대한 항생제 효과를 뜻하지는 않습니다."
         },
         {
-          "term": "투발마진(透發痲疹)",
-          "description": "발진이 충분히 드러나지 않는 양상을 밖으로 발산시킨다는 옛 본초 용어입니다."
+          "term": "소산풍열(疏散風熱)",
+          "description": "풍열에 해당하는 감기 초기의 열감과 목의 불편 등을 풀어낸다는 본초학적 표현입니다."
         },
         {
-          "term": "해열생진(解熱生津)",
-          "description": "열이 나는 양상을 가라앉히는 데 활용한 전통적 의미입니다. 부족한 진액을 보충해 건조함과 갈증을 다룬다는 전통 개념입니다."
-        },
-        {
-          "term": "승양지사(升陽止瀉)",
-          "description": "아래로 처진 중초의 기를 북돋운다는 전통적 의미입니다. 설사가 지속되는 양상을 다룬다는 전통적 의미입니다."
+          "term": "양혈지리(涼血止痢)",
+          "description": "혈분의 열과 함께 나타나는 이질 양상을 다뤄 온 전통적 용도입니다."
         }
       ],
       "sources": [
         {
-          "name": "KMCRIC 생약 up-to-date",
-          "url": "https://www.kmcric.com/database/herb_list?isKor=all&search_word=%EA%B8%88%EC%9D%80%ED%99%94"
+          "name": "한국전통지식포탈 · 약재",
+          "url": "https://koreantk.com/ktkp2014/medicine/medicine-view.view?medCd=M0000533&tempLang=ko"
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "인동류의 꽃을 쓰는 약재로, 잎과 줄기를 쓰는 인동등과 사용 부위가 다릅니다. 전통적으로 열감과 종창, 풍열 양상을 다루는 데 사용해 왔습니다.",
+      "verifiedAt": "2026-11-11"
     },
     "금전초": {
       "name": "금전초",
@@ -3225,7 +3682,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "금전초의 전통적 활용은 청열이습 · 통림소종 등으로 설명됩니다. 한의학에서 열로 분류하는 증후를 가라앉힌다는 전통적 의미입니다. 습사로 설명하는 체액의 정체를 풀어낸다는 뜻입니다."
     },
     "길경": {
       "name": "길경",
@@ -3255,7 +3713,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "길경의 전통적 활용은 선폐거담 · 이인 · 배농 등으로 설명됩니다. 폐기의 퍼지고 내려가는 작용을 원활하게 한다는 한의학적 표현입니다. 담이나 가래로 설명되는 정체를 덜어낸다는 전통적 의미입니다."
     },
     "낙석등": {
       "name": "낙석등",
@@ -3277,7 +3736,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "낙석등의 전통적 활용은 거풍통락 · 양혈소종 등으로 설명됩니다. 한의학에서 풍사로 설명하는 움직이는 통증·가려움 등의 양상을 다루는 개념입니다. 경락의 소통이 막혀 생기는 통증·저림 등을 풀어낸다는 뜻입니다."
     },
     "내복자": {
       "name": "내복자",
@@ -3299,7 +3759,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "내복자의 전통적 활용은 소식화담 · 하기정천 등으로 설명됩니다. 음식이 정체된 식적을 풀어 소화를 돕는다는 전통적 의미입니다. 한의학의 담으로 설명되는 병리적 정체를 풀어낸다는 개념입니다."
     },
     "노근": {
       "name": "노근",
@@ -3329,7 +3790,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "노근의 전통적 활용은 생진 · 제번 · 지구 등으로 설명됩니다. 부족한 진액을 보충해 건조함과 갈증을 다룬다는 전통 개념입니다."
     },
     "녹각": {
       "name": "녹각",
@@ -3363,7 +3825,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "녹각의 전통적 활용은 강근골 · 산어소종 · 온신양 등으로 설명됩니다. 근육·힘줄·뼈가 약한 양상을 보완한다는 전통 개념입니다."
     },
     "단삼": {
       "name": "단삼",
@@ -3389,7 +3852,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "단삼의 전통적 활용은 활혈거어 · 양혈소옹 · 양혈안신 등으로 설명됩니다. 혈의 운행이 원활하지 못한 양상을 소통시킨다는 전통 개념입니다. 어혈로 설명하는 혈의 정체를 풀어낸다는 전통 개념입니다."
     },
     "담두시": {
       "name": "담두시",
@@ -3407,7 +3871,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "담두시의 전통적 활용은 선울제번 등으로 설명됩니다. 울체되어 막힌 양상을 흩어 풀어낸다는 의미입니다. 열감과 함께 답답하고 불안한 번조 양상을 가라앉힌다는 뜻입니다."
     },
     "당귀": {
       "name": "당귀",
@@ -3433,7 +3898,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "당귀의 전통적 활용은 보혈 · 활혈지통 · 윤장 등으로 설명됩니다. 혈허로 설명되는 영양·자양의 부족을 보완한다는 전통 개념입니다."
     },
     "당삼": {
       "name": "당삼",
@@ -3455,7 +3921,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "당삼의 전통적 활용은 생진 · 보중익기 등으로 설명됩니다. 부족한 진액을 보충해 건조함과 갈증을 다룬다는 전통 개념입니다."
     },
     "대복피": {
       "name": "대복피",
@@ -3477,7 +3944,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "대복피의 전통적 활용은 하기관중 · 행수소종 등으로 설명됩니다. 위로 치미는 기를 아래로 내린다는 전통적 의미입니다. 중초의 기가 막혀 답답하고 더부룩한 양상을 풀어낸다는 의미입니다."
     },
     "대조": {
       "name": "대조",
@@ -3503,7 +3971,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "대조의 전통적 활용은 보중익기 · 양혈안신 · 완화약성 등으로 설명됩니다. 중초의 기가 약한 양상을 보완한다는 의미입니다. 기허로 설명되는 무력하고 기능이 약한 양상을 보완한다는 의미입니다."
     },
     "대청엽": {
       "name": "대청엽",
@@ -3525,29 +3994,40 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "대청엽의 전통적 활용은 청열해독 · 양혈소반 등으로 설명됩니다. 한의학에서 열로 분류하는 증후를 가라앉힌다는 전통적 의미입니다. 전통 문헌의 독증을 풀어낸다는 개념입니다. 현대 중독에 대한 해독제나 임상적으로 입증된 항염 효과와 동일한 뜻은 아닙니다."
     },
     "대황": {
       "name": "대황",
       "latin": "Rhei Radix et Rhizoma",
       "effects": [
         {
-          "term": "청열해독(淸熱解毒)",
-          "description": "한의학에서 열로 분류하는 증후를 가라앉힌다는 전통적 의미입니다. 전통 문헌의 독증을 풀어낸다는 개념입니다. 현대 중독에 대한 해독제나 임상적으로 입증된 항염 효과와 동일한 뜻은 아닙니다."
+          "term": "사하공적(瀉下攻積)",
+          "description": "실열과 적체로 설명하는 변비와 복부 팽만을 다뤄 온 전통적 용도입니다."
         },
         {
-          "term": "소옹산결(消癰散結)",
-          "description": "옹종으로 분류하는 국소 종창 양상을 다룬다는 뜻입니다. 기·담·혈 등이 뭉친 결체를 풀어낸다는 전통 개념입니다."
+          "term": "청열해독(淸熱解毒)",
+          "description": "열이 성하고 종창이 동반되는 양상을 다룬다는 본초학적 개념입니다."
+        },
+        {
+          "term": "활혈거어(活血祛瘀)",
+          "description": "어혈로 설명하는 혈의 정체를 풀어내는 데 활용해 온 의미입니다."
         }
       ],
       "sources": [
         {
-          "name": "KMCRIC 생약 up-to-date",
-          "url": "https://www.kmcric.com/database/herb_list?isKor=all&search_word=%EB%8C%80%ED%99%A9"
+          "name": "한국전통지식포탈 · 약재",
+          "url": "https://koreantk.com/ktkp2014/medicine/medicine-view.view?medCd=M0000893&tempLang=ko"
+        },
+        {
+          "name": "한국학중앙연구원 · 조선왕조실록사전",
+          "url": "https://dh.aks.ac.kr/sillokwiki/index.php/대황(大黃)"
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "설사와 복통을 일으킬 수 있으며 임신·수유 중이거나 원인이 확인되지 않은 복통이 있는 경우에는 전문가의 별도 판단이 필요합니다.",
+      "description": "대황류의 뿌리와 뿌리줄기를 사용하는 약재입니다. 전통적으로 열과 음식물 등의 적체를 아래로 배출시키는 용도로 설명되며, 생품과 주증 등 가공품의 작용을 동일하게 단정하지 않습니다.",
+      "verifiedAt": "2026-11-11"
     },
     "도간": {
       "name": "도간(도경)",
@@ -3573,7 +4053,8 @@
           "url": "https://koreantk.com/ktkp2014/medicine/medicine-view.view?medCd=M0000902&tempLang=ko"
         }
       ],
-      "caution": ""
+      "caution": "",
+      "description": "도간(도경)의 전통적 활용은 하기 · 관중 · 소식 등으로 설명됩니다. 위로 치미는 기를 아래로 내려 소통시킨다는 전통 개념입니다."
     },
     "도인": {
       "name": "도인",
@@ -3595,7 +4076,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "도인의 전통적 활용은 활혈거어 · 윤장통변 등으로 설명됩니다. 혈의 운행이 원활하지 못한 양상을 소통시킨다는 전통 개념입니다. 어혈로 설명하는 혈의 정체를 풀어낸다는 전통 개념입니다."
     },
     "독활": {
       "name": "독활",
@@ -3617,7 +4099,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "독활의 전통적 활용은 지통 · 해표 등으로 설명됩니다. 통증 양상을 덜어내는 데 활용해 온 의미입니다."
     },
     "동과자": {
       "name": "동과자",
@@ -3635,7 +4118,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "동과자의 전통적 활용은 윤폐화담 등으로 설명됩니다. 폐의 건조한 양상을 촉촉하게 한다는 전통적 의미입니다. 한의학의 담으로 설명되는 병리적 정체를 풀어낸다는 개념입니다."
     },
     "두충": {
       "name": "두충",
@@ -3661,7 +4145,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "두충의 전통적 활용은 보간신 · 강근골 · 안태 등으로 설명됩니다. 한의학적 간·신의 허약으로 설명하는 근골·정혈의 부족을 보완한다는 뜻입니다."
     },
     "마황": {
       "name": "마황",
@@ -3695,7 +4180,8 @@
         }
       ],
       "caution": "심혈관계 이상, 불면·불안 등의 위험과 약물 상호작용을 확인해야 합니다. 임신·수유 및 소아에서는 특히 주의가 필요한 원료입니다.",
-      "kind": "traditional"
+      "kind": "traditional",
+      "description": "마황의 전통적 활용은 발한해표 · 선폐평천 · 이수소종 등으로 설명됩니다. 땀을 통해 겉에 머문 사기를 풀어낸다는 전통 개념입니다. 감기 초기처럼 몸의 겉에서 나타나는 오한·발열 등의 양상을 풀어낸다는 뜻입니다."
     },
     "만형자": {
       "name": "만형자",
@@ -3733,7 +4219,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "만형자의 전통적 활용은 거백충 · 이구규 · 견치 등으로 설명됩니다. 옛 문헌에서 장내 기생충을 제거한다는 뜻으로 쓰인 표현입니다."
     },
     "망초": {
       "name": "망초",
@@ -3763,7 +4250,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "망초의 전통적 활용은 거실열 · 사열통변 · 윤조연견 등으로 설명됩니다. 실열로 분류하는 강한 열의 양상을 제거한다는 의미입니다."
     },
     "맥문동": {
       "name": "맥문동",
@@ -3793,7 +4281,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "맥문동의 전통적 활용은 윤폐양음 · 익위생진 · 청심제열 등으로 설명됩니다. 폐의 건조한 양상을 촉촉하게 한다는 전통적 의미입니다. 부족해진 음과 진액을 자양한다는 전통적 의미입니다."
     },
     "맥아": {
       "name": "맥아",
@@ -3819,7 +4308,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "맥아의 전통적 활용은 행기소식 · 건비개위 · 회유소창 등으로 설명됩니다. 정체된 기의 흐름을 원활하게 한다는 전통 개념입니다. 음식이 정체된 식적을 풀어 소화를 돕는다는 전통적 의미입니다."
     },
     "모과": {
       "name": "모과",
@@ -3853,7 +4343,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "모과의 전통적 활용은 거습 · 서근활락 · 지통 등으로 설명됩니다. 습사로 설명하는 무겁고 정체된 양상을 줄인다는 뜻입니다."
     },
     "모근": {
       "name": "모근",
@@ -3891,7 +4382,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "모근의 전통적 활용은 생진 · 견근골 · 제어혈 등으로 설명됩니다. 부족한 진액을 보충해 건조함과 갈증을 다룬다는 전통 개념입니다."
     },
     "모려": {
       "name": "모려",
@@ -3917,7 +4409,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "모려의 전통적 활용은 평간잠양 · 연견산결 · 수렴고삽 등으로 설명됩니다. 한의학에서 간의 항진으로 설명하는 어지럼·두통 등의 양상을 안정시킨다는 의미입니다. 위로 치솟는 양기를 가라앉힌다는 전통 개념입니다."
     },
     "목단피": {
       "name": "목단피",
@@ -3939,7 +4432,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "목단피의 전통적 활용은 청열양혈 · 활혈산어 등으로 설명됩니다. 한의학에서 열로 분류하는 증후를 가라앉힌다는 전통적 의미입니다. 혈분의 열로 설명하는 출혈·발진 등의 양상을 식힌다는 전통 개념입니다."
     },
     "목적": {
       "name": "목적",
@@ -3973,7 +4467,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "목적의 전통적 활용은 해기 · 발한 · 소적괴 등으로 설명됩니다. 겉의 근육층에 머문 사기를 풀어 뻣뻣함과 긴장 양상을 다룬다는 뜻입니다."
     },
     "목통": {
       "name": "목통",
@@ -4003,7 +4498,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "목통의 전통적 활용은 강심화 · 이소변 · 청폐열 등으로 설명됩니다. 한의학에서 심화로 설명하는 번조와 열의 양상을 가라앉힌다는 뜻입니다."
     },
     "목향": {
       "name": "목향",
@@ -4025,7 +4521,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "목향의 전통적 활용은 행기조중 · 지통 등으로 설명됩니다. 정체된 기의 흐름을 원활하게 한다는 전통 개념입니다. 비위 등 중초의 기능을 조화롭게 한다는 전통 개념입니다."
     },
     "몰약": {
       "name": "몰약",
@@ -4055,7 +4552,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "몰약의 전통적 활용은 산혈거어 · 생기 · 소종정통 등으로 설명됩니다. 정체된 혈을 흩어낸다는 전통적 의미입니다. 어혈로 설명하는 혈의 정체를 풀어낸다는 전통 개념입니다."
     },
     "미후도": {
       "name": "미후도",
@@ -4077,7 +4575,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "미후도의 전통적 활용은 지폭갈 · 해번열 등으로 설명됩니다. 갑작스럽고 심한 갈증 양상에 활용했다는 옛 본초 표현입니다."
     },
     "반하": {
       "name": "반하",
@@ -4103,7 +4602,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "반하의 전통적 활용은 조습화담 · 강역지구 · 소비산결 등으로 설명됩니다. 습사로 설명하는 눅눅하고 정체된 양상을 말려 없앤다는 뜻입니다. 한의학의 담으로 설명되는 병리적 정체를 풀어낸다는 개념입니다."
     },
     "방기": {
       "name": "방기",
@@ -4129,7 +4629,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "방기의 전통적 활용은 거풍습 · 지통 · 이수소종 등으로 설명됩니다. 풍과 습이 함께 관여하는 관절·근육의 통증과 뻣뻣함을 다루는 전통 개념입니다."
     },
     "방풍": {
       "name": "방풍",
@@ -4155,7 +4656,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "방풍의 전통적 활용은 거풍해표 · 승습지통 · 거풍지경 등으로 설명됩니다. 한의학에서 풍사로 설명하는 움직이는 통증·가려움 등의 양상을 다루는 개념입니다. 감기 초기처럼 몸의 겉에서 나타나는 오한·발열 등의 양상을 풀어낸다는 뜻입니다."
     },
     "백강잠": {
       "name": "백강잠",
@@ -4185,7 +4687,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "백강잠의 전통적 활용은 거풍해경 · 행경 · 해독 등으로 설명됩니다. 한의학에서 풍사로 설명하는 움직이는 통증·가려움 등의 양상을 다루는 개념입니다. 근육이 갑자기 당기거나 경련하는 양상을 풀어낸다는 전통적 의미입니다."
     },
     "백급": {
       "name": "백급",
@@ -4223,7 +4726,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "백급의 전통적 활용은 염창 · 거부 · 보폐 등으로 설명됩니다. 상처를 수렴해 회복시킨다는 전통적 표현입니다."
     },
     "백두구": {
       "name": "백두구",
@@ -4245,7 +4749,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "백두구류의 열매와 씨에 관한 자료입니다. 전통적으로 습의 정체와 차가운 중초에 관련된 소화기 불편과 구역 양상에 활용했습니다. 거피와 유피·분말 상품은 형태를 구분합니다."
     },
     "백두옹": {
       "name": "백두옹",
@@ -4279,7 +4784,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "백두옹의 전통적 활용은 청열해독 · 설열양혈 · 양혈지리 등으로 설명됩니다. 한의학에서 열로 분류하는 증후를 가라앉힌다는 전통적 의미입니다. 전통 문헌의 독증을 풀어낸다는 개념입니다. 현대 중독에 대한 해독제나 임상적으로 입증된 항염 효과와 동일한 뜻은 아닙니다."
     },
     "백렴": {
       "name": "백렴",
@@ -4301,7 +4807,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "백렴의 전통적 활용은 청열해독 · 염창생기 등으로 설명됩니다. 한의학에서 열로 분류하는 증후를 가라앉힌다는 전통적 의미입니다. 전통 문헌의 독증을 풀어낸다는 개념입니다. 현대 중독에 대한 해독제나 임상적으로 입증된 항염 효과와 동일한 뜻은 아닙니다."
     },
     "백반": {
       "name": "백반",
@@ -4339,7 +4846,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "백반의 전통적 활용은 생진 · 해제독 · 견골 등으로 설명됩니다. 부족한 진액을 보충해 건조함과 갈증을 다룬다는 전통 개념입니다."
     },
     "백부근": {
       "name": "백부근",
@@ -4377,19 +4885,16 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "백부근의 전통적 활용은 온폐 · 하기 · 살충 등으로 설명됩니다. 폐의 차가운 양상을 따뜻하게 한다는 뜻입니다."
     },
     "백부자": {
       "name": "백부자",
-      "latin": "",
+      "latin": "Aconiti Koreani Tuber",
       "effects": [
         {
           "term": "조습화담(燥濕化痰)",
           "description": "습사로 설명하는 눅눅하고 정체된 양상을 말려 없앤다는 뜻입니다. 한의학의 담으로 설명되는 병리적 정체를 풀어낸다는 개념입니다."
-        },
-        {
-          "term": "거풍(祛風)",
-          "description": "한의학에서 풍사로 설명하는 움직이는 통증·가려움 등의 양상을 다루는 개념입니다."
         },
         {
           "term": "거풍(祛風)",
@@ -4415,7 +4920,9 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "유독한 약재로 분류되며 임신 중에는 사용하지 않습니다. 관백부와 우백부의 기원, 생품·포제품의 구분 및 적합성을 전문가가 확인해야 합니다.",
+      "description": "관백부로 표기된 백부자류의 덩이뿌리에 관한 자료입니다. 전통적으로 풍담과 경련·통증 양상을 다루는 용도로 설명되며, 우백부 등 다른 기원의 동명 약재와 구분해야 합니다.",
+      "verifiedAt": "2026-11-11"
     },
     "백선피": {
       "name": "백선피",
@@ -4453,7 +4960,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "백선피의 전통적 활용은 조습 · 이구규 · 거풍해독 등으로 설명됩니다. 습사로 설명하는 눅눅하고 정체된 양상을 말려 없앤다는 뜻입니다."
     },
     "백수오": {
       "name": "백수오",
@@ -4476,10 +4984,6 @@
           "description": "몸이 허약한 양상을 전반적으로 보완한다는 전통적 표현입니다."
         },
         {
-          "term": "거풍(祛風)",
-          "description": "한의학에서 풍사로 설명하는 움직이는 통증·가려움 등의 양상을 다루는 개념입니다."
-        },
-        {
           "term": "고정(固精)",
           "description": "정이 쉽게 새는 양상을 수렴한다는 한의학적 표현입니다."
         }
@@ -4491,7 +4995,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "백수오의 전통적 활용은 보혈 · 자양 · 거풍 등으로 설명됩니다. 혈허로 설명되는 영양·자양의 부족을 보완한다는 전통 개념입니다."
     },
     "백자인": {
       "name": "백자인",
@@ -4529,7 +5034,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "백자인의 전통적 활용은 안신 · 양심 · 지한 등으로 설명됩니다. 마음이 불안하고 잠이 편하지 않은 양상을 안정시킨다는 전통적 의미입니다."
     },
     "백지": {
       "name": "백지",
@@ -4555,7 +5061,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "백지의 전통적 활용은 거풍제습 · 통규지통 · 소종배농 등으로 설명됩니다. 한의학에서 풍사로 설명하는 움직이는 통증·가려움 등의 양상을 다루는 개념입니다. 체내 습사로 설명하는 무겁고 정체된 양상을 줄인다는 의미입니다."
     },
     "백출": {
       "name": "백출",
@@ -4581,7 +5088,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "백출의 전통적 활용은 보기건비 · 지한 · 안태 등으로 설명됩니다. 부족한 기를 보충해 허약 양상을 다룬다는 전통 개념입니다. 한의학적 비위의 운화 기능, 즉 음식과 수분을 처리하는 기능을 돕는다는 뜻입니다."
     },
     "백편두": {
       "name": "백편두",
@@ -4619,7 +5127,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "백편두의 전통적 활용은 하기 · 건비화중 · 난비위 등으로 설명됩니다. 위로 치미는 기를 아래로 내린다는 전통적 의미입니다."
     },
     "백합": {
       "name": "백합",
@@ -4657,7 +5166,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "백합의 전통적 활용은 안신 · 보중 · 이대소변 등으로 설명됩니다. 마음이 불안하고 잠이 편하지 않은 양상을 안정시킨다는 전통적 의미입니다."
     },
     "별갑": {
       "name": "별갑",
@@ -4695,7 +5205,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "별갑의 전통적 활용은 식풍 · 연견산결 · 하기 등으로 설명됩니다. 한의학의 내풍으로 설명하는 떨림·경련 양상을 가라앉힌다는 뜻입니다."
     },
     "별갑교": {
       "name": "별갑교",
@@ -4717,16 +5228,13 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "별갑교의 전통적 활용은 보혈 · 자음퇴열 등으로 설명됩니다. 혈허로 설명되는 영양·자양의 부족을 보완한다는 전통 개념입니다."
     },
     "보골지": {
       "name": "보골지",
       "latin": "",
       "effects": [
-        {
-          "term": "납기(納氣)",
-          "description": "폐와 신의 기가 서로 받아들이는 기능을 돕는다는 한의학적 표현입니다."
-        },
         {
           "term": "납기(納氣)",
           "description": "폐와 신의 기가 서로 받아들이는 기능을 돕는다는 한의학적 표현입니다."
@@ -4755,7 +5263,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "보골지의 전통적 활용은 납기 · 온명문 · 온비지사 등으로 설명됩니다. 폐와 신의 기가 서로 받아들이는 기능을 돕는다는 한의학적 표현입니다."
     },
     "복령": {
       "name": "복령",
@@ -4781,7 +5290,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "복령의 전통적 활용은 이수삼습 · 건비 · 안신 등으로 설명됩니다. 소변 배출을 통해 정체된 수분을 다룬다는 전통 개념입니다. 정체된 습을 소변 등으로 배출시킨다는 전통 개념입니다."
     },
     "복령피": {
       "name": "복령피",
@@ -4799,7 +5309,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "복령피의 전통적 활용은 행수 등으로 설명됩니다. 정체된 수분의 운행과 배출을 원활하게 한다는 전통 개념입니다."
     },
     "복분자": {
       "name": "복분자",
@@ -4817,7 +5328,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "복분자의 전통적 활용은 익신고정축뇨 등으로 설명됩니다. 한의학적 신의 기능과 정기가 약한 양상을 보완한다는 의미입니다. 정이 쉽게 새는 양상을 수렴한다는 한의학적 표현입니다. 소변이 자주 새거나 잦은 양상을 수렴한다는 전통 개념입니다."
     },
     "부자": {
       "name": "부자",
@@ -4855,7 +5367,8 @@
         }
       ],
       "caution": "아코니틴계 성분에 의한 중독과 부정맥 등 중대한 위험이 보고된 약재입니다. 생품·포제품과 기원, 적합성을 전문가가 확인해야 합니다.",
-      "kind": "traditional"
+      "kind": "traditional",
+      "description": "부자의 전통적 활용은 회양구역 · 보화조양 · 온경산한 등으로 설명됩니다. 양기가 크게 약해진 허탈 양상을 회복시킨다는 전통 용어입니다. 허탈한 상태에서 생기는 궐역을 되돌린다는 전통 용어입니다."
     },
     "북사삼": {
       "name": "북사삼",
@@ -4877,7 +5390,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "북사삼의 전통적 활용은 양음청폐 · 생진익위 등으로 설명됩니다. 부족해진 음과 진액을 자양한다는 전통적 의미입니다. 한의학에서 폐열로 설명하는 기침·가래 등의 양상을 다룬다는 의미입니다."
     },
     "비해": {
       "name": "비해",
@@ -4907,7 +5421,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "비해의 전통적 활용은 거풍습 · 견근골 · 명목 등으로 설명됩니다. 풍과 습이 함께 관여하는 관절·근육의 통증과 뻣뻣함을 다루는 전통 개념입니다."
     },
     "빈랑": {
       "name": "빈랑",
@@ -4945,7 +5460,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "빈랑의 전통적 활용은 소담 · 장양 · 절학 등으로 설명됩니다. 담으로 설명되는 정체를 풀어낸다는 뜻입니다."
     },
     "사간": {
       "name": "사간",
@@ -4983,16 +5499,13 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "사간의 전통적 활용은 사화 · 소담 · 청열해독 등으로 설명됩니다. 열이 심해 화로 설명되는 양상을 내려 가라앉힌다는 개념입니다."
     },
     "사과락": {
       "name": "사과락",
       "latin": "",
       "effects": [
-        {
-          "term": "거풍(祛風)",
-          "description": "한의학에서 풍사로 설명하는 움직이는 통증·가려움 등의 양상을 다루는 개념입니다."
-        },
         {
           "term": "거풍(祛風)",
           "description": "한의학에서 풍사로 설명하는 움직이는 통증·가려움 등의 양상을 다루는 개념입니다."
@@ -5021,7 +5534,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "사과락의 전통적 활용은 거풍 · 지혈 · 청열 등으로 설명됩니다. 한의학에서 풍사로 설명하는 움직이는 통증·가려움 등의 양상을 다루는 개념입니다."
     },
     "사삼": {
       "name": "사삼",
@@ -5059,7 +5573,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "사삼의 전통적 활용은 배농 · 양음청폐 · 거담지해 등으로 설명됩니다. 고름이 정체된 양상의 배출을 돕는다는 전통적 의미입니다."
     },
     "사상자": {
       "name": "사상자",
@@ -5093,7 +5608,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "사상자의 전통적 활용은 거풍조습 · 이관절 · 구충 등으로 설명됩니다. 한의학에서 풍사로 설명하는 움직이는 통증·가려움 등의 양상을 다루는 개념입니다. 습사로 설명하는 눅눅하고 정체된 양상을 말려 없앤다는 뜻입니다."
     },
     "사인": {
       "name": "사인",
@@ -5127,7 +5643,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "사인의 전통적 활용은 행기 · 화습 · 건비 등으로 설명됩니다. 정체된 기의 흐름을 원활하게 한다는 전통 개념입니다."
     },
     "산사": {
       "name": "산사",
@@ -5149,7 +5666,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "산사의 전통적 활용은 소식화적 · 활혈산어 등으로 설명됩니다. 음식이 정체된 식적을 풀어 소화를 돕는다는 전통적 의미입니다. 먹은 음식 등이 쌓여 정체된 적체를 풀어낸다는 뜻입니다."
     },
     "산수유": {
       "name": "산수유",
@@ -5171,7 +5689,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "산수유의 전통적 활용은 보익간신 · 수렴고삽 등으로 설명됩니다. 한의학적 간·신의 허약 양상을 보충한다는 전통적 의미입니다."
     },
     "산약": {
       "name": "산약",
@@ -5193,7 +5712,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "산약의 전통적 활용은 익기양음 · 보비폐신 등으로 설명됩니다. 기허로 설명되는 무력하고 기능이 약한 양상을 보완한다는 의미입니다. 부족해진 음과 진액을 자양한다는 전통적 의미입니다."
     },
     "산장": {
       "name": "산장",
@@ -5211,7 +5731,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "산장의 전통적 활용은 청열해독 등으로 설명됩니다. 한의학에서 열로 분류하는 증후를 가라앉힌다는 전통적 의미입니다. 전통 문헌의 독증을 풀어낸다는 개념입니다. 현대 중독에 대한 해독제나 임상적으로 입증된 항염 효과와 동일한 뜻은 아닙니다."
     },
     "산조인": {
       "name": "산조인",
@@ -5233,7 +5754,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "산조인의 전통적 활용은 양심안신 · 렴한 등으로 설명됩니다. 한의학적 심의 자양이 부족한 양상을 보완한다는 뜻입니다. 마음이 불안하고 잠이 편하지 않은 양상을 안정시킨다는 전통적 의미입니다."
     },
     "산초": {
       "name": "산초",
@@ -5259,7 +5781,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "산초의 전통적 활용은 살충 · 온중산한 · 제습지통 등으로 설명됩니다. 전통적으로 기생충이나 피부의 충증 양상을 다루는 의미입니다."
     },
     "삼릉": {
       "name": "삼릉",
@@ -5297,7 +5820,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "삼릉의 전통적 활용은 행기 · 산종 · 소적 등으로 설명됩니다. 정체된 기의 흐름을 원활하게 한다는 전통 개념입니다."
     },
     "상기생": {
       "name": "상기생",
@@ -5327,7 +5851,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "상기생의 전통적 활용은 거풍습 · 보간신 · 강근골 등으로 설명됩니다. 풍과 습이 함께 관여하는 관절·근육의 통증과 뻣뻣함을 다루는 전통 개념입니다."
     },
     "상백피": {
       "name": "상백피",
@@ -5365,7 +5890,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "상백피의 전통적 활용은 소담 · 개위 · 살충 등으로 설명됩니다. 담으로 설명되는 정체를 풀어낸다는 뜻입니다."
     },
     "상심자": {
       "name": "상심자",
@@ -5403,7 +5929,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "상심자의 전통적 활용은 생진 · 생진윤조 · 보혈자음 등으로 설명됩니다. 부족한 진액을 보충해 건조함과 갈증을 다룬다는 전통 개념입니다."
     },
     "상지": {
       "name": "상지",
@@ -5425,7 +5952,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "상지의 전통적 활용은 거풍통락 · 이수퇴종 등으로 설명됩니다. 한의학에서 풍사로 설명하는 움직이는 통증·가려움 등의 양상을 다루는 개념입니다. 경락의 소통이 막혀 생기는 통증·저림 등을 풀어낸다는 뜻입니다."
     },
     "상표초": {
       "name": "상표초",
@@ -5447,7 +5975,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "사마귀류의 알집을 사용하는 약재입니다. 전통적으로 신의 허약과 관련된 소변의 조절, 정이 새는 양상을 수렴하는 용도로 설명합니다."
     },
     "상황": {
       "name": "상황",
@@ -5477,16 +6006,13 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "상황의 전통적 활용은 지혈 · 지사 · 화음 등으로 설명됩니다. 출혈 양상을 멎게 하는 데 활용해 온 전통적 의미입니다."
     },
     "서장경": {
       "name": "서장경",
       "latin": "",
       "effects": [
-        {
-          "term": "거풍(祛風)",
-          "description": "한의학에서 풍사로 설명하는 움직이는 통증·가려움 등의 양상을 다루는 개념입니다."
-        },
         {
           "term": "거풍(祛風)",
           "description": "한의학에서 풍사로 설명하는 움직이는 통증·가려움 등의 양상을 다루는 개념입니다."
@@ -5515,7 +6041,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "서장경의 전통적 활용은 거풍 · 소종 · 지양 등으로 설명됩니다. 한의학에서 풍사로 설명하는 움직이는 통증·가려움 등의 양상을 다루는 개념입니다."
     },
     "석결명": {
       "name": "석결명",
@@ -5553,7 +6080,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "석결명의 전통적 활용은 거예 · 명목 · 보음명목 등으로 설명됩니다. 눈을 가리는 예장 양상을 다루는 전통 용어입니다."
     },
     "석고": {
       "name": "석고",
@@ -5579,7 +6107,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "석고의 전통적 활용은 청열사화 · 제번지갈 · 청열수렴 등으로 설명됩니다. 한의학에서 열로 분류하는 증후를 가라앉힌다는 전통적 의미입니다. 열이 심해 화로 설명되는 양상을 내려 가라앉힌다는 개념입니다."
     },
     "석곡": {
       "name": "석곡",
@@ -5617,7 +6146,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "석곡의 전통적 활용은 청위제열 · 생진지갈 · 안신정경 등으로 설명됩니다. 위열로 설명하는 양상을 가라앉힌다는 한의학적 의미입니다. 열로 설명되는 양상을 가라앉힌다는 뜻입니다."
     },
     "석창포": {
       "name": "석창포",
@@ -5639,7 +6169,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "석창포의 전통적 활용은 개규영신 · 화습화위 등으로 설명됩니다. 감각과 의식이 막힌 것으로 설명되는 폐규 양상을 열어준다는 전통 개념입니다. 정신과 마음의 불안정한 양상을 안정시킨다는 뜻입니다."
     },
     "선복화": {
       "name": "선복화",
@@ -5677,7 +6208,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "선복화의 전통적 활용은 하기 · 보중 · 강기지구 등으로 설명됩니다. 위로 치미는 기를 아래로 내린다는 전통적 의미입니다."
     },
     "세신": {
       "name": "세신",
@@ -5711,7 +6243,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "세신의 전통적 활용은 산한해표 · 온폐화담 · 거풍 등으로 설명됩니다. 차가운 성질의 사기로 설명하는 오한·통증 양상을 풀어낸다는 뜻입니다. 감기 초기처럼 몸의 겉에서 나타나는 오한·발열 등의 양상을 풀어낸다는 뜻입니다."
     },
     "소맥": {
       "name": "소맥",
@@ -5749,7 +6282,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "소맥의 전통적 활용은 보허 · 산혈 · 양기 등으로 설명됩니다. 허증으로 설명하는 기능과 자양의 부족을 보완한다는 뜻입니다."
     },
     "소목": {
       "name": "소목",
@@ -5771,7 +6305,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "소목의 전통적 활용은 소종지통 · 행혈파어 등으로 설명됩니다. 부어 있는 종창 양상을 가라앉힌다는 뜻입니다. 통증 양상을 덜어내는 데 활용해 온 의미입니다."
     },
     "속단": {
       "name": "속단",
@@ -5809,7 +6344,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "속단의 전통적 활용은 행혈 · 파어혈 · 강근골 등으로 설명됩니다. 혈의 흐름이 막힌 양상을 원활하게 한다는 의미입니다."
     },
     "송엽": {
       "name": "송엽",
@@ -5843,7 +6379,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "송엽의 전통적 활용은 거풍조습 · 안오장 · 살충 등으로 설명됩니다. 한의학에서 풍사로 설명하는 움직이는 통증·가려움 등의 양상을 다루는 개념입니다. 습사로 설명하는 눅눅하고 정체된 양상을 말려 없앤다는 뜻입니다."
     },
     "송절": {
       "name": "송절",
@@ -5852,10 +6389,6 @@
         {
           "term": "조습(燥濕)",
           "description": "습사로 설명하는 눅눅하고 정체된 양상을 말려 없앤다는 뜻입니다."
-        },
-        {
-          "term": "거풍(祛風)",
-          "description": "한의학에서 풍사로 설명하는 움직이는 통증·가려움 등의 양상을 다루는 개념입니다."
         },
         {
           "term": "거풍(祛風)",
@@ -5881,7 +6414,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "송절의 전통적 활용은 조습 · 거풍 · 서근 등으로 설명됩니다. 습사로 설명하는 눅눅하고 정체된 양상을 말려 없앤다는 뜻입니다."
     },
     "송화분": {
       "name": "송화분",
@@ -5894,10 +6428,6 @@
         {
           "term": "윤심폐(潤心肺)",
           "description": "한의학적 심·폐의 건조한 양상을 촉촉하게 한다는 뜻입니다."
-        },
-        {
-          "term": "거풍(祛風)",
-          "description": "한의학에서 풍사로 설명하는 움직이는 통증·가려움 등의 양상을 다루는 개념입니다."
         },
         {
           "term": "거풍(祛風)",
@@ -5919,7 +6449,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "송화분의 전통적 활용은 조습 · 윤심폐 · 거풍 등으로 설명됩니다. 습사로 설명하는 눅눅하고 정체된 양상을 말려 없앤다는 뜻입니다."
     },
     "숙지황": {
       "name": "숙지황",
@@ -5941,7 +6472,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "지황을 찌는 등의 가공을 거친 약재입니다. 전통적으로 혈과 음, 정수가 부족하다고 설명되는 양상을 보완하는 데 활용해 왔습니다."
     },
     "승마": {
       "name": "승마",
@@ -5967,7 +6499,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "승마의 전통적 활용은 발표투진 · 청열해독 · 승양거함 등으로 설명됩니다. 몸의 겉에 머문 사기를 밖으로 풀어내는 방법을 가리킵니다. 발진이 원활하게 드러나도록 돕는다는 전통적 의미입니다."
     },
     "시호": {
       "name": "시호",
@@ -5993,7 +6526,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "시호의 전통적 활용은 화해퇴열 · 소간해울 · 승거양기 등으로 설명됩니다. 겉과 속 사이에 걸친 한열 양상을 조화롭게 풀어낸다는 전통 개념입니다. 발열 양상을 가라앉힌다는 뜻입니다."
     },
     "신곡": {
       "name": "신곡",
@@ -6031,7 +6565,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "신곡의 전통적 활용은 난위 · 도체 · 행기 등으로 설명됩니다. 위가 차가운 양상을 따뜻하게 한다는 전통적 의미입니다."
     },
     "신이": {
       "name": "신이",
@@ -6061,7 +6596,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "신이의 전통적 활용은 해기 · 산풍열 · 산풍한 등으로 설명됩니다. 겉의 근육층에 머문 사기를 풀어 뻣뻣함과 긴장 양상을 다룬다는 뜻입니다."
     },
     "아교": {
       "name": "아교",
@@ -6099,7 +6635,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "아교의 전통적 활용은 생신거어 · 이대소장 · 안태 등으로 설명됩니다. 손상된 부위의 새로운 조직 형성을 돕는다는 전통적 표현입니다. 어혈로 설명하는 혈의 정체를 풀어낸다는 전통 개념입니다."
     },
     "아출": {
       "name": "아출",
@@ -6129,7 +6666,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "아출의 전통적 활용은 행기파혈 · 개위 · 소적지통 등으로 설명됩니다. 정체된 기의 흐름을 원활하게 한다는 전통 개념입니다. 강하게 정체된 어혈을 풀어낸다는 전통 개념입니다."
     },
     "야교등": {
       "name": "야교등",
@@ -6142,10 +6680,6 @@
         {
           "term": "안신(安神)",
           "description": "마음이 불안하고 잠이 편하지 않은 양상을 안정시킨다는 전통적 의미입니다."
-        },
-        {
-          "term": "거풍(祛風)",
-          "description": "한의학에서 풍사로 설명하는 움직이는 통증·가려움 등의 양상을 다루는 개념입니다."
         },
         {
           "term": "거풍(祛風)",
@@ -6167,7 +6701,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "야교등의 전통적 활용은 영심 · 안신 · 거풍 등으로 설명됩니다. 심신의 불안정한 양상을 가라앉힌다는 전통 개념입니다."
     },
     "여정실": {
       "name": "여정실",
@@ -6205,7 +6740,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "여정실의 전통적 활용은 안오장 · 건요슬 · 보음 등으로 설명됩니다. 한의학적 오장의 기능을 안정시킨다는 옛 본초 표현입니다."
     },
     "연교": {
       "name": "연교",
@@ -6227,7 +6763,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "연교의 전통적 활용은 청열해독 · 소옹산결 등으로 설명됩니다. 한의학에서 열로 분류하는 증후를 가라앉힌다는 전통적 의미입니다. 전통 문헌의 독증을 풀어낸다는 개념입니다. 현대 중독에 대한 해독제나 임상적으로 입증된 항염 효과와 동일한 뜻은 아닙니다."
     },
     "연자육": {
       "name": "연자육",
@@ -6253,37 +6790,32 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "연자육의 전통적 활용은 보비지사 · 익신고정 · 양심안신 등으로 설명됩니다. 비위의 기능이 약해진 허약 양상을 보완한다는 전통적 의미입니다. 설사가 지속되는 양상을 다룬다는 전통적 의미입니다."
     },
     "영지": {
       "name": "영지",
-      "latin": "",
+      "latin": "Ganodermae Polyporus",
       "effects": [
         {
-          "term": "산어(散瘀)",
-          "description": "어혈로 설명되는 혈의 정체를 흩어낸다는 뜻입니다."
+          "term": "양심안신(養心安神)",
+          "description": "심신이 불안정하고 잠이 편하지 않은 양상을 다뤄 온 전통 개념입니다."
         },
         {
-          "term": "지통(止痛)",
-          "description": "통증 양상을 덜어내는 데 활용해 온 의미입니다."
-        },
-        {
-          "term": "화어(化瘀)",
-          "description": "어혈로 설명하는 혈의 정체를 풀어낸다는 전통 개념입니다."
-        },
-        {
-          "term": "활혈(活血)",
-          "description": "혈의 운행이 원활하지 못한 양상을 소통시킨다는 전통 개념입니다."
+          "term": "보기익혈(補氣益血)",
+          "description": "기와 혈이 부족하다고 설명하는 허약 양상을 보완한다는 본초학적 의미입니다."
         }
       ],
       "sources": [
         {
           "name": "한국전통지식포탈 · 약재",
-          "url": "https://koreantk.com/ktkp2014/medicine/medicine-view.view?medCd=M0002587&tempLang=ko"
+          "url": "https://koreantk.com/ktkp2014/medicine/medicine-view.view?medCd=M0002589&tempLang=ko"
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "영지버섯의 자실체에 관한 자료입니다. 전통적으로 허약과 심신의 불안정한 양상에 활용해 왔으며, 이름의 한글 발음이 같은 영지(靈脂), 즉 오령지의 자료와 구분합니다.",
+      "verifiedAt": "2026-11-11"
     },
     "오가피": {
       "name": "오가피",
@@ -6309,7 +6841,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "오가피류의 껍질에 관한 전통 자료입니다. 근골의 허약과 풍습으로 설명하는 근육·관절의 불편에 활용해 왔으며, 거피·유피 상품의 부위와 규격은 구분합니다."
     },
     "오령지": {
       "name": "오령지",
@@ -6339,7 +6872,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "오령지의 전통적 활용은 산어 · 지통 · 화어 등으로 설명됩니다. 어혈로 설명되는 혈의 정체를 흩어낸다는 뜻입니다."
     },
     "오매": {
       "name": "오매",
@@ -6377,7 +6911,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "오매의 전통적 활용은 생진 · 하기 · 안회 등으로 설명됩니다. 부족한 진액을 보충해 건조함과 갈증을 다룬다는 전통 개념입니다."
     },
     "오미자": {
       "name": "오미자",
@@ -6407,7 +6942,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "오미자 열매를 사용하는 약재입니다. 전통적으로 기와 진액이 쉽게 새는 양상을 수렴하고 건조함을 보완하는 용도로 설명합니다."
     },
     "오수유": {
       "name": "오수유",
@@ -6437,7 +6973,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "오수유의 전통적 활용은 지통 · 소간하기 · 온중지사 등으로 설명됩니다. 통증 양상을 덜어내는 데 활용해 온 의미입니다."
     },
     "오약": {
       "name": "오약",
@@ -6459,7 +6996,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "오약의 전통적 활용은 행기지통 · 온신산한 등으로 설명됩니다. 정체된 기의 흐름을 원활하게 한다는 전통 개념입니다. 통증 양상을 덜어내는 데 활용해 온 의미입니다."
     },
     "용골": {
       "name": "용골",
@@ -6489,7 +7027,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "용골의 전통적 활용은 지혈삽장 · 생기염창 · 염한고정 등으로 설명됩니다. 출혈 양상을 멎게 하는 데 활용해 온 전통적 의미입니다. 장의 수렴 작용으로 잦은 설사를 다룬다는 전통 개념입니다."
     },
     "용담": {
       "name": "용담",
@@ -6511,7 +7050,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "용담의 전통적 활용은 청열조습 · 사간정경 등으로 설명됩니다. 한의학에서 열로 분류하는 증후를 가라앉힌다는 전통적 의미입니다. 습사로 설명하는 눅눅하고 정체된 양상을 말려 없앤다는 뜻입니다."
     },
     "용안육": {
       "name": "용안육",
@@ -6533,7 +7073,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "용안 열매의 씨를 제거한 과육을 사용하는 약재입니다. 전통적으로 심비의 허약과 혈 부족에 관련된 불안정한 수면·심신 양상을 다뤄 왔습니다."
     },
     "우담남성": {
       "name": "우담남성",
@@ -6555,7 +7096,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "우담남성의 전통적 활용은 청열화담 · 식풍정경 등으로 설명됩니다. 한의학에서 열로 분류하는 증후를 가라앉힌다는 전통적 의미입니다. 한의학의 담으로 설명되는 병리적 정체를 풀어낸다는 개념입니다."
     },
     "우방자": {
       "name": "우방자",
@@ -6577,7 +7119,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "우방자의 전통적 활용은 선폐투진 · 해독이인 등으로 설명됩니다. 폐기의 퍼지고 내려가는 작용을 원활하게 한다는 한의학적 표현입니다. 발진이 원활하게 드러나도록 돕는다는 전통적 의미입니다."
     },
     "우슬": {
       "name": "우슬",
@@ -6607,7 +7150,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "우슬의 전통적 활용은 활혈거어 · 보간신강근골 · 이뇨통림 등으로 설명됩니다. 혈의 운행이 원활하지 못한 양상을 소통시킨다는 전통 개념입니다. 어혈로 설명하는 혈의 정체를 풀어낸다는 전통 개념입니다."
     },
     "욱리인": {
       "name": "욱리인",
@@ -6637,7 +7181,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "욱리인의 전통적 활용은 하기 · 이수 · 윤조활장 등으로 설명됩니다. 위로 치미는 기를 아래로 내린다는 전통적 의미입니다."
     },
     "울금": {
       "name": "울금",
@@ -6675,7 +7220,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "울금의 전통적 활용은 생기 · 이담퇴황 · 정통 등으로 설명됩니다. 상처의 회복과 새 조직 형성을 돕는다는 전통적 표현입니다."
     },
     "원지": {
       "name": "원지",
@@ -6701,7 +7247,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "원지류 뿌리에 관한 자료입니다. 전통적으로 심신의 불안정과 담의 정체에 관련된 양상에 활용해 왔습니다. 상품의 크기 등급과 밀자 가공은 별도로 구분합니다."
     },
     "위령선": {
       "name": "위령선",
@@ -6735,7 +7282,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "위령선의 전통적 활용은 거풍습 · 통경락 · 지비통 등으로 설명됩니다. 풍과 습이 함께 관여하는 관절·근육의 통증과 뻣뻣함을 다루는 전통 개념입니다."
     },
     "유백피": {
       "name": "유백피",
@@ -6761,7 +7309,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "유백피의 전통적 활용은 이수통림 · 거담 · 소종해독 등으로 설명됩니다. 소변 배출을 통해 정체된 수분을 다룬다는 전통 개념입니다. 소변이 시원하지 못한 임증 양상을 소통시킨다는 뜻입니다."
     },
     "유향": {
       "name": "유향",
@@ -6791,7 +7340,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "유향의 전통적 활용은 서근 · 소종생기 · 조양 등으로 설명됩니다. 근육과 힘줄이 당기거나 뻣뻣한 양상을 부드럽게 한다는 의미입니다."
     },
     "육계": {
       "name": "육계",
@@ -6821,7 +7371,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "육계의 전통적 활용은 보명문화 · 산한온비 · 지통 등으로 설명됩니다. 생명 활동을 따뜻하게 하는 명문화가 약한 양상을 보완한다는 전통적 의미입니다."
     },
     "육두구": {
       "name": "육두구",
@@ -6855,29 +7406,32 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "육두구의 전통적 활용은 삽장지사 · 소숙식 · 온중행기 등으로 설명됩니다. 장의 수렴 작용으로 잦은 설사를 다룬다는 전통 개념입니다. 설사가 지속되는 양상을 다룬다는 전통적 의미입니다."
     },
     "육종용": {
       "name": "육종용",
       "latin": "Cistanchis Herba",
       "effects": [
         {
-          "term": "보비양익정혈(補脾陽益精血)",
-          "description": "비의 양기가 약한 허한 양상을 따뜻하게 보완한다는 전통 개념입니다. 정과 혈의 부족을 보완한다는 뜻입니다."
+          "term": "보신양·익정혈(補腎陽·益精血)",
+          "description": "한의학적 신양과 정혈이 부족하다고 설명하는 허약 양상을 보완한다는 전통적 의미입니다. 현대의 신장 기능 개선을 뜻하지 않습니다."
         },
         {
-          "term": "윤장통변(潤腸通便)",
-          "description": "장의 건조한 양상을 촉촉하게 해 배변을 돕는다는 전통적 의미입니다. 배변이 막힌 양상을 소통시킨다는 뜻입니다."
+          "term": "윤장통변(潤腸通便)",
+          "description": "장의 건조와 배변이 어려운 양상을 윤택하게 한다는 본초학적 개념입니다."
         }
       ],
       "sources": [
         {
-          "name": "KMCRIC 생약 up-to-date",
-          "url": "https://www.kmcric.com/database/herb_list?isKor=all&search_word=%EC%9C%A1%EC%A2%85%EC%9A%A9"
+          "name": "한국전통지식포탈 · 약재",
+          "url": "https://koreantk.com/ktkp2014/medicine/medicine-view.view?medCd=M0002954&tempLang=ko"
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "육종용류의 육질성 줄기를 사용하는 약재입니다. 전통적으로 신양·정혈의 부족과 장의 건조에 해당하는 양상을 보완하는 데 활용해 왔습니다. 주증은 상품의 가공 구분입니다.",
+      "verifiedAt": "2026-11-11"
     },
     "율피": {
       "name": "율피",
@@ -6895,7 +7449,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "율피의 전통적 활용은 거피부추문 등으로 설명됩니다. 피부의 주름을 다루던 옛 문헌 표현입니다. 현재 판매 원물의 주름 개선 효과를 입증했다는 뜻은 아닙니다."
     },
     "은시호": {
       "name": "은시호",
@@ -6917,7 +7472,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "은시호의 전통적 활용은 제감열 · 청허열 등으로 설명됩니다. 어린아이의 감증에 동반되는 열을 다룬다는 전통 용어입니다. 감증은 현대 병명과 일대일로 대응하지 않습니다."
     },
     "의이인": {
       "name": "의이인",
@@ -6943,7 +7499,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "의이인의 전통적 활용은 이습건비 · 이습제비 · 청열배농 등으로 설명됩니다. 습사로 설명하는 체액의 정체를 풀어낸다는 뜻입니다. 한의학적 비위의 운화 기능, 즉 음식과 수분을 처리하는 기능을 돕는다는 뜻입니다."
     },
     "익지": {
       "name": "익지",
@@ -6969,16 +7526,13 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "익지의 전통적 활용은 온비개위섭연 · 온신고정 · 축뇨 등으로 설명됩니다. 비위가 차고 약한 양상을 따뜻하게 보완한다는 의미입니다. 식욕과 음식 수용 기능을 원활하게 한다는 의미입니다. 침이 과도하게 흘러나오는 양상을 수렴한다는 전통적 의미입니다."
     },
     "인동등": {
       "name": "인동등",
       "latin": "",
       "effects": [
-        {
-          "term": "거풍(祛風)",
-          "description": "한의학에서 풍사로 설명하는 움직이는 통증·가려움 등의 양상을 다루는 개념입니다."
-        },
         {
           "term": "거풍(祛風)",
           "description": "한의학에서 풍사로 설명하는 움직이는 통증·가려움 등의 양상을 다루는 개념입니다."
@@ -7007,7 +7561,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "인동등의 전통적 활용은 거풍 · 산열해독 · 제리 등으로 설명됩니다. 한의학에서 풍사로 설명하는 움직이는 통증·가려움 등의 양상을 다루는 개념입니다."
     },
     "자소자": {
       "name": "자소자",
@@ -7037,7 +7592,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "자소자의 전통적 활용은 평천 · 강기소담 · 윤장 등으로 설명됩니다. 한의학의 천증, 즉 거칠고 가쁜 호흡 양상을 다루는 전통적 의미입니다."
     },
     "자연동": {
       "name": "자연동",
@@ -7059,7 +7615,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "자연동의 전통적 활용은 접골속근 · 산어지통 등으로 설명됩니다. 골절 후 회복에 활용해 온 전통적 의미입니다. 손상되거나 약해진 힘줄의 회복을 돕는다는 전통 개념입니다."
     },
     "자완": {
       "name": "자완",
@@ -7097,7 +7654,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "자완의 전통적 활용은 소담 · 하기 · 안오장 등으로 설명됩니다. 담으로 설명되는 정체를 풀어낸다는 뜻입니다."
     },
     "자초": {
       "name": "자초",
@@ -7123,7 +7681,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "자초의 전통적 활용은 이대장 · 청열 · 해독투진 등으로 설명됩니다. 대장의 기능과 배변을 원활하게 한다는 전통적 의미입니다."
     },
     "자충": {
       "name": "자충",
@@ -7161,7 +7720,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "자충의 전통적 활용은 공하 · 산어 · 속근접골 등으로 설명됩니다. 배변을 통해 실한 적체를 강하게 내보낸다는 전통 개념입니다."
     },
     "작약": {
       "name": "작약",
@@ -7187,7 +7747,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "작약의 전통적 활용은 양혈렴음 · 유간지통 · 평화간양 등으로 설명됩니다. 혈허로 설명하는 자양의 부족을 보완하고 음액이 지나치게 소모되는 양상을 수렴한다는 뜻입니다."
     },
     "저두강": {
       "name": "저두강",
@@ -7221,7 +7782,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "저두강의 전통적 활용은 하기 · 개위 · 마적 등으로 설명됩니다. 위로 치미는 기를 아래로 내린다는 전통적 의미입니다."
     },
     "저령": {
       "name": "저령",
@@ -7239,7 +7801,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "저령의 전통적 활용은 이수삼습 등으로 설명됩니다. 소변 배출을 통해 정체된 수분을 다룬다는 전통 개념입니다. 정체된 습을 소변 등으로 배출시킨다는 전통 개념입니다."
     },
     "저백피": {
       "name": "저백피",
@@ -7269,7 +7832,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "저백피의 전통적 활용은 수삽지대 · 지혈 · 지사 등으로 설명됩니다. 지나친 배출을 수렴한다는 전통적 의미입니다. 대하가 지속되는 양상을 수렴한다는 전통 개념입니다."
     },
     "저실자": {
       "name": "저실자",
@@ -7291,7 +7855,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "저실자의 전통적 활용은 명목 · 보신청간 등으로 설명됩니다. 눈이 침침하거나 불편한 양상을 다루는 전통적 의미입니다."
     },
     "적작약": {
       "name": "적작약",
@@ -7313,7 +7878,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "적작약의 전통적 활용은 청열양혈 · 거어지통 등으로 설명됩니다. 혈분의 열로 설명하는 출혈·반진 등의 양상을 식힌다는 전통적 의미입니다."
     },
     "전호": {
       "name": "전호",
@@ -7335,7 +7901,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "전호의 전통적 활용은 강기거담 · 선산풍열 등으로 설명됩니다. 치솟거나 정체된 기를 아래로 내려 호흡·소화기의 역상 양상을 다룬다는 뜻입니다. 담이나 가래로 설명되는 정체를 덜어낸다는 전통적 의미입니다."
     },
     "절패모": {
       "name": "절패모",
@@ -7357,7 +7924,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "절패모의 전통적 활용은 청열화담 · 개울산결 등으로 설명됩니다. 한의학에서 열로 분류하는 증후를 가라앉힌다는 전통적 의미입니다. 한의학의 담으로 설명되는 병리적 정체를 풀어낸다는 개념입니다."
     },
     "접골목": {
       "name": "접골목",
@@ -7370,10 +7938,6 @@
         {
           "term": "행혈(行血)",
           "description": "혈의 흐름이 막힌 양상을 원활하게 한다는 의미입니다."
-        },
-        {
-          "term": "거풍(祛風)",
-          "description": "한의학에서 풍사로 설명하는 움직이는 통증·가려움 등의 양상을 다루는 개념입니다."
         },
         {
           "term": "거풍(祛風)",
@@ -7395,7 +7959,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "접골목의 전통적 활용은 이습 · 행혈 · 거풍 등으로 설명됩니다. 습사로 설명하는 체액의 정체를 풀어낸다는 뜻입니다."
     },
     "정향": {
       "name": "정향",
@@ -7433,7 +7998,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "정향의 전통적 활용은 구한습 · 난신 · 보신조양 등으로 설명됩니다. 차가움과 습이 함께 관여하는 양상을 몰아낸다는 전통 개념입니다."
     },
     "제니": {
       "name": "제니",
@@ -7471,7 +8037,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "제니의 전통적 활용은 이기 · 명목 · 이폐해독 등으로 설명됩니다. 기의 흐름이 막혀 생기는 답답함·창만 등을 조절한다는 뜻입니다."
     },
     "제조": {
       "name": "제조",
@@ -7509,7 +8076,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "제조의 전통적 활용은 행어 · 명목거예 · 산풍평천 등으로 설명됩니다. 어혈로 설명하는 정체를 소통시킨다는 뜻입니다."
     },
     "조각자": {
       "name": "조각자",
@@ -7527,7 +8095,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "조각자의 전통적 활용은 거풍살충 등으로 설명됩니다. 한의학에서 풍사로 설명하는 움직이는 통증·가려움 등의 양상을 다루는 개념입니다. 전통적으로 기생충이나 피부의 충증 양상을 다루는 의미입니다."
     },
     "조구등": {
       "name": "조구등",
@@ -7549,7 +8118,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "조구등의 전통적 활용은 식풍지경 · 청열평간 등으로 설명됩니다. 한의학의 내풍으로 설명하는 떨림·경련 양상을 가라앉힌다는 뜻입니다. 경련이나 근육이 갑자기 당기는 양상을 다룬다는 의미입니다."
     },
     "지각": {
       "name": "지각",
@@ -7571,7 +8141,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "지각의 전통적 활용은 이기관중 · 행창제비 등으로 설명됩니다. 기의 흐름이 막혀 생기는 답답함·창만 등을 조절한다는 뜻입니다. 중초의 기가 막혀 답답하고 더부룩한 양상을 풀어낸다는 의미입니다."
     },
     "지골피": {
       "name": "지골피",
@@ -7593,7 +8164,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "지골피의 전통적 활용은 양혈퇴증 · 청설폐열 등으로 설명됩니다. 혈분의 열로 설명하는 출혈·발진 등의 양상을 식힌다는 전통 개념입니다. 음허 등으로 속에서 달아오르는 골증열 양상을 다룬다는 뜻입니다."
     },
     "지구자": {
       "name": "지구자",
@@ -7619,7 +8191,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "지구자의 전통적 활용은 보중익기 · 양음생진 · 해주독 등으로 설명됩니다. 중초의 기가 약한 양상을 보완한다는 의미입니다. 기허로 설명되는 무력하고 기능이 약한 양상을 보완한다는 의미입니다."
     },
     "지룡": {
       "name": "지룡",
@@ -7657,7 +8230,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "지룡의 전통적 활용은 평천 · 행수 · 이소변 등으로 설명됩니다. 한의학의 천증, 즉 거칠고 가쁜 호흡 양상을 다루는 전통적 의미입니다."
     },
     "지모": {
       "name": "지모",
@@ -7679,7 +8253,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "지모의 전통적 활용은 청열사화 · 자음윤조 등으로 설명됩니다. 한의학에서 열로 분류하는 증후를 가라앉힌다는 전통적 의미입니다. 열이 심해 화로 설명되는 양상을 내려 가라앉힌다는 개념입니다."
     },
     "지부자": {
       "name": "지부자",
@@ -7701,7 +8276,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "지부자의 전통적 활용은 청열이습 · 거풍지양 등으로 설명됩니다. 한의학에서 열로 분류하는 증후를 가라앉힌다는 전통적 의미입니다. 습사로 설명하는 체액의 정체를 풀어낸다는 뜻입니다."
     },
     "지실": {
       "name": "지실",
@@ -7723,7 +8299,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "지실의 전통적 활용은 파기소적 · 화담제비 등으로 설명됩니다. 강하게 막힌 기의 정체를 풀어낸다는 전통 개념입니다. 덩어리처럼 뭉치거나 음식이 쌓인 적체를 풀어낸다는 전통 개념입니다."
     },
     "지황": {
       "name": "지황",
@@ -7753,7 +8330,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "지황의 전통적 활용은 생진 · 양혈 · 자음 등으로 설명됩니다. 부족한 진액을 보충해 건조함과 갈증을 다룬다는 전통 개념입니다."
     },
     "진교": {
       "name": "진교",
@@ -7787,7 +8365,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "진교의 전통적 활용은 거풍제습 · 서근통락 · 청허열 등으로 설명됩니다. 한의학에서 풍사로 설명하는 움직이는 통증·가려움 등의 양상을 다루는 개념입니다. 체내 습사로 설명하는 무겁고 정체된 양상을 줄인다는 의미입니다."
     },
     "진피": {
       "name": "진피",
@@ -7809,7 +8388,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "진피의 전통적 활용은 리기조중 · 조습화담 등으로 설명됩니다. 기의 흐름이 막혀 생기는 답답함·창만 등을 조절한다는 뜻입니다. 비위 등 중초의 기능을 조화롭게 한다는 전통 개념입니다."
     },
     "질려자": {
       "name": "질려자",
@@ -7835,7 +8415,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "질려자의 전통적 활용은 명목 · 지양 · 평간해울 등으로 설명됩니다. 눈이 침침하거나 불편한 양상을 다루는 전통적 의미입니다."
     },
     "차전자": {
       "name": "차전자",
@@ -7865,7 +8446,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "차전자의 전통적 활용은 청습열 · 삼습지사 · 청간명목 등으로 설명됩니다. 습과 열이 함께 정체된 양상을 가라앉힌다는 전통 개념입니다."
     },
     "창이자": {
       "name": "창이자",
@@ -7903,7 +8485,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "창이자의 전통적 활용은 산열 · 살충 · 산풍 등으로 설명됩니다. 정체된 열을 흩어낸다는 뜻입니다."
     },
     "창출": {
       "name": "창출",
@@ -7929,7 +8512,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "창출의 전통적 활용은 조습건비 · 거풍습 · 제장명목 등으로 설명됩니다. 습사로 설명하는 눅눅하고 정체된 양상을 말려 없앤다는 뜻입니다. 한의학적 비위의 운화 기능, 즉 음식과 수분을 처리하는 기능을 돕는다는 뜻입니다."
     },
     "천궁": {
       "name": "천궁",
@@ -7951,7 +8535,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "천궁의 전통적 활용은 활혈행기 · 거풍지통 등으로 설명됩니다. 혈의 운행이 원활하지 못한 양상을 소통시킨다는 전통 개념입니다. 정체된 기의 흐름을 원활하게 한다는 전통 개념입니다."
     },
     "천남성": {
       "name": "천남성",
@@ -7977,7 +8562,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "천남성의 전통적 활용은 조습화담 · 거풍지경 · 산결지통 등으로 설명됩니다. 습사로 설명하는 눅눅하고 정체된 양상을 말려 없앤다는 뜻입니다. 한의학의 담으로 설명되는 병리적 정체를 풀어낸다는 개념입니다."
     },
     "천마": {
       "name": "천마",
@@ -7999,7 +8585,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "천마의 전통적 활용은 식풍지경 · 평간잠양 등으로 설명됩니다. 한의학의 내풍으로 설명하는 떨림·경련 양상을 가라앉힌다는 뜻입니다. 경련이나 근육이 갑자기 당기는 양상을 다룬다는 의미입니다."
     },
     "천문동": {
       "name": "천문동",
@@ -8021,7 +8608,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "천문동의 전통적 활용은 청폐강화 · 자음윤조 등으로 설명됩니다. 한의학에서 폐열로 설명하는 기침·가래 등의 양상을 다룬다는 의미입니다. 위로 치솟는 화열을 아래로 내린다는 전통적 의미입니다."
     },
     "천오": {
       "name": "천오",
@@ -8043,7 +8631,8 @@
         }
       ],
       "caution": "아코니틴계 성분에 의한 중독과 부정맥 등 중대한 위험이 보고된 약재입니다. 생품·포제품과 기원, 적합성을 전문가가 확인해야 합니다.",
-      "kind": "traditional"
+      "kind": "traditional",
+      "description": "천오의 전통적 활용은 거풍제습 등으로 설명됩니다. 한의학에서 풍사로 설명하는 움직이는 통증·가려움 등의 양상을 다루는 개념입니다. 체내 습사로 설명하는 무겁고 정체된 양상을 줄인다는 의미입니다."
     },
     "천화분": {
       "name": "천화분",
@@ -8081,7 +8670,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "천화분의 전통적 활용은 생진지갈 · 강화윤조 · 배농소종 등으로 설명됩니다. 부족한 진액을 보충해 건조함과 갈증을 다룬다는 전통 개념입니다. 갈증을 가라앉히는 데 활용해 온 의미입니다."
     },
     "청피": {
       "name": "청피",
@@ -8107,7 +8697,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "청피의 전통적 활용은 산결소담 · 하식 · 화체 등으로 설명됩니다. 기·담·혈 등이 뭉친 결체를 풀어낸다는 전통 개념입니다. 담으로 설명되는 정체를 풀어낸다는 뜻입니다."
     },
     "초과": {
       "name": "초과",
@@ -8137,7 +8728,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "초과의 전통적 활용은 조습온중 · 소식 · 제담절학 등으로 설명됩니다. 습사로 설명하는 눅눅하고 정체된 양상을 말려 없앤다는 뜻입니다. 차가워진 중초를 따뜻하게 해 소화기 기능의 허한 양상을 다룬다는 뜻입니다."
     },
     "초두구": {
       "name": "초두구",
@@ -8159,7 +8751,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "초두구의 전통적 활용은 조습건비 · 온중지구 등으로 설명됩니다. 습사로 설명하는 눅눅하고 정체된 양상을 말려 없앤다는 뜻입니다. 한의학적 비위의 운화 기능, 즉 음식과 수분을 처리하는 기능을 돕는다는 뜻입니다."
     },
     "초오": {
       "name": "초오",
@@ -8197,7 +8790,8 @@
         }
       ],
       "caution": "아코니틴계 성분에 의한 중독과 부정맥 등 중대한 위험이 보고된 약재입니다. 생품·포제품과 기원, 적합성을 전문가가 확인해야 합니다.",
-      "kind": "traditional"
+      "kind": "traditional",
+      "description": "초오의 전통적 활용은 거풍제습 · 난비위 · 온경지통 등으로 설명됩니다. 한의학에서 풍사로 설명하는 움직이는 통증·가려움 등의 양상을 다루는 개념입니다. 체내 습사로 설명하는 무겁고 정체된 양상을 줄인다는 의미입니다."
     },
     "측백엽": {
       "name": "측백엽",
@@ -8231,7 +8825,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "측백엽의 전통적 활용은 거풍습 · 산어 · 생기 등으로 설명됩니다. 풍과 습이 함께 관여하는 관절·근육의 통증과 뻣뻣함을 다루는 전통 개념입니다."
     },
     "치자": {
       "name": "치자",
@@ -8257,7 +8852,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "치자의 전통적 활용은 사화제번 · 청열이습 · 양혈해독 등으로 설명됩니다. 열이 심해 화로 설명되는 양상을 내려 가라앉힌다는 개념입니다. 열감과 함께 답답하고 불안한 번조 양상을 가라앉힌다는 뜻입니다."
     },
     "택사": {
       "name": "택사",
@@ -8279,7 +8875,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "택사의 전통적 활용은 리수삼습 · 청신열 등으로 설명됩니다. 소변 배출을 통해 정체된 수분을 다룬다는 전통 개념입니다. 정체된 습을 소변 등으로 배출시킨다는 전통 개념입니다."
     },
     "토복령": {
       "name": "토복령",
@@ -8305,7 +8902,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "토복령의 전통적 활용은 제습 · 통리관절 · 해독 등으로 설명됩니다. 체내 습사로 설명하는 무겁고 정체된 양상을 줄인다는 의미입니다."
     },
     "토사자": {
       "name": "토사자",
@@ -8335,7 +8933,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "토사자의 전통적 활용은 보양익음 · 고정축뇨 · 명목 등으로 설명됩니다. 양기가 부족한 허한 양상을 보완한다는 뜻입니다. 음과 진액이 부족한 양상을 보완한다는 의미입니다."
     },
     "파극천": {
       "name": "파극천",
@@ -8361,7 +8960,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "파극천의 전통적 활용은 거풍습 · 보신양 · 장근골 등으로 설명됩니다. 풍과 습이 함께 관여하는 관절·근육의 통증과 뻣뻣함을 다루는 전통 개념입니다."
     },
     "판람근": {
       "name": "판람근",
@@ -8387,7 +8987,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "판람근의 전통적 활용은 양혈 · 청열해독 · 이인 등으로 설명됩니다. 혈분의 열로 설명하는 출혈·발진 등의 양상을 식힌다는 전통 개념입니다."
     },
     "팔각회향": {
       "name": "팔각회향",
@@ -8425,7 +9026,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "팔각회향의 전통적 활용은 이기 · 산한 · 온양 등으로 설명됩니다. 기의 흐름이 막혀 생기는 답답함·창만 등을 조절한다는 뜻입니다."
     },
     "패장": {
       "name": "패장",
@@ -8447,7 +9049,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "패장의 전통적 활용은 청열해독 · 거어지통 등으로 설명됩니다. 한의학에서 열로 분류하는 증후를 가라앉힌다는 전통적 의미입니다. 전통 문헌의 독증을 풀어낸다는 개념입니다. 현대 중독에 대한 해독제나 임상적으로 입증된 항염 효과와 동일한 뜻은 아닙니다."
     },
     "편축": {
       "name": "편축",
@@ -8473,7 +9076,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "편축의 전통적 활용은 이수통림 · 살충지양 · 청열 등으로 설명됩니다. 소변 배출을 통해 정체된 수분을 다룬다는 전통 개념입니다. 소변이 시원하지 못한 임증 양상을 소통시킨다는 뜻입니다."
     },
     "포도근": {
       "name": "포도근",
@@ -8495,7 +9099,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "포도근의 전통적 활용은 제풍습 · 이소변 등으로 설명됩니다. 풍습으로 설명하는 관절·근육의 통증과 뻣뻣함을 다룬다는 뜻입니다."
     },
     "포황": {
       "name": "포황",
@@ -8533,7 +9138,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "포황의 전통적 활용은 배농 · 산결 · 소어 등으로 설명됩니다. 고름이 정체된 양상의 배출을 돕는다는 전통적 의미입니다."
     },
     "하수오": {
       "name": "하수오",
@@ -8559,7 +9165,8 @@
         }
       ],
       "caution": "적하수오(Polygonum multiflorum)와 관련한 간손상 사례가 보고되어 있습니다. 백수오와 구분하고 간질환 및 병용 원료를 확인해야 합니다.",
-      "kind": "traditional"
+      "kind": "traditional",
+      "description": "하수오의 전통적 활용은 보간익신 · 양정혈 등으로 설명됩니다. 한의학적 간의 허약 양상을 보완한다는 뜻입니다. 한의학적 신의 기능과 정기가 약한 양상을 보완한다는 의미입니다."
     },
     "합환피": {
       "name": "합환피",
@@ -8597,7 +9204,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "합환피의 전통적 활용은 생기육 · 살충 · 안신해울 등으로 설명됩니다. 상처의 새 조직 형성을 돕는다는 전통적 표현입니다."
     },
     "해동피": {
       "name": "해동피",
@@ -8627,7 +9235,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "해동피의 전통적 활용은 거풍습 · 살충 · 통경락 등으로 설명됩니다. 풍과 습이 함께 관여하는 관절·근육의 통증과 뻣뻣함을 다루는 전통 개념입니다."
     },
     "해표초": {
       "name": "해표초",
@@ -8665,7 +9274,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "해표초의 전통적 활용은 삽정 · 염창 · 제산 등으로 설명됩니다. 정이 새는 양상을 수렴시킨다는 전통적 의미입니다."
     },
     "해풍등": {
       "name": "해풍등",
@@ -8691,7 +9301,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "해풍등의 전통적 활용은 거풍습 · 지비통 · 통경락 등으로 설명됩니다. 풍과 습이 함께 관여하는 관절·근육의 통증과 뻣뻣함을 다루는 전통 개념입니다."
     },
     "행인": {
       "name": "행인",
@@ -8713,7 +9324,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "행인의 전통적 활용은 지해평천 · 윤장통변 등으로 설명됩니다. 기침 양상을 가라앉히는 데 활용해 온 의미입니다. 한의학의 천증, 즉 거칠고 가쁜 호흡 양상을 다루는 전통적 의미입니다."
     },
     "향부자": {
       "name": "향부자",
@@ -8735,7 +9347,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "향부자의 전통적 활용은 소간이기 · 조경지통 등으로 설명됩니다. 한의학적 간의 소설 기능이 원활하지 못한 울체 양상을 풀어낸다는 뜻입니다. 기의 흐름이 막혀 생기는 답답함·창만 등을 조절한다는 뜻입니다."
     },
     "현삼": {
       "name": "현삼",
@@ -8757,7 +9370,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "현삼의 전통적 활용은 청열양음 · 해독산결 등으로 설명됩니다. 한의학에서 열로 분류하는 증후를 가라앉힌다는 전통적 의미입니다. 부족해진 음과 진액을 자양한다는 전통적 의미입니다."
     },
     "현호색": {
       "name": "현호색",
@@ -8779,7 +9393,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "현호색의 전통적 활용은 활혈행기 · 지통 등으로 설명됩니다. 혈의 운행이 원활하지 못한 양상을 소통시킨다는 전통 개념입니다. 정체된 기의 흐름을 원활하게 한다는 전통 개념입니다."
     },
     "호장근": {
       "name": "호장근",
@@ -8805,37 +9420,32 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "호장근의 전통적 활용은 거풍이습 · 산어정통 · 지해화담 등으로 설명됩니다. 한의학에서 풍사로 설명하는 움직이는 통증·가려움 등의 양상을 다루는 개념입니다. 습사로 설명하는 체액의 정체를 풀어낸다는 뜻입니다."
     },
     "호초": {
       "name": "호초",
-      "latin": "",
+      "latin": "Piperis Nigri Fructus",
       "effects": [
         {
-          "term": "도체행수(導滯行水)",
-          "description": "정체된 음식과 기의 흐름을 풀어낸다는 전통 개념입니다. 정체된 수분의 운행과 배출을 원활하게 한다는 전통 개념입니다."
+          "term": "온중산한(溫中散寒)",
+          "description": "중초가 차가워져 생기는 복부의 불편을 따뜻하게 풀어낸다는 전통적 의미입니다."
         },
         {
-          "term": "살충(殺蟲)",
-          "description": "전통적으로 기생충이나 피부의 충증 양상을 다루는 의미입니다."
-        },
-        {
-          "term": "산어소종(散瘀消腫)",
-          "description": "어혈로 설명되는 혈의 정체를 흩어낸다는 뜻입니다. 부어 있는 종창 양상을 가라앉힌다는 뜻입니다."
-        },
-        {
-          "term": "하기제열(下氣除熱)",
-          "description": "위로 치미는 기를 아래로 내린다는 전통적 의미입니다. 열로 설명되는 양상을 가라앉힌다는 뜻입니다."
+          "term": "하기소담(下氣消痰)",
+          "description": "위로 치미는 기와 담의 정체로 설명하는 불편을 다뤄 온 본초학적 용도입니다."
         }
       ],
       "sources": [
         {
           "name": "한국전통지식포탈 · 약재",
-          "url": "https://koreantk.com/ktkp2014/medicine/medicine-view.view?medCd=M0004287&tempLang=ko"
+          "url": "https://koreantk.com/ktkp2014/medicine/medicine-view.view?medCd=M0004286&tempLang=ko"
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "후추나무의 열매를 사용하는 약재입니다. 전통적으로 차가운 중초와 기의 역상으로 설명하는 소화기 불편에 활용해 왔습니다. 같은 한글 이름을 쓰는 쌀식초인 호초(好醋)와는 다른 원료입니다.",
+      "verifiedAt": "2026-11-11"
     },
     "홍화": {
       "name": "홍화",
@@ -8853,7 +9463,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "홍화의 전통적 활용은 활혈거어통경 등으로 설명됩니다. 혈의 운행이 원활하지 못한 양상을 소통시킨다는 전통 개념입니다. 어혈로 설명하는 혈의 정체를 풀어낸다는 전통 개념입니다. 월경이 정체되거나 원활하지 못한 양상을 소통시킨다는 뜻입니다."
     },
     "화피": {
       "name": "화피",
@@ -8883,7 +9494,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "화피의 전통적 활용은 청열이습 · 거담지해 · 살충 등으로 설명됩니다. 한의학에서 열로 분류하는 증후를 가라앉힌다는 전통적 의미입니다. 습사로 설명하는 체액의 정체를 풀어낸다는 뜻입니다."
     },
     "활석": {
       "name": "활석",
@@ -8905,7 +9517,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "활석의 전통적 활용은 청열해서 · 이수통림 등으로 설명됩니다. 한의학에서 열로 분류하는 증후를 가라앉힌다는 전통적 의미입니다. 여름철 더위에 상한 서증을 풀어낸다는 뜻입니다."
     },
     "황금": {
       "name": "황금",
@@ -8935,7 +9548,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "황금의 전통적 활용은 청열조습 · 사화해독 · 지혈 등으로 설명됩니다. 한의학에서 열로 분류하는 증후를 가라앉힌다는 전통적 의미입니다. 습사로 설명하는 눅눅하고 정체된 양상을 말려 없앤다는 뜻입니다."
     },
     "황기": {
       "name": "황기",
@@ -8965,7 +9579,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "황기류의 뿌리를 사용하는 약재입니다. 전통적으로 기의 부족, 겉을 지키는 기능의 허약과 수분 정체에 해당하는 양상을 보완하는 데 활용했습니다."
     },
     "황랍": {
       "name": "황랍",
@@ -9003,7 +9618,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "황랍의 전통적 활용은 염창 · 보중 · 생기 등으로 설명됩니다. 상처를 수렴해 회복시킨다는 전통적 표현입니다."
     },
     "황련": {
       "name": "황련",
@@ -9025,7 +9641,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "황련의 전통적 활용은 청열조습 · 사화해독 등으로 설명됩니다. 한의학에서 열로 분류하는 증후를 가라앉힌다는 전통적 의미입니다. 습사로 설명하는 눅눅하고 정체된 양상을 말려 없앤다는 뜻입니다."
     },
     "황백": {
       "name": "황백",
@@ -9051,7 +9668,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "황백의 전통적 활용은 청열조습 · 사화해독 · 청퇴허열 등으로 설명됩니다. 한의학에서 열로 분류하는 증후를 가라앉힌다는 전통적 의미입니다. 습사로 설명하는 눅눅하고 정체된 양상을 말려 없앤다는 뜻입니다."
     },
     "황정": {
       "name": "황정",
@@ -9081,7 +9699,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "황정의 전통적 활용은 윤심폐 · 강근골 · 양음 등으로 설명됩니다. 한의학적 심·폐의 건조한 양상을 촉촉하게 한다는 뜻입니다."
     },
     "회향": {
       "name": "회향",
@@ -9115,7 +9734,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "회향의 전통적 활용은 산한 · 난간 · 온신 등으로 설명됩니다. 차가운 성질의 사기로 설명하는 오한·통증 양상을 풀어낸다는 뜻입니다."
     },
     "후박": {
       "name": "후박",
@@ -9141,7 +9761,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "후박의 전통적 활용은 소적 · 행기조습 · 소담평천 등으로 설명됩니다. 덩어리처럼 뭉치거나 음식이 쌓인 적체를 풀어낸다는 전통 개념입니다."
     },
     "흑두": {
       "name": "흑두",
@@ -9171,7 +9792,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "흑두의 전통적 활용은 거풍해독 · 건비익신 · 명목 등으로 설명됩니다. 한의학에서 풍사로 설명하는 움직이는 통증·가려움 등의 양상을 다루는 개념입니다. 전통 문헌의 독증을 풀어낸다는 개념입니다. 현대 중독에 대한 해독제나 임상적으로 입증된 항염 효과와 동일한 뜻은 아닙니다."
     },
     "일당귀": {
       "name": "일당귀",
@@ -9197,7 +9819,8 @@
         }
       ],
       "caution": "참당귀와 왜당귀는 기원이 다릅니다. 출혈 양상이나 설사를 동반하는 경우에는 전문적인 검토가 필요합니다.",
-      "latin": ""
+      "latin": "",
+      "description": "일당귀의 전통적 활용은 보혈화혈 · 윤조활장 · 조경지통 등으로 설명됩니다. 혈허로 설명하는 자양의 부족을 보완하고 혈의 흐름을 조화롭게 한다는 전통적 의미입니다."
     },
     "총목피": {
       "name": "총목피",
@@ -9231,7 +9854,8 @@
         }
       ],
       "caution": "식용 어린순과 약재로 사용하는 줄기껍질은 사용 부위가 다릅니다. 전통 자료에서는 소독(小毒)으로 분류합니다.",
-      "latin": ""
+      "latin": "",
+      "description": "총목피의 전통적 활용은 보기 · 안신 · 거풍·제습 등으로 설명됩니다. 기허로 설명되는 허약하고 기능이 약한 양상을 보완한다는 전통적 의미입니다."
     },
     "지유": {
       "name": "지유",
@@ -9257,7 +9881,8 @@
         }
       ],
       "caution": "",
-      "latin": ""
+      "latin": "",
+      "description": "지유의 전통적 활용은 양혈지혈 · 청열해독 등으로 설명됩니다. 혈분의 열로 설명하는 출혈 양상을 식히고 수렴하는 데 활용한 전통 개념입니다."
     },
     "등피": {
       "name": "등피",
@@ -9283,7 +9908,8 @@
         }
       ],
       "caution": "",
-      "latin": ""
+      "latin": "",
+      "description": "등피의 전통적 활용은 행기·소식 · 주독 관련 전통 기록 등으로 설명됩니다. 위장에 기와 음식이 정체되어 더부룩한 양상을 풀어낸다는 전통 문헌의 설명입니다."
     },
     "마가목": {
       "name": "마가목",
@@ -9305,7 +9931,8 @@
         }
       ],
       "caution": "",
-      "latin": ""
+      "latin": "",
+      "description": "마가목의 전통적 활용은 통증·허약과 관련한 민간 기록 · 위장 불편과 관련한 전통 이용 등으로 설명됩니다. 공공 약용식물 자료에는 신경통·요통 및 허약 양상에 활용한 기록이 있습니다. 이는 원물 단독의 임상 치료 효과를 확정한 뜻은 아닙니다."
     },
     "지구목": {
       "name": "지구목",
@@ -9331,7 +9958,8 @@
         }
       ],
       "caution": "",
-      "latin": ""
+      "latin": "",
+      "description": "지구목의 전통적 활용은 주독 관련 전통 이용 · 사용 부위·추출물의 구분 등으로 설명됩니다. 헛개나무 줄기·껍질은 음주 뒤의 불편에 활용한 기록이 있습니다. 이런 기록을 알코올 독성의 제거 또는 간질환 치료 효과로 단정하지 않습니다."
     },
     "센나엽": {
       "name": "센나엽",
@@ -9353,7 +9981,8 @@
         }
       ],
       "caution": "복통·설사와 전해질 불균형 위험이 있습니다. 장폐색·원인 불명의 복통·염증성 장질환, 임신·수유 등에는 별도 검토가 필요합니다.",
-      "latin": ""
+      "latin": "",
+      "description": "센나 잎을 사용하는 원료로, 표준화된 제제는 간헐적 변비에 관한 평가가 있습니다. 제제의 연구 결과와 이 상품 원물의 효과를 구분해서 설명합니다."
     },
     "차전자피": {
       "name": "차전자피",
@@ -9379,7 +10008,8 @@
         }
       ],
       "caution": "삼킴 곤란이나 소화관 협착·폐색이 있는 경우 위험할 수 있으며, 가루에 의한 알레르기 반응도 보고됩니다. 기원과 원료 규격을 확인해야 합니다.",
-      "latin": ""
+      "latin": "",
+      "description": "Plantago ovata 씨의 껍질에 관한 자료입니다. 수분을 머금어 팽창하는 식이섬유를 함유하며, 차전자 종자와 사용 부위가 다릅니다. 아래 근거는 평가된 제제의 범위에 한합니다."
     },
     "은행잎": {
       "name": "은행잎",
@@ -9401,7 +10031,8 @@
         }
       ],
       "caution": "항응고제 등과 함께 쓰는 경우 출혈 및 상호작용 위험을 확인해야 합니다. 은행 종자와 은행잎은 서로 다른 원료입니다.",
-      "latin": ""
+      "latin": "",
+      "description": "은행나무 잎과 잎 추출물에 관한 자료입니다. 인지기능 등에 대한 연구가 있지만 결과가 일관되지 않으며, 치매 예방이나 잎 원물의 치료 효과가 입증되었다는 뜻은 아닙니다."
     },
     "동충하초/눈꽃": {
       "name": "동충하초/눈꽃",
@@ -9427,7 +10058,8 @@
         }
       ],
       "caution": "",
-      "latin": ""
+      "latin": "",
+      "description": "눈꽃동충하초는 다른 동충하초 종과 구분하는 원료입니다. 관련 공공 연구의 시험 지표를 소개하되, 사람에서의 치료 효과나 판매 원물의 효능으로 확대하지 않습니다."
     },
     "검인": {
       "name": "검인",
@@ -9449,7 +10081,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": ""
+      "caution": "",
+      "description": "가시연꽃의 씨를 사용하는 약재입니다. 전통적으로 정기의 부족을 보완하고, 오래 이어지는 묽은 변과 대하 등 수렴이 필요한 양상에 활용한 기록이 있습니다."
     },
     "귀전우": {
       "name": "귀전우",
@@ -9467,7 +10100,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": "전통 문헌에 임산부 금기로 기재된 약재입니다. 임신 중에는 사용하지 않으며 처방 시 출혈 여부와 병용 약물을 함께 확인해야 합니다."
+      "caution": "전통 문헌에 임산부 금기로 기재된 약재입니다. 임신 중에는 사용하지 않으며 처방 시 출혈 여부와 병용 약물을 함께 확인해야 합니다.",
+      "description": "귀전우의 전통적 활용은 파혈통경 등으로 설명됩니다. 어혈로 설명되는 정체를 풀고 월경의 흐름이 막힌 양상을 다루는 데 사용해 온 전통 개념입니다. 월경 이상이나 통증의 원인 진단을 대신하지 않습니다."
     },
     "백굴채": {
       "name": "백굴채",
@@ -9489,7 +10123,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": "Chelidonium majus 유래 제품에서 간손상 사례가 보고되어 있습니다. 간질환이나 간손상 병력이 있는 경우 특히 주의가 필요하며, 자가 사용을 위한 약재가 아닙니다."
+      "caution": "Chelidonium majus 유래 제품에서 간손상 사례가 보고되어 있습니다. 간질환이나 간손상 병력이 있는 경우 특히 주의가 필요하며, 자가 사용을 위한 약재가 아닙니다.",
+      "description": "애기똥풀의 전초에 관한 자료입니다. 위장관 불편에 대한 전통적 사용 기록과 간손상 위험 정보를 함께 구분해 안내합니다."
     },
     "곽향": {
       "name": "곽향",
@@ -9515,7 +10150,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": "배초향을 기원으로 하는 곽향 자료입니다. 광곽향은 기원 식물이 다르므로 두 품목을 동일하게 취급하지 않습니다. 열이 강하거나 진액이 부족한 양상에는 적합성 확인이 필요합니다."
+      "caution": "배초향을 기원으로 하는 곽향 자료입니다. 광곽향은 기원 식물이 다르므로 두 품목을 동일하게 취급하지 않습니다. 열이 강하거나 진액이 부족한 양상에는 적합성 확인이 필요합니다.",
+      "description": "배초향을 기원으로 하는 지상부 약재의 자료입니다. 전통적으로 습의 정체와 함께 생기는 소화기 불편에 활용했으며, 광곽향과는 기원 식물이 다릅니다."
     },
     "구절초": {
       "name": "구절초",
@@ -9537,7 +10173,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": "구절초 원물과 특정 추출물·건강기능식품은 구분해야 합니다. 추출물을 대상으로 한 연구 결과를 현재 판매 원물의 치료 효과로 일반화하지 않습니다."
+      "caution": "구절초 원물과 특정 추출물·건강기능식품은 구분해야 합니다. 추출물을 대상으로 한 연구 결과를 현재 판매 원물의 치료 효과로 일반화하지 않습니다.",
+      "description": "구절초의 전통적 활용은 여성의 냉증·월경 불편에 대한 전통적 활용 등으로 설명됩니다. 예로부터 몸이 차다고 설명되는 여성의 불편과 월경이 고르지 않은 양상 등에 사용된 기록이 있습니다. 불임 개선이나 호르몬 조절 효과가 임상적으로 입증되었다는 뜻은 아닙니다."
     },
     "등심초": {
       "name": "등심초",
@@ -9559,7 +10196,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": "골풀류 줄기의 속을 사용하는 약재입니다. 문헌상 허한한 상태에서는 적합하지 않을 수 있어 확인이 필요합니다."
+      "caution": "골풀류 줄기의 속을 사용하는 약재입니다. 문헌상 허한한 상태에서는 적합하지 않을 수 있어 확인이 필요합니다.",
+      "description": "골풀류 줄기의 속을 사용하는 가볍고 섬유성인 약재입니다. 전통적으로 답답한 열감과 소변 배출이 원활하지 않은 양상을 다뤄 왔습니다."
     },
     "박하": {
       "name": "박하",
@@ -9585,7 +10223,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": "박하 지상부에 대한 설명입니다. 박하 정유나 멘톨 단일 성분 제품의 효능·안전성과 동일하게 해석하지 않습니다."
+      "caution": "박하 지상부에 대한 설명입니다. 박하 정유나 멘톨 단일 성분 제품의 효능·안전성과 동일하게 해석하지 않습니다.",
+      "description": "박하의 전통적 활용은 소산풍열 · 이인투진 · 소해간울 등으로 설명됩니다. 풍열에 해당하는 감기 초기의 열감과 머리·목의 불편을 풀어낸다는 전통 용어입니다."
     },
     "부평": {
       "name": "부평",
@@ -9611,7 +10250,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": "기원이 되는 개구리밥류의 확인이 필요합니다. 문헌에서는 기가 허해 저절로 땀이 나는 양상에 주의하도록 설명합니다."
+      "caution": "기원이 되는 개구리밥류의 확인이 필요합니다. 문헌에서는 기가 허해 저절로 땀이 나는 양상에 주의하도록 설명합니다.",
+      "description": "개구리밥류를 사용하는 약재입니다. 전통적으로 몸의 겉에 머문 풍사와 발진, 수분 정체로 설명하는 부기를 다루는 데 활용했습니다."
     },
     "선퇴": {
       "name": "선퇴",
@@ -9637,7 +10277,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": "매미의 탈피각을 사용하는 동물성 약재입니다. 관련 알레르기 병력과 기원·이물 관리 상태를 확인해야 합니다."
+      "caution": "매미의 탈피각을 사용하는 동물성 약재입니다. 관련 알레르기 병력과 기원·이물 관리 상태를 확인해야 합니다.",
+      "description": "매미가 탈피하고 남긴 허물을 사용하는 약재입니다. 전통적으로 풍열과 발진, 경련 양상을 다뤄 온 기록이 있습니다."
     },
     "쇄양": {
       "name": "쇄양",
@@ -9663,7 +10304,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": "보신양이라는 전통 용어를 신장질환 치료나 성기능 개선의 임상적 보장으로 해석하지 않습니다."
+      "caution": "보신양이라는 전통 용어를 신장질환 치료나 성기능 개선의 임상적 보장으로 해석하지 않습니다.",
+      "description": "쇄양의 전통적 활용은 보신양·익정혈 · 양근 · 윤장통변 등으로 설명됩니다. 전통 의학에서 양기와 정혈이 부족하다고 설명되는 허약 양상을 보완한다는 의미입니다."
     },
     "삼백초": {
       "name": "삼백초",
@@ -9689,7 +10331,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": "문헌에서는 비위가 허하고 찬 상태에 주의하도록 설명합니다. 삼백초와 어성초는 별개의 약재입니다."
+      "caution": "문헌에서는 비위가 허하고 찬 상태에 주의하도록 설명합니다. 삼백초와 어성초는 별개의 약재입니다.",
+      "description": "삼백초의 전통적 활용은 청열이수 · 해독소종 · 거담 등으로 설명됩니다. 열과 수습의 정체를 소변으로 풀어낸다고 설명하는 전통적 용도입니다."
     },
     "생지황": {
       "name": "생지황",
@@ -9711,7 +10354,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": "신선한 지황 뿌리에 관한 설명입니다. 건조 지황이나 증숙한 숙지황과 가공 상태 및 전통적 용도를 구분합니다."
+      "caution": "신선한 지황 뿌리에 관한 설명입니다. 건조 지황이나 증숙한 숙지황과 가공 상태 및 전통적 용도를 구분합니다.",
+      "description": "신선한 지황 뿌리를 쓰는 품목입니다. 전통적으로 열감과 진액 부족에 해당하는 양상을 다루며, 건조 지황이나 찌는 가공을 거친 숙지황과 형태·가공 상태를 구분합니다."
     },
     "생강": {
       "name": "생강",
@@ -9737,7 +10381,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": "신선한 생강 뿌리줄기의 설명이며, 말린 건강이나 생강 추출 제제와 구분합니다."
+      "caution": "신선한 생강 뿌리줄기의 설명이며, 말린 건강이나 생강 추출 제제와 구분합니다.",
+      "description": "신선한 생강 뿌리줄기를 사용하는 약재입니다. 전통적으로 몸의 겉에 나타나는 풍한 양상과 차가운 중초의 구역을 다뤄 왔으며, 말린 생강인 건강과 구분합니다."
     },
     "자소엽": {
       "name": "자소엽",
@@ -9759,7 +10404,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": "차즈기류의 잎과 끝가지를 대상으로 한 자료입니다. 자소자(씨)와는 사용하는 부위가 다르며 설명을 혼용하지 않습니다."
+      "caution": "차즈기류의 잎과 끝가지를 대상으로 한 자료입니다. 자소자(씨)와는 사용하는 부위가 다르며 설명을 혼용하지 않습니다.",
+      "description": "차조기류의 잎을 사용하는 약재입니다. 전통적으로 풍한으로 설명하는 초기 감기 양상과 기가 막혀 답답한 중초의 불편에 활용해 왔습니다."
     },
     "어성초": {
       "name": "어성초",
@@ -9785,7 +10431,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": "약모밀을 기원으로 하는 어성초 자료입니다. 전통적 효능이나 실험 결과를 감염증 치료, 암 치료 또는 발모 효과가 확정된 것으로 해석하지 않습니다."
+      "caution": "약모밀을 기원으로 하는 어성초 자료입니다. 전통적 효능이나 실험 결과를 감염증 치료, 암 치료 또는 발모 효과가 확정된 것으로 해석하지 않습니다.",
+      "description": "약모밀을 사용하는 약재입니다. 전통적으로 열독과 종창, 소변이 시원하지 않은 양상에 활용한 기록을 설명합니다."
     },
     "오공": {
       "name": "오공",
@@ -9815,7 +10462,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": "문헌에 유독한 약재로 분류되며 임산부 금기입니다. 일반 식품처럼 임의 사용하지 않으며, 기원과 가공 상태 및 전문가의 처방 판단이 필요합니다."
+      "caution": "문헌에 유독한 약재로 분류되며 임산부 금기입니다. 일반 식품처럼 임의 사용하지 않으며, 기원과 가공 상태 및 전문가의 처방 판단이 필요합니다.",
+      "description": "지네의 몸체를 사용하는 동물성 약재입니다. 전통적으로 경련과 경락의 정체에 관련된 통증 양상에 활용해 왔으며, 독성·기원 확인이 필요한 원료입니다."
     },
     "음양곽": {
       "name": "음양곽",
@@ -9841,7 +10489,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": "전통적 보신장양을 성기능 개선 효과의 보장으로 표현하지 않습니다. 특정 성분·추출물의 연구를 원물 전체의 임상 효과로 일반화하지 않습니다."
+      "caution": "전통적 보신장양을 성기능 개선 효과의 보장으로 표현하지 않습니다. 특정 성분·추출물의 연구를 원물 전체의 임상 효과로 일반화하지 않습니다.",
+      "description": "음양곽류의 잎과 지상부에 관한 자료입니다. 전통적으로 신양의 부족과 근골의 허약, 풍습에 관련된 양상을 다루는 데 활용했습니다."
     },
     "애엽": {
       "name": "애엽",
@@ -9867,7 +10516,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": "약쑥류의 잎과 어린줄기에 대한 설명입니다. 현재 상품의 용도를 뜸 재료나 정유 제품의 사용과 동일하게 해석하지 않습니다."
+      "caution": "약쑥류의 잎과 어린줄기에 대한 설명입니다. 현재 상품의 용도를 뜸 재료나 정유 제품의 사용과 동일하게 해석하지 않습니다.",
+      "description": "약쑥류의 잎과 어린 줄기에 관한 자료입니다. 전통적으로 차가운 경맥과 관련된 출혈·통증 양상에 활용하며, 뜸 재료와 실제 판매 원물의 규격은 구분합니다."
     },
     "왕불류행": {
       "name": "왕불류행",
@@ -9889,7 +10539,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": "국내 장구채류의 지상부와 해외에서 왕불류행으로 유통되는 종자 약재를 구분해야 합니다. 공급 제품의 기원·사용 부위를 우선 확인합니다."
+      "caution": "국내 장구채류의 지상부와 해외에서 왕불류행으로 유통되는 종자 약재를 구분해야 합니다. 공급 제품의 기원·사용 부위를 우선 확인합니다.",
+      "description": "이름이 같은 원료라도 국내 장구채류의 지상부와 해외에서 유통되는 종자 약재는 사용 부위가 다릅니다. 현재 상품의 기원·부위를 확인해 해당 전통 자료를 해석해야 합니다."
     },
     "익모초": {
       "name": "익모초",
@@ -9915,7 +10566,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": "익모초 지상부와 씨인 충울자는 구분합니다. 임신·출혈 관련 상태에서는 자가 사용하지 않고 전문가의 판단을 받아야 합니다."
+      "caution": "익모초 지상부와 씨인 충울자는 구분합니다. 임신·출혈 관련 상태에서는 자가 사용하지 않고 전문가의 판단을 받아야 합니다.",
+      "description": "익모초의 지상부를 사용하는 약재입니다. 전통적으로 혈의 정체와 월경 관련 불편, 소변을 통한 수분 배출이 원활하지 않은 양상에 활용해 왔습니다."
     },
     "인삼": {
       "name": "인삼",
@@ -9949,7 +10601,8 @@
         }
       ],
       "kind": "traditional",
-      "caution": "저온건조는 상품의 가공 표기이며 별도의 우수한 효능을 입증하는 표시가 아닙니다. 약물 치료 중인 경우 인삼과의 상호작용 여부를 확인해야 합니다."
+      "caution": "저온건조는 상품의 가공 표기이며 별도의 우수한 효능을 입증하는 표시가 아닙니다. 약물 치료 중인 경우 인삼과의 상호작용 여부를 확인해야 합니다.",
+      "description": "인삼의 뿌리를 사용하는 약재입니다. 전통적으로 원기와 비·폐의 기가 부족한 허약 양상, 진액 부족에 관련된 건조함에 활용한 기록이 있습니다."
     },
     "형개": {
       "name": "형개",
@@ -9971,7 +10624,8 @@
           "url": "https://m.kmcric.com/database/view_herb/database_herb/59061"
         }
       ],
-      "caution": "출처는 형개 꽃이삭에 관한 자료입니다. 상품의 사용 부위를 확인해야 하며, 초탄한 형개의 지혈 용도를 원물에 그대로 적용하지 않습니다."
+      "caution": "출처는 형개 꽃이삭에 관한 자료입니다. 상품의 사용 부위를 확인해야 하며, 초탄한 형개의 지혈 용도를 원물에 그대로 적용하지 않습니다.",
+      "description": "형개류의 지상부와 꽃이삭에 관한 자료입니다. 전통적으로 몸의 겉에 나타나는 풍사와 발진 양상을 다루며, 꽃이삭을 구분한 상품은 형개/수로 표시합니다."
     },
     "포공영": {
       "name": "포공영",
@@ -10001,7 +10655,8 @@
           "url": "https://health.kr/researchInfo/herbalMedicine1_detail.asp?idx=361"
         }
       ],
-      "caution": "민들레류 전초의 전통적 용도입니다. 감염이나 배뇨 장애의 원인 진단을 대신하지 않습니다."
+      "caution": "민들레류 전초의 전통적 용도입니다. 감염이나 배뇨 장애의 원인 진단을 대신하지 않습니다.",
+      "description": "포공영의 전통적 활용은 청열해독 · 소종산결 · 이뇨통림 등으로 설명됩니다. 열독으로 설명하는 붉고 열감이 있는 양상을 다뤄 온 전통적 용도입니다."
     },
     "희렴": {
       "name": "희렴",
@@ -10031,7 +10686,8 @@
           "url": "https://koreantk.com/ktkp2014/medicine/medicine-view.view?medCd=M0004484&tempLang=ko"
         }
       ],
-      "caution": "진득찰류의 전통 문헌 자료입니다. 농산물 표기 상품을 규격 한약재나 특정 가공품과 동일하게 해석하지 않습니다."
+      "caution": "진득찰류의 전통 문헌 자료입니다. 농산물 표기 상품을 규격 한약재나 특정 가공품과 동일하게 해석하지 않습니다.",
+      "description": "희렴의 전통적 활용은 거풍습 · 이관절 · 청열해독·소종 등으로 설명됩니다. 풍습으로 설명하는 관절의 무거움, 저림, 뻣뻣함에 활용해 온 전통 개념입니다."
     },
     "자단향": {
       "name": "자단향",
@@ -10057,7 +10713,8 @@
           "url": "https://nifds.go.kr/nhmi/download.do?flgrpNo=573&sn=1"
         }
       ],
-      "caution": "자단나무 심재에 관한 자료입니다. 백단향 등 이름이 비슷한 다른 약재와 기원을 구분합니다."
+      "caution": "자단나무 심재에 관한 자료입니다. 백단향 등 이름이 비슷한 다른 약재와 기원을 구분합니다.",
+      "description": "자단나무의 심재를 사용하는 약재입니다. 전통적으로 혈의 정체와 외상 뒤 붓기·통증 양상을 다룬 기록이 있으며, 백단향 등과 기원을 구분합니다."
     },
     "죽여": {
       "name": "죽여",
@@ -10083,7 +10740,8 @@
           "url": "https://health.kr/researchInfo/herbalMedicine1_detail.asp?idx=444"
         }
       ],
-      "caution": "대나무 줄기의 속층을 긁어낸 약재의 자료입니다. 대나무 잎을 쓰는 죽엽과 사용 부위가 다릅니다."
+      "caution": "대나무 줄기의 속층을 긁어낸 약재의 자료입니다. 대나무 잎을 쓰는 죽엽과 사용 부위가 다릅니다.",
+      "description": "대나무 줄기의 속층을 긁어 얻는 가는 섬유성 약재입니다. 전통적으로 열과 담이 함께 나타나는 답답함과 구역 양상에 활용했으며, 대나무 잎인 죽엽과 구분합니다."
     },
     "흑지마": {
       "name": "흑지마",
@@ -10109,7 +10767,9 @@
           "url": "https://koreantk.com/ktkp2014/medicine/medicine-view.view?medCd=M0002629&tempLang=ko"
         }
       ],
-      "caution": "검은 참깨에 관한 전통 자료입니다. 농산물의 치료 효과를 보장하지 않으며 참깨 알레르기가 있는 경우 주의가 필요합니다."
+      "caution": "검은 참깨에 관한 전통 자료입니다. 농산물의 치료 효과를 보장하지 않으며 참깨 알레르기가 있는 경우 주의가 필요합니다.",
+      "description": "검은 참깨의 씨에 관한 전통 본초 자료입니다. 기름기가 있는 씨앗의 특성과 관련해 정혈의 부족과 장의 건조 양상에 활용한 기록을 설명합니다."
     }
-  }
+  },
+  "updatedAt": "2026-11-11"
 }
