@@ -8,7 +8,7 @@ export default function ProductImage({ src, name }) {
   const visible = Boolean(src) && !failed;
   const reference = src?.startsWith("/products-reference/");
   const localPhoto = reference || src?.startsWith("/products/");
-  const imageSrc = localPhoto ? `${src}${src.includes("?") ? "&" : "?"}photo=linen-20261116-v1` : src;
+  const imageSrc = localPhoto ? `${src}${src.includes("?") ? "&" : "?"}photo=linen-20261116-v2` : src;
   return <div className="productPhoto">
     {visible ? <img src={imageSrc} alt={`${name} ${reference ? "AI 참고 이미지" : "상품 사진"}`} loading="lazy" decoding="async" onError={() => setFailed(true)} /> : <span className="productPhotoPlaceholder">{name?.slice(0, 1) || "약"}</span>}
     {visible && <img className="productBrandLogo" src="/logo-hq.png" alt="" aria-hidden="true" decoding="async" />}

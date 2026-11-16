@@ -1,8 +1,9 @@
 {
   "updatedAt": "2026-11-16",
-  "complete": false,
-  "generatedCount": 108,
-  "pendingCount": 221,
+  "reference": "/products-reference/uniform-20261029/herb-003-v2.webp",
+  "complete": true,
+  "generatedCount": 329,
+  "pendingCount": 0,
   "style": "Centered ivory porcelain bowl on thin wood slice, warm greige linen, subtle eucalyptus; preserve herb identity and form",
   "logo": {
     "rendering": "ProductImage shared overlay",
@@ -912,8 +913,8 @@
       "productIds": [
         155
       ],
-      "sha256": "b1758efac3dbc6bbc0f484456996dcbe1e1ed1fcfa81c998caf0e4aa2398dd81",
-      "status": "pending-generation"
+      "sha256": "b0e1466db3d1ac9f935740e2aab1514af73ce1fc95bd979fa08f9906d2cb1e5f",
+      "status": "generated"
     },
     {
       "name": "방기",
@@ -993,8 +994,8 @@
       "productIds": [
         166
       ],
-      "sha256": "3c82e76e3fa41e611e52eb76cb25f7898f11ae2233e9918dbc2f93b01ea7a046",
-      "status": "pending-generation"
+      "sha256": "5caa3851ee9a1121663e689438a427fa0a2cf47f795ff97560e47950d503c8cc",
+      "status": "generated"
     },
     {
       "name": "백부자/정품/관백부",
@@ -1011,8 +1012,8 @@
       "productIds": [
         168
       ],
-      "sha256": "eb587c58adc616ab2dd2430b2f48a5c5f61bd27cf004f6885e389f5b27321bd1",
-      "status": "pending-generation"
+      "sha256": "4f7e553f88437c2ca72c5e407bb5fe9bd40b44772e9725cb51dd027c38f9f28c",
+      "status": "generated"
     },
     {
       "name": "백수오",
@@ -1020,8 +1021,8 @@
       "productIds": [
         169
       ],
-      "sha256": "14d342a3f0e991fc7982cf22cbde610e04c7b9b0f2cad79de097b8fe3b98a927",
-      "status": "pending-generation"
+      "sha256": "df481e8f84f4ae8ead64a2e0ccf9da466273e63a448e03541ff16b39c16c0066",
+      "status": "generated"
     },
     {
       "name": "백자인",
@@ -1029,8 +1030,8 @@
       "productIds": [
         170
       ],
-      "sha256": "49e28dc4a28bab05f59c64148408eb3db232555b07ac1ddf7188c11879dc2253",
-      "status": "pending-generation"
+      "sha256": "8abe1e7e04b71b01a83f75d8ef4717cef4009338e9e231f6a4c41136f3ace5ea",
+      "status": "generated"
     },
     {
       "name": "백지",
@@ -1039,8 +1040,8 @@
         171,
         172
       ],
-      "sha256": "6375975c568ce996f2792ca3bb9af48cfdfeec580b560f5e70ba751f60718fba",
-      "status": "pending-generation"
+      "sha256": "1a6e7d33a05d7b3d940ecdb5f2bb5fa27e5d3e2472e3a35f91dea02e51d8a799",
+      "status": "generated"
     },
     {
       "name": "백출",
@@ -1066,8 +1067,8 @@
       "productIds": [
         175
       ],
-      "sha256": "5d52f254f3cce28bf35cbc3d2ff28488184c62dd4f4c206f45cd7995cafb0420",
-      "status": "pending-generation"
+      "sha256": "2d78823d63f95fe29e8f75cf2cab13ed2217e7d4b1a4310c6028771a3d10d29c",
+      "status": "generated"
     },
     {
       "name": "백출초",
@@ -1075,8 +1076,8 @@
       "productIds": [
         176
       ],
-      "sha256": "29c29c97d3621b01ebc258ebb542b86144ab238a6925c15e6fe691d0c9950069",
-      "status": "pending-generation"
+      "sha256": "de603879935c56bcb70b3a55a25a4cfc17a016ee8b016a93387b95883df97976",
+      "status": "generated"
     },
     {
       "name": "백출/황토",
@@ -1084,8 +1085,8 @@
       "productIds": [
         177
       ],
-      "sha256": "34cd745f5b49284d59a502849e8cacb9cb77bd8347b061180bdf1cf89b05874e",
-      "status": "pending-generation"
+      "sha256": "02ec0eec7eef1aff26c8023e700d2e0ad878e32729fa30d7bf258968d02e42e1",
+      "status": "generated"
     },
     {
       "name": "백출/미감침",
@@ -1093,8 +1094,8 @@
       "productIds": [
         178
       ],
-      "sha256": "bafad1a824e62c76ee4a6e9c94e0aa435fbd8307df4a9c3d2fc59d42442357ee",
-      "status": "pending-generation"
+      "sha256": "190ac4643d8c25e58a757445957b502b936c7a2dedf0d5f0e7e02bb251306aff",
+      "status": "generated"
     },
     {
       "name": "백편두/추말",
@@ -1102,8 +1103,8 @@
       "productIds": [
         179
       ],
-      "sha256": "7c3af5bfc6ae5b3378e4a1a2680c4e62eafff42d84c52456300614c9d3935946",
-      "status": "pending-generation"
+      "sha256": "19eb3d922241398d11d6a36a327464867d5c611411c2814d07af929625f5ca4d",
+      "status": "generated"
     },
     {
       "name": "백합",
@@ -1111,8 +1112,8 @@
       "productIds": [
         181
       ],
-      "sha256": "996b6ef34755253c277ab8c7b377b5a81c684bec4fd7548acc57ace9cab00d1f",
-      "status": "pending-generation"
+      "sha256": "08a9636e384edf7caae9679b13cbd081254008ab49e7f5c566468601b8894350",
+      "status": "generated"
     },
     {
       "name": "별갑",
@@ -1120,8 +1121,8 @@
       "productIds": [
         182
       ],
-      "sha256": "d3b99c9c1f23c8a744196c5fc9f79b62d6d0d4ce8c982bc3517d94cdfdd297c1",
-      "status": "pending-generation"
+      "sha256": "ce9f93306f2fca0a21f795ae89e26250f922a08c87f5bb5794c0422325f5e1c4",
+      "status": "generated"
     },
     {
       "name": "보골지/염자",
@@ -1130,8 +1131,8 @@
         185,
         186
       ],
-      "sha256": "3e8c4a08b18a40dc0436f3da94237dc3c2a8385617f0546835dcd3dc066159e1",
-      "status": "pending-generation"
+      "sha256": "47ee1dfcdce9cc17dcaf3a46df9cfdd59e67502beeba699949119d6a17857b57",
+      "status": "generated"
     },
     {
       "name": "복령/야생",
@@ -1139,8 +1140,8 @@
       "productIds": [
         187
       ],
-      "sha256": "227a5d8e20efcdf13de711a9e151f448f84d35d3f81067d4c08afa462d426074",
-      "status": "pending-generation"
+      "sha256": "257f679a4c32dfaea25eb3d01ee874bc13b33011eb76bdd37ba0d0274c362e74",
+      "status": "generated"
     },
     {
       "name": "복령",
@@ -1148,8 +1149,8 @@
       "productIds": [
         188
       ],
-      "sha256": "a49ca26e5bcf7b2665c1ad787e566d3af5710b322719b52664165e59b5812f20",
-      "status": "pending-generation"
+      "sha256": "1a6349837667365ac64322d6ed287447acc4aeb40dd02cfcf8f78e49f5798e2a",
+      "status": "generated"
     },
     {
       "name": "복령/신",
@@ -1157,8 +1158,8 @@
       "productIds": [
         189
       ],
-      "sha256": "75935603d4bdbf0b9160c9c4ed269b70bdc3f9a1b76c74c9eddc6df45a98b281",
-      "status": "pending-generation"
+      "sha256": "d2b21ff95e938556375e9779664488bb0aaeabcf1112e7f0ca5b4672ebeeea73",
+      "status": "generated"
     },
     {
       "name": "복령/적",
@@ -1166,8 +1167,8 @@
       "productIds": [
         190
       ],
-      "sha256": "b6d46d93e5956475a7a1c5a8d768d369a0543edbeee2b43aac139720e96bb8bc",
-      "status": "pending-generation"
+      "sha256": "9749b3d7f103259f443b7d4fdc5f246bcc045bb25e18256c18d6b896d888388e",
+      "status": "generated"
     },
     {
       "name": "복령/칼",
@@ -1175,8 +1176,8 @@
       "productIds": [
         192
       ],
-      "sha256": "e9e19a4036b9f96e8d90e634a651aa1b6bd722b099cd1a9e8401988984df3771",
-      "status": "pending-generation"
+      "sha256": "205506c2c252b415e1f614854f71dcf9ab1bd5cf63975e14472fe976b5c346c6",
+      "status": "generated"
     },
     {
       "name": "복령피",
@@ -1184,8 +1185,8 @@
       "productIds": [
         193
       ],
-      "sha256": "785291e7b899b43bb5eade32f18da3104bacab4fffc3e4d175a85707b50754b3",
-      "status": "pending-generation"
+      "sha256": "a3c37c668f616854b88a26977616523a9109a0c09f973db0a5dee2bf634e852e",
+      "status": "generated"
     },
     {
       "name": "복분자",
@@ -1193,8 +1194,8 @@
       "productIds": [
         194
       ],
-      "sha256": "8d214a94f6bf8ba7ba050ee78f1d4dd99f1aeb6aaeccb6fdf31e4db0ab1a73b3",
-      "status": "pending-generation"
+      "sha256": "ee79bb9019a2465d3fed0b9812a9cdac68d1637e3d42d2711a6cfc9abf99dbd6",
+      "status": "generated"
     },
     {
       "name": "부자/경포",
@@ -1202,8 +1203,8 @@
       "productIds": [
         195
       ],
-      "sha256": "6c5427fdce12e2c493ca202aacfff1a36a00624bb0538f05d91d27b8590767fc",
-      "status": "pending-generation"
+      "sha256": "3a500395fb8edfbae112f9498f991e310486def3268ad4a28f89513c05b7b641",
+      "status": "generated"
     },
     {
       "name": "부자/포",
@@ -1211,8 +1212,8 @@
       "productIds": [
         196
       ],
-      "sha256": "203e76f3692a044fbd7aa6685e7e1122072bfce5c00d4d902e11defbf3fc7986",
-      "status": "pending-generation"
+      "sha256": "523fd2eedfcb8b9f395980d32d329b93575892c933ac31579772fcaba5c2cc2b",
+      "status": "generated"
     },
     {
       "name": "비해",
@@ -1220,8 +1221,8 @@
       "productIds": [
         197
       ],
-      "sha256": "bb40eab7f592edbb4f28bbbece384413cf87fd1bbd47bf2b194e778ce9f77509",
-      "status": "pending-generation"
+      "sha256": "64ba442d87941eb30af13d1aca1fce756e9d39df46768391390c7337bfd8b895",
+      "status": "generated"
     },
     {
       "name": "빈랑자",
@@ -1229,8 +1230,8 @@
       "productIds": [
         198
       ],
-      "sha256": "28714caa21d61404cd3f9210edbf299e1aad144fa9b01b627fbd006b7027564d",
-      "status": "pending-generation"
+      "sha256": "200a3758ce4a8f6de009e4b1c02f49d137ba7fd232c1ed94bb6d8b14e2779540",
+      "status": "generated"
     },
     {
       "name": "사간",
@@ -1238,8 +1239,8 @@
       "productIds": [
         199
       ],
-      "sha256": "8accbf4edc4411717cf9589a735ec9202431ee7fee432f15725ac7cc62e22f24",
-      "status": "pending-generation"
+      "sha256": "4cd8737851a9daee5099ad6039b9c05fb531ac8553e700484297b109dd7637cc",
+      "status": "generated"
     },
     {
       "name": "사삼",
@@ -1247,8 +1248,8 @@
       "productIds": [
         200
       ],
-      "sha256": "bc84b86f5c8d26c4ce86f0e2cc3c999e685fe07ad45c0a7e8ba8bf20ec6b5a53",
-      "status": "pending-generation"
+      "sha256": "40329ccf40865d9d37bedbbecbe1b7c35458038ddc8b7a2ba851cd226634cca9",
+      "status": "generated"
     },
     {
       "name": "사상자",
@@ -1256,8 +1257,8 @@
       "productIds": [
         201
       ],
-      "sha256": "5360524291247eb44f5cd26057b90f9a9d57bb42a409a0d26304ac9718ca9691",
-      "status": "pending-generation"
+      "sha256": "33a730802da3c53db8ffead6a716260145f597ed398f14786a0eb8b2bb7a6dea",
+      "status": "generated"
     },
     {
       "name": "사인초/추말",
@@ -1265,8 +1266,8 @@
       "productIds": [
         202
       ],
-      "sha256": "e1916d7ecf0846e2a1fc8dc03f939ca6459da67aa084bc325c2853d118be4cb3",
-      "status": "pending-generation"
+      "sha256": "549f07e16c4610af5ec0bcfc2ece081ddff82ddcc816c64d432d6705adff19f4",
+      "status": "generated"
     },
     {
       "name": "산사",
@@ -1274,8 +1275,8 @@
       "productIds": [
         204
       ],
-      "sha256": "fd403aef1b2605004eb1a765f731cbed32f974eae42e8126803d174246bfbd9e",
-      "status": "pending-generation"
+      "sha256": "1f8f17f70c0dd4d73efde48f92d1d6a5411c1c900ca0412db348cabc0f412a4d",
+      "status": "generated"
     },
     {
       "name": "산사초",
@@ -1283,8 +1284,8 @@
       "productIds": [
         205
       ],
-      "sha256": "e727e555517f5c3a5d1df96a93e82cc5b65b7db6ce16e8226647b93171554162",
-      "status": "pending-generation"
+      "sha256": "f8e3f4b2a5d6c7e9cab5ad88c8be60592ed204366c391e92ee2a0463c7160d03",
+      "status": "generated"
     },
     {
       "name": "산수유/특/손치",
@@ -1293,8 +1294,8 @@
         206,
         207
       ],
-      "sha256": "37fa9a637198001915e0a9d74e403385f1d8c920f9791b68fdaae4126f5ed081",
-      "status": "pending-generation"
+      "sha256": "b3ec301bb6f15c96785fe773fbeafa981590a26b50e2a5ac02b9edab6a8a1bf0",
+      "status": "generated"
     },
     {
       "name": "산약(사각)",
@@ -1302,8 +1303,8 @@
       "productIds": [
         208
       ],
-      "sha256": "8eeb3941b4ecf000eca714581ca4482d30f2f8a1c64105fc034b27c2a487175c",
-      "status": "pending-generation"
+      "sha256": "a3c4c2610dc4fab7f33419b45d0aa284c4d725333afc37938f38c895fb92d8d0",
+      "status": "generated"
     },
     {
       "name": "산약/거피",
@@ -1311,8 +1312,8 @@
       "productIds": [
         209
       ],
-      "sha256": "cb98fe29998b6ce815bd898c29e2098536e0225a42aefc37d4c8036183e4fc76",
-      "status": "pending-generation"
+      "sha256": "6f8df6e341de3a11bf379522cfbab095b24865a118a951cfc7c537f6945dfee9",
+      "status": "generated"
     },
     {
       "name": "산장",
@@ -1320,8 +1321,8 @@
       "productIds": [
         211
       ],
-      "sha256": "f9ff79056aabd9ae27fad2549fd67aec9d4487f5557b644e99e8bc8efd821a48",
-      "status": "pending-generation"
+      "sha256": "02ffb4faf8a4166caada7f4537dbc1af1f1339e4184ee84b2d7378420fcd238a",
+      "status": "generated"
     },
     {
       "name": "산조인/원",
@@ -1329,8 +1330,8 @@
       "productIds": [
         212
       ],
-      "sha256": "07344b58b3f3900c63bc3c3f120693d5d1ad60600da59263ff64d51f047ed3d0",
-      "status": "pending-generation"
+      "sha256": "8fa79bd8a0fb89b2cec2a0e72f12f3170552a9ade123e75cf2d63908ba45feac",
+      "status": "generated"
     },
     {
       "name": "산조인초/원",
@@ -1338,8 +1339,8 @@
       "productIds": [
         213
       ],
-      "sha256": "4261bf51238d75035d7bb24125df1985a85ddb18b73fa190549e364599967c0b",
-      "status": "pending-generation"
+      "sha256": "1fc3dc5bed144d7f507f00371be98b7fc4672231a3fa5da08a5e1171b67f14e1",
+      "status": "generated"
     },
     {
       "name": "산초(천초)",
@@ -1347,8 +1348,8 @@
       "productIds": [
         214
       ],
-      "sha256": "152bcfb2bc93969517458f575cae1f7221acf17384bc9b23bbca6ae178e7f3db",
-      "status": "pending-generation"
+      "sha256": "d8e47cac5c56ee6e438a1f9fefa1d5feebc556cb4987a61a25828d5bd2d4a89b",
+      "status": "generated"
     },
     {
       "name": "삼릉",
@@ -1356,8 +1357,8 @@
       "productIds": [
         215
       ],
-      "sha256": "3092b7547bcafc7c84c9e1ace1bd2bf7a78aa54a5a9f55d2bb6416520f30362f",
-      "status": "pending-generation"
+      "sha256": "6b233d8f53eb6f58b0de25cd723b2f1fdb01a79baf758519adcf3bdfe35422a1",
+      "status": "generated"
     },
     {
       "name": "상기생",
@@ -1365,8 +1366,8 @@
       "productIds": [
         216
       ],
-      "sha256": "6aa8a90836584e4f8686d18028423ebb732e974de4cd436b50efb41fde6a791f",
-      "status": "pending-generation"
+      "sha256": "3e28408648287e6ed28ee81959d500ed6ec592f9e9065d38b5339e98ac3c61ce",
+      "status": "generated"
     },
     {
       "name": "상백피/거피",
@@ -1374,8 +1375,8 @@
       "productIds": [
         217
       ],
-      "sha256": "aa1c5f6d10bdbf9bcf14c2a8517903998351cc6876354dc7f223c09c85a9df38",
-      "status": "pending-generation"
+      "sha256": "22154d9b540251deecda2d8bb3993eaf101bd5b80eeab8b1b7dbe52e67e58b32",
+      "status": "generated"
     },
     {
       "name": "상백피",
@@ -1383,8 +1384,8 @@
       "productIds": [
         218
       ],
-      "sha256": "978e5a773d348ee71e05f95b48839e5d657937659d029479b51dfe50df511916",
-      "status": "pending-generation"
+      "sha256": "df27dd8485a4d42a5cdf1ea94b3e0e1a5d7abc4641c3371c282bae70d0d6a966",
+      "status": "generated"
     },
     {
       "name": "상백피/유피",
@@ -1392,8 +1393,8 @@
       "productIds": [
         219
       ],
-      "sha256": "528c3383e582a83a647b59b411db3d2568a976bed45a8db5e18e58c9be78f108",
-      "status": "pending-generation"
+      "sha256": "701d93cf189c94b5b79c8ab0a0c4bd1f1b14f666e4f6d018562806c9817f3ca7",
+      "status": "generated"
     },
     {
       "name": "상심자",
@@ -1401,8 +1402,8 @@
       "productIds": [
         220
       ],
-      "sha256": "e8b6a07a71e5f065721021d2d02d41df3b70a88f3f562983e32e106143d18dba",
-      "status": "pending-generation"
+      "sha256": "2ce12e8434779579a68a94db40c498149bff697b4a108e1850e981d213f26ed8",
+      "status": "generated"
     },
     {
       "name": "상지",
@@ -1410,8 +1411,8 @@
       "productIds": [
         221
       ],
-      "sha256": "7b96be56e44d02947511ef787e71818a22aa98f0fbfdc8ffea75b4bf02a0171e",
-      "status": "pending-generation"
+      "sha256": "f70e6115e36427e8a7206403615aae460ee6a08dca4f1789c1c9b38d41632c32",
+      "status": "generated"
     },
     {
       "name": "상황버섯",
@@ -1419,8 +1420,8 @@
       "productIds": [
         223
       ],
-      "sha256": "ea0de6f28814a6830c21d5c52fd090162c7d27da845d6d725a8b4a9c0264534b",
-      "status": "pending-generation"
+      "sha256": "edbc10eb21302d12481ede104f5263f7b4827952090e0dddc8f79bf408b278eb",
+      "status": "generated"
     },
     {
       "name": "서장경",
@@ -1428,8 +1429,8 @@
       "productIds": [
         224
       ],
-      "sha256": "fb28e565de9a97097ca04257342cd1a74fd22ffa4d87924976c581e0e2313ea7",
-      "status": "pending-generation"
+      "sha256": "cb5d5aeeb9c3da7bca6d9629182f2e3231e363731dd21c8e23c7a8eccf3ed587",
+      "status": "generated"
     },
     {
       "name": "석결명/가루",
@@ -1437,8 +1438,8 @@
       "productIds": [
         225
       ],
-      "sha256": "9e14a98b019392064c2a20b5f72a171ff156b8ba00ea0fb3030a17f3331e6f6e",
-      "status": "pending-generation"
+      "sha256": "7bdc5d69db77afde6020c04a7a30dfd7ead8a8bd1aafb66091e59d26c585b4ec",
+      "status": "generated"
     },
     {
       "name": "석고/가루",
@@ -1446,8 +1447,8 @@
       "productIds": [
         226
       ],
-      "sha256": "40f49d8353c6b385d8d7a36f31810fc823521193303182314c2df8b9268a7b6a",
-      "status": "pending-generation"
+      "sha256": "c4dd3af053876973793ad39eafd3e9a59d78863aee8abc5f1e6d9bcabc6c4169",
+      "status": "generated"
     },
     {
       "name": "석곡",
@@ -1455,8 +1456,8 @@
       "productIds": [
         227
       ],
-      "sha256": "9df1b830d4bd03ab8f9c5e1b507acee9922956d2472ff2490b2f01a29869fae5",
-      "status": "pending-generation"
+      "sha256": "ae6fc9243fa2685e45b191358f046a0b3f3a5a65ab2993ed57677c0be7b8fcfa",
+      "status": "generated"
     },
     {
       "name": "석창포",
@@ -1464,8 +1465,8 @@
       "productIds": [
         228
       ],
-      "sha256": "bffee857e2e33a1ce6a8ad7497906fd9ac23ee9111605c60b33ddda4189953a8",
-      "status": "pending-generation"
+      "sha256": "0fedbe874a41ee6868dac9ddc9b19620d54c0cdb3aa73f7aa61b8ba71b981a72",
+      "status": "generated"
     },
     {
       "name": "선복화",
@@ -1473,8 +1474,8 @@
       "productIds": [
         229
       ],
-      "sha256": "33f0c705cbafb55cd23db135184d3bbcc1c52f11eb1d7c54960ddaa9be8e9598",
-      "status": "pending-generation"
+      "sha256": "768b7d63b59d16694700f15514f07eee852f499a4950957a1b536963ff951ece",
+      "status": "generated"
     },
     {
       "name": "세신",
@@ -1482,8 +1483,8 @@
       "productIds": [
         230
       ],
-      "sha256": "ddbb97b0580078cd324cdbf10f772fb27abd34e6e00da80c1f8d3df68fe04cd5",
-      "status": "pending-generation"
+      "sha256": "159ee8db4728e7372ccd57a768c732f35f6c34ebf67ec315181ec82f184a4ea8",
+      "status": "generated"
     },
     {
       "name": "센나엽",
@@ -1491,8 +1492,8 @@
       "productIds": [
         231
       ],
-      "sha256": "239002524c20d17b17f209450837c945d5cda5b1dbd9a6760aee856d098d6172",
-      "status": "pending-generation"
+      "sha256": "8077d8a48dab77bd6920a30d79a42ee106135ba18a1b2c4f42edf422751befaf",
+      "status": "generated"
     },
     {
       "name": "소목",
@@ -1500,8 +1501,8 @@
       "productIds": [
         232
       ],
-      "sha256": "fe312ddb21ec8461bb23582d25137b48874a37cdc58ea149a94ddbb7e7462227",
-      "status": "pending-generation"
+      "sha256": "084e55365f807d2af979c8a860eb1932c309592b1a6ef5438369c2a79ac04150",
+      "status": "generated"
     },
     {
       "name": "속단",
@@ -1509,8 +1510,8 @@
       "productIds": [
         234
       ],
-      "sha256": "17fe01566be85c1ea84f3a89466ae10887da96eedf3f0b2a00e45215400118b3",
-      "status": "pending-generation"
+      "sha256": "6fca2839611e64cb34b17931319d1200fca0dc2a8aba23d18da1c164c84b5f85",
+      "status": "generated"
     },
     {
       "name": "송엽",
@@ -1518,8 +1519,8 @@
       "productIds": [
         235
       ],
-      "sha256": "78a1cdfd24502817f76dd56adbc767cd1c9df8bc75e490fcc5d19453c57a2e38",
-      "status": "pending-generation"
+      "sha256": "28a1f69884990479c10897df84a512504ddd06fac778c3b66eabea054971320c",
+      "status": "generated"
     },
     {
       "name": "송절",
@@ -1527,8 +1528,8 @@
       "productIds": [
         236
       ],
-      "sha256": "e5b409ffec0c2c9c59bda194256c140b618c2b5bd732d23acbf10b72ed81ec98",
-      "status": "pending-generation"
+      "sha256": "15f49cd6588b7377029734df50a8a041ecd33c82fc6049087a91cd2e319c97c9",
+      "status": "generated"
     },
     {
       "name": "송화분",
@@ -1536,8 +1537,8 @@
       "productIds": [
         237
       ],
-      "sha256": "f244092a3e4ceb7ba76a8a24ba7d7c1d35438e642832ae3d044b798768f93bf7",
-      "status": "pending-generation"
+      "sha256": "996c8c379b01103071590653d0e930f533bba5b7b63e0867f84f3a3de39297d5",
+      "status": "generated"
     },
     {
       "name": "사과락",
@@ -1545,8 +1546,8 @@
       "productIds": [
         238
       ],
-      "sha256": "69cb257219a8f15dbb94be7e18eaa95e6fbd96d86e9f68a02f2e4c68a56d40c3",
-      "status": "pending-generation"
+      "sha256": "d380f947d89093ebfd34476f19fda46d7fb095d66875ff25c9d9d880eed411f9",
+      "status": "generated"
     },
     {
       "name": "수오등",
@@ -1554,8 +1555,8 @@
       "productIds": [
         239
       ],
-      "sha256": "3d7d313b1599a2868d58137fd6b1bd73c59cb3aa3a1ab838d642966218b2a794",
-      "status": "pending-generation"
+      "sha256": "770cf7bcc8165716b2830f019963b603dc49a6ec0d0f148328be252f6ac2c267",
+      "status": "generated"
     },
     {
       "name": "승마",
@@ -1563,8 +1564,8 @@
       "productIds": [
         243
       ],
-      "sha256": "bc2ec47390733f69802182fb3094e6c87b4ca8d2e26fe5167a391fa4fddc0853",
-      "status": "pending-generation"
+      "sha256": "ae1f26c47abff6e6b9c5e4134107b54c9476079da90faef454e5b2ff8f5d5dd1",
+      "status": "generated"
     },
     {
       "name": "시호/은",
@@ -1572,8 +1573,8 @@
       "productIds": [
         245
       ],
-      "sha256": "67d25480cafcb4f57334ec0eca5734a611d6c2d5572968150697742ef70d8620",
-      "status": "pending-generation"
+      "sha256": "813b0e40c9bd15dcc498ce13022ad1479b1c5509197e6d66dfcc3e6af93875b6",
+      "status": "generated"
     },
     {
       "name": "시호/서장",
@@ -1581,8 +1582,8 @@
       "productIds": [
         246
       ],
-      "sha256": "f42c1312d6026d4c80b400e616be195d09ab6990c4a605e1774b2827120fe45c",
-      "status": "pending-generation"
+      "sha256": "fc6940c19e5049ab2480b34e3da702ce91f8ce1eb7f7528b2b591b30bd45948c",
+      "status": "generated"
     },
     {
       "name": "신곡초",
@@ -1590,8 +1591,8 @@
       "productIds": [
         248
       ],
-      "sha256": "c1a497afd355e2457e0562b1a6b40669525b6208a411d6742da207a45e303809",
-      "status": "pending-generation"
+      "sha256": "970f7076b77fa7e2a8e9eb0fc7b5bb39fb73dc4c7582ae019b4303ac80349247",
+      "status": "generated"
     },
     {
       "name": "신이",
@@ -1599,8 +1600,8 @@
       "productIds": [
         249
       ],
-      "sha256": "acbfcb16e080f8abb02ca3722c22a86065bdd05d6d4267656d215882f5e9484f",
-      "status": "pending-generation"
+      "sha256": "f9e9a1f2414728ee39d58f281c730b11157c75e5a2180421790a331e2a63d680",
+      "status": "generated"
     },
     {
       "name": "아교",
@@ -1608,8 +1609,8 @@
       "productIds": [
         250
       ],
-      "sha256": "b4fdcbcfc9826fecf0d72f30a1f4f7b561c565503d9d641e1485e8773ac3c48b",
-      "status": "pending-generation"
+      "sha256": "dbd9eaacbe210c834456ab378ad5cfd6250e4fd7ce1e357204de9b5eac4f5273",
+      "status": "generated"
     },
     {
       "name": "아출(봉출)",
@@ -1617,8 +1618,8 @@
       "productIds": [
         253
       ],
-      "sha256": "15034ab555540ae3db4746c66028c212e7a308baceba751d32240f7f7e618027",
-      "status": "pending-generation"
+      "sha256": "35166c1c719775caa3d68fb082995e92a6571390a2b6015dac47591aa9b5ee35",
+      "status": "generated"
     },
     {
       "name": "여정실",
@@ -1626,8 +1627,8 @@
       "productIds": [
         254
       ],
-      "sha256": "cc747ea31750f7dca8d58148664a7b824e6fa84ec6be3478d2e10746f636db7d",
-      "status": "pending-generation"
+      "sha256": "a0bcd7f7591dd85620c1d5056ab3860d2a5a82d321446800cdf5ffe971d5cde9",
+      "status": "generated"
     },
     {
       "name": "여정실/주증",
@@ -1635,8 +1636,8 @@
       "productIds": [
         255
       ],
-      "sha256": "ac30f5aaa2c5a920f971b7a33c415e49b25a29ef2f444af6e5900fc9bb49eac1",
-      "status": "pending-generation"
+      "sha256": "02de1d87ef04f17ec42ba21a46ded03ed6f7c202e801efe1baee7c39bf0f894a",
+      "status": "generated"
     },
     {
       "name": "연자육",
@@ -1644,8 +1645,8 @@
       "productIds": [
         257
       ],
-      "sha256": "68ce42eee653f306004f334629307ebdfae5eb21e8f2e2fd109262919300d52a",
-      "status": "pending-generation"
+      "sha256": "6ee1e1a5544bf8e4c042f18ed65b15aeaa92157e76556ccebde04706c0208921",
+      "status": "generated"
     },
     {
       "name": "영지버섯",
@@ -1653,8 +1654,8 @@
       "productIds": [
         258
       ],
-      "sha256": "d19fefbd47ce6e865abb5363875edadb35e066df823b7223ef094c08cccf26cc",
-      "status": "pending-generation"
+      "sha256": "cf3d17cf895b7d6e99d2f73061491422b79e38712f46de2d18e15a256c674de1",
+      "status": "generated"
     },
     {
       "name": "오가피",
@@ -1662,8 +1663,8 @@
       "productIds": [
         259
       ],
-      "sha256": "fb447320cda54d0de8672839092291e1f076d4bd4e3fa0aecb6d2d63aad59eac",
-      "status": "pending-generation"
+      "sha256": "1ddeb229060ebaad434013c8535fa8b83cdf04f5768396fbe145aca0a0f4c0fd",
+      "status": "generated"
     },
     {
       "name": "오가피/거피/정품",
@@ -1671,8 +1672,8 @@
       "productIds": [
         260
       ],
-      "sha256": "cc006f2c44a3ab4a44feefba7aa890d644a56ac6fc29ef030a1a1d2fcea1f2ab",
-      "status": "pending-generation"
+      "sha256": "aa9c81a1d371fc82928ba3dfe9fbe8f8f890a8c1fbb82e5d258851e976c2b323",
+      "status": "generated"
     },
     {
       "name": "오령지",
@@ -1680,8 +1681,8 @@
       "productIds": [
         261
       ],
-      "sha256": "4a0e7db5472e9a71cb52b16b36e5978370d108c9690f0cc0b1acc664216c83c8",
-      "status": "pending-generation"
+      "sha256": "cd9bbcd4455b516932d53ed9c9f349008969ef3f3fee2c4dd538ef8e82eb872d",
+      "status": "generated"
     },
     {
       "name": "오미자/무농약",
@@ -1690,8 +1691,8 @@
         263,
         264
       ],
-      "sha256": "194b141644cf3d7303b106bab144840e19ec567bb7d552c9002e8ee212b45716",
-      "status": "pending-generation"
+      "sha256": "5d899c81a84c12f67e7f30db9f248160ba70e4e1ba33e2125445c4a0323aa27a",
+      "status": "generated"
     },
     {
       "name": "오수유",
@@ -1699,8 +1700,8 @@
       "productIds": [
         265
       ],
-      "sha256": "7b052e676b2072e78e4369c7262c8de730c919e80ce0f9db69bbbeee48ae3fba",
-      "status": "pending-generation"
+      "sha256": "bd6aac17968efa37655750d43f61c0e94bcfeb16522acbfc4810ae40ac4e80ff",
+      "status": "generated"
     },
     {
       "name": "오약",
@@ -1708,8 +1709,8 @@
       "productIds": [
         266
       ],
-      "sha256": "7b6b639156d277eb979533aa73b78f253644bb740136e0b56949f44661e52bf8",
-      "status": "pending-generation"
+      "sha256": "d6caf0c23d342fe04de68ad3730f0f514dc02d0c80118988bb930dc544caccfd",
+      "status": "generated"
     },
     {
       "name": "용골",
@@ -1717,8 +1718,8 @@
       "productIds": [
         267
       ],
-      "sha256": "bfa2cd74603d0c6cbfa3616c9c5a9910a85c0530155f8210a7ac802ff916ddfc",
-      "status": "pending-generation"
+      "sha256": "ae5097b1dfdda5fb1dc52b33cab7cbbb1e713c859160e8e72a7b94d1700dce79",
+      "status": "generated"
     },
     {
       "name": "용골/가루",
@@ -1726,8 +1727,8 @@
       "productIds": [
         268
       ],
-      "sha256": "fd113b984181eac58d72be6fb758a340b071c18d854259273361de94e8d95da3",
-      "status": "pending-generation"
+      "sha256": "9c49eb46bb7aef5c870499ee2e8e9f2139b419b2ac41197091e13a48ff72a1fd",
+      "status": "generated"
     },
     {
       "name": "용담",
@@ -1735,8 +1736,8 @@
       "productIds": [
         269
       ],
-      "sha256": "5efa7522ffbdef12e14731665bff2bc9d51ee36a5025e02cbe2e61751122ab6e",
-      "status": "pending-generation"
+      "sha256": "175abad411ad4b954081d8a5dc0bdb398caa8b9a374c651223cdb0fe4470d2cc",
+      "status": "generated"
     },
     {
       "name": "우방자",
@@ -1744,8 +1745,8 @@
       "productIds": [
         273
       ],
-      "sha256": "e492919f1979668609977bd169b4f9f02219437662925d79b614554366138a85",
-      "status": "pending-generation"
+      "sha256": "3938df6a0231eb2f4886616584b88618b161535bf6004784484413468d325c17",
+      "status": "generated"
     },
     {
       "name": "우슬",
@@ -1753,8 +1754,8 @@
       "productIds": [
         274
       ],
-      "sha256": "f4b6da7c8570064f302822623c9336df0ac6b0da15ca7f9dcddb877b14c4aa6b",
-      "status": "pending-generation"
+      "sha256": "c2c8bd942a765840034343db710676feee17341ecaafccf6149318fc8a443199",
+      "status": "generated"
     },
     {
       "name": "우슬/특특",
@@ -1762,8 +1763,8 @@
       "productIds": [
         275
       ],
-      "sha256": "06cc75ec0a8d7f6312c291dbb02683aa8edb7a1a6188b4ca9644f512a55c1375",
-      "status": "pending-generation"
+      "sha256": "915979e4b954a4bfd86804695f955d32e2d7451f01caeae3c71b49f2e29dd5b0",
+      "status": "generated"
     },
     {
       "name": "우슬/주자",
@@ -1771,8 +1772,8 @@
       "productIds": [
         276
       ],
-      "sha256": "420cab0f160fd9143610272e9343fbd24636ff9666cf7310c92f272da2920db9",
-      "status": "pending-generation"
+      "sha256": "bee19e3fd33a9c9df2fa474874bb41fa31d43030fd609f8beae608d2ffb4774d",
+      "status": "generated"
     },
     {
       "name": "욱리인",
@@ -1780,8 +1781,8 @@
       "productIds": [
         277
       ],
-      "sha256": "87813473904979fe40bdccc242b47d1d54f9fbedae22536baf390de3c59b4071",
-      "status": "pending-generation"
+      "sha256": "a904d27bd1099075ddd1a87aba47dd57a9e4d9d70d76f54941925f76ac513cce",
+      "status": "generated"
     },
     {
       "name": "울금/온",
@@ -1789,8 +1790,8 @@
       "productIds": [
         278
       ],
-      "sha256": "3ac098d339b15ff0cd353dd6faf56a08d0e96d9ebc70cb210e5347196225219d",
-      "status": "pending-generation"
+      "sha256": "5f164ff01fdb3094591e0b83184b764343fc2d0027f63f9cf4c6fccd284ecb85",
+      "status": "generated"
     },
     {
       "name": "원지/밀자",
@@ -1798,8 +1799,8 @@
       "productIds": [
         279
       ],
-      "sha256": "ddd44ba939e19fcbee571eb1ac17267af4e82254ac8ad21fc1c6ec6d8ca485bc",
-      "status": "pending-generation"
+      "sha256": "1b0f6cc096f3f9291025d46323a3ddc63120bbd2dfd6dbebdda710b25c768759",
+      "status": "generated"
     },
     {
       "name": "원지/상",
@@ -1808,8 +1809,8 @@
         280,
         282
       ],
-      "sha256": "6e710309e6c153d6875029bb2846ef038c6cd8ba6d36038e98fff6c4fecd2504",
-      "status": "pending-generation"
+      "sha256": "677e4bcb30579d709a1e523198545ad8c775175c5e900f33ee891a0b238e8fd7",
+      "status": "generated"
     },
     {
       "name": "위령선",
@@ -1817,8 +1818,8 @@
       "productIds": [
         283
       ],
-      "sha256": "d06f417416ac7f050fa369cf1e9c804f0620c01c5070f6ce4ea82ec493483e68",
-      "status": "pending-generation"
+      "sha256": "3b37bf8a364810da0fb57607b76aa8e34df5c347fefe2e984a2f08602ed54e86",
+      "status": "generated"
     },
     {
       "name": "유백피(유근피)",
@@ -1827,8 +1828,8 @@
         284,
         285
       ],
-      "sha256": "979e029e2b9f30d02070d093c68d7c6ba35007aa90267088279393835b0aca7b",
-      "status": "pending-generation"
+      "sha256": "5d6f12818e70545d60eeb31d3fb8bfdd3dbabac77a2f54eb1f3b614b9801f10f",
+      "status": "generated"
     },
     {
       "name": "유향",
@@ -1836,8 +1837,8 @@
       "productIds": [
         286
       ],
-      "sha256": "a535ca45e990c40dffde8a07fc9f867acb6d33986727534422b50aafe4bc5d19",
-      "status": "pending-generation"
+      "sha256": "2fd29911916be51dfccfd7084f2d403ee0745ae3a04d3c426f30d2e3bf80bf3c",
+      "status": "generated"
     },
     {
       "name": "육계",
@@ -1846,8 +1847,8 @@
         287,
         288
       ],
-      "sha256": "520808a9ad5c892e0251f27454ea324a2967a061c9d44975938cd0abff7ea330",
-      "status": "pending-generation"
+      "sha256": "df878ff9b904ac22b0d008c2337c4991e03a27a2b53450625489e6b79d42382d",
+      "status": "generated"
     },
     {
       "name": "육종용주증/특",
@@ -1855,8 +1856,8 @@
       "productIds": [
         290
       ],
-      "sha256": "52540bea0c3eaa802cd88a39611a962ac79e41c9d91b84f530eb20788facfc94",
-      "status": "pending-generation"
+      "sha256": "b5be7a70179b2e49139ca680f452958a723d85a9348233e87002704727177159",
+      "status": "generated"
     },
     {
       "name": "율피",
@@ -1864,8 +1865,8 @@
       "productIds": [
         291
       ],
-      "sha256": "7b8df763e1ed16622584ab701fb44fb8d21931d43ed658f00969c3bd9afeb1b6",
-      "status": "pending-generation"
+      "sha256": "dab3655dd02017680c0264369c7721135cd48506e7373acba9eb6218aab2706a",
+      "status": "generated"
     },
     {
       "name": "은행잎",
@@ -1873,8 +1874,8 @@
       "productIds": [
         292
       ],
-      "sha256": "214732a8a1a0a554384354bf4a05a23fc20f91011269b1973efea6020df9fce4",
-      "status": "pending-generation"
+      "sha256": "946084b6f6bdf6af8fcf3188827332587c045262f8960b3599865bedc9efbae9",
+      "status": "generated"
     },
     {
       "name": "의이인",
@@ -1882,8 +1883,8 @@
       "productIds": [
         293
       ],
-      "sha256": "575fe1068bc76685236d3f56ca39ca2564e26d87f80ed1e41b26c428686b71cf",
-      "status": "pending-generation"
+      "sha256": "7878ce1f5a265e20b641bbfae57bea30d9130c3f4f2139fe2e38c7c83f0637c0",
+      "status": "generated"
     },
     {
       "name": "의이인/피",
@@ -1891,8 +1892,8 @@
       "productIds": [
         294
       ],
-      "sha256": "e92298ae0ea9f84b2e774896873880b87268eb582144e072bdb989336332c62f",
-      "status": "pending-generation"
+      "sha256": "81d4f5d067cb0123965736532961403e6a049390c39613f536dca625afdc40d3",
+      "status": "generated"
     },
     {
       "name": "익지/추말",
@@ -1900,8 +1901,8 @@
       "productIds": [
         295
       ],
-      "sha256": "02249b0f88c5945a4e1c15e07e4b944d4cf1b2b7ca7e6f508769f728a90dba48",
-      "status": "pending-generation"
+      "sha256": "02368ab243dd78b66245f972161e8d55e19de44c4c8a5e9ae2654aad1e317956",
+      "status": "generated"
     },
     {
       "name": "인동",
@@ -1910,8 +1911,8 @@
         297,
         298
       ],
-      "sha256": "b683007d0846b62b9a1cb8da2fcc0a2e06e8121541330b3d64cb793c126eb80c",
-      "status": "pending-generation"
+      "sha256": "738a574f38beaf757930b3af86a7b64be724aab1c2381b8b239f84d43ae8305c",
+      "status": "generated"
     },
     {
       "name": "자근",
@@ -1919,8 +1920,8 @@
       "productIds": [
         300
       ],
-      "sha256": "a374f257f6275dd4e522dd15d4f4ab1eb3630d5201b649af58de4d2273238760",
-      "status": "pending-generation"
+      "sha256": "e648267ac60149bd0fb42b395cd96442d67e84c45bd5f7bb4f2a305b2dcdadda",
+      "status": "generated"
     },
     {
       "name": "자소자",
@@ -1928,8 +1929,8 @@
       "productIds": [
         302
       ],
-      "sha256": "7c7b0bb461a883effde40fa743ef687839bf425bb2573d9d99ca1fffd63ccdf6",
-      "status": "pending-generation"
+      "sha256": "e685549c5c22c7bda683c9b83b9c540ccd58f9466cebe28578f5827c895e6021",
+      "status": "generated"
     },
     {
       "name": "자연동",
@@ -1937,8 +1938,8 @@
       "productIds": [
         303
       ],
-      "sha256": "925bdada3240f0fe6ee849ad46a24818f45adebbddce5d93891f5be00cd82bb1",
-      "status": "pending-generation"
+      "sha256": "149948fca23a913374693b46c2eb5939957216a3ec191b8c4cdfe353d6cc2ee7",
+      "status": "generated"
     },
     {
       "name": "자완",
@@ -1946,8 +1947,8 @@
       "productIds": [
         304
       ],
-      "sha256": "a253313a05545e26b41c4cd4ea3ca9ce2f4a725fd51c3a8d41b73986114d6b6b",
-      "status": "pending-generation"
+      "sha256": "347e104378bd841da2938b388c2c57dba95aeb8092b3c145197659bcd2604370",
+      "status": "generated"
     },
     {
       "name": "작약",
@@ -1955,8 +1956,8 @@
       "productIds": [
         306
       ],
-      "sha256": "79d3a295dec01ef227656763d35f3acae24165cce3cb045dae4aa993d857ec5f",
-      "status": "pending-generation"
+      "sha256": "8f364f27cc386d2be3c1edd21cfb09ac0828eb0edb5680497b25cabf86b3ef0d",
+      "status": "generated"
     },
     {
       "name": "작약/강",
@@ -1964,8 +1965,8 @@
       "productIds": [
         307
       ],
-      "sha256": "7e0d44f0c62ba882705310379c05a1cd49c7d5b9671ad815811d11eea4e52a56",
-      "status": "pending-generation"
+      "sha256": "775293ffc1e7ac68222520d2f371ab813fb03ed00f6f2ad48ad2c3e8a477c743",
+      "status": "generated"
     },
     {
       "name": "작약/적/직",
@@ -1973,8 +1974,8 @@
       "productIds": [
         308
       ],
-      "sha256": "09fcac04acf087a30bfa16a711d2ee8606a669e6b47e305d2b1aa031849f5895",
-      "status": "pending-generation"
+      "sha256": "5ee5468841db13a21404d93e3af8aead7d5feccaf8273b76a32f14d2a10096a4",
+      "status": "generated"
     },
     {
       "name": "작약/적/편",
@@ -1982,8 +1983,8 @@
       "productIds": [
         309
       ],
-      "sha256": "5c6d0f4465448b8f063f53db088f74fd6910178abd08f03cafd94f741e3e4142",
-      "status": "pending-generation"
+      "sha256": "0d319e7dd3779c896e163ab15e6932a57c98863201f2fedd375aaf47ddf25b14",
+      "status": "generated"
     },
     {
       "name": "작약/주자",
@@ -1991,8 +1992,8 @@
       "productIds": [
         310
       ],
-      "sha256": "93b345d17dc72559592d3d324d7f0d1ff04f6e61edb9e7ade16fb8200d64e844",
-      "status": "pending-generation"
+      "sha256": "ade20a907430d5d04130f6b0200e1fb345f0d287b55de121a7a34202117a0c30",
+      "status": "generated"
     },
     {
       "name": "형개/수",
@@ -2000,8 +2001,8 @@
       "productIds": [
         311
       ],
-      "sha256": "27e86614efafc7ffaa495bf873378f070379da063ea8d255af9945ca6b58ad01",
-      "status": "pending-generation"
+      "sha256": "891a76940883f937d4f2465b893a2aa0a58829ec70a9219f78dcd9190cb94a9e",
+      "status": "generated"
     },
     {
       "name": "작약초",
@@ -2009,8 +2010,8 @@
       "productIds": [
         312
       ],
-      "sha256": "c1736cef29823daedba86910b10a18fb612e88f91169c9571b20c36f7a99011b",
-      "status": "pending-generation"
+      "sha256": "b8d59e64880509ca2f526d3d269589e102a154477a6d444b5ef6581aa0556075",
+      "status": "generated"
     },
     {
       "name": "형개",
@@ -2018,8 +2019,8 @@
       "productIds": [
         313
       ],
-      "sha256": "72fe41aa3e9b58e421d70f0b2c9cff5187f50a4f03e94f7102d915eb3c440d50",
-      "status": "pending-generation"
+      "sha256": "4af55c1120c563ced88d30e603bd1c5cbab03ca0f6bfae041a7574b1451a0b7c",
+      "status": "generated"
     },
     {
       "name": "저두강",
@@ -2027,8 +2028,8 @@
       "productIds": [
         314
       ],
-      "sha256": "814321b3adee669e6820e9cadaef6546062f8ae04873c577f6a96325af5b3d20",
-      "status": "pending-generation"
+      "sha256": "2fb45fd4a69d9e6d4e3886516e5fe247c3ff0176d0ed0eecffafe3a56c699045",
+      "status": "generated"
     },
     {
       "name": "저령",
@@ -2036,8 +2037,8 @@
       "productIds": [
         315
       ],
-      "sha256": "0ebc6c059d375ef5505c34e8f0ce222de9f0bf2627764bd1408f5b6150067948",
-      "status": "pending-generation"
+      "sha256": "bb7c20d998a072ab61931a4bac23114439f395450a255327e0ee9849375a6a5d",
+      "status": "generated"
     },
     {
       "name": "저백피(소백피)",
@@ -2045,8 +2046,8 @@
       "productIds": [
         316
       ],
-      "sha256": "13452aebf2948780b3d39fd291be46a885ab247299bb6405e084575af4069b61",
-      "status": "pending-generation"
+      "sha256": "d3d47503d7b377a3f4848a651ff99e1f40c76876b580a02fc5451887b93d69ac",
+      "status": "generated"
     },
     {
       "name": "저실자",
@@ -2054,8 +2055,8 @@
       "productIds": [
         317
       ],
-      "sha256": "0246213b6ded6bcf0b5d42da849090e4eee9b48cc08b46ca8b4d8cb107a78f10",
-      "status": "pending-generation"
+      "sha256": "c56b591f158b783bc7c5ae86c804070a216bfb72996568360e9038044f648ba8",
+      "status": "generated"
     },
     {
       "name": "전호",
@@ -2063,8 +2064,8 @@
       "productIds": [
         318
       ],
-      "sha256": "db77347be3b7566a21171f8a9e0bac4e7819db2994cb7afb6a8c9dd1bb83cf43",
-      "status": "pending-generation"
+      "sha256": "e642f91aa31432228e5f487e2f0bd6de67c2f37cba2ee9f27d8ab7bedeb064d6",
+      "status": "generated"
     },
     {
       "name": "절패모",
@@ -2072,8 +2073,8 @@
       "productIds": [
         319
       ],
-      "sha256": "c638bfed1bb26e0372c2980aa2c24abd5148edb3bb7a64b948924d263ba6ac8a",
-      "status": "pending-generation"
+      "sha256": "b8e5e32f2e8c03e4af9a903e775c0706386e2e1508ef2007f6c4f6bfc3323d95",
+      "status": "generated"
     },
     {
       "name": "접골목",
@@ -2081,8 +2082,8 @@
       "productIds": [
         320
       ],
-      "sha256": "a40bb71c5adb7629eb2609369329cf50819d4412eeca72d2b95d0e90c88f5707",
-      "status": "pending-generation"
+      "sha256": "e24ee65bad5bd53f14707f21dff8d731348188106be6f3641d27e7027c27a114",
+      "status": "generated"
     },
     {
       "name": "정향",
@@ -2090,8 +2091,8 @@
       "productIds": [
         321
       ],
-      "sha256": "c987cf883a8175af81e739c7e48b6456ec955bb61d57779646797b8be54db554",
-      "status": "pending-generation"
+      "sha256": "b7a9678591f84effbae490813e19915f4ef93e54246e54efc0cd66abe49a7f6c",
+      "status": "generated"
     },
     {
       "name": "제니",
@@ -2099,8 +2100,8 @@
       "productIds": [
         322
       ],
-      "sha256": "645fa5742f4800d9faf4a5c5b9b7136112c8106289f1ebc19e75b19b8e89525a",
-      "status": "pending-generation"
+      "sha256": "ee90d7d95f48df75dc2f5f7bdebe757132ef052ffa0a0373eaa60af17551be44",
+      "status": "generated"
     },
     {
       "name": "조각자",
@@ -2108,8 +2109,8 @@
       "productIds": [
         324
       ],
-      "sha256": "e58726fba1e4bcacc11e78dc09723a22fc5df6ec198ec279e5a73a436b5cac34",
-      "status": "pending-generation"
+      "sha256": "bf5cb12ce89d61a4cdd82a41671bf192b91d7b3e612e09381b2f5219d7c3ea7f",
+      "status": "generated"
     },
     {
       "name": "조구등",
@@ -2117,8 +2118,8 @@
       "productIds": [
         325
       ],
-      "sha256": "33aba2a4a953389dcda9680f75f32114b63f4a7c2072f501861521905bc4a748",
-      "status": "pending-generation"
+      "sha256": "06c4cbc3f23fd48afc22eacf7926455a979921d005659b7cce5f207d699dc72c",
+      "status": "generated"
     },
     {
       "name": "종대황",
@@ -2126,8 +2127,8 @@
       "productIds": [
         326
       ],
-      "sha256": "c7a02117727bf13b77e7652d7f6918b740441522af6080c3fb81505e5770f9a5",
-      "status": "pending-generation"
+      "sha256": "daa5a6d3f2884b2b8a3e10f19360d4c385c965c155264fffd4e14f415041afe6",
+      "status": "generated"
     },
     {
       "name": "지각",
@@ -2135,8 +2136,8 @@
       "productIds": [
         327
       ],
-      "sha256": "571d9a7959fc1ded469a363bc0ac4485adf474cb63b8e6c23ce1747b79bf6b1f",
-      "status": "pending-generation"
+      "sha256": "0e37b8c854c9d4f0619269051bd0d0fbba46e9d720421f0d183cff6433b8f44a",
+      "status": "generated"
     },
     {
       "name": "지각초",
@@ -2144,8 +2145,8 @@
       "productIds": [
         328
       ],
-      "sha256": "fab33f86944a423e74dd6800fd1d15c88ccda6f592af27fe5d1127cf5b66d8ee",
-      "status": "pending-generation"
+      "sha256": "202c51e7aecb0dbe20363a429608f8c3a95dcd3585c6d3cced7438df6eb513bd",
+      "status": "generated"
     },
     {
       "name": "지골피",
@@ -2153,8 +2154,8 @@
       "productIds": [
         329
       ],
-      "sha256": "9061e4e6a1900111ac43c759232be0d417d64735b5ca7b23851e9bde0c820070",
-      "status": "pending-generation"
+      "sha256": "19637b2fd286652ca1a3060b55186a7092d026f4ced16612cc18ef38f6511c07",
+      "status": "generated"
     },
     {
       "name": "지구자(지구병)",
@@ -2162,8 +2163,8 @@
       "productIds": [
         330
       ],
-      "sha256": "1a6ae175f17c5e44ebee3e4285d91cb6dd72cdd85d7afcfdb8a16c07fda823f9",
-      "status": "pending-generation"
+      "sha256": "23b34fc60478c9b3d70863c62b2919f4e405643a25e5b1c967ed02061a8f8058",
+      "status": "generated"
     },
     {
       "name": "지구자/씨",
@@ -2171,8 +2172,8 @@
       "productIds": [
         331
       ],
-      "sha256": "38710eec2239d413df50414b5e8ae07940f014f012a716d4573dfbef8e010449",
-      "status": "pending-generation"
+      "sha256": "6db183854b1736dcebcf5d6f06dd95deec4bb2c82d316a50433881eef8555705",
+      "status": "generated"
     },
     {
       "name": "지모",
@@ -2180,8 +2181,8 @@
       "productIds": [
         334
       ],
-      "sha256": "8da02ac1896d27628d61bfca825d2739c3d7d286a21b9c946778c335fcc08096",
-      "status": "pending-generation"
+      "sha256": "5af3330188813e8ee2da0bb20113b50b0c8e53ff410b062382897bd9ed6709be",
+      "status": "generated"
     },
     {
       "name": "지모/염자",
@@ -2189,8 +2190,8 @@
       "productIds": [
         335
       ],
-      "sha256": "29da12fcda32acc7eb9c4d8c267af9ca443899b48d537c064739fc256a76328f",
-      "status": "pending-generation"
+      "sha256": "98899b3a6c80ccc4ada3366cf6ec4b38aeeeef93fbc469cc8c28a77b1778eacf",
+      "status": "generated"
     },
     {
       "name": "지부자",
@@ -2198,8 +2199,8 @@
       "productIds": [
         336
       ],
-      "sha256": "5ec65bf5518dc6a201f4c9af5f50bdbef5e985f3aa1ee88a1e8da3a0e18e8d6c",
-      "status": "pending-generation"
+      "sha256": "ea687f50d61e771335bba2752a623aa35456a5a1c21e496175f7c22917e4ad3c",
+      "status": "generated"
     },
     {
       "name": "지실/애",
@@ -2207,8 +2208,8 @@
       "productIds": [
         337
       ],
-      "sha256": "2a132411463ad10eb97c222097e1080125cde3341d4b50a77f17185b84bc5993",
-      "status": "pending-generation"
+      "sha256": "eded913108d68d6815f34c6b0a5b7069a6011346ea952054475421fb5da1b5d9",
+      "status": "generated"
     },
     {
       "name": "지실/중",
@@ -2216,8 +2217,8 @@
       "productIds": [
         338
       ],
-      "sha256": "ef27306072108d88c52766d6a1394a852d44445a64f922d695d31390b1065b8d",
-      "status": "pending-generation"
+      "sha256": "874cca33b60d319b07ac739ff49d234e6bdd544d232389eeced0479fe0d09a9a",
+      "status": "generated"
     },
     {
       "name": "지유",
@@ -2225,8 +2226,8 @@
       "productIds": [
         339
       ],
-      "sha256": "cac47f8a38719b4ae45ba45db50e2c2eab6152a12287b0d0fbcc780e6f45cebc",
-      "status": "pending-generation"
+      "sha256": "5e11d912206adc23912f034d9e36423edc2009e397af9eb33d67a4ce1b38c261",
+      "status": "generated"
     },
     {
       "name": "지황",
@@ -2234,8 +2235,8 @@
       "productIds": [
         340
       ],
-      "sha256": "a0e7ee140508d3f818be7f1a4ea7be6c61267b5ef5dc04e3ac4ccb0f6183d7e3",
-      "status": "pending-generation"
+      "sha256": "b073b3939ed31125306f92704eabaf3d81e677814fb39885fbe90ab359e7a3bb",
+      "status": "generated"
     },
     {
       "name": "진교",
@@ -2243,8 +2244,8 @@
       "productIds": [
         341
       ],
-      "sha256": "162d5adb030ef7024ade5a6aa5c20b908472b83dd116dde279a2120e194b86d4",
-      "status": "pending-generation"
+      "sha256": "2a81a37230cf6866fd46786fc42da3e4749b630e4824d1577ea0e1fd87a57723",
+      "status": "generated"
     },
     {
       "name": "진피",
@@ -2253,8 +2254,8 @@
         342,
         343
       ],
-      "sha256": "40a6ee7b77c36ae786c6b2b5f8e271cfae2028cec5226a4d7676a8f4d3bfe95c",
-      "status": "pending-generation"
+      "sha256": "9b44b040e624780852f54ebb62c89aafb3cad0552b8f3e6dfe31534ba1c85962",
+      "status": "generated"
     },
     {
       "name": "질려자",
@@ -2262,8 +2263,8 @@
       "productIds": [
         344
       ],
-      "sha256": "3c4da29abc715a00110e8ee2321604b211f23048193b1a9c2b38816dbb3323aa",
-      "status": "pending-generation"
+      "sha256": "66e9f584803ef1d0108664a8b2275144a694ca5b425f3fc7d442542cf14e8d81",
+      "status": "generated"
     },
     {
       "name": "질려자/염자",
@@ -2271,8 +2272,8 @@
       "productIds": [
         345
       ],
-      "sha256": "97163180a87582b6fab45ef20d31d6c9334ff005e57eb3ab0208a27b94c15e46",
-      "status": "pending-generation"
+      "sha256": "5221aa8dcb8e67aa1da84ca7f875de07b62078645004dacf35abf372e7ac8bf7",
+      "status": "generated"
     },
     {
       "name": "차전자",
@@ -2280,8 +2281,8 @@
       "productIds": [
         346
       ],
-      "sha256": "e4b2f0a0103362f944f3613c8e1793fbff74ab684762cd8575d3659bd9d8ab0f",
-      "status": "pending-generation"
+      "sha256": "70e3fe5772a219f94baf1c1421793bffaf5983bdc072bb87b2da07ff3086d6b0",
+      "status": "generated"
     },
     {
       "name": "차전자피",
@@ -2289,8 +2290,8 @@
       "productIds": [
         347
       ],
-      "sha256": "0f2fad8d619813eec64d9381e36a7bc46727f3c004a8e4359aa03f0d0ac175e6",
-      "status": "pending-generation"
+      "sha256": "543a24c8db659cbcb8e42da583ec82de2d28a724d79fb51c918d44c7f12e254e",
+      "status": "generated"
     },
     {
       "name": "창출/모",
@@ -2298,8 +2299,8 @@
       "productIds": [
         349
       ],
-      "sha256": "a47fc6e4c2dc6ca54a2a295ff325a204a6b26e3ea8cfb68236eb3c1305bd32f7",
-      "status": "pending-generation"
+      "sha256": "4dd1be0e08ba8f58e006b73f0f1b0116fb2e7610e61c9ac89a4460e04ae5af74",
+      "status": "generated"
     },
     {
       "name": "창출",
@@ -2307,8 +2308,8 @@
       "productIds": [
         350
       ],
-      "sha256": "c5f98197d1ff06bda5477d180845d9a0adf6cb2f0019913a19cf44e70aeff100",
-      "status": "pending-generation"
+      "sha256": "cff9561b85f0d60fd0a9e107d28f99be741ee5cbe313bbb3d22c98f11590ad6d",
+      "status": "generated"
     },
     {
       "name": "창출/미감침",
@@ -2316,8 +2317,8 @@
       "productIds": [
         351
       ],
-      "sha256": "1463498dfa5a40542160b6abaaea791c47fc8135d5658d6417ea629f2e90cb2a",
-      "status": "pending-generation"
+      "sha256": "23e79bcb02e71293e972038ab478bb6fee309f8efc7950692a6c110e18bf0b9d",
+      "status": "generated"
     },
     {
       "name": "천궁",
@@ -2326,8 +2327,8 @@
         352,
         353
       ],
-      "sha256": "74a637c868199aa6299f0b48448c9aa6c2dce5404fdcd011a32022ea07ef19ca",
-      "status": "pending-generation"
+      "sha256": "9c6e61404250c57d707a05efbb77c1eb30056286c0a53d443057f7a99f67a927",
+      "status": "generated"
     },
     {
       "name": "천마",
@@ -2335,8 +2336,8 @@
       "productIds": [
         354
       ],
-      "sha256": "7ecf577342d1cef8e8d7c32eb0eeb7454df61b89eb389cdfb0fe4a97e797dee7",
-      "status": "pending-generation"
+      "sha256": "fbf2cf16bb13e0f6ef5e9c1d00f41defb46ff5951f4b9ddd76b10544bcea5194",
+      "status": "generated"
     },
     {
       "name": "천문동",
@@ -2344,8 +2345,8 @@
       "productIds": [
         355
       ],
-      "sha256": "d17dfb3fb94f448e34d580a3ac732b8b29399418ff1f0a81fed9f521a63c6264",
-      "status": "pending-generation"
+      "sha256": "5e6387269ff3860212fe4d46ebf3cabeceda7a47886e0fa9b60738edd50866e1",
+      "status": "generated"
     },
     {
       "name": "천오",
@@ -2353,8 +2354,8 @@
       "productIds": [
         356
       ],
-      "sha256": "f9083ea671d42df945be44ebe32fd54893ecffcdc4ddb6a5043b0e7c9ce6b973",
-      "status": "pending-generation"
+      "sha256": "2f6d5956a21284f0fa1cd57b2686779bd3fd57c96323eab59f98671e316255fd",
+      "status": "generated"
     },
     {
       "name": "천오제",
@@ -2362,8 +2363,8 @@
       "productIds": [
         357
       ],
-      "sha256": "bbe1ca88f0dc54bc274db7ca1c1fca09398f4be81b090354b8bd6145f21d5153",
-      "status": "pending-generation"
+      "sha256": "050b2a56716d527dc3c1a99ae1e5e68492b7da5019ed6ef8ce2347cc8ab53c68",
+      "status": "generated"
     },
     {
       "name": "청피",
@@ -2371,8 +2372,8 @@
       "productIds": [
         358
       ],
-      "sha256": "0cbeef272b770734b02429c391fea6b24abb951b551a3058b086fb86a1d2135d",
-      "status": "pending-generation"
+      "sha256": "3b6ec7ad89bf1c13213c17be753fe594889b7f2c016efb2cf2be9e0530587915",
+      "status": "generated"
     },
     {
       "name": "초오",
@@ -2380,8 +2381,8 @@
       "productIds": [
         361
       ],
-      "sha256": "9a0a13ed1f8429aac71361a8e87c390eb2fdb56068057a87a59d0dc6053cafbb",
-      "status": "pending-generation"
+      "sha256": "b7eaf03ec5b31b44b3df576d7eea2246cf12c1965d85358259bb9d09f899ca21",
+      "status": "generated"
     },
     {
       "name": "초오제",
@@ -2389,8 +2390,8 @@
       "productIds": [
         362
       ],
-      "sha256": "a8888d75ae909a1012f0a8327a870dbb52a8574f4dc5f1f3493d6cb263f9022d",
-      "status": "pending-generation"
+      "sha256": "815265262b10cdf9cf872d66b1bb060325b7f63585da6d02d5b3131f66577f7f",
+      "status": "generated"
     },
     {
       "name": "측백엽",
@@ -2398,8 +2399,8 @@
       "productIds": [
         363
       ],
-      "sha256": "56b5b7a993caa3015e5642713adc5a9021b81331550608a0e4fb246eed59d04c",
-      "status": "pending-generation"
+      "sha256": "3d3aa1e271dec889655d6387da95dcbc91a549507762be4396bb5a7f226c7608",
+      "status": "generated"
     },
     {
       "name": "치자",
@@ -2408,8 +2409,8 @@
         364,
         365
       ],
-      "sha256": "316045e8bb01181c13bf36c1f8d1a6a857edc8810366182eb8c81064904981d5",
-      "status": "pending-generation"
+      "sha256": "fab8ac16052402bf6cd847b65db3cb8f5dbd695aa6c7e50b6b598be4b4f95a26",
+      "status": "generated"
     },
     {
       "name": "치자초",
@@ -2417,8 +2418,8 @@
       "productIds": [
         366
       ],
-      "sha256": "4ea66713033a2cacf21d4fff1f20776ad1952b51ec65122ac548105d289aa889",
-      "status": "pending-generation"
+      "sha256": "a87c4e4dd1a31b6f0200b4733db2ea88ca663e2bced3453372ec589587487a9f",
+      "status": "generated"
     },
     {
       "name": "택사",
@@ -2427,8 +2428,8 @@
         367,
         368
       ],
-      "sha256": "5dec33c8433814b13f3e18288dddf512ab805c1aa05f2e31f4a15a044732ef9a",
-      "status": "pending-generation"
+      "sha256": "3e38ebf0c4d8f77d665fbf2e6f095e979ef27643607bd51cfdbd39dae1a9d4be",
+      "status": "generated"
     },
     {
       "name": "토복령",
@@ -2436,8 +2437,8 @@
       "productIds": [
         369
       ],
-      "sha256": "b57770153fdd28534730a2b0e53bdde29d6e7a81891ac602fd6c1be96ab6acc0",
-      "status": "pending-generation"
+      "sha256": "537df47c16c37e68778ccfc9d85aa29ac9322041873066d70071392957cecbd8",
+      "status": "generated"
     },
     {
       "name": "포공영",
@@ -2445,8 +2446,8 @@
       "productIds": [
         370
       ],
-      "sha256": "999c2d1d4116d1bc6733ed0db8414ba92035b444608bd6fc1ca64d26fd20c4e0",
-      "status": "pending-generation"
+      "sha256": "b845948ad939f5d48ebbb4723308cad14dc218740105dce85e59f6af4b2a1b93",
+      "status": "generated"
     },
     {
       "name": "토사자/주증",
@@ -2454,8 +2455,8 @@
       "productIds": [
         371
       ],
-      "sha256": "20161134cd8f85de086ef2b222fa7ff4f1daa67708431ee3a5546569440f353b",
-      "status": "pending-generation"
+      "sha256": "f9f00e3cfcd70fa557be3d410535014699ff786d770846cd5c6df0d7f7d38427",
+      "status": "generated"
     },
     {
       "name": "파극천",
@@ -2463,8 +2464,8 @@
       "productIds": [
         372
       ],
-      "sha256": "e9feff991250251fdb3f840869852393ddedc9521a43732fe398eca2814832c7",
-      "status": "pending-generation"
+      "sha256": "ed8c5d36d88257b465985a8bcff099ade62a5bfe2e7b04b10ed49dbf2bee8607",
+      "status": "generated"
     },
     {
       "name": "파극천/주자",
@@ -2472,8 +2473,8 @@
       "productIds": [
         373
       ],
-      "sha256": "e9177052949e8904421f58d3f44135910b2fa00b9c3e18563689e89aa3c8a863",
-      "status": "pending-generation"
+      "sha256": "7a5e9c9ea97df5bc16a7951fc6538518099e724c5474bdc31eabde58967f5cd9",
+      "status": "generated"
     },
     {
       "name": "판람근",
@@ -2481,8 +2482,8 @@
       "productIds": [
         374
       ],
-      "sha256": "c2ce6f1080f0e7ab47d28589ed9dec8e07fd386a0f6f82469ae4a95a06b183fd",
-      "status": "pending-generation"
+      "sha256": "211cf1c9abe0eb345c463573ffcd58187057e23dbb5f28785393ccc38e030df2",
+      "status": "generated"
     },
     {
       "name": "패장",
@@ -2490,8 +2491,8 @@
       "productIds": [
         376
       ],
-      "sha256": "8e5c7815ba0cd463207782c7b07e051847830062a79c93122e2b78b72fb7972b",
-      "status": "pending-generation"
+      "sha256": "026ac4f37c385d4346773bf5076ac28ccf0f6a30831cf8b9f7ecb9c1815662b7",
+      "status": "generated"
     },
     {
       "name": "편축",
@@ -2499,8 +2500,8 @@
       "productIds": [
         377
       ],
-      "sha256": "8511568dcb8f94702230124ded4f79bfc8f71848a9a8934b1ede6f747a4eea88",
-      "status": "pending-generation"
+      "sha256": "b3144d431d2fa37542f1430fb88d05d92b4b8d7b31e19d4aff7b9b0e9d57992f",
+      "status": "generated"
     },
     {
       "name": "포도근",
@@ -2508,8 +2509,8 @@
       "productIds": [
         378
       ],
-      "sha256": "871121913bfba9f0d46e0edbdd44e1e5faeabc1db9c315e2b2c709e00f87d04e",
-      "status": "pending-generation"
+      "sha256": "371eed4736c96f0108f4300fdfdd2db5487859db9ffe055c6307282413d2c5b4",
+      "status": "generated"
     },
     {
       "name": "포황/정품",
@@ -2517,8 +2518,8 @@
       "productIds": [
         379
       ],
-      "sha256": "44abb8ca8edfea0973da469aabe69ffbbdad2032c755b1660bbcdbbaeb72b697",
-      "status": "pending-generation"
+      "sha256": "0d553f188cd81174518609fb57ed06ac6f6b40b2674f4d1dc5744cea2a96fb7b",
+      "status": "generated"
     },
     {
       "name": "하수오/적",
@@ -2526,8 +2527,8 @@
       "productIds": [
         380
       ],
-      "sha256": "5f45cab157dc6211db4b26b3137d73638ec7e3cfe876bb64e4869f3d187366df",
-      "status": "pending-generation"
+      "sha256": "6a2f21d1aab28623ece3be86ce56647e606de27f4c3a67ba107380ad6caaa9ad",
+      "status": "generated"
     },
     {
       "name": "하수오/주증",
@@ -2535,8 +2536,8 @@
       "productIds": [
         381
       ],
-      "sha256": "5dca862cfdd363bf322cb81cc8385023b0b3f051446ae55dbae3f54d0cc4cb7c",
-      "status": "pending-generation"
+      "sha256": "74fcb201bf70c9781a0be0858dff646c2503406f86dd572ef4eed481d0a9bf7c",
+      "status": "generated"
     },
     {
       "name": "하수오/흡두즙돈",
@@ -2544,8 +2545,8 @@
       "productIds": [
         382
       ],
-      "sha256": "5a8d3bb0c8981e276a13409b88713b9c810a489afe9f9c13ddf93b8befbae736",
-      "status": "pending-generation"
+      "sha256": "ce7ba5c253622034d0b575e1055c185a706b48988d6d47bd13a6c76370fea325",
+      "status": "generated"
     },
     {
       "name": "합환피",
@@ -2553,8 +2554,8 @@
       "productIds": [
         383
       ],
-      "sha256": "2893de04ff81cfba324d55f5a897629195e1bf6295fd9a48ff859c782e872267",
-      "status": "pending-generation"
+      "sha256": "817e25ae83768ba44e42b9bffb49acd0f58d0fff436f1704806ecb6a28ad4bd9",
+      "status": "generated"
     },
     {
       "name": "해동피",
@@ -2562,8 +2563,8 @@
       "productIds": [
         384
       ],
-      "sha256": "4467293f22ef8b4a98ccdbf9924bda2f171bc525404fc2faadef5b34ec28d641",
-      "status": "pending-generation"
+      "sha256": "96bc154a52632588cf759969fd9ebb2dddcde091280853e6c38cbeba173b71b3",
+      "status": "generated"
     },
     {
       "name": "해방풍",
@@ -2571,8 +2572,8 @@
       "productIds": [
         385
       ],
-      "sha256": "7e6c1e2dcc381500bae74c862d19a0c6cdf9af9cc7d3dcaf165627d775efc499",
-      "status": "pending-generation"
+      "sha256": "8fbcc04b7c5b8f8f65a9c40ad134fe6671cc075693b073f7420cd25d97af2192",
+      "status": "generated"
     },
     {
       "name": "해표초/가루",
@@ -2580,8 +2581,8 @@
       "productIds": [
         386
       ],
-      "sha256": "96436d4e27f6c9cee3dae776f8407f399c2efdc4f3a3efd50a43aed5bd0fa58e",
-      "status": "pending-generation"
+      "sha256": "727e92ef47c5dccd10054fd941cce5d9261497b85164688f38771df28dc8ba72",
+      "status": "generated"
     },
     {
       "name": "해풍등",
@@ -2589,8 +2590,8 @@
       "productIds": [
         387
       ],
-      "sha256": "5e05d0632fbd7cc958c7f4d883ac99d95b8a2dd3b9338da30c73160756228e96",
-      "status": "pending-generation"
+      "sha256": "21966e0ae0938c5181f46e3047d85b2523e5d55c4a89549551df6401023d0caf",
+      "status": "generated"
     },
     {
       "name": "행인/절",
@@ -2598,8 +2599,8 @@
       "productIds": [
         388
       ],
-      "sha256": "4d66195ffc7df8fa678c49dbf1dee83107916b950b807c9135e83057d3bae036",
-      "status": "pending-generation"
+      "sha256": "b4286dbc65995375897dc061f2b776e0ab7845a97cf884e2f5b0453f19427e39",
+      "status": "generated"
     },
     {
       "name": "행인/추말",
@@ -2607,8 +2608,8 @@
       "productIds": [
         389
       ],
-      "sha256": "505c0787bbd38e6a941bf89b86b0216498235250decf144fd5d6e96844cda905",
-      "status": "pending-generation"
+      "sha256": "15bdd8299b47f42437f7461efb5dac2070526cbdae1bb00a0346173fe453002f",
+      "status": "generated"
     },
     {
       "name": "행인",
@@ -2616,8 +2617,8 @@
       "productIds": [
         390
       ],
-      "sha256": "90ff3ca1c800594be415fbd8241fe9443e4225a88be543c8e2e78c463fb48793",
-      "status": "pending-generation"
+      "sha256": "0541caa1d2086351e1c9ec130b77179d22457d6940607bc10b993608d0fea5b9",
+      "status": "generated"
     },
     {
       "name": "향부자",
@@ -2626,8 +2627,8 @@
         391,
         392
       ],
-      "sha256": "627be8c2508cd5d2ae0d8c420bb1dde5e7161c56737072176513cae9d9dff7e5",
-      "status": "pending-generation"
+      "sha256": "20fb5a2ce9b88ad01ee254f05e0e6167dc4463cfe38ebf53f0575e3f38c083a0",
+      "status": "generated"
     },
     {
       "name": "향부자/동변",
@@ -2635,8 +2636,8 @@
       "productIds": [
         393
       ],
-      "sha256": "2c20a0442af2b3be8b1eefd249bc6e8a743ce4de503f42de9297084df9fe138b",
-      "status": "pending-generation"
+      "sha256": "5f1f48f88a3b575a8e107294980329be7d4c4fdff6e13b465fa94a3e1a080cfa",
+      "status": "generated"
     },
     {
       "name": "향부자/주초",
@@ -2645,8 +2646,8 @@
         394,
         395
       ],
-      "sha256": "b23132b7367503776b6ea99e5552fd528598213f93a739388a5023aa86439929",
-      "status": "pending-generation"
+      "sha256": "5aa506a1f0026d60872032a0653b94ed703f212a6e77099fcdfcd7fd8a25cbc6",
+      "status": "generated"
     },
     {
       "name": "지구목(헛개나무)",
@@ -2654,8 +2655,8 @@
       "productIds": [
         396
       ],
-      "sha256": "ff99dd2d010ac7e104dd24d1534eb48349f58503eee13a086d8a41e1c3cfe12e",
-      "status": "pending-generation"
+      "sha256": "5bc90f88512b680867a988473d652559579e826139227d0c43cd3c0700ca1804",
+      "status": "generated"
     },
     {
       "name": "현삼",
@@ -2663,8 +2664,8 @@
       "productIds": [
         397
       ],
-      "sha256": "a13e38d691dc5924110a715cf4660895550e1ad95cdeb413fa13c9578f60290c",
-      "status": "pending-generation"
+      "sha256": "c61534ba00bbfe496bc17eee4d8e633a6dd2c0f304ffc2be575f15ea30659487",
+      "status": "generated"
     },
     {
       "name": "현호색",
@@ -2672,8 +2673,8 @@
       "productIds": [
         398
       ],
-      "sha256": "06fb7594d8c513014ed42b3bb3fb63b109624bc632df93febcfeb89ce8be8051",
-      "status": "pending-generation"
+      "sha256": "6111cf95bb0af2625712e98bf23cdd410644cbd3c052b0460f39797ad305a586",
+      "status": "generated"
     },
     {
       "name": "호장근",
@@ -2681,8 +2682,8 @@
       "productIds": [
         399
       ],
-      "sha256": "e129d3d6b941c2c8e29dd624782eff0d8db858d470afc907cde9b8041725be61",
-      "status": "pending-generation"
+      "sha256": "c0d3e042d4581c5f1d9826791542af16bf6d4cc6f1877a5a697c4ea5b27183d4",
+      "status": "generated"
     },
     {
       "name": "홍화",
@@ -2690,8 +2691,8 @@
       "productIds": [
         400
       ],
-      "sha256": "dc942de3b1701cc660873c1d6baea3ca9cbb0ff3c890fb824fe5ac4650e7eba6",
-      "status": "pending-generation"
+      "sha256": "23c4ecb666a4496850f96438d584bece6bd4f4be8e3ce20d5bb98af1f9e346f7",
+      "status": "generated"
     },
     {
       "name": "화피",
@@ -2700,8 +2701,8 @@
         401,
         402
       ],
-      "sha256": "467179fdd50b9090578b7ce7c43125821bcb35f4c342d27e6ea66186973608eb",
-      "status": "pending-generation"
+      "sha256": "ae52d4cf46dbad7f6026c4465ac360ab315c5cb1e4ee84656533df49d8d66858",
+      "status": "generated"
     },
     {
       "name": "활석",
@@ -2709,8 +2710,8 @@
       "productIds": [
         403
       ],
-      "sha256": "6bd22ce55b39bffda752b557d831406759881d2a965b1839b51be518f13df32f",
-      "status": "pending-generation"
+      "sha256": "d8360fa67ee90980e3d2a6fcb1602d0b5a14312e2a6b440712dba0300c995b8f",
+      "status": "generated"
     },
     {
       "name": "희렴/농산물",
@@ -2718,8 +2719,8 @@
       "productIds": [
         404
       ],
-      "sha256": "62ebcab3da1b04e69de6d20ddfba2b550ac33b6d758f8f3057c0aa54278fd1ae",
-      "status": "pending-generation"
+      "sha256": "700a61b58ebcb719b66a4a2b8be1c0534230e0ed3554c923a1ed107deb4d5369",
+      "status": "generated"
     },
     {
       "name": "황금/고금",
@@ -2727,8 +2728,8 @@
       "productIds": [
         405
       ],
-      "sha256": "2ffa382e465483b5d9bcf554d511506309bfa8d41c7f27f6a20fd7b9888f4f47",
-      "status": "pending-generation"
+      "sha256": "ab6d28352e2c8806ce53cdda9aa199c4c58e9c5926e183d77f669df60d41f5a6",
+      "status": "generated"
     },
     {
       "name": "황금/조금",
@@ -2736,8 +2737,8 @@
       "productIds": [
         406
       ],
-      "sha256": "8c0372466f144d0e79ed47851b4eec8028e7c0a99cae1a1b26aeb91f09d638e0",
-      "status": "pending-generation"
+      "sha256": "b4be19c6bd7ce9c623eb4d14d21a54fe21548557f212aacac265a273cf024896",
+      "status": "generated"
     },
     {
       "name": "황금/주자",
@@ -2745,8 +2746,8 @@
       "productIds": [
         407
       ],
-      "sha256": "9eac6b7b4ddb635c8418e83797a331616c8e43707721b54f83746b973e95d3b5",
-      "status": "pending-generation"
+      "sha256": "b8ec881b413d4fad2d4e6831ba75dc421117051a9cbfaf392bfa0718cb899c16",
+      "status": "generated"
     },
     {
       "name": "황기",
@@ -2754,8 +2755,8 @@
       "productIds": [
         408
       ],
-      "sha256": "362aa130c0b2d1aa63fde31183daa05faeb34f9e685000982199a9b56fecf572",
-      "status": "pending-generation"
+      "sha256": "9ba7700132a597601f5cbb3c9d2c32a4923e6da7e403bebf78df24ce71870e94",
+      "status": "generated"
     },
     {
       "name": "황기/밀자",
@@ -2764,8 +2765,8 @@
         409,
         410
       ],
-      "sha256": "6c3024da48223964c6ed96392996cb95daf8fcd26c9eeef1a78cfb9836cbf3de",
-      "status": "pending-generation"
+      "sha256": "44e291d35b2249aa530543765ca11d59f838004bdf7fc39a701718daae88c162",
+      "status": "generated"
     },
     {
       "name": "황기/직절",
@@ -2774,8 +2775,8 @@
         411,
         412
       ],
-      "sha256": "0ce215dee81fa185ee714ecdada025819baee508a13151f3285ca2b8f642bfa5",
-      "status": "pending-generation"
+      "sha256": "a21102e915c74749caf5ea0df35135975ce1c6e68e3ed01082940557f1297e38",
+      "status": "generated"
     },
     {
       "name": "황기/편/일",
@@ -2783,8 +2784,8 @@
       "productIds": [
         413
       ],
-      "sha256": "8ee27bcacd9fac1db6686c058d99e79097c376a539d6021a6e69ab272e8a8943",
-      "status": "pending-generation"
+      "sha256": "dbe1f7a580d257f9eea8ea09fb5b276af1ecef2dd781d76f008ae94d26231f39",
+      "status": "generated"
     },
     {
       "name": "황기/편AA",
@@ -2792,8 +2793,8 @@
       "productIds": [
         414
       ],
-      "sha256": "0c8681542d6f7aa42ce0ae3762dd2f06290162fa8197cf3ed334707dc0c157ad",
-      "status": "pending-generation"
+      "sha256": "b2e9811b258fbe366090aac999cff08cc4b3b3c3109f70c3610e6583a667c138",
+      "status": "generated"
     },
     {
       "name": "황련/천",
@@ -2801,8 +2802,8 @@
       "productIds": [
         415
       ],
-      "sha256": "79cd64b3136c4a17f140dbb6a5579f51f04c281a2de2cb4b1e3e782d24484df7",
-      "status": "pending-generation"
+      "sha256": "0356f841324f90893c75b53dd0534bfad9cfd4173a4f6cc4079f199f8b164bce",
+      "status": "generated"
     },
     {
       "name": "황백",
@@ -2811,8 +2812,8 @@
         416,
         417
       ],
-      "sha256": "3cee256d31dff5976fb74fd17315b3db074f83c42965ee03f3f65cb20daf33ec",
-      "status": "pending-generation"
+      "sha256": "b4bdcc69b00a6e6fa9fd523364fff7c845bc46a87cc0f00d377e8ff5861f2b6c",
+      "status": "generated"
     },
     {
       "name": "황백/염자",
@@ -2821,8 +2822,8 @@
         418,
         419
       ],
-      "sha256": "f9ca070fbaecae77e97cf64576c0e09e97e6a772dc6193d77a687b8553e1cfe5",
-      "status": "pending-generation"
+      "sha256": "82e2ffcb28cf7e4e845c06e8cf35bdaea8d8f2f5d269e9067b1ef7ec5bee2f09",
+      "status": "generated"
     },
     {
       "name": "황정",
@@ -2830,8 +2831,8 @@
       "productIds": [
         420
       ],
-      "sha256": "603dd12c583cba755019659d32bd1e4d9bf35faa99a61ab76f962f8bd6486315",
-      "status": "pending-generation"
+      "sha256": "2cb8445c297c0736bc4c392b32a6add2c0b1a6076ea482ad865054788c4d35c2",
+      "status": "generated"
     },
     {
       "name": "회향",
@@ -2839,8 +2840,8 @@
       "productIds": [
         421
       ],
-      "sha256": "d12209158100b15dd00f4489a3153bce5e5ca99f01bb91221228dfb521533356",
-      "status": "pending-generation"
+      "sha256": "01cc814dfe395ceee789226d453986d70410ec34cd84dbbf2e42e0d4ef3e8a06",
+      "status": "generated"
     },
     {
       "name": "후박",
@@ -2848,8 +2849,8 @@
       "productIds": [
         422
       ],
-      "sha256": "04a408afcd111c66d6585b7240bfb79d7d1414d5b1de6011129afe8bc7f2c927",
-      "status": "pending-generation"
+      "sha256": "d3f3c55eee2e0b60c67018daab30998d7020f77ffe28b6cb0a40a8ebf86d022d",
+      "status": "generated"
     },
     {
       "name": "후박/강자",
@@ -2857,8 +2858,8 @@
       "productIds": [
         423
       ],
-      "sha256": "e68b97b2a04163471e152d6d36e9a4d2ec681f8d2cb5e966f5422f4743dc4972",
-      "status": "pending-generation"
+      "sha256": "f209c943a9ff4bf3ba23eff734bd6079ae5903364b841c4fdcc9af8ebee547d1",
+      "status": "generated"
     },
     {
       "name": "후박/근",
@@ -2866,8 +2867,8 @@
       "productIds": [
         424
       ],
-      "sha256": "e384491800d16b5c0b4fe9c0d42cbdba3f5e5dc558297afd84940c6fcc6c8dca",
-      "status": "pending-generation"
+      "sha256": "d32dbba5f56d16e1e2085fdd211c1c810f4b6000d31116fd1935f4fc9d3e4056",
+      "status": "generated"
     },
     {
       "name": "쇄양",
@@ -2875,8 +2876,8 @@
       "productIds": [
         428
       ],
-      "sha256": "39a10342a32b74abb1da556f62ad353df7090b7aa06ccfbc1a674e3bdce566a2",
-      "status": "pending-generation"
+      "sha256": "939941973179a04b5ea29f77c28aa56445107b4ea7c33f2770ab9ae4b6d1fde0",
+      "status": "generated"
     },
     {
       "name": "삼백초",
@@ -2884,8 +2885,8 @@
       "productIds": [
         429
       ],
-      "sha256": "38bc8192aca59194c52c7ebc9bb5ac97d2914b80d94ac521f49f6d529386abf5",
-      "status": "pending-generation"
+      "sha256": "6cf1e125f3628777e79e6f872f9654c6de66e16d6dfbf60ebb13a78c66e5af28",
+      "status": "generated"
     },
     {
       "name": "생강",
@@ -2893,8 +2894,8 @@
       "productIds": [
         431
       ],
-      "sha256": "b103bd78d5440c66cc1983d314842486d5c4e3665f47e0e3fbc7091a7725f77e",
-      "status": "pending-generation"
+      "sha256": "468d229badf587f4609a33f9ac3b3dfabfebf439bd363b2d5d227ea7ebc5a3c4",
+      "status": "generated"
     },
     {
       "name": "자소엽(소엽)",
@@ -2902,8 +2903,8 @@
       "productIds": [
         432
       ],
-      "sha256": "54bd1d78f64fd32a17d18e412d2d401645061e8ab848055789919d3a8144de95",
-      "status": "pending-generation"
+      "sha256": "8db336c45f999d3f24fb18d3615328a73e925b2f102c078869c6185527ea059d",
+      "status": "generated"
     },
     {
       "name": "어성초",
@@ -2912,8 +2913,8 @@
         433,
         439
       ],
-      "sha256": "619f253835e5294746114c0d522d7084c1272edef480d4870cca3f929b5db7fd",
-      "status": "pending-generation"
+      "sha256": "f6cebabd7e24cf82ade756e6c63c3fb8fd857ba0c92d13c6376cb91fca281419",
+      "status": "generated"
     },
     {
       "name": "오가피/진/유피",
@@ -2921,8 +2922,8 @@
       "productIds": [
         434
       ],
-      "sha256": "652bcd63b53636e38bbf5bdc5588d980a388d8dad265e88fdeb32bd904f74c5c",
-      "status": "pending-generation"
+      "sha256": "200c960f51d09ed796f1b27511b66a79a57e38412eb36ba53e6ed509438bc73f",
+      "status": "generated"
     },
     {
       "name": "원지/대",
@@ -2930,8 +2931,8 @@
       "productIds": [
         436
       ],
-      "sha256": "96910503c5bce7a5a3ee415c8ddae272c2117365b462b98b04d10d91828b7b9e",
-      "status": "pending-generation"
+      "sha256": "5b5e32ad4c40fe9c0ff07207e15bfa3ca69858e5ae0f5067abfb87ce1db5e359",
+      "status": "generated"
     },
     {
       "name": "음양곽",
@@ -2939,8 +2940,8 @@
       "productIds": [
         437
       ],
-      "sha256": "0f8ac887a67a5a29ea5e850ee43eb58407082084b1b827419629cdddd9e2c489",
-      "status": "pending-generation"
+      "sha256": "684ef0b92f0914ecf0ba4387ada16091e3f19af6036a5d1c673b81e901e46eaa",
+      "status": "generated"
     },
     {
       "name": "애엽",
@@ -2948,8 +2949,8 @@
       "productIds": [
         438
       ],
-      "sha256": "3340cf1df84abe1d7439c6fbb7545d95667741ce2488c0dc92e34976974571dc",
-      "status": "pending-generation"
+      "sha256": "b7cb92a6bda6dd87cc2028ff17f90b85accdc38de2658a5ed3d94c404153142d",
+      "status": "generated"
     },
     {
       "name": "왕불류행",
@@ -2957,8 +2958,8 @@
       "productIds": [
         440
       ],
-      "sha256": "5a9d6f2f5061ab71e8d2d49212a41d5474f425ba594850a33800c5a0036b34c4",
-      "status": "pending-generation"
+      "sha256": "39d08f021b46c4103360c858bac947fae1f31c7ee3c9dd95cfba2a95f5abb9fe",
+      "status": "generated"
     },
     {
       "name": "익모초",
@@ -2966,8 +2967,8 @@
       "productIds": [
         441
       ],
-      "sha256": "a5ff210ed8c99a6c4a3d3ee72207f9702c8296dc1a6d16eedc2f73dd065a4b01",
-      "status": "pending-generation"
+      "sha256": "8e00f35a327c71d0ce559df81a705b44f6a09cee74302620d1bbb6b3dcf7e214",
+      "status": "generated"
     },
     {
       "name": "인삼/저온건조",
@@ -2975,8 +2976,8 @@
       "productIds": [
         442
       ],
-      "sha256": "de4531f31cd75a38ccd33880f747ec1769d0efb5a5af3d583cb0e0914eed4055",
-      "status": "pending-generation"
+      "sha256": "5d5c539701a7850a013a0d398d6d53c8d23779af91f87bc807af280dc8af663d",
+      "status": "generated"
     },
     {
       "name": "자단향",
@@ -2984,8 +2985,8 @@
       "productIds": [
         443
       ],
-      "sha256": "9a000dcc8d7976bed9ca9b7c1edbc76063544808c444deec934a3fbfcc9a7d0d",
-      "status": "pending-generation"
+      "sha256": "434a23f80f5ff7e59f233c994ac1c326f76e9a56c6da054b60d4722bec4bf57e",
+      "status": "generated"
     },
     {
       "name": "죽여",
@@ -2993,8 +2994,8 @@
       "productIds": [
         444
       ],
-      "sha256": "becef6775ecc97ac34071e7023592731352e22c7be1b5e32c5d7423fb6741c44",
-      "status": "pending-generation"
+      "sha256": "ea4c12aa6b3a18e3f85c6e5cee81c05ff61950d4162ff4e8d77712fd600915a3",
+      "status": "generated"
     },
     {
       "name": "흑지마/농산물",
@@ -3002,14 +3003,15 @@
       "productIds": [
         445
       ],
-      "sha256": "5efb1d97ba67d4bec722afb49116e4fe3f9adf624c40ca55d48bb14cf4badad6",
-      "status": "pending-generation"
+      "sha256": "515eaf87e60be04f082b25dcf34460600e113244c9808807e13bd8db656369c6",
+      "status": "generated"
     },
     {
       "name": "모려가루",
       "path": "/products-reference/uniform-20261029/herb-089.webp",
       "reason": "Composition reference",
-      "status": "pending-generation"
+      "status": "generated",
+      "sha256": "bf8088ecd3a95ecbe01cc2ecb0067e36cb38faad4f0834536ab5c8b60bdf539b"
     }
   ],
   "preserved": [
