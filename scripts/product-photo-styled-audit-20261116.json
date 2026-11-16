@@ -1,0 +1,3187 @@
+{
+  "updatedAt": "2026-11-16",
+  "complete": false,
+  "generatedCount": 108,
+  "pendingCount": 221,
+  "style": "Centered ivory porcelain bowl on thin wood slice, warm greige linen, subtle eucalyptus; preserve herb identity and form",
+  "logo": {
+    "rendering": "ProductImage shared overlay",
+    "asset": "/logo-hq.png",
+    "position": "upper-left",
+    "scope": "all visible product photos including preserved whole herbs"
+  },
+  "photos": [
+    {
+      "name": "갈근 (사각)",
+      "path": "/products-reference/uniform-20261029/herb-003-v2.webp",
+      "productIds": [
+        15,
+        26
+      ],
+      "sha256": "371b0ff3ace101aa8304897eaa5443cf35f366fa2ae778c3117cf0b21ac49b8e",
+      "status": "generated"
+    },
+    {
+      "name": "감국(국화)",
+      "path": "/products-reference/uniform-20261029/herb-005.webp",
+      "productIds": [
+        16
+      ],
+      "sha256": "85aeef30cb306630997505104e5b668668a00446e1590eba34dd3015d67f006a",
+      "status": "generated"
+    },
+    {
+      "name": "감인(검인)",
+      "path": "/products-reference/uniform-20261029/gamin-geomin.webp",
+      "productIds": [
+        17
+      ],
+      "sha256": "1163600ee35877c9f3e478809101d6b172e8af2eb2f8c39e00bede86bae2ea52",
+      "status": "generated"
+    },
+    {
+      "name": "귀전우",
+      "path": "/products-reference/uniform-20261029/gwijeonu.webp",
+      "productIds": [
+        18
+      ],
+      "sha256": "bb499b1e0554a4525d1cffd588df910218ea2693b5562c72c9f209e86ddb3b8b",
+      "status": "generated"
+    },
+    {
+      "name": "백굴채",
+      "path": "/products-reference/uniform-20261029/baekgulchae.webp",
+      "productIds": [
+        19
+      ],
+      "sha256": "0b36a7b714ae04e9cb85a64dbe5a6a66a4a29a25c5c76081439e96de9fac05cf",
+      "status": "generated"
+    },
+    {
+      "name": "곽향",
+      "path": "/products-reference/uniform-20261029/gwakhyang.webp",
+      "productIds": [
+        20
+      ],
+      "sha256": "9d3209e18ebe6bcd2ac351d720caa7c6938c481c4b44d91a9108e2d58c690591",
+      "status": "generated"
+    },
+    {
+      "name": "구절초",
+      "path": "/products-reference/uniform-20261029/gujeolcho.webp",
+      "productIds": [
+        21
+      ],
+      "sha256": "877a39a6370aef8d0b041303a6d4dabea91a6938388ed32fa609bb7eabeec13a",
+      "status": "generated"
+    },
+    {
+      "name": "등심초",
+      "path": "/products-reference/uniform-20261029/deungsimcho.webp",
+      "productIds": [
+        22
+      ],
+      "sha256": "bef4ceec0ef61f2c09c65a907a2871aa1328efe2ce6b56585941326368076ec1",
+      "status": "generated"
+    },
+    {
+      "name": "당귀 (GAP/특특)",
+      "path": "/products-reference/uniform-20261029/herb-054-v2.webp",
+      "productIds": [
+        23,
+        97
+      ],
+      "sha256": "b825466c3bae81623860c2368b69b8951ff4f070019b5562a5c776d261a12230",
+      "status": "generated"
+    },
+    {
+      "name": "갈화",
+      "path": "/products-reference/uniform-20261029/herb-004.webp",
+      "productIds": [
+        28
+      ],
+      "sha256": "c1cf1cf40bd39183144eadb1df61d7cf50b8c96668c26c7b125937ca6f126552",
+      "status": "generated"
+    },
+    {
+      "name": "감초",
+      "path": "/products-reference/uniform-20261029/herb-007.webp",
+      "productIds": [
+        29,
+        30,
+        31
+      ],
+      "sha256": "d7990dd697bb98892f83c40d26ab4284b9e102dd7ad4638bf5787aebbe50ddae",
+      "status": "generated"
+    },
+    {
+      "name": "감초초",
+      "path": "/products-reference/uniform-20261029/gamcho-roasted-v2.webp",
+      "productIds": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "sha256": "5ecaac1e4b54f687b6fbfcf063bd885641aa8d6227119ef8a2fc304c58ba7371",
+      "status": "generated"
+    },
+    {
+      "name": "강활",
+      "path": "/products-reference/uniform-20261029/herb-008.webp",
+      "productIds": [
+        36
+      ],
+      "sha256": "b56ece53eebba423e3e943ea6b7eef72b8581e0c7911075387b71dfd0e19ae09",
+      "status": "generated"
+    },
+    {
+      "name": "강활/잠",
+      "path": "/products-reference/uniform-20261029/herb-009-v2.webp",
+      "productIds": [
+        37
+      ],
+      "sha256": "9039e21f663820dd2c5339e4e0335843c1b39d57d1accbeb9d0ead62e7259432",
+      "status": "generated"
+    },
+    {
+      "name": "강황",
+      "path": "/products-reference/uniform-20261029/herb-010.webp",
+      "productIds": [
+        38
+      ],
+      "sha256": "419937c844525f5ede326e9c4cb106d63d8163acf2d847b72c4374861d7540f1",
+      "status": "generated"
+    },
+    {
+      "name": "개자",
+      "path": "/products-reference/uniform-20261029/herb-011.webp",
+      "productIds": [
+        39
+      ],
+      "sha256": "7cfcc65c3411c21163ccb57f27a17ec760cfef4d9277112ed0f7827a8e197d57",
+      "status": "generated"
+    },
+    {
+      "name": "건강",
+      "path": "/products-reference/uniform-20261029/herb-012.webp",
+      "productIds": [
+        40,
+        41
+      ],
+      "sha256": "613258e4d48fa5663066a19c3cc3c952b4af09ea8d6bac66a0213dfbb8198c7e",
+      "status": "generated"
+    },
+    {
+      "name": "건강초탄",
+      "path": "/products-reference/uniform-20261029/herb-013-v2.webp",
+      "productIds": [
+        42
+      ],
+      "sha256": "7ceae83af46d94ad24d0e602fbe545d10edbd7ed683b3c663a418cfaa783347a",
+      "status": "generated"
+    },
+    {
+      "name": "건율",
+      "path": "/products-reference/uniform-20261029/herb-014-v3.webp",
+      "productIds": [
+        43
+      ],
+      "sha256": "0e5e50f20069fd6dbaccf32ea7604be8a853bd6412dbd239b6ed39ffa513842b",
+      "status": "generated"
+    },
+    {
+      "name": "견우자",
+      "path": "/products-reference/uniform-20261029/herb-015-v2.webp",
+      "productIds": [
+        44
+      ],
+      "sha256": "cb92fbc533697e9dcbaec4763653ca5a257b36f180cf4efce43494038ab6b804",
+      "status": "generated"
+    },
+    {
+      "name": "결명자",
+      "path": "/products-reference/uniform-20261029/herb-016.webp",
+      "productIds": [
+        45
+      ],
+      "sha256": "e653d3545378f2eb35a240b1cd7bb0727359382cf2f5d62c4cee319ab26fc758",
+      "status": "generated"
+    },
+    {
+      "name": "계내금",
+      "path": "/products-reference/uniform-20261029/herb-017-v2.webp",
+      "productIds": [
+        46
+      ],
+      "sha256": "31ab381a691459fb430c28418a49de143818d83c3104bd69b26cbd5b185db96c",
+      "status": "generated"
+    },
+    {
+      "name": "계내금초",
+      "path": "/products-reference/uniform-20261029/herb-018-v2.webp",
+      "productIds": [
+        47
+      ],
+      "sha256": "ac8277f53d959ea975f16e844bd75fd3e8300a30421e608f7898393b56e0cbd3",
+      "status": "generated"
+    },
+    {
+      "name": "계지",
+      "path": "/products-reference/uniform-20261029/herb-019-v3.webp",
+      "productIds": [
+        49
+      ],
+      "sha256": "5e8c6cdcf01a07c38f0ee3fe9a59b34c7f5dfe8717a09032ac58b7c4ada6d3e5",
+      "status": "generated"
+    },
+    {
+      "name": "계혈등",
+      "path": "/products-reference/uniform-20261029/herb-020.webp",
+      "productIds": [
+        50
+      ],
+      "sha256": "30ad561e2d846321527418832700cc56e69bf26375c5a7c3e9a283da58ef17b1",
+      "status": "generated"
+    },
+    {
+      "name": "고량강",
+      "path": "/products-reference/uniform-20261029/herb-021.webp",
+      "productIds": [
+        51
+      ],
+      "sha256": "951f993804a04d384863b56fddbcccff0f327253d42f0a17be0addd80ca7510c",
+      "status": "generated"
+    },
+    {
+      "name": "고본",
+      "path": "/products-reference/uniform-20261029/herb-022.webp",
+      "productIds": [
+        52,
+        53
+      ],
+      "sha256": "a363d0d04a46f5b58fae97705d258ad8e0b3eaac8d1827072400bd6371ab98ce",
+      "status": "generated"
+    },
+    {
+      "name": "고삼",
+      "path": "/products-reference/uniform-20261029/herb-023-v2.webp",
+      "productIds": [
+        54
+      ],
+      "sha256": "eba40617ac61c3607b67112c0613a00493c781cdc58892f1d30f8ddc09198a83",
+      "status": "generated"
+    },
+    {
+      "name": "곡기생",
+      "path": "/products-reference/uniform-20261029/herb-024-v2.webp",
+      "productIds": [
+        55
+      ],
+      "sha256": "f812ae302c8a521ce58cf0e1ce974085c27d8d86cef0a7f079169c237e4015cc",
+      "status": "generated"
+    },
+    {
+      "name": "곡아(발아현미)",
+      "path": "/products-reference/uniform-20261029/herb-025.webp",
+      "productIds": [
+        56
+      ],
+      "sha256": "3b59f7b0ba2d8e82b77641383e5986f0fa69226caf1ddd4316984135460f0d0c",
+      "status": "generated"
+    },
+    {
+      "name": "골쇄보",
+      "path": "/products-reference/uniform-20261029/herb-026-v2.webp",
+      "productIds": [
+        57
+      ],
+      "sha256": "97aa3b29bacaae104fafcec8cad233481fe837a046075b81b5456303099625bc",
+      "status": "generated"
+    },
+    {
+      "name": "과루실",
+      "path": "/products-reference/uniform-20261029/herb-027-v2.webp",
+      "productIds": [
+        59
+      ],
+      "sha256": "c4ab185ef4bcf563eef8d9391723682031e1b444dbfa44d725c28953f88f5aea",
+      "status": "generated"
+    },
+    {
+      "name": "관동화",
+      "path": "/products-reference/uniform-20261029/herb-028-v2.webp",
+      "productIds": [
+        60,
+        61
+      ],
+      "sha256": "9fd64cb13a0a577e28fa0e0479684f138ba0fe40678abbe58c87f1b598bce561",
+      "status": "generated"
+    },
+    {
+      "name": "괄루근(천화분)",
+      "path": "/products-reference/uniform-20261029/herb-029-v2.webp",
+      "productIds": [
+        62,
+        63
+      ],
+      "sha256": "deb962532e1c1d9165a82a36a521ee49a7eaad5b5d75c8706246ecca7e600d8d",
+      "status": "generated"
+    },
+    {
+      "name": "괄루인/추말",
+      "path": "/products-reference/uniform-20261029/herb-030-v2.webp",
+      "productIds": [
+        64
+      ],
+      "sha256": "76b2277453a1dc9e42a8d92e1bd1d713181054907882e0afae6312ed65d6347a",
+      "status": "generated"
+    },
+    {
+      "name": "광곽향",
+      "path": "/products-reference/uniform-20261029/herb-032-v3.webp",
+      "productIds": [
+        67
+      ],
+      "sha256": "6b82b69d414a6cf2601557f5f67f7d75d6061d0b7844637ddcaa35f560def0ec",
+      "status": "generated"
+    },
+    {
+      "name": "괴화",
+      "path": "/products-reference/uniform-20261029/herb-033-v3.webp",
+      "productIds": [
+        68
+      ],
+      "sha256": "36d16c013761f47d65d86955de0bc25baf3c9a0e1c258c64f27816e7c1d1ca56",
+      "status": "generated"
+    },
+    {
+      "name": "구기자",
+      "path": "/products-reference/uniform-20261029/gugija.webp",
+      "productIds": [
+        69,
+        70,
+        71
+      ],
+      "sha256": "dbf7154c74edd8a5d628aa920d87cc4779e33ec59500de492ee10e448a9d54cb",
+      "status": "generated"
+    },
+    {
+      "name": "구맥",
+      "path": "/products-reference/uniform-20261029/herb-035-v2.webp",
+      "productIds": [
+        72
+      ],
+      "sha256": "54a1c6999c61e9f8fc47c00790bf23a26d4dcb75278ba19578542c87ff6ae31a",
+      "status": "generated"
+    },
+    {
+      "name": "구자",
+      "path": "/products-reference/uniform-20261029/herb-036.webp",
+      "productIds": [
+        73
+      ],
+      "sha256": "4edae5d4ce95abdf2e6c7d1f76b8a5f9237fc51b48996700bc90092d9429113a",
+      "status": "generated"
+    },
+    {
+      "name": "구척",
+      "path": "/products-reference/uniform-20261029/herb-037-v2.webp",
+      "productIds": [
+        75
+      ],
+      "sha256": "2a4d2e2b57ce0e27c609bb28b7cf73dd3a635a3aa1e832a660b325e83bc38eb2",
+      "status": "generated"
+    },
+    {
+      "name": "귀판",
+      "path": "/products-reference/uniform-20261029/herb-038.webp",
+      "productIds": [
+        77
+      ],
+      "sha256": "a7462837d55c5391f544537480a72efe2a2565f018880d9148e9235148d2f29b",
+      "status": "generated"
+    },
+    {
+      "name": "박하/참",
+      "path": "/products-reference/uniform-20261029/bakha-cham.webp",
+      "productIds": [
+        78
+      ],
+      "sha256": "df2124734d0b0576a463d7568644acd1bb016b9f70b174a338c6dd9981074d1b",
+      "status": "generated"
+    },
+    {
+      "name": "금앵자",
+      "path": "/products-reference/uniform-20261029/herb-040-v2.webp",
+      "productIds": [
+        79
+      ],
+      "sha256": "6b51fae9cec3f661e9f4d1089c19ede511e7a9323211e96288f8f99d5ca403d8",
+      "status": "generated"
+    },
+    {
+      "name": "금은화",
+      "path": "/products-reference/uniform-20261029/herb-041-v3.webp",
+      "productIds": [
+        81
+      ],
+      "sha256": "11f41b679f858910bcd6be406b1912123317c18562eca6d1334159bdb42cd453",
+      "status": "generated"
+    },
+    {
+      "name": "금전초",
+      "path": "/products-reference/uniform-20261029/herb-042.webp",
+      "productIds": [
+        82
+      ],
+      "sha256": "eb2587bc7a741967ac1fa223cf0f405e611345f6f955ce6fa68221b1f807a879",
+      "status": "generated"
+    },
+    {
+      "name": "길경",
+      "path": "/products-reference/uniform-20261029/herb-043-v2.webp",
+      "productIds": [
+        83,
+        84
+      ],
+      "sha256": "2a4f983eb82d403ce176e385a059af94e4e857a3e806d4f90b7eb0269c785ba3",
+      "status": "generated"
+    },
+    {
+      "name": "낙석등",
+      "path": "/products-reference/uniform-20261029/herb-045-v2.webp",
+      "productIds": [
+        85
+      ],
+      "sha256": "32eb8077a43afb60a496d9b80ea2ed5ed6bfbbeb1b13857707804fc24c3bab99",
+      "status": "generated"
+    },
+    {
+      "name": "남성/천",
+      "path": "/products-reference/uniform-20261029/herb-046-v2.webp",
+      "productIds": [
+        86
+      ],
+      "sha256": "2ed9a83d2f98af0056f98db6dc2c7bebab35d5dd126159a278d79092c09becbd",
+      "status": "generated"
+    },
+    {
+      "name": "남성/천/백반제",
+      "path": "/products-reference/uniform-20261029/herb-047-v2.webp",
+      "productIds": [
+        87
+      ],
+      "sha256": "ebac80d03d234f3b11701378b8a42ae8ae1fb77e84d92770229bf3888ab83b55",
+      "status": "generated"
+    },
+    {
+      "name": "내복자초",
+      "path": "/products-reference/uniform-20261029/herb-049-v2.webp",
+      "productIds": [
+        88
+      ],
+      "sha256": "c0bc44813553c3322dc14254dd9e2b59d05a6cd751cbac3eb7d24f8a684fb363",
+      "status": "generated"
+    },
+    {
+      "name": "내복자/추말",
+      "path": "/products-reference/uniform-20261029/herb-048-v2.webp",
+      "productIds": [
+        89
+      ],
+      "sha256": "993895c5e109cc1b21d97e165180031ffb7ce6cbdb15da39de5ef05cd999fac6",
+      "status": "generated"
+    },
+    {
+      "name": "내복자",
+      "path": "/products-reference/uniform-20261029/herb-044-v2.webp",
+      "productIds": [
+        90
+      ],
+      "sha256": "a1721a7d0165558c3e4976d4a5e31752fb61cf97e319c5e0e3e08b1cd261650d",
+      "status": "generated"
+    },
+    {
+      "name": "노근",
+      "path": "/products-reference/uniform-20261029/herb-050-v2.webp",
+      "productIds": [
+        91
+      ],
+      "sha256": "d65c1c26905e786abc97f7ee6dfc3648c973b7dead02a2977b0d2f582e94d6f0",
+      "status": "generated"
+    },
+    {
+      "name": "녹각/원상",
+      "path": "/products-reference/uniform-20261029/herb-051-v2.webp",
+      "productIds": [
+        92
+      ],
+      "sha256": "fae513cc042355c552c29c940e0bbcabd8d82cb470a2e44b8a1231e97e0a9e58",
+      "status": "generated"
+    },
+    {
+      "name": "단삼",
+      "path": "/products-reference/uniform-20261029/herb-052-v2.webp",
+      "productIds": [
+        93
+      ],
+      "sha256": "e9795361e871b76c728aaa0196a50fc7bde4abfcd2d1f6ed82c0aefe8f744452",
+      "status": "generated"
+    },
+    {
+      "name": "담두시제",
+      "path": "/products-reference/uniform-20261029/herb-074-20261027.webp",
+      "productIds": [
+        94
+      ],
+      "sha256": "5173718281e9c6733fc73038f7f1cb98521320d0c851b106ca9d2cd57d78cbfe",
+      "status": "generated"
+    },
+    {
+      "name": "당귀/미",
+      "path": "/products-reference/uniform-20261029/herb-056-v2.webp",
+      "productIds": [
+        98
+      ],
+      "sha256": "d9fe32f10eac79926f25de20bf65e514f9ab09a9efbe83e0998c45685e22662b",
+      "status": "generated"
+    },
+    {
+      "name": "당귀/신",
+      "path": "/products-reference/uniform-20261029/herb-057.webp",
+      "productIds": [
+        99
+      ],
+      "sha256": "7bb5568319fa82beb693050d44ce6467073d1485f464d597cac5fe5eb41ada6e",
+      "status": "generated"
+    },
+    {
+      "name": "일당귀",
+      "path": "/products-reference/uniform-20261029/herb-223-20261028-b5.webp",
+      "productIds": [
+        100,
+        299
+      ],
+      "sha256": "e4f058ee32df38d2085502cf004790f0a6053eaa45eff3ea51bce48506015fdc",
+      "status": "generated"
+    },
+    {
+      "name": "일당귀/신",
+      "path": "/products-reference/uniform-20261029/herb-224-20261028-b5.webp",
+      "productIds": [
+        102
+      ],
+      "sha256": "c0846e8186de72ff8cce4efba56c6ea9069622bd463f57b632e75b600bcbddc4",
+      "status": "generated"
+    },
+    {
+      "name": "당삼",
+      "path": "/products-reference/uniform-20261029/herb-058-v2.webp",
+      "productIds": [
+        103
+      ],
+      "sha256": "704075c691f03353ad6cc515c54755f5248007b82ccf1d2927676fa2316474ee",
+      "status": "generated"
+    },
+    {
+      "name": "대복피",
+      "path": "/products-reference/uniform-20261029/herb-059-v2.webp",
+      "productIds": [
+        104
+      ],
+      "sha256": "0588ec54e319bb4205db1f15784ae903c2a3006ef533cca557f06dd57ceed991",
+      "status": "generated"
+    },
+    {
+      "name": "대청엽",
+      "path": "/products-reference/uniform-20261029/herb-060.webp",
+      "productIds": [
+        105
+      ],
+      "sha256": "7f09b0e428089ec143ce25a7f016a18dcb76d6b9d5f337a8ee534deb4d0fdd33",
+      "status": "generated"
+    },
+    {
+      "name": "대추/절",
+      "path": "/products-reference/uniform-20261029/herb-063.webp",
+      "productIds": [
+        107
+      ],
+      "sha256": "ce60ba422e4dae9912abe10ac940165826ccccb80c354d014ea033cdbf189bf1",
+      "status": "generated"
+    },
+    {
+      "name": "대황",
+      "path": "/products-reference/uniform-20261029/herb-064.webp",
+      "productIds": [
+        108
+      ],
+      "sha256": "6ddd0a10799064d60824638960e76a4e733c9cfdfdc5252a2bd817dc2c0dc728",
+      "status": "generated"
+    },
+    {
+      "name": "대황/장엽",
+      "path": "/products-reference/uniform-20261029/herb-065.webp",
+      "productIds": [
+        109
+      ],
+      "sha256": "54d35a65565bf5c70d9a90b5f6d2427ec4eb7552c95d8b80e6c6fa692c84dc43",
+      "status": "generated"
+    },
+    {
+      "name": "대황/종",
+      "path": "/products-reference/uniform-20261029/herb-066.webp",
+      "productIds": [
+        110
+      ],
+      "sha256": "dd838c35ee73064880571ecf7c64286eebf4facc491a9c52d51e3d7a595937b9",
+      "status": "generated"
+    },
+    {
+      "name": "대황주증",
+      "path": "/products-reference/uniform-20261029/herb-067-v2.webp",
+      "productIds": [
+        111
+      ],
+      "sha256": "eaaac76fda7676e59492b895c0265b05688b26f6daaecc443dba88f5fedeaca8",
+      "status": "generated"
+    },
+    {
+      "name": "도경",
+      "path": "/products-reference/uniform-20261029/herb-068.webp",
+      "productIds": [
+        112
+      ],
+      "sha256": "aa4c7d621fde27c7cb1761826a50e1627fa84f58387ac772ab9da8b35b8437a6",
+      "status": "generated"
+    },
+    {
+      "name": "도인/절",
+      "path": "/products-reference/uniform-20261029/herb-070-v2.webp",
+      "productIds": [
+        114
+      ],
+      "sha256": "26f1ea8ea3ac01ae553f29d7f115852e91c31059ae671804814499549cf98301",
+      "status": "generated"
+    },
+    {
+      "name": "독활",
+      "path": "/products-reference/uniform-20261029/herb-071-v2.webp",
+      "productIds": [
+        116,
+        117
+      ],
+      "sha256": "c228ee9037ca98c96fdf9ef51900c36a84deb1e1272bd562890e4ab7876475d7",
+      "status": "generated"
+    },
+    {
+      "name": "동과자",
+      "path": "/products-reference/uniform-20261029/herb-072-v2.webp",
+      "productIds": [
+        118
+      ],
+      "sha256": "40c1589105052a3d2bd7876444a8cd8492f06784b7a1fd7fa2ef44d2e00b477a",
+      "status": "generated"
+    },
+    {
+      "name": "부평초",
+      "path": "/products-reference/uniform-20261029/bupyeongcho.webp",
+      "productIds": [
+        120
+      ],
+      "sha256": "c37c2293e060b05e5733acb332bed282343cd775c8e4ed11b068c87c230c14b3",
+      "status": "generated"
+    },
+    {
+      "name": "두충",
+      "path": "/products-reference/uniform-20261029/herb-075.webp",
+      "productIds": [
+        121
+      ],
+      "sha256": "1e64bdf91d6c475f1c3a1a82af56ecc100269ced56f435bbff96d03d80d5dc91",
+      "status": "generated"
+    },
+    {
+      "name": "두충/염자",
+      "path": "/products-reference/uniform-20261029/herb-076-20261027.webp",
+      "productIds": [
+        122,
+        123,
+        124
+      ],
+      "sha256": "afe997f1eaf7817ff28ffc7fc0ae85483c367435bcde6903dcafe9fd27cf348b",
+      "status": "generated"
+    },
+    {
+      "name": "등피",
+      "path": "/products-reference/uniform-20261029/herb-077-20261027.webp",
+      "productIds": [
+        125
+      ],
+      "sha256": "9947b72d605027ba436b400d8da828662781d59ca92ae8b5c83ce8ef585a75fd",
+      "status": "generated"
+    },
+    {
+      "name": "마가목",
+      "path": "/products-reference/uniform-20261029/herb-078-20261027.webp",
+      "productIds": [
+        126
+      ],
+      "sha256": "1ee12252f0bde809126a9013ea44555c63fee0f7e2f22bde89aa1bb196bcef48",
+      "status": "generated"
+    },
+    {
+      "name": "마황",
+      "path": "/products-reference/uniform-20261029/herb-079-20261029-revised.webp",
+      "productIds": [
+        127,
+        128
+      ],
+      "sha256": "5cf895f6cb9fe9ef1a998bb3d335fe05465b2f834b33fa9107c58e377847cb09",
+      "status": "generated"
+    },
+    {
+      "name": "마황/탕포",
+      "path": "/products-reference/uniform-20261029/herb-080-20261027.webp",
+      "productIds": [
+        129
+      ],
+      "sha256": "d01e6516add8fdb81e3d5a8be4dc3e683004b357fd9bd68d914babd3eb43030e",
+      "status": "generated"
+    },
+    {
+      "name": "맥문동/거심/특",
+      "path": "/products-reference/uniform-20261029/herb-083.webp",
+      "productIds": [
+        130,
+        133,
+        134
+      ],
+      "sha256": "9bacf25eb5df3d277f0652eaff1c1e868783ebfc3837e85bd3019e399fa27257",
+      "status": "generated"
+    },
+    {
+      "name": "만형자",
+      "path": "/products-reference/uniform-20261029/herb-081-20261027.webp",
+      "productIds": [
+        131
+      ],
+      "sha256": "c650eb2c48c18b5eb565745ce9d3673cf9eabc4610cc3180c867c53877b3fed9",
+      "status": "generated"
+    },
+    {
+      "name": "망초",
+      "path": "/products-reference/uniform-20261029/herb-082-20261027.webp",
+      "productIds": [
+        132
+      ],
+      "sha256": "68a7714522d9d5699d40f4c7570c677cb14eb2e2f3d5e3dd3d0188cd0fa9b27e",
+      "status": "generated"
+    },
+    {
+      "name": "목단피/대",
+      "path": "/products-reference/uniform-20261029/herb-090-20261027.webp",
+      "productIds": [
+        135,
+        142
+      ],
+      "sha256": "9d1c9de5c82a831a3b6b29918882d4fc8ce8584f39e5d1a019a95eed6c673025",
+      "status": "generated"
+    },
+    {
+      "name": "맥아초",
+      "path": "/products-reference/uniform-20261029/herb-084.webp",
+      "productIds": [
+        136
+      ],
+      "sha256": "9bff5ba22cf4d179ebbd734150a5c740a5869c986e4a26f9665aca9dc521be34",
+      "status": "generated"
+    },
+    {
+      "name": "메밀(교맥)",
+      "path": "/products-reference/uniform-20261029/memil-gyomaek-v2.webp",
+      "productIds": [
+        137
+      ],
+      "sha256": "555fa9d05d43cd8c42464b11ab5c60d050a01638ffe99923bc3a0d010f956769",
+      "status": "generated"
+    },
+    {
+      "name": "모과",
+      "path": "/products-reference/uniform-20261029/herb-086-20261027.webp",
+      "productIds": [
+        138
+      ],
+      "sha256": "e64e424106800eb2ad01449a7e8e4a8a864a3d97500070ed2198956299e4688d",
+      "status": "generated"
+    },
+    {
+      "name": "모근",
+      "path": "/products-reference/uniform-20261029/herb-087.webp",
+      "productIds": [
+        139
+      ],
+      "sha256": "6be992fbc3400078e4b06fec9eaa63a76de45f055049419c97a7226442831e22",
+      "status": "generated"
+    },
+    {
+      "name": "모려",
+      "path": "/products-reference/uniform-20261029/herb-088.webp",
+      "productIds": [
+        140
+      ],
+      "sha256": "bcdb503eaf85971cbd0bf05311e0d65d958b9a06b737b2e8ee7230c04d6122f2",
+      "status": "generated"
+    },
+    {
+      "name": "목적",
+      "path": "/products-reference/uniform-20261029/herb-091-20261029-revised.webp",
+      "productIds": [
+        143
+      ],
+      "sha256": "cfed2dc36f8c544a3b75ce9082d286255ec8f151090d4be397e84a54a905473c",
+      "status": "generated"
+    },
+    {
+      "name": "목통",
+      "path": "/products-reference/uniform-20261029/herb-092-20261027.webp",
+      "productIds": [
+        144
+      ],
+      "sha256": "c6f48af241acd179a06d8bf7209a8b97658827e11c494e370a39227e272e1fba",
+      "status": "generated"
+    },
+    {
+      "name": "목향",
+      "path": "/products-reference/uniform-20261029/herb-093-20261027.webp",
+      "productIds": [
+        145
+      ],
+      "sha256": "b925feb5634d5ea89f4e972d5c78214053bf3093f813acb7d02bd8386bc172ec",
+      "status": "generated"
+    },
+    {
+      "name": "몰약",
+      "path": "/products-reference/uniform-20261029/herb-094-20261027.webp",
+      "productIds": [
+        146
+      ],
+      "sha256": "bc16d3317676c16694f17052fd716d3944f0733d1680f94be555cc2f39d2dde7",
+      "status": "generated"
+    },
+    {
+      "name": "소맥(밀)",
+      "path": "/products-reference/uniform-20261029/herb-170-20261027-seo.webp",
+      "productIds": [
+        149
+      ],
+      "sha256": "1152e23689dd89b2813bf75b2bb5a5cfcaad29fc14aa0d8e58d0a730daa15914",
+      "status": "generated"
+    },
+    {
+      "name": "반하/절",
+      "path": "/products-reference/uniform-20261029/herb-100-20261029-revised.webp",
+      "productIds": [
+        151
+      ],
+      "sha256": "8f0f96ce9ce5eade0696a8452834c1e57789cc73b6f06de01353313c2c5f0701",
+      "status": "generated"
+    },
+    {
+      "name": "반하",
+      "path": "/products-reference/uniform-20261029/herb-098-20261029-revised.webp",
+      "productIds": [
+        152
+      ],
+      "sha256": "b994c3bace34aad11d3b8f6e0f4c55703eeea1529140b90db1d030c7b718afab",
+      "status": "generated"
+    },
+    {
+      "name": "반하/절/생강백반제",
+      "path": "/products-reference/uniform-20261029/herb-101-20261027.webp",
+      "productIds": [
+        153
+      ],
+      "sha256": "c74adce461451f76da3fc0796a6ea435578f5feef0594076be7c9f60845b5265",
+      "status": "generated"
+    },
+    {
+      "name": "반하/생강백반제",
+      "path": "/products-reference/uniform-20261029/herb-099-20261027.webp",
+      "productIds": [
+        155
+      ],
+      "sha256": "b1758efac3dbc6bbc0f484456996dcbe1e1ed1fcfa81c998caf0e4aa2398dd81",
+      "status": "pending-generation"
+    },
+    {
+      "name": "방기",
+      "path": "/products-reference/uniform-20261029/herb-102-20261027.webp",
+      "productIds": [
+        156
+      ],
+      "sha256": "2c01dbd1f304e7dade17aace8a2317d9eb6363d58964bc69c6ae84d42cf8a9aa",
+      "status": "generated"
+    },
+    {
+      "name": "방풍",
+      "path": "/products-reference/uniform-20261029/herb-103-20261027.webp",
+      "productIds": [
+        157
+      ],
+      "sha256": "bf2d744dfa8d7506f60a874f23153f6e149ce6e0e81a1e310176cb4bb754b57f",
+      "status": "generated"
+    },
+    {
+      "name": "방풍/식",
+      "path": "/products-reference/uniform-20261029/herb-104-20261027-c.webp",
+      "productIds": [
+        158
+      ],
+      "sha256": "415004575a8dd6e71dc2672ff1aeabc47a7eee121df318175afd2bb11cfd3f54",
+      "status": "generated"
+    },
+    {
+      "name": "백급",
+      "path": "/products-reference/uniform-20261029/herb-106.webp",
+      "productIds": [
+        160
+      ],
+      "sha256": "14b4b5378fdf7fca37a4b1a13b4882ddf28e0bea06e91a2dfcd660173eb5efe4",
+      "status": "generated"
+    },
+    {
+      "name": "백두구/유피/추말",
+      "path": "/products-reference/uniform-20261029/baekdugu-yupi-chumal-v2.webp",
+      "productIds": [
+        161
+      ],
+      "sha256": "90cd4156b6d099370c14f2d2eebc7487d1dd4ec9a898c53008b350b38d3743ec",
+      "status": "generated"
+    },
+    {
+      "name": "백두구/거피",
+      "path": "/products-reference/uniform-20261029/baekdugu-geopi.webp",
+      "productIds": [
+        162
+      ],
+      "sha256": "33e38c973ff58ca1bf3f4a986678db242d9c6a5c192518787b7864e014a322b2",
+      "status": "generated"
+    },
+    {
+      "name": "백두옹",
+      "path": "/products-reference/uniform-20261029/herb-109-20261027.webp",
+      "productIds": [
+        163
+      ],
+      "sha256": "eb6c6b43c62d8a8d0603d8672dc1e48df8cfb2bfaa63be2d7ea4af75756f22c5",
+      "status": "generated"
+    },
+    {
+      "name": "백렴",
+      "path": "/products-reference/uniform-20261029/herb-110-20261027.webp",
+      "productIds": [
+        164
+      ],
+      "sha256": "c392147f2a07f5fde1c7f55f8192801d8c32aaa762e1894fcf3968ff45a51606",
+      "status": "generated"
+    },
+    {
+      "name": "백부근",
+      "path": "/products-reference/uniform-20261029/herb-112-20261027.webp",
+      "productIds": [
+        166
+      ],
+      "sha256": "3c82e76e3fa41e611e52eb76cb25f7898f11ae2233e9918dbc2f93b01ea7a046",
+      "status": "pending-generation"
+    },
+    {
+      "name": "백부자/정품/관백부",
+      "path": "/products-reference/uniform-20261029/baekbuja-gwan-v2.webp",
+      "productIds": [
+        167
+      ],
+      "sha256": "751c938758bc693dadf61b50dbe68a00ff3be754df7cea0c7c2fcc0399ca6a4f",
+      "status": "generated"
+    },
+    {
+      "name": "백선피",
+      "path": "/products-reference/uniform-20261029/herb-114-20261027.webp",
+      "productIds": [
+        168
+      ],
+      "sha256": "eb587c58adc616ab2dd2430b2f48a5c5f61bd27cf004f6885e389f5b27321bd1",
+      "status": "pending-generation"
+    },
+    {
+      "name": "백수오",
+      "path": "/products-reference/uniform-20261029/herb-115-20261027.webp",
+      "productIds": [
+        169
+      ],
+      "sha256": "14d342a3f0e991fc7982cf22cbde610e04c7b9b0f2cad79de097b8fe3b98a927",
+      "status": "pending-generation"
+    },
+    {
+      "name": "백자인",
+      "path": "/products-reference/uniform-20261029/herb-116-20261027.webp",
+      "productIds": [
+        170
+      ],
+      "sha256": "49e28dc4a28bab05f59c64148408eb3db232555b07ac1ddf7188c11879dc2253",
+      "status": "pending-generation"
+    },
+    {
+      "name": "백지",
+      "path": "/products-reference/uniform-20261029/herb-117-20261027.webp",
+      "productIds": [
+        171,
+        172
+      ],
+      "sha256": "6375975c568ce996f2792ca3bb9af48cfdfeec580b560f5e70ba751f60718fba",
+      "status": "pending-generation"
+    },
+    {
+      "name": "백출",
+      "path": "/products-reference/uniform-20261029/herb-118-20261027.webp",
+      "productIds": [
+        173
+      ],
+      "sha256": "d08a52a1d2b9b0357ae14f9ed51188408a61126c53ebc66340b08a10fb6e95b1",
+      "status": "generated"
+    },
+    {
+      "name": "백출/기원",
+      "path": "/products-reference/uniform-20261029/herb-119-20261027.webp",
+      "productIds": [
+        174
+      ],
+      "sha256": "463e5e13d0a1387de5bb4640a074f1ff831a1a09ea714a069b4ed04f823b74e6",
+      "status": "generated"
+    },
+    {
+      "name": "백출/동북/특특",
+      "path": "/products-reference/uniform-20261029/baekchul-dongbuk.webp",
+      "productIds": [
+        175
+      ],
+      "sha256": "5d52f254f3cce28bf35cbc3d2ff28488184c62dd4f4c206f45cd7995cafb0420",
+      "status": "pending-generation"
+    },
+    {
+      "name": "백출초",
+      "path": "/products-reference/uniform-20261029/herb-123-20261027-c.webp",
+      "productIds": [
+        176
+      ],
+      "sha256": "29c29c97d3621b01ebc258ebb542b86144ab238a6925c15e6fe691d0c9950069",
+      "status": "pending-generation"
+    },
+    {
+      "name": "백출/황토",
+      "path": "/products-reference/uniform-20261029/herb-122.webp",
+      "productIds": [
+        177
+      ],
+      "sha256": "34cd745f5b49284d59a502849e8cacb9cb77bd8347b061180bdf1cf89b05874e",
+      "status": "pending-generation"
+    },
+    {
+      "name": "백출/미감침",
+      "path": "/products-reference/uniform-20261029/herb-120-20261027.webp",
+      "productIds": [
+        178
+      ],
+      "sha256": "bafad1a824e62c76ee4a6e9c94e0aa435fbd8307df4a9c3d2fc59d42442357ee",
+      "status": "pending-generation"
+    },
+    {
+      "name": "백편두/추말",
+      "path": "/products-reference/uniform-20261029/herb-125-20261027.webp",
+      "productIds": [
+        179
+      ],
+      "sha256": "7c3af5bfc6ae5b3378e4a1a2680c4e62eafff42d84c52456300614c9d3935946",
+      "status": "pending-generation"
+    },
+    {
+      "name": "백합",
+      "path": "/products-reference/uniform-20261029/herb-126.webp",
+      "productIds": [
+        181
+      ],
+      "sha256": "996b6ef34755253c277ab8c7b377b5a81c684bec4fd7548acc57ace9cab00d1f",
+      "status": "pending-generation"
+    },
+    {
+      "name": "별갑",
+      "path": "/products-reference/uniform-20261029/herb-127-20261027-c.webp",
+      "productIds": [
+        182
+      ],
+      "sha256": "d3b99c9c1f23c8a744196c5fc9f79b62d6d0d4ce8c982bc3517d94cdfdd297c1",
+      "status": "pending-generation"
+    },
+    {
+      "name": "보골지/염자",
+      "path": "/products-reference/uniform-20261029/herb-129-20261027-c.webp",
+      "productIds": [
+        185,
+        186
+      ],
+      "sha256": "3e8c4a08b18a40dc0436f3da94237dc3c2a8385617f0546835dcd3dc066159e1",
+      "status": "pending-generation"
+    },
+    {
+      "name": "복령/야생",
+      "path": "/products-reference/uniform-20261029/bokryeong-yasaeng.webp",
+      "productIds": [
+        187
+      ],
+      "sha256": "227a5d8e20efcdf13de711a9e151f448f84d35d3f81067d4c08afa462d426074",
+      "status": "pending-generation"
+    },
+    {
+      "name": "복령",
+      "path": "/products-reference/uniform-20261029/herb-130-20261027-c.webp",
+      "productIds": [
+        188
+      ],
+      "sha256": "a49ca26e5bcf7b2665c1ad787e566d3af5710b322719b52664165e59b5812f20",
+      "status": "pending-generation"
+    },
+    {
+      "name": "복령/신",
+      "path": "/products-reference/uniform-20261029/herb-131-20261027-c.webp",
+      "productIds": [
+        189
+      ],
+      "sha256": "75935603d4bdbf0b9160c9c4ed269b70bdc3f9a1b76c74c9eddc6df45a98b281",
+      "status": "pending-generation"
+    },
+    {
+      "name": "복령/적",
+      "path": "/products-reference/uniform-20261029/herb-132-20261027-c.webp",
+      "productIds": [
+        190
+      ],
+      "sha256": "b6d46d93e5956475a7a1c5a8d768d369a0543edbeee2b43aac139720e96bb8bc",
+      "status": "pending-generation"
+    },
+    {
+      "name": "복령/칼",
+      "path": "/products-reference/uniform-20261029/herb-133-20261027-c.webp",
+      "productIds": [
+        192
+      ],
+      "sha256": "e9e19a4036b9f96e8d90e634a651aa1b6bd722b099cd1a9e8401988984df3771",
+      "status": "pending-generation"
+    },
+    {
+      "name": "복령피",
+      "path": "/products-reference/uniform-20261029/herb-134-20261027-c.webp",
+      "productIds": [
+        193
+      ],
+      "sha256": "785291e7b899b43bb5eade32f18da3104bacab4fffc3e4d175a85707b50754b3",
+      "status": "pending-generation"
+    },
+    {
+      "name": "복분자",
+      "path": "/products-reference/uniform-20261029/herb-135-20261027-c.webp",
+      "productIds": [
+        194
+      ],
+      "sha256": "8d214a94f6bf8ba7ba050ee78f1d4dd99f1aeb6aaeccb6fdf31e4db0ab1a73b3",
+      "status": "pending-generation"
+    },
+    {
+      "name": "부자/경포",
+      "path": "/products-reference/uniform-20261029/buja-gyeongpo.webp",
+      "productIds": [
+        195
+      ],
+      "sha256": "6c5427fdce12e2c493ca202aacfff1a36a00624bb0538f05d91d27b8590767fc",
+      "status": "pending-generation"
+    },
+    {
+      "name": "부자/포",
+      "path": "/products-reference/uniform-20261029/herb-137-20261027-c.webp",
+      "productIds": [
+        196
+      ],
+      "sha256": "203e76f3692a044fbd7aa6685e7e1122072bfce5c00d4d902e11defbf3fc7986",
+      "status": "pending-generation"
+    },
+    {
+      "name": "비해",
+      "path": "/products-reference/uniform-20261029/herb-138-20261027-c.webp",
+      "productIds": [
+        197
+      ],
+      "sha256": "bb40eab7f592edbb4f28bbbece384413cf87fd1bbd47bf2b194e778ce9f77509",
+      "status": "pending-generation"
+    },
+    {
+      "name": "빈랑자",
+      "path": "/products-reference/uniform-20261029/herb-139-20261027-c.webp",
+      "productIds": [
+        198
+      ],
+      "sha256": "28714caa21d61404cd3f9210edbf299e1aad144fa9b01b627fbd006b7027564d",
+      "status": "pending-generation"
+    },
+    {
+      "name": "사간",
+      "path": "/products-reference/uniform-20261029/herb-140-20261027-s.webp",
+      "productIds": [
+        199
+      ],
+      "sha256": "8accbf4edc4411717cf9589a735ec9202431ee7fee432f15725ac7cc62e22f24",
+      "status": "pending-generation"
+    },
+    {
+      "name": "사삼",
+      "path": "/products-reference/uniform-20261029/herb-141-20261027-s.webp",
+      "productIds": [
+        200
+      ],
+      "sha256": "bc84b86f5c8d26c4ce86f0e2cc3c999e685fe07ad45c0a7e8ba8bf20ec6b5a53",
+      "status": "pending-generation"
+    },
+    {
+      "name": "사상자",
+      "path": "/products-reference/uniform-20261029/herb-142-20261027-rev.webp",
+      "productIds": [
+        201
+      ],
+      "sha256": "5360524291247eb44f5cd26057b90f9a9d57bb42a409a0d26304ac9718ca9691",
+      "status": "pending-generation"
+    },
+    {
+      "name": "사인초/추말",
+      "path": "/products-reference/uniform-20261029/herb-144-20261027-large.webp",
+      "productIds": [
+        202
+      ],
+      "sha256": "e1916d7ecf0846e2a1fc8dc03f939ca6459da67aa084bc325c2853d118be4cb3",
+      "status": "pending-generation"
+    },
+    {
+      "name": "산사",
+      "path": "/products-reference/uniform-20261029/herb-145-20261027-rev.webp",
+      "productIds": [
+        204
+      ],
+      "sha256": "fd403aef1b2605004eb1a765f731cbed32f974eae42e8126803d174246bfbd9e",
+      "status": "pending-generation"
+    },
+    {
+      "name": "산사초",
+      "path": "/products-reference/uniform-20261029/herb-146-20261027-s.webp",
+      "productIds": [
+        205
+      ],
+      "sha256": "e727e555517f5c3a5d1df96a93e82cc5b65b7db6ce16e8226647b93171554162",
+      "status": "pending-generation"
+    },
+    {
+      "name": "산수유/특/손치",
+      "path": "/products-reference/uniform-20261029/sansuyu-gurye.webp",
+      "productIds": [
+        206,
+        207
+      ],
+      "sha256": "37fa9a637198001915e0a9d74e403385f1d8c920f9791b68fdaae4126f5ed081",
+      "status": "pending-generation"
+    },
+    {
+      "name": "산약(사각)",
+      "path": "/products-reference/uniform-20261029/herb-149-20261027-rev.webp",
+      "productIds": [
+        208
+      ],
+      "sha256": "8eeb3941b4ecf000eca714581ca4482d30f2f8a1c64105fc034b27c2a487175c",
+      "status": "pending-generation"
+    },
+    {
+      "name": "산약/거피",
+      "path": "/products-reference/uniform-20261029/sanyak-geopi.webp",
+      "productIds": [
+        209
+      ],
+      "sha256": "cb98fe29998b6ce815bd898c29e2098536e0225a42aefc37d4c8036183e4fc76",
+      "status": "pending-generation"
+    },
+    {
+      "name": "산장",
+      "path": "/products-reference/uniform-20261029/herb-150-20261027-s.webp",
+      "productIds": [
+        211
+      ],
+      "sha256": "f9ff79056aabd9ae27fad2549fd67aec9d4487f5557b644e99e8bc8efd821a48",
+      "status": "pending-generation"
+    },
+    {
+      "name": "산조인/원",
+      "path": "/products-reference/uniform-20261029/sanjoin-whole.webp",
+      "productIds": [
+        212
+      ],
+      "sha256": "07344b58b3f3900c63bc3c3f120693d5d1ad60600da59263ff64d51f047ed3d0",
+      "status": "pending-generation"
+    },
+    {
+      "name": "산조인초/원",
+      "path": "/products-reference/uniform-20261029/sanjoin-roasted-whole.webp",
+      "productIds": [
+        213
+      ],
+      "sha256": "4261bf51238d75035d7bb24125df1985a85ddb18b73fa190549e364599967c0b",
+      "status": "pending-generation"
+    },
+    {
+      "name": "산초(천초)",
+      "path": "/products-reference/uniform-20261029/herb-153-20261027-s.webp",
+      "productIds": [
+        214
+      ],
+      "sha256": "152bcfb2bc93969517458f575cae1f7221acf17384bc9b23bbca6ae178e7f3db",
+      "status": "pending-generation"
+    },
+    {
+      "name": "삼릉",
+      "path": "/products-reference/uniform-20261029/herb-154.webp",
+      "productIds": [
+        215
+      ],
+      "sha256": "3092b7547bcafc7c84c9e1ace1bd2bf7a78aa54a5a9f55d2bb6416520f30362f",
+      "status": "pending-generation"
+    },
+    {
+      "name": "상기생",
+      "path": "/products-reference/uniform-20261029/herb-155-20261027-s.webp",
+      "productIds": [
+        216
+      ],
+      "sha256": "6aa8a90836584e4f8686d18028423ebb732e974de4cd436b50efb41fde6a791f",
+      "status": "pending-generation"
+    },
+    {
+      "name": "상백피/거피",
+      "path": "/products-reference/uniform-20261029/herb-157-20261027-rev.webp",
+      "productIds": [
+        217
+      ],
+      "sha256": "aa1c5f6d10bdbf9bcf14c2a8517903998351cc6876354dc7f223c09c85a9df38",
+      "status": "pending-generation"
+    },
+    {
+      "name": "상백피",
+      "path": "/products-reference/uniform-20261029/herb-156-20261027-s.webp",
+      "productIds": [
+        218
+      ],
+      "sha256": "978e5a773d348ee71e05f95b48839e5d657937659d029479b51dfe50df511916",
+      "status": "pending-generation"
+    },
+    {
+      "name": "상백피/유피",
+      "path": "/products-reference/uniform-20261029/sangbaekpi-yupi.webp",
+      "productIds": [
+        219
+      ],
+      "sha256": "528c3383e582a83a647b59b411db3d2568a976bed45a8db5e18e58c9be78f108",
+      "status": "pending-generation"
+    },
+    {
+      "name": "상심자",
+      "path": "/products-reference/uniform-20261029/herb-158-20261027-rev.webp",
+      "productIds": [
+        220
+      ],
+      "sha256": "e8b6a07a71e5f065721021d2d02d41df3b70a88f3f562983e32e106143d18dba",
+      "status": "pending-generation"
+    },
+    {
+      "name": "상지",
+      "path": "/products-reference/uniform-20261029/herb-159-20261027-rev.webp",
+      "productIds": [
+        221
+      ],
+      "sha256": "7b96be56e44d02947511ef787e71818a22aa98f0fbfdc8ffea75b4bf02a0171e",
+      "status": "pending-generation"
+    },
+    {
+      "name": "상황버섯",
+      "path": "/products-reference/uniform-20261029/herb-161-20261027-s.webp",
+      "productIds": [
+        223
+      ],
+      "sha256": "ea0de6f28814a6830c21d5c52fd090162c7d27da845d6d725a8b4a9c0264534b",
+      "status": "pending-generation"
+    },
+    {
+      "name": "서장경",
+      "path": "/products-reference/uniform-20261029/herb-162-20261027-seo.webp",
+      "productIds": [
+        224
+      ],
+      "sha256": "fb28e565de9a97097ca04257342cd1a74fd22ffa4d87924976c581e0e2313ea7",
+      "status": "pending-generation"
+    },
+    {
+      "name": "석결명/가루",
+      "path": "/products-reference/uniform-20261029/herb-163.webp",
+      "productIds": [
+        225
+      ],
+      "sha256": "9e14a98b019392064c2a20b5f72a171ff156b8ba00ea0fb3030a17f3331e6f6e",
+      "status": "pending-generation"
+    },
+    {
+      "name": "석고/가루",
+      "path": "/products-reference/uniform-20261029/herb-164.webp",
+      "productIds": [
+        226
+      ],
+      "sha256": "40f49d8353c6b385d8d7a36f31810fc823521193303182314c2df8b9268a7b6a",
+      "status": "pending-generation"
+    },
+    {
+      "name": "석곡",
+      "path": "/products-reference/uniform-20261029/herb-165-20261027-seo.webp",
+      "productIds": [
+        227
+      ],
+      "sha256": "9df1b830d4bd03ab8f9c5e1b507acee9922956d2472ff2490b2f01a29869fae5",
+      "status": "pending-generation"
+    },
+    {
+      "name": "석창포",
+      "path": "/products-reference/uniform-20261029/herb-166-20261027-seo.webp",
+      "productIds": [
+        228
+      ],
+      "sha256": "bffee857e2e33a1ce6a8ad7497906fd9ac23ee9111605c60b33ddda4189953a8",
+      "status": "pending-generation"
+    },
+    {
+      "name": "선복화",
+      "path": "/products-reference/uniform-20261029/herb-167-20261027-seo.webp",
+      "productIds": [
+        229
+      ],
+      "sha256": "33f0c705cbafb55cd23db135184d3bbcc1c52f11eb1d7c54960ddaa9be8e9598",
+      "status": "pending-generation"
+    },
+    {
+      "name": "세신",
+      "path": "/products-reference/uniform-20261029/herb-168-20261027-seo.webp",
+      "productIds": [
+        230
+      ],
+      "sha256": "ddbb97b0580078cd324cdbf10f772fb27abd34e6e00da80c1f8d3df68fe04cd5",
+      "status": "pending-generation"
+    },
+    {
+      "name": "센나엽",
+      "path": "/products-reference/uniform-20261029/herb-169.webp",
+      "productIds": [
+        231
+      ],
+      "sha256": "239002524c20d17b17f209450837c945d5cda5b1dbd9a6760aee856d098d6172",
+      "status": "pending-generation"
+    },
+    {
+      "name": "소목",
+      "path": "/products-reference/uniform-20261029/herb-171-20261027-seo.webp",
+      "productIds": [
+        232
+      ],
+      "sha256": "fe312ddb21ec8461bb23582d25137b48874a37cdc58ea149a94ddbb7e7462227",
+      "status": "pending-generation"
+    },
+    {
+      "name": "속단",
+      "path": "/products-reference/uniform-20261029/herb-172-20261027-seo.webp",
+      "productIds": [
+        234
+      ],
+      "sha256": "17fe01566be85c1ea84f3a89466ae10887da96eedf3f0b2a00e45215400118b3",
+      "status": "pending-generation"
+    },
+    {
+      "name": "송엽",
+      "path": "/products-reference/uniform-20261029/herb-173.webp",
+      "productIds": [
+        235
+      ],
+      "sha256": "78a1cdfd24502817f76dd56adbc767cd1c9df8bc75e490fcc5d19453c57a2e38",
+      "status": "pending-generation"
+    },
+    {
+      "name": "송절",
+      "path": "/products-reference/uniform-20261029/herb-174-20261027-seo.webp",
+      "productIds": [
+        236
+      ],
+      "sha256": "e5b409ffec0c2c9c59bda194256c140b618c2b5bd732d23acbf10b72ed81ec98",
+      "status": "pending-generation"
+    },
+    {
+      "name": "송화분",
+      "path": "/products-reference/uniform-20261029/herb-175.webp",
+      "productIds": [
+        237
+      ],
+      "sha256": "f244092a3e4ceb7ba76a8a24ba7d7c1d35438e642832ae3d044b798768f93bf7",
+      "status": "pending-generation"
+    },
+    {
+      "name": "사과락",
+      "path": "/products-reference/uniform-20261029/sagwarak.webp",
+      "productIds": [
+        238
+      ],
+      "sha256": "69cb257219a8f15dbb94be7e18eaa95e6fbd96d86e9f68a02f2e4c68a56d40c3",
+      "status": "pending-generation"
+    },
+    {
+      "name": "수오등",
+      "path": "/products-reference/uniform-20261029/herb-177-20261027-seo.webp",
+      "productIds": [
+        239
+      ],
+      "sha256": "3d7d313b1599a2868d58137fd6b1bd73c59cb3aa3a1ab838d642966218b2a794",
+      "status": "pending-generation"
+    },
+    {
+      "name": "승마",
+      "path": "/products-reference/uniform-20261029/herb-179-20261027-seo.webp",
+      "productIds": [
+        243
+      ],
+      "sha256": "bc2ec47390733f69802182fb3094e6c87b4ca8d2e26fe5167a391fa4fddc0853",
+      "status": "pending-generation"
+    },
+    {
+      "name": "시호/은",
+      "path": "/products-reference/uniform-20261029/herb-180-20261027-seo.webp",
+      "productIds": [
+        245
+      ],
+      "sha256": "67d25480cafcb4f57334ec0eca5734a611d6c2d5572968150697742ef70d8620",
+      "status": "pending-generation"
+    },
+    {
+      "name": "시호/서장",
+      "path": "/products-reference/uniform-20261029/siho-seojang.webp",
+      "productIds": [
+        246
+      ],
+      "sha256": "f42c1312d6026d4c80b400e616be195d09ab6990c4a605e1774b2827120fe45c",
+      "status": "pending-generation"
+    },
+    {
+      "name": "신곡초",
+      "path": "/products-reference/uniform-20261029/singokcho.webp",
+      "productIds": [
+        248
+      ],
+      "sha256": "c1a497afd355e2457e0562b1a6b40669525b6208a411d6742da207a45e303809",
+      "status": "pending-generation"
+    },
+    {
+      "name": "신이",
+      "path": "/products-reference/uniform-20261029/herb-184-20261027-seo.webp",
+      "productIds": [
+        249
+      ],
+      "sha256": "acbfcb16e080f8abb02ca3722c22a86065bdd05d6d4267656d215882f5e9484f",
+      "status": "pending-generation"
+    },
+    {
+      "name": "아교",
+      "path": "/products-reference/uniform-20261029/herb-185-20261028.webp",
+      "productIds": [
+        250
+      ],
+      "sha256": "b4fdcbcfc9826fecf0d72f30a1f4f7b561c565503d9d641e1485e8773ac3c48b",
+      "status": "pending-generation"
+    },
+    {
+      "name": "아출(봉출)",
+      "path": "/products-reference/uniform-20261029/achul-bongchul.webp",
+      "productIds": [
+        253
+      ],
+      "sha256": "15034ab555540ae3db4746c66028c212e7a308baceba751d32240f7f7e618027",
+      "status": "pending-generation"
+    },
+    {
+      "name": "여정실",
+      "path": "/products-reference/uniform-20261029/herb-187-20261028-v2.webp",
+      "productIds": [
+        254
+      ],
+      "sha256": "cc747ea31750f7dca8d58148664a7b824e6fa84ec6be3478d2e10746f636db7d",
+      "status": "pending-generation"
+    },
+    {
+      "name": "여정실/주증",
+      "path": "/products-reference/uniform-20261029/herb-188-20261028-v2.webp",
+      "productIds": [
+        255
+      ],
+      "sha256": "ac30f5aaa2c5a920f971b7a33c415e49b25a29ef2f444af6e5900fc9bb49eac1",
+      "status": "pending-generation"
+    },
+    {
+      "name": "연자육",
+      "path": "/products-reference/uniform-20261029/herb-190-20261028.webp",
+      "productIds": [
+        257
+      ],
+      "sha256": "68ce42eee653f306004f334629307ebdfae5eb21e8f2e2fd109262919300d52a",
+      "status": "pending-generation"
+    },
+    {
+      "name": "영지버섯",
+      "path": "/products-reference/uniform-20261029/herb-191.webp",
+      "productIds": [
+        258
+      ],
+      "sha256": "d19fefbd47ce6e865abb5363875edadb35e066df823b7223ef094c08cccf26cc",
+      "status": "pending-generation"
+    },
+    {
+      "name": "오가피",
+      "path": "/products-reference/uniform-20261029/herb-192-20261028-b5.webp",
+      "productIds": [
+        259
+      ],
+      "sha256": "fb447320cda54d0de8672839092291e1f076d4bd4e3fa0aecb6d2d63aad59eac",
+      "status": "pending-generation"
+    },
+    {
+      "name": "오가피/거피/정품",
+      "path": "/products-reference/uniform-20261029/ogapi-geopi.webp",
+      "productIds": [
+        260
+      ],
+      "sha256": "cc006f2c44a3ab4a44feefba7aa890d644a56ac6fc29ef030a1a1d2fcea1f2ab",
+      "status": "pending-generation"
+    },
+    {
+      "name": "오령지",
+      "path": "/products-reference/uniform-20261029/herb-194-20261028-b5.webp",
+      "productIds": [
+        261
+      ],
+      "sha256": "4a0e7db5472e9a71cb52b16b36e5978370d108c9690f0cc0b1acc664216c83c8",
+      "status": "pending-generation"
+    },
+    {
+      "name": "오미자/무농약",
+      "path": "/products-reference/uniform-20261029/herb-196-20261028.webp",
+      "productIds": [
+        263,
+        264
+      ],
+      "sha256": "194b141644cf3d7303b106bab144840e19ec567bb7d552c9002e8ee212b45716",
+      "status": "pending-generation"
+    },
+    {
+      "name": "오수유",
+      "path": "/products-reference/uniform-20261029/herb-197-20261028.webp",
+      "productIds": [
+        265
+      ],
+      "sha256": "7b052e676b2072e78e4369c7262c8de730c919e80ce0f9db69bbbeee48ae3fba",
+      "status": "pending-generation"
+    },
+    {
+      "name": "오약",
+      "path": "/products-reference/uniform-20261029/herb-198-20261028.webp",
+      "productIds": [
+        266
+      ],
+      "sha256": "7b6b639156d277eb979533aa73b78f253644bb740136e0b56949f44661e52bf8",
+      "status": "pending-generation"
+    },
+    {
+      "name": "용골",
+      "path": "/products-reference/uniform-20261029/herb-199-20261028-b5.webp",
+      "productIds": [
+        267
+      ],
+      "sha256": "bfa2cd74603d0c6cbfa3616c9c5a9910a85c0530155f8210a7ac802ff916ddfc",
+      "status": "pending-generation"
+    },
+    {
+      "name": "용골/가루",
+      "path": "/products-reference/uniform-20261029/herb-200.webp",
+      "productIds": [
+        268
+      ],
+      "sha256": "fd113b984181eac58d72be6fb758a340b071c18d854259273361de94e8d95da3",
+      "status": "pending-generation"
+    },
+    {
+      "name": "용담",
+      "path": "/products-reference/uniform-20261029/herb-201-20261028.webp",
+      "productIds": [
+        269
+      ],
+      "sha256": "5efa7522ffbdef12e14731665bff2bc9d51ee36a5025e02cbe2e61751122ab6e",
+      "status": "pending-generation"
+    },
+    {
+      "name": "우방자",
+      "path": "/products-reference/uniform-20261029/herb-204-20261028.webp",
+      "productIds": [
+        273
+      ],
+      "sha256": "e492919f1979668609977bd169b4f9f02219437662925d79b614554366138a85",
+      "status": "pending-generation"
+    },
+    {
+      "name": "우슬",
+      "path": "/products-reference/uniform-20261029/herb-205k-20261028.webp",
+      "productIds": [
+        274
+      ],
+      "sha256": "f4b6da7c8570064f302822623c9336df0ac6b0da15ca7f9dcddb877b14c4aa6b",
+      "status": "pending-generation"
+    },
+    {
+      "name": "우슬/특특",
+      "path": "/products-reference/uniform-20261029/useul-special.webp",
+      "productIds": [
+        275
+      ],
+      "sha256": "06cc75ec0a8d7f6312c291dbb02683aa8edb7a1a6188b4ca9644f512a55c1375",
+      "status": "pending-generation"
+    },
+    {
+      "name": "우슬/주자",
+      "path": "/products-reference/uniform-20261029/herb-206-20261028.webp",
+      "productIds": [
+        276
+      ],
+      "sha256": "420cab0f160fd9143610272e9343fbd24636ff9666cf7310c92f272da2920db9",
+      "status": "pending-generation"
+    },
+    {
+      "name": "욱리인",
+      "path": "/products-reference/uniform-20261029/herb-207-20261028-b5.webp",
+      "productIds": [
+        277
+      ],
+      "sha256": "87813473904979fe40bdccc242b47d1d54f9fbedae22536baf390de3c59b4071",
+      "status": "pending-generation"
+    },
+    {
+      "name": "울금/온",
+      "path": "/products-reference/uniform-20261029/ulgeum-on.webp",
+      "productIds": [
+        278
+      ],
+      "sha256": "3ac098d339b15ff0cd353dd6faf56a08d0e96d9ebc70cb210e5347196225219d",
+      "status": "pending-generation"
+    },
+    {
+      "name": "원지/밀자",
+      "path": "/products-reference/uniform-20261029/herb-209-20261028-round.webp",
+      "productIds": [
+        279
+      ],
+      "sha256": "ddd44ba939e19fcbee571eb1ac17267af4e82254ac8ad21fc1c6ec6d8ca485bc",
+      "status": "pending-generation"
+    },
+    {
+      "name": "원지/상",
+      "path": "/products-reference/uniform-20261029/herb-210-20261028-b5.webp",
+      "productIds": [
+        280,
+        282
+      ],
+      "sha256": "6e710309e6c153d6875029bb2846ef038c6cd8ba6d36038e98fff6c4fecd2504",
+      "status": "pending-generation"
+    },
+    {
+      "name": "위령선",
+      "path": "/products-reference/uniform-20261029/herb-211-20261028-b5.webp",
+      "productIds": [
+        283
+      ],
+      "sha256": "d06f417416ac7f050fa369cf1e9c804f0620c01c5070f6ce4ea82ec493483e68",
+      "status": "pending-generation"
+    },
+    {
+      "name": "유백피(유근피)",
+      "path": "/products-reference/uniform-20261029/yubaekpi.webp",
+      "productIds": [
+        284,
+        285
+      ],
+      "sha256": "979e029e2b9f30d02070d093c68d7c6ba35007aa90267088279393835b0aca7b",
+      "status": "pending-generation"
+    },
+    {
+      "name": "유향",
+      "path": "/products-reference/uniform-20261029/herb-213.webp",
+      "productIds": [
+        286
+      ],
+      "sha256": "a535ca45e990c40dffde8a07fc9f867acb6d33986727534422b50aafe4bc5d19",
+      "status": "pending-generation"
+    },
+    {
+      "name": "육계",
+      "path": "/products-reference/uniform-20261029/herb-214-20261028-b5.webp",
+      "productIds": [
+        287,
+        288
+      ],
+      "sha256": "520808a9ad5c892e0251f27454ea324a2967a061c9d44975938cd0abff7ea330",
+      "status": "pending-generation"
+    },
+    {
+      "name": "육종용주증/특",
+      "path": "/products-reference/uniform-20261029/yukjongyong-special.webp",
+      "productIds": [
+        290
+      ],
+      "sha256": "52540bea0c3eaa802cd88a39611a962ac79e41c9d91b84f530eb20788facfc94",
+      "status": "pending-generation"
+    },
+    {
+      "name": "율피",
+      "path": "/products-reference/uniform-20261029/herb-217-20261028-b5.webp",
+      "productIds": [
+        291
+      ],
+      "sha256": "7b8df763e1ed16622584ab701fb44fb8d21931d43ed658f00969c3bd9afeb1b6",
+      "status": "pending-generation"
+    },
+    {
+      "name": "은행잎",
+      "path": "/products-reference/uniform-20261029/herb-218.webp",
+      "productIds": [
+        292
+      ],
+      "sha256": "214732a8a1a0a554384354bf4a05a23fc20f91011269b1973efea6020df9fce4",
+      "status": "pending-generation"
+    },
+    {
+      "name": "의이인",
+      "path": "/products-reference/uniform-20261029/herb-219.webp",
+      "productIds": [
+        293
+      ],
+      "sha256": "575fe1068bc76685236d3f56ca39ca2564e26d87f80ed1e41b26c428686b71cf",
+      "status": "pending-generation"
+    },
+    {
+      "name": "의이인/피",
+      "path": "/products-reference/uniform-20261029/uiiin-pi.webp",
+      "productIds": [
+        294
+      ],
+      "sha256": "e92298ae0ea9f84b2e774896873880b87268eb582144e072bdb989336332c62f",
+      "status": "pending-generation"
+    },
+    {
+      "name": "익지/추말",
+      "path": "/products-reference/uniform-20261029/herb-221-20261028-b5.webp",
+      "productIds": [
+        295
+      ],
+      "sha256": "02249b0f88c5945a4e1c15e07e4b944d4cf1b2b7ca7e6f508769f728a90dba48",
+      "status": "pending-generation"
+    },
+    {
+      "name": "인동",
+      "path": "/products-reference/uniform-20261029/herb-222-20261028-b5.webp",
+      "productIds": [
+        297,
+        298
+      ],
+      "sha256": "b683007d0846b62b9a1cb8da2fcc0a2e06e8121541330b3d64cb793c126eb80c",
+      "status": "pending-generation"
+    },
+    {
+      "name": "자근",
+      "path": "/products-reference/uniform-20261029/herb-225-20261028-peony.webp",
+      "productIds": [
+        300
+      ],
+      "sha256": "a374f257f6275dd4e522dd15d4f4ab1eb3630d5201b649af58de4d2273238760",
+      "status": "pending-generation"
+    },
+    {
+      "name": "자소자",
+      "path": "/products-reference/uniform-20261029/herb-227-20261028-peony.webp",
+      "productIds": [
+        302
+      ],
+      "sha256": "7c7b0bb461a883effde40fa743ef687839bf425bb2573d9d99ca1fffd63ccdf6",
+      "status": "pending-generation"
+    },
+    {
+      "name": "자연동",
+      "path": "/products-reference/uniform-20261029/herb-228-20261028-peony.webp",
+      "productIds": [
+        303
+      ],
+      "sha256": "925bdada3240f0fe6ee849ad46a24818f45adebbddce5d93891f5be00cd82bb1",
+      "status": "pending-generation"
+    },
+    {
+      "name": "자완",
+      "path": "/products-reference/uniform-20261029/herb-229-20261028-peony.webp",
+      "productIds": [
+        304
+      ],
+      "sha256": "a253313a05545e26b41c4cd4ea3ca9ce2f4a725fd51c3a8d41b73986114d6b6b",
+      "status": "pending-generation"
+    },
+    {
+      "name": "작약",
+      "path": "/products-reference/uniform-20261029/herb-231-20261028-peony.webp",
+      "productIds": [
+        306
+      ],
+      "sha256": "79d3a295dec01ef227656763d35f3acae24165cce3cb045dae4aa993d857ec5f",
+      "status": "pending-generation"
+    },
+    {
+      "name": "작약/강",
+      "path": "/products-reference/uniform-20261029/herb-232-20261028-peony.webp",
+      "productIds": [
+        307
+      ],
+      "sha256": "7e0d44f0c62ba882705310379c05a1cd49c7d5b9671ad815811d11eea4e52a56",
+      "status": "pending-generation"
+    },
+    {
+      "name": "작약/적/직",
+      "path": "/products-reference/uniform-20261029/herb-233-20261028-fix.webp",
+      "productIds": [
+        308
+      ],
+      "sha256": "09fcac04acf087a30bfa16a711d2ee8606a669e6b47e305d2b1aa031849f5895",
+      "status": "pending-generation"
+    },
+    {
+      "name": "작약/적/편",
+      "path": "/products-reference/uniform-20261029/herb-234-20261028-peony.webp",
+      "productIds": [
+        309
+      ],
+      "sha256": "5c6d0f4465448b8f063f53db088f74fd6910178abd08f03cafd94f741e3e4142",
+      "status": "pending-generation"
+    },
+    {
+      "name": "작약/주자",
+      "path": "/products-reference/uniform-20261029/herb-235-20261028-peony.webp",
+      "productIds": [
+        310
+      ],
+      "sha256": "93b345d17dc72559592d3d324d7f0d1ff04f6e61edb9e7ade16fb8200d64e844",
+      "status": "pending-generation"
+    },
+    {
+      "name": "형개/수",
+      "path": "/products-reference/uniform-20261029/hyeonggae-su.webp",
+      "productIds": [
+        311
+      ],
+      "sha256": "27e86614efafc7ffaa495bf873378f070379da063ea8d255af9945ca6b58ad01",
+      "status": "pending-generation"
+    },
+    {
+      "name": "작약초",
+      "path": "/products-reference/uniform-20261029/herb-236-20261028-fix.webp",
+      "productIds": [
+        312
+      ],
+      "sha256": "c1736cef29823daedba86910b10a18fb612e88f91169c9571b20c36f7a99011b",
+      "status": "pending-generation"
+    },
+    {
+      "name": "형개",
+      "path": "/products-reference/uniform-20261029/hyeonggae.webp",
+      "productIds": [
+        313
+      ],
+      "sha256": "72fe41aa3e9b58e421d70f0b2c9cff5187f50a4f03e94f7102d915eb3c440d50",
+      "status": "pending-generation"
+    },
+    {
+      "name": "저두강",
+      "path": "/products-reference/uniform-20261029/herb-238-20261028-fix.webp",
+      "productIds": [
+        314
+      ],
+      "sha256": "814321b3adee669e6820e9cadaef6546062f8ae04873c577f6a96325af5b3d20",
+      "status": "pending-generation"
+    },
+    {
+      "name": "저령",
+      "path": "/products-reference/uniform-20261029/herb-239-20261028-peony.webp",
+      "productIds": [
+        315
+      ],
+      "sha256": "0ebc6c059d375ef5505c34e8f0ce222de9f0bf2627764bd1408f5b6150067948",
+      "status": "pending-generation"
+    },
+    {
+      "name": "저백피(소백피)",
+      "path": "/products-reference/uniform-20261029/herb-240-20261028-peony.webp",
+      "productIds": [
+        316
+      ],
+      "sha256": "13452aebf2948780b3d39fd291be46a885ab247299bb6405e084575af4069b61",
+      "status": "pending-generation"
+    },
+    {
+      "name": "저실자",
+      "path": "/products-reference/uniform-20261029/herb-241-20261028-peony.webp",
+      "productIds": [
+        317
+      ],
+      "sha256": "0246213b6ded6bcf0b5d42da849090e4eee9b48cc08b46ca8b4d8cb107a78f10",
+      "status": "pending-generation"
+    },
+    {
+      "name": "전호",
+      "path": "/products-reference/uniform-20261029/herb-242-20261028-ji.webp",
+      "productIds": [
+        318
+      ],
+      "sha256": "db77347be3b7566a21171f8a9e0bac4e7819db2994cb7afb6a8c9dd1bb83cf43",
+      "status": "pending-generation"
+    },
+    {
+      "name": "절패모",
+      "path": "/products-reference/uniform-20261029/herb-243-20261028-ji.webp",
+      "productIds": [
+        319
+      ],
+      "sha256": "c638bfed1bb26e0372c2980aa2c24abd5148edb3bb7a64b948924d263ba6ac8a",
+      "status": "pending-generation"
+    },
+    {
+      "name": "접골목",
+      "path": "/products-reference/uniform-20261029/herb-244-20261028-ji.webp",
+      "productIds": [
+        320
+      ],
+      "sha256": "a40bb71c5adb7629eb2609369329cf50819d4412eeca72d2b95d0e90c88f5707",
+      "status": "pending-generation"
+    },
+    {
+      "name": "정향",
+      "path": "/products-reference/uniform-20261029/herb-245-20261028-ji.webp",
+      "productIds": [
+        321
+      ],
+      "sha256": "c987cf883a8175af81e739c7e48b6456ec955bb61d57779646797b8be54db554",
+      "status": "pending-generation"
+    },
+    {
+      "name": "제니",
+      "path": "/products-reference/uniform-20261029/herb-246.webp",
+      "productIds": [
+        322
+      ],
+      "sha256": "645fa5742f4800d9faf4a5c5b9b7136112c8106289f1ebc19e75b19b8e89525a",
+      "status": "pending-generation"
+    },
+    {
+      "name": "조각자",
+      "path": "/products-reference/uniform-20261029/herb-248-20261028-ji.webp",
+      "productIds": [
+        324
+      ],
+      "sha256": "e58726fba1e4bcacc11e78dc09723a22fc5df6ec198ec279e5a73a436b5cac34",
+      "status": "pending-generation"
+    },
+    {
+      "name": "조구등",
+      "path": "/products-reference/uniform-20261029/herb-249.webp",
+      "productIds": [
+        325
+      ],
+      "sha256": "33aba2a4a953389dcda9680f75f32114b63f4a7c2072f501861521905bc4a748",
+      "status": "pending-generation"
+    },
+    {
+      "name": "종대황",
+      "path": "/products-reference/uniform-20261029/herb-250.webp",
+      "productIds": [
+        326
+      ],
+      "sha256": "c7a02117727bf13b77e7652d7f6918b740441522af6080c3fb81505e5770f9a5",
+      "status": "pending-generation"
+    },
+    {
+      "name": "지각",
+      "path": "/products-reference/uniform-20261029/herb-251-20261028-ji.webp",
+      "productIds": [
+        327
+      ],
+      "sha256": "571d9a7959fc1ded469a363bc0ac4485adf474cb63b8e6c23ce1747b79bf6b1f",
+      "status": "pending-generation"
+    },
+    {
+      "name": "지각초",
+      "path": "/products-reference/uniform-20261029/herb-252-20261028-ji.webp",
+      "productIds": [
+        328
+      ],
+      "sha256": "fab33f86944a423e74dd6800fd1d15c88ccda6f592af27fe5d1127cf5b66d8ee",
+      "status": "pending-generation"
+    },
+    {
+      "name": "지골피",
+      "path": "/products-reference/uniform-20261029/herb-253-20261028-ji.webp",
+      "productIds": [
+        329
+      ],
+      "sha256": "9061e4e6a1900111ac43c759232be0d417d64735b5ca7b23851e9bde0c820070",
+      "status": "pending-generation"
+    },
+    {
+      "name": "지구자(지구병)",
+      "path": "/products-reference/uniform-20261029/jiguja.webp",
+      "productIds": [
+        330
+      ],
+      "sha256": "1a6ae175f17c5e44ebee3e4285d91cb6dd72cdd85d7afcfdb8a16c07fda823f9",
+      "status": "pending-generation"
+    },
+    {
+      "name": "지구자/씨",
+      "path": "/products-reference/uniform-20261029/herb-255-20261028-ji.webp",
+      "productIds": [
+        331
+      ],
+      "sha256": "38710eec2239d413df50414b5e8ae07940f014f012a716d4573dfbef8e010449",
+      "status": "pending-generation"
+    },
+    {
+      "name": "지모",
+      "path": "/products-reference/uniform-20261029/herb-258-20261028-jimo.webp",
+      "productIds": [
+        334
+      ],
+      "sha256": "8da02ac1896d27628d61bfca825d2739c3d7d286a21b9c946778c335fcc08096",
+      "status": "pending-generation"
+    },
+    {
+      "name": "지모/염자",
+      "path": "/products-reference/uniform-20261029/herb-259-20261028-jimo.webp",
+      "productIds": [
+        335
+      ],
+      "sha256": "29da12fcda32acc7eb9c4d8c267af9ca443899b48d537c064739fc256a76328f",
+      "status": "pending-generation"
+    },
+    {
+      "name": "지부자",
+      "path": "/products-reference/uniform-20261029/herb-260-20261028-jimo.webp",
+      "productIds": [
+        336
+      ],
+      "sha256": "5ec65bf5518dc6a201f4c9af5f50bdbef5e985f3aa1ee88a1e8da3a0e18e8d6c",
+      "status": "pending-generation"
+    },
+    {
+      "name": "지실/애",
+      "path": "/products-reference/uniform-20261029/herb-261-20261028-jimo.webp",
+      "productIds": [
+        337
+      ],
+      "sha256": "2a132411463ad10eb97c222097e1080125cde3341d4b50a77f17185b84bc5993",
+      "status": "pending-generation"
+    },
+    {
+      "name": "지실/중",
+      "path": "/products-reference/uniform-20261029/herb-262-20261028-ji.webp",
+      "productIds": [
+        338
+      ],
+      "sha256": "ef27306072108d88c52766d6a1394a852d44445a64f922d695d31390b1065b8d",
+      "status": "pending-generation"
+    },
+    {
+      "name": "지유",
+      "path": "/products-reference/uniform-20261029/herb-263-20261028-jimo.webp",
+      "productIds": [
+        339
+      ],
+      "sha256": "cac47f8a38719b4ae45ba45db50e2c2eab6152a12287b0d0fbcc780e6f45cebc",
+      "status": "pending-generation"
+    },
+    {
+      "name": "지황",
+      "path": "/products-reference/uniform-20261029/herb-264-20261028-ji.webp",
+      "productIds": [
+        340
+      ],
+      "sha256": "a0e7ee140508d3f818be7f1a4ea7be6c61267b5ef5dc04e3ac4ccb0f6183d7e3",
+      "status": "pending-generation"
+    },
+    {
+      "name": "진교",
+      "path": "/products-reference/uniform-20261029/herb-265-20261028-jimo.webp",
+      "productIds": [
+        341
+      ],
+      "sha256": "162d5adb030ef7024ade5a6aa5c20b908472b83dd116dde279a2120e194b86d4",
+      "status": "pending-generation"
+    },
+    {
+      "name": "진피",
+      "path": "/products-reference/uniform-20261029/herb-266-20261028-jimo.webp",
+      "productIds": [
+        342,
+        343
+      ],
+      "sha256": "40a6ee7b77c36ae786c6b2b5f8e271cfae2028cec5226a4d7676a8f4d3bfe95c",
+      "status": "pending-generation"
+    },
+    {
+      "name": "질려자",
+      "path": "/products-reference/uniform-20261029/herb-267-20261028-jimo.webp",
+      "productIds": [
+        344
+      ],
+      "sha256": "3c4da29abc715a00110e8ee2321604b211f23048193b1a9c2b38816dbb3323aa",
+      "status": "pending-generation"
+    },
+    {
+      "name": "질려자/염자",
+      "path": "/products-reference/uniform-20261029/herb-268-20261028-jimo.webp",
+      "productIds": [
+        345
+      ],
+      "sha256": "97163180a87582b6fab45ef20d31d6c9334ff005e57eb3ab0208a27b94c15e46",
+      "status": "pending-generation"
+    },
+    {
+      "name": "차전자",
+      "path": "/products-reference/uniform-20261029/herb-269-20261028-cha.webp",
+      "productIds": [
+        346
+      ],
+      "sha256": "e4b2f0a0103362f944f3613c8e1793fbff74ab684762cd8575d3659bd9d8ab0f",
+      "status": "pending-generation"
+    },
+    {
+      "name": "차전자피",
+      "path": "/products-reference/uniform-20261029/herb-270.webp",
+      "productIds": [
+        347
+      ],
+      "sha256": "0f2fad8d619813eec64d9381e36a7bc46727f3c004a8e4359aa03f0d0ac175e6",
+      "status": "pending-generation"
+    },
+    {
+      "name": "창출/모",
+      "path": "/products-reference/uniform-20261029/herb-273-20261028-cha.webp",
+      "productIds": [
+        349
+      ],
+      "sha256": "a47fc6e4c2dc6ca54a2a295ff325a204a6b26e3ea8cfb68236eb3c1305bd32f7",
+      "status": "pending-generation"
+    },
+    {
+      "name": "창출",
+      "path": "/products-reference/uniform-20261029/herb-272-20261028-cha.webp",
+      "productIds": [
+        350
+      ],
+      "sha256": "c5f98197d1ff06bda5477d180845d9a0adf6cb2f0019913a19cf44e70aeff100",
+      "status": "pending-generation"
+    },
+    {
+      "name": "창출/미감침",
+      "path": "/products-reference/uniform-20261029/herb-274-20261028-cha.webp",
+      "productIds": [
+        351
+      ],
+      "sha256": "1463498dfa5a40542160b6abaaea791c47fc8135d5658d6417ea629f2e90cb2a",
+      "status": "pending-generation"
+    },
+    {
+      "name": "천궁",
+      "path": "/products-reference/uniform-20261029/herb-275-20261028-cha.webp",
+      "productIds": [
+        352,
+        353
+      ],
+      "sha256": "74a637c868199aa6299f0b48448c9aa6c2dce5404fdcd011a32022ea07ef19ca",
+      "status": "pending-generation"
+    },
+    {
+      "name": "천마",
+      "path": "/products-reference/uniform-20261029/herb-276-20261028-cha.webp",
+      "productIds": [
+        354
+      ],
+      "sha256": "7ecf577342d1cef8e8d7c32eb0eeb7454df61b89eb389cdfb0fe4a97e797dee7",
+      "status": "pending-generation"
+    },
+    {
+      "name": "천문동",
+      "path": "/products-reference/uniform-20261029/herb-277-20261028-cha.webp",
+      "productIds": [
+        355
+      ],
+      "sha256": "d17dfb3fb94f448e34d580a3ac732b8b29399418ff1f0a81fed9f521a63c6264",
+      "status": "pending-generation"
+    },
+    {
+      "name": "천오",
+      "path": "/products-reference/uniform-20261029/herb-278-20261028-small.webp",
+      "productIds": [
+        356
+      ],
+      "sha256": "f9083ea671d42df945be44ebe32fd54893ecffcdc4ddb6a5043b0e7c9ce6b973",
+      "status": "pending-generation"
+    },
+    {
+      "name": "천오제",
+      "path": "/products-reference/uniform-20261029/herb-279-20261028-cha.webp",
+      "productIds": [
+        357
+      ],
+      "sha256": "bbe1ca88f0dc54bc274db7ca1c1fca09398f4be81b090354b8bd6145f21d5153",
+      "status": "pending-generation"
+    },
+    {
+      "name": "청피",
+      "path": "/products-reference/uniform-20261029/herb-280-20261028-cha.webp",
+      "productIds": [
+        358
+      ],
+      "sha256": "0cbeef272b770734b02429c391fea6b24abb951b551a3058b086fb86a1d2135d",
+      "status": "pending-generation"
+    },
+    {
+      "name": "초오",
+      "path": "/products-reference/uniform-20261029/herb-283-20261028-cha.webp",
+      "productIds": [
+        361
+      ],
+      "sha256": "9a0a13ed1f8429aac71361a8e87c390eb2fdb56068057a87a59d0dc6053cafbb",
+      "status": "pending-generation"
+    },
+    {
+      "name": "초오제",
+      "path": "/products-reference/uniform-20261029/herb-284.webp",
+      "productIds": [
+        362
+      ],
+      "sha256": "a8888d75ae909a1012f0a8327a870dbb52a8574f4dc5f1f3493d6cb263f9022d",
+      "status": "pending-generation"
+    },
+    {
+      "name": "측백엽",
+      "path": "/products-reference/uniform-20261029/herb-285.webp",
+      "productIds": [
+        363
+      ],
+      "sha256": "56b5b7a993caa3015e5642713adc5a9021b81331550608a0e4fb246eed59d04c",
+      "status": "pending-generation"
+    },
+    {
+      "name": "치자",
+      "path": "/products-reference/uniform-20261029/herb-286-20261028-cha.webp",
+      "productIds": [
+        364,
+        365
+      ],
+      "sha256": "316045e8bb01181c13bf36c1f8d1a6a857edc8810366182eb8c81064904981d5",
+      "status": "pending-generation"
+    },
+    {
+      "name": "치자초",
+      "path": "/products-reference/uniform-20261029/herb-287-20261028-cha.webp",
+      "productIds": [
+        366
+      ],
+      "sha256": "4ea66713033a2cacf21d4fff1f20776ad1952b51ec65122ac548105d289aa889",
+      "status": "pending-generation"
+    },
+    {
+      "name": "택사",
+      "path": "/products-reference/uniform-20261029/herb-288-20261028-taek.webp",
+      "productIds": [
+        367,
+        368
+      ],
+      "sha256": "5dec33c8433814b13f3e18288dddf512ab805c1aa05f2e31f4a15a044732ef9a",
+      "status": "pending-generation"
+    },
+    {
+      "name": "토복령",
+      "path": "/products-reference/uniform-20261029/herb-289-20261028-taek.webp",
+      "productIds": [
+        369
+      ],
+      "sha256": "b57770153fdd28534730a2b0e53bdde29d6e7a81891ac602fd6c1be96ab6acc0",
+      "status": "pending-generation"
+    },
+    {
+      "name": "포공영",
+      "path": "/products-reference/uniform-20261029/pogongyeong.webp",
+      "productIds": [
+        370
+      ],
+      "sha256": "999c2d1d4116d1bc6733ed0db8414ba92035b444608bd6fc1ca64d26fd20c4e0",
+      "status": "pending-generation"
+    },
+    {
+      "name": "토사자/주증",
+      "path": "/products-reference/uniform-20261029/herb-291.webp",
+      "productIds": [
+        371
+      ],
+      "sha256": "20161134cd8f85de086ef2b222fa7ff4f1daa67708431ee3a5546569440f353b",
+      "status": "pending-generation"
+    },
+    {
+      "name": "파극천",
+      "path": "/products-reference/uniform-20261029/herb-292-20261028-taek.webp",
+      "productIds": [
+        372
+      ],
+      "sha256": "e9feff991250251fdb3f840869852393ddedc9521a43732fe398eca2814832c7",
+      "status": "pending-generation"
+    },
+    {
+      "name": "파극천/주자",
+      "path": "/products-reference/uniform-20261029/herb-293-20261028-taek.webp",
+      "productIds": [
+        373
+      ],
+      "sha256": "e9177052949e8904421f58d3f44135910b2fa00b9c3e18563689e89aa3c8a863",
+      "status": "pending-generation"
+    },
+    {
+      "name": "판람근",
+      "path": "/products-reference/uniform-20261029/herb-294-20261028-taek.webp",
+      "productIds": [
+        374
+      ],
+      "sha256": "c2ce6f1080f0e7ab47d28589ed9dec8e07fd386a0f6f82469ae4a95a06b183fd",
+      "status": "pending-generation"
+    },
+    {
+      "name": "패장",
+      "path": "/products-reference/uniform-20261029/herb-296-20261028-taek.webp",
+      "productIds": [
+        376
+      ],
+      "sha256": "8e5c7815ba0cd463207782c7b07e051847830062a79c93122e2b78b72fb7972b",
+      "status": "pending-generation"
+    },
+    {
+      "name": "편축",
+      "path": "/products-reference/uniform-20261029/herb-297-20261028-taek.webp",
+      "productIds": [
+        377
+      ],
+      "sha256": "8511568dcb8f94702230124ded4f79bfc8f71848a9a8934b1ede6f747a4eea88",
+      "status": "pending-generation"
+    },
+    {
+      "name": "포도근",
+      "path": "/products-reference/uniform-20261029/herb-298-20261028-taek.webp",
+      "productIds": [
+        378
+      ],
+      "sha256": "871121913bfba9f0d46e0edbdd44e1e5faeabc1db9c315e2b2c709e00f87d04e",
+      "status": "pending-generation"
+    },
+    {
+      "name": "포황/정품",
+      "path": "/products-reference/uniform-20261029/pohwang.webp",
+      "productIds": [
+        379
+      ],
+      "sha256": "44abb8ca8edfea0973da469aabe69ffbbdad2032c755b1660bbcdbbaeb72b697",
+      "status": "pending-generation"
+    },
+    {
+      "name": "하수오/적",
+      "path": "/products-reference/uniform-20261029/herb-300-20261029-hwal.webp",
+      "productIds": [
+        380
+      ],
+      "sha256": "5f45cab157dc6211db4b26b3137d73638ec7e3cfe876bb64e4869f3d187366df",
+      "status": "pending-generation"
+    },
+    {
+      "name": "하수오/주증",
+      "path": "/products-reference/uniform-20261029/herb-301.webp",
+      "productIds": [
+        381
+      ],
+      "sha256": "5dca862cfdd363bf322cb81cc8385023b0b3f051446ae55dbae3f54d0cc4cb7c",
+      "status": "pending-generation"
+    },
+    {
+      "name": "하수오/흡두즙돈",
+      "path": "/products-reference/uniform-20261029/herb-302.webp",
+      "productIds": [
+        382
+      ],
+      "sha256": "5a8d3bb0c8981e276a13409b88713b9c810a489afe9f9c13ddf93b8befbae736",
+      "status": "pending-generation"
+    },
+    {
+      "name": "합환피",
+      "path": "/products-reference/uniform-20261029/herb-303-20261029-hwal.webp",
+      "productIds": [
+        383
+      ],
+      "sha256": "2893de04ff81cfba324d55f5a897629195e1bf6295fd9a48ff859c782e872267",
+      "status": "pending-generation"
+    },
+    {
+      "name": "해동피",
+      "path": "/products-reference/uniform-20261029/herb-304-20261029-hwal.webp",
+      "productIds": [
+        384
+      ],
+      "sha256": "4467293f22ef8b4a98ccdbf9924bda2f171bc525404fc2faadef5b34ec28d641",
+      "status": "pending-generation"
+    },
+    {
+      "name": "해방풍",
+      "path": "/products-reference/uniform-20261029/herb-305-20261029-hwal.webp",
+      "productIds": [
+        385
+      ],
+      "sha256": "7e6c1e2dcc381500bae74c862d19a0c6cdf9af9cc7d3dcaf165627d775efc499",
+      "status": "pending-generation"
+    },
+    {
+      "name": "해표초/가루",
+      "path": "/products-reference/uniform-20261029/herb-306.webp",
+      "productIds": [
+        386
+      ],
+      "sha256": "96436d4e27f6c9cee3dae776f8407f399c2efdc4f3a3efd50a43aed5bd0fa58e",
+      "status": "pending-generation"
+    },
+    {
+      "name": "해풍등",
+      "path": "/products-reference/uniform-20261029/herb-307-20261029-full.webp",
+      "productIds": [
+        387
+      ],
+      "sha256": "5e05d0632fbd7cc958c7f4d883ac99d95b8a2dd3b9338da30c73160756228e96",
+      "status": "pending-generation"
+    },
+    {
+      "name": "행인/절",
+      "path": "/products-reference/uniform-20261029/herb-309-20261029-hwal.webp",
+      "productIds": [
+        388
+      ],
+      "sha256": "4d66195ffc7df8fa678c49dbf1dee83107916b950b807c9135e83057d3bae036",
+      "status": "pending-generation"
+    },
+    {
+      "name": "행인/추말",
+      "path": "/products-reference/uniform-20261029/herb-310-20261029-full.webp",
+      "productIds": [
+        389
+      ],
+      "sha256": "505c0787bbd38e6a941bf89b86b0216498235250decf144fd5d6e96844cda905",
+      "status": "pending-generation"
+    },
+    {
+      "name": "행인",
+      "path": "/products-reference/uniform-20261029/herb-308-20261029-hwal.webp",
+      "productIds": [
+        390
+      ],
+      "sha256": "90ff3ca1c800594be415fbd8241fe9443e4225a88be543c8e2e78c463fb48793",
+      "status": "pending-generation"
+    },
+    {
+      "name": "향부자",
+      "path": "/products-reference/uniform-20261029/herb-311-20261029-full.webp",
+      "productIds": [
+        391,
+        392
+      ],
+      "sha256": "627be8c2508cd5d2ae0d8c420bb1dde5e7161c56737072176513cae9d9dff7e5",
+      "status": "pending-generation"
+    },
+    {
+      "name": "향부자/동변",
+      "path": "/products-reference/uniform-20261029/herb-312-20261029-full.webp",
+      "productIds": [
+        393
+      ],
+      "sha256": "2c20a0442af2b3be8b1eefd249bc6e8a743ce4de503f42de9297084df9fe138b",
+      "status": "pending-generation"
+    },
+    {
+      "name": "향부자/주초",
+      "path": "/products-reference/uniform-20261029/herb-313-20261029-full.webp",
+      "productIds": [
+        394,
+        395
+      ],
+      "sha256": "b23132b7367503776b6ea99e5552fd528598213f93a739388a5023aa86439929",
+      "status": "pending-generation"
+    },
+    {
+      "name": "지구목(헛개나무)",
+      "path": "/products-reference/uniform-20261029/jigumok.webp",
+      "productIds": [
+        396
+      ],
+      "sha256": "ff99dd2d010ac7e104dd24d1534eb48349f58503eee13a086d8a41e1c3cfe12e",
+      "status": "pending-generation"
+    },
+    {
+      "name": "현삼",
+      "path": "/products-reference/uniform-20261029/herb-316-20261029-hwal.webp",
+      "productIds": [
+        397
+      ],
+      "sha256": "a13e38d691dc5924110a715cf4660895550e1ad95cdeb413fa13c9578f60290c",
+      "status": "pending-generation"
+    },
+    {
+      "name": "현호색",
+      "path": "/products-reference/uniform-20261029/herb-317-20261029-hwal.webp",
+      "productIds": [
+        398
+      ],
+      "sha256": "06fb7594d8c513014ed42b3bb3fb63b109624bc632df93febcfeb89ce8be8051",
+      "status": "pending-generation"
+    },
+    {
+      "name": "호장근",
+      "path": "/products-reference/uniform-20261029/herb-318-20261029-hwal.webp",
+      "productIds": [
+        399
+      ],
+      "sha256": "e129d3d6b941c2c8e29dd624782eff0d8db858d470afc907cde9b8041725be61",
+      "status": "pending-generation"
+    },
+    {
+      "name": "홍화",
+      "path": "/products-reference/uniform-20261029/herb-319.webp",
+      "productIds": [
+        400
+      ],
+      "sha256": "dc942de3b1701cc660873c1d6baea3ca9cbb0ff3c890fb824fe5ac4650e7eba6",
+      "status": "pending-generation"
+    },
+    {
+      "name": "화피",
+      "path": "/products-reference/uniform-20261029/herb-320-20261029-hwal.webp",
+      "productIds": [
+        401,
+        402
+      ],
+      "sha256": "467179fdd50b9090578b7ce7c43125821bcb35f4c342d27e6ea66186973608eb",
+      "status": "pending-generation"
+    },
+    {
+      "name": "활석",
+      "path": "/products-reference/uniform-20261029/herb-321-20261029-hwal.webp",
+      "productIds": [
+        403
+      ],
+      "sha256": "6bd22ce55b39bffda752b557d831406759881d2a965b1839b51be518f13df32f",
+      "status": "pending-generation"
+    },
+    {
+      "name": "희렴/농산물",
+      "path": "/products-reference/uniform-20261029/huiryeom.webp",
+      "productIds": [
+        404
+      ],
+      "sha256": "62ebcab3da1b04e69de6d20ddfba2b550ac33b6d758f8f3057c0aa54278fd1ae",
+      "status": "pending-generation"
+    },
+    {
+      "name": "황금/고금",
+      "path": "/products-reference/uniform-20261029/herb-323-20261029-hwal.webp",
+      "productIds": [
+        405
+      ],
+      "sha256": "2ffa382e465483b5d9bcf554d511506309bfa8d41c7f27f6a20fd7b9888f4f47",
+      "status": "pending-generation"
+    },
+    {
+      "name": "황금/조금",
+      "path": "/products-reference/uniform-20261029/herb-322-20261029-hwal.webp",
+      "productIds": [
+        406
+      ],
+      "sha256": "8c0372466f144d0e79ed47851b4eec8028e7c0a99cae1a1b26aeb91f09d638e0",
+      "status": "pending-generation"
+    },
+    {
+      "name": "황금/주자",
+      "path": "/products-reference/uniform-20261029/herb-325-20261029-hwal.webp",
+      "productIds": [
+        407
+      ],
+      "sha256": "9eac6b7b4ddb635c8418e83797a331616c8e43707721b54f83746b973e95d3b5",
+      "status": "pending-generation"
+    },
+    {
+      "name": "황기",
+      "path": "/products-reference/uniform-20261029/herb-326-20261029-full.webp",
+      "productIds": [
+        408
+      ],
+      "sha256": "362aa130c0b2d1aa63fde31183daa05faeb34f9e685000982199a9b56fecf572",
+      "status": "pending-generation"
+    },
+    {
+      "name": "황기/밀자",
+      "path": "/products-reference/uniform-20261029/herb-327-20261029-full.webp",
+      "productIds": [
+        409,
+        410
+      ],
+      "sha256": "6c3024da48223964c6ed96392996cb95daf8fcd26c9eeef1a78cfb9836cbf3de",
+      "status": "pending-generation"
+    },
+    {
+      "name": "황기/직절",
+      "path": "/products-reference/uniform-20261029/herb-328-20261029-full.webp",
+      "productIds": [
+        411,
+        412
+      ],
+      "sha256": "0ce215dee81fa185ee714ecdada025819baee508a13151f3285ca2b8f642bfa5",
+      "status": "pending-generation"
+    },
+    {
+      "name": "황기/편/일",
+      "path": "/products-reference/uniform-20261029/hwanggi-pyeon-il.webp",
+      "productIds": [
+        413
+      ],
+      "sha256": "8ee27bcacd9fac1db6686c058d99e79097c376a539d6021a6e69ab272e8a8943",
+      "status": "pending-generation"
+    },
+    {
+      "name": "황기/편AA",
+      "path": "/products-reference/uniform-20261029/hwanggi-pyeon-aa.webp",
+      "productIds": [
+        414
+      ],
+      "sha256": "0c8681542d6f7aa42ce0ae3762dd2f06290162fa8197cf3ed334707dc0c157ad",
+      "status": "pending-generation"
+    },
+    {
+      "name": "황련/천",
+      "path": "/products-reference/uniform-20261029/hwangryeon-cheon.webp",
+      "productIds": [
+        415
+      ],
+      "sha256": "79cd64b3136c4a17f140dbb6a5579f51f04c281a2de2cb4b1e3e782d24484df7",
+      "status": "pending-generation"
+    },
+    {
+      "name": "황백",
+      "path": "/products-reference/uniform-20261029/herb-332.webp",
+      "productIds": [
+        416,
+        417
+      ],
+      "sha256": "3cee256d31dff5976fb74fd17315b3db074f83c42965ee03f3f65cb20daf33ec",
+      "status": "pending-generation"
+    },
+    {
+      "name": "황백/염자",
+      "path": "/products-reference/uniform-20261029/herb-334.webp",
+      "productIds": [
+        418,
+        419
+      ],
+      "sha256": "f9ca070fbaecae77e97cf64576c0e09e97e6a772dc6193d77a687b8553e1cfe5",
+      "status": "pending-generation"
+    },
+    {
+      "name": "황정",
+      "path": "/products-reference/uniform-20261029/herb-335-20261029-full.webp",
+      "productIds": [
+        420
+      ],
+      "sha256": "603dd12c583cba755019659d32bd1e4d9bf35faa99a61ab76f962f8bd6486315",
+      "status": "pending-generation"
+    },
+    {
+      "name": "회향",
+      "path": "/products-reference/uniform-20261029/herb-336-20261029-full.webp",
+      "productIds": [
+        421
+      ],
+      "sha256": "d12209158100b15dd00f4489a3153bce5e5ca99f01bb91221228dfb521533356",
+      "status": "pending-generation"
+    },
+    {
+      "name": "후박",
+      "path": "/products-reference/uniform-20261029/herb-337-20261029-full.webp",
+      "productIds": [
+        422
+      ],
+      "sha256": "04a408afcd111c66d6585b7240bfb79d7d1414d5b1de6011129afe8bc7f2c927",
+      "status": "pending-generation"
+    },
+    {
+      "name": "후박/강자",
+      "path": "/products-reference/uniform-20261029/herb-338.webp",
+      "productIds": [
+        423
+      ],
+      "sha256": "e68b97b2a04163471e152d6d36e9a4d2ec681f8d2cb5e966f5422f4743dc4972",
+      "status": "pending-generation"
+    },
+    {
+      "name": "후박/근",
+      "path": "/products-reference/uniform-20261029/herb-339.webp",
+      "productIds": [
+        424
+      ],
+      "sha256": "e384491800d16b5c0b4fe9c0d42cbdba3f5e5dc558297afd84940c6fcc6c8dca",
+      "status": "pending-generation"
+    },
+    {
+      "name": "쇄양",
+      "path": "/products-reference/uniform-20261029/swaeyang.webp",
+      "productIds": [
+        428
+      ],
+      "sha256": "39a10342a32b74abb1da556f62ad353df7090b7aa06ccfbc1a674e3bdce566a2",
+      "status": "pending-generation"
+    },
+    {
+      "name": "삼백초",
+      "path": "/products-reference/uniform-20261029/sambaekcho.webp",
+      "productIds": [
+        429
+      ],
+      "sha256": "38bc8192aca59194c52c7ebc9bb5ac97d2914b80d94ac521f49f6d529386abf5",
+      "status": "pending-generation"
+    },
+    {
+      "name": "생강",
+      "path": "/products-reference/uniform-20261029/saenggang-sliced-1111.webp",
+      "productIds": [
+        431
+      ],
+      "sha256": "b103bd78d5440c66cc1983d314842486d5c4e3665f47e0e3fbc7091a7725f77e",
+      "status": "pending-generation"
+    },
+    {
+      "name": "자소엽(소엽)",
+      "path": "/products-reference/uniform-20261029/jasoyeop.webp",
+      "productIds": [
+        432
+      ],
+      "sha256": "54bd1d78f64fd32a17d18e412d2d401645061e8ab848055789919d3a8144de95",
+      "status": "pending-generation"
+    },
+    {
+      "name": "어성초",
+      "path": "/products-reference/uniform-20261029/eoseongcho.webp",
+      "productIds": [
+        433,
+        439
+      ],
+      "sha256": "619f253835e5294746114c0d522d7084c1272edef480d4870cca3f929b5db7fd",
+      "status": "pending-generation"
+    },
+    {
+      "name": "오가피/진/유피",
+      "path": "/products-reference/uniform-20261029/ogapi-jin-yupi.webp",
+      "productIds": [
+        434
+      ],
+      "sha256": "652bcd63b53636e38bbf5bdc5588d980a388d8dad265e88fdeb32bd904f74c5c",
+      "status": "pending-generation"
+    },
+    {
+      "name": "원지/대",
+      "path": "/products-reference/uniform-20261029/wonji-large-1111.webp",
+      "productIds": [
+        436
+      ],
+      "sha256": "96910503c5bce7a5a3ee415c8ddae272c2117365b462b98b04d10d91828b7b9e",
+      "status": "pending-generation"
+    },
+    {
+      "name": "음양곽",
+      "path": "/products-reference/uniform-20261029/eumyanggwak.webp",
+      "productIds": [
+        437
+      ],
+      "sha256": "0f8ac887a67a5a29ea5e850ee43eb58407082084b1b827419629cdddd9e2c489",
+      "status": "pending-generation"
+    },
+    {
+      "name": "애엽",
+      "path": "/products-reference/uniform-20261029/aeyeop.webp",
+      "productIds": [
+        438
+      ],
+      "sha256": "3340cf1df84abe1d7439c6fbb7545d95667741ce2488c0dc92e34976974571dc",
+      "status": "pending-generation"
+    },
+    {
+      "name": "왕불류행",
+      "path": "/products-reference/uniform-20261029/wangbullyuhaeng.webp",
+      "productIds": [
+        440
+      ],
+      "sha256": "5a9d6f2f5061ab71e8d2d49212a41d5474f425ba594850a33800c5a0036b34c4",
+      "status": "pending-generation"
+    },
+    {
+      "name": "익모초",
+      "path": "/products-reference/uniform-20261029/ikmocho.webp",
+      "productIds": [
+        441
+      ],
+      "sha256": "a5ff210ed8c99a6c4a3d3ee72207f9702c8296dc1a6d16eedc2f73dd065a4b01",
+      "status": "pending-generation"
+    },
+    {
+      "name": "인삼/저온건조",
+      "path": "/products-reference/uniform-20261029/insam-lowtemp.webp",
+      "productIds": [
+        442
+      ],
+      "sha256": "de4531f31cd75a38ccd33880f747ec1769d0efb5a5af3d583cb0e0914eed4055",
+      "status": "pending-generation"
+    },
+    {
+      "name": "자단향",
+      "path": "/products-reference/uniform-20261029/jadan-hyang.webp",
+      "productIds": [
+        443
+      ],
+      "sha256": "9a000dcc8d7976bed9ca9b7c1edbc76063544808c444deec934a3fbfcc9a7d0d",
+      "status": "pending-generation"
+    },
+    {
+      "name": "죽여",
+      "path": "/products-reference/uniform-20261029/jugyeo.webp",
+      "productIds": [
+        444
+      ],
+      "sha256": "becef6775ecc97ac34071e7023592731352e22c7be1b5e32c5d7423fb6741c44",
+      "status": "pending-generation"
+    },
+    {
+      "name": "흑지마/농산물",
+      "path": "/products-reference/uniform-20261029/heukjima.webp",
+      "productIds": [
+        445
+      ],
+      "sha256": "5efb1d97ba67d4bec722afb49116e4fe3f9adf624c40ca55d48bb14cf4badad6",
+      "status": "pending-generation"
+    },
+    {
+      "name": "모려가루",
+      "path": "/products-reference/uniform-20261029/herb-089.webp",
+      "reason": "Composition reference",
+      "status": "pending-generation"
+    }
+  ],
+  "preserved": [
+    {
+      "name": "가자",
+      "path": "/products-reference/uniform-20261029/herb-001.webp",
+      "reason": "Whole-form herb, intact specimen or packaged product"
+    },
+    {
+      "name": "괄루인/통",
+      "path": "/products-reference/uniform-20261029/herb-031.webp",
+      "reason": "Whole-form herb, intact specimen or packaged product"
+    },
+    {
+      "name": "대추/알",
+      "path": "/products-reference/uniform-20261029/herb-062.webp",
+      "reason": "Whole-form herb, intact specimen or packaged product"
+    },
+    {
+      "name": "도인",
+      "path": "/products-reference/uniform-20261029/herb-069.webp",
+      "reason": "Whole-form herb, intact specimen or packaged product"
+    },
+    {
+      "name": "동충하초/눈꽃",
+      "path": "/products/uniform-20261029/herb-073-original.webp",
+      "reason": "Whole-form herb, intact specimen or packaged product"
+    },
+    {
+      "name": "미후도",
+      "path": "/products-reference/uniform-20261029/herb-095.webp",
+      "reason": "Whole-form herb, intact specimen or packaged product"
+    },
+    {
+      "name": "미후도/연조",
+      "path": "/products-reference/uniform-20261029/herb-096.webp",
+      "reason": "Whole-form herb, intact specimen or packaged product"
+    },
+    {
+      "name": "밀납(황납)",
+      "path": "/products-reference/uniform-20261029/herb-097.webp",
+      "reason": "Whole-form herb, intact specimen or packaged product"
+    },
+    {
+      "name": "백강잠",
+      "path": "/products-reference/uniform-20261029/herb-105.webp",
+      "reason": "Whole-form herb, intact specimen or packaged product"
+    },
+    {
+      "name": "백반",
+      "path": "/products-reference/uniform-20261029/herb-111.webp",
+      "reason": "Whole-form herb, intact specimen or packaged product"
+    },
+    {
+      "name": "백편두",
+      "path": "/products-reference/uniform-20261029/herb-124-20261027.webp",
+      "reason": "Whole-form herb, intact specimen or packaged product"
+    },
+    {
+      "name": "별갑교",
+      "path": "/products-reference/uniform-20261029/herb-128-20261027-c.webp",
+      "reason": "Whole-form herb, intact specimen or packaged product"
+    },
+    {
+      "name": "사인초",
+      "path": "/products-reference/uniform-20261029/herb-143-20261027-s.webp",
+      "reason": "Whole-form herb, intact specimen or packaged product"
+    },
+    {
+      "name": "상표초/야생",
+      "path": "/products-reference/uniform-20261029/sangpyocho-wild.webp",
+      "reason": "Whole-form herb, intact specimen or packaged product"
+    },
+    {
+      "name": "숙지황",
+      "path": "/products-reference/uniform-20261029/herb-178.webp",
+      "reason": "Whole-form herb, intact specimen or packaged product"
+    },
+    {
+      "name": "연교",
+      "path": "/products-reference/uniform-20261029/herb-189.webp",
+      "reason": "Whole-form herb, intact specimen or packaged product"
+    },
+    {
+      "name": "오매",
+      "path": "/products-reference/uniform-20261029/herb-195-20261028.webp",
+      "reason": "Whole-form herb, intact specimen or packaged product"
+    },
+    {
+      "name": "용안육",
+      "path": "/products-reference/uniform-20261029/yongan-yuk-darker-1111.webp",
+      "reason": "Whole-form herb, intact specimen or packaged product"
+    },
+    {
+      "name": "우담남성",
+      "path": "/products/uniform-20261029/herb-203-20261028-v2.webp",
+      "reason": "Whole-form herb, intact specimen or packaged product"
+    },
+    {
+      "name": "육두구",
+      "path": "/products-reference/uniform-20261029/herb-215-20261028-b5.webp",
+      "reason": "Whole-form herb, intact specimen or packaged product"
+    },
+    {
+      "name": "익지",
+      "path": "/products-reference/uniform-20261029/herb-220.webp",
+      "reason": "Whole-form herb, intact specimen or packaged product"
+    },
+    {
+      "name": "자충(토별충)",
+      "path": "/products-reference/uniform-20261029/jachung.webp",
+      "reason": "Whole-form herb, intact specimen or packaged product"
+    },
+    {
+      "name": "제조",
+      "path": "/products-reference/uniform-20261029/herb-247-20261028-ji.webp",
+      "reason": "Whole-form herb, intact specimen or packaged product"
+    },
+    {
+      "name": "지룡",
+      "path": "/products-reference/uniform-20261029/herb-256-20261028-ji.webp",
+      "reason": "Whole-form herb, intact specimen or packaged product"
+    },
+    {
+      "name": "지룡/속제거",
+      "path": "/products-reference/uniform-20261029/herb-257.webp",
+      "reason": "Whole-form herb, intact specimen or packaged product"
+    },
+    {
+      "name": "창이자",
+      "path": "/products-reference/uniform-20261029/herb-271.webp",
+      "reason": "Whole-form herb, intact specimen or packaged product"
+    },
+    {
+      "name": "초과",
+      "path": "/products-reference/uniform-20261029/herb-281-20261028-cha.webp",
+      "reason": "Whole-form herb, intact specimen or packaged product"
+    },
+    {
+      "name": "초두구",
+      "path": "/products-reference/uniform-20261029/herb-282.webp",
+      "reason": "Whole-form herb, intact specimen or packaged product"
+    },
+    {
+      "name": "팔각회향",
+      "path": "/products-reference/uniform-20261029/herb-295.webp",
+      "reason": "Whole-form herb, intact specimen or packaged product"
+    },
+    {
+      "name": "후추",
+      "path": "/products-reference/uniform-20261029/herb-340-20261029-full.webp",
+      "reason": "Whole-form herb, intact specimen or packaged product"
+    },
+    {
+      "name": "흑두",
+      "path": "/products-reference/uniform-20261029/herb-341.webp",
+      "reason": "Whole-form herb, intact specimen or packaged product"
+    },
+    {
+      "name": "선퇴",
+      "path": "/products-reference/uniform-20261029/seontoe.webp",
+      "reason": "Whole-form herb, intact specimen or packaged product"
+    },
+    {
+      "name": "생지황",
+      "path": "/products-reference/uniform-20261029/saengjihwang.webp",
+      "reason": "Whole-form herb, intact specimen or packaged product"
+    },
+    {
+      "name": "오공",
+      "path": "/products-reference/uniform-20261029/ogong.webp",
+      "reason": "Whole-form herb, intact specimen or packaged product"
+    }
+  ]
+}
