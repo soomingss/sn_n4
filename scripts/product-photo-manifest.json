@@ -20,10 +20,10 @@
         "갈근 (강원문막)"
       ],
       "id": "herb-002",
-      "editorialNote": "사용자 요청: 국산 갈근에 사각 사진 공유",
-      "generationPrompt": "Edit the supplied existing herb product photograph of 갈근. Keep the exact same square-cut dried kudzu root chunks, arrangement and fibrous texture. Make ONLY the root material SLIGHTLY darker: shift pale ivory faces to a subtly deeper natural light beige tan, approximately a 10 to 15 percent modest darkening of material. Do not make it dark brown, roasted or charred. Do not darken background, shadows or global exposure. Retain a clean bright white seamless background and same lighting. Premium realistic ecommerce studio product photo, natural subdued colors, subtle contact shadow. No words, labels, watermark, packaging, containers, hands or extra props.",
-      "framing": "960px square; centered porcelain bowl and wood board; warm greige linen and soft eucalyptus; shared original logo overlay",
-      "compositionUpdatedAt": "2026-11-12"
+      "editorialNote": "User requested same white-background photo for galgeun and square-cut galgeun. Source title removed and background edited with image generation.",
+      "generationPrompt": "Replace patterned background with plain white; retain dried root texture and arrangement; no source text.",
+      "framing": "960px square; user selected KMCRIC-based edited root photo; white background; original brand overlay retained",
+      "compositionUpdatedAt": "2026-11-17"
     },
     {
       "name": "갈근/사각",
@@ -32,9 +32,10 @@
         "갈근 (사각)"
       ],
       "id": "herb-003",
-      "generationPrompt": "Edit the supplied existing herb product photograph of 갈근. Keep the exact same square-cut dried kudzu root chunks, arrangement and fibrous texture. Make ONLY the root material SLIGHTLY darker: shift pale ivory faces to a subtly deeper natural light beige tan, approximately a 10 to 15 percent modest darkening of material. Do not make it dark brown, roasted or charred. Do not darken background, shadows or global exposure. Retain a clean bright white seamless background and same lighting. Premium realistic ecommerce studio product photo, natural subdued colors, subtle contact shadow. No words, labels, watermark, packaging, containers, hands or extra props.",
-      "framing": "960px square; centered porcelain bowl and wood board; warm greige linen and soft eucalyptus; shared original logo overlay",
-      "compositionUpdatedAt": "2026-11-12"
+      "generationPrompt": "Replace patterned background with plain white; retain dried root texture and arrangement; no source text.",
+      "framing": "960px square; user selected KMCRIC-based edited root photo; white background; original brand overlay retained",
+      "compositionUpdatedAt": "2026-11-17",
+      "editorialNote": "User requested same white-background photo for galgeun and square-cut galgeun. Source title removed and background edited with image generation."
     },
     {
       "name": "갈화",
