@@ -33,7 +33,7 @@ export default function HerbDetails({ product, onClose }) {
           <button type="button" onClick={onClose} aria-label="약재 설명 닫기" autoFocus>×</button>
         </header>
         <div className="herbDetailOverview">
-          <div className="herbDetailPhoto"><ProductImage src={product.image_url} name={product.name} /></div>
+          <div className="herbDetailPhoto"><ProductImage src={product.image_url} name={product.name} origin={product.origin} /></div>
           <dl className="herbDetailFacts">
             <div><dt>원산지</dt><dd>{product.origin || "별도 문의"}</dd></div>
             <div><dt>규격</dt><dd>{product.weight || "별도 문의"}</dd></div>

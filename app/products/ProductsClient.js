@@ -120,7 +120,7 @@ export default function ProductsClient({products=[],companyName="",adminManual=f
           <div className="productList">
             {visible.length?visible.map(product=>(
               <article className="productCard" key={product.id}>
-                <button type="button" className="productThumb productPhotoButton" aria-label={`${product.name} 약재 설명 보기`} aria-haspopup="dialog" onClick={()=>setDetailProduct(product)}><ProductImage src={product.image_url} name={product.name}/><span className="productPhotoOpenHint" aria-hidden="true">＋</span></button>
+                <button type="button" className="productThumb productPhotoButton" aria-label={`${product.name} 약재 설명 보기`} aria-haspopup="dialog" onClick={()=>setDetailProduct(product)}><ProductImage src={product.image_url} name={product.name} origin={product.origin}/><span className="productPhotoOpenHint" aria-hidden="true">＋</span></button>
                 <div className="productInfo"><h2>{product.name}</h2><p>{productSpecs(product)}</p><div className="productPrice"><b>{money(product.price)}</b><em className={product.stock_status==="low"?"soldOut":""}>{product.stock_status==="low"?"품절":"재고 있음"}</em></div></div>
                 <div className={`productOrderControls ${product.stock_status==="low"?"disabled":""}`}>
                   <label><span>수량</span><div className="v21Qty"><button disabled={product.stock_status==="low"} onClick={()=>setQuantities(q=>({...q,[product.id]:Math.max(1,Number(q[product.id]||1)-1)}))}>−</button><input disabled={product.stock_status==="low"} type="number" min="1" value={quantities[product.id]||1} onChange={e=>setQuantities(q=>({...q,[product.id]:e.target.value}))}/><button disabled={product.stock_status==="low"} onClick={()=>setQuantities(q=>({...q,[product.id]:Number(q[product.id]||1)+1}))}>＋</button></div></label>
@@ -146,7 +146,7 @@ function CartPanel({items,totalPrice,deliveryRequest,setDeliveryRequest,changeCa
       <div className="orderCartHead"><h2>주문 목록</h2>{companyName&&<span>{companyName}</span>}</div>
       {items.length?<>
         {fullPage?<div className="fullCartItems" role="list">{items.map(item=><article className="fullCartItem" key={item.id} role="listitem">
-          <div className="fullCartPhoto"><ProductImage src={item.image_url} name={item.name}/></div>
+          <div className="fullCartPhoto"><ProductImage src={item.image_url} name={item.name} origin={item.origin}/></div>
           <div className="fullCartProduct"><h3>{item.name}</h3><p>{productSpecs(item)}</p><span>단가 {money(item.price)}</span></div>
           <div className="fullCartQty"><button type="button" disabled={item.quantity<=1||submitting} onClick={()=>changeCartQty(item.id,-1)} aria-label={`${item.name} 수량 줄이기`}>−</button><input type="number" min="1" step="1" disabled={submitting} value={item.quantity} onChange={e=>setCartQty(item.id,e.target.value)} aria-label={`${item.name} 수량`}/><button type="button" disabled={submitting} onClick={()=>changeCartQty(item.id,1)} aria-label={`${item.name} 수량 늘리기`}>＋</button></div>
           <div className="fullCartLineTotal"><span>상품금액</span><b>{money(item.price==null?null:Number(item.price)*item.quantity)}</b></div>
