@@ -74,15 +74,12 @@
       "name": "감초초",
       "assetPath": "/products-reference/uniform-20261029/gamcho-roasted-v2.webp",
       "products": [
-        "감초초",
-        "감초초/1호",
-        "감초초/양외1",
-        "감초초/양외2"
+        "감초초"
       ],
       "id": "herb-007",
-      "generationPrompt": "Edit existing licorice slices: preserve shapes and white background; darken herb faces to deep toasted brown with near black brown rind, retain fibrous dry texture, no text or props.",
-      "framing": "960px square; centered porcelain bowl and wood board; warm greige linen and soft eucalyptus; shared original logo overlay",
-      "compositionUpdatedAt": "2026-11-12"
+      "framing": "960px square; slim Uzbek slices; toasted brown; independently rearranged; white margins; original logo overlay",
+      "compositionUpdatedAt": "2026-11-18",
+      "editorialNote": "User requested size-matched roasted variants with different arrangement from raw. Uzbek preview exec-12073bd6."
     },
     {
       "name": "강활",
@@ -3985,9 +3982,9 @@
         "감초/양외1"
       ],
       "id": "gamcho-yangwai1",
-      "framing": "960px square; loose low natural arrangement; white background; original logo overlay",
+      "framing": "960px square; approved airy white margins; large grade1 slices matching grade2 raw color; original logo overlay",
       "compositionUpdatedAt": "2026-11-18",
-      "editorialNote": "Same material and color as Yangwai no.2; grade differs only in larger selected pieces. User requested slight enlargement after color correction. Final preview exec-ffeebe8c."
+      "editorialNote": "User approved wider white-margin preview exec-f1b368d0."
     },
     {
       "name": "감초/양외2",
@@ -3999,6 +3996,29 @@
       "framing": "960px square; loose low natural arrangement; white background; original logo overlay",
       "compositionUpdatedAt": "2026-11-18",
       "editorialNote": "Small narrow no.2 slices; comparable size to Uzbek. Preview: exec-46a36ab6"
+    },
+    {
+      "name": "감초초/양외1",
+      "assetPath": "/products-reference/uniform-20261029/gamcho-roasted-yangwai1-20261118.webp",
+      "products": [
+        "감초초/1호",
+        "감초초/양외1"
+      ],
+      "id": "gamcho-roasted-yangwai1",
+      "framing": "960px square; grade-specific size; roasted brown; new natural arrangement; white background; shared logo",
+      "compositionUpdatedAt": "2026-11-18",
+      "editorialNote": "Roasted version corresponding to raw grade, rearranged independently. Preview exec-2aba0405"
+    },
+    {
+      "name": "감초초/양외2",
+      "assetPath": "/products-reference/uniform-20261029/gamcho-roasted-yangwai2-20261118.webp",
+      "products": [
+        "감초초/양외2"
+      ],
+      "id": "gamcho-roasted-yangwai2",
+      "framing": "960px square; grade-specific size; roasted brown; new natural arrangement; white background; shared logo",
+      "compositionUpdatedAt": "2026-11-18",
+      "editorialNote": "Roasted version corresponding to raw grade, rearranged independently. Preview exec-29c77c19"
     }
   ],
   "imageType": "AI-generated catalog reference photos",
