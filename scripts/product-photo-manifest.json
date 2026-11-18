@@ -63,15 +63,12 @@
       "name": "감초",
       "assetPath": "/products-reference/uniform-20261029/herb-007.webp",
       "products": [
-        "감초",
-        "감초 (양외1)",
-        "감초/양외1",
-        "감초/양외2"
+        "감초"
       ],
       "id": "herb-006",
-      "editorialNote": "사용자 요청: 기존 감초초 사진을 생감초 사진으로 사용",
-      "framing": "960px square; centered porcelain bowl and wood board; warm greige linen and soft eucalyptus; shared original logo overlay",
-      "compositionUpdatedAt": "2026-11-12"
+      "editorialNote": "User approved slender Uzbek exec-066613da; Yangwai grades now use distinct photos.",
+      "framing": "960px square; slender Uzbek licorice slices matching small grade 2 dimensions; white background; existing logo overlay",
+      "compositionUpdatedAt": "2026-11-18"
     },
     {
       "name": "감초초",
@@ -3979,6 +3976,29 @@
       "framing": "960px square; loose low spread of small brown skinned white seed halves; white background; original logo overlay",
       "compositionUpdatedAt": "2026-11-18",
       "editorialNote": "Approved seed preview; rearranged positions and rotations per user request. Existing database image_url retained."
+    },
+    {
+      "name": "감초/양외1",
+      "assetPath": "/products-reference/uniform-20261029/gamcho-yangwai1-20261118.webp",
+      "products": [
+        "감초 (양외1)",
+        "감초/양외1"
+      ],
+      "id": "gamcho-yangwai1",
+      "framing": "960px square; loose low natural arrangement; white background; original logo overlay",
+      "compositionUpdatedAt": "2026-11-18",
+      "editorialNote": "User approved reduced no.1 size; still broader and larger than no.2. Preview: exec-119d4385"
+    },
+    {
+      "name": "감초/양외2",
+      "assetPath": "/products-reference/uniform-20261029/gamcho-yangwai2-20261118.webp",
+      "products": [
+        "감초/양외2"
+      ],
+      "id": "gamcho-yangwai2",
+      "framing": "960px square; loose low natural arrangement; white background; original logo overlay",
+      "compositionUpdatedAt": "2026-11-18",
+      "editorialNote": "Small narrow no.2 slices; comparable size to Uzbek. Preview: exec-46a36ab6"
     }
   ],
   "imageType": "AI-generated catalog reference photos",
