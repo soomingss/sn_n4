@@ -8,7 +8,7 @@ export default function ProductImage({ src, name, origin }) {
   const visible = Boolean(src) && !failed;
   const reference = src?.startsWith("/products-reference/");
   const localPhoto = reference || src?.startsWith("/products/");
-  const imageSrc = localPhoto ? `${src}${src.includes("?") ? "&" : "?"}photo=${src.split("?")[0] === "/products-reference/uniform-20261029/herb-001.webp" ? "gaja-20261117-v1" : src.split("?")[0] === "/products-reference/uniform-20261029/herb-003-v2.webp" ? "galgeun-20261117-v1" : "linen-20261116-v2"}` : src;
+  const imageSrc = localPhoto ? `${src}${src.includes("?") ? "&" : "?"}photo=${src.split("?")[0] === "/products-reference/uniform-20261029/herb-001.webp" ? "gaja-20261117-v1" : src.split("?")[0] === "/products-reference/uniform-20261029/herb-003-v2.webp" ? "galgeun-20261117-v1" : src.split("?")[0] === "/products-reference/uniform-20261029/herb-004.webp" ? "galhwa-20261118-v1" : "linen-20261116-v2"}` : src;
   const domesticGalgeun = /^갈근(?:\s*\((?:사각|강원문막)\))?$/.test(name || "")
     && /국내산|국산|한국|대한민국/.test(origin || "")
     && src?.split("?")[0] === "/products-reference/uniform-20261029/herb-003-v2.webp";
