@@ -3968,6 +3968,17 @@
       "generationPrompt": "Use case: precise-object-edit. Standardize this 흑두 herbal catalog photograph's COMPOSITION ONLY. Preserve the exact medicinal material identity, actual cut shape, individual piece size relative to each other, texture and colors. Rearrange and add more of the same material into one generous compact rounded three dimensional mound with a broad circular/oval base and gently domed top, centered, no sparse flat scattering. Whole mound fully visible at approximately 78% frame width and 70% frame height, same soft studio lighting, seamless pure white background. Camera slightly elevated three quarter view. Do not change the herb into a different substance, do not change its cut or roast color. No bowl, container, packaging, text, label, logo, watermark or props.",
       "framing": "960px square; centered subject; 84% maximum edge; white background",
       "editorialNote": " 둥글고 풍성한 더미 구도 보정."
+    },
+    {
+      "name": "감인(검인)",
+      "products": [
+        "감인(검인)"
+      ],
+      "assetPath": "/products-reference/uniform-20261029/gamin-geomin.webp",
+      "id": "gamin-geomin",
+      "framing": "960px square; loose low spread of small brown skinned white seed halves; white background; original logo overlay",
+      "compositionUpdatedAt": "2026-11-18",
+      "editorialNote": "Approved seed preview; rearranged positions and rotations per user request. Existing database image_url retained."
     }
   ],
   "imageType": "AI-generated catalog reference photos",
