@@ -77,9 +77,9 @@
         "감초초"
       ],
       "id": "herb-007",
-      "framing": "960px square; slim Uzbek slices; toasted brown; independently rearranged; white margins; original logo overlay",
+      "framing": "960px square; modestly fuller low loose group; outer white margins preserved; roasted brown; shared original logo",
       "compositionUpdatedAt": "2026-11-18",
-      "editorialNote": "User requested size-matched roasted variants with different arrangement from raw. Uzbek preview exec-12073bd6."
+      "editorialNote": "User approved slightly fuller composition (about 20-25% more pieces and natural overlap)."
     },
     {
       "name": "강활",
@@ -4001,13 +4001,12 @@
       "name": "감초초/양외1",
       "assetPath": "/products-reference/uniform-20261029/gamcho-roasted-yangwai1-20261118.webp",
       "products": [
-        "감초초/1호",
         "감초초/양외1"
       ],
       "id": "gamcho-roasted-yangwai1",
-      "framing": "960px square; grade-specific size; roasted brown; new natural arrangement; white background; shared logo",
+      "framing": "960px square; modestly fuller low loose group; outer white margins preserved; roasted brown; shared original logo",
       "compositionUpdatedAt": "2026-11-18",
-      "editorialNote": "Roasted version corresponding to raw grade, rearranged independently. Preview exec-2aba0405"
+      "editorialNote": "User approved slightly fuller composition (about 20-25% more pieces and natural overlap)."
     },
     {
       "name": "감초초/양외2",
@@ -4016,9 +4015,20 @@
         "감초초/양외2"
       ],
       "id": "gamcho-roasted-yangwai2",
-      "framing": "960px square; grade-specific size; roasted brown; new natural arrangement; white background; shared logo",
+      "framing": "960px square; modestly fuller low loose group; outer white margins preserved; roasted brown; shared original logo",
       "compositionUpdatedAt": "2026-11-18",
-      "editorialNote": "Roasted version corresponding to raw grade, rearranged independently. Preview exec-29c77c19"
+      "editorialNote": "User approved slightly fuller composition (about 20-25% more pieces and natural overlap)."
+    },
+    {
+      "name": "감초초/1호",
+      "products": [
+        "감초초/1호"
+      ],
+      "assetPath": "/products-reference/uniform-20261029/gamcho-roasted-1ho-20261118.webp",
+      "id": "gamcho-roasted-1ho",
+      "framing": "960px square; same size/color/material as Yangwai1, distinct arrangement; moderately full; white margins; shared logo",
+      "compositionUpdatedAt": "2026-11-18",
+      "editorialNote": "Separate product per user: nearly identical appearance to Yangwai1, individually rearranged. Preview exec-5a6d34c4."
     }
   ],
   "imageType": "AI-generated catalog reference photos",
