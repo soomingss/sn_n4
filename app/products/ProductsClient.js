@@ -40,7 +40,7 @@ export default function ProductsClient({products=[],companyName="",adminManual=f
   const manualPartner=adminManual?partners.find(p=>p.id===manualUserId):null;
   const activeGrade=manualPartner?.price_grade;
   const activeProducts=adminManual?products.map(p=>({...p,price:pricesByGrade?.[String(activeGrade)]?.[String(p.id)]??pricesByGrade?.clinic?.[String(p.id)]??null})):adminPricePreview?products.map(p=>({...p,price:adminPrices?.[previewGrade]?.[String(p.id)]??adminPrices?.clinic?.[String(p.id)]??p.price})):products;
-  const filtered=useMemo(()=>activeProducts.filter(p=>{const q=query.trim().toLowerCase();return(!q||`${productDisplayName(p.name,p.origin)} ${productSpecs(p)}`.toLowerCase().includes(q))&&(initial==="전체"||getInitial(p.name)===initial)}),[activeProducts,query,initial]);
+  const filtered=useMemo(()=>activeProducts.filter(p=>{const q=query.trim().toLowerCase();return(!q||`${productDisplayName(p.name,p.origin)} ${productSpecs(p)}${p.name ? " "+p.name : ""}`.toLowerCase().includes(q))&&(initial==="전체"||getInitial(p.name)===initial)}),[activeProducts,query,initial]);
   useEffect(()=>setPage(1),[query,initial]);
 
   useEffect(()=>{
