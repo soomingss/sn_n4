@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import ProductImage from "../ProductImage";
 import { visibleProductSupplier } from "../lib/product-supplier";
+import { productDisplayName } from "../lib/product-display";
 import herbInformation from "../lib/herb-information.json";
 
 export default function HerbDetails({ product, onClose }) {
@@ -29,7 +30,7 @@ export default function HerbDetails({ product, onClose }) {
       onClick={event => { if (event.target === event.currentTarget) onClose(); }}>
       <div className="herbDetailContent">
         <header className="herbDetailHeader">
-          <div><span>약재 상세정보</span><h2 id="herb-detail-title">{product.name}</h2></div>
+          <div><span>약재 상세정보</span><h2 id="herb-detail-title">{productDisplayName(product.name, product.origin)}</h2></div>
           <button type="button" onClick={onClose} aria-label="약재 설명 닫기" autoFocus>×</button>
         </header>
         <div className="herbDetailOverview">
