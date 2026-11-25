@@ -9,7 +9,7 @@ export function withProductImage(product) {
     : product.name;
   return {
     ...product,
-    image_url: product.image_url ?? referenceImages[originKey] ?? referenceImages[product.name] ?? null,
+    image_url: product.image_url ?? referenceImages[`${product.name}|${product.origin?.trim()}`] ?? referenceImages[originKey] ?? referenceImages[product.name] ?? null,
   };
 }
 
