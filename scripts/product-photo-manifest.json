@@ -3,14 +3,14 @@
   "groups": [
     {
       "name": "가자",
-      "assetPath": "/products-reference/uniform-20261029/herb-001.webp",
+      "assetPath": "/products-reference/uniform-20261029/gaja-cracked-20261125.webp",
       "products": [
         "가자"
       ],
       "id": "herb-001",
-      "framing": "960px square; user-selected first preview; natural low cluster of whole dried fruits on white; existing logo overlay top left",
-      "compositionUpdatedAt": "2026-11-17",
-      "editorialNote": "User selected first generated preview and requested website replacement with logo. Existing shared ProductImage logo preserved."
+      "framing": "960px square; approved low cluster of cracked dried fruit rind on white; existing logo overlay top left",
+      "compositionUpdatedAt": "2026-11-25",
+      "editorialNote": "User approved the cracked dried rind preview for deployment."
     },
     {
       "name": "갈근",
