@@ -485,6 +485,7 @@ footer{min-height:95px;border-top:1px solid #ddd;padding:20px 6%;display:grid;gr
 .herbDetailFacts>div{display:grid;grid-template-columns:64px minmax(0,1fr);gap:12px;padding:11px 0;border-bottom:1px solid #edf1ed;font-size:13px;line-height:1.6}
 .herbDetailFacts dt{color:#6b7b70}
 .herbDetailFacts dd{margin:0;overflow-wrap:anywhere}
+.herbDetailImageNotice{margin:-12px 0 16px;color:#a52724;font-size:clamp(11px,3.5vw,12px);line-height:1.6;word-break:keep-all}
 .herbDetailSection{border-top:1px solid #e4ebe5;padding:22px 0}
 .herbDetailSection h3,.herbDetailSources h3{font-size:16px;margin:0 0 14px;font-weight:700}
 .herbDetailDescription p{font-size:14px;line-height:1.8;margin:0;word-break:keep-all;overflow-wrap:anywhere}

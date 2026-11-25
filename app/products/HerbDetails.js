@@ -43,6 +43,12 @@ export default function HerbDetails({ product, onClose }) {
             {information?.form && <div><dt>상품 형태</dt><dd>{information.form}</dd></div>}
           </dl>
         </div>
+        {product.image_url?.startsWith("/products-reference/") && (
+          <p className="herbDetailImageNotice">
+            ※ 실제 약재를 참고해 AI로 제작한 이미지입니다.<br />
+            상품에 따라 색상과 형태에 차이가 있을 수 있습니다.
+          </p>
+        )}
         {entry?.description && <section className="herbDetailSection herbDetailDescription" aria-labelledby="herb-description-title">
           <h3 id="herb-description-title">약재 설명</h3>
           <p>{entry.description}</p>
