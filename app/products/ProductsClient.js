@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import ProductImage from "../ProductImage";
 import HerbDetails from "./HerbDetails";
+import DeliveryPresets from "./DeliveryPresets";
 import ProductComparison from "./ProductComparison";
 import { matchesProduct, priceForGrams } from "./catalog-search";
 import Link from "next/link";
@@ -22,7 +23,7 @@ function getInitial(text="") {
 }
 function money(v){if(v===null||v===undefined||v==="")return"단가 문의";return`${Number(v).toLocaleString("ko-KR")}원`}
 
-export default function ProductsClient({products=[],companyName="",adminManual=false,partners=[],pricesByGrade={},adminPricePreview=false,adminPrices={},parcelShippingNotice="",cartPage=false,frequentProductIds=[],kakaoChannelUrl=""}){
+export default function ProductsClient({products=[],companyName="",adminManual=false,partners=[],pricesByGrade={},adminPricePreview=false,adminPrices={},parcelShippingNotice="",cartPage=false,frequentProductIds=[],kakaoChannelUrl="",deliveryDraftOwner=""}){
   const [query,setQuery]=useState("");
   const [inStockOnly, setInStockOnly] = useState(false);
   const [detailProduct,setDetailProduct]=useState(null);
@@ -38,6 +39,7 @@ export default function ProductsClient({products=[],companyName="",adminManual=f
   const [cart,setCart]=useState({});
   const [cartLoaded,setCartLoaded]=useState(false);
   const [deliveryRequest,setDeliveryRequest]=useState("");
+  const deliveryNoteKey = `shinnong-delivery-note:${deliveryDraftOwner}`;
   const [message,setMessage]=useState("");
   const [quickAddMessage,setQuickAddMessage]=useState("");
   const [mobileCartOpen,setMobileCartOpen]=useState(false);
@@ -61,7 +63,7 @@ export default function ProductsClient({products=[],companyName="",adminManual=f
   useEffect(()=>{
     if(adminManual)return;
     const params=new URLSearchParams(window.location.search);
-    try{const savedRequest=sessionStorage.getItem("shinnong-delivery-note");if(savedRequest!==null)setDeliveryRequest(savedRequest.slice(0,DELIVERY_REQUEST_MAX_LENGTH))}catch{}
+    try{const savedRequest=sessionStorage.getItem(deliveryNoteKey);if(savedRequest!==null)setDeliveryRequest(savedRequest.slice(0,DELIVERY_REQUEST_MAX_LENGTH))}catch{}
     try{const saved=JSON.parse(localStorage.getItem("shinnong-cart")||"{}"),next=restoreCart(saved,activeProducts);setCart(next);persistCart(next);if(Object.keys(saved||{}).length>Object.keys(next).length)setMessage("현재 주문할 수 없는 품목은 목록에서 제외되었습니다.")}catch{}finally{setCartLoaded(true)}
     const syncStorage=event=>{if(event.key!=="shinnong-cart"&&event.key!==null)return;try{setCart(restoreCart(JSON.parse(localStorage.getItem("shinnong-cart")||"{}"),activeProducts))}catch{}};
     window.addEventListener("storage",syncStorage);
@@ -84,7 +86,7 @@ export default function ProductsClient({products=[],companyName="",adminManual=f
   const totalQty=cartItems.reduce((s,i)=>s+i.quantity,0);
   const totalPrice=cartItems.reduce((s,i)=>s+Number(i.price||0)*i.quantity,0);
   const persistCart=next=>{if(adminManual)return;try{const out={};for(const item of Object.values(next))out[item.id]={name:item.name,weight:item.weight||"",origin:item.origin||"",supplier:item.supplier||"",price:item.price,quantity:item.quantity};localStorage.setItem("shinnong-cart",JSON.stringify(out));window.dispatchEvent(new Event("shinnong-cart-changed"))}catch{}};
-  const updateDeliveryRequest=value=>{setDeliveryRequest(value);if(!adminManual)try{sessionStorage.setItem("shinnong-delivery-note",value)}catch{}};
+  const updateDeliveryRequest=value=>{setDeliveryRequest(value);if(!adminManual)try{sessionStorage.setItem(deliveryNoteKey,value)}catch{}};
   const addToCart=(p,qty=cartQuantity(quantities[p.id]||1))=>{setCart(prev=>{const next={...prev,[p.id]:{...p,quantity:(prev[p.id]?.quantity||0)+qty}};persistCart(next);return next});setMessage("")};
   const changeCartQty=(id,delta)=>setCart(prev=>{const item=prev[id];if(!item)return prev;const n=item.quantity+delta,next={...prev};if(n<=0)delete next[id];else next[id]={...item,quantity:n};persistCart(next);return next});
   const clearCart=()=>{if(window.confirm("담은 약재를 모두 삭제할까요?")){setCart({});persistCart({});setMessage("")}};
@@ -106,7 +108,7 @@ export default function ProductsClient({products=[],companyName="",adminManual=f
       const data=await response.json();
       if(!response.ok)throw new Error(data?.error||"주문 처리에 실패했습니다.");
       setCart({}); setQuantities({});
-      if(!adminManual)try{localStorage.removeItem("shinnong-cart");window.dispatchEvent(new Event("shinnong-cart-changed"));sessionStorage.removeItem("shinnong-order-key");sessionStorage.removeItem("shinnong-delivery-note")}catch{}
+      if(!adminManual)try{localStorage.removeItem("shinnong-cart");window.dispatchEvent(new Event("shinnong-cart-changed"));sessionStorage.removeItem("shinnong-order-key");sessionStorage.removeItem(deliveryNoteKey)}catch{}
       const completedOrderId=editOrderId||data.order_id;
       if(!adminManual&&completedOrderId){window.location.href=`/mypage/orders/${encodeURIComponent(completedOrderId)}`;return}
       setMessage(`주문이 접수되었습니다. 주문번호 #${data.order_id}`); setEditOrderId(null);
@@ -217,6 +219,7 @@ function CartPanel({items,totalPrice,deliveryRequest,setDeliveryRequest,changeCa
         </article>)}</div>:<div className="orderCartItems">{items.map(item=><div className="orderCartItem" key={item.id}><div><b>{productDisplayName(item.name,item.origin)}</b><span>{item.weight||""}</span><em>{money(item.price)}</em></div><div className="cartQty"><button onClick={()=>changeCartQty(item.id,-1)}>−</button><span>{item.quantity}</span><button onClick={()=>changeCartQty(item.id,1)}>+</button></div><button className="cartRemove" onClick={()=>removeCart(item.id)}>삭제</button></div>)}</div>}
         <div className={fullPage?"fullCartCheckout":"cartCheckout"}>
         <label className="deliveryRequest"><span>배송 요청사항 (선택)</span><textarea rows={3} maxLength={DELIVERY_REQUEST_MAX_LENGTH} value={deliveryRequest} disabled={submitting} onChange={e=>setDeliveryRequest(e.target.value)} placeholder="예: 도착 전 연락 부탁드립니다."/><small>500자 이내로 입력해 주세요.</small></label>
+        {fullPage && <DeliveryPresets note={deliveryRequest} onLoad={setDeliveryRequest} disabled={submitting} />}
         <div className="orderTotal"><span>{fullPage?"총 상품금액":"주문 예상금액"}</span><b>{money(totalPrice)}</b></div>
         {fullPage && <section className="orderShippingNotice" aria-label="배송 마감 안내">
           <p><strong>직접 배송</strong> 서울·경기·인천 직접 배송 대상 거래처는 오전 11시 이전 주문 시 당일 배송, 이후 주문은 익일 배송됩니다.</p>

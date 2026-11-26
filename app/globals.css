@@ -619,3 +619,12 @@ footer{min-height:95px;border-top:1px solid #ddd;padding:20px 6%;display:grid;gr
 .productTitleRow em{flex:none;white-space:nowrap}
 .productPrice .productCompareButton{min-height:28px;max-width:100%;white-space:normal}
 .productConvertedPrice{display:block;margin-top:4px;color:#52645b;font-size:12px;line-height:1.4}
+
+.deliveryPresets{margin:12px 0;padding:10px;border:1px solid #dce8df;border-radius:8px;color:#315f4e;font-size:13px}
+.deliveryPresets summary{cursor:pointer;font-weight:600}
+.deliveryPresets p{margin:8px 0 0}
+.deliveryPresets fieldset{min-width:0;border:0;padding:0;margin:8px 0 0}
+.deliveryPresetRow{display:flex;flex-wrap:wrap;align-items:end;gap:6px;margin-top:8px}
+.deliveryPresetRow label{display:grid;flex:1 1 155px;gap:4px}
+.deliveryPresetRow input,.deliveryPresetRow select,.deliveryPresetRow button{min-width:0;min-height:34px;border:1px solid #cedfd3;border-radius:6px;padding:5px 8px;background:white;color:inherit;font:inherit}
+.deliveryPresetRow button:disabled{opacity:.55}
