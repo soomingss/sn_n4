@@ -689,7 +689,7 @@ footer{min-height:95px;border-top:1px solid #ddd;padding:20px 6%;display:grid;gr
 
 .productTitleRow .productTitleSpecs{color:var(--muted);font-size:12px;line-height:1.4}
 
-.recentOrders{margin-bottom:20px}
+.recentOrders{margin:18px 0 20px}
 .recentOrders h2{margin:0 0 8px;font-size:16px}
 .recentOrders ul{list-style:none;margin:0;padding:0}
 
