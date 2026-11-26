@@ -193,7 +193,7 @@ export default function ProductsClient({products=[],companyName="",adminManual=f
                       aria-label={priceExplanation} aria-expanded={priceExplanationId === product.id}
                       aria-controls={`price-explanation-${product.id}`}
                       onClick={() => setPriceExplanationId(id => id === product.id ? null : product.id)}
-                      style={{color:priceChange > 0 ? "#a22c2c" : "#216e3a",background:"transparent",border:0,padding:"3px 2px",fontWeight:700,cursor:"pointer"}}>
+                      style={{color:"#a22c2c",background:"transparent",border:0,padding:"3px 2px",fontWeight:700,cursor:"pointer"}}>
                       <span style={{display:"block",color:"#52645b",fontSize:10,fontWeight:400,lineHeight:1.15}}>지난달 대비</span>
                       {priceChange > 0 ? "+" : "−"}{Math.abs(priceChange).toLocaleString("ko-KR")}
                     </button>}
