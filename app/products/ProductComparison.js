@@ -27,9 +27,12 @@ export default function ProductComparison({ products, remove, clear }) {
         <thead><tr><th scope="col">항목</th>{products.map(product => {
           const name = productDisplayName(product.name, product.origin);
           return <th scope="col" key={product.id}>
-            <div className="productComparisonPhoto"><ProductImage src={product.image_url} name={product.name} origin={product.origin} /></div>
+            <div className="productComparisonPhoto">
+              <ProductImage src={product.image_url} name={product.name} origin={product.origin} />
+              <button className="productComparisonRemove" type="button" onClick={() => remove(product.id)}
+                aria-label={`${name} 비교에서 제외`}>×</button>
+            </div>
             <div>{name}</div>
-            <button type="button" onClick={() => remove(product.id)} aria-label={`${name} 비교에서 제외`}>제외</button>
           </th>;
         })}</tr></thead>
         <tbody>{rows.map(([label, value]) => <tr key={label}><th scope="row">{label}</th>{products.map(product => <td key={product.id}>{value(product)}</td>)}</tr>)}</tbody>

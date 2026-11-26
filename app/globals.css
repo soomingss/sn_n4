@@ -605,10 +605,11 @@ footer{min-height:95px;border-top:1px solid #ddd;padding:20px 6%;display:grid;gr
 .productComparison thead th{min-width:110px;vertical-align:top}
 .productComparison thead th:first-child,.productComparison tbody th{min-width:90px;white-space:nowrap}
 .productComparison thead th:not(:first-child),.productComparison td{text-align:center}
-.productComparisonPhoto{width:72px;height:72px;margin:0 auto 6px}
+.productComparisonPhoto{position:relative;width:72px;height:72px;margin:0 auto 6px}
 .productComparisonPhoto .productPhoto{width:100%;height:100%}
 .productComparison button,.productCompareButton{padding:5px 8px;border-radius:5px;border:1px solid #cbded0;background:white;color:#315f4e;font-size:12px;white-space:nowrap}
-.productComparison thead button{margin-top:6px}
+.productComparison .productComparisonRemove{position:absolute;top:-5px;right:-18px;display:grid;place-items:center;width:26px;height:26px;padding:0;border:0;background:transparent;color:#52645b;font-size:17px;line-height:1;cursor:pointer}
+.productComparisonRemove:hover,.productComparisonRemove:focus-visible{background:#eaf2eb}
 .productCompareButton[aria-pressed=true]{background:#315f4e;color:white}
 .productCompareButton:disabled{opacity:.55}
 .productCardMedia{display:grid;justify-items:center;align-self:center;gap:5px}
