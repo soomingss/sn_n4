@@ -1,3 +1,4 @@
+import RefundPolicy from "../order-delivery/returns/RefundPolicy";
 import { redirect } from "next/navigation";
 import { getCurrentSession, supabaseAdminFetch } from "../lib/auth";
 import { getSiteSettings } from "../lib/site-settings";
@@ -66,5 +67,5 @@ export default async function OrderCatalogPage({cartPage=false}){
 
   const frequentProductIds = await frequentProductIdsPromise;
 
-  return <main><section className="companyHero"><div className="companyHeroCopy">{settings.company_name_en ? <p>{settings.company_name_en}</p> : null}<h1>{title}</h1><span>HOME &gt; {title}</span></div></section>{loadError?<section className="approvalNotice contentWidth"><h1>상품 조회 오류</h1><p>{loadError}</p></section>:<ProductsClient cartPage={cartPage} deliveryDraftOwner={s.user.id} frequentProductIds={frequentProductIds} kakaoChannelUrl={settings.kakao_channel_url || ""} parcelShippingNotice={deliveryContent.parcel_shipping_notice||""} products={products} companyName={s.profile?.company_name || ""} adminPricePreview={s.profile?.role==="admin"} adminPrices={adminPrices} />}</main>
+  return <main><section className="companyHero"><div className="companyHeroCopy">{settings.company_name_en ? <p>{settings.company_name_en}</p> : null}<h1>{title}</h1><span>HOME &gt; {title}</span></div></section>{loadError?<section className="approvalNotice contentWidth"><h1>상품 조회 오류</h1><p>{loadError}</p></section>:<ProductsClient cartPage={cartPage} refundPolicy={<RefundPolicy content={deliveryContent} settings={settings}/>} deliveryDraftOwner={s.user.id} frequentProductIds={frequentProductIds} kakaoChannelUrl={settings.kakao_channel_url || ""} parcelShippingNotice={deliveryContent.parcel_shipping_notice||""} products={products} companyName={s.profile?.company_name || ""} adminPricePreview={s.profile?.role==="admin"} adminPrices={adminPrices} />}</main>
 }

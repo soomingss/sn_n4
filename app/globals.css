@@ -663,3 +663,9 @@ footer{min-height:95px;border-top:1px solid #ddd;padding:20px 6%;display:grid;gr
 .productCard .productInfo{display:grid;align-content:center;row-gap:5px;min-width:0}
 .productCard .productInfo h2,.productCard .productInfo>p,.productCard .productConvertedPrice{margin:0;line-height:1.4}
 .productCard .productPrice>b{line-height:1.4}
+
+.refundPolicyTrigger{padding:0;border:0;background:none;text-align:left;cursor:pointer}
+.refundPolicyDialog{width:min(680px,calc(100% - 32px));max-height:calc(100% - 32px);padding:16px;border:1px solid var(--line);border-radius:12px;overflow:auto;background:#fff;color:var(--text)}
+.refundPolicyDialog::backdrop{background:rgba(0,0,0,.45)}
+.refundPolicyDialogActions{display:flex;justify-content:flex-end;margin-bottom:10px}
+.refundPolicyDialogActions button{padding:6px 12px;border:1px solid var(--line);border-radius:6px;background:#fff;color:var(--text);cursor:pointer}
