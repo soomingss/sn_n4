@@ -1,4 +1,4 @@
-export const BULK_MINIMUM = 30;
+export const BULK_MINIMUM = 20;
 export const BULK_DISCOUNT_PERCENT = 5;
 
 export function bulkUnitPrice(price, bulkOrder) {

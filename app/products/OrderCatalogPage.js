@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { redirect } from "next/navigation";
 import { getCurrentSession, supabaseAdminFetch } from "../lib/auth";
 import { getSiteSettings } from "../lib/site-settings";
@@ -36,10 +35,10 @@ async function loadFrequentProductIds(userId) {
   }
 }
 
-export default async function OrderCatalogPage({cartPage=false,bulkOrder=false}){
-  const title = bulkOrder ? (cartPage ? "대량 주문 장바구니" : "대량 주문") : (cartPage ? "담은 약재" : "약재주문");
+export default async function OrderCatalogPage({cartPage=false}){
+  const title = cartPage ? "담은 약재" : "약재주문";
   const [s, settings, deliveryContent]=await Promise.all([getCurrentSession(), getSiteSettings(), getSiteContent("order_delivery")]);
-  if(!s)redirect(`/login?next=${encodeURIComponent((cartPage ? "/cart" : "/products") + (bulkOrder ? "?mode=bulk" : ""))}`);
+  if(!s)redirect(`/login?next=${encodeURIComponent(cartPage ? "/cart" : "/products")}`);
   if(s.profile?.status!=="approved" && s.profile?.role!=="admin")return <main><section className="companyHero"><div className="companyHeroCopy">{settings.company_name_en ? <p>{settings.company_name_en}</p> : null}<h1>{title}</h1><span>HOME &gt; {title}</span></div></section><section className="approvalNotice contentWidth"><h1>거래처 승인 후 이용 가능합니다.</h1><p>관리자 승인 완료 후 약재주문를 이용하실 수 있습니다.</p></section></main>;
 
   const frequentProductIdsPromise = cartPage || s.profile?.role === "admin"
@@ -67,8 +66,5 @@ export default async function OrderCatalogPage({cartPage=false,bulkOrder=false})
 
   const frequentProductIds = await frequentProductIdsPromise;
 
-  return <main><section className="companyHero"><div className="companyHeroCopy">{settings.company_name_en ? <p>{settings.company_name_en}</p> : null}<h1>{title}</h1><span>HOME &gt; {title}</span></div></section>{!cartPage && <nav className="orderModeNav contentWidth" aria-label="약재 주문 유형">
-    <Link href="/products" aria-current={bulkOrder ? undefined : "page"}>일반 주문</Link>
-    <Link href="/products?mode=bulk" aria-current={bulkOrder ? "page" : undefined}>대량 주문</Link>
-  </nav>}{loadError?<section className="approvalNotice contentWidth"><h1>상품 조회 오류</h1><p>{loadError}</p></section>:<ProductsClient key={bulkOrder ? "bulk" : "standard"} cartPage={cartPage} bulkOrder={bulkOrder} deliveryDraftOwner={s.user.id} frequentProductIds={frequentProductIds} kakaoChannelUrl={settings.kakao_channel_url || ""} parcelShippingNotice={deliveryContent.parcel_shipping_notice||""} products={products} companyName={s.profile?.company_name || ""} adminPricePreview={s.profile?.role==="admin"} adminPrices={adminPrices} />}</main>
+  return <main><section className="companyHero"><div className="companyHeroCopy">{settings.company_name_en ? <p>{settings.company_name_en}</p> : null}<h1>{title}</h1><span>HOME &gt; {title}</span></div></section>{loadError?<section className="approvalNotice contentWidth"><h1>상품 조회 오류</h1><p>{loadError}</p></section>:<ProductsClient cartPage={cartPage} deliveryDraftOwner={s.user.id} frequentProductIds={frequentProductIds} kakaoChannelUrl={settings.kakao_channel_url || ""} parcelShippingNotice={deliveryContent.parcel_shipping_notice||""} products={products} companyName={s.profile?.company_name || ""} adminPricePreview={s.profile?.role==="admin"} adminPrices={adminPrices} />}</main>
 }
