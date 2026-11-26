@@ -557,6 +557,7 @@ footer{min-height:95px;border-top:1px solid #ddd;padding:20px 6%;display:grid;gr
 .fullCartLineTotal b{font-size:17px;color:#315f4e;white-space:nowrap}
 .fullCartRemove{border:0;background:transparent;color:#8d4c45;font-size:12px;padding:8px 0;cursor:pointer}
 .fullCartCheckout{margin-top:26px}
+.fullCartCheckout .orderTotal{justify-content:flex-end;gap:8px}
 .fullCartCheckout .orderCartActions{max-width:420px;margin-left:auto}
 .fullCart .orderCartActions{grid-template-columns:1fr}
 .fullCartEmpty{display:flex;flex-direction:column;align-items:center;gap:16px;padding:64px 20px;text-align:center;color:#68766f}
