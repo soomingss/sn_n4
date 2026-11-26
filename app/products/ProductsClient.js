@@ -298,11 +298,12 @@ function CartPanel({refundPolicy,items,totalPrice,deliveryRequest,setDeliveryReq
           </> : <dl className="cartShippingCutoffs">
             <div>
               <dt>직접 배송 <small>서울·경기·인천 대상 거래처</small></dt>
-              <dd><strong>오전 10:30 전</strong> 당일 배송 · 이후 익일</dd>
+              <dd><strong>오전 10:30 전</strong> 당일 배송 · 이후 익일 배송</dd>
             </div>
             <div>
               <dt>택배</dt>
               <dd><strong>오후 3:30 마감</strong> · 당일 배송 제외</dd>
+              {parcelShippingNotice && <dd className="cartParcelFee">{parcelShippingNotice}</dd>}
             </div>
           </dl>}
           {fullPage && <>
@@ -310,7 +311,7 @@ function CartPanel({refundPolicy,items,totalPrice,deliveryRequest,setDeliveryReq
             <Link href="/order-delivery">주문·배송 안내 보기</Link>
           </>}
         </section>}
-        {parcelShippingNotice&&<p className="orderShippingNotice">{parcelShippingNotice}</p>}
+        {parcelShippingNotice && (fullPage || !reviewBeforeOrder) && <p className="orderShippingNotice">{parcelShippingNotice}</p>}
         {message&&<p className="orderCartMessage">{message}</p>}
         {refundPolicy ? <RefundPolicyDialog>{refundPolicy}</RefundPolicyDialog> : <a className="orderPolicyLink" href="/order-delivery/returns#refund-policy" target="_blank" rel="noopener noreferrer" aria-label="교환·반품 및 환불 안내 보기 (새 창)">교환·반품 및 환불 안내 보기 ↗</a>}
         <div className="orderCartActions">{reviewBeforeOrder&&!fullPage?<Link className="orderSubmit orderReviewButton" href={cartHref}>주문 내용 확인</Link>:<button className="orderSubmit" disabled={submitting} onClick={prepareOrder}>{submitting?"처리중...":editOrderId?"주문 수정 저장":fullPage?"주문 접수":"주문하기"}</button>}</div>

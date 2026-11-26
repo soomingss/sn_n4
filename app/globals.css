@@ -675,3 +675,6 @@ footer{min-height:95px;border-top:1px solid #ddd;padding:20px 6%;display:grid;gr
 .cartShippingCutoffs dt small{margin-left:4px;font-size:10px;font-weight:400}
 .cartShippingCutoffs dd{margin:2px 0 0}
 .cartShippingCutoffs dd strong{color:#315f4e}
+
+.cartShippingCutoffs>div+div{padding-top:8px;border-top:1px solid #dce5db}
+.cartShippingCutoffs .cartParcelFee{margin-top:6px;color:#315f4e;font-weight:600}
