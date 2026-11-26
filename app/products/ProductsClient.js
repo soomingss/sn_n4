@@ -190,9 +190,9 @@ export default function ProductsClient({products=[],companyName="",adminManual=f
                 <div className="productInfo">
                   <div className="productTitleRow">
                     <h2>{productDisplayName(product.name, product.origin)}</h2>
-                    <em className={product.stock_status === "low" ? "soldOut" : ""}>{product.stock_status === "low" ? "품절" : "재고 있음"}</em>
+                    <span className="productTitleSpecs">{productSpecs(product)}</span>
+                    {product.stock_status === "low" && <em className="soldOut">품절</em>}
                   </div>
-                  <p>{productSpecs(product)}</p>
                   <div className="productPrice">
                     <b>{money(price)}</b>
 

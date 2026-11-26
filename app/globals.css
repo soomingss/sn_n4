@@ -678,3 +678,5 @@ footer{min-height:95px;border-top:1px solid #ddd;padding:20px 6%;display:grid;gr
 
 .cartShippingCutoffs>div+div{padding-top:8px;border-top:1px solid #dce5db}
 .cartShippingCutoffs .cartParcelFee{margin-top:6px;color:#315f4e;font-weight:600}
+
+.productTitleRow .productTitleSpecs{color:var(--muted);font-size:12px;line-height:1.4}
