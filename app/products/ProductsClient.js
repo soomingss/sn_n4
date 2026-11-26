@@ -301,7 +301,7 @@ function CartPanel({refundPolicy,items,totalPrice,deliveryRequest,setDeliveryReq
   const shippingCutoffs = (
       <dl className="cartShippingCutoffs">
         <div>
-          <dt>직접 배송 <small>서울·경기·인천 일부 지역</small></dt>
+          <dt>직접 배송 <small>서울 · 경기 · 인천 (일부지역 제외)</small></dt>
           <dd><strong>오전 10:30 전</strong> 당일 배송 · 이후 익일 배송</dd>
         </div>
         <div>
