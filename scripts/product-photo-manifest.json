@@ -610,15 +610,15 @@
     },
     {
       "name": "당귀",
-      "assetPath": "/products-reference/uniform-20261029/herb-054-v2.webp",
+      "assetPath": "/products-reference/uniform-20261029/danggui-import-20261126.webp",
       "products": [
         "당귀"
       ],
       "id": "herb-054",
       "generationPrompt": "Use case: product-mockup. Create one photorealistic square catalog photograph of 당귀, using the attached photo ONLY as material and cut-form reference. Match its distinctive shapes and coloration carefully: 크고 불규칙한 넓은 크림색 뿌리 절편, 짙은 갈색 껍질과 일부 가지뿌리. A natural generous pile of ONLY this herb centered on a pure white seamless background with ample clean margin, soft diffuse studio light, slight soft contact shadow, high detail, realistic dry texture, view from slightly above. No packaging, containers, hands, boards, labels, letters, logos, watermark, illustrations or other plants. Do not reproduce reference text or graphics. Keep every edge of the herb pile in frame.",
-      "editorialNote": "2026-10-26 사용자 제공 참고사진의 색·절단 형태를 반영. 흰 배경의 새 상품사진. ",
-      "framing": "960px square; centered porcelain bowl and wood board; warm greige linen and soft eucalyptus; shared original logo overlay",
-      "compositionUpdatedAt": "2026-11-12"
+      "editorialNote": "사용자가 확정한 수입당귀 상품사진.",
+      "framing": "960px square; ivory slices mixed with brown root tails on white; shared original logo overlay",
+      "compositionUpdatedAt": "2026-11-26"
     },
     {
       "name": "당귀 (GAP/특특)",
