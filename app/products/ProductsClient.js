@@ -24,7 +24,7 @@ function getInitial(text="") {
 }
 function money(v){if(v===null||v===undefined||v==="")return"단가 문의";return`${Number(v).toLocaleString("ko-KR")}원`}
 
-export default function ProductsClient({products=[],companyName="",adminManual=false,partners=[],pricesByGrade={},adminPricePreview=false,adminPrices={},parcelShippingNotice="",cartPage=false,frequentProductIds=[],kakaoChannelUrl="",deliveryDraftOwner="",refundPolicy}){
+export default function ProductsClient({products=[],companyName="",adminManual=false,partners=[],pricesByGrade={},adminPricePreview=false,adminPrices={},parcelShippingNotice="",cartPage=false,recentOrders=[],kakaoChannelUrl="",deliveryDraftOwner="",refundPolicy}){
   const [query,setQuery]=useState("");
   const [inStockOnly, setInStockOnly] = useState(false);
   const [detailProduct,setDetailProduct]=useState(null);
@@ -44,7 +44,7 @@ export default function ProductsClient({products=[],companyName="",adminManual=f
   const requestKeyName = "shinnong-order-key";
   const deliveryNoteKey = `shinnong-delivery-note:${deliveryDraftOwner}`;
   const [message,setMessage]=useState("");
-  const [quickAddMessage,setQuickAddMessage]=useState("");
+  const [recentOrderMessage,setRecentOrderMessage]=useState("");
   const [mobileCartOpen,setMobileCartOpen]=useState(false);
   const [submitting,setSubmitting]=useState(false);
   const [editOrderId,setEditOrderId]=useState(null);
@@ -95,10 +95,6 @@ export default function ProductsClient({products=[],companyName="",adminManual=f
       document.getElementById("product-comparison-title")?.scrollIntoView({ block: "start" });
     });
   };
-  const frequentProducts = frequentProductIds
-    .map(id => productsById.get(String(id)))
-    .filter(product => product && product.stock_status !== "low" && product.price != null)
-    .slice(0, 4);
   const pageCount=Math.max(1,Math.ceil(filtered.length/PAGE_SIZE));
   const currentPage=Math.min(page,pageCount);
   const visible=filtered.slice((currentPage-1)*PAGE_SIZE,currentPage*PAGE_SIZE);
@@ -111,6 +107,31 @@ export default function ProductsClient({products=[],companyName="",adminManual=f
   const persistCart=next=>{if(adminManual)return;try{const out={};for(const item of Object.values(next))out[item.id]={name:item.name,weight:item.weight||"",origin:item.origin||"",supplier:item.supplier||"",price:item.price,quantity:item.quantity};localStorage.setItem(cartKey,JSON.stringify(out));window.dispatchEvent(new Event("shinnong-cart-changed"));return true}catch{return false}};
   const updateDeliveryRequest=value=>{setDeliveryRequest(value);if(!adminManual)try{sessionStorage.setItem(deliveryNoteKey,value)}catch{}};
   const addToCart=(p,qty=Math.max(minimumQuantity,cartQuantity(quantities[p.id])))=>{setCart(prev=>{const next={...prev,[p.id]:{...p,quantity:(prev[p.id]?.quantity||0)+qty}};persistCart(next);return next});setMessage("")};
+  const addRecentOrder = order => {
+    const available = order.items.flatMap(item => {
+      const product = productsById.get(String(item.product_id));
+      return product && product.stock_status !== "low" && product.price != null && item.quantity > 0
+        ? [{ product, quantity: cartQuantity(item.quantity) }] : [];
+    });
+    if (!available.length) {
+      setRecentOrderMessage("현재 다시 담을 수 있는 품목이 없어요.");
+      return;
+    }
+
+    setCart(previous => {
+      const next = { ...previous };
+      for (const { product, quantity } of available) {
+        next[product.id] = { ...product, quantity: (next[product.id]?.quantity || 0) + quantity };
+      }
+      persistCart(next);
+      return next;
+    });
+    setMessage("");
+    const excluded = order.items.length - available.length;
+    setRecentOrderMessage(excluded
+      ? `주문 가능한 품목을 담았어요. 현재 주문할 수 없는 ${excluded}개 품목은 제외했어요.`
+      : "이 주문의 모든 품목을 장바구니에 담았어요.");
+  };
   const changeCartQty=(id,delta)=>setCart(prev=>{const item=prev[id];if(!item)return prev;const n=item.quantity+delta,next={...prev};if(n<=0)delete next[id];else next[id]={...item,quantity:n};persistCart(next);return next});
   const clearCart=()=>{if(window.confirm("담은 약재를 모두 삭제할까요?")){setCart({});persistCart({});setMessage("")}};
   const setCartQty=(id,value)=>setCart(prev=>{if(!prev[id])return prev;const next={...prev,[id]:{...prev[id],quantity:cartQuantity(value)}};persistCart(next);return next});
@@ -161,16 +182,19 @@ export default function ProductsClient({products=[],companyName="",adminManual=f
       {adminPricePreview&&!adminManual&&<div className="adminPricePreview"><label htmlFor="adminPricePreviewGrade">가격 구분</label><select id="adminPricePreviewGrade" value={previewGrade} onChange={e=>{setPreviewGrade(e.target.value);setCart({});setQuantities({});setMessage("")}}><option value="clinic">한의원</option><option value="oem">OEM공장</option><option value="special">특별관리대상</option></select></div>}
       <div className="productOrderLayout">
         <div className="productCatalog">
-          {frequentProducts.length > 0 && <section className="frequentProducts" aria-labelledby="frequent-products-title">
-            <h2 id="frequent-products-title">자주 주문한 약재</h2>
-            <ul>{frequentProducts.map(product => <li key={product.id}>
-              <div><strong>{productDisplayName(product.name, product.origin)}</strong><small>{productSpecs(product)} · {money(product.price)}</small></div>
-              <button type="button" aria-label={`${productDisplayName(product.name, product.origin)} ${minimumQuantity}개 담기`} onClick={() => {
-                addToCart(product, minimumQuantity);
-                setQuickAddMessage(`${productDisplayName(product.name, product.origin)} ${minimumQuantity}개를 담았습니다.`);
-              }}>{minimumQuantity}개 담기</button>
+          {!editOrderId && recentOrders.length > 0 && <section className="recentOrders" aria-labelledby="recent-orders-title">
+            <h2 id="recent-orders-title">최근 주문</h2>
+            <ul>{recentOrders.map(order => <li key={order.id}>
+              <div>
+                <time dateTime={order.created_at}>{new Intl.DateTimeFormat("ko-KR", {
+                  dateStyle: "medium", timeZone: "Asia/Seoul"
+                }).format(new Date(order.created_at))}</time>
+                <p>{order.items.slice(0, 2).map(item => item.product_name).join(" · ")}
+                  {order.items.length > 2 && ` 외 ${order.items.length - 2}개 품목`}</p>
+              </div>
+              <button type="button" disabled={!cartLoaded} onClick={() => addRecentOrder(order)}>전체 다시 담기</button>
             </li>)}</ul>
-            <p role="status" hidden={!quickAddMessage}>{quickAddMessage}</p>
+            <p className="recentOrderMessage" role="status">{recentOrderMessage}</p>
           </section>}
           <div className="catalogSearchRow" style={{flexWrap:"wrap",gap:"8px 12px"}}><div className="productSearch v21Search catalogSearch"><input value={query} onChange={e=>setQuery(e.target.value)} placeholder="약재명, 별칭, 원산지 검색" aria-label="약재 검색"/><button type="button" className="catalogSearchButton" onClick={()=>setPage(1)}>⌕ 검색</button></div>
             {!adminManual && <label style={{display:"inline-flex",alignItems:"center",gap:6,fontSize:13}}>

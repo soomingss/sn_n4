@@ -572,13 +572,8 @@ footer{min-height:95px;border-top:1px solid #ddd;padding:20px 6%;display:grid;gr
 
 .deliveryRequestText{white-space:pre-wrap;overflow-wrap:anywhere;word-break:break-word}.adminTable .deliveryRequestText{display:block;min-width:140px;max-width:260px;white-space:pre-wrap}
 
-.frequentProducts{margin-bottom:20px;padding:14px;border:1px solid #dce8df;border-radius:10px}
-.frequentProducts h2{margin:0 0 10px;font-size:16px}
-.frequentProducts ul{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:8px 14px;list-style:none;margin:0;padding:0}
-.frequentProducts li{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:8px 0}
-.frequentProducts li small{display:block;color:#52645b}
-.frequentProducts button,.herbInquiry button,.herbInquiry a{display:inline-block;padding:8px 10px;border:1px solid #cedfd3;border-radius:6px;background:#fff;color:#315f4e;font-size:13px;white-space:nowrap}
-.frequentProducts p,.herbInquiry p{margin:8px 0;color:#52645b;font-size:13px}
+.herbInquiry button,.herbInquiry a{display:inline-block;padding:8px 10px;border:1px solid #cedfd3;border-radius:6px;background:#fff;color:#315f4e;font-size:13px;white-space:nowrap}
+.herbInquiry p{margin:8px 0;color:#52645b;font-size:13px}
 .herbInquiry div{display:flex;flex-wrap:wrap;gap:8px}
 .orderShippingNotice p{margin:0 0 5px}
 .orderShippingNotice p strong{margin-right:3px}
@@ -690,3 +685,14 @@ footer{min-height:95px;border-top:1px solid #ddd;padding:20px 6%;display:grid;gr
 .cartShippingCutoffs .cartParcelFee{margin-top:6px;color:#315f4e;font-weight:600}
 
 .productTitleRow .productTitleSpecs{color:var(--muted);font-size:12px;line-height:1.4}
+
+.recentOrders{margin-bottom:20px;border-top:1px solid var(--line)}
+.recentOrders h2{margin:12px 0 2px;font-size:16px}
+.recentOrders ul{list-style:none;margin:0;padding:0}
+.recentOrders li{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}
+.recentOrders time{color:var(--muted);font-size:12px}
+.recentOrders li p{margin:4px 0 0;font-size:13px;overflow-wrap:anywhere}
+.recentOrders button{flex-shrink:0;padding:7px 9px;border:1px solid #cedfd3;border-radius:5px;background:#fff;color:#315f4e;font-size:12px}
+.recentOrders button:disabled{opacity:.5}
+.recentOrderMessage{margin:8px 0 0;color:#315f4e;font-size:12px}
+.recentOrderMessage:empty{margin:0}
