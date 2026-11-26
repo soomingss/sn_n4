@@ -20,7 +20,7 @@ function getInitial(text="") {
 }
 function money(v){if(v===null||v===undefined||v==="")return"단가 문의";return`${Number(v).toLocaleString("ko-KR")}원`}
 
-export default function ProductsClient({products=[],companyName="",adminManual=false,partners=[],pricesByGrade={},adminPricePreview=false,adminPrices={},parcelShippingNotice="",cartPage=false}){
+export default function ProductsClient({products=[],companyName="",adminManual=false,partners=[],pricesByGrade={},adminPricePreview=false,adminPrices={},parcelShippingNotice="",cartPage=false,frequentProductIds=[],kakaoChannelUrl=""}){
   const [query,setQuery]=useState("");
   const [detailProduct,setDetailProduct]=useState(null);
   const [previewGrade,setPreviewGrade]=useState("clinic");
@@ -31,6 +31,7 @@ export default function ProductsClient({products=[],companyName="",adminManual=f
   const [cartLoaded,setCartLoaded]=useState(false);
   const [deliveryRequest,setDeliveryRequest]=useState("");
   const [message,setMessage]=useState("");
+  const [quickAddMessage,setQuickAddMessage]=useState("");
   const [mobileCartOpen,setMobileCartOpen]=useState(false);
   const [submitting,setSubmitting]=useState(false);
   const [editOrderId,setEditOrderId]=useState(null);
@@ -56,6 +57,11 @@ export default function ProductsClient({products=[],companyName="",adminManual=f
     return()=>{window.removeEventListener("storage",syncStorage)};
   },[]);
 
+  const productsById = new Map(activeProducts.map(product => [String(product.id), product]));
+  const frequentProducts = frequentProductIds
+    .map(id => productsById.get(String(id)))
+    .filter(product => product && product.stock_status !== "low" && product.price != null)
+    .slice(0, 4);
   const pageCount=Math.max(1,Math.ceil(filtered.length/PAGE_SIZE));
   const currentPage=Math.min(page,pageCount);
   const visible=filtered.slice((currentPage-1)*PAGE_SIZE,currentPage*PAGE_SIZE);
@@ -64,7 +70,7 @@ export default function ProductsClient({products=[],companyName="",adminManual=f
   const totalPrice=cartItems.reduce((s,i)=>s+Number(i.price||0)*i.quantity,0);
   const persistCart=next=>{if(adminManual)return;try{const out={};for(const item of Object.values(next))out[item.id]={name:item.name,weight:item.weight||"",origin:item.origin||"",supplier:item.supplier||"",price:item.price,quantity:item.quantity};localStorage.setItem("shinnong-cart",JSON.stringify(out));window.dispatchEvent(new Event("shinnong-cart-changed"))}catch{}};
   const updateDeliveryRequest=value=>{setDeliveryRequest(value);if(!adminManual)try{sessionStorage.setItem("shinnong-delivery-note",value)}catch{}};
-  const addToCart=p=>{const qty=cartQuantity(quantities[p.id]||1);setCart(prev=>{const next={...prev,[p.id]:{...p,quantity:(prev[p.id]?.quantity||0)+qty}};persistCart(next);return next});setMessage("")};
+  const addToCart=(p,qty=cartQuantity(quantities[p.id]||1))=>{setCart(prev=>{const next={...prev,[p.id]:{...p,quantity:(prev[p.id]?.quantity||0)+qty}};persistCart(next);return next});setMessage("")};
   const changeCartQty=(id,delta)=>setCart(prev=>{const item=prev[id];if(!item)return prev;const n=item.quantity+delta,next={...prev};if(n<=0)delete next[id];else next[id]={...item,quantity:n};persistCart(next);return next});
   const clearCart=()=>{if(window.confirm("담은 약재를 모두 삭제할까요?")){setCart({});persistCart({});setMessage("")}};
   const setCartQty=(id,value)=>setCart(prev=>{if(!prev[id])return prev;const next={...prev,[id]:{...prev[id],quantity:cartQuantity(value)}};persistCart(next);return next});
@@ -114,6 +120,17 @@ export default function ProductsClient({products=[],companyName="",adminManual=f
       {adminPricePreview&&!adminManual&&<div className="adminPricePreview"><label htmlFor="adminPricePreviewGrade">가격 구분</label><select id="adminPricePreviewGrade" value={previewGrade} onChange={e=>{setPreviewGrade(e.target.value);setCart({});setQuantities({});setMessage("")}}><option value="clinic">한의원</option><option value="oem">OEM공장</option><option value="special">특별관리대상</option></select></div>}
       <div className="productOrderLayout">
         <div className="productCatalog">
+          {frequentProducts.length > 0 && <section className="frequentProducts" aria-labelledby="frequent-products-title">
+            <h2 id="frequent-products-title">자주 주문한 약재</h2>
+            <ul>{frequentProducts.map(product => <li key={product.id}>
+              <div><strong>{productDisplayName(product.name, product.origin)}</strong><small>{productSpecs(product)} · {money(product.price)}</small></div>
+              <button type="button" aria-label={`${productDisplayName(product.name, product.origin)} 1개 담기`} onClick={() => {
+                addToCart(product, 1);
+                setQuickAddMessage(`${productDisplayName(product.name, product.origin)} 1개를 담았습니다.`);
+              }}>1개 담기</button>
+            </li>)}</ul>
+            <p role="status" hidden={!quickAddMessage}>{quickAddMessage}</p>
+          </section>}
           <div className="catalogSearchRow"><div className="productSearch v21Search catalogSearch"><input value={query} onChange={e=>setQuery(e.target.value)} placeholder="약재명, 원산지 검색" aria-label="약재 검색"/><button type="button" className="catalogSearchButton" onClick={()=>setPage(1)}>⌕ 검색</button></div></div>
           <div className="v21Filter"><div className="initialFilter">{CHOSUNG.map(ch=><button key={ch} className={initial===ch?"active":""} onClick={()=>setInitial(ch)}>{ch}</button>)}</div></div>
           <p className="herbDetailHelp">사진을 누르면 약재의 상세 설명을 볼 수 있습니다.</p>
@@ -135,7 +152,7 @@ export default function ProductsClient({products=[],companyName="",adminManual=f
       </div>
       {adminManual?<div className="mobileCartBar" onClick={()=>setMobileCartOpen(true)}><span>주문 목록</span><b>{totalQty}개 · {money(totalPrice)}</b></div>:<Link className="mobileCartBar mobileCartIconBar" href="/cart" aria-label="장바구니 보기"><CartIcon size={26}/><b>{totalQty}개 · {money(totalPrice)}</b></Link>}
       {mobileCartOpen&&<div className="mobileCartOverlay" onClick={()=>setMobileCartOpen(false)}><div className="mobileCartSheet" onClick={e=>e.stopPropagation()}><button className="mobileCartClose" onClick={()=>setMobileCartOpen(false)}>닫기</button><CartPanel reviewBeforeOrder={!adminManual&&!editOrderId} parcelShippingNotice={parcelShippingNotice} items={cartItems} totalPrice={totalPrice} deliveryRequest={deliveryRequest} setDeliveryRequest={updateDeliveryRequest} changeCartQty={changeCartQty} removeCart={removeCart} prepareOrder={prepareOrder} message={message} submitting={submitting} editOrderId={editOrderId} companyName={adminManual?(manualPartner?.company_name||""):companyName}/></div></div>}
-      {detailProduct&&<HerbDetails product={detailProduct} onClose={()=>setDetailProduct(null)}/>}
+      {detailProduct&&<HerbDetails product={detailProduct} kakaoChannelUrl={kakaoChannelUrl} onClose={()=>setDetailProduct(null)}/>}
     </section>
   );
 }
@@ -155,10 +172,16 @@ function CartPanel({items,totalPrice,deliveryRequest,setDeliveryRequest,changeCa
         <div className={fullPage?"fullCartCheckout":"cartCheckout"}>
         <label className="deliveryRequest"><span>배송 요청사항 (선택)</span><textarea rows={3} maxLength={DELIVERY_REQUEST_MAX_LENGTH} value={deliveryRequest} disabled={submitting} onChange={e=>setDeliveryRequest(e.target.value)} placeholder="예: 도착 전 연락 부탁드립니다."/><small>500자 이내로 입력해 주세요.</small></label>
         <div className="orderTotal"><span>{fullPage?"총 상품금액":"주문 예상금액"}</span><b>{money(totalPrice)}</b></div>
+        {fullPage && <section className="orderShippingNotice" aria-label="배송 마감 안내">
+          <p><strong>직접 배송</strong> 서울·경기·인천 직접 배송 대상 거래처는 오전 11시 이전 주문 시 당일 배송, 이후 주문은 익일 배송됩니다.</p>
+          <p><strong>택배</strong> 오후 4시 주문 마감이며, 당일 배송 대상에서 제외됩니다.</p>
+          <p>주문 접수 후 재고를 확인하며, 재고가 부족하거나 출고 일정이 달라지면 연락드리겠습니다.</p>
+          <Link href="/order-delivery">주문·배송 안내 보기</Link>
+        </section>}
         {parcelShippingNotice&&<p className="orderShippingNotice">{parcelShippingNotice}</p>}
         {message&&<p className="orderCartMessage">{message}</p>}
         <a className="orderPolicyLink" href="/order-delivery/returns#refund-policy" target="_blank" rel="noopener noreferrer" aria-label="교환·반품 및 환불 안내 보기 (새 창)">교환·반품 및 환불 안내 보기 ↗</a>
-        <div className="orderCartActions">{reviewBeforeOrder&&!fullPage?<Link className="orderSubmit orderReviewButton" href="/cart">결제하기</Link>:<button className="orderSubmit" disabled={submitting} onClick={prepareOrder}>{submitting?"처리중...":editOrderId?"주문 수정 저장":"주문하기"}</button>}</div>
+        <div className="orderCartActions">{reviewBeforeOrder&&!fullPage?<Link className="orderSubmit orderReviewButton" href="/cart">주문 내용 확인</Link>:<button className="orderSubmit" disabled={submitting} onClick={prepareOrder}>{submitting?"처리중...":editOrderId?"주문 수정 저장":fullPage?"주문 접수":"주문하기"}</button>}</div>
         </div>
       </>:fullPage?<div className="fullCartEmpty"><CartIcon size={56}/><h3>아직 담은 약재가 없습니다.</h3><p>{message||"약재주문 화면에서 필요한 상품을 담아 주세요."}</p><Link className="cartContinue" href="/products">약재 둘러보기</Link></div>:<div className="cartEmpty">주문할 제품을 담아주세요.</div>}
     </aside>

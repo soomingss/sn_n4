@@ -1,13 +1,24 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import ProductImage from "../ProductImage";
 import { visibleProductSupplier } from "../lib/product-supplier";
 import { productDisplayName } from "../lib/product-display";
 import herbInformation from "../lib/herb-information.json";
 
-export default function HerbDetails({ product, onClose }) {
+export default function HerbDetails({ product, onClose, kakaoChannelUrl }) {
   const dialog = useRef(null);
+  const [copyMessage, setCopyMessage] = useState("");
+  const inquiryText = `${productDisplayName(product.name, product.origin)} / ${product.origin || "원산지 문의"} / ${product.weight || "중량 문의"}`;
+
+  async function copyInquiryText() {
+    try {
+      await navigator.clipboard.writeText(inquiryText);
+      setCopyMessage("약재 정보가 복사됐습니다.");
+    } catch {
+      setCopyMessage(`아래 정보를 선택해 복사해 주세요. ${inquiryText}`);
+    }
+  }
   const information = herbInformation.products[product.name];
   const entry = information ? herbInformation.herbs[information.key] : null;
 
@@ -49,6 +60,14 @@ export default function HerbDetails({ product, onClose }) {
             상품에 따라 색상과 형태에 차이가 있을 수 있습니다.
           </p>
         )}
+        {kakaoChannelUrl && <section className="herbDetailSection herbInquiry" aria-label="약재 문의">
+          <p>실물이나 포장 상태가 궁금하시면 문의해 주세요.</p>
+          <div>
+            <button type="button" onClick={copyInquiryText}>약재 정보 복사</button>
+            <a href={kakaoChannelUrl} target="_blank" rel="noopener noreferrer">이 약재 문의하기 ↗</a>
+          </div>
+          <p role="status">{copyMessage}</p>
+        </section>}
         {entry?.description && <section className="herbDetailSection herbDetailDescription" aria-labelledby="herb-description-title">
           <h3 id="herb-description-title">약재 설명</h3>
           <p>{entry.description}</p>

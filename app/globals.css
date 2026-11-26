@@ -570,3 +570,15 @@ footer{min-height:95px;border-top:1px solid #ddd;padding:20px 6%;display:grid;gr
 .deliveryRequest textarea{display:block;width:100%;min-height:88px;padding:11px;border:1px solid var(--line);border-radius:4px;background:#fff;color:#263f35;font:inherit;font-size:13px;line-height:1.7;resize:vertical;box-sizing:border-box}.deliveryRequest textarea:focus-visible{outline:2px solid #54816a;outline-offset:2px}.deliveryRequest>small{display:block;margin-top:6px;font-size:11px;color:#68766f}
 
 .deliveryRequestText{white-space:pre-wrap;overflow-wrap:anywhere;word-break:break-word}.adminTable .deliveryRequestText{display:block;min-width:140px;max-width:260px;white-space:pre-wrap}
+
+.frequentProducts{margin-bottom:20px;padding:14px;border:1px solid #dce8df;border-radius:10px}
+.frequentProducts h2{margin:0 0 10px;font-size:16px}
+.frequentProducts ul{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:8px 14px;list-style:none;margin:0;padding:0}
+.frequentProducts li{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:8px 0}
+.frequentProducts li small{display:block;color:#52645b}
+.frequentProducts button,.herbInquiry button,.herbInquiry a{display:inline-block;padding:8px 10px;border:1px solid #cedfd3;border-radius:6px;background:#fff;color:#315f4e;font-size:13px;white-space:nowrap}
+.frequentProducts p,.herbInquiry p{margin:8px 0;color:#52645b;font-size:13px}
+.herbInquiry div{display:flex;flex-wrap:wrap;gap:8px}
+.orderShippingNotice p{margin:0 0 5px}
+.orderShippingNotice p strong{margin-right:3px}
+.orderShippingNotice a{color:#315f4e;text-decoration:underline;text-underline-offset:3px}
