@@ -4,7 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import ProductImage from "../ProductImage";
 import HerbDetails from "./HerbDetails";
 import ProductComparison from "./ProductComparison";
-import { matchesProduct } from "./catalog-search";
+import { matchesProduct, priceForGrams } from "./catalog-search";
 import Link from "next/link";
 import CartIcon from "../CartIcon";
 import {cartQuantity,restoreCart} from "../lib/cart";
@@ -146,10 +146,11 @@ export default function ProductsClient({products=[],companyName="",adminManual=f
           <p className="herbDetailHelp">사진을 누르면 약재의 상세 설명을 볼 수 있습니다.</p>
           {!adminManual && <ProductComparison products={comparisonProducts} remove={removeComparison} clear={() => setComparisonIds([])} />}
           <div className="productList">
-            {visible.length?visible.map(product=>(
-              <article className="productCard" key={product.id}>
-                <button type="button" className="productThumb productPhotoButton" aria-label={`${productDisplayName(product.name,product.origin)} 약재 설명 보기`} aria-haspopup="dialog" onClick={()=>setDetailProduct(product)}><ProductImage src={product.image_url} name={product.name} origin={product.origin}/><span className="productPhotoOpenHint" aria-hidden="true">＋</span></button>
-                <div className="productInfo"><h2>{productDisplayName(product.name,product.origin)}</h2><p>{productSpecs(product)}</p><div className="productPrice"><b>{money(product.price)}</b><em className={product.stock_status==="low"?"soldOut":""}>{product.stock_status==="low"?"품절":"재고 있음"}</em></div>
+            {visible.length?visible.map(product=>{
+              const priceFor600g = priceForGrams(product.price, product.weight, 600);
+              return <article className="productCard" key={product.id}>
+                <div className="productCardMedia">
+                  <button type="button" className="productThumb productPhotoButton" aria-label={`${productDisplayName(product.name,product.origin)} 약재 설명 보기`} aria-haspopup="dialog" onClick={()=>setDetailProduct(product)}><ProductImage src={product.image_url} name={product.name} origin={product.origin}/><span className="productPhotoOpenHint" aria-hidden="true">＋</span></button>
                   {!adminManual && <button type="button" className="productCompareButton"
                     aria-label={`${productDisplayName(product.name, product.origin)} 비교 선택`}
                     aria-pressed={comparisonIds.includes(product.id)}
@@ -158,12 +159,15 @@ export default function ProductsClient({products=[],companyName="",adminManual=f
                     {comparisonIds.includes(product.id) ? "비교 선택됨" : "비교"}
                   </button>}
                 </div>
+                <div className="productInfo"><h2>{productDisplayName(product.name,product.origin)}</h2><p>{productSpecs(product)}</p><div className="productPrice"><b>{money(product.price)}</b><em className={product.stock_status==="low"?"soldOut":""}>{product.stock_status==="low"?"품절":"재고 있음"}</em></div>
+                  {priceFor600g != null && <small className="productConvertedPrice">600g 환산가 {money(priceFor600g)}</small>}
+                </div>
                 <div className={`productOrderControls ${product.stock_status==="low"?"disabled":""}`}>
                   <label><span>수량</span><div className="v21Qty"><button disabled={product.stock_status==="low"} onClick={()=>setQuantities(q=>({...q,[product.id]:Math.max(1,Number(q[product.id]||1)-1)}))}>−</button><input disabled={product.stock_status==="low"} type="number" min="1" value={quantities[product.id]||1} onChange={e=>setQuantities(q=>({...q,[product.id]:e.target.value}))}/><button disabled={product.stock_status==="low"} onClick={()=>setQuantities(q=>({...q,[product.id]:Number(q[product.id]||1)+1}))}>＋</button></div></label>
                   <div className="productActionButtons"><button className="productCartIconButton" disabled={product.stock_status==="low"} onClick={()=>addToCart(product)} aria-label={product.stock_status==="low"?"품절":"장바구니에 담기"}>{product.stock_status==="low"?<span>품절</span>:<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 10.2c.2.9 1 1.6 2 1.6h7.9c1 0 1.8-.7 2-1.6L20.4 8H6.1"/><circle cx="10" cy="19" r="1.25"/><circle cx="17" cy="19" r="1.25"/></svg>}</button></div>
                 </div>
               </article>
-            )):<div className="productEmpty">조건에 맞는 제품이 없습니다.
+            }):<div className="productEmpty">조건에 맞는 제품이 없습니다.
               {!adminManual && !adminPricePreview && query.trim() && <p>
                 <Link href={`/mypage/requests?name=${encodeURIComponent(query.trim())}`}>이 약재 요청하기</Link>
               </p>}

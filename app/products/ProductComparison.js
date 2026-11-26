@@ -1,6 +1,6 @@
 import ProductImage from "../ProductImage";
 import { productDisplayName } from "../lib/product-display";
-import { pricePer100Grams } from "./catalog-search";
+import { priceForGrams } from "./catalog-search";
 
 const priceText = value => value == null || value === "" ? "단가 문의" : `${Number(value).toLocaleString("ko-KR")}원`;
 
@@ -11,7 +11,11 @@ export default function ProductComparison({ products, remove, clear }) {
     ["포장 중량", product => product.weight || "별도 문의"],
     ["포장 단가", product => priceText(product.price)],
     ["100g당 가격", product => {
-      const price = pricePer100Grams(product.price, product.weight);
+      const price = priceForGrams(product.price, product.weight, 100);
+      return price == null ? "—" : priceText(price);
+    }],
+    ["600g 환산가", product => {
+      const price = priceForGrams(product.price, product.weight, 600);
       return price == null ? "—" : priceText(price);
     }],
   ];

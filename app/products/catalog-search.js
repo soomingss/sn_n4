@@ -19,12 +19,12 @@ export function matchesProduct(product, query) {
   return query.trim().toLowerCase().split(/\s+/).every(term => searchable.includes(term));
 }
 
-export function pricePer100Grams(price, weight) {
+export function priceForGrams(price, weight, targetGrams) {
   const match = String(weight ?? "").trim().match(/^(\d+(?:\.\d+)?)\s*(kg|g|킬로그램|그램)$/i);
   if (!match || price == null || String(price).trim() === "") return null;
   const grams = Number(match[1]) * (/^(kg|킬로그램)$/i.test(match[2]) ? 1000 : 1);
   const amount = Number(price);
   return grams > 0 && Number.isFinite(grams) && Number.isFinite(amount) && amount >= 0
-    ? Math.round(amount / grams * 100)
+    ? Math.round(amount / grams * targetGrams)
     : null;
 }

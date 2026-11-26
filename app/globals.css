@@ -613,4 +613,6 @@ footer{min-height:95px;border-top:1px solid #ddd;padding:20px 6%;display:grid;gr
 .productComparison thead button{margin-top:6px}
 .productCompareButton[aria-pressed=true]{background:#315f4e;color:white}
 .productCompareButton:disabled{opacity:.55}
-.productInfo .productCompareButton{margin-top:6px;min-height:28px}
+.productCardMedia{display:grid;justify-items:center;align-self:center;gap:5px}
+.productCardMedia .productCompareButton{min-height:28px}
+.productConvertedPrice{display:block;margin-top:4px;color:#52645b;font-size:12px;line-height:1.4}
