@@ -351,17 +351,20 @@ function CartPanel({refundPolicy,items,totalPrice,shippingFee,deliveryRequest,se
           {shippingCutoffs}
           {fullPage && <>
             <p className="checkoutStockNotice">{stockNotice}</p>
-            <RefundPolicyDialog title="주문·배송 안내" showTitle>
+          </>}
+        </section>}
+        {parcelShippingNotice && !fullPage && !reviewBeforeOrder && <p className="orderShippingNotice">{parcelShippingNotice}</p>}
+        {message&&<p className="orderCartMessage">{message}</p>}
+        {fullPage ? <div className="checkoutPolicyLinks">
+          <RefundPolicyDialog title="주문·배송 안내" showTitle shortLabel>
               <div className="checkoutGuide">
                 {shippingCutoffs}
                 <p className="checkoutStockNotice">{stockNotice}</p>
               </div>
             </RefundPolicyDialog>
-          </>}
-        </section>}
-        {parcelShippingNotice && !fullPage && !reviewBeforeOrder && <p className="orderShippingNotice">{parcelShippingNotice}</p>}
-        {message&&<p className="orderCartMessage">{message}</p>}
-        {refundPolicy ? <RefundPolicyDialog>{refundPolicy}</RefundPolicyDialog> : <a className="orderPolicyLink" href="/order-delivery/returns#refund-policy" target="_blank" rel="noopener noreferrer" aria-label="교환·반품 및 환불 안내 보기 (새 창)">교환·반품 및 환불 안내 보기 ↗</a>}
+          <span className="checkoutPolicyDivider" aria-hidden="true">·</span>
+          {refundPolicy ? <RefundPolicyDialog shortLabel>{refundPolicy}</RefundPolicyDialog> : <a className="orderPolicyLink" href="/order-delivery/returns#refund-policy" target="_blank" rel="noopener noreferrer" aria-label="교환·반품 및 환불 안내 보기 (새 창)">교환·반품 및 환불 안내</a>}
+        </div> : refundPolicy ? <RefundPolicyDialog>{refundPolicy}</RefundPolicyDialog> : <a className="orderPolicyLink" href="/order-delivery/returns#refund-policy" target="_blank" rel="noopener noreferrer" aria-label="교환·반품 및 환불 안내 보기 (새 창)">교환·반품 및 환불 안내 보기 ↗</a>}
         <div className="orderCartActions">{reviewBeforeOrder&&!fullPage?<Link className="orderSubmit orderReviewButton" href={cartHref}>주문 내용 확인</Link>:<button className="orderSubmit" disabled={submitting} onClick={prepareOrder}>{submitting?"처리중...":editOrderId?"주문 수정 저장":fullPage?"주문 접수":"주문하기"}</button>}</div>
         </div>
       </>:fullPage?<div className="fullCartEmpty"><CartIcon size={56}/><h3>아직 담은 약재가 없습니다.</h3><p>{message||"약재주문 화면에서 필요한 상품을 담아 주세요."}</p><Link className="cartContinue" href={catalogHref}>약재 둘러보기</Link></div>:<div className="cartEmpty">주문할 제품을 담아주세요.</div>}

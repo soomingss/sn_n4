@@ -2,14 +2,14 @@
 
 import { useRef } from "react";
 
-export default function RefundPolicyDialog({children, title = "교환·반품 및 환불 안내", showTitle = false}) {
+export default function RefundPolicyDialog({children, title = "교환·반품 및 환불 안내", showTitle = false, shortLabel = false}) {
   const dialog = useRef(null);
   const trigger = useRef(null);
 
   return <>
     <button ref={trigger} type="button" className="orderPolicyLink refundPolicyTrigger"
       aria-haspopup="dialog" onClick={() => dialog.current?.showModal()}>
-      {title} 보기
+      {title}{!shortLabel && " 보기"}
     </button>
     <dialog ref={dialog} className="refundPolicyDialog" aria-label={title}
       onClose={() => trigger.current?.focus()}>
