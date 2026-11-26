@@ -45,6 +45,7 @@ export default function ProductsClient({products=[],companyName="",adminManual=f
   const deliveryNoteKey = `shinnong-delivery-note:${deliveryDraftOwner}`;
   const [message,setMessage]=useState("");
   const [recentOrderMessage,setRecentOrderMessage]=useState("");
+  const [openRecentOrder, setOpenRecentOrder] = useState(null);
   const [mobileCartOpen,setMobileCartOpen]=useState(false);
   const [submitting,setSubmitting]=useState(false);
   const [editOrderId,setEditOrderId]=useState(null);
@@ -184,15 +185,26 @@ export default function ProductsClient({products=[],companyName="",adminManual=f
         <div className="productCatalog">
           {!editOrderId && recentOrders.length > 0 && <section className="recentOrders" aria-labelledby="recent-orders-title">
             <h2 id="recent-orders-title">최근 주문</h2>
-            <ul>{recentOrders.map(order => <li key={order.id}>
-              <div>
-                <time dateTime={order.created_at}>{new Intl.DateTimeFormat("ko-KR", {
-                  dateStyle: "medium", timeZone: "Asia/Seoul"
-                }).format(new Date(order.created_at))}</time>
-                <p>{order.items.slice(0, 2).map(item => item.product_name).join(" · ")}
-                  {order.items.length > 2 && ` 외 ${order.items.length - 2}개 품목`}</p>
+            <ul className="recentOrderCards">{recentOrders.map(order => <li key={order.id}
+              onPointerEnter={event => { if (event.pointerType === "mouse") setOpenRecentOrder(order.id); }}
+              onPointerLeave={event => { if (event.pointerType === "mouse") setOpenRecentOrder(current => current === order.id ? null : current); }}
+              onBlur={event => { if (!event.currentTarget.contains(event.relatedTarget)) setOpenRecentOrder(current => current === order.id ? null : current); }}
+              onKeyDown={event => { if (event.key === "Escape") setOpenRecentOrder(null); }}>
+              <time dateTime={order.created_at}>{new Intl.DateTimeFormat("ko-KR", {
+                dateStyle: "medium", timeZone: "Asia/Seoul"
+              }).format(new Date(order.created_at))}</time>
+              <p>{order.items[0].product_name}{order.items.length > 1 && ` 외 ${order.items.length - 1}개 품목`}</p>
+              <div className="recentOrderActions">
+                <button type="button" aria-expanded={openRecentOrder === order.id}
+                  aria-controls={`recent-order-items-${order.id}`}
+                  onClick={() => setOpenRecentOrder(current => current === order.id ? null : order.id)}>품목 보기</button>
+                <button type="button" disabled={!cartLoaded} onClick={() => addRecentOrder(order)}>전체 다시 담기</button>
               </div>
-              <button type="button" disabled={!cartLoaded} onClick={() => addRecentOrder(order)}>전체 다시 담기</button>
+              <ul className="recentOrderPreview" id={`recent-order-items-${order.id}`} hidden={openRecentOrder !== order.id}>
+                {order.items.map((item, index) => <li key={index}>
+                  <span>{item.product_name}</span><span>{item.quantity}개</span>
+                </li>)}
+              </ul>
             </li>)}</ul>
             <p className="recentOrderMessage" role="status">{recentOrderMessage}</p>
           </section>}

@@ -687,13 +687,25 @@ footer{min-height:95px;border-top:1px solid #ddd;padding:20px 6%;display:grid;gr
 
 .productTitleRow .productTitleSpecs{color:var(--muted);font-size:12px;line-height:1.4}
 
-.recentOrders{margin-bottom:20px;padding:14px 16px;border:1px solid var(--line);border-radius:6px;background:#f8faf8}
+.recentOrders{margin-bottom:20px}
 .recentOrders h2{margin:0 0 8px;font-size:16px}
 .recentOrders ul{list-style:none;margin:0;padding:0}
-.recentOrders li{display:flex;justify-content:space-between;align-items:center;gap:12px}
+
 .recentOrders time{color:var(--muted);font-size:12px}
 .recentOrders li p{margin:4px 0 0;font-size:13px;overflow-wrap:anywhere}
 .recentOrders button{flex-shrink:0;padding:7px 9px;border:1px solid #cedfd3;border-radius:5px;background:#fff;color:#315f4e;font-size:12px}
 .recentOrders button:disabled{opacity:.5}
 .recentOrderMessage{margin:8px 0 0;color:#315f4e;font-size:12px}
 .recentOrderMessage:empty{margin:0}
+
+.recentOrderCards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.recentOrderCards>li{position:relative;min-width:0;padding:12px;border:1px solid var(--line);border-radius:6px;background:#f8faf8}
+.recentOrderActions{display:flex;flex-wrap:wrap;gap:4px;margin-top:8px}
+.recentOrderCards .recentOrderPreview{position:absolute;z-index:5;top:100%;left:0;right:0;max-height:220px;overflow:auto;padding:6px 10px;border:1px solid var(--line);border-radius:4px;background:#fff;box-shadow:0 3px 10px #0001}
+.recentOrderPreview li{display:flex;justify-content:space-between;gap:8px;padding:5px 0;font-size:12px}
+.recentOrderPreview li+li{border-top:1px solid var(--line)}
+.recentOrderPreview li span:last-child{white-space:nowrap}
+@media(max-width:650px){
+  .recentOrderCards{grid-template-columns:1fr}
+  .recentOrderCards .recentOrderPreview{position:static;margin-top:8px;box-shadow:none}
+}
