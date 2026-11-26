@@ -659,3 +659,7 @@ footer{min-height:95px;border-top:1px solid #ddd;padding:20px 6%;display:grid;gr
 .orderCartItemTotals{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:12px}
 .orderCartItemTotals .cartQty{margin-top:0}
 .orderCartItemTotals>strong{color:var(--text);font-size:14px;text-align:right;white-space:nowrap}
+
+.productCard .productInfo{display:grid;align-content:center;row-gap:5px;min-width:0}
+.productCard .productInfo h2,.productCard .productInfo>p,.productCard .productConvertedPrice{margin:0;line-height:1.4}
+.productCard .productPrice>b{line-height:1.4}
