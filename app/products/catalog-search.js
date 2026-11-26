@@ -16,7 +16,18 @@ export function matchesProduct(product, query) {
     productDisplayName(name, product.origin), productSpecs(product), name,
     ...(aliases[baseName] || []),
   ].join(" ").toLowerCase();
-  return query.trim().toLowerCase().split(/\s+/).every(term => searchable.includes(term));
+  const terms = query.trim().toLowerCase().split(/\s+/);
+  if (terms.every(term => searchable.includes(term))) return true;
+
+  const [herb, ...qualifiers] = name.normalize("NFKC")
+    .replace(/^\s*\(\s*[土토]\s*\)\s*/, "")
+    .toLowerCase().replace(/\s+/g, "").split("/");
+  if (!herb || !qualifiers.length || qualifiers.some(part => !part)) return false;
+
+  const compactQuery = terms.join("");
+  const qualifier = qualifiers.join("");
+  return (herb + qualifier).includes(compactQuery)
+    || (qualifier + herb).includes(compactQuery);
 }
 
 export function priceForGrams(price, weight, targetGrams) {
