@@ -604,7 +604,8 @@ footer{min-height:95px;border-top:1px solid #ddd;padding:20px 6%;display:grid;gr
 .productComparison th,.productComparison td{padding:8px;text-align:left;border-bottom:1px solid #dce8df}
 .productComparison thead th{min-width:110px;vertical-align:top}
 .productComparison thead th:first-child,.productComparison tbody th{min-width:90px;white-space:nowrap}
-.productComparisonPhoto{width:72px;height:72px;margin-bottom:6px}
+.productComparison thead th:not(:first-child),.productComparison td{text-align:center}
+.productComparisonPhoto{width:72px;height:72px;margin:0 auto 6px}
 .productComparisonPhoto .productPhoto{width:100%;height:100%}
 .productComparison button,.productCompareButton{padding:5px 8px;border-radius:5px;border:1px solid #cbded0;background:white;color:#315f4e;font-size:12px;white-space:nowrap}
 .productComparison thead button{margin-top:6px}
