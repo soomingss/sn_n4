@@ -38,7 +38,11 @@ async function loadFrequentProductIds(userId) {
 
 export default async function OrderCatalogPage({cartPage=false}){
   const title = cartPage ? "담은 약재" : "약재주문";
-  const [s, settings, deliveryContent]=await Promise.all([getCurrentSession(), getSiteSettings(), getSiteContent("order_delivery")]);
+  const settingsPromise = getSiteSettings();
+  const [s, settings, deliveryContent] = await Promise.all([
+    getCurrentSession(), settingsPromise,
+    settingsPromise.then(settings => getSiteContent("order_delivery", settings)),
+  ]);
   if(!s)redirect(`/login?next=${encodeURIComponent(cartPage ? "/cart" : "/products")}`);
   if(s.profile?.status!=="approved" && s.profile?.role!=="admin")return <main><section className="companyHero"><div className="companyHeroCopy">{settings.company_name_en ? <p>{settings.company_name_en}</p> : null}<h1>{title}</h1><span>HOME &gt; {title}</span></div></section><section className="approvalNotice contentWidth"><h1>거래처 승인 후 이용 가능합니다.</h1><p>관리자 승인 완료 후 약재주문를 이용하실 수 있습니다.</p></section></main>;
 
