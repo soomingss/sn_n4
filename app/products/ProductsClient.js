@@ -151,15 +151,23 @@ export default function ProductsClient({products=[],companyName="",adminManual=f
               return <article className="productCard" key={product.id}>
                 <div className="productCardMedia">
                   <button type="button" className="productThumb productPhotoButton" aria-label={`${productDisplayName(product.name,product.origin)} 약재 설명 보기`} aria-haspopup="dialog" onClick={()=>setDetailProduct(product)}><ProductImage src={product.image_url} name={product.name} origin={product.origin}/><span className="productPhotoOpenHint" aria-hidden="true">＋</span></button>
-                  {!adminManual && <button type="button" className="productCompareButton"
-                    aria-label={`${productDisplayName(product.name, product.origin)} 비교 선택`}
-                    aria-pressed={comparisonIds.includes(product.id)}
-                    disabled={comparisonIds.length >= 3 && !comparisonIds.includes(product.id)}
-                    onClick={() => toggleComparison(product.id)}>
-                    {comparisonIds.includes(product.id) ? "비교 선택됨" : "비교"}
-                  </button>}
                 </div>
-                <div className="productInfo"><h2>{productDisplayName(product.name,product.origin)}</h2><p>{productSpecs(product)}</p><div className="productPrice"><b>{money(product.price)}</b><em className={product.stock_status==="low"?"soldOut":""}>{product.stock_status==="low"?"품절":"재고 있음"}</em></div>
+                <div className="productInfo">
+                  <div className="productTitleRow">
+                    <h2>{productDisplayName(product.name, product.origin)}</h2>
+                    <em className={product.stock_status === "low" ? "soldOut" : ""}>{product.stock_status === "low" ? "품절" : "재고 있음"}</em>
+                  </div>
+                  <p>{productSpecs(product)}</p>
+                  <div className="productPrice">
+                    <b>{money(product.price)}</b>
+                    {!adminManual && <button type="button" className="productCompareButton"
+                      aria-label={`${productDisplayName(product.name, product.origin)} 다른 상품과 비교하기`}
+                      aria-pressed={comparisonIds.includes(product.id)}
+                      disabled={comparisonIds.length >= 3 && !comparisonIds.includes(product.id)}
+                      onClick={() => toggleComparison(product.id)}>
+                      {comparisonIds.includes(product.id) ? "비교 선택됨" : "다른 상품과 비교하기"}
+                    </button>}
+                  </div>
                   {priceFor600g != null && <small className="productConvertedPrice">600g 환산가 {money(priceFor600g)}</small>}
                 </div>
                 <div className={`productOrderControls ${product.stock_status==="low"?"disabled":""}`}>
