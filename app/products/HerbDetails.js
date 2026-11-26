@@ -9,6 +9,16 @@ import herbInformation from "../lib/herb-information.json";
 export default function HerbDetails({ product, onClose, kakaoChannelUrl }) {
   const dialog = useRef(null);
   const [copyMessage, setCopyMessage] = useState("");
+  const [purchase, setPurchase] = useState(null);
+
+  useEffect(() => {
+    const controller = new AbortController();
+    fetch(`/api/orders/last-purchase?product=${encodeURIComponent(product.id)}`, { signal: controller.signal })
+      .then(response => response.ok ? response.json() : null)
+      .then(result => { if (!controller.signal.aborted) setPurchase(result?.purchase || null); })
+      .catch(() => {});
+    return () => controller.abort();
+  }, [product.id]);
   const inquiryText = `${productDisplayName(product.name, product.origin)} / ${product.origin || "원산지 문의"} / ${product.weight || "중량 문의"}`;
 
   async function copyInquiryText() {
@@ -60,6 +70,11 @@ export default function HerbDetails({ product, onClose, kakaoChannelUrl }) {
             상품에 따라 색상과 형태에 차이가 있을 수 있습니다.
           </p>
         )}
+        {purchase && <p className="lastPurchase">
+          <strong>마지막 구매</strong>{" "}
+          {new Intl.DateTimeFormat("ko-KR", { dateStyle: "medium", timeZone: "Asia/Seoul" }).format(new Date(purchase.date))}
+          {" · "}{purchase.origin || "원산지 기록 없음"}{" · "}{purchase.weight || "중량 기록 없음"}
+        </p>}
         {kakaoChannelUrl && <section className="herbDetailSection herbInquiry" aria-label="약재 문의">
           <p>실물이나 포장 상태가 궁금하시면 문의해 주세요.</p>
           <div>

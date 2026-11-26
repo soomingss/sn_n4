@@ -17,6 +17,7 @@ export default async function InquiriesAdmin(){
     <AdminMobileBack/>
     <section className="inquiryAdminManage contentWidth">
       <div className="inquiryAdminHead"><div><h1>문의사항관리</h1><p>홈페이지를 통해 접수된 문의사항을 확인합니다.</p></div><Link className="desktopAdminBackLink" href="/admin">관리자 업무로 돌아가기</Link></div>
+      <p><Link className="adminLinkButton" href="/admin/partner-requests">거래처 요청 관리</Link></p>
       <div className="inquiryBoard inquiryBoardDesktop">
         <div className="inquiryBoardRow inquiryBoardHeader"><span>상태</span><span>문의제목</span><span>문의날짜</span><span>업체명</span><span>담당자명</span></div>
         {inquiries.length?inquiries.map(q=><Link className="inquiryBoardRow" href={`/admin/inquiries/${q.id}`} key={q.id}><span><b className={`inquiryStatus inquiryStatus-${q.status||"new"}`}>{statusLabel(q.status)}</b></span><strong>{q.inquiry_type||"기타 문의"}</strong><span>{formatDate(q.created_at)}</span><span>{q.company_name||"-"}</span><span>{q.contact_name||"-"}</span></Link>):<div className="inquiryEmpty">접수된 문의사항이 없습니다.</div>}

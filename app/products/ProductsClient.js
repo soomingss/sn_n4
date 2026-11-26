@@ -144,7 +144,11 @@ export default function ProductsClient({products=[],companyName="",adminManual=f
                   <div className="productActionButtons"><button className="productCartIconButton" disabled={product.stock_status==="low"} onClick={()=>addToCart(product)} aria-label={product.stock_status==="low"?"품절":"장바구니에 담기"}>{product.stock_status==="low"?<span>품절</span>:<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 10.2c.2.9 1 1.6 2 1.6h7.9c1 0 1.8-.7 2-1.6L20.4 8H6.1"/><circle cx="10" cy="19" r="1.25"/><circle cx="17" cy="19" r="1.25"/></svg>}</button></div>
                 </div>
               </article>
-            )):<div className="productEmpty">조건에 맞는 제품이 없습니다.</div>}
+            )):<div className="productEmpty">조건에 맞는 제품이 없습니다.
+              {!adminManual && !adminPricePreview && query.trim() && <p>
+                <Link href={`/mypage/requests?name=${encodeURIComponent(query.trim())}`}>이 약재 요청하기</Link>
+              </p>}
+            </div>}
           </div>
           {pageCount>1&&<div className="v21Pagination"><button disabled={currentPage===1} onClick={()=>setPage(p=>Math.max(1,p-1))}>‹</button>{Array.from({length:Math.min(9,pageCount)},(_,i)=>{const start=Math.min(Math.max(1,currentPage-4),Math.max(1,pageCount-8));const n=start+i;return <button key={n} className={n===currentPage?"active":""} onClick={()=>setPage(n)}>{n}</button>})}<button disabled={currentPage===pageCount} onClick={()=>setPage(p=>Math.min(pageCount,p+1))}>›</button></div>}
         </div>

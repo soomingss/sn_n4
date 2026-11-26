@@ -582,3 +582,19 @@ footer{min-height:95px;border-top:1px solid #ddd;padding:20px 6%;display:grid;gr
 .orderShippingNotice p{margin:0 0 5px}
 .orderShippingNotice p strong{margin-right:3px}
 .orderShippingNotice a{color:#315f4e;text-decoration:underline;text-underline-offset:3px}
+
+.lastPurchase,.monthlyTrade,.partnerRequestForm,.partnerRequestList article{background:#f7faf7;border:1px solid #dce8df;border-radius:10px;padding:14px}
+.lastPurchase{font-size:14px;margin:12px 0}
+.monthlyTrade,.partnerRequestForm,.partnerRequestList{margin:18px 0}
+.monthlyTrade h2,.partnerRequestForm h2,.partnerRequestList h2{font-size:18px;margin:0 0 12px}
+.monthlyTrade form{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-bottom:10px}
+.partnerRequestsPage{padding-block:32px}
+.partnerRequestForm{display:grid;gap:10px;max-width:650px}
+.partnerRequestForm label{display:grid;gap:4px}
+.partnerRequestForm input,.partnerRequestForm select,.partnerRequestForm textarea,.monthlyTrade input,.partnerRequestList select{min-width:0;border:1px solid #cedfd3;border-radius:6px;background:white;padding:8px;font:inherit}
+.partnerRequestForm button{justify-self:start}
+.partnerRequestForm p:empty,.partnerRequestList form p:empty{display:none}
+.partnerRequestList article{margin-bottom:10px;overflow-wrap:anywhere}
+.partnerRequestList article p{margin:6px 0}
+.partnerRequestDetails{white-space:pre-wrap}
+.partnerRequestList form{margin-top:10px}
