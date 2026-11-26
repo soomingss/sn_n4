@@ -31,7 +31,7 @@ export function priceForGrams(price, weight, targetGrams) {
 
 function comparisonName(product) {
   return String(product.name || "").normalize("NFKC")
-    .replace(/^\(土\)\s*/, "").split(/[(/]/, 1)[0].replace(/\s+/g, "").toLowerCase();
+    .replace(/^\s*\(\s*[土토]\s*\)\s*/, "").split(/[(/]/, 1)[0].replace(/\s+/g, "").toLowerCase();
 }
 
 export function relatedProductsByName(selected, products) {
