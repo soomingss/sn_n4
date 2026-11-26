@@ -630,3 +630,8 @@ footer{min-height:95px;border-top:1px solid #ddd;padding:20px 6%;display:grid;gr
 .deliveryPresetRow button:disabled{opacity:.55}
 
 .deliveryCutoff{color:#b42318;font-weight:700}
+
+.orderModeNav{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:20px}
+.orderModeNav a{text-align:center;padding:12px 6px;border:1px solid #dce8df;border-radius:8px;color:#315f4e;font-size:14px;word-break:keep-all}
+.orderModeNav a[aria-current=page]{background:#eaf5eb;font-weight:700}
+.bulkOrderNotice{color:#315f4e;font-size:13px;line-height:1.6}
