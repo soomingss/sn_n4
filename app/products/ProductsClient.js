@@ -288,7 +288,7 @@ function CartPanel({items,totalPrice,deliveryRequest,setDeliveryRequest,changeCa
           <button className="cartRemove" onClick={()=>removeCart(item.id)}>삭제</button>
         </div>)}</div>}
         <div className={fullPage?"fullCartCheckout":"cartCheckout"}>
-        <label className="deliveryRequest"><span>배송 요청사항 (선택)</span><textarea rows={3} maxLength={DELIVERY_REQUEST_MAX_LENGTH} value={deliveryRequest} disabled={submitting} onChange={e=>setDeliveryRequest(e.target.value)} placeholder="예: 도착 전 연락 부탁드립니다."/><small>500자 이내로 입력해 주세요.</small></label>
+        {(fullPage || !reviewBeforeOrder) && <label className="deliveryRequest"><span>배송 요청사항 (선택)</span><textarea rows={3} maxLength={DELIVERY_REQUEST_MAX_LENGTH} value={deliveryRequest} disabled={submitting} onChange={e=>setDeliveryRequest(e.target.value)} placeholder="예: 도착 전 연락 부탁드립니다."/><small>500자 이내로 입력해 주세요.</small></label>}
         <div className="orderTotal"><span>{fullPage?"총 상품금액":"주문 예상금액"}</span><b>{money(totalPrice)}</b></div>
         {(fullPage || reviewBeforeOrder) && <section className="orderShippingNotice" aria-label="배송 마감 안내">
           {fullPage ? <>
