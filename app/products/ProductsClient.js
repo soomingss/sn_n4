@@ -245,6 +245,20 @@ function CartQuantityInput({ item, setCartQty, disabled }) {
     }} />;
 }
 
+function CartUnitPrice({ item, showUnit = false }) {
+  if (item.price === item.basePrice) {
+    return showUnit ? <span>단가 {money(item.price)}</span> : <em>{money(item.price)}</em>;
+  }
+
+  return <div className="cartDiscountPrice">
+    <s>{money(item.basePrice)}</s>
+    <div>
+      <strong>{money(item.price)}</strong>
+      <span>{BULK_DISCOUNT_PERCENT}% 할인</span>
+    </div>
+  </div>;
+}
+
 function CartPanel({items,totalPrice,deliveryRequest,setDeliveryRequest,changeCartQty,removeCart,prepareOrder,message,submitting,editOrderId,companyName,parcelShippingNotice,fullPage=false,setCartQty,reviewBeforeOrder=false,cartHref="/cart",catalogHref="/products"}){
   return (
     <aside className={fullPage?"orderCart fullCart":"orderCart"}>
@@ -252,11 +266,11 @@ function CartPanel({items,totalPrice,deliveryRequest,setDeliveryRequest,changeCa
       {items.length?<>
         {fullPage?<div className="fullCartItems" role="list">{items.map(item=><article className="fullCartItem" key={item.id} role="listitem">
           <div className="fullCartPhoto"><ProductImage src={item.image_url} name={item.name} origin={item.origin}/></div>
-          <div className="fullCartProduct"><h3>{productDisplayName(item.name,item.origin)}</h3><p>{productSpecs(item)}</p><span>{item.price !== item.basePrice ? <>할인 단가 {money(item.price)} <small>(일반 주문가 <s>{money(item.basePrice)}</s>)</small></> : <>단가 {money(item.price)}</>}</span></div>
+          <div className="fullCartProduct"><h3>{productDisplayName(item.name,item.origin)}</h3><p>{productSpecs(item)}</p><CartUnitPrice item={item} showUnit /></div>
           <div className="fullCartQty"><button type="button" disabled={item.quantity<=1||submitting} onClick={()=>changeCartQty(item.id,-1)} aria-label={`${item.name} 수량 줄이기`}>−</button><CartQuantityInput item={item} setCartQty={setCartQty} disabled={submitting} /><button type="button" disabled={submitting} onClick={()=>changeCartQty(item.id,1)} aria-label={`${item.name} 수량 늘리기`}>＋</button></div>
           <div className="fullCartLineTotal"><span>상품금액</span><b>{money(item.price==null?null:Number(item.price)*item.quantity)}</b></div>
           <button type="button" className="fullCartRemove" disabled={submitting} onClick={()=>removeCart(item.id)} aria-label={`${item.name} 삭제`}>삭제</button>
-        </article>)}</div>:<div className="orderCartItems">{items.map(item=><div className="orderCartItem" key={item.id}><div><b>{productDisplayName(item.name,item.origin)}</b><span>{item.weight||""}</span><em>{item.price !== item.basePrice && <><s>{money(item.basePrice)}</s>{" "}</>}{money(item.price)}</em></div><div className="cartQty"><button onClick={()=>changeCartQty(item.id,-1)}>−</button><CartQuantityInput item={item} setCartQty={setCartQty} disabled={submitting} /><button onClick={()=>changeCartQty(item.id,1)}>+</button></div><button className="cartRemove" onClick={()=>removeCart(item.id)}>삭제</button></div>)}</div>}
+        </article>)}</div>:<div className="orderCartItems">{items.map(item=><div className="orderCartItem" key={item.id}><div><b>{productDisplayName(item.name,item.origin)}</b><span>{item.weight||""}</span><CartUnitPrice item={item} /></div><div className="cartQty"><button onClick={()=>changeCartQty(item.id,-1)}>−</button><CartQuantityInput item={item} setCartQty={setCartQty} disabled={submitting} /><button onClick={()=>changeCartQty(item.id,1)}>+</button></div><button className="cartRemove" onClick={()=>removeCart(item.id)}>삭제</button></div>)}</div>}
         <div className={fullPage?"fullCartCheckout":"cartCheckout"}>
         <label className="deliveryRequest"><span>배송 요청사항 (선택)</span><textarea rows={3} maxLength={DELIVERY_REQUEST_MAX_LENGTH} value={deliveryRequest} disabled={submitting} onChange={e=>setDeliveryRequest(e.target.value)} placeholder="예: 도착 전 연락 부탁드립니다."/><small>500자 이내로 입력해 주세요.</small></label>
         {fullPage && <DeliveryPresets note={deliveryRequest} onLoad={setDeliveryRequest} disabled={submitting} />}

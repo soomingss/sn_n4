@@ -643,3 +643,9 @@ footer{min-height:95px;border-top:1px solid #ddd;padding:20px 6%;display:grid;gr
 
 .cartQty input{appearance:textfield;text-align:center;padding:0}
 .cartQty input::-webkit-inner-spin-button,.cartQty input::-webkit-outer-spin-button{appearance:none;margin:0}
+
+.cartDiscountPrice{display:grid;gap:6px;margin-top:6px}
+.cartDiscountPrice>s{color:#666;font-size:12px}
+.cartDiscountPrice>div{display:flex;align-items:center;flex-wrap:wrap;gap:6px 8px}
+.cartDiscountPrice strong{color:#24533d;font-size:16px;font-weight:700}
+.cartDiscountPrice>div>span{margin:0;padding:2px 6px;border-radius:4px;background:#e5f2e8;color:#24533d;font-size:11px;font-weight:700;white-space:nowrap}
