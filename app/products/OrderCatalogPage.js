@@ -70,6 +70,5 @@ export default async function OrderCatalogPage({cartPage=false,bulkOrder=false})
   return <main><section className="companyHero"><div className="companyHeroCopy">{settings.company_name_en ? <p>{settings.company_name_en}</p> : null}<h1>{title}</h1><span>HOME &gt; {title}</span></div></section>{!cartPage && <nav className="orderModeNav contentWidth" aria-label="약재 주문 유형">
     <Link href="/products" aria-current={bulkOrder ? undefined : "page"}>일반 주문</Link>
     <Link href="/products?mode=bulk" aria-current={bulkOrder ? "page" : undefined}>대량 주문</Link>
-    <Link href="/inquiry?type=food">식품공장 견적 요청</Link>
   </nav>}{loadError?<section className="approvalNotice contentWidth"><h1>상품 조회 오류</h1><p>{loadError}</p></section>:<ProductsClient key={bulkOrder ? "bulk" : "standard"} cartPage={cartPage} bulkOrder={bulkOrder} deliveryDraftOwner={s.user.id} frequentProductIds={frequentProductIds} kakaoChannelUrl={settings.kakao_channel_url || ""} parcelShippingNotice={deliveryContent.parcel_shipping_notice||""} products={products} companyName={s.profile?.company_name || ""} adminPricePreview={s.profile?.role==="admin"} adminPrices={adminPrices} />}</main>
 }
