@@ -105,6 +105,7 @@ export default function ProductsClient({products=[],companyName="",adminManual=f
   }));
   const totalQty=cartItems.reduce((s,i)=>s+i.quantity,0);
   const totalPrice=cartItems.reduce((s,i)=>s+Number(i.price||0)*i.quantity,0);
+  const shippingFee = cartItems.length && totalPrice <= 100000 ? 5000 : 0;
   const persistCart=next=>{if(adminManual)return;try{const out={};for(const item of Object.values(next))out[item.id]={name:item.name,weight:item.weight||"",origin:item.origin||"",supplier:item.supplier||"",price:item.price,quantity:item.quantity};localStorage.setItem(cartKey,JSON.stringify(out));window.dispatchEvent(new Event("shinnong-cart-changed"));return true}catch{return false}};
   const updateDeliveryRequest=value=>{setDeliveryRequest(value);if(!adminManual)try{sessionStorage.setItem(deliveryNoteKey,value)}catch{}};
   const addToCart=(p,qty=Math.max(minimumQuantity,cartQuantity(quantities[p.id])))=>{setCart(prev=>{const next={...prev,[p.id]:{...p,quantity:(prev[p.id]?.quantity||0)+qty}};persistCart(next);return next});setMessage("")};
@@ -163,7 +164,7 @@ export default function ProductsClient({products=[],companyName="",adminManual=f
 
   if(cartPage)return <section className="cartPage contentWidth">
     <div className="cartPageIntro"><div><CartIcon size={32}/><h2>주문할 약재를 확인해 주세요</h2><p>{cartLoaded?`${cartItems.length}개 품목 · ${totalQty}개`:"담은 상품을 불러오고 있습니다."}</p></div><div className="cartPageActions">{cartItems.length>0&&<button type="button" className="cartClearAll" disabled={submitting} onClick={clearCart}>전체 비우기</button>}<Link className="cartContinue" href={catalogHref}>쇼핑 계속하기</Link></div></div>
-    {!cartLoaded?<p className="cartLoading" role="status">상품과 가격을 확인하고 있습니다.</p>:<CartPanel refundPolicy={refundPolicy} cartHref={cartHref} catalogHref={catalogHref} fullPage setCartQty={setCartQty} parcelShippingNotice={parcelShippingNotice} items={cartItems} totalPrice={totalPrice} deliveryRequest={deliveryRequest} setDeliveryRequest={updateDeliveryRequest} changeCartQty={changeCartQty} removeCart={removeCart} prepareOrder={prepareOrder} message={message} submitting={submitting} editOrderId={editOrderId} companyName={companyName}/>}
+    {!cartLoaded?<p className="cartLoading" role="status">상품과 가격을 확인하고 있습니다.</p>:<CartPanel refundPolicy={refundPolicy} cartHref={cartHref} catalogHref={catalogHref} fullPage setCartQty={setCartQty} parcelShippingNotice={parcelShippingNotice} items={cartItems} totalPrice={totalPrice} shippingFee={shippingFee} deliveryRequest={deliveryRequest} setDeliveryRequest={updateDeliveryRequest} changeCartQty={changeCartQty} removeCart={removeCart} prepareOrder={prepareOrder} message={message} submitting={submitting} editOrderId={editOrderId} companyName={companyName}/>}
   </section>;
 
   return (
@@ -262,10 +263,10 @@ export default function ProductsClient({products=[],companyName="",adminManual=f
           </div>
           {pageCount>1&&<div className="v21Pagination"><button disabled={currentPage===1} onClick={()=>setPage(p=>Math.max(1,p-1))}>‹</button>{Array.from({length:Math.min(9,pageCount)},(_,i)=>{const start=Math.min(Math.max(1,currentPage-4),Math.max(1,pageCount-8));const n=start+i;return <button key={n} className={n===currentPage?"active":""} onClick={()=>setPage(n)}>{n}</button>})}<button disabled={currentPage===pageCount} onClick={()=>setPage(p=>Math.min(pageCount,p+1))}>›</button></div>}
         </div>
-        <CartPanel refundPolicy={refundPolicy} cartHref={cartHref} catalogHref={catalogHref} setCartQty={setCartQty} reviewBeforeOrder={!adminManual&&!editOrderId} parcelShippingNotice={parcelShippingNotice} items={cartItems} totalPrice={totalPrice} deliveryRequest={deliveryRequest} setDeliveryRequest={updateDeliveryRequest} changeCartQty={changeCartQty} removeCart={removeCart} prepareOrder={prepareOrder} message={message} submitting={submitting} editOrderId={editOrderId} companyName={adminManual?(manualPartner?.company_name||""):companyName}/>
+        <CartPanel refundPolicy={refundPolicy} cartHref={cartHref} catalogHref={catalogHref} setCartQty={setCartQty} reviewBeforeOrder={!adminManual&&!editOrderId} parcelShippingNotice={parcelShippingNotice} items={cartItems} totalPrice={totalPrice} shippingFee={shippingFee} deliveryRequest={deliveryRequest} setDeliveryRequest={updateDeliveryRequest} changeCartQty={changeCartQty} removeCart={removeCart} prepareOrder={prepareOrder} message={message} submitting={submitting} editOrderId={editOrderId} companyName={adminManual?(manualPartner?.company_name||""):companyName}/>
       </div>
-      {adminManual?<div className="mobileCartBar" onClick={()=>setMobileCartOpen(true)}><span>주문 목록</span><b>{totalQty}개 · {money(totalPrice)}</b></div>:<Link className="mobileCartBar mobileCartIconBar" href={cartHref} aria-label="장바구니 보기"><CartIcon size={26}/><b>{totalQty}개 · {money(totalPrice)}</b></Link>}
-      {mobileCartOpen&&<div className="mobileCartOverlay" onClick={()=>setMobileCartOpen(false)}><div className="mobileCartSheet" onClick={e=>e.stopPropagation()}><button className="mobileCartClose" onClick={()=>setMobileCartOpen(false)}>닫기</button><CartPanel refundPolicy={refundPolicy} cartHref={cartHref} catalogHref={catalogHref} setCartQty={setCartQty} reviewBeforeOrder={!adminManual&&!editOrderId} parcelShippingNotice={parcelShippingNotice} items={cartItems} totalPrice={totalPrice} deliveryRequest={deliveryRequest} setDeliveryRequest={updateDeliveryRequest} changeCartQty={changeCartQty} removeCart={removeCart} prepareOrder={prepareOrder} message={message} submitting={submitting} editOrderId={editOrderId} companyName={adminManual?(manualPartner?.company_name||""):companyName}/></div></div>}
+      {adminManual?<div className="mobileCartBar" onClick={()=>setMobileCartOpen(true)}><span>주문 목록</span><b>{totalQty}개 · {money(totalPrice + shippingFee)}</b></div>:<Link className="mobileCartBar mobileCartIconBar" href={cartHref} aria-label="장바구니 보기"><CartIcon size={26}/><b>{totalQty}개 · {money(totalPrice + shippingFee)}</b></Link>}
+      {mobileCartOpen&&<div className="mobileCartOverlay" onClick={()=>setMobileCartOpen(false)}><div className="mobileCartSheet" onClick={e=>e.stopPropagation()}><button className="mobileCartClose" onClick={()=>setMobileCartOpen(false)}>닫기</button><CartPanel refundPolicy={refundPolicy} cartHref={cartHref} catalogHref={catalogHref} setCartQty={setCartQty} reviewBeforeOrder={!adminManual&&!editOrderId} parcelShippingNotice={parcelShippingNotice} items={cartItems} totalPrice={totalPrice} shippingFee={shippingFee} deliveryRequest={deliveryRequest} setDeliveryRequest={updateDeliveryRequest} changeCartQty={changeCartQty} removeCart={removeCart} prepareOrder={prepareOrder} message={message} submitting={submitting} editOrderId={editOrderId} companyName={adminManual?(manualPartner?.company_name||""):companyName}/></div></div>}
       {detailProduct&&<HerbDetails product={detailProduct} kakaoChannelUrl={kakaoChannelUrl} onClose={()=>setDetailProduct(null)}/>}
     </section>
   );
@@ -296,7 +297,7 @@ function CartUnitPrice({ item, showUnit = false }) {
   </div>;
 }
 
-function CartPanel({refundPolicy,items,totalPrice,deliveryRequest,setDeliveryRequest,changeCartQty,removeCart,prepareOrder,message,submitting,editOrderId,companyName,parcelShippingNotice,fullPage=false,setCartQty,reviewBeforeOrder=false,cartHref="/cart",catalogHref="/products"}){
+function CartPanel({refundPolicy,items,totalPrice,shippingFee,deliveryRequest,setDeliveryRequest,changeCartQty,removeCart,prepareOrder,message,submitting,editOrderId,companyName,parcelShippingNotice,fullPage=false,setCartQty,reviewBeforeOrder=false,cartHref="/cart",catalogHref="/products"}){
   const stockNotice = "주문 접수 후 재고를 확인하며, 재고가 부족하거나 출고 일정이 달라지면 연락드리겠습니다.";
   const shippingCutoffs = (
       <dl className="cartShippingCutoffs">
@@ -307,9 +308,10 @@ function CartPanel({refundPolicy,items,totalPrice,deliveryRequest,setDeliveryReq
         <div>
           <dt>택배</dt>
           <dd><strong>오후 3:30 마감</strong> · 당일 배송 제외</dd>
-          {parcelShippingNotice && <dd className="cartParcelFee">{parcelShippingNotice}</dd>}
+
         </div>
-      </dl>
+      {parcelShippingNotice && <div><dt>배송비</dt><dd>{parcelShippingNotice}</dd></div>}
+    </dl>
   );
 
   return (
@@ -342,7 +344,9 @@ function CartPanel({refundPolicy,items,totalPrice,deliveryRequest,setDeliveryReq
         </div>)}</div>}
         <div className={fullPage?"fullCartCheckout":"cartCheckout"}>
         {(fullPage || !reviewBeforeOrder) && <label className="deliveryRequest"><span>배송 요청사항 (선택)</span><textarea rows={3} maxLength={DELIVERY_REQUEST_MAX_LENGTH} value={deliveryRequest} disabled={submitting} onChange={e=>setDeliveryRequest(e.target.value)} placeholder="예: 도착 전 연락 부탁드립니다."/><small>500자 이내로 입력해 주세요.</small></label>}
-        <div className="orderTotal"><span>{fullPage?"총 상품금액":"주문 예상금액"}</span><b>{money(totalPrice)}</b></div>
+        {fullPage && <div className="orderTotal"><span>총 상품금액</span><b>{money(totalPrice)}</b></div>}
+        <div className="orderTotal"><span>배송비</span><b>{shippingFee ? money(shippingFee) : "무료"}</b></div>
+        <div className="orderTotal"><span>{fullPage ? "총 주문금액" : "주문 예상금액"}</span><b>{money(totalPrice + shippingFee)}</b></div>
         {(fullPage || reviewBeforeOrder) && <section className="orderShippingNotice" aria-label="배송 마감 안내">
           {shippingCutoffs}
           {fullPage && <>
