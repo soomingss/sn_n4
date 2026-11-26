@@ -28,3 +28,23 @@ export function priceForGrams(price, weight, targetGrams) {
     ? Math.round(amount / grams * targetGrams)
     : null;
 }
+
+function comparisonName(product) {
+  return String(product.name || "").normalize("NFKC")
+    .replace(/^\(土\)\s*/, "").split(/[(/]/, 1)[0].replace(/\s+/g, "").toLowerCase();
+}
+
+export function relatedProductsByName(selected, products) {
+  const name = comparisonName(selected);
+  if (!name) return [selected];
+
+  const related = products.filter(product => {
+    if (String(product.id) === String(selected.id)) return false;
+    const candidate = comparisonName(product);
+    return candidate && (candidate.includes(name) || name.includes(candidate));
+  });
+  related.sort((a, b) =>
+    Number(comparisonName(b) === name) - Number(comparisonName(a) === name)
+  );
+  return [selected, ...related];
+}

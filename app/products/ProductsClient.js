@@ -6,7 +6,7 @@ import RefundPolicyDialog from "./RefundPolicyDialog";
 import HerbDetails from "./HerbDetails";
 import { bulkUnitPrice, BULK_MINIMUM, BULK_DISCOUNT_PERCENT } from "../lib/bulk-order";
 import ProductComparison from "./ProductComparison";
-import { matchesProduct, priceForGrams } from "./catalog-search";
+import { matchesProduct, relatedProductsByName, priceForGrams } from "./catalog-search";
 import Link from "next/link";
 import CartIcon from "../CartIcon";
 import {cartQuantity,restoreCart} from "../lib/cart";
@@ -30,9 +30,6 @@ export default function ProductsClient({products=[],companyName="",adminManual=f
   const [detailProduct,setDetailProduct]=useState(null);
   const [comparisonIds, setComparisonIds] = useState([]);
   const removeComparison = id => setComparisonIds(ids => ids.filter(selected => selected !== id));
-  const toggleComparison = id => setComparisonIds(ids => ids.includes(id)
-    ? ids.filter(selected => selected !== id)
-    : ids.length < 3 ? [...ids, id] : ids);
   const [previewGrade,setPreviewGrade]=useState("clinic");
   const [initial,setInitial]=useState("전체");
   const [page,setPage]=useState(1);
@@ -91,7 +88,13 @@ export default function ProductsClient({products=[],companyName="",adminManual=f
   },[]);
 
   const productsById = new Map(activeProducts.map(product => [String(product.id), product]));
-  const comparisonProducts = comparisonIds.map(id => productsById.get(String(id))).filter(Boolean).map(product => ({...product, basePrice: product.price, price: product.price}));
+  const comparisonProducts = comparisonIds.map(id => productsById.get(String(id))).filter(Boolean);
+  const showComparison = product => {
+    setComparisonIds(relatedProductsByName(product, activeProducts).map(match => match.id));
+    requestAnimationFrame(() => {
+      document.getElementById("product-comparison-title")?.scrollIntoView({ block: "start" });
+    });
+  };
   const frequentProducts = frequentProductIds
     .map(id => productsById.get(String(id)))
     .filter(product => product && product.stock_status !== "low" && product.price != null)
@@ -197,11 +200,9 @@ export default function ProductsClient({products=[],companyName="",adminManual=f
                     <b>{money(price)}</b>
 
                     {!adminManual && <button type="button" className="productCompareButton"
-                      aria-label={`${productDisplayName(product.name, product.origin)} ${comparisonIds.includes(product.id) ? "비교 해제" : "비교 담기"}`}
-                      aria-pressed={comparisonIds.includes(product.id)}
-                      disabled={comparisonIds.length >= 3 && !comparisonIds.includes(product.id)}
-                      onClick={() => toggleComparison(product.id)}>
-                      {comparisonIds.includes(product.id) ? "비교 해제" : "비교 담기"}
+                      aria-label={`${productDisplayName(product.name, product.origin)} 유사 상품 비교`}
+                      onClick={() => showComparison(product)}>
+                      비교 담기
                     </button>}
                   </div>
                   {priceFor600g != null && <small className="productConvertedPrice">600g 환산가 {money(priceFor600g)}</small>}

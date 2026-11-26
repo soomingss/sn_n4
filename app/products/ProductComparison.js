@@ -4,28 +4,28 @@ import { priceForGrams } from "./catalog-search";
 
 const priceText = value => value == null || value === "" ? "단가 문의" : `${Number(value).toLocaleString("ko-KR")}원`;
 
-export default function ProductComparison({ products, remove, clear, bulkOrder }) {
+export default function ProductComparison({ products, remove, clear }) {
   if (!products.length) return null;
   const rows = [
     ["원산지", product => product.origin || "별도 문의"],
     ["포장 중량", product => product.weight || "별도 문의"],
-    [bulkOrder ? "할인 단가" : "포장 단가", product => priceText(product.price)],
-    ...(bulkOrder ? [["일반 주문가", product => product.basePrice == null ? "—" : <s>{priceText(product.basePrice)}</s>]] : []),
+    ["포장 단가", product => priceText(product.price)],
     ["100g당 가격", product => {
       const price = priceForGrams(product.price, product.weight, 100);
       return price == null ? "—" : priceText(price);
     }],
-    ...(!bulkOrder ? [["600g 환산가", product => {
+    ["600g 환산가", product => {
       const price = priceForGrams(product.price, product.weight, 600);
       return price == null ? "—" : priceText(price);
-    }]] : []),
+    }],
   ];
 
   return <section className="productComparison" aria-labelledby="product-comparison-title">
     <div className="productComparisonHeader">
-      <h2 id="product-comparison-title">약재 비교 ({products.length}/3)</h2>
+      <h2 id="product-comparison-title">약재 비교 ({products.length}개)</h2>
       <button type="button" onClick={clear}>선택 초기화</button>
     </div>
+    {products.length === 1 && <p>비교할 상품이 없습니다.</p>}
     <div className="productComparisonScroll" tabIndex={0} aria-label="선택한 약재 비교표">
       <table>
         <thead><tr><th scope="col">항목</th>{products.map(product => {
