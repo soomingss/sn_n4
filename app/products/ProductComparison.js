@@ -10,10 +10,6 @@ export default function ProductComparison({ products, remove, clear }) {
     ["원산지", product => product.origin || "별도 문의"],
     ["포장 중량", product => product.weight || "별도 문의"],
     ["포장 단가", product => priceText(product.price)],
-    ["100g당 가격", product => {
-      const price = priceForGrams(product.price, product.weight, 100);
-      return price == null ? "—" : priceText(price);
-    }],
     ["600g 환산가", product => {
       const price = priceForGrams(product.price, product.weight, 600);
       return price == null ? "—" : priceText(price);
