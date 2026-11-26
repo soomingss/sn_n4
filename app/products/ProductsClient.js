@@ -147,8 +147,8 @@ export default function ProductsClient({products=[],companyName="",adminManual=f
         {!adminManual&&<Link className="catalogCartLink" href={cartHref} aria-label={`장바구니 보기, ${totalQty}개`}><CartIcon size={28}/>{totalQty>0&&<span>{totalQty>99?"99+":totalQty}</span>}</Link>}
         <h1>{adminManual?"수기 주문 등록":"한약재 주문"}</h1>
         <p>{adminManual?"거래처를 선택한 뒤 일반 주문과 동일하게 상품을 담아 주문을 등록합니다.":<>원하시는 품목을 검색하고 바로 주문할 수 있습니다. <strong>(약재의 단가는 수급현황에 따라 달라질 수 있습니다)</strong></>}</p>
-      </div>
-      {!adminManual && <p className="bulkOrderNotice">같은 상품을 {BULK_MINIMUM}봉 이상 주문하면, 해당 상품에 {BULK_DISCOUNT_PERCENT}% 할인이 자동 적용됩니다.</p>}
+        {!adminManual && <p className="bulkOrderNotice">같은 상품을 {BULK_MINIMUM}
+      </div>봉 이상 주문하면, 해당 상품에 {BULK_DISCOUNT_PERCENT}% 할인이 자동 적용됩니다.</p>}
       {adminManual&&(
         <div className="manualOrderSetup">
           <label><span>거래처</span><select value={manualUserId} onChange={e=>{setManualUserId(e.target.value);setCart({});setQuantities({});setMessage("")}}><option value="">거래처 선택</option>{partners.map(p=><option key={p.id} value={p.id}>{p.company_name}{p.price_grade?` (${p.price_grade}등급)`:""}</option>)}</select></label>

@@ -631,7 +631,7 @@ footer{min-height:95px;border-top:1px solid #ddd;padding:20px 6%;display:grid;gr
 
 .deliveryCutoff{color:#b42318;font-weight:700}
 
-.bulkOrderNotice{color:#315f4e;font-size:13px;line-height:1.6}
+.productIntro .bulkOrderNotice{margin:4px 0 0;color:#914747;font-size:13px;font-weight:600;line-height:1.45}
 
 .foodQuoteIngredients{min-width:0;margin:0;padding:12px;border:1px solid #dce8df;border-radius:8px}
 .foodQuoteIngredients legend{padding:0 5px;font-weight:700}
