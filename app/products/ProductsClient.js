@@ -247,13 +247,13 @@ function CartQuantityInput({ item, setCartQty, disabled }) {
 
 function CartUnitPrice({ item, showUnit = false }) {
   if (item.price === item.basePrice) {
-    return showUnit ? <span>단가 {money(item.price)}</span> : <em>{money(item.price)}</em>;
+    return <strong className="cartUnitPrice">{showUnit && "단가 "}{money(item.price)}</strong>;
   }
 
   return <div className="cartDiscountPrice">
     <s>{money(item.basePrice)}</s>
     <div>
-      <strong>{money(item.price)}</strong>
+      <strong className="cartUnitPrice">{money(item.price)}</strong>
       <span>{BULK_DISCOUNT_PERCENT}% 할인</span>
     </div>
   </div>;
