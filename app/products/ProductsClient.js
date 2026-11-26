@@ -161,11 +161,11 @@ export default function ProductsClient({products=[],companyName="",adminManual=f
                   <div className="productPrice">
                     <b>{money(product.price)}</b>
                     {!adminManual && <button type="button" className="productCompareButton"
-                      aria-label={`${productDisplayName(product.name, product.origin)} 다른 상품과 비교하기`}
+                      aria-label={`${productDisplayName(product.name, product.origin)} ${comparisonIds.includes(product.id) ? "비교 해제" : "비교 담기"}`}
                       aria-pressed={comparisonIds.includes(product.id)}
                       disabled={comparisonIds.length >= 3 && !comparisonIds.includes(product.id)}
                       onClick={() => toggleComparison(product.id)}>
-                      {comparisonIds.includes(product.id) ? "비교 선택됨" : "다른 상품과 비교하기"}
+                      {comparisonIds.includes(product.id) ? "비교 해제" : "비교 담기"}
                     </button>}
                   </div>
                   {priceFor600g != null && <small className="productConvertedPrice">600g 환산가 {money(priceFor600g)}</small>}
