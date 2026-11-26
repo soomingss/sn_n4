@@ -270,7 +270,24 @@ function CartPanel({items,totalPrice,deliveryRequest,setDeliveryRequest,changeCa
           <div className="fullCartQty"><button type="button" disabled={item.quantity<=1||submitting} onClick={()=>changeCartQty(item.id,-1)} aria-label={`${item.name} 수량 줄이기`}>−</button><CartQuantityInput item={item} setCartQty={setCartQty} disabled={submitting} /><button type="button" disabled={submitting} onClick={()=>changeCartQty(item.id,1)} aria-label={`${item.name} 수량 늘리기`}>＋</button></div>
           <div className="fullCartLineTotal"><span>상품금액</span><b>{money(item.price==null?null:Number(item.price)*item.quantity)}</b></div>
           <button type="button" className="fullCartRemove" disabled={submitting} onClick={()=>removeCart(item.id)} aria-label={`${item.name} 삭제`}>삭제</button>
-        </article>)}</div>:<div className="orderCartItems">{items.map(item=><div className="orderCartItem" key={item.id}><div><b>{productDisplayName(item.name,item.origin)}</b><span>{item.weight||""}</span><CartUnitPrice item={item} /></div><div className="cartQty"><button onClick={()=>changeCartQty(item.id,-1)}>−</button><CartQuantityInput item={item} setCartQty={setCartQty} disabled={submitting} /><button onClick={()=>changeCartQty(item.id,1)}>+</button></div><button className="cartRemove" onClick={()=>removeCart(item.id)}>삭제</button></div>)}</div>}
+        </article>)}</div>:<div className="orderCartItems">{items.map(item=><div className="orderCartItem" key={item.id}>
+          <div>
+            <b className="orderCartItemName">
+              {productDisplayName(item.name,item.origin)}
+              {item.weight && <small>{item.weight}</small>}
+            </b>
+            <CartUnitPrice item={item} />
+          </div>
+          <div className="orderCartItemTotals">
+            <div className="cartQty">
+              <button onClick={()=>changeCartQty(item.id,-1)}>−</button>
+              <CartQuantityInput item={item} setCartQty={setCartQty} disabled={submitting} />
+              <button onClick={()=>changeCartQty(item.id,1)}>+</button>
+            </div>
+            <strong aria-label="상품 합계">{money(item.price==null?null:Number(item.price)*item.quantity)}</strong>
+          </div>
+          <button className="cartRemove" onClick={()=>removeCart(item.id)}>삭제</button>
+        </div>)}</div>}
         <div className={fullPage?"fullCartCheckout":"cartCheckout"}>
         <label className="deliveryRequest"><span>배송 요청사항 (선택)</span><textarea rows={3} maxLength={DELIVERY_REQUEST_MAX_LENGTH} value={deliveryRequest} disabled={submitting} onChange={e=>setDeliveryRequest(e.target.value)} placeholder="예: 도착 전 연락 부탁드립니다."/><small>500자 이내로 입력해 주세요.</small></label>
         {fullPage && <DeliveryPresets note={deliveryRequest} onLoad={setDeliveryRequest} disabled={submitting} />}
