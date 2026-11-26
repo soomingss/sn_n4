@@ -665,10 +665,20 @@ footer{min-height:95px;border-top:1px solid #ddd;padding:20px 6%;display:grid;gr
 .productCard .productPrice>b{line-height:1.4}
 
 .refundPolicyTrigger{padding:0;border:0;background:none;text-align:left;cursor:pointer}
-.refundPolicyDialog{width:min(680px,calc(100% - 32px));max-height:calc(100% - 32px);padding:16px;border:1px solid var(--line);border-radius:12px;overflow:auto;background:#fff;color:var(--text)}
-.refundPolicyDialog::backdrop{background:rgba(0,0,0,.45)}
-.refundPolicyDialogActions{display:flex;justify-content:flex-end;margin-bottom:10px}
-.refundPolicyDialogActions button{padding:6px 12px;border:1px solid var(--line);border-radius:6px;background:#fff;color:var(--text);cursor:pointer}
+.refundPolicyDialog{width:min(620px,calc(100% - 28px));max-height:calc(100dvh - 32px);padding:24px 28px;border:1px solid var(--line);border-radius:6px;overflow:auto;background:#fff;color:var(--text)}
+.refundPolicyDialog::backdrop{background:rgba(0,0,0,.38)}
+.refundPolicyDialogActions{position:absolute;top:24px;right:28px}
+.refundPolicyDialogActions button{padding:5px 0;border:0;background:none;color:var(--muted);font:inherit;font-size:13px;cursor:pointer}
+.refundPolicyDialog .refundPolicy{margin:0;padding:0;border:0}
+.refundPolicyDialog .refundPolicy h2{margin:0 52px 16px 0;font-size:19px;line-height:1.5}
+.refundPolicyDialog .refundPolicyDetails>div{padding:12px 0}
+.refundPolicyDialog .refundPolicyContact{margin-top:16px;padding:0;background:none}
+.refundPolicyDialog .refundPolicyLinks{flex-direction:row;margin-top:8px}
+@media(max-width:600px){
+  .refundPolicyDialog{padding:18px}
+  .refundPolicyDialogActions{top:18px;right:18px}
+  .refundPolicyDialog .refundPolicy h2{font-size:17px}
+}
 
 .cartShippingCutoffs{display:grid;gap:8px;margin:0;padding:9px 11px;border-radius:6px;background:#f1f4ef;line-height:1.45}
 .cartShippingCutoffs dt{font-weight:700;color:var(--text)}
