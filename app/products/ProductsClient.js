@@ -329,10 +329,7 @@ function CartPanel({refundPolicy,items,totalPrice,deliveryRequest,setDeliveryReq
         {(fullPage || !reviewBeforeOrder) && <label className="deliveryRequest"><span>배송 요청사항 (선택)</span><textarea rows={3} maxLength={DELIVERY_REQUEST_MAX_LENGTH} value={deliveryRequest} disabled={submitting} onChange={e=>setDeliveryRequest(e.target.value)} placeholder="예: 도착 전 연락 부탁드립니다."/><small>500자 이내로 입력해 주세요.</small></label>}
         <div className="orderTotal"><span>{fullPage?"총 상품금액":"주문 예상금액"}</span><b>{money(totalPrice)}</b></div>
         {(fullPage || reviewBeforeOrder) && <section className="orderShippingNotice" aria-label="배송 마감 안내">
-          {fullPage ? <>
-            <p><strong>직접 배송</strong> 서울·경기·인천 직접 배송 대상 거래처는 <strong className="deliveryCutoff">오전 10시 30분</strong> 이전 주문 시 당일 배송, 이후 주문은 익일 배송됩니다.</p>
-            <p><strong>택배</strong> <strong className="deliveryCutoff">오후 3시 30분</strong> 주문 마감이며, 당일 배송 대상에서 제외됩니다.</p>
-          </> : <dl className="cartShippingCutoffs">
+          <dl className="cartShippingCutoffs">
             <div>
               <dt>직접 배송 <small>서울·경기·인천 대상 거래처</small></dt>
               <dd><strong>오전 10:30 전</strong> 당일 배송 · 이후 익일 배송</dd>
@@ -342,13 +339,13 @@ function CartPanel({refundPolicy,items,totalPrice,deliveryRequest,setDeliveryReq
               <dd><strong>오후 3:30 마감</strong> · 당일 배송 제외</dd>
               {parcelShippingNotice && <dd className="cartParcelFee">{parcelShippingNotice}</dd>}
             </div>
-          </dl>}
+          </dl>
           {fullPage && <>
             <p>주문 접수 후 재고를 확인하며, 재고가 부족하거나 출고 일정이 달라지면 연락드리겠습니다.</p>
             <Link href="/order-delivery">주문·배송 안내 보기</Link>
           </>}
         </section>}
-        {parcelShippingNotice && (fullPage || !reviewBeforeOrder) && <p className="orderShippingNotice">{parcelShippingNotice}</p>}
+        {parcelShippingNotice && !fullPage && !reviewBeforeOrder && <p className="orderShippingNotice">{parcelShippingNotice}</p>}
         {message&&<p className="orderCartMessage">{message}</p>}
         {refundPolicy ? <RefundPolicyDialog>{refundPolicy}</RefundPolicyDialog> : <a className="orderPolicyLink" href="/order-delivery/returns#refund-policy" target="_blank" rel="noopener noreferrer" aria-label="교환·반품 및 환불 안내 보기 (새 창)">교환·반품 및 환불 안내 보기 ↗</a>}
         <div className="orderCartActions">{reviewBeforeOrder&&!fullPage?<Link className="orderSubmit orderReviewButton" href={cartHref}>주문 내용 확인</Link>:<button className="orderSubmit" disabled={submitting} onClick={prepareOrder}>{submitting?"처리중...":editOrderId?"주문 수정 저장":fullPage?"주문 접수":"주문하기"}</button>}</div>
