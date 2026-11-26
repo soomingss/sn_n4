@@ -1,9 +1,13 @@
+import { BULK_MINIMUM } from "../../lib/bulk-order";
 import {normalizeDeliveryRequest} from "../../lib/delivery-request";
 import crypto from "node:crypto";
 import { NextResponse } from "next/server";
 import { getCurrentSession, supabaseAdminFetch } from "../../lib/auth";
 
 async function saveBulkOrder(session, items, delivery, orderId, requestKey) {
+  if (items.some(item => !Number.isInteger(item.quantity) || item.quantity < BULK_MINIMUM)) {
+    return NextResponse.json({ error: `대량 주문은 품목당 최소 ${BULK_MINIMUM}개부터 가능합니다.` }, { status: 400 });
+  }
   const response = await supabaseAdminFetch("/rest/v1/rpc/save_bulk_order", {
     method: "POST",
     body: JSON.stringify({
@@ -15,7 +19,7 @@ async function saveBulkOrder(session, items, delivery, orderId, requestKey) {
     const detail = await response.json().catch(() => null);
     if (detail?.code === "P0001") return NextResponse.json({ error: detail.message }, { status: 409 });
     console.error("[bulk order] Save failed", detail?.code || response.status);
-    return NextResponse.json({ error: "대량 발주를 저장하지 못했습니다. 다시 시도해 주세요." }, { status: 500 });
+    return NextResponse.json({ error: "대량 주문를 저장하지 못했습니다. 다시 시도해 주세요." }, { status: 500 });
   }
   const [row] = await response.json();
   return NextResponse.json({ ok: true, ...row });

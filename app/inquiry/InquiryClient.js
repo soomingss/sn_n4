@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import { FOOD_QUOTE_FIELDS, FOOD_QUOTE_LIMIT, FOOD_QUOTE_NOTE_LIMIT, FOOD_QUOTE_TYPE } from "../lib/food-quote";
 
 const initialForm = {
   company_name: "",
@@ -13,12 +14,13 @@ const initialForm = {
   website: ""
 };
 
-const quoteFields = [["material", "원료명"], ["spec", "희망 규격"], ["volume", "예상 물량"], ["date", "납품 희망일"]];
+const blankIngredient = () => ({ name: "", origin: "", quantity: "" });
 
 export default function InquiryClient({ companyName, companyNameEn, foodQuote }) {
-  const title = foodQuote ? "식품공장 견적 요청" : "홈페이지 문의하기";
+  const title = foodQuote ? FOOD_QUOTE_TYPE : "홈페이지 문의하기";
   const defaults = foodQuote ? {...initialForm, inquiry_type: title} : initialForm;
   const [form, setForm] = useState(defaults);
+  const [ingredients, setIngredients] = useState(() => [blankIngredient()]);
   const [privacyAgreed, setPrivacyAgreed] = useState(false);
   const [state, setState] = useState({ status: "idle", message: "" });
 
@@ -37,15 +39,13 @@ export default function InquiryClient({ companyName, companyNameEn, foodQuote })
       const response = await fetch("/api/inquiries", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(foodQuote ? {
-          ...form,
-          message: [...quoteFields.map(([key, label]) => `${label}: ${form[key] || "-"}`), form.message].filter(Boolean).join("\n")
-        } : form)
+        body: JSON.stringify(foodQuote ? { ...form, ingredients } : form)
       });
       const data = await response.json().catch(() => ({}));
       if (!response.ok) throw new Error(data?.message || "문의 접수 중 오류가 발생했습니다.");
 
       setForm(defaults);
+      setIngredients([blankIngredient()]);
       setPrivacyAgreed(false);
       setState({ status: "success", message: "문의가 정상적으로 접수되었습니다. 확인 후 연락드리겠습니다." });
     } catch (error) {
@@ -91,10 +91,23 @@ export default function InquiryClient({ companyName, companyNameEn, foodQuote })
               <span>이메일</span>
               <input name="email" value={form.email} onChange={update} maxLength={120} type="email" placeholder="이메일을 입력해 주세요. (선택)" />
             </label>
-            {foodQuote ? quoteFields.map(([key, label]) => <label key={key}>
-              <span>{label}{key !== "date" && <b> *</b>}</span>
-              <input name={key} value={form[key] || ""} onChange={update} maxLength={160} required={key !== "date"} type={key === "date" ? "date" : "text"} />
-            </label>) : <label className="formFull">
+            {foodQuote ? <fieldset className="formFull foodQuoteIngredients">
+              <legend>견적 원료 ({ingredients.length}/{FOOD_QUOTE_LIMIT})</legend>
+              {ingredients.map((ingredient, index) => <div className="foodQuoteRow" key={index}>
+                <span className="foodQuoteRowNumber">{index + 1}</span>
+                {FOOD_QUOTE_FIELDS.map(({key, label, max}) => <label key={key}>
+                  <span>{label}</span>
+                  <input value={ingredient[key]} maxLength={max} required onChange={event => {
+                    const value = event.target.value;
+                    setIngredients(rows => rows.map((row, i) => i === index ? {...row, [key]: value} : row));
+                  }} />
+                </label>)}
+                {ingredients.length > 1 && <button type="button" aria-label={`${index + 1}번째 원료 삭제`}
+                  onClick={() => setIngredients(rows => rows.filter((_, i) => i !== index))}>삭제</button>}
+              </div>)}
+              <button type="button" className="adminLinkButton" disabled={ingredients.length >= FOOD_QUOTE_LIMIT}
+                onClick={() => setIngredients(rows => [...rows, blankIngredient()])}>원료 추가</button>
+            </fieldset> : <label className="formFull">
               <span>문의 유형 <b>*</b></span>
               <select name="inquiry_type" value={form.inquiry_type} onChange={update} required>
                 <option>제품 문의</option>
@@ -105,7 +118,7 @@ export default function InquiryClient({ companyName, companyNameEn, foodQuote })
             </label>}
             <label className="formFull">
               <span>{foodQuote ? "추가 요청사항" : "문의 내용"} {!foodQuote && <b>*</b>}</span>
-              <textarea name="message" value={form.message} onChange={update} required={!foodQuote} maxLength={foodQuote ? 2000 : 3000} rows={8} placeholder="문의 내용을 입력해 주세요." />
+              <textarea name="message" value={form.message} onChange={update} required={!foodQuote} maxLength={foodQuote ? FOOD_QUOTE_NOTE_LIMIT : 3000} rows={foodQuote ? 3 : 8} placeholder="문의 내용을 입력해 주세요." />
             </label>
           </div>
 

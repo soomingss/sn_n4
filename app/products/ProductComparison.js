@@ -4,20 +4,21 @@ import { priceForGrams } from "./catalog-search";
 
 const priceText = value => value == null || value === "" ? "단가 문의" : `${Number(value).toLocaleString("ko-KR")}원`;
 
-export default function ProductComparison({ products, remove, clear }) {
+export default function ProductComparison({ products, remove, clear, bulkOrder }) {
   if (!products.length) return null;
   const rows = [
     ["원산지", product => product.origin || "별도 문의"],
     ["포장 중량", product => product.weight || "별도 문의"],
-    ["포장 단가", product => priceText(product.price)],
+    [bulkOrder ? "할인 단가" : "포장 단가", product => priceText(product.price)],
+    ...(bulkOrder ? [["일반 주문가", product => product.basePrice == null ? "—" : <s>{priceText(product.basePrice)}</s>]] : []),
     ["100g당 가격", product => {
       const price = priceForGrams(product.price, product.weight, 100);
       return price == null ? "—" : priceText(price);
     }],
-    ["600g 환산가", product => {
+    ...(!bulkOrder ? [["600g 환산가", product => {
       const price = priceForGrams(product.price, product.weight, 600);
       return price == null ? "—" : priceText(price);
-    }],
+    }]] : []),
   ];
 
   return <section className="productComparison" aria-labelledby="product-comparison-title">

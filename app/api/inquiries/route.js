@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { FOOD_QUOTE_FIELDS, FOOD_QUOTE_LIMIT, FOOD_QUOTE_NOTE_LIMIT, FOOD_QUOTE_TYPE } from "../../lib/food-quote";
 
 export const runtime = "nodejs";
 
@@ -22,6 +23,22 @@ export async function POST(request) {
       message: clean(body.message, 3000),
       status: "new"
     };
+
+    if (payload.inquiry_type === FOOD_QUOTE_TYPE) {
+      if (!Array.isArray(body.ingredients) || !body.ingredients.length || body.ingredients.length > FOOD_QUOTE_LIMIT) {
+        return NextResponse.json({ message: "견적 원료는 1개 이상 20개 이하로 입력해 주세요." }, { status: 400 });
+      }
+      const rows = [];
+      for (const ingredient of body.ingredients) {
+        const fields = FOOD_QUOTE_FIELDS.map(({ key, max }) => typeof ingredient?.[key] === "string" ? ingredient[key].trim() : "");
+        if (fields.some((field, index) => !field || field.length > FOOD_QUOTE_FIELDS[index].max || /[\r\n]/.test(field))) {
+          return NextResponse.json({ message: "각 원료의 원료명, 원산지, 물량을 입력해 주세요." }, { status: 400 });
+        }
+        rows.push(`${rows.length + 1}. ${fields.map((value, index) => `${FOOD_QUOTE_FIELDS[index].label} ${value}`).join(" · ")}`);
+      }
+      const note = clean(body.message, FOOD_QUOTE_NOTE_LIMIT);
+      payload.message = [...rows, note && `추가 요청사항: ${note}`].filter(Boolean).join("\n");
+    }
 
     if (!payload.company_name || !payload.contact_name || !payload.phone || !payload.inquiry_type || !payload.message) {
       return NextResponse.json({ message: "필수 항목을 모두 입력해 주세요." }, { status: 400 });
