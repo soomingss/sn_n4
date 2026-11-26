@@ -728,3 +728,11 @@ footer{min-height:95px;border-top:1px solid #ddd;padding:20px 6%;display:grid;gr
 .checkoutPolicyLinks{display:flex;flex-wrap:wrap;align-items:baseline;column-gap:8px;row-gap:4px;margin:8px 0 16px}
 .checkoutPolicyLinks>.orderPolicyLink{margin:0}
 .checkoutPolicyDivider{color:var(--muted);font-size:12px}
+
+.orderTrackingForm,.customerTracking{display:flex;align-items:end;flex-wrap:wrap;gap:10px;margin:18px 0;padding:12px 0;border-block:1px solid var(--line);font-size:13px}
+.orderTrackingForm label{display:grid;gap:6px}
+.orderTrackingForm input{width:170px;max-width:100%;padding:8px;border:1px solid var(--line);border-radius:4px}
+.orderTrackingForm button,.customerTracking a{padding:7px 10px;border:1px solid #cbded0;border-radius:4px;background:#fff;color:#315f4e}
+.orderTrackingForm button:disabled{opacity:.5}
+.orderTrackingForm p{flex-basis:100%;margin:0;color:#315f4e}
+.customerTracking{align-items:center}

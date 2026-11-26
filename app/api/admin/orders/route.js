@@ -4,6 +4,25 @@ const ALLOWED=new Set(["new","preparing","shipping","delivered","cancelled"]);
 export async function PATCH(request){
  const session=await getCurrentSession(); if(!session||session.profile?.role!=="admin") return NextResponse.json({error:"관리자 권한이 필요합니다."},{status:403});
  const body=await request.json().catch(()=>({}));
+ if (body.action === "tracking") {
+  const id = Number(body.id);
+  if (!Number.isSafeInteger(id) || id < 1 || typeof body.trackingNumber !== "string") {
+   return NextResponse.json({error:"잘못된 요청입니다."},{status:400});
+  }
+  const number = body.trackingNumber.replace(/[\s-]/g, "");
+  if (number && !/^[0-9]{10,12}$/.test(number)) {
+   return NextResponse.json({error:"송장번호는 숫자 10~12자리로 입력해 주세요."},{status:400});
+  }
+  const response = await supabaseAdminFetch(`/rest/v1/orders?id=eq.${id}&select=courier_tracking_number`, {
+   method: "PATCH",
+   headers: { Prefer: "return=representation" },
+   body: JSON.stringify({ courier_tracking_number: number || null }),
+  });
+  if (!response.ok) return NextResponse.json({error:"송장번호를 저장하지 못했습니다."},{status:500});
+  const [order] = await response.json();
+  if (!order) return NextResponse.json({error:"주문을 찾을 수 없습니다."},{status:404});
+  return NextResponse.json({trackingNumber:order.courier_tracking_number});
+ }
  if(body.action==="packing"){
   const itemId=Number(body.itemId); const checked=Boolean(body.checked);
   if(!Number.isInteger(itemId)) return NextResponse.json({error:"잘못된 주문 품목입니다."},{status:400});
