@@ -556,7 +556,8 @@ footer{min-height:95px;border-top:1px solid #ddd;padding:20px 6%;display:grid;gr
 .fullCartLineTotal span{display:block;font-size:11px;color:#68766f;margin-bottom:7px}
 .fullCartLineTotal b{font-size:17px;color:#315f4e;white-space:nowrap}
 .fullCartRemove{border:0;background:transparent;color:#8d4c45;font-size:12px;padding:8px 0;cursor:pointer}
-.fullCartCheckout{width:min(100%,420px);margin:26px 0 0 auto}
+.fullCartCheckout{margin-top:26px}
+.fullCartCheckout .orderCartActions{max-width:420px;margin-left:auto}
 .fullCart .orderCartActions{grid-template-columns:1fr}
 .fullCartEmpty{display:flex;flex-direction:column;align-items:center;gap:16px;padding:64px 20px;text-align:center;color:#68766f}
 .fullCartEmpty>svg{color:#9bb5a4}.fullCartEmpty h3{margin:0;color:#315f4e;font-size:20px}.fullCartEmpty p{margin:0;font-size:13px;line-height:1.8}
