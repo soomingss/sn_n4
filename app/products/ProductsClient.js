@@ -295,11 +295,16 @@ function CartPanel({refundPolicy,items,totalPrice,deliveryRequest,setDeliveryReq
           {fullPage ? <>
             <p><strong>직접 배송</strong> 서울·경기·인천 직접 배송 대상 거래처는 <strong className="deliveryCutoff">오전 10시 30분</strong> 이전 주문 시 당일 배송, 이후 주문은 익일 배송됩니다.</p>
             <p><strong>택배</strong> <strong className="deliveryCutoff">오후 3시 30분</strong> 주문 마감이며, 당일 배송 대상에서 제외됩니다.</p>
-          </> : <>
-            <p><strong>직접 배송</strong> (서울·경기·인천 대상 거래처)</p>
-            <p><strong>오전 10:30 전</strong> 당일 배송 · 이후 익일 배송</p>
-            <p><strong>택배</strong> 오후 3:30 마감 · 당일 배송 제외</p>
-          </>}
+          </> : <dl className="cartShippingCutoffs">
+            <div>
+              <dt>직접 배송 <small>서울·경기·인천 대상 거래처</small></dt>
+              <dd><strong>오전 10:30 전</strong> 당일 배송 · 이후 익일</dd>
+            </div>
+            <div>
+              <dt>택배</dt>
+              <dd><strong>오후 3:30 마감</strong> · 당일 배송 제외</dd>
+            </div>
+          </dl>}
           {fullPage && <>
             <p>주문 접수 후 재고를 확인하며, 재고가 부족하거나 출고 일정이 달라지면 연락드리겠습니다.</p>
             <Link href="/order-delivery">주문·배송 안내 보기</Link>

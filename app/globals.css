@@ -669,3 +669,9 @@ footer{min-height:95px;border-top:1px solid #ddd;padding:20px 6%;display:grid;gr
 .refundPolicyDialog::backdrop{background:rgba(0,0,0,.45)}
 .refundPolicyDialogActions{display:flex;justify-content:flex-end;margin-bottom:10px}
 .refundPolicyDialogActions button{padding:6px 12px;border:1px solid var(--line);border-radius:6px;background:#fff;color:var(--text);cursor:pointer}
+
+.cartShippingCutoffs{display:grid;gap:8px;margin:0;padding:9px 11px;border-radius:6px;background:#f1f4ef;line-height:1.45}
+.cartShippingCutoffs dt{font-weight:700;color:var(--text)}
+.cartShippingCutoffs dt small{margin-left:4px;font-size:10px;font-weight:400}
+.cartShippingCutoffs dd{margin:2px 0 0}
+.cartShippingCutoffs dd strong{color:#315f4e}
