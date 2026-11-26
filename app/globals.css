@@ -721,6 +721,7 @@ footer{min-height:95px;border-top:1px solid #ddd;padding:20px 6%;display:grid;gr
 .fullCartCheckout .cartShippingCutoffs{padding:10px 12px;white-space:normal}
 .checkoutGuide .cartShippingCutoffs{white-space:normal}
 .cartCheckout .orderTotal span{font-size:14px;font-weight:600}
+.cartCheckout .orderShippingFee b{font-size:17px}
 .cartCheckout .orderTotal+.orderTotal{margin-top:10px}
 .cartCheckout .orderTotal+.orderShippingNotice,
 .fullCartCheckout .orderTotal+.orderShippingNotice{margin-top:18px}
