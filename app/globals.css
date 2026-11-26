@@ -628,3 +628,5 @@ footer{min-height:95px;border-top:1px solid #ddd;padding:20px 6%;display:grid;gr
 .deliveryPresetRow label{display:grid;flex:1 1 155px;gap:4px}
 .deliveryPresetRow input,.deliveryPresetRow select,.deliveryPresetRow button{min-width:0;min-height:34px;border:1px solid #cedfd3;border-radius:6px;padding:5px 8px;background:white;color:inherit;font:inherit}
 .deliveryPresetRow button:disabled{opacity:.55}
+
+.deliveryCutoff{color:#b42318;font-weight:700}

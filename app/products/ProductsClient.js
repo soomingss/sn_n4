@@ -222,8 +222,8 @@ function CartPanel({items,totalPrice,deliveryRequest,setDeliveryRequest,changeCa
         {fullPage && <DeliveryPresets note={deliveryRequest} onLoad={setDeliveryRequest} disabled={submitting} />}
         <div className="orderTotal"><span>{fullPage?"총 상품금액":"주문 예상금액"}</span><b>{money(totalPrice)}</b></div>
         {fullPage && <section className="orderShippingNotice" aria-label="배송 마감 안내">
-          <p><strong>직접 배송</strong> 서울·경기·인천 직접 배송 대상 거래처는 오전 11시 이전 주문 시 당일 배송, 이후 주문은 익일 배송됩니다.</p>
-          <p><strong>택배</strong> 오후 4시 주문 마감이며, 당일 배송 대상에서 제외됩니다.</p>
+          <p><strong>직접 배송</strong> 서울·경기·인천 직접 배송 대상 거래처는 <strong className="deliveryCutoff">오전 10시 30분</strong> 이전 주문 시 당일 배송, 이후 주문은 익일 배송됩니다.</p>
+          <p><strong>택배</strong> <strong className="deliveryCutoff">오후 3시 30분</strong> 주문 마감이며, 당일 배송 대상에서 제외됩니다.</p>
           <p>주문 접수 후 재고를 확인하며, 재고가 부족하거나 출고 일정이 달라지면 연락드리겠습니다.</p>
           <Link href="/order-delivery">주문·배송 안내 보기</Link>
         </section>}

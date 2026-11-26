@@ -13,7 +13,7 @@ const defaultSteps = [
 
 function Lines({value}){
   const lines = contentLines(value);
-  return <>{lines.map((line, index)=><span key={index}>{index > 0 && <br/>}{line}</span>)}</>;
+  return <>{lines.map((line, index)=><span key={index}>{index > 0 && <br/>}{line.split(/(오전 10시 30분|오후 3시 30분)/).map((part, i) => i % 2 ? <strong key={i} className="deliveryCutoff">{part}</strong> : part)}</span>)}</>;
 }
 
 function DeliveryNotice({value}){
