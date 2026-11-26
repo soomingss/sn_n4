@@ -687,10 +687,10 @@ footer{min-height:95px;border-top:1px solid #ddd;padding:20px 6%;display:grid;gr
 
 .productTitleRow .productTitleSpecs{color:var(--muted);font-size:12px;line-height:1.4}
 
-.recentOrders{margin-bottom:20px;border-top:1px solid var(--line)}
-.recentOrders h2{margin:12px 0 2px;font-size:16px}
+.recentOrders{margin-bottom:20px;padding:14px 16px;border:1px solid var(--line);border-radius:6px;background:#f8faf8}
+.recentOrders h2{margin:0 0 8px;font-size:16px}
 .recentOrders ul{list-style:none;margin:0;padding:0}
-.recentOrders li{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}
+.recentOrders li{display:flex;justify-content:space-between;align-items:center;gap:12px}
 .recentOrders time{color:var(--muted);font-size:12px}
 .recentOrders li p{margin:4px 0 0;font-size:13px;overflow-wrap:anywhere}
 .recentOrders button{flex-shrink:0;padding:7px 9px;border:1px solid #cedfd3;border-radius:5px;background:#fff;color:#315f4e;font-size:12px}

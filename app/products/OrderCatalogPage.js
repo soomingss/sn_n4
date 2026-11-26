@@ -10,7 +10,7 @@ import { visibleProductSupplier } from "../lib/product-supplier";
 async function loadRecentOrders(userId) {
   try {
     const ordersResponse = await supabaseAdminFetch(
-      `/rest/v1/orders?user_id=eq.${encodeURIComponent(userId)}&status=neq.cancelled&select=id,created_at&order=created_at.desc,id.desc&limit=3`
+      `/rest/v1/orders?user_id=eq.${encodeURIComponent(userId)}&status=neq.cancelled&select=id,created_at&order=created_at.desc,id.desc&limit=1`
     );
     if (!ordersResponse.ok) return [];
     const orders = await ordersResponse.json();
