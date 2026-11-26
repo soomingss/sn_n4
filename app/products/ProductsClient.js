@@ -4,7 +4,6 @@ import { useEffect, useMemo, useState } from "react";
 import ProductImage from "../ProductImage";
 import HerbDetails from "./HerbDetails";
 import { bulkUnitPrice, BULK_MINIMUM, BULK_DISCOUNT_PERCENT } from "../lib/bulk-order";
-import DeliveryPresets from "./DeliveryPresets";
 import ProductComparison from "./ProductComparison";
 import { matchesProduct, priceForGrams } from "./catalog-search";
 import Link from "next/link";
@@ -290,7 +289,6 @@ function CartPanel({items,totalPrice,deliveryRequest,setDeliveryRequest,changeCa
         </div>)}</div>}
         <div className={fullPage?"fullCartCheckout":"cartCheckout"}>
         <label className="deliveryRequest"><span>배송 요청사항 (선택)</span><textarea rows={3} maxLength={DELIVERY_REQUEST_MAX_LENGTH} value={deliveryRequest} disabled={submitting} onChange={e=>setDeliveryRequest(e.target.value)} placeholder="예: 도착 전 연락 부탁드립니다."/><small>500자 이내로 입력해 주세요.</small></label>
-        {fullPage && <DeliveryPresets note={deliveryRequest} onLoad={setDeliveryRequest} disabled={submitting} />}
         <div className="orderTotal"><span>{fullPage?"총 상품금액":"주문 예상금액"}</span><b>{money(totalPrice)}</b></div>
         {fullPage && <section className="orderShippingNotice" aria-label="배송 마감 안내">
           <p><strong>직접 배송</strong> 서울·경기·인천 직접 배송 대상 거래처는 <strong className="deliveryCutoff">오전 10시 30분</strong> 이전 주문 시 당일 배송, 이후 주문은 익일 배송됩니다.</p>
