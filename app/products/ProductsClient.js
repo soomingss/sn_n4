@@ -297,6 +297,21 @@ function CartUnitPrice({ item, showUnit = false }) {
 }
 
 function CartPanel({refundPolicy,items,totalPrice,deliveryRequest,setDeliveryRequest,changeCartQty,removeCart,prepareOrder,message,submitting,editOrderId,companyName,parcelShippingNotice,fullPage=false,setCartQty,reviewBeforeOrder=false,cartHref="/cart",catalogHref="/products"}){
+  const stockNotice = "주문 접수 후 재고를 확인하며, 재고가 부족하거나 출고 일정이 달라지면 연락드리겠습니다.";
+  const shippingCutoffs = (
+      <dl className="cartShippingCutoffs">
+        <div>
+          <dt>직접 배송 <small>서울·경기·인천 대상 거래처</small></dt>
+          <dd><strong>오전 10:30 전</strong> 당일 배송 · 이후 익일 배송</dd>
+        </div>
+        <div>
+          <dt>택배</dt>
+          <dd><strong>오후 3:30 마감</strong> · 당일 배송 제외</dd>
+          {parcelShippingNotice && <dd className="cartParcelFee">{parcelShippingNotice}</dd>}
+        </div>
+      </dl>
+  );
+
   return (
     <aside className={fullPage?"orderCart fullCart":"orderCart"}>
       <div className="orderCartHead"><h2>주문 목록</h2>{companyName&&<span>{companyName}</span>}</div>
@@ -329,20 +344,15 @@ function CartPanel({refundPolicy,items,totalPrice,deliveryRequest,setDeliveryReq
         {(fullPage || !reviewBeforeOrder) && <label className="deliveryRequest"><span>배송 요청사항 (선택)</span><textarea rows={3} maxLength={DELIVERY_REQUEST_MAX_LENGTH} value={deliveryRequest} disabled={submitting} onChange={e=>setDeliveryRequest(e.target.value)} placeholder="예: 도착 전 연락 부탁드립니다."/><small>500자 이내로 입력해 주세요.</small></label>}
         <div className="orderTotal"><span>{fullPage?"총 상품금액":"주문 예상금액"}</span><b>{money(totalPrice)}</b></div>
         {(fullPage || reviewBeforeOrder) && <section className="orderShippingNotice" aria-label="배송 마감 안내">
-          <dl className="cartShippingCutoffs">
-            <div>
-              <dt>직접 배송 <small>서울·경기·인천 대상 거래처</small></dt>
-              <dd><strong>오전 10:30 전</strong> 당일 배송 · 이후 익일 배송</dd>
-            </div>
-            <div>
-              <dt>택배</dt>
-              <dd><strong>오후 3:30 마감</strong> · 당일 배송 제외</dd>
-              {parcelShippingNotice && <dd className="cartParcelFee">{parcelShippingNotice}</dd>}
-            </div>
-          </dl>
+          {shippingCutoffs}
           {fullPage && <>
-            <p>주문 접수 후 재고를 확인하며, 재고가 부족하거나 출고 일정이 달라지면 연락드리겠습니다.</p>
-            <Link href="/order-delivery">주문·배송 안내 보기</Link>
+            <p className="checkoutStockNotice">{stockNotice}</p>
+            <RefundPolicyDialog title="주문·배송 안내" showTitle>
+              <div className="checkoutGuide">
+                {shippingCutoffs}
+                <p className="checkoutStockNotice">{stockNotice}</p>
+              </div>
+            </RefundPolicyDialog>
           </>}
         </section>}
         {parcelShippingNotice && !fullPage && !reviewBeforeOrder && <p className="orderShippingNotice">{parcelShippingNotice}</p>}

@@ -711,3 +711,10 @@ footer{min-height:95px;border-top:1px solid #ddd;padding:20px 6%;display:grid;gr
   .recentOrderCards{grid-template-columns:1fr}
   .recentOrderCards .recentOrderPreview{position:static;margin-top:8px;box-shadow:none}
 }
+
+.checkoutGuideTitle{margin:0 52px 14px 0;font-size:19px;color:#263f35;line-height:1.45}
+.checkoutGuide{font-size:13px;line-height:1.55;word-break:keep-all}
+.orderShippingNotice .checkoutStockNotice,.checkoutGuide .checkoutStockNotice{margin:12px 0 0;color:#914747;font-weight:600;line-height:1.55}
+.fullCartCheckout .cartShippingCutoffs{padding:10px 12px;white-space:normal}
+.checkoutGuide .cartShippingCutoffs{white-space:normal}
+.fullCartCheckout .orderShippingNotice>.orderPolicyLink{margin-top:8px}
