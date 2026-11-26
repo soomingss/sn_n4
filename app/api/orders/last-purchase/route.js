@@ -9,7 +9,7 @@ export async function GET(request) {
   if (!/^\d{1,19}$/.test(productId || "")) return NextResponse.json({}, { status: 400 });
   const user = encodeURIComponent(session.user.id);
   const response = await supabaseAdminFetch(
-    `/rest/v1/orders?select=created_at,order_items!inner(origin,weight)&user_id=eq.${user}&status=eq.delivered&order_items.product_id=eq.${productId}&order=created_at.desc,id.desc&limit=1`
+    `/rest/v1/orders?select=created_at,order_items!inner(origin,weight,unit_price)&user_id=eq.${user}&status=eq.delivered&order_items.product_id=eq.${productId}&order=created_at.desc,id.desc&limit=1`
   );
   if (!response.ok) return NextResponse.json({}, { status: 503 });
   const [order] = await response.json();

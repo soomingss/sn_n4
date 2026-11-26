@@ -6,10 +6,21 @@ import { visibleProductSupplier } from "../lib/product-supplier";
 import { productDisplayName } from "../lib/product-display";
 import herbInformation from "../lib/herb-information.json";
 
+const formatPrice = new Intl.NumberFormat("ko-KR");
+const priceValue = value => value == null || String(value).trim() === "" ? NaN : Number(value);
+const sameSpec = (a, b) => String(a ?? "").trim().replace(/\s+/g, "").toLowerCase() === String(b ?? "").trim().replace(/\s+/g, "").toLowerCase();
+
 export default function HerbDetails({ product, onClose, kakaoChannelUrl }) {
   const dialog = useRef(null);
   const [copyMessage, setCopyMessage] = useState("");
   const [purchase, setPurchase] = useState(null);
+  const previousPrice = priceValue(purchase?.unit_price);
+  const currentPrice = priceValue(product.price);
+  const showPriceComparison = purchase && Number.isFinite(previousPrice) && Number.isFinite(currentPrice)
+    && previousPrice >= 0 && currentPrice >= 0
+    && purchase.origin && purchase.weight
+    && sameSpec(purchase.origin, product.origin) && sameSpec(purchase.weight, product.weight);
+  const priceDifference = currentPrice - previousPrice;
 
   useEffect(() => {
     const controller = new AbortController();
@@ -74,6 +85,13 @@ export default function HerbDetails({ product, onClose, kakaoChannelUrl }) {
           <strong>마지막 구매</strong>{" "}
           {new Intl.DateTimeFormat("ko-KR", { dateStyle: "medium", timeZone: "Asia/Seoul" }).format(new Date(purchase.date))}
           {" · "}{purchase.origin || "원산지 기록 없음"}{" · "}{purchase.weight || "중량 기록 없음"}
+        </p>}
+        {showPriceComparison && <p className="lastPurchase">
+          지난 구매 단가 <strong>{formatPrice.format(previousPrice)}원</strong>
+          {" · "}현재 단가 <strong>{formatPrice.format(currentPrice)}원</strong>
+          {" · "}{priceDifference === 0 ? "변동 없음" : <strong style={{ color: "#a22c2c" }}>
+            {formatPrice.format(Math.abs(priceDifference))}원 {priceDifference > 0 ? "상승" : "하락"}
+          </strong>}
         </p>}
         {kakaoChannelUrl && <section className="herbDetailSection herbInquiry" aria-label="약재 문의">
           <p>실물이나 포장 상태가 궁금하시면 문의해 주세요.</p>

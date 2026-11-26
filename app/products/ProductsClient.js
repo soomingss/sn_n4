@@ -13,14 +13,6 @@ import {DELIVERY_REQUEST_MAX_LENGTH} from "../lib/delivery-request";
 
 const CHOSUNG = ["전체","ㄱ","ㄴ","ㄷ","ㄹ","ㅁ","ㅂ","ㅅ","ㅇ","ㅈ","ㅊ","ㅋ","ㅌ","ㅍ","ㅎ"];
 const PAGE_SIZE = 6;
-const PRICE_PREVIEW_MONTH = "2026-11";
-const ASSUMED_PREVIOUS_PRICE = 5000;
-
-function previewPriceChange(price) {
-  if (price == null || String(price).trim() === "") return 0;
-  const amount = Number(price);
-  return Number.isFinite(amount) && amount >= 0 ? amount - ASSUMED_PREVIOUS_PRICE : 0;
-}
 const INITIALS = ["ㄱ","ㄲ","ㄴ","ㄷ","ㄸ","ㄹ","ㅁ","ㅂ","ㅃ","ㅅ","ㅆ","ㅇ","ㅈ","ㅉ","ㅊ","ㅋ","ㅌ","ㅍ","ㅎ"];
 
 function getInitial(text="") {
@@ -33,14 +25,6 @@ function money(v){if(v===null||v===undefined||v==="")return"단가 문의";retur
 export default function ProductsClient({products=[],companyName="",adminManual=false,partners=[],pricesByGrade={},adminPricePreview=false,adminPrices={},parcelShippingNotice="",cartPage=false,frequentProductIds=[],kakaoChannelUrl=""}){
   const [query,setQuery]=useState("");
   const [inStockOnly, setInStockOnly] = useState(false);
-  const [showPricePreview, setShowPricePreview] = useState(false);
-  const [priceExplanationId, setPriceExplanationId] = useState(null);
-  useEffect(() => {
-    const month = new Intl.DateTimeFormat("sv-SE", {
-      timeZone: "Asia/Seoul", year: "numeric", month: "2-digit"
-    }).format(new Date());
-    setShowPricePreview(!adminManual && month === PRICE_PREVIEW_MONTH);
-  }, [adminManual]);
   const [detailProduct,setDetailProduct]=useState(null);
   const [comparisonIds, setComparisonIds] = useState([]);
   const removeComparison = id => setComparisonIds(ids => ids.filter(selected => selected !== id));
@@ -170,13 +154,10 @@ export default function ProductsClient({products=[],companyName="",adminManual=f
           </div>
           <div className="v21Filter"><div className="initialFilter">{CHOSUNG.map(ch=><button key={ch} className={initial===ch?"active":""} onClick={()=>setInitial(ch)}>{ch}</button>)}</div></div>
           <p className="herbDetailHelp">사진을 누르면 약재의 상세 설명을 볼 수 있습니다.</p>
-          {showPricePreview && <p className="herbDetailHelp">가격 옆 색상 숫자는 지난달 단가를 5,000원으로 가정한 예시입니다.</p>}
           {!adminManual && <ProductComparison products={comparisonProducts} remove={removeComparison} clear={() => setComparisonIds([])} />}
           <div className="productList">
             {visible.length?visible.map(product=>{
               const priceFor600g = priceForGrams(product.price, product.weight, 600);
-              const priceChange = showPricePreview ? previewPriceChange(product.price) : 0;
-              const priceExplanation = `지난달 단가를 5,000원으로 가정하면 ${money(Math.abs(priceChange))} ${priceChange > 0 ? "상승" : "하락"}`;
               return <article className="productCard" key={product.id}>
                 <div className="productCardMedia">
                   <button type="button" className="productThumb productPhotoButton" aria-label={`${productDisplayName(product.name,product.origin)} 약재 설명 보기`} aria-haspopup="dialog" onClick={()=>setDetailProduct(product)}><ProductImage src={product.image_url} name={product.name} origin={product.origin}/><span className="productPhotoOpenHint" aria-hidden="true">＋</span></button>
@@ -189,14 +170,7 @@ export default function ProductsClient({products=[],companyName="",adminManual=f
                   <p>{productSpecs(product)}</p>
                   <div className="productPrice">
                     <b>{money(product.price)}</b>
-                    {priceChange !== 0 && <button type="button" title={priceExplanation}
-                      aria-label={priceExplanation} aria-expanded={priceExplanationId === product.id}
-                      aria-controls={`price-explanation-${product.id}`}
-                      onClick={() => setPriceExplanationId(id => id === product.id ? null : product.id)}
-                      style={{color:"#a22c2c",background:"transparent",border:0,padding:"3px 2px",fontWeight:700,cursor:"pointer"}}>
-                      <span style={{display:"block",color:"#52645b",fontSize:10,fontWeight:400,lineHeight:1.15}}>지난달 대비</span>
-                      {priceChange > 0 ? "+" : "−"}{Math.abs(priceChange).toLocaleString("ko-KR")}
-                    </button>}
+
                     {!adminManual && <button type="button" className="productCompareButton"
                       aria-label={`${productDisplayName(product.name, product.origin)} ${comparisonIds.includes(product.id) ? "비교 해제" : "비교 담기"}`}
                       aria-pressed={comparisonIds.includes(product.id)}
@@ -206,7 +180,6 @@ export default function ProductsClient({products=[],companyName="",adminManual=f
                     </button>}
                   </div>
                   {priceFor600g != null && <small className="productConvertedPrice">600g 환산가 {money(priceFor600g)}</small>}
-                  {priceChange !== 0 && <small id={`price-explanation-${product.id}`} hidden={priceExplanationId !== product.id}>{priceExplanation}</small>}
                 </div>
                 <div className={`productOrderControls ${product.stock_status==="low"?"disabled":""}`}>
                   <label><span>수량</span><div className="v21Qty"><button disabled={product.stock_status==="low"} onClick={()=>setQuantities(q=>({...q,[product.id]:Math.max(1,Number(q[product.id]||1)-1)}))}>−</button><input disabled={product.stock_status==="low"} type="number" min="1" value={quantities[product.id]||1} onChange={e=>setQuantities(q=>({...q,[product.id]:e.target.value}))}/><button disabled={product.stock_status==="low"} onClick={()=>setQuantities(q=>({...q,[product.id]:Number(q[product.id]||1)+1}))}>＋</button></div></label>
